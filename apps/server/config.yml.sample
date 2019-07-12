@@ -1,0 +1,16 @@
+AppName: 6leetcode
+Debug: false
+ServerPort: 4000
+Login:
+  name: # leetcode username
+  password: # leetcode password
+Database:
+  Engine: postgres # DB type
+  Username: repl_tosone
+  Password: repl_secret
+  Host: postgresql-master
+  Port: 5432
+  Database: database
+  SSLMode: disable
+Generate:
+  Readme: questions

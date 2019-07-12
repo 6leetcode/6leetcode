@@ -1,0 +1,105 @@
+version: "3.8"
+
+services:
+  traefik:
+    image: traefik:v2.2
+    container_name: traefik
+    hostname: traefik
+    command:
+      - --entrypoints.web.address=:80
+      - --entrypoints.websecure.address=:443
+      - --providers.docker
+      - --api
+      - --certificatesresolvers.leresolver.acme.email=${LETSENCRYPT_EMAIL}
+      - --certificatesresolvers.leresolver.acme.tlschallenge=true
+      - --certificatesresolvers.leresolver.acme.caserver=${LETSENCRYPT_CASERVER}
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ${VOLUME_PREFIX}/traefik/acme.json:/acme.json
+    labels:
+      - traefik.http.routers.traefik.entrypoints=websecure
+      - traefik.http.routers.traefik.middlewares=authtraefik
+      - traefik.http.middlewares.authtraefik.basicauth.users=tosone:$$apr1$$2DvxBXHm$$7iRM18fGqs30h2r0gDZK0/
+      - traefik.http.routers.http-catchall.rule=hostregexp(`{host:.+}`)
+      - traefik.http.routers.http-catchall.entrypoints=web
+      - traefik.http.routers.http-catchall.middlewares=redirect-to-https
+      - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+    networks:
+      - default
+  postgresql-master:
+    image: "bitnami/postgresql:12-debian-10"
+    container_name: postgresql-master
+    hostname: postgresql-master
+    volumes:
+      - ${VOLUME_PREFIX}/postgresql-master/:/bitnami/postgresql
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=master
+      - POSTGRESQL_REPLICATION_USER=${DATABASE_USERNAME}
+      - POSTGRESQL_REPLICATION_PASSWORD=${DATABASE_SECRET}
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=${DATABASE_SECRET}
+      - POSTGRESQL_DATABASE=${DATABASE_NAME}
+    networks:
+      - default
+  postgresql-slave:
+    image: "bitnami/postgresql:12-debian-10"
+    container_name: postgresql-slave
+    hostname: postgresql-slave
+    volumes:
+      - ${VOLUME_PREFIX}/postgresql-slave/:/bitnami/postgresql
+    depends_on:
+      - postgresql-master
+    environment:
+      - POSTGRESQL_REPLICATION_MODE=slave
+      - POSTGRESQL_REPLICATION_USER=${DATABASE_USERNAME}
+      - POSTGRESQL_REPLICATION_PASSWORD=${DATABASE_SECRET}
+      - POSTGRESQL_MASTER_HOST=postgresql-master
+      - POSTGRESQL_PASSWORD=${DATABASE_SECRET}
+      - POSTGRESQL_MASTER_PORT_NUMBER=5432
+    networks:
+      - default
+  6leetcode:
+    image: 6leetcode/6leetcode:latest
+    container_name: 6leetcode
+    hostname: 6leetcode
+    depends_on:
+      - postgresql-master
+      - postgresql-slave
+    command:
+      ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "server"]
+    build:
+      context: $PWD/../..
+      dockerfile: apps/server/Dockerfile
+    restart: always
+    volumes:
+      - $PWD/config.yml:/etc/6leetcode/config.yml
+    labels:
+      - traefik.http.routers.6leetcode.rule=Host(`6leetcode${HOST_DOMAIN}`)
+      - traefik.http.routers.6leetcode.entrypoints=websecure
+      - traefik.http.routers.6leetcode.tls=true
+      - traefik.http.routers.6leetcode.tls.certresolver=leresolver
+      - traefik.http.services=6leetcode
+      - traefik.http.services.6leetcode.loadbalancer.server.port=4000
+    networks:
+      - default
+  6leetcode-dev:
+    image: 6leetcode/6leetcode:latest
+    container_name: 6leetcode
+    hostname: 6leetcode
+    command:
+      ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "crawler"]
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    volumes:
+      - $PWD/config.yml:/etc/6leetcode/config.yml
+    networks:
+      - default
+networks:
+  default:
+    external:
+      name: ${DOCKER_NETWORK:-webproxy}

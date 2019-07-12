@@ -1,0 +1,21 @@
+name: Solution Check
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  solution-check:
+    name: solution-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 10
+      - name: Test code in specific image
+        run: make all

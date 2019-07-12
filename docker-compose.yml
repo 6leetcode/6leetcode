@@ -1,0 +1,87 @@
+version: "3.7"
+
+services:
+  c:
+    image: 6leetcode:c
+    container_name: c
+    hostname: c
+    cap_add:
+      - SYS_PTRACE
+    build:
+      context: .
+      dockerfile: ./docker/gcc.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  cc:
+    image: 6leetcode:cc
+    container_name: cc
+    hostname: cc
+    cap_add:
+      - SYS_PTRACE
+    build:
+      context: .
+      dockerfile: ./docker/gcc.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  php:
+    image: 6leetcode:php
+    container_name: php
+    hostname: php
+    build:
+      context: .
+      dockerfile: ./docker/php.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  golang:
+    image: 6leetcode:golang
+    container_name: golang
+    hostname: golang
+    build:
+      context: .
+      dockerfile: ./docker/golang.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  java:
+    image: 6leetcode:java
+    container_name: java
+    hostname: java
+    build:
+      context: .
+      dockerfile: ./docker/java.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  python:
+    image: 6leetcode:python
+    container_name: python
+    hostname: python
+    build:
+      context: .
+      dockerfile: ./docker/python.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  rust:
+    image: 6leetcode:rust
+    container_name: rust
+    hostname: rust
+    build:
+      context: .
+      dockerfile: ./docker/rust.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  node:
+    image: 6leetcode:node
+    container_name: node
+    hostname: node
+    build:
+      context: .
+      dockerfile: ./docker/node.Dockerfile
+    volumes:
+      - .:/app
+    tty: true

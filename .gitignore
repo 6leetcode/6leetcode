@@ -1,0 +1,52 @@
+# kdiff3 ignore
+*.orig
+# maven ignore
+target/
+# eclipse ignore
+.settings/
+.project
+.classpath
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+# system ignore
+.DS_Store
+Thumbs.db
+rebel.xml
+# package ignore (optional)
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+$HOME/
+/provider/CATALINA_BASE_IS_UNDEFINED/
+
+*.a
+*.o
+*.out
+*.test
+*.*~
+*.class
+*.db
+
+.idea/
+.vscode/
+venv/
+apps/server/config.yml
+apps/server/release/
+apps/uni-app/unpackage/
+apps/uni-app/node_modules/
+apps/server/questions/
+apps/web/bindata.go
+apps/server/cmd/server/bindata.go
+apps/server/data
+apps/server/.env
