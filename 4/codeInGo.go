@@ -57,3 +57,4 @@ func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64{
 	}
 	return float64(min+max)/2;
 }
+// leetCode 测试运算时间20ms 内存占用5.5MB
