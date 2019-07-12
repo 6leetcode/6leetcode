@@ -46,8 +46,8 @@
               }
 
               $current ++;
-          }while(true);
+          } while (true);
 
           return ($min+$max)/2;
-      }
-  }
+        }
+    }
