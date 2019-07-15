@@ -1,13 +1,13 @@
 C:
 	@for file in *.c; do \
-		$(CC) -o `echo $$file | cut -d. -f1`.test $$file; \
+		$(CC) -Os -g -fsanitize=address -o `echo $$file | cut -d. -f1`.test $$file; \
 		./`echo $$file | cut -d. -f1`.test; \
-		$(RM) `echo $$file | cut -d. -f1`.test; \
+		$(RM) -rf `echo $$file | cut -d. -f1`.test *.dSYM; \
 	done
 
 C++:
 	@for file in *.cpp; do \
-		$(CXX) -o `echo $$file | cut -d. -f1`.test $$file; \
+		$(CXX) -Os -g -fsanitize=address -o `echo $$file | cut -d. -f1`.test $$file; \
 		./`echo $$file | cut -d. -f1`.test; \
-		$(RM) `echo $$file | cut -d. -f1`.test; \
+		$(RM) -rf `echo $$file | cut -d. -f1`.test *.dSYM; \
 	done

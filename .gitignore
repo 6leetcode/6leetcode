@@ -32,6 +32,7 @@ $HOME/
 
 *.a
 *.o
+*.out
 *.test
 .idea/
 *.*~

@@ -1,6 +1,5 @@
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 bool isPowerOfTwo(int n) {
   int cnt = 0; //num of bits 1
