@@ -31,5 +31,5 @@ int main(int argc, char const *argv[]) {
   return 0;
 }
 
-// Compile: gcc -std=c11 -o sort sort.c
-// Run: ./sort
+// Compile: gcc -std=c11 -o findMedianSortedArrays.test c1.c
+// Run: ./findMedianSortedArrays.test
