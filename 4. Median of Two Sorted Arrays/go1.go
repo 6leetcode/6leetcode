@@ -10,10 +10,9 @@ func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64 {
 
 	minKey := int(math.Ceil(float64(total)/2 - 1))
 	maxKey := total / 2
-	fmt.Println(minKey, maxKey)
 
-	i := 0 //nums1 索引
-	j := 0 //nums2 索引
+	i := 0 // nums1 索引
+	j := 0 // nums2 索引
 	min := 0
 	max := 0
 	current := 0
@@ -57,4 +56,11 @@ func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64 {
 		current++
 	}
 	return float64(min+max) / 2
+}
+
+func main() {
+	var input1 = []int{4, 3, 2, 1}
+	var input2 = []int{9, 8, 7, 6}
+	fmt.Println("Input:", input1, input2)
+	fmt.Println("Output:", FindMedianSortedArFrays(input1, input2))
 }

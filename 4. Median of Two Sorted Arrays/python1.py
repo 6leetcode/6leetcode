@@ -68,3 +68,11 @@ class Solution(object):
             current += 1
 
         return (min+max)/2.0
+
+
+if __name__ == "__main__":
+    input1 = [1, 4, 2, 3]
+    input2 = [9, 8, 4, 1]
+    solution = Solution()
+    print("Input:", input1, input2)
+    print("Output:", solution.findMedianSortedArrays(input1, input2))
