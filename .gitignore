@@ -22,10 +22,16 @@ target/
 Thumbs.db
 rebel.xml
 # package ignore (optional)
-# *.jar
-# *.war
-# *.zip
-# *.tar
-# *.tar.gz
+*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
 $HOME/
 /provider/CATALINA_BASE_IS_UNDEFINED/
+
+*.a
+*.o
+*.test
+.idea/
+*.*~
