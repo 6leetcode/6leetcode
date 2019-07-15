@@ -7,7 +7,7 @@ __Example 1:__
 ```
 Input: 1
 Output: true 
-Explanation: 20 = 1
+Explanation: 2**0 = 1
 ```
 
 __Example 2:__
@@ -15,7 +15,7 @@ __Example 2:__
 ```
 Input: 16
 Output: true
-Explanation: 24 = 16
+Explanation: 2**4 = 16
 ```
 
 __Example 3:__
