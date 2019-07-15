@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  leetcode:
+    image: registry.cn-beijing.aliyuncs.com/tosone/6leetcode:dev
+    container_name: leetcode
+    hostname: leetcode
+    volumes:
+      - .:/app
+    tty: true
