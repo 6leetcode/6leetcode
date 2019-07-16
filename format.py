@@ -16,13 +16,18 @@ for dir in os.listdir("."):
             # PHP
             elif os.path.splitext(inner)[1] == ".php":
                 print(dir + "/" + inner)
-                os.system("php-cs-fixer fix \"" + dir +
-                          "/" + inner + "\" && rm *.cache")
+                os.system("php-cs-fixer fix \"" + dir + "/" + inner + "\"")
+                for file in os.listdir(dir):
+                    if os.path.splitext(file)[1] == ".cache":
+                        os.system("rm \"" + dir + "/" + file + "\"")
             # Rust
             elif os.path.splitext(inner)[1] == ".rs":
                 print(dir + "/" + inner)
                 os.system("rustfmt --write-mode replace --force \"" +
-                          dir + "/" + inner + "\" && rm *.bk")
+                          dir + "/" + inner + "\"")
+                for file in os.listdir(dir):
+                    if os.path.splitext(file)[1] == ".bk":
+                        os.system("rm \"" + dir + "/" + file + "\"")
             # Java
             elif os.path.splitext(inner)[1] == ".java":
                 print(dir + "/" + inner)
