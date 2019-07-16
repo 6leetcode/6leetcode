@@ -9,7 +9,7 @@ services:
       - SYS_PTRACE
     build:
       context: .
-      dockerfile: Dockerfile.gcc
+      dockerfile: ./docker/Dockerfile.gcc
     volumes:
       - .:/app
     tty: true
@@ -19,7 +19,7 @@ services:
     hostname: php
     build:
       context: .
-      dockerfile: Dockerfile.php
+      dockerfile: ./docker/Dockerfile.php
     volumes:
       - .:/app
     tty: true
@@ -29,7 +29,7 @@ services:
     hostname: golang
     build:
       context: .
-      dockerfile: Dockerfile.golang
+      dockerfile: ./docker/Dockerfile.golang
     volumes:
       - .:/app
     tty: true
@@ -39,7 +39,7 @@ services:
     hostname: java
     build:
       context: .
-      dockerfile: Dockerfile.java
+      dockerfile: ./docker/Dockerfile.java
     volumes:
       - .:/app
     tty: true
@@ -49,7 +49,7 @@ services:
     hostname: python
     build:
       context: .
-      dockerfile: Dockerfile.python
+      dockerfile: ./docker/Dockerfile.python
     volumes:
       - .:/app
     tty: true
@@ -59,7 +59,7 @@ services:
     hostname: rust
     build:
       context: .
-      dockerfile: Dockerfile.rust
+      dockerfile: ./docker/Dockerfile.rust
     volumes:
       - .:/app
     tty: true
@@ -69,7 +69,7 @@ services:
     hostname: node
     build:
       context: .
-      dockerfile: Dockerfile.node
+      dockerfile: ./docker/Dockerfile.node
     volumes:
       - .:/app
     tty: true
