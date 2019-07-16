@@ -28,3 +28,8 @@ python:
 	@for file in *.py; do \
 		python3 $$file; \
 	done
+
+node:
+	@for file in *.js; do \
+		node $$file; \
+	done
