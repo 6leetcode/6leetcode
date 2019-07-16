@@ -5,6 +5,8 @@ services:
     image: registry.cn-beijing.aliyuncs.com/tosone/6leetcode:dev
     container_name: leetcode
     hostname: leetcode
+    cap_add:
+      - SYS_PTRACE
     volumes:
       - .:/app
     tty: true

@@ -19,6 +19,8 @@ char *intToRoman(int num) {
 int main(int argc, char const *argv[]) {
   int input = 3;
   printf("Input: %d\n", input);
-  printf("Output: %s\n", intToRoman(input));
+  char *output = intToRoman(input);
+  printf("Output: %s\n", output);
+  free(output);
   return EXIT_SUCCESS;
 }
