@@ -16,9 +16,19 @@ for dir in os.listdir("."):
             # PHP
             elif os.path.splitext(inner)[1] == ".php":
                 print(dir + "/" + inner)
-                os.system("php-cs-fixer fix \"" + dir + "/" + inner + "\"")
+                os.system("php-cs-fixer fix \"" + dir +
+                          "/" + inner + "\" && rm *.cache")
             # Rust
             elif os.path.splitext(inner)[1] == ".rs":
                 print(dir + "/" + inner)
                 os.system("rustfmt --write-mode replace --force \"" +
                           dir + "/" + inner + "\" && rm *.bk")
+            # Java
+            elif os.path.splitext(inner)[1] == ".java":
+                print(dir + "/" + inner)
+                os.system("google-java-format --aosp -i \"" +
+                          dir + "/" + inner + "\"")
+            # Javascript
+            elif os.path.splitext(inner)[1] == ".js":
+                print(dir + "/" + inner)
+                os.system("js-beautify -r \"" + dir + "/" + inner + "\"")
