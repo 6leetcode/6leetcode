@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-int cmpfunc(const void *a, const void *b) { return (*(int *)b - *(int *)a); }
+int cmpfunc(const void *a, const void *b) {
+  return (*(signed int *)b > *(signed int *)a) ? 1 : 0;
+}
 
 double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Size) {
   int total_length = nums1Size + nums2Size;

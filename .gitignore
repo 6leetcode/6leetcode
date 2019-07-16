@@ -35,4 +35,5 @@ $HOME/
 *.out
 *.test
 .idea/
+.vscode/
 *.*~
