@@ -5,9 +5,26 @@ c:
 		$(RM) -rf `echo $$file | cut -d. -f1`.test *.dSYM; \
 	done
 
-c++:
-	@for file in *.cpp; do \
+cc:
+	@for file in *.cc; do \
 		$(CXX) -Os -g3 -fsanitize=address -o `echo $$file | cut -d. -f1`.test $$file; \
 		./`echo $$file | cut -d. -f1`.test; \
 		$(RM) -rf `echo $$file | cut -d. -f1`.test *.dSYM; \
+	done
+
+rust:
+	@for file in *.rs; do \
+		rustc -o `echo $$file | cut -d. -f1`.test $$file; \
+		./`echo $$file | cut -d. -f1`.test; \
+		$(RM) -rf `echo $$file | cut -d. -f1`.test; \
+	done
+
+golang:
+	@for file in *.go; do \
+		go run $$file; \
+	done
+
+python:
+	@for file in *.py; do \
+		python3 $$file; \
 	done
