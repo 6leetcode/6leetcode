@@ -15,4 +15,4 @@ var intToRoman = function(num) {
 
 let input = 3999;
 console.log("Input:", input);
-console.log("OutPut:", intToRoman(input));
+console.log("Output:", intToRoman(input));
