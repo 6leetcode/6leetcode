@@ -17,3 +17,8 @@ for dir in os.listdir("."):
             elif os.path.splitext(inner)[1] == ".php":
                 print(dir + "/" + inner)
                 os.system("php-cs-fixer fix \"" + dir + "/" + inner + "\"")
+            # Rust
+            elif os.path.splitext(inner)[1] == ".rs":
+                print(dir + "/" + inner)
+                os.system("rustfmt --write-mode replace --force \"" +
+                          dir + "/" + inner + "\" && rm *.bk")
