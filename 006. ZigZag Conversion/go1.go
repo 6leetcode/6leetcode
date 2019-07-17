@@ -1,8 +1,3 @@
-/*
-# @Time : 2019-07-16 23:56
-# @Author : smallForest
-# @SoftWare : GoLand
-*/
 package main
 
 import (
@@ -24,10 +19,12 @@ func convert(s string, numRows int) string {
 			}
 		}
 	}
-
 	return ret
 }
+
 func main() {
-	s := convert("LEETCODEISHIRING", 4)
-	fmt.Println(s)
+	var input = "LEETCODEISHIRING"
+	fmt.Println("Input:", input)
+	var output = convert("LEETCODEISHIRING", 4)
+	fmt.Println("Output:", output)
 }
