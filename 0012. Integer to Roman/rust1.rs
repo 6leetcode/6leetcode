@@ -35,5 +35,5 @@ impl Solution {
 fn main() {
     let input: i32 = 3999;
     println!("Input: {}", input);
-    println!("Output: {}", Solution::int_to_roman(3999));
+    println!("Output: {}", Solution::int_to_roman(input));
 }
