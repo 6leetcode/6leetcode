@@ -27,11 +27,17 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
 }
 
 int main(int argc, char const *argv[]) {
-  int a[] = {0, 1, 2, 3};
-  int b[] = {4, 5, 6, 7};
-  printf("%f\n", findMedianSortedArrays(a, sizeof(a) / sizeof(int), b, sizeof(b) / sizeof(int)));
+  int input1[] = {0, 1, 2, 3};
+  int input2[] = {4, 5, 6, 7};
+  printf("Input: [ ");
+  for (int i = 0; i < sizeof(input1) / sizeof(int); i++) {
+    printf("%d ", input1[i]);
+  }
+  printf("] [ ");
+  for (int i = 0; i < sizeof(input2) / sizeof(int); i++) {
+    printf("%d ", input2[i]);
+  }
+  printf("]\n");
+  printf("Output: %f\n", findMedianSortedArrays(input1, sizeof(input1) / sizeof(int), input2, sizeof(input2) / sizeof(int)));
   return 0;
 }
-
-// Compile: gcc -std=c11 -o findMedianSortedArrays.test c1.c
-// Run: ./findMedianSortedArrays.test
