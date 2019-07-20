@@ -1,35 +1,55 @@
 c:
 	@for file in *.c; do \
-		$(CC) -std=c99 -Os -g3 -Wall -fsanitize=address,signed-integer-overflow -o `echo $$file | cut -d. -f1`.test $$file; \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
+		$(CC) -std=c99 -Os -g3 -Wall -fsanitize=address,signed-integer-overflow \
+		-o `echo $$file | cut -d. -f1`.test $$file; \
 		./`echo $$file | cut -d. -f1`.test; \
 		$(RM) -rf `echo $$file | cut -d. -f1`.test *.dSYM; \
+		echo; \
 	done
 
 cc:
 	@for file in *.cc; do \
-		$(CXX) -std=c++11 -Os -g3 -fsanitize=address,signed-integer-overflow -o `echo $$file | cut -d. -f1`.test $$file; \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
+		$(CXX) -std=c++11 -Os -g3 -fsanitize=address,signed-integer-overflow \
+		-o `echo $$file | cut -d. -f1`.test $$file; \
 		./`echo $$file | cut -d. -f1`.test; \
 		$(RM) -rf `echo $$file | cut -d. -f1`.test *.dSYM; \
+		echo; \
 	done
 
 rust:
 	@for file in *.rs; do \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
 		rustc -o `echo $$file | cut -d. -f1`.test $$file; \
 		./`echo $$file | cut -d. -f1`.test; \
 		$(RM) -rf `echo $$file | cut -d. -f1`.test; \
+		echo; \
 	done
 
 golang:
 	@for file in *.go; do \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
 		go run $$file; \
+		echo; \
 	done
 
 python:
 	@for file in *.py; do \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
 		python3 $$file; \
+		echo; \
 	done
 
 node:
 	@for file in *.js; do \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
 		node $$file; \
+		echo; \
 	done
