@@ -1,6 +1,6 @@
-# leetcode
+# LeetCode
 
-leetcode 题解
+LeetCode 题解
 
 ### 文件规则
 
