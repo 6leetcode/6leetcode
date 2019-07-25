@@ -23,6 +23,6 @@ int main(int argc, char const *argv[]) {
     }
   }
   cout << "]" << endl;
-  cout << "Output: " << majorityElement(input, 3) << endl;
-  return 0;
+  cout << "Output: " << majorityElement(input, length) << endl;
+  return EXIT_SUCCESS;
 }
