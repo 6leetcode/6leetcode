@@ -21,6 +21,6 @@ int main(int argc, char const *argv[]) {
     }
   }
   printf("]\n");
-  printf("Output: %d\n", majorityElement(input, 3));
-  return 0;
+  printf("Output: %d\n", majorityElement(input, length));
+  return EXIT_SUCCESS;
 }
