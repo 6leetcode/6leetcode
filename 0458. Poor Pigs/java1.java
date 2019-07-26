@@ -15,6 +15,7 @@ public class java1 {
         Solution solution = new Solution();
         int buckets = 1000, minutesToDie = 15, minutesToTest = 1000;
         System.out.printf("Input:  %d, %d, %d\n", buckets, minutesToDie, minutesToTest);
-        System.out.printf("Output: %d\n", solution.poorPigs(buckets, minutesToDie, minutesToTest));
+        int result = solution.poorPigs(buckets, minutesToDie, minutesToTest);
+        System.out.printf("Output: %d\n", result);
     }
 }
