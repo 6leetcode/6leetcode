@@ -53,3 +53,13 @@ node:
 		node $$file; \
 		echo; \
 	done
+
+java:
+	@for file in *.java; do \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
+		javac $$file; \
+		java `echo $$file | cut -d . -f1`; \
+		$(RM) -rf *.class; \
+		echo; \
+	done
