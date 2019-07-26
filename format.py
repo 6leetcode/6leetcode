@@ -10,7 +10,7 @@ for dir in os.listdir("."):
                 print(dir + "/" + inner)
                 os.system("go fmt \"" + dir + "/" + inner + "\"")
             # C/C++
-            elif os.path.splitext(inner)[1] == ".c" or os.path.splitext(inner)[1] == ".cpp":
+            elif os.path.splitext(inner)[1] == ".c" or os.path.splitext(inner)[1] == ".cc":
                 print(dir + "/" + inner)
                 os.system("clang-format -i \"" + dir + "/" + inner + "\"")
             # PHP
