@@ -37,3 +37,4 @@ $HOME/
 .idea/
 .vscode/
 *.*~
+*.class
