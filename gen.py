@@ -55,7 +55,7 @@ if __name__ == "__main__":
     problems = []
 
     table = []
-    table.append("|Language|C|C++|Go|Java|JavaScript|PHP|Python|Rust|")
+    table.append("|Problem|C|C++|Go|Java|JavaScript|PHP|Python|Rust|")
     table.append("|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
     for dir in os.listdir("."):

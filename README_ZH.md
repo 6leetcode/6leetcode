@@ -16,7 +16,7 @@ LeetCode 题解
 - `Container` 的环境可能是 `Debian` 或者 `Alpine`。
 
 ### Solutions list
-|Language|C|C++|Go|Java|JavaScript|PHP|Python|Rust|
+|Problem|C|C++|Go|Java|JavaScript|PHP|Python|Rust|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0001](https://leetcode.com/problems/two-sum)|||[go1.go](https://github.com/6leetcode/6leetcode/blob/master/0001.%20Two%20Sum/go1.go)|[java1.java](https://github.com/6leetcode/6leetcode/blob/master/0001.%20Two%20Sum/java1.java)|||||
 |[0002](https://leetcode.com/problems/add-two-numbers)||||[java1.java](https://github.com/6leetcode/6leetcode/blob/master/0002.%20Add%20Two%20Numbers/java1.java)|||||
