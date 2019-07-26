@@ -1,16 +1,18 @@
 # LeetCode
 
-LeetCode 题解
+LeetCode Solutions.
 
-### 文件规则
+### Solutions file rules
 
-- 每个题目按照题目序号编排
-- 每个题目文件夹下有相关的题目说明，文件名为 `readme.md`
-- 每个文件夹中同一种语言可以有多重解决方案，按照算法优化程度排名，文件名前缀为语言名字。例如：`c1.c` 的性能是比 `c2.c` 的性能更优的。
-- 每个题目里边都要含有 `main` 函数，含有可以想到的所有测试案例，方便线下运行。题解函数，单独写成一个独立的函数。
+- Each problem is organized according to the title number.
+- Each problem folder has a description file which one named `readme.md`.
+- There can be multiple solutions for the same language in each folder, ranked according to the degree of algorithm optimization, and the file name prefix is the language name. For example: the performance of `c1.c` is better than the performance of `c2.c`.
+- Each problem solution must contain a `main` function that contains all the test cases that can be thought of, making it easy to run offline. The solution function is written separately as a separate function.
 
-### 测试
+### How to test problem's solution offline
 
-- 进入某种语言的环境仅需要 `make $language`，例如进入 python 的环境就是 `make python`，第一次进入某一种环境可能会需要一些时间，首先会编译这个 `Docker` 镜像。
-- 本目录的所有文件将会映射到 `Container` 的 `/app` 目录下。
-- `Container` 的环境可能是 `Debian` 或者 `Alpine`。
+- Entering a language environment requires only `make $language`. For example, the environment that enters Python is `make python`. It may take some time to enter a certain environment for the first time. The `Docker` image will be compiled first.
+- All files in this directory will be mapped to the `/app` directory of `Container`.
+- The environment of `Container` may be `Debian` or `Alpine`.
+
+### Solutions list
