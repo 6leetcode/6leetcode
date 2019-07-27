@@ -3,16 +3,24 @@ package main
 import "fmt"
 
 func twoSum(nums []int, target int) []int {
-	res := make([]int, 0)
-	mp := make(map[int]int)
-	length := len(nums)
+	var res = make([]int, 2)
+	res[0] = -1
+	res[1] = -1
+
+	var length = len(nums)
+	
 	if length < 2 {
 		return res
 	}
+
+	var mp = make(map[int]int, len(nums))
+
 	for i := 0; i < length; i++ {
 		v, ok := mp[target-nums[i]]
 		if ok {
-			res = append(res, v, i)
+			res[0] = v
+			res[1] = i
+			return res
 		} else {
 			mp[nums[i]] = i
 		}
