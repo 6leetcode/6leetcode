@@ -11,7 +11,7 @@ class Solution {
             }
             map.put(nums[i], i);
         }
-        throw new IllegalArgumentException("No two sum solution");
+        return new int[] { -1, -1 };
     }
 }
 
@@ -29,6 +29,6 @@ public class java1 {
 
         int[] result = solution.twoSum(input1, target);
 
-        System.out.printf("Output: [%d, %d]", result[0], result[1]);
+        System.out.printf("Output: [%d, %d]\n", result[0], result[1]);
     }
 }
