@@ -17,9 +17,9 @@ class Solution {
         while (a != null || b != null) {
             int aVal = a != null ? a.val : 0;
             int bVal = b != null ? b.val : 0;
-            int result = additional + aVal + bVal;// 计算两数相加
-            int m = result % 10;// 两数相加的余数是下一个链表的值
-            additional = result / 10;// 求商：如果商大于0,则下一个链表的值需要加n
+            int result = additional + aVal + bVal; // 计算两数相加
+            int m = result % 10; // 两数相加的余数是下一个链表的值
+            additional = result / 10; // 求商：如果商大于0,则下一个链表的值需要加n
             finalResult.next = new ListNode(m);
             finalResult = finalResult.next;
             if (a != null) {

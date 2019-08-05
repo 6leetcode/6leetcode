@@ -23,7 +23,7 @@ func intToRoman(num int) string {
 }
 
 func main() {
-	var input = 3999;
+	var input = 3999
 	fmt.Println("Input:", input)
 	var output = intToRoman(3999)
 	fmt.Println("Output:", output)

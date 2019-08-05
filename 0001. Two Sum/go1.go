@@ -8,7 +8,7 @@ func twoSum(nums []int, target int) []int {
 	res[1] = -1
 
 	var length = len(nums)
-	
+
 	if length < 2 {
 		return res
 	}

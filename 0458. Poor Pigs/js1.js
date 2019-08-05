@@ -4,7 +4,7 @@
  * @param {number} minutesToTest
  * @return {number}
  */
-var poorPigs = function (buckets, minutesToDie, minutesToTest) {
+var poorPigs = function(buckets, minutesToDie, minutesToTest) {
     const times = minutesToTest / minutesToDie;
     const base = times + 1;
     // base ^ ans >= buckets 
@@ -14,6 +14,8 @@ var poorPigs = function (buckets, minutesToDie, minutesToTest) {
     return ans;
 };
 
-let buckets = 1000, minutesToDie = 15, minutesToTest = 60;
+let buckets = 1000,
+    minutesToDie = 15,
+    minutesToTest = 60;
 console.log("Input: ", buckets, minutesToDie, minutesToTest);
 console.log("Output:", poorPigs(buckets, minutesToDie, minutesToTest));

@@ -30,6 +30,6 @@ func maxArea(height []int) int {
 func main() {
 	var input = []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
 	var output = maxArea(input)
-    fmt.Println("Input:", input)
-    fmt.Println("Output:", output)
+	fmt.Println("Input:", input)
+	fmt.Println("Output:", output)
 }
