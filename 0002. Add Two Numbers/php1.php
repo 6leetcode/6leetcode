@@ -16,7 +16,7 @@ class Solution
      * @param ListNode $l2
      * @return ListNode
      */
-    function addTwoNumbers($l1, $l2)
+    public function addTwoNumbers($l1, $l2)
     {
         $obj     = null;
         $prevObj = null;
