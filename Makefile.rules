@@ -1,3 +1,5 @@
+all: c cc rust golang python php node java
+
 c:
 	@for file in *.c; do \
 		echo Running `echo $$file | cut -d. -f1`:; \
@@ -61,5 +63,13 @@ java:
 		javac $$file; \
 		java `echo $$file | cut -d . -f1`; \
 		$(RM) -rf *.class; \
+		echo; \
+	done
+
+php:
+	@for file in *.php; do \
+		echo Running `echo $$file | cut -d. -f1`:; \
+		echo; \
+		php $$file; \
 		echo; \
 	done
