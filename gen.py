@@ -90,6 +90,9 @@ if __name__ == "__main__":
                 # Javascript
                 elif os.path.splitext(inner)[1] == ".js":
                     javascript[dir].append(inner)
+                # Python
+                elif os.path.splitext(inner)[1] == ".py":
+                    python[dir].append(inner)
     problems.sort()
 
     for problem in problems:
