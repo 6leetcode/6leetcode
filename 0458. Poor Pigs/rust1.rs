@@ -15,7 +15,7 @@ fn main() {
     let minutes_to_die: i32 = 15;
     let minutes_to_test: i32 = 1000;
     println!(
-        "Input: {}, {}, {}",
+        "Input:  {}, {}, {}",
         buckets,
         minutes_to_die,
         minutes_to_test

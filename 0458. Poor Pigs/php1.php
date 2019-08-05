@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: smallForest<1032817724@qq.com>
- * Date: 2019-08-05
- * Time: 15:43
- */
+
 class Solution
 {
-
     /**
      * @param Integer $buckets
      * @param Integer $minutesToDie
@@ -23,6 +17,14 @@ class Solution
         return $ans;
     }
 }
-$obj = new Solution();
-$r = $obj->poorPigs(25, 15, 60);
-echo $r;
+
+$solution = new Solution();
+
+$buckets = 1000;
+$minutesToDie = 15;
+$minutesToTest =1000;
+
+$ans = $solution->poorPigs(25, 15, 60);
+
+echo "Input:  " . $buckets . ", " . $minutesToDie . ", " . $minutesToTest . "\n";
+echo "Output: " . $ans . "\n";

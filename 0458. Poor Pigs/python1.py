@@ -13,5 +13,5 @@ if __name__ == "__main__":
     minutesToDie = 15
     minutesToTest = 1000
     print("Input:  {}, {}, {}".format(buckets, minutesToDie, minutesToTest))
-    print("Output:  {}".format(solution.poorPigs(
+    print("Output: {}".format(solution.poorPigs(
         buckets, minutesToDie, minutesToTest)))
