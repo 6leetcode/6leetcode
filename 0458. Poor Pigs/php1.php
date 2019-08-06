@@ -22,7 +22,7 @@ $solution = new Solution();
 
 $buckets = 1000;
 $minutesToDie = 15;
-$minutesToTest =1000;
+$minutesToTest = 1000;
 
 $ans = $solution->poorPigs(25, 15, 60);
 
