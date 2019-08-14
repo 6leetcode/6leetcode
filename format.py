@@ -3,7 +3,7 @@ import os
 import subprocess
 
 for dir in os.listdir("."):
-    if os.path.isdir(dir) and dir != ".git" and dir != ".idea" and dir != ".vscode" and dir != "docker":
+    if os.path.isdir(dir) and dir != ".git" and dir != ".idea" and dir != ".vscode" and dir != "docker" and dir != "target" and dir != "venv":
         for inner in os.listdir(dir):
             # Golang
             if os.path.splitext(inner)[1] == ".go":

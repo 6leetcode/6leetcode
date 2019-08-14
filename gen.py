@@ -59,7 +59,7 @@ if __name__ == "__main__":
     table.append("|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
     for dir in os.listdir("."):
-        if os.path.isdir(dir) and dir != ".git" and dir != ".idea" and dir != ".vscode" and dir != "docker" and dir != "target":
+        if os.path.isdir(dir) and dir != ".git" and dir != ".idea" and dir != ".vscode" and dir != "docker" and dir != "target" and dir != "venv":
             problems.append(dir)
             c[dir] = []
             cc[dir] = []

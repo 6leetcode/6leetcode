@@ -34,7 +34,9 @@ $HOME/
 *.o
 *.out
 *.test
-.idea/
-.vscode/
 *.*~
 *.class
+
+.idea/
+.vscode/
+venv/
