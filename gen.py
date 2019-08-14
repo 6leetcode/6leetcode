@@ -16,10 +16,10 @@ def rewrite(name, table):
     result = []
 
     for d in data:
-        if d.strip() != "### Solutions list":
+        if d.strip() != "### Solutions' list":
             result.append(d.strip())
         else:
-            result.append("### Solutions list")
+            result.append("### Solutions' list")
             break
     result.append(table)
 
@@ -59,7 +59,7 @@ if __name__ == "__main__":
     table.append("|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
     for dir in os.listdir("."):
-        if os.path.isdir(dir) and dir != ".git" and dir != ".idea" and dir != ".vscode" and dir != "docker":
+        if os.path.isdir(dir) and dir != ".git" and dir != ".idea" and dir != ".vscode" and dir != "docker" and dir != "target":
             problems.append(dir)
             c[dir] = []
             cc[dir] = []
