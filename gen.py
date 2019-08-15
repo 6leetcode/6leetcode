@@ -32,13 +32,13 @@ def lang(l, dir):
         return ""
     result = ""
     if (len(l) == 1):
-        return "[" + l[0] + "](" + code_prefix + dir.replace(" ", "%20") + "/" + l[0] + ")"
+        return "[1](" + code_prefix + dir.replace(" ", "%20") + "/" + l[0] + ")"
     else:
-        result = "[" + l[0] + "](" + code_prefix + \
+        result = "[1](" + code_prefix + \
             dir.replace(" ", "%20") + "/" + l[0] + ")"
     for i in range(1, len(l)):
-        result += " " + "[" + l[i] + "](" + code_prefix + \
-            dir.replace(" ", "%20") + "/" + l[0] + ")"
+        result += " " + "[" + str(i+1) + "](" + code_prefix + \
+            dir.replace(" ", "%20") + "/" + l[i] + ")"
     return result
 
 
@@ -121,13 +121,15 @@ if __name__ == "__main__":
             .replace("(", "")\
             .replace("(", "")\
             .replace(")", "")\
-            .lower() + ")|" + \
-            lang(c[problem], problem) + "|" \
-            + lang(cc[problem], problem) + "|" + lang(go[problem], problem) + "|" + \
-            lang(java[problem], problem) + "|" + lang(javascript[problem], problem) + "|"+lang(php[problem], problem) + "|" + \
-            lang(python[problem], problem) + "|" + \
-            lang(rust[problem], problem) + "|" + \
-            lang(sql[problem], problem) + "|"
+            .lower() + ")"
+        if len(sql[problem]) != 0:
+            s += "|-|-|-|-|-|-|-|-|" + lang(sql[problem], problem) + "|"
+        else:
+            s += "|"+lang(c[problem], problem) + "|" \
+                + lang(cc[problem], problem) + "|" + lang(go[problem], problem) + "|" + \
+                lang(java[problem], problem) + "|" + lang(javascript[problem], problem) + "|"+lang(php[problem], problem) + "|" + \
+                lang(python[problem], problem) + "|" + \
+                lang(rust[problem], problem) + "|-|"
         table.append(s)
     rewrite("README.md", "\n" + "\n".join(table))
     rewrite("README_ZH.md", "\n".join(table))
