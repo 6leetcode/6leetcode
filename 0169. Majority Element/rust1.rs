@@ -10,6 +10,6 @@ impl Solution {
 
 fn main() {
     let input = vec![1i32, 5, 10, 2, 15];
-    println!("Input: {:?}", input);
+    println!("Input:  {:?}", input);
     println!("Output: {}", Solution::majority_element(input));
 }
