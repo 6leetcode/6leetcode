@@ -3,7 +3,7 @@ import os
 import urllib.parse
 
 prefix = "https://leetcode.com/problems/"
-code_prefix = "https://github.com/6leetcode/6leetcode/blob/master/"
+code_prefix = "https://github.com/6leetcode/6leetcode/blob/master/Algorithm/"
 
 
 def rewrite(name, table):
@@ -58,43 +58,42 @@ if __name__ == "__main__":
     table.append("|Problem|C|C++|Go|Java|JavaScript|PHP|Python|Rust|")
     table.append("|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
-    for dir in os.listdir("."):
-        if os.path.isdir(dir) and dir != ".git" and dir != ".idea" and dir != ".vscode" and dir != "docker" and dir != "target" and dir != "venv":
-            problems.append(dir)
-            c[dir] = []
-            cc[dir] = []
-            go[dir] = []
-            java[dir] = []
-            javascript[dir] = []
-            php[dir] = []
-            python[dir] = []
-            rust[dir] = []
-            filelist = os.listdir(dir)
-            filelist.sort()
-            for inner in filelist:
-                # Golang
-                if os.path.splitext(inner)[1] == ".go":
-                    go[dir].append(inner)
-                # C/C++
-                elif os.path.splitext(inner)[1] == ".c":
-                    c[dir].append(inner)
-                elif os.path.splitext(inner)[1] == ".cc":
-                    cc[dir].append(inner)
-                # PHP
-                elif os.path.splitext(inner)[1] == ".php":
-                    php[dir].append(inner)
-                # Rust
-                elif os.path.splitext(inner)[1] == ".rs":
-                    rust[dir].append(inner)
-                # Java
-                elif os.path.splitext(inner)[1] == ".java":
-                    java[dir].append(inner)
-                # Javascript
-                elif os.path.splitext(inner)[1] == ".js":
-                    javascript[dir].append(inner)
-                # Python
-                elif os.path.splitext(inner)[1] == ".py":
-                    python[dir].append(inner)
+    for dir in os.listdir("./Algorithm"):
+        problems.append(dir)
+        c[dir] = []
+        cc[dir] = []
+        go[dir] = []
+        java[dir] = []
+        javascript[dir] = []
+        php[dir] = []
+        python[dir] = []
+        rust[dir] = []
+        filelist = os.listdir("./Algorithm/" + dir)
+        filelist.sort()
+        for inner in filelist:
+            # Golang
+            if os.path.splitext(inner)[1] == ".go":
+                go[dir].append(inner)
+            # C/C++
+            elif os.path.splitext(inner)[1] == ".c":
+                c[dir].append(inner)
+            elif os.path.splitext(inner)[1] == ".cc":
+                cc[dir].append(inner)
+            # PHP
+            elif os.path.splitext(inner)[1] == ".php":
+                php[dir].append(inner)
+            # Rust
+            elif os.path.splitext(inner)[1] == ".rs":
+                rust[dir].append(inner)
+            # Java
+            elif os.path.splitext(inner)[1] == ".java":
+                java[dir].append(inner)
+            # Javascript
+            elif os.path.splitext(inner)[1] == ".js":
+                javascript[dir].append(inner)
+            # Python
+            elif os.path.splitext(inner)[1] == ".py":
+                python[dir].append(inner)
     problems.sort()
 
     for problem in problems:
