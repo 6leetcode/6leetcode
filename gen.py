@@ -69,7 +69,9 @@ if __name__ == "__main__":
             php[dir] = []
             python[dir] = []
             rust[dir] = []
-            for inner in os.listdir(dir):
+            filelist = os.listdir(dir)
+            filelist.sort()
+            for inner in filelist:
                 # Golang
                 if os.path.splitext(inner)[1] == ".go":
                     go[dir].append(inner)
