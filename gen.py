@@ -51,12 +51,14 @@ if __name__ == "__main__":
     php = {}
     python = {}
     rust = {}
+    sql = {}
 
     problems = []
 
     table = []
-    table.append("|Problem|C|C++|Go|Java|JavaScript|PHP|Python|Rust|")
-    table.append("|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
+    table.append("|Problem|C|C++|Go|Java|JavaScript|PHP|Python|Rust|SQL|")
+    table.append(
+        "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
     for dir in os.listdir("./Algorithm"):
         problems.append(dir)
@@ -68,6 +70,7 @@ if __name__ == "__main__":
         php[dir] = []
         python[dir] = []
         rust[dir] = []
+        sql[dir] = []
         filelist = os.listdir("./Algorithm/" + dir)
         filelist.sort()
         for inner in filelist:
@@ -94,6 +97,23 @@ if __name__ == "__main__":
             # Python
             elif os.path.splitext(inner)[1] == ".py":
                 python[dir].append(inner)
+    for dir in os.listdir("./Database"):
+        problems.append(dir)
+        c[dir] = []
+        cc[dir] = []
+        go[dir] = []
+        java[dir] = []
+        javascript[dir] = []
+        php[dir] = []
+        python[dir] = []
+        rust[dir] = []
+        sql[dir] = []
+        filelist = os.listdir("./Database/" + dir)
+        filelist.sort()
+        for inner in filelist:
+            # SQL
+            if os.path.splitext(inner)[1] == ".sql":
+                sql[dir].append(inner)
     problems.sort()
 
     for problem in problems:
@@ -106,7 +126,8 @@ if __name__ == "__main__":
             + lang(cc[problem], problem) + "|" + lang(go[problem], problem) + "|" + \
             lang(java[problem], problem) + "|" + lang(javascript[problem], problem) + "|"+lang(php[problem], problem) + "|" + \
             lang(python[problem], problem) + "|" + \
-            lang(rust[problem], problem) + "|"
+            lang(rust[problem], problem) + "|" + \
+            lang(sql[problem], problem) + "|"
         table.append(s)
     rewrite("README.md", "\n" + "\n".join(table))
     rewrite("README_ZH.md", "\n".join(table))
