@@ -56,7 +56,7 @@ if __name__ == "__main__":
     problems = []
 
     table = []
-    table.append("|Problem|C|C++|Go|Java|JavaScript|PHP|Python|Rust|SQL|")
+    table.append("|Problem|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|")
     table.append(
         "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
