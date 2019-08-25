@@ -1,8 +1,6 @@
+#include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-#define INT_MAX 2147483647
-#define INT_MIN (-INT_MAX - 1)
 
 int reverse(int x) {
   int y = 0;
@@ -20,10 +18,7 @@ int reverse(int x) {
 
 int main(int argc, char const *argv[]) {
   int input = 12345;
-  printf("Input: %d\n", input);
+  printf("Input:  %d\n", input);
   printf("Output: %d\n", reverse(input));
   return EXIT_SUCCESS;
 }
-
-// Compile: gcc -std=c11 -o reverse.test c1.c
-// Run: ./reverse.test
