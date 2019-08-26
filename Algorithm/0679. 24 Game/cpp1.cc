@@ -4,10 +4,6 @@
 
 using namespace std;
 
-int cmpfunc(const void *a, const void *b) {
-  return (*(signed int *)b < *(signed int *)a) ? 1 : 0;
-}
-
 class Solution {
 public:
   bool judgePoint24(vector<int> &nums) {
@@ -15,7 +11,7 @@ public:
 
     int input = 0;
 
-    qsort(&nums[0], nums.size(), sizeof(int), cmpfunc);
+    sort(nums.begin(), nums.end());
 
     for (int i = 0; i < nums.size(); i++) {
       input += nums[i] * (int)(pow(10, 3 - i));
@@ -33,7 +29,9 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {3, 3, 8, 8};
+  cout << "Input:  [" << input[0] << ", " << input[1] << ", " << input[2] << ", " << input[3] << "]" << endl;
   Solution solution;
-  cout << solution.judgePoint24(input) << endl;
+  string output = solution.judgePoint24(input) ? "true" : "false";
+  cout << "Output: " << output << endl;
   return EXIT_SUCCESS;
 }
