@@ -19,16 +19,12 @@ bool isSymmetric(struct TreeNode *root) {
 }
 
 int main(int argc, char const *argv[]) {
-  struct TreeNode node1;
-  struct TreeNode node2;
-  struct TreeNode node3;
-
-  node1.val = 1;
-  node2.val = 2;
-  node3.val = 2;
+  struct TreeNode node1 = {1};
+  struct TreeNode node2 = {2};
+  struct TreeNode node3 = {2};
 
   node1.left  = &node2;
-  node2.right = &node3;
+  node1.right = &node3;
 
   node2.right = NULL;
   node2.left  = NULL;
@@ -40,5 +36,5 @@ int main(int argc, char const *argv[]) {
 
   printf("Output: %s\n", isSymmetric(&node1) ? "true" : "false");
 
-  return 0;
+  return EXIT_SUCCESS;
 }
