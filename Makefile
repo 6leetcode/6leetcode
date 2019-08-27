@@ -1,12 +1,12 @@
 format:
-	@python3 format.py
+	@python3 scripts/format.py
 
 php gcc golang java python rust node:
 	@docker-compose up --force-recreate -d $@
 	@docker-compose exec $@ /usr/bin/fish
 
 generate:
-	@python3 gen.py
+	@python3 scripts/gen.py
 
 authors:
 	printf "Authors\n=======\n\nProject's contributors:\n\n" > AUTHORS.md
