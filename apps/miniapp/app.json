@@ -4,10 +4,16 @@
     "pages/logs/logs"
   ],
   "window": {
+    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "职历",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "titleBar": "/colorui/components/titleBar/titleBar",
+    "footer": "/colorui/components/footer/footer"
   },
   "sitemapLocation": "sitemap.json"
 }

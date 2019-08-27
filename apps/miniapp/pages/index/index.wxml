@@ -1,4 +1,7 @@
-<!-- index.wxml -->
+<titleBar bgColor="bg-gradual-green" isBack="{{ false }}">
+  <view slot="content">首页</view>
+</titleBar>
+
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
