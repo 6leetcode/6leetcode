@@ -4,24 +4,22 @@ import (
 	"fmt"
 
 	"github.com/parnurzeal/gorequest"
-
-	"github.com/6leetcode/6leetcode/apps/backends/common/leetcode/cookie"
 )
 
 func (i Instance) Login() (err error) {
 	var response gorequest.Response
 	var errs []error
 
-	type body struct {
+	type loginBody struct {
 		Csrfmiddlewaretoken string `json:"csrfmiddlewaretoken"`
 		Login               string `json:"login"`
 		Password            string `json:"password"`
 		Next                string `json:"next"`
 	}
 
-	var b = body{i.csrftoken, "itosone", "8541539655a", "/problemset/all/"}
+	var b = loginBody{i.csrftoken, i.UserName, i.Password, "/problemset/all/"}
 
-	if response, _, errs = i.request.
+	if response, _, errs = gorequest.New().
 		Post("https://leetcode.com/accounts/login").
 		Set("Referer", "https://leetcode.com/accounts/login/").
 		Set("x-csrftoken", i.csrftoken).
@@ -31,20 +29,20 @@ func (i Instance) Login() (err error) {
 		Set("Connection", "keep-alive").
 		Set("cookie", fmt.Sprintf("csrftoken=%s; __cfduid=%s", i.csrftoken, __cfduid)).
 		Type("multipart").
-		SendStruct(b).EndBytes(); len(errs) != 0 {
+		Send(b).EndBytes(); len(errs) != 0 {
 		err = errs[len(errs)-1]
 		return
 	}
 
 	for _, cookie := range response.Request.Response.Cookies() {
-		fmt.Println(cookie.Name, cookie.Value)
+		if cookie.Name == "csrftoken" {
+			i.csrftoken = cookie.Value
+		} else if cookie.Name == "LEETCODE_SESSION" {
+			i.session = cookie.Value
+		}
 	}
 
-	fmt.Println(response.Request.Response.Cookies())
-
-	var cookie = cookie.Parse(response.Header.Get("Set-Cookie"))
-
-	fmt.Println(cookie)
+	fmt.Println(i)
 
 	return
 }
