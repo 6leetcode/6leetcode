@@ -944,13 +944,13 @@ func (e *Encoder) kMapCanonical(rtkey reflect.Type, rv reflect.Value, mks []refl
 			e.encodeValue(rv.MapIndex(mksv[i].r), valFn, true)
 		}
 	case reflect.Uint8, reflect.Uint16, reflect.Uint32, reflect.Uint64, reflect.Uint, reflect.Uintptr:
-		mksv := make([]uint64Rv, len(mks))
+		mksv := make([]uintRv, len(mks))
 		for i, k := range mks {
 			v := &mksv[i]
 			v.r = k
 			v.v = k.Uint()
 		}
-		sort.Sort(uint64RvSlice(mksv))
+		sort.Sort(uintRvSlice(mksv))
 		for i := range mksv {
 			if elemsep {
 				ee.WriteMapElemKey()
@@ -962,13 +962,13 @@ func (e *Encoder) kMapCanonical(rtkey reflect.Type, rv reflect.Value, mks []refl
 			e.encodeValue(rv.MapIndex(mksv[i].r), valFn, true)
 		}
 	case reflect.Int8, reflect.Int16, reflect.Int32, reflect.Int64, reflect.Int:
-		mksv := make([]int64Rv, len(mks))
+		mksv := make([]intRv, len(mks))
 		for i, k := range mks {
 			v := &mksv[i]
 			v.r = k
 			v.v = k.Int()
 		}
-		sort.Sort(int64RvSlice(mksv))
+		sort.Sort(intRvSlice(mksv))
 		for i := range mksv {
 			if elemsep {
 				ee.WriteMapElemKey()
@@ -980,13 +980,13 @@ func (e *Encoder) kMapCanonical(rtkey reflect.Type, rv reflect.Value, mks []refl
 			e.encodeValue(rv.MapIndex(mksv[i].r), valFn, true)
 		}
 	case reflect.Float32:
-		mksv := make([]float64Rv, len(mks))
+		mksv := make([]floatRv, len(mks))
 		for i, k := range mks {
 			v := &mksv[i]
 			v.r = k
 			v.v = k.Float()
 		}
-		sort.Sort(float64RvSlice(mksv))
+		sort.Sort(floatRvSlice(mksv))
 		for i := range mksv {
 			if elemsep {
 				ee.WriteMapElemKey()
@@ -998,13 +998,13 @@ func (e *Encoder) kMapCanonical(rtkey reflect.Type, rv reflect.Value, mks []refl
 			e.encodeValue(rv.MapIndex(mksv[i].r), valFn, true)
 		}
 	case reflect.Float64:
-		mksv := make([]float64Rv, len(mks))
+		mksv := make([]floatRv, len(mks))
 		for i, k := range mks {
 			v := &mksv[i]
 			v.r = k
 			v.v = k.Float()
 		}
-		sort.Sort(float64RvSlice(mksv))
+		sort.Sort(floatRvSlice(mksv))
 		for i := range mksv {
 			if elemsep {
 				ee.WriteMapElemKey()
@@ -1492,15 +1492,13 @@ func (e *Encoder) mustEncode(v interface{}) {
 	e.wf.calls++
 
 	e.encode(v)
+	e.e.atEndOfEncode()
+	e.w.end()
 
 	e.wf.calls--
 
-	if e.wf.calls == 0 {
-		e.e.atEndOfEncode()
-		e.w.end()
-		if !e.h.ExplicitRelease {
-			e.wf.release()
-		}
+	if !e.h.ExplicitRelease && e.wf.calls == 0 {
+		e.wf.release()
 	}
 }
 

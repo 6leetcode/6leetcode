@@ -384,11 +384,7 @@ func (e *msgpackEncDriver) EncodeString(c charEncoding, s string) {
 
 func (e *msgpackEncDriver) EncodeStringEnc(c charEncoding, s string) {
 	slen := len(s)
-	if e.h.WriteExt {
-		e.writeContainerLen(msgpackContainerStr, slen)
-	} else {
-		e.writeContainerLen(msgpackContainerRawLegacy, slen)
-	}
+	e.writeContainerLen(msgpackContainerStr, slen)
 	if slen > 0 {
 		e.w.writestr(s)
 	}
@@ -525,7 +521,7 @@ func (d *msgpackDecDriver) DecodeNaked() {
 			n.v = valueTypeInt
 			n.i = int64(int8(bd))
 		case bd == mpStr8, bd == mpStr16, bd == mpStr32, bd >= mpFixStrMin && bd <= mpFixStrMax:
-			if d.h.WriteExt || d.h.RawToString {
+			if d.h.WriteExt {
 				n.v = valueTypeString
 				n.s = d.DecodeString()
 			} else {
@@ -771,7 +767,7 @@ func (d *msgpackDecDriver) ContainerType() (vt valueType) {
 	} else if bd == mpBin8 || bd == mpBin16 || bd == mpBin32 {
 		return valueTypeBytes
 	} else if bd == mpStr8 || bd == mpStr16 || bd == mpStr32 || (bd >= mpFixStrMin && bd <= mpFixStrMax) {
-		if d.h.WriteExt || d.h.RawToString { // UTF-8 string (new spec)
+		if d.h.WriteExt { // UTF-8 string (new spec)
 			return valueTypeString
 		}
 		return valueTypeBytes // raw (old spec)

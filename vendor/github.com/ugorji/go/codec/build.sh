@@ -116,66 +116,60 @@ run("fast-path.go.tmpl", "fast-path.generated.go")
 run("gen-helper.go.tmpl", "gen-helper.generated.go")
 run("mammoth-test.go.tmpl", "mammoth_generated_test.go")
 run("mammoth2-test.go.tmpl", "mammoth2_generated_test.go")
-// run("sort-slice.go.tmpl", "sort-slice.generated.go")
 }
 EOF
 
-    sed -e 's+// __DO_NOT_REMOVE__NEEDED_FOR_REPLACING__IMPORT_PATH__FOR_CODEC_BENCH__+import . "github.com/ugorji/go/codec"+' \
-        shared_test.go > bench/shared_test.go
-
     # explicitly return 0 if this passes, else return 1
-    go run -tags "prebuild" prebuild.go || return 1
-    go run -tags "notfastpath safe codecgen.exec" gen-from-tmpl.generated.go || return 1
-    rm -f gen-from-tmpl.*generated.go
-    return 0
+    go run -tags "notfastpath safe codecgen.exec" gen-from-tmpl.generated.go &&
+        rm -f gen-from-tmpl.*generated.go &&
+        return 0
+    return 1
 }
 
 _codegenerators() {
-    local c5="_generated_test.go"
-    local c7="$PWD/codecgen"
-    local c8="$c7/__codecgen"
-    local c9="codecgen-scratch.go"
+    if ! [[ $zforce || $(_ng "values_codecgen${zsfx}") ]]; then return 0; fi
 
-    if ! [[ $zforce || $(_ng "values_codecgen${c5}") ]]; then return 0; fi
-    
     # Note: ensure you run the codecgen for this codebase/directory i.e. ./codecgen/codecgen
+    local c9="codecgen-scratch.go"
+    local c7="$zmydir/codecgen"
     true &&
         echo "codecgen ... " &&
-        if [[ $zforce || ! -f "$c8" || "$c7/gen.go" -nt "$c8" ]]; then
-            echo "rebuilding codecgen ... " && ( cd codecgen && go build -o $c8 ${zargs[*]} . )
+        if [[ $zforce || ! -f "$c7/codecgen" || "$c7/gen.go" -nt "$c7/codecgen" ]]; then
+            echo "rebuilding codecgen ... " && ( cd codecgen && go build -o codecgen ${zargs[*]} . )
         fi &&
-        $c8 -rt codecgen -t 'codecgen generated' -o values_codecgen${c5} -d 19780 $zfin $zfin2 &&
+        $c7/codecgen -rt codecgen -t 'codecgen generated' -o values_codecgen${zsfx} -d 19780 $zfin $zfin2 &&
         cp mammoth2_generated_test.go $c9 &&
-        $c8 -t '!notfastpath' -o mammoth2_codecgen${c5} -d 19781 mammoth2_generated_test.go &&
+        $c7/codecgen -t '!notfastpath' -o mammoth2_codecgen${zsfx} -d 19781 mammoth2_generated_test.go &&
         rm -f $c9 &&
         echo "generators done!" 
 }
 
 _prebuild() {
-    echo "prebuild: zforce: $zforce"
-    local d="$PWD"
+    echo "prebuild: zforce: $zforce , zexternal: $zexternal"
+    zmydir=`pwd`
     zfin="test_values.generated.go"
     zfin2="test_values_flex.generated.go"
-    zpkg="github.com/ugorji/go/codec"
-    # zpkg=${d##*/src/}
-    # zgobase=${d%%/src/*}
+    zsfx="_generated_test.go"
+    # zpkg="ugorji.net/codec"
+    zpkg=${zmydir##*/src/}
+    zgobase=${zmydir%%/src/*}
     # rm -f *_generated_test.go 
     rm -f codecgen-*.go &&
         _build &&
-        cp $d/values_test.go $d/$zfin &&
-        cp $d/values_flex_test.go $d/$zfin2 &&
+        cp $zmydir/values_test.go $zmydir/$zfin &&
+        cp $zmydir/values_flex_test.go $zmydir/$zfin2 &&
         _codegenerators &&
         if [[ "$(type -t _codegenerators_external )" = "function" ]]; then _codegenerators_external ; fi &&
         if [[ $zforce ]]; then go install ${zargs[*]} .; fi &&
         echo "prebuild done successfully"
-    rm -f $d/$zfin $d/$zfin2
-    unset zfin zfin2 zpkg
+    rm -f $zmydir/$zfin $zmydir/$zfin2 
 }
 
 _make() {
     zforce=1
+    zexternal=1
     (cd codecgen && go install ${zargs[*]} .) && _prebuild && go install ${zargs[*]} .
-    unset zforce
+    unset zforce zexternal
 }
 
 _clean() {
@@ -232,14 +226,15 @@ EOF
 _main() {
     if [[ -z "$1" ]]; then _usage; return 1; fi
     local x
-    unset zforce
+    unset zforce zexternal
     zargs=()
     zbenchflags=""
     OPTIND=1
-    while getopts ":ctmnrgpfvlzdb:" flag
+    while getopts ":ctmnrgupfvxlzdb:" flag
     do
         case "x$flag" in
             'xf') zforce=1 ;;
+            'xx') zexternal=1 ;;
             'xv') zverbose=1 ;;
             'xl') zargs+=("-gcflags"); zargs+=("-l=4") ;;
             'xn') zargs+=("-gcflags"); zargs+=("-m=2") ;;
@@ -256,12 +251,13 @@ _main() {
         'xm') _make "$@" ;;
         'xr') _release "$@" ;;
         'xg') _go ;;
+        'xu') _githubupdate ;;
         'xp') _prebuild "$@" ;;
         'xc') _clean "$@" ;;
         'xz') _analyze "$@" ;;
         'xb') _bench "$@" ;;
     esac
-    unset zforce zargs zbenchflags
+    unset zforce zexternal 
 }
 
 [ "." = `dirname $0` ] && _main "$@"
