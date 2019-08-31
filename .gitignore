@@ -36,7 +36,10 @@ $HOME/
 *.test
 *.*~
 *.class
+*.db
+apps/backends/config.yml
 
+apps/backends/release/
 .idea/
 .vscode/
 venv/

@@ -1,0 +1,39 @@
+version: "3.7"
+
+services:
+  leetcode:
+    container_name: leetcode
+    hostname: leetcode
+    build:
+      context: $PWD
+      dockerfile: docker.release.Dockerfile
+    image: leetcode:release
+    command: ["leetcode-linux", "server"]
+    restart: always
+    networks:
+      - default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=4000"
+      - "traefik.frontend.rule=Host:leetcode${HOST_DOMAIN}"
+  leetcode-dev:
+    container_name: leetcode-dev
+    hostname: leetcode-dev
+    build:
+      context: $PWD
+      dockerfile: docker.dev.Dockerfile
+    image: leetcode:dev
+    restart: always
+    tty: true
+    networks:
+      - default
+    volumes:
+      - ${VOLUME_PREFIX}/leetcode:/app
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=4000"
+      - "traefik.frontend.rule=Host:test${HOST_DOMAIN}"
+networks:
+  default:
+    external:
+      name: ${DOCKER_NETWORK:-webproxy}

@@ -3,8 +3,10 @@ package cmd
 import (
 	"fmt"
 
+	"github.com/6leetcode/6leetcode/apps/backends/cmd/crawler"
 	"github.com/6leetcode/6leetcode/apps/backends/cmd/server"
 	"github.com/6leetcode/6leetcode/apps/backends/cmd/version"
+	"github.com/6leetcode/6leetcode/apps/backends/common/table"
 
 	"github.com/Unknwon/com"
 	"github.com/spf13/cobra"
@@ -27,9 +29,29 @@ func init() {
 			}
 		},
 	}
+
 	serverCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
 
-	RootCmd.AddCommand(serverCmd) // crawler commander
+	RootCmd.AddCommand(serverCmd) // server commander
+
+	var crawlerCmd = &cobra.Command{
+		Use:   "crawler",
+		Short: "Travel all of the github organizations, users and repositories.",
+		Long:  `Travel all of the github organizations, users and repositories.`,
+		Args:  cobra.MinimumNArgs(0),
+		Run: func(_ *cobra.Command, _ []string) {
+			var err error
+			if err = table.Initialize(); err != nil {
+				fmt.Printf("Got error: %+v\n", err)
+				return
+			}
+			if err = crawler.Initialize(); err != nil {
+				fmt.Printf("Got error: %+v\n", err)
+			}
+		},
+	}
+
+	RootCmd.AddCommand(crawlerCmd) // crawler commander
 
 	var versionCmd = &cobra.Command{
 		Use:   "version",
@@ -39,6 +61,7 @@ func init() {
 			version.Initialize()
 		},
 	}
+
 	RootCmd.AddCommand(versionCmd) // version commander
 
 	viper.SetConfigType("yaml")
@@ -48,7 +71,7 @@ func init() {
 		logging.Fatal("Cannot find config file. Please check.")
 	}
 	if err := viper.ReadInConfig(); err != nil {
-		logging.Panic("Cannot find the special config file.")
+		logging.Panic("Cannot find the specified config file.")
 	}
 
 	RootCmd.Use = viper.GetString("AppName")
