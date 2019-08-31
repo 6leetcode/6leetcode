@@ -31,11 +31,16 @@ func (q *Questions) Create() (err error) {
 
 // QuestionInfo ..
 type QuestionInfo struct {
-	gorm.Model         `json:"-"`
-	QuestionID         int
-	FrontendQuestionID int
-	Content            []byte `json:"content"`
-	TranslatedContent  []byte `json:"translatedContent"`
+	gorm.Model            `json:"-"`
+	QuestionID            int
+	FrontendQuestionID    int
+	CodeSnippets          []byte
+	Content               []byte
+	LangToValidPlayground []byte
+	SimilarQuestions      []byte
+	Stats                 []byte
+	TopicTags             []byte
+	TranslatedContent     []byte
 }
 
 // Create ..

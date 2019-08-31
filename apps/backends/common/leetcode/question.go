@@ -37,15 +37,29 @@ func (i *Instance) Question(titleSlug string) (err error) {
 	type body struct {
 		Data struct {
 			Question struct {
-				Difficulty         string  `json:"difficulty"`
-				IsPaidOnly         bool    `json:"isPaidOnly"`
-				QuestionFrontendID string  `json:"questionFrontendId"`
-				QuestionId         string  `json:"questionId"`
-				Status             *string `json:"status"`
-				Title              string  `json:"title"`
-				TitleSlug          string  `json:"titleSlug"`
-				Content            string  `json:"content"`
-				TranslatedContent  string  `json:"translatedContent"`
+				BoundTopicID int `json:"boundTopicId"`
+				CodeSnippets []struct {
+					Code     string `json:"code"`
+					Lang     string `json:"lang"`
+					LangSlug string `json:"langSlug"`
+				} `json:"codeSnippets"`
+				Content               string  `json:"content"`
+				Difficulty            string  `json:"difficulty"`
+				IsPaidOnly            bool    `json:"isPaidOnly"`
+				LangToValidPlayground string  `json:"langToValidPlayground"`
+				QuestionFrontendID    string  `json:"questionFrontendId"`
+				QuestionId            string  `json:"questionId"`
+				SimilarQuestions      string  `json:"similarQuestions"`
+				Stats                 string  `json:"stats"`
+				Status                *string `json:"status"`
+				Title                 string  `json:"title"`
+				TitleSlug             string  `json:"titleSlug"`
+				TopicTags             []struct {
+					Name           string `json:"name"`
+					Slug           string `json:"slug"`
+					TranslatedName string `json:"translatedName"`
+				} `json:"topicTags"`
+				TranslatedContent string `json:"translatedContent"`
 			} `json:"question"`
 		} `json:"data"`
 	}
@@ -64,11 +78,26 @@ func (i *Instance) Question(titleSlug string) (err error) {
 		return
 	}
 
+	var codeSnippets []byte
+	if codeSnippets, err = json.Marshal(b.Data.Question.CodeSnippets); err != nil {
+		return
+	}
+
+	var topicTags []byte
+	if topicTags, err = json.Marshal(b.Data.Question.TopicTags); err != nil {
+		return
+	}
+
 	var questionInfo = &table.QuestionInfo{
-		QuestionID:         qid,
-		FrontendQuestionID: fqid,
-		Content:            []byte(b.Data.Question.Content),
-		TranslatedContent:  []byte(b.Data.Question.TranslatedContent),
+		QuestionID:            qid,
+		FrontendQuestionID:    fqid,
+		Content:               []byte(b.Data.Question.Content),
+		CodeSnippets:          codeSnippets,
+		LangToValidPlayground: []byte(b.Data.Question.LangToValidPlayground),
+		SimilarQuestions:      []byte(b.Data.Question.SimilarQuestions),
+		Stats:                 []byte(b.Data.Question.Stats),
+		TopicTags:             topicTags,
+		TranslatedContent:     []byte(b.Data.Question.TranslatedContent),
 	}
 
 	if err = questionInfo.Create(); err != nil {
