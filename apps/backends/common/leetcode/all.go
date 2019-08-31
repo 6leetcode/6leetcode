@@ -2,9 +2,10 @@ package leetcode
 
 import (
 	"encoding/json"
-	"fmt"
+	"strconv"
 
 	"github.com/parnurzeal/gorequest"
+	"github.com/spf13/viper"
 	"github.com/tosone/logging"
 
 	"github.com/6leetcode/6leetcode/apps/backends/common/table"
@@ -16,53 +17,38 @@ func (i *Instance) All() (err error) {
 
 	var data []byte
 
-	if response, data, errs = gorequest.New().
-		Get("https://leetcode-cn.com/api/problems/all/").
-		Set("accept", "application/json, text/javascript, */*; q=0.01").
-		Set("content-type", "application/json").
+	if response, data, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
+		Post("https://leetcode-cn.com/graphql").
+		Set("origin", "https://leetcode-cn.com").
 		Set("referer", "https://leetcode-cn.com/problemset/all/").
+		Set("user-agent", user_agent).
+		Set("x-csrftoken", i.csrftoken).
 		AddCookies(i.cookie).
+		Type("json").
+		Send(`{"operationName":"allQuestions","variables":{},"query":"query allQuestions {\n  allQuestions {\n    ...questionSummaryFields\n    __typename\n  }\n}\n\nfragment questionSummaryFields on QuestionNode {\n  title\n  titleSlug\n  translatedTitle\n  questionId\n  questionFrontendId\n  status\n  difficulty\n  isPaidOnly\n  categoryTitle\n  __typename\n}\n"}`).
 		EndBytes(); len(errs) != 0 {
 		err = errs[len(errs)-1]
 		return
 	}
+
 	if response.Request.Response != nil {
 		i.cookie = response.Request.Response.Cookies()
 	}
 
 	type body struct {
-		AcEasy          int    `json:"ac_easy"`
-		AcHard          int    `json:"ac_hard"`
-		AcMedium        int    `json:"ac_medium"`
-		CategorySlug    string `json:"category_slug"`
-		FrequencyHigh   int    `json:"frequency_high"`
-		FrequencyMid    int    `json:"frequency_mid"`
-		NumSolved       int    `json:"num_solved"`
-		NumTotal        int    `json:"num_total"`
-		StatStatusPairs []struct {
-			Difficulty struct {
-				Level int `json:"level"`
-			} `json:"difficulty"`
-			Frequency int  `json:"frequency"`
-			IsFavor   bool `json:"is_favor"`
-			PaidOnly  bool `json:"paid_only"`
-			Progress  int  `json:"progress"`
-			Stat      struct {
-				FrontendQuestionID  int    `json:"frontend_question_id"`
-				IsNewQuestion       bool   `json:"is_new_question"`
-				QuestionArticleLive bool   `json:"question__article__live"`
-				QuestionArticleSlug string `json:"question__article__slug"`
-				QuestionHide        bool   `json:"question__hide"`
-				QuestionTitle       string `json:"question__title"`
-				QuestionTitleSlug   string `json:"question__title_slug"`
-				QuestionID          int    `json:"question_id"`
-				TotalAcs            int    `json:"total_acs"`
-				TotalColumnArticles int    `json:"total_column_articles"`
-				TotalSubmitted      int    `json:"total_submitted"`
-			} `json:"stat"`
-			Status *string `json:"status"`
-		} `json:"stat_status_pairs"`
-		UserName string `json:"user_name"`
+		Data struct {
+			AllQuestions []struct {
+				CategoryTitle      string  `json:"categoryTitle"`
+				Difficulty         string  `json:"difficulty"`
+				IsPaidOnly         bool    `json:"isPaidOnly"`
+				QuestionFrontendID string  `json:"questionFrontendId"`
+				QuestionId         string  `json:"questionId"`
+				Status             *string `json:"status"`
+				Title              string  `json:"title"`
+				TitleSlug          string  `json:"titleSlug"`
+				TranslatedTitle    string  `json:"translatedTitle"`
+			} `json:"allQuestions"`
+		} `json:"data"`
 	}
 
 	var b body
@@ -71,22 +57,31 @@ func (i *Instance) All() (err error) {
 		return
 	}
 
-	for _, question := range b.StatStatusPairs {
+	for _, question := range b.Data.AllQuestions {
+		var qid, fqid int
+		if qid, err = strconv.Atoi(question.QuestionId); err != nil {
+			continue
+		}
+		if fqid, err = strconv.Atoi(question.QuestionFrontendID); err != nil {
+			continue
+		}
 		var q = &table.Questions{
-			QuestionID:         question.Stat.QuestionID,
-			FrontendQuestionID: question.Stat.FrontendQuestionID,
-			Difficulty:         question.Difficulty.Level,
-			PaidOnly:           question.PaidOnly,
-			Title:              question.Stat.QuestionTitle,
-			TitleSlug:          question.Stat.QuestionTitleSlug,
-			TotalAcs:           question.Stat.TotalAcs,
-			TotalSubmitted:     question.Stat.TotalSubmitted,
+			QuestionID:         qid,
+			FrontendQuestionID: fqid,
+			Difficulty:         question.Difficulty,
+			PaidOnly:           question.IsPaidOnly,
+			Title:              question.Title,
+			TitleSlug:          question.TitleSlug,
+			TranslatedTitle:    question.TranslatedTitle,
+			CategoryTitle:      question.CategoryTitle,
 		}
 		if err := q.Create(); err != nil {
 			logging.Error(err)
 		}
+		if err := i.Question(question.TitleSlug); err != nil {
+			logging.Error(err)
+		}
 	}
 
-	fmt.Println(b)
 	return
 }
