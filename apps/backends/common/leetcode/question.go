@@ -6,18 +6,19 @@ import (
 	"strconv"
 
 	"github.com/parnurzeal/gorequest"
+	"github.com/spf13/viper"
 
 	"github.com/6leetcode/6leetcode/apps/backends/common/table"
 )
 
-func (i *Instance) Question(titleSlug string) (err error) {
+func (i *Instance) Question(titleSlug string, q *table.Questions) (err error) {
 	var query = fmt.Sprintf(`{"operationName":"questionData","variables":{"titleSlug":"%s"},"query":"query questionData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    boundTopicId\n    title\n    titleSlug\n    content\n    translatedTitle\n    translatedContent\n    isPaidOnly\n    difficulty\n    likes\n    dislikes\n    isLiked\n    similarQuestions\n    contributors {\n      username\n      profileUrl\n      avatarUrl\n      __typename\n    }\n    langToValidPlayground\n    topicTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    companyTagStats\n    codeSnippets {\n      lang\n      langSlug\n      code\n      __typename\n    }\n    stats\n    hints\n    solution {\n      id\n      canSeeDetail\n      __typename\n    }\n    status\n    sampleTestCase\n    metaData\n    judgerAvailable\n    judgeType\n    mysqlSchemas\n    enableRunCode\n    enableTestMode\n    envInfo\n    __typename\n  }\n}\n"}`, titleSlug)
 
 	var response gorequest.Response
 	var errs []error
 	var data []byte
 
-	if response, data, errs = gorequest.New().
+	if response, data, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
 		Post("https://leetcode-cn.com/graphql").
 		Set("origin", "https://leetcode-cn.com").
 		Set("referer", "https://leetcode-cn.com/problemset/all/").
@@ -88,7 +89,7 @@ func (i *Instance) Question(titleSlug string) (err error) {
 		return
 	}
 
-	var questionInfo = &table.QuestionInfo{
+	var questionInfo = table.QuestionInfo{
 		QuestionID:            qid,
 		FrontendQuestionID:    fqid,
 		Content:               []byte(b.Data.Question.Content),
@@ -101,6 +102,12 @@ func (i *Instance) Question(titleSlug string) (err error) {
 	}
 
 	if err = questionInfo.Create(); err != nil {
+		return
+	}
+
+	q.QuestionInfoRefer = questionInfo.ID
+
+	if err = q.Create(); err != nil {
 		return
 	}
 

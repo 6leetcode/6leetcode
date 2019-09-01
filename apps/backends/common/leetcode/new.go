@@ -10,9 +10,10 @@ type Instance struct {
 	cookie     []*http.Cookie
 }
 
-func New() (instance *Instance) {
+func New() (instance *Instance, err error) {
 	instance = &Instance{
 		user_agent: user_agent,
 	}
+	err = instance.Login()
 	return
 }

@@ -78,7 +78,7 @@ func (i *Instance) All() (err error) {
 		if err := q.Create(); err != nil {
 			logging.Error(err)
 		}
-		if err := i.Question(question.TitleSlug); err != nil {
+		if err := i.Question(question.TitleSlug, q); err != nil {
 			logging.Error(err)
 		}
 	}

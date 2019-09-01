@@ -23,7 +23,7 @@ func (i *Instance) Login() (err error) {
 
 	var b = loginBody{i.csrftoken, viper.GetString("Login.Name"), viper.GetString("Login.Password"), "/problemset/all/"}
 
-	if response, _, errs = gorequest.New().
+	if response, _, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
 		Post("https://leetcode-cn.com/accounts/login").
 		Set("Referer", "https://leetcode-cn.com/").
 		Set("origin", "https://leetcode-cn.com").

@@ -5,8 +5,13 @@ import (
 )
 
 func Initialize() (err error) {
-	var instance = leetcode.New()
-	instance.Login()
-	instance.All()
-	return 
+	var instance *leetcode.Instance
+
+	if instance, err = leetcode.New(); err != nil {
+		return
+	}
+
+	err = instance.All()
+
+	return
 }

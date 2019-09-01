@@ -2,3 +2,6 @@ Debug: true
 Login:
   name: # leetcode username
   password: # leetcode password
+Database:
+  Engine: sqlite3 # DB type
+  Path: database.db

@@ -6,6 +6,8 @@ import (
 
 type Questions struct {
 	gorm.Model         `json:"-"`
+	QuestionInfo       QuestionInfo `gorm:"foreignkey:QuestionInfoRefer"`
+	QuestionInfoRefer  uint
 	QuestionID         int
 	FrontendQuestionID int
 	Difficulty         string
