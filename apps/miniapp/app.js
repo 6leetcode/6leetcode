@@ -6,7 +6,7 @@ App({
     userInfoAuth: false,
     URLPrefix: "http://6leetcode.tosone.cn:4000"
   },
-  onLaunch: function() {
+  onLaunch: function () {
     wx.getSystemInfo({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;

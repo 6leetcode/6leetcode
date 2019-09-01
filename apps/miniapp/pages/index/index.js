@@ -6,11 +6,11 @@ Page({
   data: {
     questions: null
   },
-  onLoad: function() {
+  onLoad: function () {
     this.refresh();
     this.loadQuestions();
   },
-  loadQuestions: function() {
+  loadQuestions: function () {
     let userInfo = wx.getStorageSync('userInfo');
     if (userInfo.nickName && userInfo.nickName != "") {
       wx.request({
@@ -38,7 +38,7 @@ Page({
       });
     }
   },
-  refresh: function() {
+  refresh: function () {
     let userInfo = wx.getStorageSync('userInfo');
     if (!(userInfo.nickName && userInfo.nickName != "")) {
       wx.showModal({

@@ -3772,7 +3772,8 @@ scroll-view.cu-steps .cu-item {
   pointer-events: none;
 }
 
-/* ==================文本====================*/ .text-xs {
+/* ==================文本====================*/
+.text-xs {
   font-size: 20rpx;
 }
 
