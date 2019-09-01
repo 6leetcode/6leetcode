@@ -1,19 +1,28 @@
-const formatTime = date => {
-  const year = date.getFullYear()
-  const month = date.getMonth() + 1
-  const day = date.getDate()
-  const hour = date.getHours()
-  const minute = date.getMinutes()
-  const second = date.getSeconds()
-
-  return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+const tipModal = tip => {
+  wx.showModal({
+    title: '提示',
+    content: tip,
+    showCancel: false,
+    success(res) {
+      if (res.confirm) {
+        console.log('用户点击确定')
+      }
+    }
+  });
 }
 
-const formatNumber = n => {
-  n = n.toString()
-  return n[1] ? n : '0' + n
+const coutNum = num => {
+  if (num > 1000 && num < 10000) {
+    num = (num / 1000).toFixed(1) + 'k';
+  } else if (num > 10000) {
+    num = (num / 10000).toFixed(1) + 'w';
+  } else if (num > 1000000) {
+    num = (num / 1000000).toFixed(1) + 'm';
+  }
+  return num;
 }
 
 module.exports = {
-  formatTime: formatTime
-}
+  tipModal: tipModal,
+  coutNum: coutNum
+};

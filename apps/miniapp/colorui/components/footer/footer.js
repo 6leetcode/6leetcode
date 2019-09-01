@@ -13,17 +13,26 @@ Component({
     route: ''
   },
   methods: {
-    toMy() {
+    toMe() {
+      if (this.data.route == "pages/me/index") {
+        return;
+      }
       wx.navigateTo({
-        url: '/pages/my/index'
+        url: '/pages/me/index'
       });
     },
     toHome() {
+      if (this.data.route == "pages/index/index") {
+        return;
+      }
       wx.navigateTo({
         url: '/pages/index/index'
       });
     },
     toNews() {
+      if (this.data.route == "pages/news/index") {
+        return;
+      }
       wx.navigateTo({
         url: '/pages/news/index'
       });

@@ -65,4 +65,4 @@
   </view>
 </view>
 
-<footer select-item='my' />
+<footer select-item='me' />

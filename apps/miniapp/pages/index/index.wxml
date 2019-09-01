@@ -2,18 +2,17 @@
   <view slot="content">首页</view>
 </titleBar>
 
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-      获取头像昵称
-    </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view class="cu-list menu">
+  <view class="cu-item" bindtap="toMeInfo" wx:for="{{ questions }}" wx:key="ID" wx:for-index="idx">
+    <view class="content">
+      <text class="text-grey">{{ item.frontend_question_id }}. {{ item.translated_title }}</text>
+      <text wx:if="{{ item.paid_only }}" class="cuIcon-lock text-red"></text>
+    </view>
+    <view class="action">
+      <view class="cu-tag round bg-red light" wx:if="{{ item.difficulty == 'Hard' }}">简单</view>
+      <view class="cu-tag round bg-yellow light" wx:if="{{ item.difficulty == 'Medium' }}">中等</view>
+      <view class="cu-tag round bg-green light" wx:if="{{ item.difficulty == 'Easy' }}">困难</view>
+    </view>
   </view>
 </view>
 

@@ -1,58 +1,44 @@
-//index.js
-//获取应用实例
-const app = getApp()
+const app = getApp();
+
+const _ = require('../../utils/lodash');
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    questions: null
   },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
+  onLoad: function() {
     this.refresh();
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
+    this.loadQuestions();
+  },
+  loadQuestions: function() {
+    let userInfo = wx.getStorageSync('userInfo');
+    if (userInfo.nickName && userInfo.nickName != "") {
+      wx.request({
+        url: app.globalData.URLPrefix + '/all',
         success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
+          if (res.data.code == 200) {
+            res.data.questions = _.sortBy(res.data.questions, [function (o) { return o.frontend_question_id; }]);
+            for (let i = 0; i < res.data.questions.length; i++) {
+              if (res.data.questions[i].frontend_question_id < 10) {
+                res.data.questions[i].frontend_question_id = "000" + res.data.questions[i].frontend_question_id;
+              } else if (res.data.questions[i].frontend_question_id < 100) {
+                res.data.questions[i].frontend_question_id = "00" + res.data.questions[i].frontend_question_id;
+              } else if (res.data.questions[i].frontend_question_id < 1000) {
+                res.data.questions[i].frontend_question_id = "0" + res.data.questions[i].frontend_question_id;
+              }
+            }
+            this.setData({
+              questions: res.data.questions
+            });
+          }
+        },
+        fail: e => {
+          console.log(e)
         }
-      })
+      });
     }
   },
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }, 
-  refresh: function () {
+  refresh: function() {
     let userInfo = wx.getStorageSync('userInfo');
     if (!(userInfo.nickName && userInfo.nickName != "")) {
       wx.showModal({
@@ -61,14 +47,13 @@ Page({
         success(res) {
           if (res.confirm) {
             wx.navigateTo({
-              url: '/pages/my/index',
+              url: '/pages/me/index',
             });
           } else if (res.cancel) {
             console.log('用户点击取消');
           }
         }
       });
-      return;
     }
   }
 })

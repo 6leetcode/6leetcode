@@ -7,8 +7,8 @@
     <view class="cuIcon-{{ selectItem == 'news' ? 'newsfill' : 'news' }} {{ selectItem == 'news' ? 'text-green' : 'text-gray' }}"></view>
     <view class="{{ selectItem == 'news' ? 'text-green' : 'text-gray' }}">文章</view>
   </view>
-  <view class="action" bindtap="toMy">
-    <view class="cuIcon-{{ selectItem == 'my' ? 'myfill' : 'my' }} {{ selectItem == 'my' ? 'text-green' : 'text-gray' }}"></view>
-    <view class="{{ selectItem == 'my' ? 'text-green' : 'text-gray' }}">我</view>
+  <view class="action" bindtap="toMe">
+    <view class="cuIcon-{{ selectItem == 'me' ? 'myfill' : 'my' }} {{ selectItem == 'me' ? 'text-green' : 'text-gray' }}"></view>
+    <view class="{{ selectItem == 'me' ? 'text-green' : 'text-gray' }}">我</view>
   </view>
 </view>

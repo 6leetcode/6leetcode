@@ -1,3 +1,5 @@
+const login = require('./utils/login');
+
 App({
   globalData: {
     userInfo: null,
@@ -13,7 +15,14 @@ App({
         this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
       }
     });
-
+    // wx.getSetting({
+    //   success: res => {
+    //     this.globalData.userInfoAuth = res.authSetting['scope.userInfo'];
+    //   },
+    //   fail: e => {
+    //     console.log(e);
+    //   }
+    // });
     wx.getSetting({
       success: res => {
         this.globalData.userInfoAuth = res.authSetting['scope.userInfo'];
@@ -23,36 +32,52 @@ App({
       }
     });
 
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // 可以将 res 发送给后台解码出 unionId
-              this.globalData.userInfo = res.userInfo
-
-              // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-              // 所以此处加入 callback 以防止这种情况
-              if (this.userInfoReadyCallback) {
-                this.userInfoReadyCallback(res)
-              }
+    let userInfo = wx.getStorageSync('userInfo');
+    if (!(userInfo.openId && userInfo.openId != '')) {
+      login.openId(this);
+    } else {
+      this.globalData.userInfo = userInfo;
+      let that = this;
+      if (userInfo.phone && userInfo.phone != '') {
+        wx.request({
+          url: that.globalData.URLPrefix + "/user/push/original",
+          method: "POST",
+          header: {
+            AuthId: that.globalData.userInfo.openId
+          },
+          data: userInfo,
+          success: res => {
+            if (res.data.code == 200) {
+              that.globalData.userInfo.userId = res.data.userId;
+              wx.setStorageSync('userInfo', that.globalData.userInfo);
             }
-          })
-        }
+          }
+        });
       }
-    })
+    }
+
+    if (this.globalData.userInfoAuth && userInfo.nickName && userInfo.nickName != '') {
+      wx.getUserInfo({
+        success: res => {
+          let userInfo = {};
+          if (userInfo.openId && userInfo.openId != '') {
+            userInfo = {
+              openId: openId
+            };
+          }
+          userInfo['nickName'] = res.userInfo.nickName;
+          userInfo['gender'] = res.userInfo.gender;
+          userInfo['language'] = res.userInfo.language;
+          userInfo['city'] = res.userInfo.city;
+          userInfo['province'] = res.userInfo.province;
+          userInfo['country'] = res.userInfo.country;
+          this.globalData.userInfo = userInfo;
+          wx.setStorageSync('userInfo', userInfo);
+        },
+        fail: e => {
+          console.log(e);
+        }
+      })
+    }
   }
 })
