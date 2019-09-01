@@ -8,18 +8,22 @@ import (
 	"github.com/spf13/viper"
 )
 
-var server = gin.Default()
-
 func Initialize() (err error) {
+	var server = gin.Default()
+
 	if viper.GetBool("Debug") {
 		gin.SetMode(gin.DebugMode)
 	} else {
 		gin.SetMode(gin.ReleaseMode)
 	}
 
+	allRouter(server)
+	loginRouter(server)
+
 	server.GET("/ping", func(c *gin.Context) {
 		c.String(200, "pong")
 	})
+
 	server.NoRoute(func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"code": 200, "msg": "Sorry, nothing here."})
 	})

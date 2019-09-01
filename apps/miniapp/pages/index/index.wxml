@@ -16,3 +16,5 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
+
+<footer select-item='home' />

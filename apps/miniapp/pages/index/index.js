@@ -16,6 +16,7 @@ Page({
     })
   },
   onLoad: function () {
+    this.refresh();
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -50,5 +51,24 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  }, 
+  refresh: function () {
+    let userInfo = wx.getStorageSync('userInfo');
+    if (!(userInfo.nickName && userInfo.nickName != "")) {
+      wx.showModal({
+        title: '提示',
+        content: '还未登陆，请登陆。',
+        success(res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '/pages/my/index',
+            });
+          } else if (res.cancel) {
+            console.log('用户点击取消');
+          }
+        }
+      });
+      return;
+    }
   }
 })

@@ -2,8 +2,8 @@ FROM golang:alpine AS build
 
 WORKDIR /app
 
-RUN apk update && apk upgrade \
-  && apk add --no-cache --virtual .build-deps gcc make musl-dev git
+RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories && \
+  apk add --no-cache --virtual .build-deps gcc make musl-dev git
 
 ADD . /go/src/github.com/tosone/zhili
 

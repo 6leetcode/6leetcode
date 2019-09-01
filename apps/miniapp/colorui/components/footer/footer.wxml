@@ -1,26 +1,14 @@
-<view class="cu-bar tabbar bg-white shadow foot">
-  <view class="action {{ selectItem == 'home' ? 'text-green' : 'text-gray' }}" bindtap='toHome'>
-    <view class="icon-home"></view>
-    首页
+<view class="cu-bar tabbar bg-white foot">
+  <view class="action" bindtap="toHome">
+    <view class="cuIcon-{{ selectItem == 'home' ? 'homefill' : 'home' }} {{ selectItem == 'home' ? 'text-green' : 'text-gray' }}"></view>
+    <view class="{{ selectItem == 'home' ? 'text-green' : 'text-gray' }}">首页</view>
   </view>
-  <view class="action {{ selectItem == 'friend' ? 'text-green' : 'text-gray' }}">
-    <view class="icon-friend"></view>
-    朋友
+  <view class="action" bindtap="toNews">
+    <view class="cuIcon-{{ selectItem == 'news' ? 'newsfill' : 'news' }} {{ selectItem == 'news' ? 'text-green' : 'text-gray' }}"></view>
+    <view class="{{ selectItem == 'news' ? 'text-green' : 'text-gray' }}">文章</view>
   </view>
-  <view class="action add-action {{ selectItem == 'add' ? 'text-green' : 'text-gray' }}">
-    <button class="cu-btn icon-add bg-green shadow" bindtap="addStory"></button>
-    发布
-  </view>
-  <view class="action {{ selectItem == 'explore' ? 'text-green' : 'text-gray' }}" bindtap='toExplor'>
-    <view class="icon-explore">
-      <!-- <view class="cu-tag badge">99</view> -->
-    </view>
-    发现
-  </view>
-  <view class="action {{ selectItem == 'me' ? 'text-green' : 'text-gray' }}" bindtap="toMe">
-    <view class="icon-my">
-      <!-- <view class="cu-tag badge"></view> -->
-    </view>
-    我
+  <view class="action" bindtap="toMy">
+    <view class="cuIcon-{{ selectItem == 'my' ? 'myfill' : 'my' }} {{ selectItem == 'my' ? 'text-green' : 'text-gray' }}"></view>
+    <view class="{{ selectItem == 'my' ? 'text-green' : 'text-gray' }}">我</view>
   </view>
 </view>

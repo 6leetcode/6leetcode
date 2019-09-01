@@ -1,12 +1,25 @@
-//app.js
 App({
-  onLaunch: function () {
+  globalData: {
+    userInfo: null,
+    userInfoAuth: false,
+    URLPrefix: "http://6leetcode.tosone.cn:4000"
+  },
+  onLaunch: function() {
     wx.getSystemInfo({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;
         let custom = wx.getMenuButtonBoundingClientRect();
         this.globalData.Custom = custom;
         this.globalData.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
+      }
+    });
+
+    wx.getSetting({
+      success: res => {
+        this.globalData.userInfoAuth = res.authSetting['scope.userInfo'];
+      },
+      fail: e => {
+        console.log(e);
       }
     });
 
@@ -41,8 +54,5 @@ App({
         }
       }
     })
-  },
-  globalData: {
-    userInfo: null
   }
 })

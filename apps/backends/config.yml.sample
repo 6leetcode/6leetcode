@@ -1,7 +1,11 @@
 Debug: true
+ServerPort: 4000
 Login:
   name: # leetcode username
   password: # leetcode password
 Database:
   Engine: sqlite3 # DB type
   Path: database.db
+WeChat:
+  AppID: # AppID
+  Secret: # Secret

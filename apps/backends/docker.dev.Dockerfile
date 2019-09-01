@@ -2,8 +2,8 @@ FROM alpine:edge
 
 WORKDIR /app
 
-RUN apk update && apk upgrade \
-  && apk add --no-cache mdocml-apropos coreutils gcc g++ libc-dev \
+RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories && \
+  apk add --no-cache mdocml-apropos coreutils gcc g++ libc-dev \
   ca-certificates autoconf automake file libtool \
   bc tree vim git fish dialog less make tzdata
 

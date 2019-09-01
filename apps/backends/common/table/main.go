@@ -130,6 +130,8 @@ func Initialize() (err error) {
 	if err = engine.AutoMigrate(
 		new(Questions),
 		new(QuestionInfo),
+		new(OpenID),
+		new(WeChatInfo),
 	).Error; err != nil {
 		logging.Panic(err.Error())
 	}

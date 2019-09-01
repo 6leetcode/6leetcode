@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/news/index",
+    "pages/my/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -12,8 +14,8 @@
     "navigationStyle": "custom"
   },
   "usingComponents": {
-    "titleBar": "/colorui/components/titleBar/titleBar",
-    "footer": "/colorui/components/footer/footer"
+    "titleBar": "colorui/components/titleBar/titleBar",
+    "footer": "colorui/components/footer/footer"
   },
   "sitemapLocation": "sitemap.json"
 }

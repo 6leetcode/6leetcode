@@ -8,10 +8,10 @@ import (
 	"github.com/6leetcode/6leetcode/apps/backends/cmd/version"
 	"github.com/6leetcode/6leetcode/apps/backends/common/table"
 
-	"github.com/Unknwon/com"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"github.com/tosone/logging"
+	"github.com/unknwon/com"
 )
 
 func init() {
@@ -24,6 +24,10 @@ func init() {
 		Args:  cobra.MinimumNArgs(0),
 		Run: func(_ *cobra.Command, _ []string) {
 			var err error
+			if err = table.Initialize(); err != nil {
+				fmt.Printf("Got error: %+v\n", err)
+				return
+			}
 			if err = server.Initialize(); err != nil {
 				fmt.Printf("Got error: %+v\n", err)
 			}

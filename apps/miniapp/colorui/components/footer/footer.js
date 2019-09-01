@@ -13,30 +13,19 @@ Component({
     route: ''
   },
   methods: {
-    addStory() {
-      if (this.data.selectItem == 'add') {
-        return;
-      }
+    toMy() {
       wx.navigateTo({
-        url: '/pages/add/add'
-      });
-    },
-    toMe() {
-      if (this.data.selectItem == 'me') {
-        return;
-      }
-      wx.navigateTo({
-        url: '/pages/me/me'
+        url: '/pages/my/index'
       });
     },
     toHome() {
       wx.navigateTo({
-        url: '/pages/home/home'
+        url: '/pages/index/index'
       });
     },
-    toExplor() {
+    toNews() {
       wx.navigateTo({
-        url: '/pages/post/single'
+        url: '/pages/news/index'
       });
     }
   },

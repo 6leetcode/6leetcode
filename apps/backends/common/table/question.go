@@ -6,16 +6,16 @@ import (
 
 type Questions struct {
 	gorm.Model         `json:"-"`
-	QuestionInfo       QuestionInfo `gorm:"foreignkey:QuestionInfoRefer"`
-	QuestionInfoRefer  uint
-	QuestionID         int
-	FrontendQuestionID int
-	Difficulty         string
-	PaidOnly           bool
-	Title              string
-	TitleSlug          string
-	TranslatedTitle    string
-	CategoryTitle      string
+	QuestionInfo       QuestionInfo `gorm:"foreignkey:QuestionInfoRefer" json:"question_info"`
+	QuestionInfoRefer  uint         `json:"question_info_refer"`
+	QuestionID         int          `json:"question_id"`
+	FrontendQuestionID int          `json:"frontend_question_id"`
+	Difficulty         string       `json:"difficulty"`
+	PaidOnly           bool         `json:"paid_only"`
+	Title              string       `json:"title"`
+	TitleSlug          string       `json:"title_slug"`
+	TranslatedTitle    string       `json:"translated_title"`
+	CategoryTitle      string       `json:"category_title"`
 }
 
 // Create ..
@@ -31,18 +31,24 @@ func (q *Questions) Create() (err error) {
 	return engine.Model(new(Questions)).Where(Questions{QuestionID: q.QuestionID}).Updates(q).Error
 }
 
+func (q *Questions) Find() (questions []Questions, err error) {
+	questions = []Questions{}
+	err = engine.Find(&questions).Error
+	return
+}
+
 // QuestionInfo ..
 type QuestionInfo struct {
 	gorm.Model            `json:"-"`
-	QuestionID            int
-	FrontendQuestionID    int
-	CodeSnippets          []byte
-	Content               []byte
-	LangToValidPlayground []byte
-	SimilarQuestions      []byte
-	Stats                 []byte
-	TopicTags             []byte
-	TranslatedContent     []byte
+	QuestionID            int    `json:"question_id"`
+	FrontendQuestionID    int    `json:"frontend_question_id"`
+	CodeSnippets          []byte `json:"code_snippets"`
+	Content               []byte `json:"content"`
+	LangToValidPlayground []byte `json:"lang_to_valid_playground"`
+	SimilarQuestions      []byte `json:"similar_questions"`
+	Stats                 []byte `json:"stats"`
+	TopicTags             []byte `json:"topic_tags"`
+	TranslatedContent     []byte `json:"translated_content"`
 }
 
 // Create ..
@@ -56,4 +62,9 @@ func (q *QuestionInfo) Create() (err error) {
 		return
 	}
 	return engine.Model(new(QuestionInfo)).Where(QuestionInfo{QuestionID: q.QuestionID}).Updates(q).Error
+}
+
+func (q *QuestionInfo) Find() (err error) {
+	err = engine.Where(QuestionInfo{QuestionID: q.QuestionID}).First(q).Error
+	return
 }
