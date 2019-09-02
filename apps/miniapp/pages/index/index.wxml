@@ -3,7 +3,7 @@
 </titleBar>
 <view class="cu-load bg-green loading" wx:if="{{ isLoading }}"></view>
 <view class="cu-list menu">
-  <view class="cu-item" bindtap="toMeInfo" wx:for="{{ questions }}" wx:key="ID" wx:for-index="idx">
+  <view class="cu-item" bindtap="toMeInfo" wx:for="{{ questions }}" wx:key="ID" wx:for-index="idx" data-id="{{ item.question_id }}" bindtap="itemTap">
     <view class="content">
       <text class="text-grey">{{ item.frontend_question_id }}. {{ item.translated_title }}</text>
       <text wx:if="{{ item.paid_only }}" class="cuIcon-lock text-red"></text>

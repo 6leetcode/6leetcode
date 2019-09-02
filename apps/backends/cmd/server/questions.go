@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"net/http"
+	"strconv"
 
 	"github.com/6leetcode/6leetcode/apps/backends/common/table"
 
@@ -12,7 +13,7 @@ import (
 	"github.com/tosone/logging"
 )
 
-func allRouter(server *gin.Engine) {
+func questionsRouter(server *gin.Engine) {
 	server.GET("/questions", func(context *gin.Context) {
 		var err error
 
@@ -45,10 +46,10 @@ func allRouter(server *gin.Engine) {
 		hash = hex.EncodeToString(h.Sum(nil))
 	})
 
-	server.GET("/questions-hash", func(context *gin.Context) {
+	server.GET("/question", func(context *gin.Context) {
 		var err error
 
-		var hash string
+		var question table.QuestionInfo
 
 		var code = 200
 
@@ -59,22 +60,24 @@ func allRouter(server *gin.Engine) {
 				logging.Error(err)
 				msg = errCode[code].Error()
 			}
-			context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "hash": hash})
+			context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "question": question})
 		}()
 
-		var questions []table.Questions
-
-		if questions, err = new(table.Questions).Find(); err != nil {
-			code = 1001
-		}
-
-		var data []byte
-		if data, err = json.Marshal(questions); err != nil {
+		var sid = context.DefaultQuery("id", "")
+		if sid == "" {
+			code = 1003
 			return
 		}
 
-		var h = sha256.New()
-		h.Write(data)
-		hash = hex.EncodeToString(h.Sum(nil))
+		var id int
+		if id, err = strconv.Atoi(sid); err != nil {
+			code = 1003
+		}
+
+		question.QuestionID = id
+
+		if err = (&question).Find(); err != nil {
+			code = 1001
+		}
 	})
 }

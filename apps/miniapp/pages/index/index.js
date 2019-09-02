@@ -8,36 +8,44 @@ Page({
     questions: null,
     isLoading: true
   },
-  onLoad: function() {
+  onLoad: function () {
     let that = this;
     let questionsHash = wx.getStorageSync('questionsHash');
     if (questionsHash == "") {
       this.loadQuestions();
     } else {
-      fs.readFile({
-        filePath: `${wx.env.USER_DATA_PATH}/questions.txt`,
-        encoding: 'utf8',
-        success: function (res) {
-          fs.getFileInfo({
-            filePath: `${wx.env.USER_DATA_PATH}/questions.txt`,
-            success: function (res) {
-              console.log("questions.txt " + (res.size/1024).toFixed(1) + "KB");
-            }
-          })
-          that.setData({
-            questions: JSON.parse(res.data),
-            isLoading: false
-          });
-          that.loadQuestions();
-        },
-        fail: function () {
-          that.loadQuestions();
-        }
-      });
+      if (app.globalData.questions != null) {
+        that.setData({
+          questions: app.globalData.questions,
+          isLoading: false
+        });
+      } else {
+        fs.readFile({
+          filePath: `${wx.env.USER_DATA_PATH}/questions.txt`,
+          encoding: 'utf8',
+          success: function (res) {
+            app.globalData.questions = JSON.parse(res.data);
+            fs.getFileInfo({
+              filePath: `${wx.env.USER_DATA_PATH}/questions.txt`,
+              success: function (res) {
+                console.log("questions.txt " + (res.size / 1024).toFixed(1) + "KB");
+              }
+            });
+            that.setData({
+              questions: app.globalData.questions,
+              isLoading: false
+            });
+            that.loadQuestions();
+          },
+          fail: function () {
+            that.loadQuestions();
+          }
+        });
+      }
     }
     this.refresh();
   },
-  loadQuestions: function() {
+  loadQuestions: function () {
     let userInfo = wx.getStorageSync('userInfo');
     if (userInfo.nickName && userInfo.nickName != "") {
       wx.request({
@@ -47,7 +55,7 @@ Page({
             if (wx.getStorageSync('questionsHash') == res.data.hash) {
               return;
             }
-            res.data.questions = _.sortBy(res.data.questions, [function(o) {
+            res.data.questions = _.sortBy(res.data.questions, [function (o) {
               return o.frontend_question_id;
             }]);
             for (let i = 0; i < res.data.questions.length; i++) {
@@ -66,6 +74,7 @@ Page({
               questions: res.data.questions,
               isLoading: false
             });
+            app.globalData.questions = res.data.questions;
             fs.writeFileSync(`${wx.env.USER_DATA_PATH}/questions.txt`, JSON.stringify(res.data.questions), 'utf8');
             wx.setStorageSync('questionsHash', res.data.hash);
           }
@@ -76,7 +85,7 @@ Page({
       });
     }
   },
-  refresh: function() {
+  refresh: function () {
     let userInfo = wx.getStorageSync('userInfo');
     if (!(userInfo.nickName && userInfo.nickName != "")) {
       wx.showModal({
@@ -93,5 +102,10 @@ Page({
         }
       });
     }
+  },
+  itemTap: function (e) {
+    wx.navigateTo({
+      url: "/pages/index/info?id=" + e.currentTarget.dataset.id
+    });
   }
 })

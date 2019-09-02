@@ -1,12 +1,15 @@
 const login = require('./utils/login');
+const Towxml = require('./towxml/main');
 
 App({
   globalData: {
+    questions: null,
     userInfo: null,
     userInfoAuth: false,
-    URLPrefix: "https://6leetcode.tosone.cn"
+    // URLPrefix: "https://6leetcode.tosone.cn"
+    URLPrefix: "http://127.0.0.1:4000"
   },
-  onLaunch: function () {
+  onLaunch: function() {
     wx.getSystemInfo({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;
@@ -79,5 +82,6 @@ App({
         }
       })
     }
-  }
-})
+  },
+  towxml: new Towxml()
+});

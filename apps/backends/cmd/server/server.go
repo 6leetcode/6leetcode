@@ -17,7 +17,7 @@ func Initialize() (err error) {
 		gin.SetMode(gin.ReleaseMode)
 	}
 
-	allRouter(server)
+	questionsRouter(server)
 	loginRouter(server)
 
 	server.GET("/ping", func(c *gin.Context) {

@@ -22,11 +22,11 @@ endif
 
 .PHONY: ${OSName}
 ${OSName}: clean
-	env GO111MODULE=off GOOS=$@ go build -v -o release/${Target}-$@${Suffix} -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=$@ go build -v -o release/${Target}-$@${Suffix} -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release: clean
-	env GO111MODULE=off GOOS=${OSName} go build -v -o release/${Target}-${OSName}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=${OSName} go build -v -o release/${Target}-${OSName}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: authors
 authors:
