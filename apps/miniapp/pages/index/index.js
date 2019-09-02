@@ -1,23 +1,53 @@
 const app = getApp();
+const fs = wx.getFileSystemManager();
 
 const _ = require('../../utils/lodash');
 
 Page({
   data: {
-    questions: null
+    questions: null,
+    isLoading: true
   },
-  onLoad: function () {
+  onLoad: function() {
+    let that = this;
+    let questionsHash = wx.getStorageSync('questionsHash');
+    if (questionsHash == "") {
+      this.loadQuestions();
+    } else {
+      fs.readFile({
+        filePath: `${wx.env.USER_DATA_PATH}/questions.txt`,
+        encoding: 'utf8',
+        success: function (res) {
+          fs.getFileInfo({
+            filePath: `${wx.env.USER_DATA_PATH}/questions.txt`,
+            success: function (res) {
+              console.log("questions.txt " + (res.size/1024).toFixed(1) + "KB");
+            }
+          })
+          that.setData({
+            questions: JSON.parse(res.data),
+            isLoading: false
+          });
+          that.loadQuestions();
+        },
+        fail: function () {
+          that.loadQuestions();
+        }
+      });
+    }
     this.refresh();
-    this.loadQuestions();
   },
-  loadQuestions: function () {
+  loadQuestions: function() {
     let userInfo = wx.getStorageSync('userInfo');
     if (userInfo.nickName && userInfo.nickName != "") {
       wx.request({
         url: app.globalData.URLPrefix + '/questions',
         success: res => {
           if (res.data.code == 200) {
-            res.data.questions = _.sortBy(res.data.questions, [function (o) {
+            if (wx.getStorageSync('questionsHash') == res.data.hash) {
+              return;
+            }
+            res.data.questions = _.sortBy(res.data.questions, [function(o) {
               return o.frontend_question_id;
             }]);
             for (let i = 0; i < res.data.questions.length; i++) {
@@ -33,8 +63,11 @@ Page({
               }
             }
             this.setData({
-              questions: res.data.questions
+              questions: res.data.questions,
+              isLoading: false
             });
+            fs.writeFileSync(`${wx.env.USER_DATA_PATH}/questions.txt`, JSON.stringify(res.data.questions), 'utf8');
+            wx.setStorageSync('questionsHash', res.data.hash);
           }
         },
         fail: e => {
@@ -43,7 +76,7 @@ Page({
       });
     }
   },
-  refresh: function () {
+  refresh: function() {
     let userInfo = wx.getStorageSync('userInfo');
     if (!(userInfo.nickName && userInfo.nickName != "")) {
       wx.showModal({

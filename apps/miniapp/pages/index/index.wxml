@@ -1,6 +1,7 @@
 <titleBar bgColor="bg-gradual-green" isBack="{{ false }}">
   <view slot="content">首页</view>
 </titleBar>
+<view class="cu-load bg-green loading" wx:if="{{ isLoading }}"></view>
 <view class="cu-list menu">
   <view class="cu-item" bindtap="toMeInfo" wx:for="{{ questions }}" wx:key="ID" wx:for-index="idx">
     <view class="content">
