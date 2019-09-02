@@ -1,7 +1,7 @@
 include .env
 export $(shell sed 's/=.*//' .env)
 
-app_name                = leetcode
+app_name                = 6leetcode
 docker_name             = $(app_name)
 docker_tag              = dev
 docker_container        = $(app_name)
@@ -9,7 +9,7 @@ docker_container        = $(app_name)
 BuildStamp              = $(shell date '+%Y%m%d%H%M%S')
 GitHash                 = $(shell git rev-parse HEAD)
 Version                 = $(shell git describe --abbrev=0 --tags --always)
-Target                  = $(shell basename $(abspath $(dir $$PWD)))
+Target                  = 6leetcode
 Suffix                  =
 GOFILES                 = $(shell find . -name "*.go" -type f ! -path "./vendor/*" ! -path "*/bindata.go")
 
@@ -48,30 +48,26 @@ misspell-check:
 clean:
 	@$(RM) -r release *.db *.db-journal
 
-.PHONY: upgrade
-upgrade:
-	docker-compose pull
+.PHONY: docker-build-release
+docker-build-release:
+	docker-compose build $(app_name)
 
-.PHONY: build
-build:
-	docker build -f docker.release.Dockerfile -t $(docker_name):$(docker_tag) .
+.PHONY: docker-build
+docker-build:
+	docker-compose build $(app_name)-dev
 
-.PHONY: build-dev
-build-dev:
-	docker build -f docker.dev.Dockerfile -t $(docker_name)-dev:$(docker_tag) .
+.PHONY: docker-run-release
+docker-run-release:
+	docker-compose up --force-recreate -d $(app_name)
 
-.PHONY: run
-run:
-	docker-compose up --force-recreate -d zhili
+.PHONY: docker-run
+docker-run:
+	docker-compose up --force-recreate -d $(app_name)-dev
 
-.PHONY: run-dev
-run-dev:
-	docker-compose up --force-recreate -d zhili-dev
+.PHONY: docker-exec-release
+docker-exec-release:
+	docker-compose exec $(docker_container) /bin/bash
 
-.PHONY: exec
-exec:
-	docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it $(docker_container) /bin/sh
-
-.PHONY: exec-dev
-exec-dev:
-	docker exec -e COLUMNS="`tput cols`" -e LINES="`tput lines`" -it $(docker_container)-dev /usr/bin/fish
+.PHONY: docker-exec
+docker-exec:
+	docker-compose exec $(docker_container)-dev /usr/bin/fish

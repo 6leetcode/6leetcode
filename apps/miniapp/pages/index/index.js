@@ -14,11 +14,16 @@ Page({
     let userInfo = wx.getStorageSync('userInfo');
     if (userInfo.nickName && userInfo.nickName != "") {
       wx.request({
-        url: app.globalData.URLPrefix + '/all',
+        url: app.globalData.URLPrefix + '/questions',
         success: res => {
           if (res.data.code == 200) {
-            res.data.questions = _.sortBy(res.data.questions, [function (o) { return o.frontend_question_id; }]);
+            res.data.questions = _.sortBy(res.data.questions, [function (o) {
+              return o.frontend_question_id;
+            }]);
             for (let i = 0; i < res.data.questions.length; i++) {
+              if (res.data.questions[i].translated_title.length > 14) {
+                res.data.questions[i].translated_title = res.data.questions[i].translated_title.substr(0, 14) + "...";
+              }
               if (res.data.questions[i].frontend_question_id < 10) {
                 res.data.questions[i].frontend_question_id = "000" + res.data.questions[i].frontend_question_id;
               } else if (res.data.questions[i].frontend_question_id < 100) {

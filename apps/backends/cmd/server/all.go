@@ -13,7 +13,7 @@ import (
 )
 
 func allRouter(server *gin.Engine) {
-	server.GET("/all", func(context *gin.Context) {
+	server.GET("/questions", func(context *gin.Context) {
 		var err error
 
 		var questions []table.Questions
@@ -45,7 +45,7 @@ func allRouter(server *gin.Engine) {
 		hash = hex.EncodeToString(h.Sum(nil))
 	})
 
-	server.GET("/all-hash", func(context *gin.Context) {
+	server.GET("/questions-hash", func(context *gin.Context) {
 		var err error
 
 		var hash string

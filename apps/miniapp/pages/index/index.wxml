@@ -8,9 +8,9 @@
       <text wx:if="{{ item.paid_only }}" class="cuIcon-lock text-red"></text>
     </view>
     <view class="action">
-      <view class="cu-tag round bg-red light" wx:if="{{ item.difficulty == 'Hard' }}">简单</view>
+      <view class="cu-tag round bg-red light" wx:if="{{ item.difficulty == 'Hard' }}">困难</view>
       <view class="cu-tag round bg-yellow light" wx:if="{{ item.difficulty == 'Medium' }}">中等</view>
-      <view class="cu-tag round bg-green light" wx:if="{{ item.difficulty == 'Easy' }}">困难</view>
+      <view class="cu-tag round bg-green light" wx:if="{{ item.difficulty == 'Easy' }}">简单</view>
     </view>
   </view>
 </view>

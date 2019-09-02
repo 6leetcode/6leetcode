@@ -4,7 +4,7 @@ App({
   globalData: {
     userInfo: null,
     userInfoAuth: false,
-    URLPrefix: "http://6leetcode.tosone.cn:4000"
+    URLPrefix: "https://6leetcode.tosone.cn"
   },
   onLaunch: function () {
     wx.getSystemInfo({
