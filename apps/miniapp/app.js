@@ -6,8 +6,9 @@ App({
     questions: null,
     userInfo: null,
     userInfoAuth: false,
-    // URLPrefix: "https://6leetcode.tosone.cn"
-    URLPrefix: "http://127.0.0.1:4000"
+    URLPrefix: "https://6leetcode.tosone.cn"
+    // URLPrefix: "https://test.6leetcode.tosone.cn"
+    // URLPrefix: "http://127.0.0.1:4000"
   },
   onLaunch: function() {
     wx.getSystemInfo({

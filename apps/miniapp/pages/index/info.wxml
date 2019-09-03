@@ -1,2 +1,12 @@
-<!-- pages/index/info.wxml -->
-<text>pages/index/info.wxml</text>
+<titleBar bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="content">题目详情</view>
+</titleBar>
+
+<view class="solid-bottom text-xl padding title">
+  <text class="text-black text-bold">{{ num }}. {{ question.translated_title }}</text>
+</view>
+
+<import src="/towxml/entry.wxml" />
+<template is="entry" data="{{...article}}" />
+
+<footer select-item='home' />

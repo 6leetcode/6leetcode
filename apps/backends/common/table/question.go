@@ -37,6 +37,11 @@ func (q *Questions) Find() (questions []Questions, err error) {
 	return
 }
 
+func (q *Questions) FindByID() (err error) {
+	err = engine.Preload("QuestionInfo").Where(Questions{QuestionID: q.QuestionID}).First(q).Error
+	return
+}
+
 // QuestionInfo ..
 type QuestionInfo struct {
 	gorm.Model            `json:"-"`

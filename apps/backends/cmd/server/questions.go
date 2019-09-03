@@ -49,7 +49,7 @@ func questionsRouter(server *gin.Engine) {
 	server.GET("/question", func(context *gin.Context) {
 		var err error
 
-		var question table.QuestionInfo
+		var question table.Questions
 
 		var code = 200
 
@@ -76,7 +76,7 @@ func questionsRouter(server *gin.Engine) {
 
 		question.QuestionID = id
 
-		if err = (&question).Find(); err != nil {
+		if err = (&question).FindByID(); err != nil {
 			code = 1001
 		}
 	})
