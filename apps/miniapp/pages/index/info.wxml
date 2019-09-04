@@ -1,12 +1,15 @@
-<titleBar bgColor="bg-gradual-green" isBack="{{true}}">
-  <view slot="content">题目详情</view>
-</titleBar>
-
-<view class="solid-bottom text-xl padding title">
-  <text class="text-black text-bold">{{ num }}. {{ question.translated_title }}</text>
-</view>
-
-<import src="/towxml/entry.wxml" />
-<template is="entry" data="{{...article}}" />
-
+<scroll-view scroll-y class="scrollPage">
+  <titleBar bgColor="bg-gradual-green" isBack="{{true}}">
+    <view slot="content">题目详情</view>
+  </titleBar>
+  <view class="cu-load bg-green loading" wx:if="{{ isLoading }}"></view>
+  <view class="solid-bottom text-xl padding title" wx:if="{{ !isLoading }}">
+    <text class="text-black text-bold">{{ num }}. {{ question.translated_title }}</text>
+  </view>
+  <view>
+    <import src="/towxml/entry.wxml" />
+    <template is="entry" data="{{...article}}" />
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>
 <footer select-item='home' />

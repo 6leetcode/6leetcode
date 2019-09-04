@@ -103,13 +103,12 @@
   font-size: 32rpx;
   line-height: 1.8;
   word-wrap: break-word;
-  word-wrap: break-word;
   word-break: break-all;
 }
 
 .h2w__main {
-  margin: 0 40rpx 40rpx 40rpx;
-  padding-top: 40rpx;
+  margin: 0 30rpx 30rpx 30rpx;
+  padding-top: 20rpx;
 }
 
 /**标题**/

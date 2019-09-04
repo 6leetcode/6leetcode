@@ -21,7 +21,6 @@
 .h2w-dark {
   color: #ddd;
   background-color: #000;
-  margin-bottom: 80rpx;
   padding-bottom: 20rpx;
 }
 

@@ -6,13 +6,14 @@ Page({
   data: {
     article: {},
     question: null,
-    num: ""
+    num: "",
+    isLoading: true
   },
-  onLoad: function(options) {
+  onLoad: function (options) {
     let that = this;
     wx.request({
       url: app.globalData.URLPrefix + '/question?id=' + options.id,
-      success: function(res) {
+      success: function (res) {
         let num = res.data.question.frontend_question_id;
         if (res.data.question.frontend_question_id < 10) {
           num = "000" + res.data.question.frontend_question_id;
@@ -22,44 +23,43 @@ Page({
           num = "0" + res.data.question.frontend_question_id;
         }
 
-        that.setData({
-          question: res.data.question,
-          num: num
-        });
-
         let data = app.towxml.toJson(
           util.base64_decode(res.data.question.question_info.translated_content),
           'html'
         );
-        // data.theme = 'dark';
+
         that.setData({
+          question: res.data.question,
+          num: num,
+          isLoading: false,
           article: data
         });
+        // data.theme = 'dark';
       },
-      fail: function() {
+      fail: function () {
 
       }
     })
   },
-  onReady: function() {
+  onReady: function () {
 
   },
-  onShow: function() {
+  onShow: function () {
 
   },
-  onHide: function() {
+  onHide: function () {
 
   },
-  onUnload: function() {
+  onUnload: function () {
 
   },
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

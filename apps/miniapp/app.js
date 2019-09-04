@@ -10,7 +10,7 @@ App({
     // URLPrefix: "https://test.6leetcode.tosone.cn"
     // URLPrefix: "http://127.0.0.1:4000"
   },
-  onLaunch: function() {
+  onLaunch: function () {
     wx.getSystemInfo({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;

@@ -6,7 +6,8 @@ const _ = require('../../utils/lodash');
 Page({
   data: {
     questions: null,
-    isLoading: true
+    isLoading: true,
+    num: 30
   },
   onLoad: function () {
     let that = this;
@@ -16,7 +17,7 @@ Page({
     } else {
       if (app.globalData.questions != null) {
         that.setData({
-          questions: app.globalData.questions,
+          questions: app.globalData.questions.slice(0, that.data.num),
           isLoading: false
         });
       } else {
@@ -32,7 +33,7 @@ Page({
               }
             });
             that.setData({
-              questions: app.globalData.questions,
+              questions: app.globalData.questions.slice(0, that.data.num),
               isLoading: false
             });
             that.loadQuestions();
@@ -71,7 +72,7 @@ Page({
               }
             }
             this.setData({
-              questions: res.data.questions,
+              questions: res.data.questions.slice(0, this.data.num),
               isLoading: false
             });
             app.globalData.questions = res.data.questions;
@@ -107,5 +108,12 @@ Page({
     wx.navigateTo({
       url: "/pages/index/info?id=" + e.currentTarget.dataset.id
     });
-  }
+  },
+  loadMore: function () {
+    console.log("bottom");
+    this.setData({
+      questions: app.globalData.questions.slice(0, this.data.num + 30),
+      num: this.data.num + 30
+    });
+  },
 })
