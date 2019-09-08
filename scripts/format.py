@@ -24,7 +24,7 @@ for dir in os.listdir("./Algorithm"):
         # Rust
         elif os.path.splitext(inner)[1] == ".rs":
             print(dir + "/" + inner)
-            os.system("rustfmt --write-mode replace --force \"" +
+            os.system("rustfmt --write-mode replace --force \"Algorithm/" +
                       dir + "/" + inner + "\"")
             for file in os.listdir("./Algorithm/" + dir):
                 if os.path.splitext(file)[1] == ".bk":

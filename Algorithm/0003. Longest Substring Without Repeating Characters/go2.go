@@ -1,6 +1,5 @@
 package main
 
-//暴力破解法效率比较低有很大优化空间512ms 6.9mb
 func LengthOfLongestSubstring(s string) int {
 	n := len(s)
 	if n < 2 {

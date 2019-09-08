@@ -2,7 +2,6 @@ package main
 
 import "math"
 
-//滑动窗口法 8ms 3.8mb
 func LengthOfLongestSubstring2(s string) int {
 	max := 0
 	n := len(s)

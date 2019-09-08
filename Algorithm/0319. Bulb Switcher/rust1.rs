@@ -9,7 +9,7 @@ impl Solution {
     }
 }
 
-fn main(){
+fn main() {
     let input: i32 = 16;
     println!("Input:  {}", input);
     println!("Output: {}", Solution::bulb_switch(input));

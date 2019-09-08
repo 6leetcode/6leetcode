@@ -1,4 +1,4 @@
-var poorPigs = function (buckets, minutesToDie, minutesToTest) {
+var poorPigs = function(buckets, minutesToDie, minutesToTest) {
     const times = minutesToTest / minutesToDie;
     const base = times + 1;
     // base ^ ans >= buckets 
