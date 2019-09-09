@@ -14,4 +14,4 @@ class Solution:
 if __name__ == "__main__":
     solution = Solution()
     print("Input:  {}, {}".format([1, 2, 3], 3))
-    print("Output:  {}".format(solution.twoSum([1, 2, 3], 3)))
+    print("Output: {}".format(solution.twoSum([1, 2, 3], 3)))

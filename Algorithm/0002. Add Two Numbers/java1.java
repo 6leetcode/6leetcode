@@ -69,8 +69,8 @@ public class java1 {
         Solution solution = new Solution();
         ListNode result = solution.addTwoNumbers(input1_0, input2_0);
 
-        System.out.printf("Output: (%d", input2_0.val);
-        ListNode c = input2_0.next;
+        System.out.printf("Output: (%d", result.val);
+        ListNode c = result.next;
         while (c != null) {
             System.out.printf(" -> %d", c.val);
             c = c.next;

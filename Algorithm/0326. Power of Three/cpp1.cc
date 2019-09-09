@@ -15,5 +15,5 @@ int main(int argc, char const *argv[]) {
   Solution solution;
   string output = solution.isPowerOfThree(input) ? "true" : "false";
   cout << "Output: " << output << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }

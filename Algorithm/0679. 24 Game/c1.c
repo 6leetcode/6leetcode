@@ -36,7 +36,7 @@ int main(int argc, char const *argv[]) {
   }
   printf("]\n");
 
-  printf("Output: %s", judgePoint24(input, sizeof(input) / sizeof(int)) ? "true" : false);
+  printf("Output: %s\n", judgePoint24(input, sizeof(input) / sizeof(int)) ? "true" : false);
 
   return EXIT_SUCCESS;
 }

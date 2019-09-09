@@ -28,5 +28,5 @@ int main(int argc, char const *argv[]) {
     cout << i;
   }
   cout << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }
