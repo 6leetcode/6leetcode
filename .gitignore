@@ -43,3 +43,5 @@ apps/backends/release/
 .idea/
 .vscode/
 venv/
+apps/uni-app/unpackage/
+apps/uni-app/node_modules/
