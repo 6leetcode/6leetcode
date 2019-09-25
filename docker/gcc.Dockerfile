@@ -1,8 +1,8 @@
 FROM gcc:8
 
 
-RUN sed -i 's/deb.debian.org/mirrors.163.com/g' /etc/apt/sources.list && \
-  sed -i 's/security.debian.org/mirrors.163.com/g' /etc/apt/sources.list
+# RUN sed -i 's/deb.debian.org/mirrors.163.com/g' /etc/apt/sources.list && \
+#   sed -i 's/security.debian.org/mirrors.163.com/g' /etc/apt/sources.list
 
 ARG TZ=Asia/Shanghai
 
