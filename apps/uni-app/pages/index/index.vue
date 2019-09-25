@@ -1,17 +1,25 @@
 <template>
 	<view class="content">
 		<view class="text-area">
-			<text class="title">{{title}}</text>
-			<text class="title">{{time}}</text>
+			<text class="title">{{ title }}</text>
+			<text class="title">{{ time }}</text>
 		</view>
+		<uni-card title="标题文字" extra="额外信息" note="Tips">
+			内容主体，可自定义内容及样式
+		</uni-card>
 	</view>
+	
 </template>
 
 <script>
 	import _ from "lodash"
 	import moment from "moment"
+	import {uniCard} from "@dcloudio/uni-ui"
 
-	export default {
+	export default { 
+		components: {
+			uniCard
+		},
 		data() {
 			return {
 				title: 'Hello',
@@ -20,7 +28,6 @@
 		},
 		onLoad() {
 			console.log(_.VERSION)
-			console.log(moment.V)
 		},
 		methods: {
 
@@ -30,24 +37,11 @@
 
 <style>
 	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
 
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
 	}
 
 	.text-area {
-		display: flex;
-		justify-content: center;
+		
 	}
 
 	.title {

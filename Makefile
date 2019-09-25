@@ -3,7 +3,6 @@ format:
 
 php gcc golang java python rust node:
 	@docker-compose up --force-recreate -d $@
-	@docker-compose exec $@ /usr/bin/fish
 
 generate:
 	@python3 scripts/gen.py
