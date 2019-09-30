@@ -1,5 +1,5 @@
 {
-  "name": "uni-app",
+  "name": "6leetcode",
   "version": "1.0.0",
   "description": "6leetcode miniapp",
   "main": "main.js",
@@ -10,7 +10,6 @@
   "author": "Tosone",
   "license": "ISC",
   "dependencies": {
-    "@dcloudio/uni-ui": "^1.0.4",
     "lodash": "^4.17.15",
     "moment": "^2.24.0"
   }

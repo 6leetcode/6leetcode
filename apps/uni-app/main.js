@@ -1,11 +1,18 @@
-import Vue from 'vue'
-import App from './App'
+import Vue from 'vue';
+import App from './App';
 
-Vue.config.productionTip = false
+import cuHeader from 'colorui/components/cu-header.vue';
+import cuFooter from 'colorui/components/cu-footer.vue';
 
-App.mpType = 'app'
+Vue.component('cu-header', cuHeader);
+Vue.component('cu-footer', cuFooter);
+
+Vue.config.productionTip = false;
+
+App.mpType = 'app';
 
 const app = new Vue({
-    ...App
-})
-app.$mount()
+	...App
+});
+
+app.$mount();
