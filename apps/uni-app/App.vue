@@ -39,4 +39,8 @@
 <style>
 	@import "colorui/main.css";
 	@import "colorui/icon.css";
+	.scrollPage {
+	  height: 100vh;
+	  background-color: white;
+	}
 </style>

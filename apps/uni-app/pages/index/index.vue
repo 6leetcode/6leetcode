@@ -1,11 +1,11 @@
 <template>
 	<view class="content">
 		<scroll-view scroll-y class="scrollPage" @scrolltolower="loadMore">
-			<cu-header bgColor="bg-gradual-green" :isHome="false">
-				<block slot="content">首页</block>
+			<cu-header bgColor="bg-gradual-green">
+				<block slot="content">{{ title }}</block>
 			</cu-header>
 			<view class="cu-list menu">
-				<view class="cu-item" bindtap="toMeInfo" v-for="question in questions" :key="question.question_id">
+				<view @click="clicktest" class="cu-item" bindtap="toMeInfo" v-for="question in questions" :key="question.question_id">
 					<view class="content">
 						<text class="text-grey">{{ question.frontend_question_id }}. {{ question.translated_title }}</text>
 						<text v-if="question.paid_only" class="cuIcon-lock text-red"></text>
@@ -25,19 +25,30 @@
 <script>
 	import _ from "lodash";
 	import moment from "moment";
+	import {
+		mapState,
+		mapActions
+	} from 'vuex';
 
 	export default {
 		components: {
 
 		},
+		computed: {
+			...mapState(["userInfo"])
+		},
 		data() {
 			return {
-				title: 'Hello',
+				title: "Hello",
 				time: moment().format(),
 				questions: null
 			};
 		},
+		mounted() {
+			console.log(this.$store.state.userInfo);
+		},
 		onLoad() {
+			console.log(this.$store.state.userInfo);
 			uni.request({
 				url: 'https://6leetcode.tosone.cn/questions',
 				complete: content => {
@@ -62,7 +73,13 @@
 		},
 		methods: {
 			loadMore: () => {
-
+				console.log("hello");
+			},
+			...mapActions(["setUserInfo"]),
+			clicktest: () => {
+				console.log(this.userInfo);
+				this.setUserInfo();
+				console.log(this.userInfo);
 			}
 		}
 	}

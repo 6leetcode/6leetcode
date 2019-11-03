@@ -1,7 +1,0 @@
-<titleBar bgColor="bg-gradual-green" isBack="{{ false }}">
-  <view slot="content">文章</view>
-</titleBar>
-
-正在建设中。。。
-
-<footer select-item='news' />
