@@ -15,18 +15,18 @@ github.com/go-sql-driver/mysql
 github.com/golang/protobuf/proto
 # github.com/hashicorp/hcl v1.0.0
 github.com/hashicorp/hcl
-github.com/hashicorp/hcl/hcl/printer
 github.com/hashicorp/hcl/hcl/ast
 github.com/hashicorp/hcl/hcl/parser
-github.com/hashicorp/hcl/hcl/token
-github.com/hashicorp/hcl/json/parser
+github.com/hashicorp/hcl/hcl/printer
 github.com/hashicorp/hcl/hcl/scanner
 github.com/hashicorp/hcl/hcl/strconv
+github.com/hashicorp/hcl/hcl/token
+github.com/hashicorp/hcl/json/parser
 github.com/hashicorp/hcl/json/scanner
 github.com/hashicorp/hcl/json/token
 # github.com/inconshreveable/mousetrap v1.0.0
 github.com/inconshreveable/mousetrap
-# github.com/jinzhu/gorm v1.9.10
+# github.com/jinzhu/gorm v1.9.11
 github.com/jinzhu/gorm
 # github.com/jinzhu/inflection v1.0.0
 github.com/jinzhu/inflection
@@ -36,7 +36,7 @@ github.com/json-iterator/go
 github.com/lib/pq
 github.com/lib/pq/oid
 github.com/lib/pq/scram
-# github.com/magiconair/properties v1.8.0
+# github.com/magiconair/properties v1.8.1
 github.com/magiconair/properties
 # github.com/mattn/go-colorable v0.0.9
 github.com/mattn/go-colorable
@@ -50,9 +50,7 @@ github.com/mitchellh/mapstructure
 github.com/modern-go/concurrent
 # github.com/modern-go/reflect2 v1.0.1
 github.com/modern-go/reflect2
-# github.com/moul/http2curl v1.0.0
-github.com/moul/http2curl
-# github.com/parnurzeal/gorequest v0.2.15
+# github.com/parnurzeal/gorequest v0.2.16
 github.com/parnurzeal/gorequest
 # github.com/pelletier/go-toml v1.2.0
 github.com/pelletier/go-toml
@@ -69,11 +67,13 @@ github.com/spf13/cobra
 github.com/spf13/jwalterweatherman
 # github.com/spf13/pflag v1.0.3
 github.com/spf13/pflag
-# github.com/spf13/viper v1.4.0
+# github.com/spf13/viper v1.5.0
 github.com/spf13/viper
+# github.com/subosito/gotenv v1.2.0
+github.com/subosito/gotenv
 # github.com/tosone/logging v0.0.0-20190717132334-b3a0cfb708ca
 github.com/tosone/logging
-# github.com/ugorji/go v1.1.4
+# github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8
 github.com/ugorji/go/codec
 # github.com/unknwon/com v1.0.1
 github.com/unknwon/com
@@ -90,5 +90,7 @@ google.golang.org/appengine/cloudsql
 gopkg.in/go-playground/validator.v8
 # gopkg.in/natefinch/lumberjack.v2 v2.0.0-20170531160350-a96e63847dc3
 gopkg.in/natefinch/lumberjack.v2
-# gopkg.in/yaml.v2 v2.2.2
+# gopkg.in/yaml.v2 v2.2.4
 gopkg.in/yaml.v2
+# moul.io/http2curl v1.0.0
+moul.io/http2curl
