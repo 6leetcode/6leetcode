@@ -21,5 +21,5 @@ int main(int argc, char const *argv[]) {
   int n    = -8;
   cout << "Input:  " << x << ", " << n << endl;
   cout << "Output: " << solution.myPow(2, -8) << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }

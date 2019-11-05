@@ -19,5 +19,5 @@ int main(int argc, char const *argv[]) {
   printf("Input:  %f, %d\n", x, n);
   double output = myPow(x, n);
   printf("Output: %f\n", output);
-  return 0;
+  return EXIT_SUCCESS;
 }
