@@ -1,7 +1,11 @@
+Target = php gcc golang java python rust node
+
+all: $(Target)
+
 format:
 	@python3 scripts/format.py
 
-php gcc golang java python rust node:
+$(Target):
 	@docker-compose up --force-recreate -d $@
 
 generate:

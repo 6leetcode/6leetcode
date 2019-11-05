@@ -1,0 +1,26 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+ 
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: [ '1.12.13', '1.13.4' ]
+ 
+    steps:
+    - name: Checkout branch
+      uses: actions/checkout@v1
+      with:
+        fetch-depth: 10
+    - name: Setup Go env
+      uses: actions/setup-go@v1.0.0
+      with:
+        version: ${{ matrix.go }}
+    - name: Build backend 
+      run: make -C apps/backends
+    - name: Build the Docker image
+      run: make php gcc golang java python rust node
