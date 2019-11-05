@@ -189,6 +189,7 @@ if __name__ == "__main__":
             .replace("(", "")\
             .replace("(", "")\
             .replace(")", "")\
+            .replace(",","")\
             .lower() + ")"
         if len(sql[problem]) != 0:
             s += "|-|-|-|-|-|-|-|-|" + lang(sql[problem], problem) + "|-|"
