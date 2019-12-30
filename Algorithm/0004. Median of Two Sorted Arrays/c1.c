@@ -8,7 +8,9 @@ int cmpfunc(const void *a, const void *b) {
 
 double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Size) {
   int total_length = nums1Size + nums2Size;
-  int *merge       = (int *)malloc(sizeof(int) * total_length);
+
+  int *merge = (int *)malloc(sizeof(int) * total_length);
+
   memcpy(merge, nums1, sizeof(int) * nums1Size);
   memcpy(merge + nums1Size, nums2, sizeof(int) * nums2Size);
 
