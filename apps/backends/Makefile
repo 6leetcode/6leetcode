@@ -2,14 +2,11 @@ include .env
 export $(shell sed 's/=.*//' .env)
 
 app_name                = 6leetcode
-docker_name             = $(app_name)
-docker_tag              = dev
-docker_container        = $(app_name)
 
 BuildStamp              = $(shell date '+%Y%m%d%H%M%S')
 GitHash                 = $(shell git rev-parse HEAD)
 Version                 = $(shell git describe --abbrev=0 --tags --always)
-Target                  = 6leetcode
+Target                  = ${app_name}
 Suffix                  =
 GOFILES                 = $(shell find . -name "*.go" -type f ! -path "./vendor/*" ! -path "*/bindata.go")
 
@@ -22,7 +19,7 @@ endif
 
 .PHONY: ${OSName}
 ${OSName}: clean
-	env GOOS=$@ go build -v -o release/${Target}-$@${Suffix} -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=$@ go build -v -o release/${Target}-$@${Suffix} -mod=readonly -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release: clean
@@ -66,8 +63,8 @@ docker-run:
 
 .PHONY: docker-exec-release
 docker-exec-release:
-	docker-compose exec $(docker_container) /bin/bash
+	docker-compose exec $(app_name) /bin/bash
 
 .PHONY: docker-exec
 docker-exec:
-	docker-compose exec $(docker_container)-dev /usr/bin/fish
+	docker-compose exec $(app_name)-dev /usr/bin/fish
