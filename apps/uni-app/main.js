@@ -13,10 +13,10 @@ App.mpType = 'app';
 
 import store from './store';
 
-Vue.prototype.$store = store; 
+Vue.prototype.$store = store;
 
 const app = new Vue({
-	...App
+  ...App
 });
 
 app.$mount();

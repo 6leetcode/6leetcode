@@ -1,16 +1,16 @@
 {
-	"name": "6leetcode",
-	"version": "1.0.0",
-	"description": "6leetcode miniapp",
-	"main": "main.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
-	"author": "Tosone",
-	"license": "ISC",
-	"dependencies": {
-		"lodash": "^4.17.15",
-		"moment": "^2.24.0"
-	}
+  "name": "6leetcode",
+  "version": "1.0.0",
+  "description": "6leetcode miniapp",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tosone",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0"
+  }
 }
