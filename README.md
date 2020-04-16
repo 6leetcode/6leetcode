@@ -56,3 +56,5 @@ LeetCode Solutions.
 |[0679](https://leetcode.com/problems/24-game)|[1](https://github.com/6leetcode/6leetcode/blob/master/Algorithm/0679.%2024%20Game/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/Algorithm/0679.%2024%20Game/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/Algorithm/0679.%2024%20Game/rust1.rs)|-|-|
 |[0696](https://leetcode.com/problems/count-binary-substrings)|[1](https://github.com/6leetcode/6leetcode/blob/master/Algorithm/0696.%20Count%20Binary%20Substrings/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/Algorithm/0696.%20Count%20Binary%20Substrings/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/Algorithm/0696.%20Count%20Binary%20Substrings/rust1.rs)|-|-|
 |[1114](https://leetcode.com/problems/print-in-order)|||||||||-|-|
+|[1249](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)|||||||||-|-|
+|[1256](https://leetcode.com/problems/encode-number)|[1](https://github.com/6leetcode/6leetcode/blob/master/Algorithm/1256.%20Encode%20Number/c1.c)||||||||-|-|
