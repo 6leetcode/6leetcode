@@ -1,18 +1,33 @@
 module github.com/6leetcode/6leetcode
 
-go 1.13
+go 1.14
 
 require (
-	github.com/gin-gonic/gin v1.4.0
-	github.com/go-sql-driver/mysql v1.4.1
-	github.com/jinzhu/gorm v1.9.11
-	github.com/lib/pq v1.2.0
-	github.com/mattn/go-sqlite3 v1.11.0
+	github.com/elazarl/goproxy v0.0.0-20200315184450-1f3cb6622dad // indirect
+	github.com/fatih/color v1.9.0 // indirect
+	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/gin-gonic/gin v1.6.2
+	github.com/go-sql-driver/mysql v1.5.0
+	github.com/golang/protobuf v1.4.0 // indirect
+	github.com/jinzhu/gorm v1.9.12
+	github.com/lib/pq v1.3.0
+	github.com/mattn/go-colorable v0.1.6 // indirect
+	github.com/mattn/go-sqlite3 v2.0.3+incompatible
+	github.com/mitchellh/mapstructure v1.2.2 // indirect
+	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/parnurzeal/gorequest v0.2.16
-	github.com/spf13/cobra v0.0.5
-	github.com/spf13/viper v1.5.0
-	github.com/tosone/logging v0.0.0-20190717132334-b3a0cfb708ca
+	github.com/pelletier/go-toml v1.7.0 // indirect
+	github.com/pkg/errors v0.9.1 // indirect
+	github.com/spf13/afero v1.2.2 // indirect
+	github.com/spf13/cast v1.3.1 // indirect
+	github.com/spf13/cobra v1.0.0
+	github.com/spf13/jwalterweatherman v1.1.0 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/viper v1.6.3
+	github.com/tosone/logging v1.1.0
 	github.com/unknwon/com v1.0.1
+	golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e // indirect
+	golang.org/x/sys v0.0.0-20200413165638-669c56c373c4 // indirect
 	moul.io/http2curl v1.0.0 // indirect
 )
 

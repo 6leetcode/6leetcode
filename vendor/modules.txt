@@ -1,17 +1,25 @@
-# github.com/fatih/color v1.7.0
+# github.com/fatih/color v1.9.0
 github.com/fatih/color
-# github.com/fsnotify/fsnotify v1.4.7
+# github.com/fsnotify/fsnotify v1.4.9
 github.com/fsnotify/fsnotify
-# github.com/gin-contrib/sse v0.0.0-20190301062529-5545eab6dad3
+# github.com/gin-contrib/sse v0.1.0
 github.com/gin-contrib/sse
-# github.com/gin-gonic/gin v1.4.0
+# github.com/gin-gonic/gin v1.6.2
 github.com/gin-gonic/gin
 github.com/gin-gonic/gin/binding
+github.com/gin-gonic/gin/internal/bytesconv
 github.com/gin-gonic/gin/internal/json
 github.com/gin-gonic/gin/render
-# github.com/go-sql-driver/mysql v1.4.1
+# github.com/go-playground/locales v0.13.0
+github.com/go-playground/locales
+github.com/go-playground/locales/currency
+# github.com/go-playground/universal-translator v0.17.0
+github.com/go-playground/universal-translator
+# github.com/go-playground/validator/v10 v10.2.0
+github.com/go-playground/validator/v10
+# github.com/go-sql-driver/mysql v1.5.0
 github.com/go-sql-driver/mysql
-# github.com/golang/protobuf v1.3.1
+# github.com/golang/protobuf v1.4.0
 github.com/golang/protobuf/proto
 # github.com/hashicorp/hcl v1.0.0
 github.com/hashicorp/hcl
@@ -26,25 +34,27 @@ github.com/hashicorp/hcl/json/scanner
 github.com/hashicorp/hcl/json/token
 # github.com/inconshreveable/mousetrap v1.0.0
 github.com/inconshreveable/mousetrap
-# github.com/jinzhu/gorm v1.9.11
+# github.com/jinzhu/gorm v1.9.12
 github.com/jinzhu/gorm
 # github.com/jinzhu/inflection v1.0.0
 github.com/jinzhu/inflection
-# github.com/json-iterator/go v1.1.6
+# github.com/json-iterator/go v1.1.9
 github.com/json-iterator/go
-# github.com/lib/pq v1.2.0
+# github.com/leodido/go-urn v1.2.0
+github.com/leodido/go-urn
+# github.com/lib/pq v1.3.0
 github.com/lib/pq
 github.com/lib/pq/oid
 github.com/lib/pq/scram
 # github.com/magiconair/properties v1.8.1
 github.com/magiconair/properties
-# github.com/mattn/go-colorable v0.0.9
+# github.com/mattn/go-colorable v0.1.6
 github.com/mattn/go-colorable
-# github.com/mattn/go-isatty v0.0.7
+# github.com/mattn/go-isatty v0.0.12
 github.com/mattn/go-isatty
-# github.com/mattn/go-sqlite3 v1.11.0
+# github.com/mattn/go-sqlite3 v2.0.3+incompatible
 github.com/mattn/go-sqlite3
-# github.com/mitchellh/mapstructure v1.1.2
+# github.com/mitchellh/mapstructure v1.2.2
 github.com/mitchellh/mapstructure
 # github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
 github.com/modern-go/concurrent
@@ -52,45 +62,71 @@ github.com/modern-go/concurrent
 github.com/modern-go/reflect2
 # github.com/parnurzeal/gorequest v0.2.16
 github.com/parnurzeal/gorequest
-# github.com/pelletier/go-toml v1.2.0
+# github.com/pelletier/go-toml v1.7.0
 github.com/pelletier/go-toml
-# github.com/pkg/errors v0.8.0
+# github.com/pkg/errors v0.9.1
 github.com/pkg/errors
-# github.com/spf13/afero v1.1.2
+# github.com/spf13/afero v1.2.2
 github.com/spf13/afero
 github.com/spf13/afero/mem
-# github.com/spf13/cast v1.3.0
+# github.com/spf13/cast v1.3.1
 github.com/spf13/cast
-# github.com/spf13/cobra v0.0.5
+# github.com/spf13/cobra v1.0.0
 github.com/spf13/cobra
-# github.com/spf13/jwalterweatherman v1.0.0
+# github.com/spf13/jwalterweatherman v1.1.0
 github.com/spf13/jwalterweatherman
-# github.com/spf13/pflag v1.0.3
+# github.com/spf13/pflag v1.0.5
 github.com/spf13/pflag
-# github.com/spf13/viper v1.5.0
+# github.com/spf13/viper v1.6.3
 github.com/spf13/viper
 # github.com/subosito/gotenv v1.2.0
 github.com/subosito/gotenv
-# github.com/tosone/logging v0.0.0-20190717132334-b3a0cfb708ca
+# github.com/tosone/logging v1.1.0
 github.com/tosone/logging
-# github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8
+# github.com/ugorji/go/codec v1.1.7
 github.com/ugorji/go/codec
 # github.com/unknwon/com v1.0.1
 github.com/unknwon/com
-# golang.org/x/net v0.0.0-20190522155817-f3200d17e092
+# golang.org/x/net v0.0.0-20200324143707-d3edc9973b7e
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20190222072716-a9d3bda3a223
+# golang.org/x/sys v0.0.0-20200413165638-669c56c373c4
 golang.org/x/sys/unix
-# golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2
+# golang.org/x/text v0.3.2
 golang.org/x/text/transform
 golang.org/x/text/unicode/norm
-# google.golang.org/appengine v1.4.0
-google.golang.org/appengine/cloudsql
-# gopkg.in/go-playground/validator.v8 v8.18.2
-gopkg.in/go-playground/validator.v8
-# gopkg.in/natefinch/lumberjack.v2 v2.0.0-20170531160350-a96e63847dc3
+# google.golang.org/protobuf v1.21.0
+google.golang.org/protobuf/encoding/prototext
+google.golang.org/protobuf/encoding/protowire
+google.golang.org/protobuf/internal/descfmt
+google.golang.org/protobuf/internal/descopts
+google.golang.org/protobuf/internal/detrand
+google.golang.org/protobuf/internal/encoding/defval
+google.golang.org/protobuf/internal/encoding/messageset
+google.golang.org/protobuf/internal/encoding/tag
+google.golang.org/protobuf/internal/encoding/text
+google.golang.org/protobuf/internal/errors
+google.golang.org/protobuf/internal/fieldnum
+google.golang.org/protobuf/internal/fieldsort
+google.golang.org/protobuf/internal/filedesc
+google.golang.org/protobuf/internal/filetype
+google.golang.org/protobuf/internal/flags
+google.golang.org/protobuf/internal/genname
+google.golang.org/protobuf/internal/impl
+google.golang.org/protobuf/internal/mapsort
+google.golang.org/protobuf/internal/pragma
+google.golang.org/protobuf/internal/set
+google.golang.org/protobuf/internal/strs
+google.golang.org/protobuf/internal/version
+google.golang.org/protobuf/proto
+google.golang.org/protobuf/reflect/protoreflect
+google.golang.org/protobuf/reflect/protoregistry
+google.golang.org/protobuf/runtime/protoiface
+google.golang.org/protobuf/runtime/protoimpl
+# gopkg.in/ini.v1 v1.51.0
+gopkg.in/ini.v1
+# gopkg.in/natefinch/lumberjack.v2 v2.0.0
 gopkg.in/natefinch/lumberjack.v2
-# gopkg.in/yaml.v2 v2.2.4
+# gopkg.in/yaml.v2 v2.2.8
 gopkg.in/yaml.v2
 # moul.io/http2curl v1.0.0
 moul.io/http2curl
