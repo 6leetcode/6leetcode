@@ -34,5 +34,7 @@ int main(int argc, char const *argv[]) {
     printf(", %d", nums[i]);
   }
   printf("]\n");
+  free(nums);
+
   return EXIT_SUCCESS;
 }

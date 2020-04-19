@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <strings.h>
 
 int *plusOne(int *digits, int digitsSize, int *returnSize) {

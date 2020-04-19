@@ -28,7 +28,8 @@ int main(int argc, char const *argv[]) {
   for (size_t i = 0; i < size; i++) {
     printf("%c", str[i]);
   }
-
   printf("\n");
+  free(str);
+
   return 0;
 }

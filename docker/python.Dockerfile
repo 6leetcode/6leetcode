@@ -1,21 +1,10 @@
 FROM python:alpine
 
-# RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+WORKDIR /app
 
-RUN apk update && apk upgrade \
-  && apk add --no-cache mdocml-apropos coreutils ca-certificates \
-  vim fish tzdata make
-
-RUN rm -f /etc/localtime && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-
-RUN sed -i "s/bin\/ash/usr\/bin\/fish/" /etc/passwd
-
-RUN echo "set mouse-=a" >> ~/.vimrc
-
-ENV SHELL /usr/bin/fish
+RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories && \
+  apk add --no-cache ca-certificates make
 
 VOLUME /app
 
-WORKDIR /app
-
-CMD ["/usr/bin/fish"]
+CMD ["/bin/bash"]

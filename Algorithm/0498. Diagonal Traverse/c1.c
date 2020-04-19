@@ -62,6 +62,11 @@ int main(int argc, char const *argv[]) {
   int returnSize = 0;
   int *result    = findDiagonalOrder(matrix, matrixSize, &matrixColSize, &returnSize);
 
+  for (int i = 0; i < 3; i++) {
+    free(matrix[i]);
+  }
+  free(matrix);
+
   printf("Output: [");
   for (int i = 0; i < returnSize; i++) {
     if (i != returnSize - 1) {
@@ -71,6 +76,7 @@ int main(int argc, char const *argv[]) {
     }
   }
   printf("]\n");
+  free(result);
 
   return EXIT_SUCCESS;
 }

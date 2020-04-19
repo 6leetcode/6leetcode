@@ -26,5 +26,5 @@ jobs:
           go-version: ${{ matrix.go }}
       - name: Build backend
         run: make -C apps/backends
-      - name: Build the Docker image
-        run: make php gcc golang java python rust node
+      - name: Test code in specific image
+        run: make all

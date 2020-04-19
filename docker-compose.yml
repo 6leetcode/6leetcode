@@ -1,10 +1,22 @@
 version: "3.7"
 
 services:
-  gcc:
-    image: 6leetcode:gcc
-    container_name: gcc
-    hostname: gcc
+  c:
+    image: 6leetcode:c
+    container_name: c
+    hostname: c
+    cap_add:
+      - SYS_PTRACE
+    build:
+      context: .
+      dockerfile: ./docker/gcc.Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+  cc:
+    image: 6leetcode:cc
+    container_name: cc
+    hostname: cc
     cap_add:
       - SYS_PTRACE
     build:
