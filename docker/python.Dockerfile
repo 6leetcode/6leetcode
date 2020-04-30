@@ -7,4 +7,4 @@ RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /e
 
 VOLUME /app
 
-CMD ["/bin/bash"]
+CMD ["/bin/sh"]
