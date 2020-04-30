@@ -19,7 +19,7 @@ char *intToRoman(int num) {
 
 int main(int argc, char const *argv[]) {
   int input = 3;
-  printf("Input: %d\n", input);
+  printf("Input:  %d\n", input);
   char *output = intToRoman(input);
   printf("Output: %s\n", output);
   free(output);
