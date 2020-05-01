@@ -1,4 +1,3 @@
-#include <cstdlib>
 #include <iostream>
 #include <vector>
 
@@ -13,7 +12,7 @@ private:
   bool rule_col[N][N] = {false};
   bool rule_box[N][N] = {false};
 
-  uint left_num = 81;
+  unsigned int left_num = 81;
 
   void sudoku_rule(vector<vector<char>> board) {
     for (int i = 0; i < N; i++) { // row rule

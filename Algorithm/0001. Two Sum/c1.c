@@ -6,10 +6,7 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
   *returnSize = 2;
 
   int *ans = (int *)malloc(sizeof(int) * *returnSize);
-  // int *result;
-  // int result_length = 0;
   for (int i = 0; i < numsSize; i++) {
-    // bool flag = false;
     for (int j = i + 1; j < numsSize; j++) {
       if (nums[i] + nums[j] == target) {
         ans[0] = i;

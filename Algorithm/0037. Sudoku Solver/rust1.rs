@@ -9,10 +9,9 @@ const M: u8 = N * N;
 impl Solution {
     pub fn solve_sudoku(_board: &mut Vec<Vec<char>>) {}
 }
-let mut rule_row = [[0u8; N], N];
+// let mut rule_row = [[0u8; N], N];
 
 fn main() {
-    
     let mut board: Vec<Vec<char>> = vec![
         vec!['.', '.', '9', '7', '4', '8', '.', '.', '.'],
         vec!['7', '.', '.', '.', '.', '.', '.', '.', '.'],

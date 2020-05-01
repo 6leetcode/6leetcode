@@ -37,11 +37,11 @@ $HOME/
 *.*~
 *.class
 *.db
-apps/backends/config.yml
 
-apps/backends/release/
 .idea/
 .vscode/
 venv/
+apps/backends/config.yml
+apps/backends/release/
 apps/uni-app/unpackage/
 apps/uni-app/node_modules/
