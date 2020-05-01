@@ -1,32 +1,36 @@
-### [Word Frequency](https://leetcode.com/problems/word-frequency/)
+### [Word Frequency](https://leetcode.com/problems/word-frequency)
 
-Write a bash script to calculate the frequency of each word in a text file `words.txt`.
+<p>Write a bash script to calculate the frequency of each word in a text file <code>words.txt</code>.</p>
 
-For simplicity sake, you may assume:
+<p>For simplicity sake, you may assume:</p>
 
-- `words.txt` contains only lowercase characters and space ' ' characters.
-- Each word must consist of lowercase characters only.
-- Words are separated by one or more whitespace characters.
+<ul>
+	<li><code>words.txt</code> contains only lowercase characters and space <code>&#39; &#39;</code> characters.</li>
+	<li>Each word must consist of lowercase characters only.</li>
+	<li>Words are separated by one or more whitespace characters.</li>
+</ul>
 
-__Example__:
+<p><strong>Example:</strong></p>
 
-Assume that `words.txt` has the following content:
+<p>Assume that <code>words.txt</code> has the following content:</p>
 
-```
+<pre>
 the day is sunny the the
 the sunny is is
-```
+</pre>
 
-Your script should output the following, sorted by descending frequency:
+<p>Your script should output the following, sorted by descending frequency:</p>
 
-```
+<pre>
 the 4
 is 3
 sunny 2
 day 1
-```
+</pre>
 
-__Note__:
+<p><b>Note:</b></p>
 
-- Don't worry about handling ties, it is guaranteed that each word's frequency count is unique.
-- Could you write it in one-line using Unix pipes?
+<ul>
+	<li>Don&#39;t worry about handling ties, it is guaranteed that each word&#39;s frequency count is unique.</li>
+	<li>Could you write it in one-line using <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-4.html">Unix pipes</a>?</li>
+</ul>

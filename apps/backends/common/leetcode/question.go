@@ -135,6 +135,9 @@ func (i *Instance) readme(q *table.Questions, questionInfo table.QuestionInfo, b
 	if err = i.readmeZH(q, questionInfo, dir); err != nil {
 		return
 	}
+	if err = i.makefile(dir); err != nil {
+		return
+	}
 	return
 }
 
@@ -176,6 +179,26 @@ func (i *Instance) readmeZH(q *table.Questions, questionInfo table.QuestionInfo,
 		return
 	}
 	if _, err = file.Write(questionInfo.TranslatedContent); err != nil {
+		return
+	}
+	if err = file.Close(); err != nil {
+		return
+	}
+	return
+}
+
+func (i *Instance) makefile(dir string) (err error) {
+	var filename = dir + "/Makefile"
+	if com.IsFile(filename) {
+		if err = os.Remove(filename); err != nil {
+			return
+		}
+	}
+	var file *os.File
+	if file, err = os.Create(dir + "/Makefile"); err != nil {
+		return
+	}
+	if _, err = file.WriteString(fmt.Sprintf("%s\n", "include ../../Makefile.rules")); err != nil {
 		return
 	}
 	if err = file.Close(); err != nil {

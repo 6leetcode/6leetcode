@@ -1,17 +1,8 @@
-SQL Schema
+### [Combine Two Tables](https://leetcode.com/problems/combine-two-tables)
 
-``` SQL
-Create table Person (PersonId int, FirstName varchar(255), LastName varchar(255))
-Create table Address (AddressId int, PersonId int, City varchar(255), State varchar(255))
-Truncate table Person
-insert into Person (PersonId, LastName, FirstName) values ('1', 'Wang', 'Allen')
-Truncate table Address
-insert into Address (AddressId, PersonId, City, State) values ('1', '2', 'New York City', 'New York')
-```
+<p>Table: <code>Person</code></p>
 
-Table: `Person`
-
-```
+<pre>
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -19,13 +10,12 @@ Table: `Person`
 | FirstName   | varchar |
 | LastName    | varchar |
 +-------------+---------+
-
 PersonId is the primary key column for this table.
-```
+</pre>
 
-Table: `Address`
+<p>Table: <code>Address</code></p>
 
-```
+<pre>
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
@@ -35,10 +25,12 @@ Table: `Address`
 | State       | varchar |
 +-------------+---------+
 AddressId is the primary key column for this table.
-```
+</pre>
 
-Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
+<p>&nbsp;</p>
 
-```
+<p>Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:</p>
+
+<pre>
 FirstName, LastName, City, State
-```
+</pre>

@@ -2,7 +2,7 @@
 import os
 
 prefix = "https://leetcode.com/problems/"
-code_prefix = "https://github.com/6leetcode/6leetcode/blob/master/Algorithm/"
+code_prefix = "https://github.com/6leetcode/6leetcode/blob/master/Algorithms/"
 
 
 def rewrite(name, table):
@@ -90,8 +90,8 @@ if __name__ == "__main__":
   table.append("|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
   problemsPath = []
-  for dir in os.listdir("./Algorithm"):
-    problemsPath.append(("Algorithm/"+dir))
+  for dir in os.listdir("./Algorithms"):
+    problemsPath.append(("Algorithms/"+dir))
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -105,7 +105,7 @@ if __name__ == "__main__":
     shell[dir] = []
     concurrency[dir] = []
 
-    filelist = os.listdir("./Algorithm/" + dir)
+    filelist = os.listdir("./Algorithms/" + dir)
     filelist.sort()
     for inner in filelist:
       # Golang

@@ -1,4 +1,4 @@
-DIRS = "Algorithm/0344.\ Reverse\ String" "Algorithm/0169.\ Majority\ Element" "Algorithm/0012.\ Integer\ to\ Roman" "Algorithm/0696.\ Count\ Binary\ Substrings" "Algorithm/0319.\ Bulb\ Switcher" "Algorithm/0679.\ 24\ Game" "Algorithm/0458.\ Poor\ Pigs"
+DIRS = "Algorithms/0344.\ Reverse\ String" "Algorithms/0169.\ Majority\ Element" "Algorithms/0037.\ Sudoku\ Solver" "Algorithms/0012.\ Integer\ to\ Roman" "Algorithms/0696.\ Count\ Binary\ Substrings" "Algorithms/0319.\ Bulb\ Switcher" "Algorithms/0679.\ 24\ Game" "Algorithms/0458.\ Poor\ Pigs"
 run: ${DIRS}
 ${DIRS}:
 	make -C $@ rust
