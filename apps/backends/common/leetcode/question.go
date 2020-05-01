@@ -3,10 +3,12 @@ package leetcode
 import (
 	"encoding/json"
 	"fmt"
+	"os"
 	"strconv"
 
 	"github.com/parnurzeal/gorequest"
 	"github.com/spf13/viper"
+	"github.com/unknwon/com"
 
 	"github.com/6leetcode/6leetcode/apps/backends/common/table"
 )
@@ -93,12 +95,12 @@ func (i *Instance) Question(titleSlug string, q *table.Questions) (err error) {
 		QuestionID:            qid,
 		FrontendQuestionID:    fqid,
 		Content:               []byte(b.Data.Question.Content),
+		TranslatedContent:     []byte(b.Data.Question.TranslatedContent),
 		CodeSnippets:          codeSnippets,
 		LangToValidPlayground: []byte(b.Data.Question.LangToValidPlayground),
 		SimilarQuestions:      []byte(b.Data.Question.SimilarQuestions),
 		Stats:                 []byte(b.Data.Question.Stats),
 		TopicTags:             topicTags,
-		TranslatedContent:     []byte(b.Data.Question.TranslatedContent),
 	}
 
 	if err = questionInfo.Create(); err != nil {
@@ -111,5 +113,73 @@ func (i *Instance) Question(titleSlug string, q *table.Questions) (err error) {
 		return
 	}
 
+	if viper.GetString("Generate.Readme") != "" {
+		if err = i.readme(q, questionInfo, viper.GetString("Generate.Readme")); err != nil {
+			return
+		}
+	}
+
+	return
+}
+
+func (i *Instance) readme(q *table.Questions, questionInfo table.QuestionInfo, basedir string) (err error) {
+	var dir = fmt.Sprintf("%s/%s/%04d. %s", basedir, q.CategoryTitle, q.FrontendQuestionID, q.Title)
+	if !com.IsDir(dir) {
+		if err = os.MkdirAll(dir, 0755); err != nil {
+			return
+		}
+	}
+	if err = i.readmeEN(q, questionInfo, dir); err != nil {
+		return
+	}
+	if err = i.readmeZH(q, questionInfo, dir); err != nil {
+		return
+	}
+	return
+}
+
+func (i *Instance) readmeEN(q *table.Questions, questionInfo table.QuestionInfo, dir string) (err error) {
+	var filename = dir + "/README.md"
+	if com.IsFile(filename) {
+		if err = os.Remove(filename); err != nil {
+			return
+		}
+	}
+	var file *os.File
+	if file, err = os.Create(dir + "/README.md"); err != nil {
+		return
+	}
+	if _, err = file.WriteString(fmt.Sprintf("### [%s](https://leetcode.com/problems/%s)\n\n", q.Title, q.TitleSlug)); err != nil {
+		return
+	}
+	if _, err = file.Write(questionInfo.Content); err != nil {
+		return
+	}
+	if err = file.Close(); err != nil {
+		return
+	}
+	return
+}
+
+func (i *Instance) readmeZH(q *table.Questions, questionInfo table.QuestionInfo, dir string) (err error) {
+	var filename = dir + "/README-ZH.md"
+	if com.IsFile(filename) {
+		if err = os.Remove(filename); err != nil {
+			return
+		}
+	}
+	var file *os.File
+	if file, err = os.Create(dir + "/README-ZH.md"); err != nil {
+		return
+	}
+	if _, err = file.WriteString(fmt.Sprintf("### [%s](https://leetcode-cn.com/problems/%s)\n\n", q.TranslatedTitle, q.TitleSlug)); err != nil {
+		return
+	}
+	if _, err = file.Write(questionInfo.TranslatedContent); err != nil {
+		return
+	}
+	if err = file.Close(); err != nil {
+		return
+	}
 	return
 }

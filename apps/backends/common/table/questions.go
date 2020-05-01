@@ -49,11 +49,11 @@ type QuestionInfo struct {
 	FrontendQuestionID    int    `json:"frontend_question_id"`
 	CodeSnippets          []byte `json:"code_snippets"`
 	Content               []byte `json:"content"`
+	TranslatedContent     []byte `json:"translated_content"`
 	LangToValidPlayground []byte `json:"lang_to_valid_playground"`
 	SimilarQuestions      []byte `json:"similar_questions"`
 	Stats                 []byte `json:"stats"`
 	TopicTags             []byte `json:"topic_tags"`
-	TranslatedContent     []byte `json:"translated_content"`
 }
 
 // Create ..

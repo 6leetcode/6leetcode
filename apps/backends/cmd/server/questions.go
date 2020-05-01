@@ -42,7 +42,9 @@ func questionsRouter(server *gin.Engine) {
 		}
 
 		var h = sha256.New()
-		h.Write(data)
+		if _, err = h.Write(data); err != nil {
+			return
+		}
 		hash = hex.EncodeToString(h.Sum(nil))
 	})
 

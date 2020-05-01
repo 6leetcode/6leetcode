@@ -9,3 +9,6 @@ Database:
 WeChat:
   AppID: # AppID
   Secret: # Secret
+
+Generate:
+  Readme:
