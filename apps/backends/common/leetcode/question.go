@@ -165,14 +165,14 @@ func (i *Instance) readmeEN(q *table.Questions, questionInfo table.QuestionInfo,
 }
 
 func (i *Instance) readmeZH(q *table.Questions, questionInfo table.QuestionInfo, dir string) (err error) {
-	var filename = dir + "/README-ZH.md"
+	var filename = dir + "/README_ZH.md"
 	if com.IsFile(filename) {
 		if err = os.Remove(filename); err != nil {
 			return
 		}
 	}
 	var file *os.File
-	if file, err = os.Create(dir + "/README-ZH.md"); err != nil {
+	if file, err = os.Create(dir + "/README_ZH.md"); err != nil {
 		return
 	}
 	if _, err = file.WriteString(fmt.Sprintf("### [%s](https://leetcode-cn.com/problems/%s)\n\n", q.TranslatedTitle, q.TitleSlug)); err != nil {

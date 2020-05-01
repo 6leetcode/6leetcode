@@ -18,11 +18,11 @@ else
 endif
 
 .PHONY: ${OSName}
-${OSName}: clean
+${OSName}:
 	env GOOS=$@ go build -v -o release/${Target}-$@${Suffix} -mod=readonly -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
-release: clean
+release:
 	env GOOS=${OSName} go build -v -o release/${Target}-${OSName}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: authors
