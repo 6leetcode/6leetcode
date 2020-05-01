@@ -63,6 +63,7 @@ func (i *Instance) All() (err error) {
 			continue
 		}
 		if fqid, err = strconv.Atoi(question.QuestionFrontendID); err != nil {
+			err = nil
 			continue
 		}
 		var q = &table.Questions{
