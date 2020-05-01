@@ -1,46 +1,52 @@
-### [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)
+### [Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)
 
-Given a string s of `'('` , `')'` and lowercase English characters. 
+<p>Given a string <font face="monospace">s</font>&nbsp;of&nbsp;<code>&#39;(&#39;</code>&nbsp;,&nbsp;<code>&#39;)&#39;</code>&nbsp;and lowercase English characters.&nbsp;</p>
 
-Your task is to remove the minimum number of parentheses ( `'('` or `')'`, in any positions ) so that the resulting parentheses string is valid and return __any__ valid string.
+<p>Your task is to remove the minimum number of parentheses (&nbsp;<code>&#39;(&#39;</code>&nbsp;or&nbsp;<code>&#39;)&#39;</code>,&nbsp;in any positions ) so that the resulting <em>parentheses string</em> is valid and return <strong>any</strong> valid string.</p>
 
-Formally, a parentheses string is valid if and only if:
+<p>Formally, a <em>parentheses string</em> is valid if and only if:</p>
 
-- It is the empty string, contains only lowercase characters, or
-- It can be written as AB (A concatenated with B), where A and B are valid strings, or
-- It can be written as (A), where A is a valid string.
+<ul>
+	<li>It is the empty string, contains only lowercase characters, or</li>
+	<li>It can be written as&nbsp;<code>AB</code>&nbsp;(<code>A</code>&nbsp;concatenated with&nbsp;<code>B</code>), where&nbsp;<code>A</code>&nbsp;and&nbsp;<code>B</code>&nbsp;are valid strings, or</li>
+	<li>It can be written as&nbsp;<code>(A)</code>, where&nbsp;<code>A</code>&nbsp;is a valid string.</li>
+</ul>
 
-__Example 1__:
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
-```
-Input: s = "lee(t(c)o)de)"
-Output: "lee(t(c)o)de"
-Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
-```
+<pre>
+<strong>Input:</strong> s = &quot;lee(t(c)o)de)&quot;
+<strong>Output:</strong> &quot;lee(t(c)o)de&quot;
+<strong>Explanation:</strong> &quot;lee(t(co)de)&quot; , &quot;lee(t(c)ode)&quot; would also be accepted.
+</pre>
 
-__Example 2__:
+<p><strong>Example 2:</strong></p>
 
-```
-Input: s = "a)b(c)d"
-Output: "ab(c)d"
-```
+<pre>
+<strong>Input:</strong> s = &quot;a)b(c)d&quot;
+<strong>Output:</strong> &quot;ab(c)d&quot;
+</pre>
 
-__Example 3__:
+<p><strong>Example 3:</strong></p>
 
-```
-Input: s = "))(("
-Output: ""
-Explanation: An empty string is also valid.
-```
+<pre>
+<strong>Input:</strong> s = &quot;))((&quot;
+<strong>Output:</strong> &quot;&quot;
+<strong>Explanation:</strong> An empty string is also valid.
+</pre>
 
-__Example 4__:
+<p><strong>Example 4:</strong></p>
 
-```
-Input: s = "(a(b(c)d)"
-Output: "a(b(c)d)"
-```
+<pre>
+<strong>Input:</strong> s = &quot;(a(b(c)d)&quot;
+<strong>Output:</strong> &quot;a(b(c)d)&quot;
+</pre>
 
-__Constraints__:
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-- `1 <= s.length <= 10^5`
-- `s[i]` is one of  `'('` , `')'` and lowercase English letters.
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10^5</code></li>
+	<li><code>s[i]</code>&nbsp;is one&nbsp;of&nbsp;&nbsp;<code>&#39;(&#39;</code> , <code>&#39;)&#39;</code> and&nbsp;lowercase English letters<code>.</code></li>
+</ul>
