@@ -9,8 +9,12 @@
   "keywords": [],
   "author": "Tosone",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/6leetcode/6leetcode.git"
+  },
   "dependencies": {
     "lodash": "^4.17.15",
-    "moment": "^2.24.0"
+    "moment": "^2.25.0"
   }
 }

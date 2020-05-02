@@ -13,9 +13,12 @@ services:
     networks:
       - default
     labels:
-      - "traefik.enable=true"
-      - "traefik.port=4000"
-      - "traefik.frontend.rule=Host:6leetcode${HOST_DOMAIN}"
+      - traefik.http.routers.6leetcode.rule=Host(`6leetcode${HOST_DOMAIN}`)
+      - traefik.http.routers.6leetcode.entrypoints=websecure
+      - traefik.http.routers.6leetcode.tls=true
+      - traefik.http.routers.6leetcode.tls.certresolver=leresolver
+      - traefik.http.services=6leetcode
+      - traefik.http.services.6leetcode.loadbalancer.server.port=4000
   6leetcode-dev:
     container_name: 6leetcode-dev
     image: 6leetcode:dev
@@ -28,11 +31,14 @@ services:
     networks:
       - default
     volumes:
-      - $PWD/../..:/root/go/src/github.com/6leetcode/6leetcode
+      - $PWD/../..:/go/src/github.com/6leetcode/6leetcode
     labels:
-      - "traefik.enable=true"
-      - "traefik.port=4000"
-      - "traefik.frontend.rule=Host:test.6leetcode${HOST_DOMAIN}"
+      - traefik.http.routers.6leetcode-dev.rule=Host(`6leetcode-dev${HOST_DOMAIN}`)
+      - traefik.http.routers.6leetcode-dev.entrypoints=websecure
+      - traefik.http.routers.6leetcode-dev.tls=true
+      - traefik.http.routers.6leetcode-dev.tls.certresolver=leresolver
+      - traefik.http.services=6leetcode-dev
+      - traefik.http.services.6leetcode-dev.loadbalancer.server.port=4000
 networks:
   default:
     external:

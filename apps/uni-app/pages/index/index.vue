@@ -53,7 +53,7 @@ export default {
   onLoad() {
     console.log(this.$store.state.userInfo);
     uni.request({
-      url: "https://6leetcode.tosone.cn/questions",
+      url: "https://6leetcode-dev.tosone.cn/questions",
       complete: content => {
         content.data.questions = _.sortBy(content.data.questions, [
           function(o) {
