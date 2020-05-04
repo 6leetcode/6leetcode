@@ -1443,3 +1443,17 @@ LeetCode 题解
 |[1423](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards)|||||||||-|-|
 |[1424](https://leetcode.com/problems/diagonal-traverse-ii)|||||||||-|-|
 |[1425](https://leetcode.com/problems/constrained-subsequence-sum)|||||||||-|-|
+|[1426](https://leetcode.com/problems/counting-elements)|||||||||-|-|
+|[1427](https://leetcode.com/problems/perform-string-shifts)|||||||||-|-|
+|[1428](https://leetcode.com/problems/leftmost-column-with-at-least-a-one)|||||||||-|-|
+|[1429](https://leetcode.com/problems/first-unique-number)|||||||||-|-|
+|[1430](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree)|||||||||-|-|
+|[1431](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies)|||||||||-|-|
+|[1432](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer)|||||||||-|-|
+|[1433](https://leetcode.com/problems/check-if-a-string-can-break-another-string)|||||||||-|-|
+|[1434](https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other)|||||||||-|-|
+|[1435](https://leetcode.com/problems/create-a-session-bar-chart)|||||||||-|-|
+|[1436](https://leetcode.com/problems/destination-city)|||||||||-|-|
+|[1437](https://leetcode.com/problems/check-if-all-1's-are-at-least-length-k-places-away)|||||||||-|-|
+|[1438](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)|||||||||-|-|
+|[1439](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows)|||||||||-|-|
