@@ -13,13 +13,18 @@ func (i *Instance) Login() (err error) {
 	var errs []error
 
 	type loginBody struct {
-		Csrfmiddlewaretoken string `json:"csrfmiddlewaretoken"`
+		CSRFMiddlewareToken string `json:"csrfmiddlewaretoken"`
 		Login               string `json:"login"`
 		Password            string `json:"password"`
 		Next                string `json:"next"`
 	}
 
-	var b = loginBody{i.csrftoken, viper.GetString("Login.Name"), viper.GetString("Login.Password"), "/problemset/all/"}
+	var b = loginBody{
+		CSRFMiddlewareToken: i.csrftoken,
+		Login:               viper.GetString("Login.Name"),
+		Password:            viper.GetString("Login.Password"),
+		Next:                "/problemset/all/",
+	}
 
 	if response, _, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
 		Post("https://leetcode-cn.com/accounts/login").
