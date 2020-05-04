@@ -9,9 +9,9 @@ on:
       - master
 
 jobs:
-  build:
+  leetcode-ci:
+    name: leetcode-ci
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
