@@ -4,56 +4,55 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-type Questions struct {
+type Question struct {
 	gorm.Model         `json:"-"`
-	QuestionInfo       QuestionInfo `gorm:"foreignkey:QuestionInfoRefer" json:"question_info"`
-	QuestionInfoRefer  uint         `json:"question_info_refer"`
-	QuestionID         int          `json:"question_id"`
-	FrontendQuestionID int          `json:"frontend_question_id"`
-	Difficulty         string       `json:"difficulty"`
-	PaidOnly           bool         `json:"paid_only"`
-	Title              string       `json:"title"`
-	TitleSlug          string       `json:"title_slug"`
-	TranslatedTitle    string       `json:"translated_title"`
-	CategoryTitle      string       `json:"category_title"`
+	QuestionID         int    `json:"question_id"`
+	FrontendQuestionID int    `json:"frontend_question_id"`
+	Difficulty         string `json:"difficulty"`
+	PaidOnly           bool   `json:"paid_only"`
+	Title              string `json:"title"`
+	TitleSlug          string `json:"title_slug"`
+	TranslatedTitle    string `json:"translated_title"`
+	CategoryTitle      string `json:"category_title"`
 }
 
 // Create ..
-func (q *Questions) Create() (err error) {
-	var t Questions
-	if err = engine.Model(new(Questions)).Where(Questions{
+func (q *Question) Create() (err error) {
+	var t Question
+	if err = engine.Model(new(Question)).Where(Question{
 		QuestionID: q.QuestionID,
 	}).First(&t).Error; err == gorm.ErrRecordNotFound {
 		return engine.Create(q).Error
 	} else if err != nil {
 		return
 	}
-	return engine.Model(new(Questions)).Where(Questions{QuestionID: q.QuestionID}).Updates(q).Error
+	return engine.Model(new(Question)).Where(Question{QuestionID: q.QuestionID}).Updates(q).Error
 }
 
-func (q *Questions) Find() (questions []Questions, err error) {
-	questions = []Questions{}
+func (q *Question) Find() (questions []Question, err error) {
+	questions = []Question{}
 	err = engine.Find(&questions).Error
 	return
 }
 
-func (q *Questions) FindByID() (err error) {
-	err = engine.Preload("QuestionInfo").Where(Questions{QuestionID: q.QuestionID}).First(q).Error
+func (q *Question) FindByID() (err error) {
+	err = engine.Where(Question{QuestionID: q.QuestionID}).First(q).Error
 	return
 }
 
 // QuestionInfo ..
 type QuestionInfo struct {
 	gorm.Model            `json:"-"`
-	QuestionID            int    `json:"question_id"`
-	FrontendQuestionID    int    `json:"frontend_question_id"`
-	CodeSnippets          []byte `json:"code_snippets"`
-	Content               []byte `json:"content"`
-	TranslatedContent     []byte `json:"translated_content"`
-	LangToValidPlayground []byte `json:"lang_to_valid_playground"`
-	SimilarQuestions      []byte `json:"similar_questions"`
-	Stats                 []byte `json:"stats"`
-	TopicTags             []byte `json:"topic_tags"`
+	QuestionID            int      `json:"question_id"`
+	Question              Question `json:"question"`
+	FrontendQuestionID    int      `json:"frontend_question_id"`
+	CodeSnippets          []byte   `json:"code_snippets"`
+	Content               []byte   `json:"content"`
+	TranslatedContent     []byte   `json:"translated_content"`
+	LangToValidPlayground []byte   `json:"lang_to_valid_playground"`
+	SimilarQuestions      []byte   `json:"similar_questions"`
+	Stats                 []byte   `json:"stats"`
+	TopicTags             []byte   `json:"topic_tags"`
 }
 
 // Create ..
@@ -70,6 +69,6 @@ func (q *QuestionInfo) Create() (err error) {
 }
 
 func (q *QuestionInfo) Find() (err error) {
-	err = engine.Where(QuestionInfo{QuestionID: q.QuestionID}).First(q).Error
+	err = engine.Preload("Question").Where(QuestionInfo{QuestionID: q.QuestionID}).First(q).Error
 	return
 }

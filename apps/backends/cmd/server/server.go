@@ -5,7 +5,11 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/robfig/cron"
 	"github.com/spf13/viper"
+	"github.com/tosone/logging"
+
+	"github.com/6leetcode/6leetcode/apps/backends/common/leetcode"
 )
 
 func Initialize() (err error) {
@@ -13,6 +17,10 @@ func Initialize() (err error) {
 		gin.SetMode(gin.DebugMode)
 	} else {
 		gin.SetMode(gin.ReleaseMode)
+	}
+
+	if err = cronTask(); err != nil {
+		return
 	}
 
 	var server = gin.Default()
@@ -37,5 +45,24 @@ func Initialize() (err error) {
 	fmt.Printf("Listening and serving HTTP on %s\n", "0.0.0.0:"+viper.GetString("ServerPort"))
 	err = server.Run(":" + viper.GetString("ServerPort"))
 
+	return
+}
+
+func cronTask() (err error) {
+	var c = cron.New()
+	if err = c.AddFunc("@daily", func() {
+		var instance *leetcode.Instance
+		if instance, err = leetcode.New(); err != nil {
+			logging.Error(err)
+			return
+		}
+		if err = instance.All(); err != nil {
+			logging.Error(err)
+			return
+		}
+	}); err != nil {
+		return
+	}
+	c.Start()
 	return
 }

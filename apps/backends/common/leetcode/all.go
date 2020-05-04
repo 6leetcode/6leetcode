@@ -66,7 +66,7 @@ func (i *Instance) All() (err error) {
 			err = nil
 			continue
 		}
-		var q = &table.Questions{
+		var q = &table.Question{
 			QuestionID:         qid,
 			FrontendQuestionID: fqid,
 			Difficulty:         question.Difficulty,

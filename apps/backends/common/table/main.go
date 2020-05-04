@@ -128,10 +128,8 @@ func Initialize() (err error) {
 	engine.SetLogger(gLogger)
 
 	if err = engine.AutoMigrate(
-		new(Questions),
+		new(Question),
 		new(QuestionInfo),
-		new(OpenID),
-		new(WeChatInfo),
 	).Error; err != nil {
 		logging.Panic(err.Error())
 	}
