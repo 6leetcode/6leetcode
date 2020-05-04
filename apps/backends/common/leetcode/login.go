@@ -8,8 +8,6 @@ import (
 	"github.com/spf13/viper"
 )
 
-const csrftoken = "F8demdcvchuti3uNs38JsQDPmFs72QUdVOskHLxy8kGYutwZwGe4PKEPrGAuI8Hl"
-
 func (i *Instance) Login() (err error) {
 	var response gorequest.Response
 	var errs []error
@@ -27,12 +25,12 @@ func (i *Instance) Login() (err error) {
 		Post("https://leetcode-cn.com/accounts/login").
 		Set("Referer", "https://leetcode-cn.com/").
 		Set("origin", "https://leetcode-cn.com").
-		Set("x-csrftoken", csrftoken).
-		Set("user-agent", user_agent).
+		Set("x-csrftoken", i.csrftoken).
+		Set("user-agent", i.userAgent).
 		Type("multipart").
 		AddCookie(&http.Cookie{
 			Name:    "csrftoken",
-			Value:   csrftoken,
+			Value:   i.csrftoken,
 			Path:    "/",
 			Domain:  ".leetcode-cn.com",
 			Secure:  true,

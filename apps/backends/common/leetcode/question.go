@@ -24,7 +24,7 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 		Post("https://leetcode-cn.com/graphql").
 		Set("origin", "https://leetcode-cn.com").
 		Set("referer", "https://leetcode-cn.com/problemset/all/").
-		Set("user-agent", user_agent).
+		Set("user-agent", i.userAgent).
 		Set("x-csrftoken", i.csrftoken).
 		AddCookies(i.cookie).
 		Type("json").

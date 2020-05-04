@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/6leetcode/6leetcode/apps/backends/cmd"
-	"github.com/6leetcode/6leetcode/apps/backends/cmd/version"
-	"github.com/tosone/logging"
-
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
+
+	"github.com/tosone/logging"
+
+	"github.com/6leetcode/6leetcode/apps/backends/cmd"
+	"github.com/6leetcode/6leetcode/apps/backends/cmd/version"
 )
 
 // Version version command output msg

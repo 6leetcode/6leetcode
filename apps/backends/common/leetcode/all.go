@@ -2,7 +2,9 @@ package leetcode
 
 import (
 	"encoding/json"
+	"math/rand"
 	"strconv"
+	"time"
 
 	"github.com/parnurzeal/gorequest"
 	"github.com/spf13/viper"
@@ -21,7 +23,7 @@ func (i *Instance) All() (err error) {
 		Post("https://leetcode-cn.com/graphql").
 		Set("origin", "https://leetcode-cn.com").
 		Set("referer", "https://leetcode-cn.com/problemset/all/").
-		Set("user-agent", user_agent).
+		Set("user-agent", i.userAgent).
 		Set("x-csrftoken", i.csrftoken).
 		AddCookies(i.cookie).
 		Type("json").
@@ -79,6 +81,8 @@ func (i *Instance) All() (err error) {
 		if err := q.Create(); err != nil {
 			logging.Error(err)
 		}
+		rand.Seed(time.Now().UnixNano())
+		time.Sleep(time.Duration(rand.Intn(10)) * time.Second)
 		if err := i.Question(question.TitleSlug, q); err != nil {
 			logging.Error(err)
 		}
