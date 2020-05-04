@@ -13,7 +13,7 @@ RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /e
 
 RUN apk del .build-deps
 
-FROM alpine:edge AS release
+FROM alpine:edge
 
 RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories && \
   apk add --no-cache ca-certificates bash && \

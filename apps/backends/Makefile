@@ -31,6 +31,7 @@ clean:
 
 .PHONY: docker-build-release
 docker-build-release:
+	if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
 	docker-compose build $(app_name)
 
 .PHONY: docker-build
