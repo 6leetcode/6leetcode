@@ -1,6 +1,3 @@
-include .env
-export $(shell sed 's/=.*//' .env)
-
 app_name                = 6leetcode
 
 BuildStamp              = $(shell date '+%Y%m%d%H%M%S')
@@ -8,7 +5,6 @@ GitHash                 = $(shell git rev-parse HEAD)
 Version                 = $(shell git describe --abbrev=0 --tags --always)
 Target                  = ${app_name}
 Suffix                  =
-GOFILES                 = $(shell find . -name "*.go" -type f ! -path "./vendor/*" ! -path "*/bindata.go")
 
 ifeq ($(OS),Windows_NT)
 	OSName = windows
@@ -19,27 +15,15 @@ endif
 
 .PHONY: ${OSName}
 ${OSName}:
-	env GOOS=$@ go build -v -o release/${Target}-$@${Suffix} -mod=readonly -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=$@ GO111MODULE=off go build -v -o release/${Target}${Suffix} -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release:
-	env GOOS=${OSName} go build -v -o release/${Target}-${OSName}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
-
-.PHONY: authors
-authors:
-	printf "Authors\n=======\n\nProject's contributors:\n\n" > AUTHORS.md
-	git log --raw | grep "^Author: " | cut -d ' ' -f2- | cut -d '<' -f1 | sed 's/^/- /' | sort | uniq >> AUTHORS.md
+	env GOOS=${OSName} GO111MODULE=off go build -v -o release/${Target}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: lint
 lint:
 	golangci-lint run -v
-
-.PHONY: misspell-check
-misspell-check:
-	@hash misspell > /dev/null 2>&1; if [ $$? -ne 0 ]; then \
-		go get -u github.com/client9/misspell/cmd/misspell; \
-	fi
-	misspell -error -i unknwon $(GOFILES)
 
 .PHONY: clean
 clean:

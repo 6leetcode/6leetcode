@@ -8,7 +8,6 @@ services:
     build:
       context: $PWD/../..
       dockerfile: apps/backends/docker.release.Dockerfile
-    command: ["6leetcode-linux", "server"]
     restart: always
     networks:
       - default

@@ -1,27 +1,27 @@
 FROM golang:alpine AS build
 
-WORKDIR /app
+WORKDIR /go/src/github.com/6leetcode/6leetcode
 
-RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories && \
-  apk add --no-cache --virtual .build-deps gcc make musl-dev git
+ADD . .
 
-ADD . /go/src/github.com/6leetcode/6leetcode
-
-RUN cd /go/src/github.com/6leetcode/6leetcode/apps/backends \
-  && make release \
-  && cp ./release/6leetcode-linux /app \
-  && cp config.yml /app
+RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories && \
+  apk add --no-cache --virtual .build-deps gcc make musl-dev git && \
+  cd apps/backends && \
+  make release  && \
+  cp release/6leetcode /tmp && \
+  cp config.yml /tmp
 
 RUN apk del .build-deps
 
 FROM alpine:edge AS release
 
-WORKDIR /app
-
 RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories && \
-  apk add --no-cache ca-certificates bash
+  apk add --no-cache ca-certificates bash && \
+  mkdir -p /etc/6leetcode
 
-COPY --from=build /app/6leetcode-linux /usr/bin
-COPY --from=build /app/config.yml /app/config.yml
+COPY --from=build /tmp/6leetcode /usr/bin
+COPY --from=build /tmp/config.yml /etc/6leetcode
 
 EXPOSE 4000
+
+CMD ["6leetcode-linux", "server"]

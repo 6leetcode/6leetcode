@@ -9,16 +9,22 @@ import (
 )
 
 func Initialize() (err error) {
-	var server = gin.Default()
-
 	if viper.GetBool("Debug") {
 		gin.SetMode(gin.DebugMode)
 	} else {
 		gin.SetMode(gin.ReleaseMode)
 	}
 
+	var server = gin.Default()
+
+	server.Use(gin.Recovery())
+	server.Use(gin.Logger())
+
 	questionsRouter(server)
-	loginRouter(server)
+
+	server.GET("/", func(c *gin.Context) {
+		c.String(200, "Hello, leetcode")
+	})
 
 	server.GET("/ping", func(c *gin.Context) {
 		c.String(200, "pong")

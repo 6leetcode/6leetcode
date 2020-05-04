@@ -1,3 +1,4 @@
+AppName: 6leetcode
 Debug: true
 ServerPort: 4000
 Login:
@@ -6,9 +7,5 @@ Login:
 Database:
   Engine: sqlite3 # DB type
   Path: database.db
-WeChat:
-  AppID: # AppID
-  Secret: # Secret
-
 Generate:
   Readme:

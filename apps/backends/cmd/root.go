@@ -14,8 +14,15 @@ import (
 	"github.com/6leetcode/6leetcode/apps/backends/common/table"
 )
 
+// RootCmd represents the base command when called without any sub commands
+var RootCmd = &cobra.Command{
+	Short: "Leetcode tool.",
+	Long:  `Leetcode tool.`,
+}
+
 func init() {
 	var config string
+	RootCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
 
 	var serverCmd = &cobra.Command{
 		Use:   "server",
@@ -33,9 +40,6 @@ func init() {
 			}
 		},
 	}
-
-	serverCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
-
 	RootCmd.AddCommand(serverCmd) // server commander
 
 	var crawlerCmd = &cobra.Command{
@@ -54,23 +58,23 @@ func init() {
 			}
 		},
 	}
-
 	RootCmd.AddCommand(crawlerCmd) // crawler commander
 
 	var versionCmd = &cobra.Command{
 		Use:   "version",
-		Short: "Get version",
+		Short: "Get version.",
 		Long:  `The version that build detail information.`,
 		Run: func(_ *cobra.Command, _ []string) {
 			version.Initialize()
 		},
 	}
-
 	RootCmd.AddCommand(versionCmd) // version commander
 
 	viper.SetConfigType("yaml")
 	if com.IsFile(config) {
 		viper.SetConfigFile(config)
+	} else if config == "./config" && com.IsFile(fmt.Sprintf("/etc/%s/config.yml", viper.Get("AppName"))) {
+		viper.SetConfigFile(fmt.Sprintf("/etc/%s/config.yml", viper.Get("AppName")))
 	} else {
 		logging.Fatal("Cannot find config file. Please check.")
 	}
@@ -79,13 +83,4 @@ func init() {
 	}
 
 	RootCmd.Use = viper.GetString("AppName")
-
-	viper.SetDefault("author", "Tosone <i@tosone.cn>")
-	viper.SetDefault("license", "MIT")
-}
-
-// RootCmd represents the base command when called without any sub commands
-var RootCmd = &cobra.Command{
-	Short: "Leetcode tool.",
-	Long:  `Leetcode tool.`,
 }
