@@ -15,11 +15,11 @@ endif
 
 .PHONY: ${OSName}
 ${OSName}:
-	env GOOS=$@ GO111MODULE=off go build -v -o release/${Target}${Suffix} -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=$@ go build -v -o release/${Target}${Suffix} -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release:
-	env GOOS=${OSName} GO111MODULE=off go build -v -o release/${Target}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=${OSName} go build -v -o release/${Target}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: lint
 lint:
