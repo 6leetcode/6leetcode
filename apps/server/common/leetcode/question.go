@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/unknwon/com"
 
-	"github.com/6leetcode/6leetcode/apps/backends/common/table"
+	"6leetcode/common/table"
 )
 
 func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {

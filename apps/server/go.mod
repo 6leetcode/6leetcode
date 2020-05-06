@@ -1,4 +1,4 @@
-module github.com/6leetcode/6leetcode/apps/backends
+module 6leetcode
 
 go 1.14
 

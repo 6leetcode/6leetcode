@@ -1,7 +1,7 @@
 package crawler
 
 import (
-	"github.com/6leetcode/6leetcode/apps/backends/common/leetcode"
+	"6leetcode/common/leetcode"
 )
 
 func Initialize() (err error) {

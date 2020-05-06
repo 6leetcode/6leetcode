@@ -9,7 +9,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/tosone/logging"
 
-	"github.com/6leetcode/6leetcode/apps/backends/common/leetcode"
+	"6leetcode/common/leetcode"
 )
 
 func Initialize() (err error) {

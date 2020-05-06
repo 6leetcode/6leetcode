@@ -8,10 +8,10 @@ import (
 	"github.com/tosone/logging"
 	"github.com/unknwon/com"
 
-	"github.com/6leetcode/6leetcode/apps/backends/cmd/crawler"
-	"github.com/6leetcode/6leetcode/apps/backends/cmd/server"
-	"github.com/6leetcode/6leetcode/apps/backends/cmd/version"
-	"github.com/6leetcode/6leetcode/apps/backends/common/table"
+	"6leetcode/cmd/crawler"
+	"6leetcode/cmd/server"
+	"6leetcode/cmd/version"
+	"6leetcode/common/table"
 )
 
 // RootCmd represents the base command when called without any sub commands

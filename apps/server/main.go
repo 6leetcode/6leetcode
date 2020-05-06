@@ -7,8 +7,8 @@ import (
 
 	"github.com/tosone/logging"
 
-	"github.com/6leetcode/6leetcode/apps/backends/cmd"
-	"github.com/6leetcode/6leetcode/apps/backends/cmd/version"
+	"6leetcode/cmd"
+	"6leetcode/cmd/version"
 )
 
 // Version version command output msg

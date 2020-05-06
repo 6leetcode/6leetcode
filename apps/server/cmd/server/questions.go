@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/tosone/logging"
 
-	"github.com/6leetcode/6leetcode/apps/backends/common/table"
+	"6leetcode/common/table"
 )
 
 func questionsRouter(server *gin.Engine) {

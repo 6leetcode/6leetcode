@@ -1,17 +1,15 @@
 FROM golang:alpine AS build
 
-WORKDIR /go/src/github.com/6leetcode/6leetcode
+WORKDIR /go/src/app
 
 ADD . .
 
 RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories && \
-  apk add --no-cache --virtual .build-deps gcc make musl-dev git && \
+  apk add --no-cache gcc make musl-dev git && \
   cd apps/server && \
   make release && \
   cp release/6leetcode /tmp && \
   cp config.yml /tmp
-
-RUN apk del .build-deps
 
 FROM alpine:edge
 

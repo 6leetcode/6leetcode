@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-WORKDIR /go/src/github.com/6leetcode/6leetcode
+WORKDIR /go/src/app
 
 RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories && \
   apk add --no-cache bash coreutils gcc g++ libc-dev \
@@ -10,7 +10,7 @@ RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /e
 
 ENV SHELL /usr/bin/fish
 
-VOLUME [ "/go/src/github.com/6leetcode/6leetcode" ]
+VOLUME [ "/go/src/app" ]
 
 EXPOSE 4000
 

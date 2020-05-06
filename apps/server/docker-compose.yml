@@ -30,7 +30,7 @@ services:
     networks:
       - default
     volumes:
-      - $PWD/../..:/go/src/github.com/6leetcode/6leetcode
+      - $PWD/../..:/go/src/app
     labels:
       - traefik.http.routers.6leetcode-dev.rule=Host(`6leetcode-dev${HOST_DOMAIN}`)
       - traefik.http.routers.6leetcode-dev.entrypoints=websecure
