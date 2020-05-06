@@ -41,7 +41,7 @@ $HOME/
 .idea/
 .vscode/
 venv/
-apps/backends/config.yml
-apps/backends/release/
+apps/server/config.yml
+apps/server/release/
 apps/uni-app/unpackage/
 apps/uni-app/node_modules/

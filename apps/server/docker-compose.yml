@@ -7,7 +7,7 @@ services:
     hostname: 6leetcode
     build:
       context: $PWD/../..
-      dockerfile: apps/backends/docker.release.Dockerfile
+      dockerfile: apps/server/docker.release.Dockerfile
     restart: always
     networks:
       - default
@@ -24,7 +24,7 @@ services:
     hostname: 6leetcode-dev
     build:
       context: $PWD/../..
-      dockerfile: apps/backends/docker.dev.Dockerfile
+      dockerfile: apps/server/docker.dev.Dockerfile
     restart: always
     tty: true
     networks:

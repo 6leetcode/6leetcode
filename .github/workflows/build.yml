@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 10
-      - name: Build backend
-        run: cd apps/backends && make docker-build-release
+      - name: Build server
+        run: cd apps/server && make docker-build-release
       - name: Test code in specific image
         run: make all

@@ -20,6 +20,8 @@ var RootCmd = &cobra.Command{
 	Long:  `Leetcode tool.`,
 }
 
+const DefaultConfig = "/etc/6leetcode/config.yml"
+
 func init() {
 	var config string
 	RootCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
@@ -73,8 +75,8 @@ func init() {
 	viper.SetConfigType("yaml")
 	if com.IsFile(config) {
 		viper.SetConfigFile(config)
-	} else if config == "./config" && com.IsFile(fmt.Sprintf("/etc/%s/config.yml", viper.Get("AppName"))) {
-		viper.SetConfigFile(fmt.Sprintf("/etc/%s/config.yml", viper.Get("AppName")))
+	} else if config == "./config.yml" && com.IsFile(DefaultConfig) {
+		viper.SetConfigFile(DefaultConfig)
 	} else {
 		logging.Fatal("Cannot find config file. Please check.")
 	}
