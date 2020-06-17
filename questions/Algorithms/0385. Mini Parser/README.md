@@ -4,30 +4,26 @@
 
 <p>Each element is either an integer, or a list -- whose elements may also be integers or other lists.</p>
 
-<p><b>Note:</b> You may assume that the string is well-formed:</p>
-
+<p><b>Note:</b>
+You may assume that the string is well-formed:
 <ul>
-	<li>String is non-empty.</li>
-	<li>String does not contain white spaces.</li>
-	<li>String contains only digits <code>0-9</code>, <code>[</code>, <code>-</code> <code>,</code>, <code>]</code>.</li>
+<li>String is non-empty.</li>
+<li>String does not contain white spaces.</li>
+<li>String contains only digits <code>0-9</code>, <code>[</code>, <code>-</code> <code>,</code>, <code>]</code>.</li>
 </ul>
+</p>
 
-<p>&nbsp;</p>
-
-<p><b>Example 1:</b></p>
-
+<p><b>Example 1:</b>
 <pre>
-Given s = &quot;324&quot;,
+Given s = "324",
 
 You should return a NestedInteger object which contains a single integer 324.
 </pre>
+</p>
 
-<p>&nbsp;</p>
-
-<p><b>Example 2:</b></p>
-
+<p><b>Example 2:</b>
 <pre>
-Given s = &quot;[123,[456,[789]]]&quot;,
+Given s = "[123,[456,[789]]]",
 
 Return a NestedInteger object containing a nested list with 2 elements:
 
@@ -37,5 +33,4 @@ Return a NestedInteger object containing a nested list with 2 elements:
     ii. A nested list with one element:
          a. An integer containing value 789.
 </pre>
-
-<p>&nbsp;</p>
+</p>

@@ -18,11 +18,9 @@
 <strong>Output: </strong><code>2-&gt;3-&gt;6-&gt;7-&gt;1-&gt;5-&gt;4-&gt;NULL</code>
 </pre>
 
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+<p><b>Note:</b></p>
 
 <ul>
 	<li>The relative order inside both the even and odd groups should remain as it was in the input.</li>
 	<li>The first node is considered odd, the second node even and so on ...</li>
-	<li>The length of the linked list is between <code>[0, 10^4]</code>.</li>
 </ul>

@@ -34,15 +34,21 @@
 
 <pre>
 <strong>Input: </strong>root = <span id="example-input-3-1">[1,2,3,null,4]</span>, x = 2, y = 3
-<strong>Output: </strong><span id="example-output-3">false</span>
-</pre>
-</div>
-</div>
+<strong>Output: </strong><span id="example-output-3">false</span></pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
+</div>
+</div>
 
-<ul>
+<p><strong>Note:</strong></p>
+
+<ol>
 	<li>The number of nodes in the tree will be between <code>2</code> and <code>100</code>.</li>
 	<li>Each node has a unique integer value from <code>1</code> to <code>100</code>.</li>
-</ul>
+</ol>
+
+<div>
+<div>
+<div>&nbsp;</div>
+</div>
+</div>

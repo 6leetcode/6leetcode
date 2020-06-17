@@ -49,9 +49,10 @@ A ship capacity of 6 is the minimum to ship all the packages in 3 days like this
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
 
-<ul>
+<p><strong>Note:</strong></p>
+
+<ol>
 	<li><code>1 &lt;= D &lt;= weights.length &lt;= 50000</code></li>
 	<li><code>1 &lt;= weights[i] &lt;= 500</code></li>
-</ul>
+</ol>

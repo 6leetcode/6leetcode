@@ -18,8 +18,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>[&quot;b==a&quot;,&quot;a==b&quot;]
-<strong>输出：</strong>true
+<pre><strong>输出：</strong>[&quot;b==a&quot;,&quot;a==b&quot;]
+<strong>输入：</strong>true
 <strong>解释：</strong>我们可以指定 a = 1 且 b = 1 以满足满足这两个方程。
 </pre>
 

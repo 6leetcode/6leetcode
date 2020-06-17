@@ -4,13 +4,14 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong> nums = [4, 3, 2, 3, 5, 2, 1], k = 4
+<pre>
+<strong>输入：</strong> nums = [4, 3, 2, 3, 5, 2, 1], k = 4
 <strong>输出：</strong> True
 <strong>说明：</strong> 有可能将其分成 4 个子集（5），（1,4），（2,3），（2,3）等于总和。</pre>
 
 <p>&nbsp;</p>
 
-<p><strong>提示：</strong></p>
+<p><strong>注意:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= k &lt;= len(nums) &lt;= 16</code></li>

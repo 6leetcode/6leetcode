@@ -2,7 +2,7 @@
 
 <p>假设你是一位顺风车司机，车上最初有&nbsp;<code>capacity</code>&nbsp;个空座位可以用来载客。由于道路的限制，车&nbsp;<strong>只能&nbsp;</strong>向一个方向行驶（也就是说，<strong>不允许掉头或改变方向</strong>，你可以将其想象为一个向量）。</p>
 
-<p>这儿有一份乘客行程计划表&nbsp;<code>trips[][]</code>，其中&nbsp;<code>trips[i] = [num_passengers, start_location, end_location]</code>&nbsp;包含了第 <code>i</code> 组乘客的行程信息：</p>
+<p>这儿有一份行程计划表&nbsp;<code>trips[][]</code>，其中&nbsp;<code>trips[i] = [num_passengers, start_location, end_location]</code>&nbsp;包含了你的第 <code>i</code>&nbsp;次行程信息：</p>
 
 <ul>
 	<li>必须接送的乘客数量；</li>

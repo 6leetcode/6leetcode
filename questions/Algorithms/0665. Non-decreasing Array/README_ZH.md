@@ -2,7 +2,7 @@
 
 <p>给你一个长度为&nbsp;<code>n</code>&nbsp;的整数数组，请你判断在 <strong>最多 </strong>改变&nbsp;<code>1</code> 个元素的情况下，该数组能否变成一个非递减数列。</p>
 
-<p>我们是这样定义一个非递减数列的：&nbsp;对于数组中所有的&nbsp;<code>i</code> <code>(0 &lt;= i &lt;= n-2)</code>，总满足 <code>nums[i] &lt;= nums[i + 1]</code>。</p>
+<p>我们是这样定义一个非递减数列的：&nbsp;对于数组中所有的&nbsp;<code>i</code> (1 &lt;= i &lt; n)，总满足&nbsp;<code>array[i] &lt;= array[i + 1]</code>。</p>
 
 <p>&nbsp;</p>
 

@@ -21,15 +21,25 @@
 <p><strong>示例：</strong></p>
 
 <pre>MyCircularQueue circularQueue = new MyCircularQueue(3); // 设置长度为 3
+
 circularQueue.enQueue(1); &nbsp;// 返回 true
+
 circularQueue.enQueue(2); &nbsp;// 返回 true
+
 circularQueue.enQueue(3); &nbsp;// 返回 true
+
 circularQueue.enQueue(4); &nbsp;// 返回 false，队列已满
+
 circularQueue.Rear(); &nbsp;// 返回 3
+
 circularQueue.isFull(); &nbsp;// 返回 true
+
 circularQueue.deQueue(); &nbsp;// 返回 true
+
 circularQueue.enQueue(4); &nbsp;// 返回 true
-circularQueue.Rear(); &nbsp;// 返回 4</pre>
+
+circularQueue.Rear(); &nbsp;// 返回 4
+&nbsp;</pre>
 
 <p>&nbsp;</p>
 

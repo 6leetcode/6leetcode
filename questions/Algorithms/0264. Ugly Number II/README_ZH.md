@@ -2,7 +2,7 @@
 
 <p>编写一个程序，找出第 <code>n</code> 个丑数。</p>
 
-<p>丑数就是质因数只包含&nbsp;<code>2, 3, 5</code> 的<strong>正整数</strong>。</p>
+<p>丑数就是只包含质因数&nbsp;<code>2, 3, 5</code> 的<strong>正整数</strong>。</p>
 
 <p><strong>示例:</strong></p>
 

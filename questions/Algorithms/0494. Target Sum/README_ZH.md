@@ -4,13 +4,11 @@
 
 <p>返回可以使最终数组和为目标数 S 的所有添加符号的方法数。</p>
 
-<p>&nbsp;</p>
+<p><strong>示例 1:</strong></p>
 
-<p><strong>示例：</strong></p>
-
-<pre><strong>输入：</strong>nums: [1, 1, 1, 1, 1], S: 3
-<strong>输出：</strong>5
-<strong>解释：</strong>
+<pre><strong>输入:</strong> nums: [1, 1, 1, 1, 1], S: 3
+<strong>输出:</strong> 5
+<strong>解释:</strong> 
 
 -1+1+1+1+1 = 3
 +1-1+1+1+1 = 3
@@ -21,12 +19,10 @@
 一共有5种方法让最终目标和为3。
 </pre>
 
-<p>&nbsp;</p>
+<p><strong>注意:</strong></p>
 
-<p><strong>提示：</strong></p>
-
-<ul>
-	<li>数组非空，且长度不会超过 20 。</li>
-	<li>初始的数组的和不会超过 1000 。</li>
-	<li>保证返回的最终结果能被 32 位整数存下。</li>
-</ul>
+<ol>
+	<li>数组非空，且长度不会超过20。</li>
+	<li>初始的数组的和不会超过1000。</li>
+	<li>保证返回的最终结果能被32位整数存下。</li>
+</ol>

@@ -24,9 +24,10 @@ The possible falling paths are:
 <p>The falling path with the smallest sum is <code>[1,4,7]</code>, so the answer is <code>12</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
 
-<ul>
+<p><strong>Note:</strong></p>
+
+<ol>
 	<li><code>1 &lt;= A.length == A[0].length &lt;= 100</code></li>
 	<li><code>-100 &lt;= A[i][j] &lt;= 100</code></li>
-</ul>
+</ol>

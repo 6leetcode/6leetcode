@@ -21,9 +21,10 @@
 </pre>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
 
-<ul>
+<p><b>Note:</b></p>
+
+<ol>
 	<li>The length of the array won&#39;t exceed 10,000.</li>
 	<li>You may assume the sum of all the numbers is in the range of a signed 32-bit integer.</li>
-</ul>
+</ol>

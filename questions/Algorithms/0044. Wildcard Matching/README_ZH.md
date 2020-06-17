@@ -55,4 +55,4 @@ p = &quot;*a*b&quot;
 <pre><strong>输入:</strong>
 s = &quot;acdcb&quot;
 p = &quot;a*c?b&quot;
-<strong>输出:</strong> false</pre>
+<strong>输入:</strong> false</pre>

@@ -1,6 +1,6 @@
 ### [砖墙](https://leetcode-cn.com/problems/brick-wall)
 
-<p>你的面前有一堵矩形的、由多行砖块组成的砖墙。&nbsp;这些砖块高度相同但是宽度不同。你现在要画一条<strong>自顶向下</strong>的、穿过<strong>最少</strong>砖块的垂线。</p>
+<p>你的面前有一堵方形的、由多行砖块组成的砖墙。&nbsp;这些砖块高度相同但是宽度不同。你现在要画一条<strong>自顶向下</strong>的、穿过<strong>最少</strong>砖块的垂线。</p>
 
 <p>砖墙由行的列表表示。 每一行都是一个代表从左至右每块砖的宽度的整数列表。</p>
 
@@ -22,7 +22,7 @@
 <strong>输出:</strong> 2
 
 <strong>解释:</strong> 
-<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/brick_wall.png" style="width: 100%;">
+<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/brick_wall.png" style="width: 100%; max-width: 350px">
 </pre>
 
 <p>&nbsp;</p>
