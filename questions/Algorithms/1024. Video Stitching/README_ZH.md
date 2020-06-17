@@ -47,8 +47,8 @@
 
 <p><strong>提示：</strong></p>
 
-<ol>
+<ul>
 	<li><code>1 &lt;= clips.length &lt;= 100</code></li>
-	<li><code>0 &lt;= clips[i][0], clips[i][1] &lt;= 100</code></li>
+	<li><code>0 &lt;= clips[i][0] &lt;=&nbsp;clips[i][1] &lt;= 100</code></li>
 	<li><code>0 &lt;= T &lt;= 100</code></li>
-</ol>
+</ul>

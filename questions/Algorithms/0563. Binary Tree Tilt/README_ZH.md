@@ -6,24 +6,27 @@
 
 <p><strong>整个树</strong>的坡度就是其所有节点的坡度之和。</p>
 
-<p><strong>示例:</strong></p>
+<p>&nbsp;</p>
 
-<pre>
-<strong>输入:</strong> 
+<p><strong>示例：</strong></p>
+
+<pre><strong>输入：</strong>
          1
        /   \
       2     3
-<strong>输出:</strong> 1
-<strong>解释:</strong> 
-结点的坡度 2 : 0
-结点的坡度 3 : 0
-结点的坡度 1 : |2-3| = 1
+<strong>输出：</strong>1
+<strong>解释：</strong>
+结点 2 的坡度: 0
+结点 3 的坡度: 0
+结点 1 的坡度: |2-3| = 1
 树的坡度 : 0 + 0 + 1 = 1
 </pre>
 
-<p><strong>注意:</strong></p>
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
 
 <ol>
-	<li>任何子树的结点的和不会超过32位整数的范围。</li>
-	<li>坡度的值不会超过32位整数的范围。</li>
+	<li>任何子树的结点的和不会超过 32 位整数的范围。</li>
+	<li>坡度的值不会超过 32 位整数的范围。</li>
 </ol>

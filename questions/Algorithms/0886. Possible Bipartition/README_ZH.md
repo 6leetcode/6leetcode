@@ -36,10 +36,11 @@
 
 <p><strong>提示：</strong></p>
 
-<ol>
+<ul>
 	<li><code>1 &lt;= N &lt;= 2000</code></li>
 	<li><code>0 &lt;= dislikes.length &lt;= 10000</code></li>
+	<li><code>dislikes[i].length == 2</code></li>
 	<li><code>1 &lt;= dislikes[i][j] &lt;= N</code></li>
 	<li><code>dislikes[i][0] &lt; dislikes[i][1]</code></li>
-	<li>对于&nbsp;<code>dislikes[i] == dislikes[j]</code>&nbsp;不存在&nbsp;<code>i != j</code>&nbsp;</li>
-</ol>
+	<li>对于<code>dislikes[i] == dislikes[j]</code> 不存在 <code>i != j</code></li>
+</ul>

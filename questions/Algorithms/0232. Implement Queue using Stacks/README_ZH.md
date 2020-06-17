@@ -9,6 +9,8 @@
 	<li>empty() -- 返回队列是否为空。</li>
 </ul>
 
+<p>&nbsp;</p>
+
 <p><strong>示例:</strong></p>
 
 <pre>MyQueue queue = new MyQueue();
@@ -18,6 +20,8 @@ queue.push(2);
 queue.peek();  // 返回 1
 queue.pop();   // 返回 1
 queue.empty(); // 返回 false</pre>
+
+<p>&nbsp;</p>
 
 <p><strong>说明:</strong></p>
 

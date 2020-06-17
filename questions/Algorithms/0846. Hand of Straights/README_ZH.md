@@ -32,3 +32,7 @@
 	<li><code>0 &lt;= hand[i]&nbsp;&lt;= 10^9</code></li>
 	<li><code>1 &lt;= W &lt;= hand.length</code></li>
 </ol>
+
+<p>&nbsp;</p>
+
+<p><strong>注意：</strong>此题目与 1294 重复：<a href="https://leetcode-cn.com/problems/divide-array-in-sets-of-k-consecutive-numbers/" target="_blank">https://leetcode-cn.com/problems/divide-array-in-sets-of-k-consecutive-numbers/</a></p>

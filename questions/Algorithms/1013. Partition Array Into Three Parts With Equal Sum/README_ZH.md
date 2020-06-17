@@ -2,7 +2,7 @@
 
 <p>给你一个整数数组&nbsp;<code>A</code>，只有可以将其划分为三个和相等的非空部分时才返回&nbsp;<code>true</code>，否则返回 <code>false</code>。</p>
 
-<p>形式上，如果可以找出索引&nbsp;<code>i+1 &lt; j</code>&nbsp;且满足&nbsp;<code>(A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1] + ... + A[A.length - 1])</code>&nbsp;就可以将数组三等分。</p>
+<p>形式上，如果可以找出索引&nbsp;<code>i+1 &lt; j</code>&nbsp;且满足&nbsp;<code>A[0] + A[1] + ... + A[i] == A[i+1] + A[i+2] + ... + A[j-1] == A[j] + A[j-1] + ... + A[A.length - 1]</code>&nbsp;就可以将数组三等分。</p>
 
 <p>&nbsp;</p>
 

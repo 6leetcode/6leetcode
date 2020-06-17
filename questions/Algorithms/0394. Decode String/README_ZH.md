@@ -8,10 +8,28 @@
 
 <p>此外，你可以认为原始数据不包含数字，所有的数字只表示重复的次数 <em>k</em> ，例如不会出现像&nbsp;<code>3a</code>&nbsp;或&nbsp;<code>2[4]</code>&nbsp;的输入。</p>
 
-<p><strong>示例:</strong></p>
+<p>&nbsp;</p>
 
-<pre>
-s = &quot;3[a]2[bc]&quot;, 返回 &quot;aaabcbc&quot;.
-s = &quot;3[a2[c]]&quot;, 返回 &quot;accaccacc&quot;.
-s = &quot;2[abc]3[cd]ef&quot;, 返回 &quot;abcabccdcdcdef&quot;.
+<p><strong>示例 1：</strong></p>
+
+<pre><strong>输入：</strong>s = &quot;3[a]2[bc]&quot;
+<strong>输出：</strong>&quot;aaabcbc&quot;
+</pre>
+
+<p><strong>示例 2：</strong></p>
+
+<pre><strong>输入：</strong>s = &quot;3[a2[c]]&quot;
+<strong>输出：</strong>&quot;accaccacc&quot;
+</pre>
+
+<p><strong>示例 3：</strong></p>
+
+<pre><strong>输入：</strong>s = &quot;2[abc]3[cd]ef&quot;
+<strong>输出：</strong>&quot;abcabccdcdcdef&quot;
+</pre>
+
+<p><strong>示例 4：</strong></p>
+
+<pre><strong>输入：</strong>s = &quot;abc3[cd]xyz&quot;
+<strong>输出：</strong>&quot;abccdcdcdxyz&quot;
 </pre>
