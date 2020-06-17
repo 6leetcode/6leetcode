@@ -2,7 +2,12 @@
 import os
 
 prefix = "https://leetcode.com/problems/"
-code_prefix = "https://github.com/6leetcode/6leetcode/blob/master/Algorithms/"
+base_code_prefix = "https://github.com/6leetcode/6leetcode/blob/master/questions/"
+code_prefix_algorithm = "Algorithm/"
+code_prefix_database = "Database/"
+code_prefix_shell = "Shell/"
+code_prefix_concurrency = "Concurrency/"
+basedir = os.getcwd() + "/questions"
 
 
 def rewrite(name, table):
@@ -26,18 +31,16 @@ def rewrite(name, table):
   file.close()
 
 
-def lang(l, dir):
+def lang(l, dir, code_prefix):
   if (len(l) == 0):
     return ""
   result = ""
   if (len(l) == 1):
-    return "[1](" + code_prefix + dir.replace(" ", "%20") + "/" + l[0] + ")"
+    return "[1](" + base_code_prefix + code_prefix + dir.replace(" ", "%20") + "/" + l[0] + ")"
   else:
-    result = "[1](" + code_prefix + \
-        dir.replace(" ", "%20") + "/" + l[0] + ")"
+    result = "[1](" + base_code_prefix+code_prefix + dir.replace(" ", "%20") + "/" + l[0] + ")"
   for i in range(1, len(l)):
-    result += " " + "[" + str(i+1) + "](" + code_prefix + \
-        dir.replace(" ", "%20") + "/" + l[i] + ")"
+    result += " " + "[" + str(i+1) + "](" + base_code_prefix + code_prefix + dir.replace(" ", "%20") + "/" + l[i] + ")"
   return result
 
 
@@ -90,8 +93,8 @@ if __name__ == "__main__":
   table.append("|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
 
   problemsPath = []
-  for dir in os.listdir("./Algorithms"):
-    problemsPath.append(("Algorithms/"+dir))
+  for dir in os.listdir(basedir + "/Algorithms"):
+    problemsPath.append("questions/Algorithms/"+dir)
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -105,7 +108,7 @@ if __name__ == "__main__":
     shell[dir] = []
     concurrency[dir] = []
 
-    filelist = os.listdir("./Algorithms/" + dir)
+    filelist = os.listdir(basedir + "/Algorithms/" + dir)
     filelist.sort()
     for inner in filelist:
       # Golang
@@ -131,7 +134,7 @@ if __name__ == "__main__":
       # Python
       elif os.path.splitext(inner)[1] == ".py":
         python[dir].append(inner)
-  for dir in os.listdir("./Concurrency"):
+  for dir in os.listdir(basedir + "/Concurrency"):
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -145,7 +148,7 @@ if __name__ == "__main__":
     shell[dir] = []
     concurrency[dir] = []
 
-    filelist = os.listdir("./Concurrency/" + dir)
+    filelist = os.listdir(basedir + "/Concurrency/" + dir)
     filelist.sort()
     for inner in filelist:
       # Golang
@@ -171,7 +174,7 @@ if __name__ == "__main__":
       # Python
       elif os.path.splitext(inner)[1] == ".py":
         python[dir].append(inner)
-  for dir in os.listdir("./Database"):
+  for dir in os.listdir(basedir + "/Database"):
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -185,13 +188,13 @@ if __name__ == "__main__":
     shell[dir] = []
     concurrency[dir] = []
 
-    filelist = os.listdir("./Database/" + dir)
+    filelist = os.listdir(basedir + "/Database/" + dir)
     filelist.sort()
     for inner in filelist:
       # SQL
       if os.path.splitext(inner)[1] == ".sql":
         sql[dir].append(inner)
-  for dir in os.listdir("./Shell"):
+  for dir in os.listdir(basedir + "/Shell"):
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -205,7 +208,7 @@ if __name__ == "__main__":
     shell[dir] = []
     concurrency[dir] = []
 
-    filelist = os.listdir("./Shell/" + dir)
+    filelist = os.listdir(basedir + "/Shell/" + dir)
     filelist.sort()
     for inner in filelist:
       # BASH
@@ -221,15 +224,18 @@ if __name__ == "__main__":
         .replace(",", "")\
         .lower() + ")"
     if len(sql[problem]) != 0:
-      s += "|-|-|-|-|-|-|-|-|" + lang(sql[problem], problem) + "|-|"
+      s += "|-|-|-|-|-|-|-|-|" + lang(sql[problem], problem, code_prefix_database) + "|-|"
     if len(shell[problem]) != 0:
-      s += "|-|-|-|-|-|-|-|-|-|" + lang(shell[problem], problem) + "|"
+      s += "|-|-|-|-|-|-|-|-|-|" + lang(shell[problem], problem, code_prefix_shell) + "|"
     else:
-      s += "|"+lang(c[problem], problem) + "|" \
-          + lang(cc[problem], problem) + "|" + lang(go[problem], problem) + "|" + \
-          lang(java[problem], problem) + "|" + lang(javascript[problem], problem) + "|"+lang(php[problem], problem) + "|" + \
-          lang(python[problem], problem) + "|" + \
-          lang(rust[problem], problem) + "|-|-|"
+      s += "|"+lang(c[problem], problem, code_prefix_algorithm) + "|" +\
+           lang(cc[problem], problem, code_prefix_algorithm) + "|" + \
+          lang(go[problem], problem, code_prefix_algorithm) + "|" + \
+          lang(java[problem], problem, code_prefix_algorithm) + "|" + \
+          lang(javascript[problem], problem, code_prefix_algorithm) + "|" + \
+          lang(php[problem], problem, code_prefix_algorithm) + "|" + \
+          lang(python[problem], problem, code_prefix_algorithm) + "|" + \
+          lang(rust[problem], problem, code_prefix_algorithm) + "|-|-|"
     table.append(s)
   rewrite("README.md", "\n" + "\n".join(table))
   rewrite("README_ZH.md", "\n".join(table))
