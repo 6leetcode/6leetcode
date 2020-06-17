@@ -82,7 +82,7 @@ func (i *Instance) All() (err error) {
 			logging.Error(err)
 		}
 		rand.Seed(time.Now().UnixNano())
-		time.Sleep(time.Duration(rand.Intn(10)) * time.Second)
+		time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
 		if err := i.Question(question.TitleSlug, q); err != nil {
 			logging.Error(err)
 		}

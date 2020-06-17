@@ -197,7 +197,7 @@ func (i *Instance) makefile(dir string) (err error) {
 	if file, err = os.Create(dir + "/Makefile"); err != nil {
 		return
 	}
-	if _, err = file.WriteString(fmt.Sprintf("%s\n", "include ../../Makefile.rules")); err != nil {
+	if _, err = file.WriteString(fmt.Sprintf("%s\n", "include ../../../Makefile.rules")); err != nil {
 		return
 	}
 	if err = file.Close(); err != nil {
