@@ -42,6 +42,7 @@ int main(int argc, char const *argv[]) {
   printf("Output: [%d, %d]\n", ans[0], ans[1]);
 
   free(ans);
+  free(nums);
 
   return EXIT_SUCCESS;
 }
