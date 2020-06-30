@@ -18,19 +18,19 @@ LeetCode 题解
 ### Solutions' list
 |Problem|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[0001](https://leetcode.com/problems/two-sum)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0001.%20Two%20Sum/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0001.%20Two%20Sum/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0001.%20Two%20Sum/go1.go)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0001.%20Two%20Sum/java1.java)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0001.%20Two%20Sum/python1.py)||-|-|
-|[0002](https://leetcode.com/problems/add-two-numbers)||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0002.%20Add%20Two%20Numbers/java1.java)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0002.%20Add%20Two%20Numbers/php1.php)|||-|-|
-|[0003](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/c1.c)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java1.java) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java2.java) [3](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java3.java) [4](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java4.java)|||||-|-|
-|[0004](https://leetcode.com/problems/median-of-two-sorted-arrays)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/go1.go) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/go2.go)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/php1.php) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/php2.php)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/python1.py) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0004.%20Median%20of%20Two%20Sorted%20Arrays/python2.py)||-|-|
+|[0001](https://leetcode.com/problems/two-sum)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0001.%20Two%20Sum/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0001.%20Two%20Sum/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0001.%20Two%20Sum/go1.go)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0001.%20Two%20Sum/java1.java)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0001.%20Two%20Sum/python1.py)||-|-|
+|[0002](https://leetcode.com/problems/add-two-numbers)||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0002.%20Add%20Two%20Numbers/java1.java)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0002.%20Add%20Two%20Numbers/php1.php)|||-|-|
+|[0003](https://leetcode.com/problems/longest-substring-without-repeating-characters)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/c1.c)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java1.java) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java2.java) [3](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java3.java) [4](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0003.%20Longest%20Substring%20Without%20Repeating%20Characters/java4.java)|||||-|-|
+|[0004](https://leetcode.com/problems/median-of-two-sorted-arrays)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/go1.go) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/go2.go)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/php1.php) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/php2.php)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/python1.py) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0004.%20Median%20of%20Two%20Sorted%20Arrays/python2.py)||-|-|
 |[0005](https://leetcode.com/problems/longest-palindromic-substring)|||||||||-|-|
-|[0006](https://leetcode.com/problems/zigzag-conversion)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0006.%20ZigZag%20Conversion/go1.go)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0006.%20ZigZag%20Conversion/php1.php)|||-|-|
-|[0007](https://leetcode.com/problems/reverse-integer)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0007.%20Reverse%20Integer/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0007.%20Reverse%20Integer/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0007.%20Reverse%20Integer/go1.go)||||||-|-|
+|[0006](https://leetcode.com/problems/zigzag-conversion)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0006.%20ZigZag%20Conversion/go1.go)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0006.%20ZigZag%20Conversion/php1.php)|||-|-|
+|[0007](https://leetcode.com/problems/reverse-integer)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0007.%20Reverse%20Integer/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0007.%20Reverse%20Integer/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0007.%20Reverse%20Integer/go1.go)||||||-|-|
 |[0008](https://leetcode.com/problems/string-to-integer-atoi)|||||||||-|-|
 |[0009](https://leetcode.com/problems/palindrome-number)|||||||||-|-|
 |[0010](https://leetcode.com/problems/regular-expression-matching)|||||||||-|-|
-|[0011](https://leetcode.com/problems/container-with-most-water)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0011.%20Container%20With%20Most%20Water/go1.go)||||||-|-|
-|[0012](https://leetcode.com/problems/integer-to-roman)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0012.%20Integer%20to%20Roman/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0012.%20Integer%20to%20Roman/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0012.%20Integer%20to%20Roman/go1.go)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0012.%20Integer%20to%20Roman/js1.js)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0012.%20Integer%20to%20Roman/rust1.rs)|-|-|
-|[0013](https://leetcode.com/problems/roman-to-integer)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0013.%20Roman%20to%20Integer/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0013.%20Roman%20to%20Integer/cpp1.cc)|||||||-|-|
+|[0011](https://leetcode.com/problems/container-with-most-water)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0011.%20Container%20With%20Most%20Water/go1.go)||||||-|-|
+|[0012](https://leetcode.com/problems/integer-to-roman)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0012.%20Integer%20to%20Roman/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0012.%20Integer%20to%20Roman/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0012.%20Integer%20to%20Roman/go1.go)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0012.%20Integer%20to%20Roman/js1.js)|||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0012.%20Integer%20to%20Roman/rust1.rs)|-|-|
+|[0013](https://leetcode.com/problems/roman-to-integer)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0013.%20Roman%20to%20Integer/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0013.%20Roman%20to%20Integer/cpp1.cc)|||||||-|-|
 |[0014](https://leetcode.com/problems/longest-common-prefix)|||||||||-|-|
 |[0015](https://leetcode.com/problems/3sum)|||||||||-|-|
 |[0016](https://leetcode.com/problems/3sum-closest)|||||||||-|-|
@@ -54,7 +54,7 @@ LeetCode 题解
 |[0034](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)|||||||||-|-|
 |[0035](https://leetcode.com/problems/search-insert-position)|||||||||-|-|
 |[0036](https://leetcode.com/problems/valid-sudoku)|||||||||-|-|
-|[0037](https://leetcode.com/problems/sudoku-solver)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0037.%20Sudoku%20Solver/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0037.%20Sudoku%20Solver/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0037.%20Sudoku%20Solver/rust1.rs)|-|-|
+|[0037](https://leetcode.com/problems/sudoku-solver)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0037.%20Sudoku%20Solver/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0037.%20Sudoku%20Solver/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0037.%20Sudoku%20Solver/rust1.rs)|-|-|
 |[0038](https://leetcode.com/problems/count-and-say)|||||||||-|-|
 |[0039](https://leetcode.com/problems/combination-sum)|||||||||-|-|
 |[0040](https://leetcode.com/problems/combination-sum-ii)|||||||||-|-|
@@ -67,7 +67,7 @@ LeetCode 题解
 |[0047](https://leetcode.com/problems/permutations-ii)|||||||||-|-|
 |[0048](https://leetcode.com/problems/rotate-image)|||||||||-|-|
 |[0049](https://leetcode.com/problems/group-anagrams)|||||||||-|-|
-|[0050](https://leetcode.com/problems/powx-n)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0050.%20Pow(x,%20n)/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0050.%20Pow(x,%20n)/cpp1.cc)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0050.%20Pow(x,%20n)/java1.java)|||||-|-|
+|[0050](https://leetcode.com/problems/powx-n)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0050.%20Pow(x,%20n)/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0050.%20Pow(x,%20n)/cpp1.cc)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0050.%20Pow(x,%20n)/java1.java)|||||-|-|
 |[0051](https://leetcode.com/problems/n-queens)|||||||||-|-|
 |[0052](https://leetcode.com/problems/n-queens-ii)|||||||||-|-|
 |[0053](https://leetcode.com/problems/maximum-subarray)|||||||||-|-|
@@ -78,16 +78,16 @@ LeetCode 题解
 |[0058](https://leetcode.com/problems/length-of-last-word)|||||||||-|-|
 |[0059](https://leetcode.com/problems/spiral-matrix-ii)|||||||||-|-|
 |[0060](https://leetcode.com/problems/permutation-sequence)|||||||||-|-|
-|[0061](https://leetcode.com/problems/rotate-list)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0061.%20Rotate%20List/c1.c)||||||||-|-|
+|[0061](https://leetcode.com/problems/rotate-list)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0061.%20Rotate%20List/c1.c)||||||||-|-|
 |[0062](https://leetcode.com/problems/unique-paths)|||||||||-|-|
 |[0063](https://leetcode.com/problems/unique-paths-ii)|||||||||-|-|
 |[0064](https://leetcode.com/problems/minimum-path-sum)|||||||||-|-|
 |[0065](https://leetcode.com/problems/valid-number)|||||||||-|-|
-|[0066](https://leetcode.com/problems/plus-one)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0066.%20Plus%20One/c1.c)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0066.%20Plus%20One/go1.go)||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0066.%20Plus%20One/python1.py)||-|-|
-|[0067](https://leetcode.com/problems/add-binary)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0067.%20Add%20Binary/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0067.%20Add%20Binary/cpp1.cc)|||||||-|-|
+|[0066](https://leetcode.com/problems/plus-one)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0066.%20Plus%20One/c1.c)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0066.%20Plus%20One/go1.go)||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0066.%20Plus%20One/python1.py)||-|-|
+|[0067](https://leetcode.com/problems/add-binary)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0067.%20Add%20Binary/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0067.%20Add%20Binary/cpp1.cc)|||||||-|-|
 |[0068](https://leetcode.com/problems/text-justification)|||||||||-|-|
-|[0069](https://leetcode.com/problems/sqrtx)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0069.%20Sqrt(x)/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0069.%20Sqrt(x)/cpp1.cc)|||||||-|-|
-|[0070](https://leetcode.com/problems/climbing-stairs)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0070.%20Climbing%20Stairs/c1.c) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0070.%20Climbing%20Stairs/c2.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0070.%20Climbing%20Stairs/cpp1.cc) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0070.%20Climbing%20Stairs/cpp2.cc)|||||||-|-|
+|[0069](https://leetcode.com/problems/sqrtx)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0069.%20Sqrt(x)/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0069.%20Sqrt(x)/cpp1.cc)|||||||-|-|
+|[0070](https://leetcode.com/problems/climbing-stairs)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0070.%20Climbing%20Stairs/c1.c) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0070.%20Climbing%20Stairs/c2.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0070.%20Climbing%20Stairs/cpp1.cc) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0070.%20Climbing%20Stairs/cpp2.cc)|||||||-|-|
 |[0071](https://leetcode.com/problems/simplify-path)|||||||||-|-|
 |[0072](https://leetcode.com/problems/edit-distance)|||||||||-|-|
 |[0073](https://leetcode.com/problems/set-matrix-zeroes)|||||||||-|-|
@@ -117,8 +117,8 @@ LeetCode 题解
 |[0097](https://leetcode.com/problems/interleaving-string)|||||||||-|-|
 |[0098](https://leetcode.com/problems/validate-binary-search-tree)|||||||||-|-|
 |[0099](https://leetcode.com/problems/recover-binary-search-tree)|||||||||-|-|
-|[0100](https://leetcode.com/problems/same-tree)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0100.%20Same%20Tree/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0100.%20Same%20Tree/cpp1.cc)|||||||-|-|
-|[0101](https://leetcode.com/problems/symmetric-tree)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0101.%20Symmetric%20Tree/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0101.%20Symmetric%20Tree/cpp1.cc)|||||||-|-|
+|[0100](https://leetcode.com/problems/same-tree)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0100.%20Same%20Tree/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0100.%20Same%20Tree/cpp1.cc)|||||||-|-|
+|[0101](https://leetcode.com/problems/symmetric-tree)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0101.%20Symmetric%20Tree/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0101.%20Symmetric%20Tree/cpp1.cc)|||||||-|-|
 |[0102](https://leetcode.com/problems/binary-tree-level-order-traversal)|||||||||-|-|
 |[0103](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)|||||||||-|-|
 |[0104](https://leetcode.com/problems/maximum-depth-of-binary-tree)|||||||||-|-|
@@ -153,7 +153,7 @@ LeetCode 题解
 |[0133](https://leetcode.com/problems/clone-graph)|||||||||-|-|
 |[0134](https://leetcode.com/problems/gas-station)|||||||||-|-|
 |[0135](https://leetcode.com/problems/candy)|||||||||-|-|
-|[0136](https://leetcode.com/problems/single-number)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0136.%20Single%20Number/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0136.%20Single%20Number/cpp1.cc)|||||||-|-|
+|[0136](https://leetcode.com/problems/single-number)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0136.%20Single%20Number/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0136.%20Single%20Number/cpp1.cc)|||||||-|-|
 |[0137](https://leetcode.com/problems/single-number-ii)|||||||||-|-|
 |[0138](https://leetcode.com/problems/copy-list-with-random-pointer)|||||||||-|-|
 |[0139](https://leetcode.com/problems/word-break)|||||||||-|-|
@@ -186,7 +186,7 @@ LeetCode 题解
 |[0166](https://leetcode.com/problems/fraction-to-recurring-decimal)|||||||||-|-|
 |[0167](https://leetcode.com/problems/two-sum-ii---input-array-is-sorted)|||||||||-|-|
 |[0168](https://leetcode.com/problems/excel-sheet-column-title)|||||||||-|-|
-|[0169](https://leetcode.com/problems/majority-element)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0169.%20Majority%20Element/c1.c) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0169.%20Majority%20Element/c2.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0169.%20Majority%20Element/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0169.%20Majority%20Element/rust1.rs)|-|-|
+|[0169](https://leetcode.com/problems/majority-element)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0169.%20Majority%20Element/c1.c) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0169.%20Majority%20Element/c2.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0169.%20Majority%20Element/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0169.%20Majority%20Element/rust1.rs)|-|-|
 |[0170](https://leetcode.com/problems/two-sum-iii---data-structure-design)|||||||||-|-|
 |[0171](https://leetcode.com/problems/excel-sheet-column-number)|||||||||-|-|
 |[0172](https://leetcode.com/problems/factorial-trailing-zeroes)|||||||||-|-|
@@ -243,14 +243,14 @@ LeetCode 题解
 |[0223](https://leetcode.com/problems/rectangle-area)|||||||||-|-|
 |[0224](https://leetcode.com/problems/basic-calculator)|||||||||-|-|
 |[0225](https://leetcode.com/problems/implement-stack-using-queues)|||||||||-|-|
-|[0226](https://leetcode.com/problems/invert-binary-tree)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0226.%20Invert%20Binary%20Tree/c1.c)||||||||-|-|
+|[0226](https://leetcode.com/problems/invert-binary-tree)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0226.%20Invert%20Binary%20Tree/c1.c)||||||||-|-|
 |[0227](https://leetcode.com/problems/basic-calculator-ii)|||||||||-|-|
 |[0228](https://leetcode.com/problems/summary-ranges)|||||||||-|-|
 |[0229](https://leetcode.com/problems/majority-element-ii)|||||||||-|-|
 |[0230](https://leetcode.com/problems/kth-smallest-element-in-a-bst)|||||||||-|-|
-|[0231](https://leetcode.com/problems/power-of-two)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0231.%20Power%20of%20Two/c1.c) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0231.%20Power%20of%20Two/c2.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0231.%20Power%20of%20Two/cpp1.cc) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0231.%20Power%20of%20Two/cpp2.cc)|||||||-|-|
+|[0231](https://leetcode.com/problems/power-of-two)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0231.%20Power%20of%20Two/c1.c) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0231.%20Power%20of%20Two/c2.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0231.%20Power%20of%20Two/cpp1.cc) [2](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0231.%20Power%20of%20Two/cpp2.cc)|||||||-|-|
 |[0232](https://leetcode.com/problems/implement-queue-using-stacks)|||||||||-|-|
-|[0233](https://leetcode.com/problems/number-of-digit-one)|||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0233.%20Number%20of%20Digit%20One/python1.py)||-|-|
+|[0233](https://leetcode.com/problems/number-of-digit-one)|||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0233.%20Number%20of%20Digit%20One/python1.py)||-|-|
 |[0234](https://leetcode.com/problems/palindrome-linked-list)|||||||||-|-|
 |[0235](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)|||||||||-|-|
 |[0236](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)|||||||||-|-|
@@ -300,7 +300,7 @@ LeetCode 题解
 |[0280](https://leetcode.com/problems/wiggle-sort)|||||||||-|-|
 |[0281](https://leetcode.com/problems/zigzag-iterator)|||||||||-|-|
 |[0282](https://leetcode.com/problems/expression-add-operators)|||||||||-|-|
-|[0283](https://leetcode.com/problems/move-zeroes)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0283.%20Move%20Zeroes/c1.c)||||||||-|-|
+|[0283](https://leetcode.com/problems/move-zeroes)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0283.%20Move%20Zeroes/c1.c)||||||||-|-|
 |[0284](https://leetcode.com/problems/peeking-iterator)|||||||||-|-|
 |[0285](https://leetcode.com/problems/inorder-successor-in-bst)|||||||||-|-|
 |[0286](https://leetcode.com/problems/walls-and-gates)|||||||||-|-|
@@ -336,14 +336,14 @@ LeetCode 题解
 |[0316](https://leetcode.com/problems/remove-duplicate-letters)|||||||||-|-|
 |[0317](https://leetcode.com/problems/shortest-distance-from-all-buildings)|||||||||-|-|
 |[0318](https://leetcode.com/problems/maximum-product-of-word-lengths)|||||||||-|-|
-|[0319](https://leetcode.com/problems/bulb-switcher)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0319.%20Bulb%20Switcher/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0319.%20Bulb%20Switcher/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0319.%20Bulb%20Switcher/go1.go)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0319.%20Bulb%20Switcher/js1.js)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0319.%20Bulb%20Switcher/python1.py)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0319.%20Bulb%20Switcher/rust1.rs)|-|-|
+|[0319](https://leetcode.com/problems/bulb-switcher)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0319.%20Bulb%20Switcher/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0319.%20Bulb%20Switcher/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0319.%20Bulb%20Switcher/go1.go)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0319.%20Bulb%20Switcher/js1.js)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0319.%20Bulb%20Switcher/python1.py)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0319.%20Bulb%20Switcher/rust1.rs)|-|-|
 |[0320](https://leetcode.com/problems/generalized-abbreviation)|||||||||-|-|
 |[0321](https://leetcode.com/problems/create-maximum-number)|||||||||-|-|
 |[0322](https://leetcode.com/problems/coin-change)|||||||||-|-|
 |[0323](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph)|||||||||-|-|
 |[0324](https://leetcode.com/problems/wiggle-sort-ii)|||||||||-|-|
 |[0325](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k)|||||||||-|-|
-|[0326](https://leetcode.com/problems/power-of-three)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0326.%20Power%20of%20Three/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0326.%20Power%20of%20Three/cpp1.cc)|||||||-|-|
+|[0326](https://leetcode.com/problems/power-of-three)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0326.%20Power%20of%20Three/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0326.%20Power%20of%20Three/cpp1.cc)|||||||-|-|
 |[0327](https://leetcode.com/problems/count-of-range-sum)|||||||||-|-|
 |[0328](https://leetcode.com/problems/odd-even-linked-list)|||||||||-|-|
 |[0329](https://leetcode.com/problems/longest-increasing-path-in-a-matrix)|||||||||-|-|
@@ -361,7 +361,7 @@ LeetCode 题解
 |[0341](https://leetcode.com/problems/flatten-nested-list-iterator)|||||||||-|-|
 |[0342](https://leetcode.com/problems/power-of-four)|||||||||-|-|
 |[0343](https://leetcode.com/problems/integer-break)|||||||||-|-|
-|[0344](https://leetcode.com/problems/reverse-string)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0344.%20Reverse%20String/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0344.%20Reverse%20String/cpp1.cc)|||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0344.%20Reverse%20String/python1.py)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0344.%20Reverse%20String/rust1.rs)|-|-|
+|[0344](https://leetcode.com/problems/reverse-string)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0344.%20Reverse%20String/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0344.%20Reverse%20String/cpp1.cc)|||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0344.%20Reverse%20String/python1.py)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0344.%20Reverse%20String/rust1.rs)|-|-|
 |[0345](https://leetcode.com/problems/reverse-vowels-of-a-string)|||||||||-|-|
 |[0346](https://leetcode.com/problems/moving-average-from-data-stream)|||||||||-|-|
 |[0347](https://leetcode.com/problems/top-k-frequent-elements)|||||||||-|-|
@@ -475,7 +475,7 @@ LeetCode 题解
 |[0455](https://leetcode.com/problems/assign-cookies)|||||||||-|-|
 |[0456](https://leetcode.com/problems/132-pattern)|||||||||-|-|
 |[0457](https://leetcode.com/problems/circular-array-loop)|||||||||-|-|
-|[0458](https://leetcode.com/problems/poor-pigs)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/go1.go)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/java1.java)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/js1.js)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/php1.php)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/python1.py)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0458.%20Poor%20Pigs/rust1.rs)|-|-|
+|[0458](https://leetcode.com/problems/poor-pigs)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/cpp1.cc)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/go1.go)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/java1.java)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/js1.js)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/php1.php)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/python1.py)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0458.%20Poor%20Pigs/rust1.rs)|-|-|
 |[0459](https://leetcode.com/problems/repeated-substring-pattern)|||||||||-|-|
 |[0460](https://leetcode.com/problems/lfu-cache)|||||||||-|-|
 |[0461](https://leetcode.com/problems/hamming-distance)|||||||||-|-|
@@ -515,7 +515,7 @@ LeetCode 题解
 |[0495](https://leetcode.com/problems/teemo-attacking)|||||||||-|-|
 |[0496](https://leetcode.com/problems/next-greater-element-i)|||||||||-|-|
 |[0497](https://leetcode.com/problems/random-point-in-non-overlapping-rectangles)|||||||||-|-|
-|[0498](https://leetcode.com/problems/diagonal-traverse)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0498.%20Diagonal%20Traverse/c1.c)||||||||-|-|
+|[0498](https://leetcode.com/problems/diagonal-traverse)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0498.%20Diagonal%20Traverse/c1.c)||||||||-|-|
 |[0499](https://leetcode.com/problems/the-maze-iii)|||||||||-|-|
 |[0500](https://leetcode.com/problems/keyboard-row)|||||||||-|-|
 |[0501](https://leetcode.com/problems/find-mode-in-binary-search-tree)|||||||||-|-|
@@ -696,7 +696,7 @@ LeetCode 题解
 |[0676](https://leetcode.com/problems/implement-magic-dictionary)|||||||||-|-|
 |[0677](https://leetcode.com/problems/map-sum-pairs)|||||||||-|-|
 |[0678](https://leetcode.com/problems/valid-parenthesis-string)|||||||||-|-|
-|[0679](https://leetcode.com/problems/24-game)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0679.%2024%20Game/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0679.%2024%20Game/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0679.%2024%20Game/rust1.rs)|-|-|
+|[0679](https://leetcode.com/problems/24-game)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0679.%2024%20Game/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0679.%2024%20Game/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0679.%2024%20Game/rust1.rs)|-|-|
 |[0680](https://leetcode.com/problems/valid-palindrome-ii)|||||||||-|-|
 |[0681](https://leetcode.com/problems/next-closest-time)|||||||||-|-|
 |[0682](https://leetcode.com/problems/baseball-game)|||||||||-|-|
@@ -713,7 +713,7 @@ LeetCode 题解
 |[0693](https://leetcode.com/problems/binary-number-with-alternating-bits)|||||||||-|-|
 |[0694](https://leetcode.com/problems/number-of-distinct-islands)|||||||||-|-|
 |[0695](https://leetcode.com/problems/max-area-of-island)|||||||||-|-|
-|[0696](https://leetcode.com/problems/count-binary-substrings)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0696.%20Count%20Binary%20Substrings/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0696.%20Count%20Binary%20Substrings/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/0696.%20Count%20Binary%20Substrings/rust1.rs)|-|-|
+|[0696](https://leetcode.com/problems/count-binary-substrings)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0696.%20Count%20Binary%20Substrings/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0696.%20Count%20Binary%20Substrings/cpp1.cc)||||||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/0696.%20Count%20Binary%20Substrings/rust1.rs)|-|-|
 |[0697](https://leetcode.com/problems/degree-of-an-array)|||||||||-|-|
 |[0698](https://leetcode.com/problems/partition-to-k-equal-sum-subsets)|||||||||-|-|
 |[0699](https://leetcode.com/problems/falling-squares)|||||||||-|-|
@@ -1273,7 +1273,7 @@ LeetCode 题解
 |[1253](https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix)|||||||||-|-|
 |[1254](https://leetcode.com/problems/number-of-closed-islands)|||||||||-|-|
 |[1255](https://leetcode.com/problems/maximum-score-words-formed-by-letters)|||||||||-|-|
-|[1256](https://leetcode.com/problems/encode-number)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithm/1256.%20Encode%20Number/c1.c)||||||||-|-|
+|[1256](https://leetcode.com/problems/encode-number)|[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/1256.%20Encode%20Number/c1.c)||||||||-|-|
 |[1257](https://leetcode.com/problems/smallest-common-region)|||||||||-|-|
 |[1258](https://leetcode.com/problems/synonymous-sentences)|||||||||-|-|
 |[1259](https://leetcode.com/problems/handshakes-that-don't-cross)|||||||||-|-|

@@ -3,7 +3,7 @@ import os
 
 prefix = "https://leetcode.com/problems/"
 base_code_prefix = "https://github.com/6leetcode/6leetcode/blob/master/questions/"
-code_prefix_algorithm = "Algorithm/"
+code_prefix_algorithm = "Algorithms/"
 code_prefix_database = "Database/"
 code_prefix_shell = "Shell/"
 code_prefix_concurrency = "Concurrency/"
