@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/robfig/cron"
 	"github.com/spf13/viper"
@@ -27,11 +28,12 @@ func Initialize() (err error) {
 
 	server.Use(gin.Recovery())
 	server.Use(gin.Logger())
+	server.Use(cors.Default())
 
 	questionsRouter(server)
 
 	server.GET("/", func(c *gin.Context) {
-		c.String(200, "Hello, leetcode")
+		c.String(200, "Hello, 6leetcode")
 	})
 
 	server.GET("/ping", func(c *gin.Context) {
