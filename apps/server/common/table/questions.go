@@ -14,6 +14,11 @@ type Question struct {
 	TitleSlug          string `json:"title_slug"`
 	TranslatedTitle    string `json:"translated_title"`
 	CategoryTitle      string `json:"category_title"`
+	TotalAccepted      string `json:"totalAccepted"`
+	TotalSubmission    string `json:"totalSubmission"`
+	TotalAcceptedRaw   uint64 `json:"totalAcceptedRaw"`
+	TotalSubmissionRaw uint64 `json:"totalSubmissionRaw"`
+	ACRate             string `json:"acRate"`
 }
 
 // Create ..

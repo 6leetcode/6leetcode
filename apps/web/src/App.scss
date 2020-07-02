@@ -1,4 +1,4 @@
-$content-width: 1500px;
+$content-width: 900px;
 
 .header {
   background-color: #fff;
@@ -6,6 +6,17 @@ $content-width: 1500px;
   .layout {
     width: $content-width;
     margin: 0 auto;
+    padding: 0px 20px;
+
+    .layoutMenu {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      .language {
+        float: right;
+      }
+    }
   }
 }
 
@@ -30,6 +41,47 @@ $content-width: 1500px;
   padding: 20px 0px;
   width: $content-width;
   margin: 0 auto;
+}
+
+.questionItem,
+.questionHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex: auto;
+
+  .description {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: right;
+
+    .paid_only {
+      text-align: center;
+    }
+
+    .difficult {
+      margin-right: 10px;
+
+      .easy {
+        color: #009975;
+      }
+
+      .hard {
+        color: #ec4c47;
+      }
+
+      .medium {
+        color: #ed7336;
+      }
+    }
+
+    .ace,
+    .difficult,
+    .paid_only {
+      width: 50px;
+    }
+  }
 }
 
 .pagination {

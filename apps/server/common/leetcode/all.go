@@ -27,7 +27,7 @@ func (i *Instance) All() (err error) {
 		Set("x-csrftoken", i.csrftoken).
 		AddCookies(i.cookie).
 		Type("json").
-		Send(`{"operationName":"allQuestions","variables":{},"query":"query allQuestions {\n  allQuestions {\n    ...questionSummaryFields\n    __typename\n  }\n}\n\nfragment questionSummaryFields on QuestionNode {\n  title\n  titleSlug\n  translatedTitle\n  questionId\n  questionFrontendId\n  status\n  difficulty\n  isPaidOnly\n  categoryTitle\n  __typename\n}\n"}`).
+		Send(`{"operationName":"allQuestions","variables":{},"query":"query allQuestions {\n  allQuestions {\n    ...questionSummaryFields\n    __typename\n  }\n}\n\nfragment questionSummaryFields on QuestionNode {\n  title\n  titleSlug\n  translatedTitle\n  questionId\n  questionFrontendId\n  status\n  difficulty\n  isPaidOnly\n  categoryTitle\n stats\n  __typename\n}\n"}`).
 		EndBytes(); len(errs) != 0 {
 		err = errs[len(errs)-1]
 		return
@@ -49,8 +49,17 @@ func (i *Instance) All() (err error) {
 				Title              string  `json:"title"`
 				TitleSlug          string  `json:"titleSlug"`
 				TranslatedTitle    string  `json:"translatedTitle"`
+				Stats              string  `json:"stats"`
 			} `json:"allQuestions"`
 		} `json:"data"`
+	}
+
+	type QuestionStats struct {
+		TotalAccepted      string `json:"totalAccepted"`
+		TotalSubmission    string `json:"totalSubmission"`
+		TotalAcceptedRaw   uint64 `json:"totalAcceptedRaw"`
+		TotalSubmissionRaw uint64 `json:"totalSubmissionRaw"`
+		ACRate             string `json:"acRate"`
 	}
 
 	var b body
@@ -68,6 +77,12 @@ func (i *Instance) All() (err error) {
 			err = nil
 			continue
 		}
+
+		var questionStats QuestionStats
+		if err = json.Unmarshal([]byte(question.Stats), &questionStats); err != nil {
+			return
+		}
+
 		var q = &table.Question{
 			QuestionID:         qid,
 			FrontendQuestionID: fqid,
@@ -77,6 +92,11 @@ func (i *Instance) All() (err error) {
 			TitleSlug:          question.TitleSlug,
 			TranslatedTitle:    question.TranslatedTitle,
 			CategoryTitle:      question.CategoryTitle,
+			TotalAccepted:      questionStats.TotalAccepted,
+			TotalSubmission:    questionStats.TotalSubmission,
+			TotalAcceptedRaw:   questionStats.TotalAcceptedRaw,
+			TotalSubmissionRaw: questionStats.TotalSubmissionRaw,
+			ACRate:             questionStats.ACRate,
 		}
 		if err := q.Create(); err != nil {
 			logging.Error(err)
