@@ -6,14 +6,16 @@
 
 <p>给定一个包含仅小写字母字符串的列表，将该列表中所有满足&nbsp;&ldquo;移位&rdquo; 操作规律的组合进行分组并返回。</p>
 
+<p>&nbsp;</p>
+
 <p><strong>示例：</strong></p>
 
-<pre><strong>输入: </strong><code>[&quot;abc&quot;, &quot;bcd&quot;, &quot;acef&quot;, &quot;xyz&quot;, &quot;az&quot;, &quot;ba&quot;, &quot;a&quot;, &quot;z&quot;]</code>
-<strong>输出:</strong> 
+<pre><strong>输入：</strong><code>[&quot;abc&quot;, &quot;bcd&quot;, &quot;acef&quot;, &quot;xyz&quot;, &quot;az&quot;, &quot;ba&quot;, &quot;a&quot;, &quot;z&quot;]</code>
+<strong>输出：</strong>
 [
   [&quot;abc&quot;,&quot;bcd&quot;,&quot;xyz&quot;],
   [&quot;az&quot;,&quot;ba&quot;],
   [&quot;acef&quot;],
   [&quot;a&quot;,&quot;z&quot;]
 ]
-</pre>
+<strong>解释：</strong>可以认为字母表首尾相接，所以 &#39;z&#39; 的后续为 &#39;a&#39;，所以 [&quot;az&quot;,&quot;ba&quot;] 也满足 &ldquo;移位&rdquo; 操作规律。</pre>

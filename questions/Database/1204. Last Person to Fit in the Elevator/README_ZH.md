@@ -2,8 +2,7 @@
 
 <p>表: <code>Queue</code></p>
 
-<pre>
-+-------------+---------+
+<pre>+-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
 | person_id   | int     |
@@ -24,8 +23,7 @@ person_id 是这个表的主键。
 
 <p>查询结果如下所示 :</p>
 
-<pre>
-Queue 表
+<pre>Queue 表
 +-----------+-------------------+--------+------+
 | person_id | person_name       | weight | turn |
 +-----------+-------------------+--------+------+
@@ -44,7 +42,7 @@ Result 表
 | Thomas Jefferson  |
 +-------------------+
 
-为了简化，Queue 表按 trun 列由小到大排序。
+为了简化，Queue 表按 turn 列由小到大排序。
 上例中 George Washington(id 5), John Adams(id 3) 和 Thomas Jefferson(id 6) 将可以进入电梯,因为他们的体重和为 250 + 350 + 400 = 1000。
 Thomas Jefferson(id 6) 是最后一个体重合适并进入电梯的人。
 </pre>

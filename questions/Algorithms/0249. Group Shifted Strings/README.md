@@ -5,7 +5,7 @@
 <pre>
 &quot;abc&quot; -&gt; &quot;bcd&quot; -&gt; ... -&gt; &quot;xyz&quot;</pre>
 
-<p>Given a list of strings which contains only lowercase alphabets, group all strings that belong to the same shifting sequence.</p>
+<p>Given a list of <strong>non-empty</strong> strings which contains only lowercase alphabets, group all strings that belong to the same shifting sequence.</p>
 
 <p><b>Example:</b></p>
 

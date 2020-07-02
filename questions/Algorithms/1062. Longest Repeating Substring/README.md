@@ -37,10 +37,9 @@
 </pre>
 
 <p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>Note:</strong></p>
-
-<ol>
+<ul>
 	<li>The string <code>S</code> consists of only lowercase English letters from <code>&#39;a&#39;</code> - <code>&#39;z&#39;</code>.</li>
 	<li><code>1 &lt;= S.length &lt;= 1500</code></li>
-</ol>
+</ul>

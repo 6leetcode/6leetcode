@@ -46,7 +46,7 @@ created_at is the user&#39;s review date.
 <p>Write the following SQL query:</p>
 
 <ul>
-	<li>Find the name of the user who has rated the greatest number of the movies.
+	<li>Find the name of the user who has rated the greatest number of movies.
 	<p>In case of a tie, return&nbsp;lexicographically smaller user name.</p>
 	</li>
 	<li>Find the movie name with the <em><strong>highest average</strong></em> rating in&nbsp;<strong>February&nbsp;2020</strong>.
@@ -54,7 +54,7 @@ created_at is the user&#39;s review date.
 	</li>
 </ul>
 
-<p>Query is returned in 2 rows, the query result format is in the folowing example:</p>
+<p>The query is returned in 2 rows, the query result format is in the following example:</p>
 
 <pre>
 Movies table:
@@ -99,6 +99,6 @@ Result table:
 | Frozen 2     |
 +--------------+
 
-Daniel and Maria have rated 3 movies (&quot;Avengers&quot;, &quot;Frozen 2&quot; and &quot;Joker&quot;) but Daniel is&nbsp;smaller lexicographically.
+Daniel and Monica have rated 3 movies (&quot;Avengers&quot;, &quot;Frozen 2&quot; and &quot;Joker&quot;) but Daniel is&nbsp;smaller lexicographically.
 Frozen 2 and Joker have a rating average of 3.5 in February but Frozen 2 is&nbsp;smaller lexicographically.
 </pre>

@@ -16,7 +16,10 @@
 
 <pre><strong>输入：</strong>root = [1,2,3]
 <strong>输出：</strong>[1,2,3]
-</pre>
+<strong>解释：</strong> 
+最深的叶子是值为 2 和 3 的节点。
+这些叶子的最近共同祖先是值为 1 的节点。
+返回的答案为序列化的 TreeNode 对象（不是数组）&quot;[1,2,3]&quot; 。</pre>
 
 <p><strong>示例 2：</strong></p>
 

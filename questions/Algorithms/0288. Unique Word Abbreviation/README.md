@@ -18,17 +18,38 @@ c) i|nternationalizatio|n  --&gt; i18n
      1---5----0
 &nbsp;    &darr;   &darr;    &darr;
 d) l|ocalizatio|n          --&gt; l10n
+
+Additionally for any string s of size less than or equal to 2 their abbreviation is the same string s.
 </pre>
 
-<p>Assume you have a dictionary and given a word, find whether its abbreviation is unique in the dictionary. A word&#39;s abbreviation is unique if no <i>other</i> word from the dictionary has the same abbreviation.</p>
+<p>Find whether its abbreviation is unique in the dictionary. A word&#39;s abbreviation is called <em>unique</em> if any of the following conditions is met:</p>
 
-<p><strong>Example:</strong></p>
+<ul>
+	<li>There is no word in <code>dictionary</code>&nbsp;such that their abbreviation is equal to the abbreviation of <code>word</code>.</li>
+	<li>Else, for all words in <code>dictionary</code> such that their abbreviation is equal to the abbreviation of <code>word</code>&nbsp;those words are equal to <code>word</code>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-Given dictionary = [ &quot;deer&quot;, &quot;door&quot;, &quot;cake&quot;, &quot;card&quot; ]
+<strong>Input</strong>
+[&quot;ValidWordAbbr&quot;,&quot;isUnique&quot;,&quot;isUnique&quot;,&quot;isUnique&quot;,&quot;isUnique&quot;]
+[[[&quot;deer&quot;,&quot;door&quot;,&quot;cake&quot;,&quot;card&quot;]],[&quot;dear&quot;],[&quot;cart&quot;],[&quot;cane&quot;],[&quot;make&quot;]]
+<strong>Output</strong>
+[null,false,true,false,true]
 
-isUnique(&quot;dear&quot;) -&gt; <code>false</code>
-isUnique(&quot;cart&quot;) -&gt; <code>true</code>
-isUnique(&quot;cane&quot;) -&gt; <code>false</code>
-isUnique(&quot;make&quot;) -&gt; <code>true</code>
+<strong>Explanation</strong>
+ValidWordAbbr validWordAbbr = new ValidWordAbbr([&quot;deer&quot;, &quot;door&quot;, &quot;cake&quot;, &quot;card&quot;]);
+validWordAbbr.isUnique(&quot;dear&quot;); // return False
+validWordAbbr.isUnique(&quot;cart&quot;); // return True
+validWordAbbr.isUnique(&quot;cane&quot;); // return False
+validWordAbbr.isUnique(&quot;make&quot;); // return True
 </pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li>Each word will only consist of lowercase English characters.</li>
+</ul>

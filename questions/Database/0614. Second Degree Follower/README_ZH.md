@@ -2,7 +2,7 @@
 
 <p>在 facebook 中，表&nbsp;<code>follow</code>&nbsp;会有 2 个字段： <strong>followee</strong>, <strong>follower</strong>&nbsp;，分别表示被关注者和关注者。</p>
 
-<p>请写一个 sql 查询语句，对每一个关注者，查询他的关注者数目。</p>
+<p>请写一个 sql 查询语句，对每一个关注者，查询关注他的关注者的数目。</p>
 
 <p>比方说：</p>
 
@@ -32,8 +32,11 @@
 
 <p>&nbsp;</p>
 
-<p><strong>注意：</strong><br>
-被关注者永远不会被他 / 她自己关注。<br>
-将结果按照字典序返回。</p>
+<p><strong>注意：</strong></p>
+
+<ul>
+	<li>被关注者永远不会被他 / 她自己关注。</li>
+	<li>将结果按照字典序返回。</li>
+</ul>
 
 <p>&nbsp;</p>

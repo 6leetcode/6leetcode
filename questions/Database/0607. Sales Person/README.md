@@ -65,5 +65,5 @@ The table <code>orders</code> holds the sales record information, salesperson an
 
 <p><b>Explanation</b></p>
 
-<p>According to order &#39;3&#39; and &#39;4&#39; in table <code>orders</code>, it is easy to tell only salesperson &#39;John&#39; and &#39;Alex&#39; have sales to company &#39;RED&#39;,<br />
-so we need to output all the other <b>names</b> in table <code>salesperson</code>.</p>
+<p>According to order &#39;3&#39; and &#39;4&#39; in table <code>orders</code>, it is easy to tell only salesperson &#39;John&#39; and &#39;Pam&#39; have sales to company &#39;RED&#39;,<br />
+so we need to output all the other <b>names</b> in the table <code>salesperson</code>.</p>

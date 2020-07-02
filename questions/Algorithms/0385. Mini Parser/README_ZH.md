@@ -9,25 +9,21 @@
 <ul>
 	<li>字符串非空</li>
 	<li>字符串不包含空格</li>
-	<li>字符串只包含数字<code>0-9</code>, <code>[</code>, <code>-</code> <code>,</code>, <code>]</code></li>
+	<li>字符串只包含数字<code>0-9</code>、<code>[</code>、<code>-</code>、<code>,</code>、<code>]</code></li>
 </ul>
 
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
-<pre>
-给定 s = &quot;324&quot;,
+<pre>给定 s = &quot;324&quot;,
 
 你应该返回一个 NestedInteger 对象，其中只包含整数值 324。
 </pre>
 
-<p>&nbsp;</p>
-
 <p><strong>示例 2：</strong></p>
 
-<pre>
-给定 s = &quot;[123,[456,[789]]]&quot;,
+<pre>给定 s = &quot;[123,[456,[789]]]&quot;,
 
 返回一个 NestedInteger 对象包含一个有两个元素的嵌套列表：
 
@@ -37,5 +33,3 @@
     ii. 一个包含一个元素的嵌套列表
          a. 一个 integer 包含值 789
 </pre>
-
-<p>&nbsp;</p>

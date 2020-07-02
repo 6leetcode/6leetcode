@@ -25,7 +25,7 @@ customer_id 是这张表的主键。
 | contact_email | varchar |
 +---------------+---------+
 (user_id, contact_email) 是这张表的主键。
-此表的每一行表示编号为 use_id 的顾客的某位联系人的姓名和电子邮件。
+此表的每一行表示编号为 user_id 的顾客的某位联系人的姓名和电子邮件。
 此表包含每位顾客的联系人信息，但顾客的联系人不一定存在于顾客表中。
 </pre>
 
@@ -41,7 +41,7 @@ customer_id 是这张表的主键。
 | user_id      | int     |
 +--------------+---------+
 invoice_id 是这张表的主键。
-此表的每一行分别表示编号为 use_id 的顾客拥有有一张编号为 invoice_id、价格为 price 的发票。
+此表的每一行分别表示编号为 user_id 的顾客拥有有一张编号为 invoice_id、价格为 price 的发票。
 </pre>
 
 <p>&nbsp;</p>

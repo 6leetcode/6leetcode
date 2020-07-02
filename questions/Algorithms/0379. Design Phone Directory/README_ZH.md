@@ -8,7 +8,9 @@
 	<li><code>release</code>: 释放掉一个电话号码，使其能够重新被分配</li>
 </ol>
 
-<p><strong>示例:</strong></p>
+<p>&nbsp;</p>
+
+<p><strong>示例：</strong></p>
 
 <pre>// 初始化电话目录，包括 3 个电话号码：0，1 和 2。
 PhoneDirectory directory = new PhoneDirectory(3);
@@ -36,3 +38,11 @@ directory.check(2);
 </pre>
 
 <p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 &lt;=&nbsp;maxNumbers &lt;= 10^4</code></li>
+	<li><code>0 &lt;= number &lt; maxNumbers</code></li>
+	<li>调用方法的总数处于区间 <code>[0 - 20000]</code> 之内</li>
+</ul>

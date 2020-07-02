@@ -5,7 +5,7 @@
 <ol>
 	<li><code>addScore(playerId, score)</code>: Update the leaderboard by adding <code>score</code> to the given player&#39;s score. If there is no player with such id in the leaderboard, add him to the leaderboard with the given <code>score</code>.</li>
 	<li><code>top(K)</code>: Return the score sum of the top <code>K</code> players.</li>
-	<li><code>reset(playerId)</code>: Reset the score of the player with the given id&nbsp;to 0. It is guaranteed that the player was added to the leaderboard before calling this function.</li>
+	<li><code>reset(playerId)</code>: Reset the score of the player with the given id&nbsp;to 0 (in other words erase it from the leaderboard). It is guaranteed that the player was added to the leaderboard before calling this function.</li>
 </ol>
 
 <p>Initially, the leaderboard is empty.</p>

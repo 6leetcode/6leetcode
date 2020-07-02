@@ -2,6 +2,10 @@
 
 <p>给定一个三角形，找出自顶向下的最小路径和。每一步只能移动到下一行中相邻的结点上。</p>
 
+<p><strong>相邻的结点 </strong>在这里指的是 <code>下标</code> 与 <code>上一层结点下标</code> 相同或者等于 <code>上一层结点下标 + 1</code> 的两个结点。</p>
+
+<p>&nbsp;</p>
+
 <p>例如，给定三角形：</p>
 
 <pre>[
@@ -13,6 +17,8 @@
 </pre>
 
 <p>自顶向下的最小路径和为&nbsp;<code>11</code>（即，<strong>2&nbsp;</strong>+&nbsp;<strong>3</strong>&nbsp;+&nbsp;<strong>5&nbsp;</strong>+&nbsp;<strong>1</strong>&nbsp;= 11）。</p>
+
+<p>&nbsp;</p>
 
 <p><strong>说明：</strong></p>
 

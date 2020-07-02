@@ -10,9 +10,9 @@
 	<li>The units digit represents the value <code>V</code> of this node, <code>0 &lt;= V &lt;= 9.</code></li>
 </ol>
 
-<p>&nbsp;</p>
-
 <p>Given a list of <code>ascending</code> three-digits integers representing a binary tree with the depth smaller than 5, you need to return the sum of all paths from the root towards the leaves.</p>
+
+<p>It&#39;s guaranteed that the given list represents a valid connected binary tree.</p>
 
 <p><b>Example 1:</b></p>
 
@@ -43,5 +43,3 @@ The tree that the list represents is:
 
 The path sum is (3 + 1) = 4.
 </pre>
-
-<p>&nbsp;</p>

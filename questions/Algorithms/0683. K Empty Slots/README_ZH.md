@@ -4,7 +4,7 @@
 
 <p>给定一个数组 <code>flowers</code> 包含从 <code>1</code> 到 <code>N</code> 的数字，每个数字表示在那一天开放的花所在的花盆编号。</p>
 
-<p>例如，&nbsp;<code>flowers[i] = x</code> 表示在第 <code>i</code> 天盛开的花在第 <code>x</code> 个花盆中，<code>i</code> 和 <code>x</code> 都在 <code>1</code> 到 <code>N</code> 的范围内。</p>
+<p>例如，&nbsp;<code>flowers[i] = x</code> 表示在第 <code>i+1</code> 天盛开的花在第 <code>x</code> 个花盆中，<code>i</code> 和 <code>x</code> 都在 <code>1</code> 到 <code>N</code> 的范围内。</p>
 
 <p>给你一个整数 <code>k</code>，请你输出在哪一天恰好有两朵盛开的花，他们中间间隔了&nbsp;<code>k</code> 朵花并且都没有开放。</p>
 

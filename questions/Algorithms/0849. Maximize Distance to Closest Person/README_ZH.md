@@ -8,6 +8,8 @@
 
 <p>返回他到离他最近的人的最大距离。</p>
 
+<p>&nbsp;</p>
+
 <p><strong>示例 1：</strong></p>
 
 <pre><strong>输入：</strong>[1,0,0,0,1,0,1]
@@ -22,14 +24,16 @@
 
 <pre><strong>输入：</strong>[1,0,0,0]
 <strong>输出：</strong>3
-<strong>解释： </strong>
+<strong>解释：</strong>
 如果亚历克斯坐在最后一个座位上，他离最近的人有 3 个座位远。
-这是可能的最大距离，所以答案是 <span style="">3 </span>。
+这是可能的最大距离，所以答案是 3 。
 </pre>
+
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
-<ol>
-	<li><code>1 &lt;= seats.length &lt;= 20000</code></li>
+<ul>
+	<li><code>2 &lt;= seats.length &lt;= 20000</code></li>
 	<li><code>seats</code>&nbsp;中只含有 0 和 1，至少有一个 <code>0</code>，且至少有一个 <code>1</code>。</li>
-</ol>
+</ul>

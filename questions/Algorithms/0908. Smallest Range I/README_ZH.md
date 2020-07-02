@@ -1,10 +1,8 @@
 ### [最小差值 I](https://leetcode-cn.com/problems/smallest-range-i)
 
-<p>给你一个整数数组 <code>A</code>，对于每个整数 <code>A[i]</code>，我们可以选择处于区间 <code>[-K, K]</code> 中的任意数 <code>x</code> ，将&nbsp;<code>x</code> 与 <code>A[i]</code> 相加，结果存入 <code>A[i]</code> 。</p>
+<p>给你一个整数数组 <code>A</code>，请你给数组中的每个元素 <code>A[i]</code> 都加上一个任意数字 <code>x</code> （<code>-K &lt;= x &lt;= K</code>），从而得到一个新数组 <code>B</code> 。</p>
 
-<p>在此过程之后，我们得到一些数组&nbsp;<code>B</code>。</p>
-
-<p>返回 <code>B</code>&nbsp;的最大值和 <code>B</code>&nbsp;的最小值之间可能存在的最小差值。</p>
+<p>返回数组 <code>B</code> 的最大值和最小值之间可能存在的最小差值。</p>
 
 <p>&nbsp;</p>
 

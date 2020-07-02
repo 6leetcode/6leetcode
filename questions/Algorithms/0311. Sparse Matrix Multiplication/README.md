@@ -26,3 +26,12 @@
 <b>AB</b> = | -1 0 3 | x | 0 0 0 | = | -7 0 3 |
                   | 0 0 1 |
 </pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= A.length, B.length &lt;= 100</code></li>
+	<li><code>1 &lt;= A[i].length, B[i].length &lt;= 100</code></li>
+	<li><code>-100 &lt;= A[i][j], B[i][j]&nbsp;&lt;= 100</code></li>
+</ul>

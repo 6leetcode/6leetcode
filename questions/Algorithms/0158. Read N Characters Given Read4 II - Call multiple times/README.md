@@ -15,20 +15,22 @@
 <p><b>Definition of read4:</b></p>
 
 <pre>
-    Parameter:  char[] buf
+    Parameter:  char[] buf4
     Returns:    int
 
-Note: buf[] is destination not source, the results from read4 will be copied to buf[]
+Note: buf4[] is destination not source, the results from read4 will be copied to buf4[]
 </pre>
 
 <p>Below is a high level example of how <code>read4</code> works:</p>
 
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/07/01/157_example.png" style="width: 600px; height: 403px;" /></p>
+
 <pre>
-<code>File file(&quot;abcdefghijk&quot;); // File is &quot;abcdefghijk&quot;, initially file pointer (fp) points to &#39;a&#39;
+<code>File file(&quot;abcde&quot;); // File is &quot;abcde&quot;, initially file pointer (fp) points to &#39;a&#39;
 char[] buf = new char[4]; // Create buffer with enough space to store characters
-read4(buf); // read4 returns 4. Now buf = &quot;abcd&quot;, fp points to &#39;e&#39;
-read4(buf); // read4 returns 4. Now buf = &quot;efgh&quot;, fp points to &#39;i&#39;
-read4(buf); // read4 returns 3. Now buf = &quot;ijk&quot;, fp points to end of file</code>
+read4(buf4); // read4 returns 4. Now buf = &quot;abcd&quot;, fp points to &#39;e&#39;
+read4(buf4); // read4 returns 1. Now buf = &quot;e&quot;, fp points to end of file
+read4(buf4); // read4 returns 0. Now buf = &quot;&quot;, fp points to end of file</code>
 </pre>
 
 <p>&nbsp;</p>
@@ -74,10 +76,10 @@ sol.read(buf, 1); // We have reached the end of file, no more characters can be 
 
 <p><strong>Note:</strong></p>
 
-<ol>
+<ul>
 	<li>Consider that you <strong>cannot</strong> manipulate the file directly, the file is only accesible for <code>read4</code> but&nbsp;<strong>not</strong> for <code>read</code>.</li>
 	<li>The <code>read</code> function may be called <strong>multiple times</strong>.</li>
 	<li>Please remember to <b>RESET</b> your class variables declared in Solution, as static/class variables are <b>persisted across multiple test cases</b>. Please see <a href="https://leetcode.com/faq/" target="_blank">here</a> for more details.</li>
 	<li>You may assume the destination buffer array,&nbsp;<code>buf</code>,&nbsp;is guaranteed to have enough&nbsp;space for storing&nbsp;<em>n</em>&nbsp;characters.</li>
 	<li>It is guaranteed that in a given test case the same buffer <code>buf</code> is called by <code>read</code>.</li>
-</ol>
+</ul>

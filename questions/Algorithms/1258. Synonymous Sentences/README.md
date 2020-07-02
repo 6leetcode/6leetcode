@@ -23,7 +23,7 @@ text = &quot;I am happy today but was sad yesterday&quot;
 <ul>
 	<li><code>0 &lt;=&nbsp;synonyms.length &lt;= 10</code></li>
 	<li><code>synonyms[i].length == 2</code></li>
-	<li><code>synonyms[0] != synonyms[1]</code></li>
+	<li><code>synonyms[i][0] != synonyms[i][1]</code></li>
 	<li>All words consist of at most <code>10</code> English letters only.</li>
 	<li><code>text</code>&nbsp;is a single space separated sentence of at most <code>10</code> words.</li>
 </ul>

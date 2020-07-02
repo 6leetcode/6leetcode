@@ -19,13 +19,14 @@
 <pre>
 <strong>Input:</strong> <code>array</code> = [-1,0,3,5,9,12], <code>target</code> = 2
 <strong>Output:</strong> -1
-<strong>Explanation:</strong> 2 does not exist in <code>nums</code> so return -1</pre>
+<strong>Explanation:</strong> 2 does not exist in <code>nums</code> so return -1
+</pre>
 
 <p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>Note:</strong></p>
-
-<ol>
+<ul>
 	<li>You may assume that all elements in the array are unique.</li>
 	<li>The value of each element in the array&nbsp;will be in the range <code>[-9999, 9999]</code>.</li>
-</ol>
+	<li>The length of the array will be in the range <code>[1, 10^4]</code>.</li>
+</ul>

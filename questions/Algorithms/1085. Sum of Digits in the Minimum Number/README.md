@@ -25,10 +25,9 @@ The minimal element is 33, and the sum of those digits is S = 3 + 3 = 6 which is
 </pre>
 
 <p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>Note:</strong></p>
-
-<ol>
+<ul>
 	<li><code>1 &lt;= A.length &lt;= 100</code></li>
-	<li><code>1 &lt;= A[i].length &lt;= 100</code></li>
-</ol>
+	<li><code>1 &lt;= A[i] &lt;= 100</code></li>
+</ul>

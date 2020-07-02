@@ -1,5 +1,9 @@
 ### [外观数列](https://leetcode-cn.com/problems/count-and-say)
 
+<p>给定一个正整数 <em>n</em>（1 &le;&nbsp;<em>n</em>&nbsp;&le; 30），输出外观数列的第 <em>n</em> 项。</p>
+
+<p>注意：整数序列中的每一项将表示为一个字符串。</p>
+
 <p>「外观数列」是一个整数序列，从数字 1 开始，序列中的每一项都是对前一项的描述。前五项如下：</p>
 
 <pre>1.     1
@@ -9,13 +13,15 @@
 5.     111221
 </pre>
 
-<p><code>1</code>&nbsp;被读作&nbsp;&nbsp;<code>&quot;one 1&quot;</code>&nbsp;&nbsp;(<code>&quot;一个一&quot;</code>) , 即&nbsp;<code>11</code>。<br>
-<code>11</code> 被读作&nbsp;<code>&quot;two 1s&quot;</code>&nbsp;(<code>&quot;两个一&quot;</code>）, 即&nbsp;<code>21</code>。<br>
-<code>21</code> 被读作&nbsp;<code>&quot;one 2&quot;</code>, &nbsp;&quot;<code>one 1&quot;</code>&nbsp;（<code>&quot;一个二&quot;</code>&nbsp;,&nbsp;&nbsp;<code>&quot;一个一&quot;</code>)&nbsp;, 即&nbsp;<code>1211</code>。</p>
+<p>第一项是数字 1</p>
 
-<p>给定一个正整数 <em>n</em>（1 &le;&nbsp;<em>n</em>&nbsp;&le; 30），输出外观数列的第 <em>n</em> 项。</p>
+<p>描述前一项，这个数是 <code>1</code> 即 &ldquo;一个 1 &rdquo;，记作 <code>11</code></p>
 
-<p>注意：整数序列中的每一项将表示为一个字符串。</p>
+<p>描述前一项，这个数是 <code>11</code> 即 &ldquo;两个 1 &rdquo; ，记作 <code>21</code></p>
+
+<p>描述前一项，这个数是 <code>21</code> 即 &ldquo;一个 2 一个 1 &rdquo; ，记作 <code>1211</code></p>
+
+<p>描述前一项，这个数是 <code>1211</code> 即 &ldquo;一个 1 一个 2 两个 1 &rdquo; ，记作 <code>111221</code></p>
 
 <p>&nbsp;</p>
 

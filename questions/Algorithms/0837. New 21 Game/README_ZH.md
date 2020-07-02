@@ -6,6 +6,8 @@
 
 <p>当爱丽丝获得不少于 <code>K</code> 分时，她就停止抽取数字。 爱丽丝的分数不超过 <code>N</code> 的概率是多少？</p>
 
+<p>&nbsp;</p>
+
 <p><strong>示例</strong><strong> 1</strong><strong>：</strong></p>
 
 <pre><strong>输入：</strong>N = 10, K = 1, W = 10
@@ -23,6 +25,8 @@
 
 <pre><strong>输入：</strong>N = 21, K = 17, W = 10
 <strong>输出：</strong>0.73278</pre>
+
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 

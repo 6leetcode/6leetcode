@@ -16,7 +16,7 @@
 
 <pre><strong>输入：</strong>n = 4, a = 2, b = 3, c = 4
 <strong>输出：</strong>6
-<strong>解释：</strong>丑数序列为 2, 3, 4, 6, 8, 9, 12... 其中第 4 个是 6。
+<strong>解释：</strong>丑数序列为 2, 3, 4, 6, 8, 9, 10, 12... 其中第 4 个是 6。
 </pre>
 
 <p><strong>示例 3：</strong></p>

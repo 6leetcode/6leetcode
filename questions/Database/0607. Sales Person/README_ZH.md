@@ -5,7 +5,7 @@
 <p>给定 3 个表：&nbsp;<code>salesperson</code>，&nbsp;<code>company</code>，&nbsp;<code>orders</code>。<br>
 输出所有表&nbsp;<code>salesperson</code>&nbsp;中，没有向公司 &#39;RED&#39; 销售任何东西的销售员。</p>
 
-<p><strong>解释</strong><br>
+<p><strong>示例：</strong><br>
 <strong>输入</strong></p>
 
 <p>表：&nbsp;<code>salesperson</code></p>
