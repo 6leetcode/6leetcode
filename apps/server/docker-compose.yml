@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 
 services:
   6leetcode:
@@ -18,26 +18,6 @@ services:
       - traefik.http.routers.6leetcode.tls.certresolver=leresolver
       - traefik.http.services=6leetcode
       - traefik.http.services.6leetcode.loadbalancer.server.port=4000
-  6leetcode-dev:
-    container_name: 6leetcode-dev
-    image: 6leetcode:dev
-    hostname: 6leetcode-dev
-    build:
-      context: $PWD/../..
-      dockerfile: apps/server/docker.dev.Dockerfile
-    restart: always
-    tty: true
-    networks:
-      - default
-    volumes:
-      - $PWD/../..:/go/src/app
-    labels:
-      - traefik.http.routers.6leetcode-dev.rule=Host(`6leetcode-dev${HOST_DOMAIN}`)
-      - traefik.http.routers.6leetcode-dev.entrypoints=websecure
-      - traefik.http.routers.6leetcode-dev.tls=true
-      - traefik.http.routers.6leetcode-dev.tls.certresolver=leresolver
-      - traefik.http.services=6leetcode-dev
-      - traefik.http.services.6leetcode-dev.loadbalancer.server.port=4000
 networks:
   default:
     external:

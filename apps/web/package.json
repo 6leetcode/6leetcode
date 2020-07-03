@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "6leetcode",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,9 +27,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run bindata",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "bindata": "go-bindata -pkg server -o bindata.go build/... && mv bindata.go ../server/cmd/server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,5 +46,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "static"
 }

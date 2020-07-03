@@ -1,8 +1,11 @@
 package server
 
 import (
+	"bytes"
 	"fmt"
+	"io"
 	"net/http"
+	"path/filepath"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -30,10 +33,12 @@ func Initialize() (err error) {
 	server.Use(gin.Logger())
 	server.Use(cors.Default())
 
+	server.GET("/static/*filepath", bindataStaticHandler)
+
 	questionsRouter(server)
 
 	server.GET("/", func(c *gin.Context) {
-		c.String(200, "Hello, 6leetcode")
+		c.Redirect(http.StatusMovedPermanently, "/static")
 	})
 
 	server.GET("/ping", func(c *gin.Context) {
@@ -48,6 +53,44 @@ func Initialize() (err error) {
 	err = server.Run(":" + viper.GetString("ServerPort"))
 
 	return
+}
+
+func bindataStaticHandler(c *gin.Context) {
+	var err error
+
+	var file = c.Param("filepath")
+	if file == "/" {
+		file = "build/index.html"
+	} else {
+		file = "build" + file
+	}
+
+	defer func() {
+		if err != nil {
+			logging.Error(err)
+		}
+	}()
+
+	var data []byte
+	data, err = Asset(file)
+	if err != nil {
+		return
+	}
+	c.Header("Content-Type", mime[filepath.Ext(file)])
+
+	if _, err = io.Copy(c.Writer, bytes.NewReader(data)); err != nil {
+		return
+	}
+}
+
+var mime = map[string]string{
+	".html": "text/html",
+	".css":  "text/css",
+	".js":   "text/javascript",
+	".png":  "image/png",
+	".map":  "application/json",
+	".txt":  "text/plain",
+	".json": "application/json",
 }
 
 func cronTask() (err error) {
