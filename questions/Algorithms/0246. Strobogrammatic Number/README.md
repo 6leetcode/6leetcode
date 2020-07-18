@@ -4,21 +4,17 @@
 
 <p>Write a function to determine if a number is strobogrammatic. The number is represented as a string.</p>
 
-<p><b>Example 1:</b></p>
-
-<pre>
-<b>Input:</b>  &quot;69&quot;
-<b>Output:</b> true
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<pre><strong>Input:</strong> num = "69"
+<strong>Output:</strong> true
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> num = "88"
+<strong>Output:</strong> true
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> num = "962"
+<strong>Output:</strong> false
+</pre><p><strong>Example 4:</strong></p>
+<pre><strong>Input:</strong> num = "1"
+<strong>Output:</strong> true
 </pre>
-
-<p><b>Example 2:</b></p>
-
-<pre>
-<b>Input:</b>  &quot;88&quot;
-<b>Output:</b> true</pre>
-
-<p><b>Example 3:</b></p>
-
-<pre>
-<b>Input:</b>  &quot;962&quot;
-<b>Output:</b> false</pre>

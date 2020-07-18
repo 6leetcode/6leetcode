@@ -33,3 +33,13 @@
 &nbsp; [3,5]
 ]
 </pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= candidates.length &lt;= 30</code></li>
+	<li><code>1 &lt;= candidates[i] &lt;= 200</code></li>
+	<li>Each element of <code>candidate</code> is unique.</li>
+	<li><code>1 &lt;= target &lt;= 500</code></li>
+</ul>

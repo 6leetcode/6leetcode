@@ -1,6 +1,6 @@
 ### [托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix)
 
-<p>如果一个矩阵的每一方向由左上到右下的对角线上具有相同元素，那么这个矩阵是<em>托普利茨矩阵</em>。</p>
+<p>如果矩阵上每一条由左上到右下的对角线上的元素都相同，那么这个矩阵是<em> </em><strong>托普利茨矩阵</strong> 。</p>
 
 <p>给定一个&nbsp;<code>M x N</code>&nbsp;的矩阵，当且仅当它是<em>托普利茨矩阵</em>时返回&nbsp;<code>True</code>。</p>
 

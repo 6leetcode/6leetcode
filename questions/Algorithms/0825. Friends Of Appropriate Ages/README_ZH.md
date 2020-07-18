@@ -2,7 +2,7 @@
 
 <p>人们会互相发送好友请求，现在给定一个包含有他们年龄的数组，<code>ages[i]</code>&nbsp;表示第 i 个人的年龄。</p>
 
-<p>当满足以下条件时，A 不能给 B（A、B不为同一人）发送好友请求：</p>
+<p>当满足以下任一条件时，A 不能给 B（A、B不为同一人）发送好友请求：</p>
 
 <ul>
 	<li><code>age[B]&nbsp;&lt;= 0.5 * age[A]&nbsp;+ 7</code></li>
@@ -18,29 +18,29 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1:</strong></p>
+<p><strong>示例 1：</strong></p>
 
-<pre><strong>输入: </strong>[16,16]
-<strong>输出: </strong>2
-<strong>解释: 二人可以互发好友申请。</strong>
+<pre><strong>输入：</strong>[16,16]
+<strong>输出：</strong>2
+<strong>解释：</strong>二人可以互发好友申请。
 </pre>
 
-<p><strong>示例 2:</strong></p>
+<p><strong>示例 2：</strong></p>
 
-<pre><strong>输入: </strong>[16,17,18]
-<strong>输出: </strong>2
-<strong>解释: 好友请求可产生于</strong> 17 -&gt; 16, 18 -&gt; 17.</pre>
+<pre><strong>输入：</strong>[16,17,18]
+<strong>输出：</strong>2
+<strong>解释：</strong>好友请求可产生于 17 -&gt; 16, 18 -&gt; 17.</pre>
 
-<p><strong>示例 3:</strong></p>
+<p><strong>示例 3：</strong></p>
 
-<pre><strong>输入: </strong>[20,30,100,110,120]
-<strong>输出: 3</strong>
-<strong>解释: 好友请求可产生于</strong> 110 -&gt; 100, 120 -&gt; 110, 120 -&gt; 100.
+<pre><strong>输入：</strong>[20,30,100,110,120]
+<strong>输出：</strong>3
+<strong>解释：</strong>好友请求可产生于 110 -&gt; 100, 120 -&gt; 110, 120 -&gt; 100.
 </pre>
 
 <p>&nbsp;</p>
 
-<p><strong>说明:</strong></p>
+<p><strong>提示：</strong></p>
 
 <ul>
 	<li><code>1 &lt;= ages.length&nbsp;&lt;= 20000</code>.</li>
