@@ -14,7 +14,7 @@
     "url": "https://github.com/6leetcode/6leetcode.git"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "moment": "^2.25.0"
   }
 }
