@@ -1,3 +1,8 @@
+include .env
+export $(shell sed 's/=.*//' .env)
+
+export COMPOSE_IGNORE_ORPHANS=True # ignore others container
+
 app_name                = 6leetcode
 
 BuildStamp              = $(shell date '+%Y%m%d%H%M%S')
@@ -15,11 +20,11 @@ endif
 
 .PHONY: ${OSName}
 ${OSName}:
-	env GOOS=$@ go build -v -o release/${Target}${Suffix} -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=$@ go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release:
-	env GOOS=${OSName} go build -v -o release/${Target}${Suffix} -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	env GOOS=${OSName} go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: lint
 lint:
@@ -29,27 +34,20 @@ lint:
 clean:
 	@$(RM) -r release *.db *.db-journal
 
-.PHONY: docker-build-release
-docker-build-release:
+.PHONY: docker-build
+docker-build:
 	if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
 	docker-compose build $(app_name)
 
-.PHONY: docker-build
-docker-build:
-	docker-compose build $(app_name)-dev
-
-.PHONY: docker-run-release
-docker-run-release:
-	docker-compose up --force-recreate -d $(app_name)
-
 .PHONY: docker-run
 docker-run:
-	docker-compose up --force-recreate -d $(app_name)-dev
-
-.PHONY: docker-exec-release
-docker-exec-release:
-	docker-compose exec $(app_name) /bin/bash
+	docker-compose up --force-recreate -d $(app_name)
 
 .PHONY: docker-exec
 docker-exec:
-	docker-compose exec $(app_name)-dev /usr/bin/fish
+	docker-compose exec $(app_name) /bin/bash
+
+.PHONY: up
+up:
+	docker-compose up --force-recreate
+

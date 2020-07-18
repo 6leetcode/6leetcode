@@ -51,13 +51,13 @@ type QuestionInfo struct {
 	QuestionID            int      `json:"question_id"`
 	Question              Question `json:"question"`
 	FrontendQuestionID    int      `json:"frontend_question_id"`
-	CodeSnippets          []byte   `json:"code_snippets"`
-	Content               []byte   `json:"content"`
-	TranslatedContent     []byte   `json:"translated_content"`
-	LangToValidPlayground []byte   `json:"lang_to_valid_playground"`
-	SimilarQuestions      []byte   `json:"similar_questions"`
-	Stats                 []byte   `json:"stats"`
-	TopicTags             []byte   `json:"topic_tags"`
+	CodeSnippets          []byte   `json:"code_snippets" gorm:"type:text"`
+	Content               []byte   `json:"content" gorm:"type:text"`
+	TranslatedContent     []byte   `json:"translated_content" gorm:"type:text"`
+	LangToValidPlayground []byte   `json:"lang_to_valid_playground" gorm:"type:text"`
+	SimilarQuestions      []byte   `json:"similar_questions" gorm:"type:text"`
+	Stats                 []byte   `json:"stats" gorm:"type:text"`
+	TopicTags             []byte   `json:"topic_tags" gorm:"type:text"`
 }
 
 // Create ..

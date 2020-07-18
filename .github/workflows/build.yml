@@ -18,6 +18,6 @@ jobs:
         with:
           fetch-depth: 10
       - name: Build server
-        run: cd apps/server && make docker-build-release
+        run: cd apps/server && make docker-build
       - name: Test code in specific image
         run: make all

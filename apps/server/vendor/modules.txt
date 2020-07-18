@@ -89,7 +89,7 @@ github.com/pkg/errors
 # github.com/robfig/cron v1.2.0
 ## explicit
 github.com/robfig/cron
-# github.com/spf13/afero v1.3.1
+# github.com/spf13/afero v1.3.2
 ## explicit
 github.com/spf13/afero
 github.com/spf13/afero/mem
@@ -118,7 +118,7 @@ github.com/ugorji/go/codec
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/net v0.0.0-20200625001655-4c5254603344
+# golang.org/x/net v0.0.0-20200707034311-ab3426394381
 ## explicit
 golang.org/x/net/publicsuffix
 # golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae

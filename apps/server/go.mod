@@ -21,7 +21,7 @@ require (
 	github.com/pelletier/go-toml v1.8.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/robfig/cron v1.2.0
-	github.com/spf13/afero v1.3.1 // indirect
+	github.com/spf13/afero v1.3.2 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
 	github.com/spf13/cobra v1.0.0
 	github.com/spf13/jwalterweatherman v1.1.0 // indirect
@@ -29,7 +29,7 @@ require (
 	github.com/spf13/viper v1.7.0
 	github.com/tosone/logging v1.1.0
 	github.com/unknwon/com v1.0.1
-	golang.org/x/net v0.0.0-20200625001655-4c5254603344 // indirect
+	golang.org/x/net v0.0.0-20200707034311-ab3426394381 // indirect
 	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae // indirect
 	golang.org/x/text v0.3.3 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect

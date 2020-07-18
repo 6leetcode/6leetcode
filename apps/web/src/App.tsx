@@ -2,14 +2,13 @@ import React from 'react';
 
 import { Layout, Menu, List, Pagination, Dropdown, Button, Typography } from 'antd';
 import { DownOutlined, UserOutlined, LockOutlined, UnlockOutlined } from '@ant-design/icons';
+import { MenuInfo } from 'rc-menu/lib/interface';
 
 import moment from 'moment/moment';
 import axios from 'axios';
 import _ from 'lodash';
 
 import './App.scss';
-
-const leetcodeServer = "http://localhost:4000";
 
 interface IProps {
 }
@@ -79,12 +78,13 @@ export default class App extends React.Component<IProps, IState> {
     };
   }
 
-  menuClick = (e: { key: string; }) => {
-    this.setState({ "menuKey": e.key });
+  menuClick = (info: MenuInfo) => {
+    console.log(info);
+    this.setState({ "menuKey": info.key.toString() });
   }
 
   componentDidMount() {
-    axios.get(leetcodeServer + "/questions").then(response => {
+    axios.get("/questions").then(response => {
       if (response.status !== 200) {
         console.error("request questions list with error:", response.status);
       } else {
@@ -104,7 +104,7 @@ export default class App extends React.Component<IProps, IState> {
     });
   }
 
-  languageChange = (e: { key: string; }) => {
+  languageChange = (e: MenuInfo) => {
     if (e.key === "2") {
       this.setState({ language: "English" });
     } else if (e.key === "1") {
@@ -122,12 +122,12 @@ export default class App extends React.Component<IProps, IState> {
           <div className="layout">
             <div className="logo" />
             <div className="layoutMenu">
-              <Menu theme="light" mode="horizontal" defaultSelectedKeys={[this.state.menuKey]}>
-                <Menu.Item onClick={this.menuClick} key="1">All</Menu.Item>
-                <Menu.Item onClick={this.menuClick} key="2">Algorithms</Menu.Item>
-                <Menu.Item onClick={this.menuClick} key="3">Concurrency</Menu.Item>
-                <Menu.Item onClick={this.menuClick} key="4">Database</Menu.Item>
-                <Menu.Item onClick={this.menuClick} key="5">Shell</Menu.Item>
+              <Menu theme="light" onClick={this.menuClick} mode="horizontal" defaultSelectedKeys={[this.state.menuKey]}>
+                <Menu.Item key="1">All</Menu.Item>
+                <Menu.Item key="2">Algorithms</Menu.Item>
+                <Menu.Item key="3">Concurrency</Menu.Item>
+                <Menu.Item key="4">Database</Menu.Item>
+                <Menu.Item key="5">Shell</Menu.Item>
               </Menu>
               <div className="language">
                 <Dropdown overlay={

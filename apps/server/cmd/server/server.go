@@ -2,10 +2,15 @@ package server
 
 import (
 	"bytes"
+	"context"
 	"fmt"
 	"io"
 	"net/http"
+	"os"
+	"os/signal"
 	"path/filepath"
+	"syscall"
+	"time"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -16,41 +21,77 @@ import (
 	"6leetcode/common/leetcode"
 )
 
+type Controller struct {
+	*gin.Engine
+}
+
 func Initialize() (err error) {
+	if err = cronTask(); err != nil {
+		return
+	}
 	if viper.GetBool("Debug") {
 		gin.SetMode(gin.DebugMode)
 	} else {
 		gin.SetMode(gin.ReleaseMode)
 	}
+	var router = gin.Default()
 
-	if err = cronTask(); err != nil {
-		return
-	}
+	router.Use(gin.Recovery())
+	router.Use(gin.Logger())
+	router.Use(cors.Default())
 
-	var server = gin.Default()
+	var controller = &Controller{Engine: router}
+	controller.questions()
 
-	server.Use(gin.Recovery())
-	server.Use(gin.Logger())
-	server.Use(cors.Default())
+	router.GET("/static/*filepath", bindataStaticHandler)
 
-	server.GET("/static/*filepath", bindataStaticHandler)
-
-	questionsRouter(server)
-
-	server.GET("/", func(c *gin.Context) {
+	router.GET("/", func(c *gin.Context) {
 		c.Redirect(http.StatusMovedPermanently, "/static")
 	})
 
-	server.GET("/ping", func(c *gin.Context) {
+	router.GET("/ping", func(c *gin.Context) {
 		c.String(200, "pong")
 	})
 
-	server.NoRoute(func(context *gin.Context) {
+	router.NoRoute(func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"code": 200, "msg": "Sorry, nothing here."})
 	})
 
-	fmt.Printf("Listening and serving HTTP on %s\n", "0.0.0.0:"+viper.GetString("ServerPort"))
-	err = server.Run(":" + viper.GetString("ServerPort"))
+	fmt.Printf("Listening and serving HTTP on 0.0.0.0:%s\n", viper.GetString("ServerPort"))
+
+	var srv = &http.Server{
+		Addr:    fmt.Sprintf(":%s", viper.GetString("ServerPort")),
+		Handler: router,
+	}
+
+	go func() {
+		if err = srv.ListenAndServe(); err != nil && err != http.ErrServerClosed {
+			logging.Fatalf("listen on %s with error: %v", viper.GetString("ServerPort"), err)
+		}
+	}()
+
+	var quit = make(chan os.Signal)
+	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+	<-quit
+	logging.Info("server is shutting down")
+
+	var ctx, cancel = context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	var serverShutdown = make(chan bool)
+	go func() {
+		if err = srv.Shutdown(ctx); err != nil {
+			logging.Fatalf("server shutdown with error: %v", err)
+		}
+		serverShutdown <- true
+	}()
+
+	select {
+	case <-ctx.Done():
+		logging.Info("server cannot shutdown in 5 seconds")
+	case <-serverShutdown:
+		logging.Info("server shutdown graceful")
+	}
 
 	return
 }

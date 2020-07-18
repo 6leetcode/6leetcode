@@ -13,145 +13,109 @@ import (
 	"6leetcode/common/table"
 )
 
-func questionsRouter(server *gin.Engine) {
-	server.GET("/hash/questions", func(context *gin.Context) {
-		var err error
+func (c *Controller) questions() {
+	var questionsGroup = c.Group("/questions", questions)
+	{
+		questionsGroup.GET("/hash", hashQuestions)
+		questionsGroup.GET("/:id", questionsGet)
+	}
+}
 
-		var questions []table.Question
-		var hash string
+func hashQuestions(context *gin.Context) {
+	var err error
 
-		var code = 200
+	var questions []table.Question
+	var hash string
 
-		defer func() {
-			var msg string
+	var code = 200
 
-			if code != 200 {
-				logging.Error(err)
-				msg = errCode[code].Error()
-			}
-			context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "hash": hash})
-		}()
+	defer func() {
+		var msg string
 
-		if questions, err = new(table.Question).Find(); err != nil {
-			code = 1001
+		if code != 200 {
+			logging.Error(err)
+			msg = errCode[code].Error()
 		}
+		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "hash": hash})
+	}()
 
-		if hash, err = hashEverything(questions); err != nil {
-			return
+	if questions, err = new(table.Question).Find(); err != nil {
+		code = 1001
+	}
+
+	if hash, err = hashEverything(questions); err != nil {
+		return
+	}
+}
+
+func questions(context *gin.Context) {
+	var err error
+
+	var questions []table.Question
+	var hash string
+
+	var code = 200
+
+	defer func() {
+		var msg string
+
+		if code != 200 {
+			logging.Error(err)
+			msg = errCode[code].Error()
 		}
-	})
+		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questions": questions, "hash": hash})
+	}()
 
-	server.GET("/questions", func(context *gin.Context) {
-		var err error
+	if questions, err = new(table.Question).Find(); err != nil {
+		code = 1001
+		return
+	}
 
-		var questions []table.Question
-		var hash string
+	if hash, err = hashEverything(questions); err != nil {
+		return
+	}
+}
 
-		var code = 200
+func questionsGet(context *gin.Context) {
+	var err error
 
-		defer func() {
-			var msg string
+	var questionInfo = &table.QuestionInfo{}
+	var hash string
 
-			if code != 200 {
-				logging.Error(err)
-				msg = errCode[code].Error()
-			}
-			context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questions": questions, "hash": hash})
-		}()
+	var code = 200
 
-		if questions, err = new(table.Question).Find(); err != nil {
-			code = 1001
-			return
+	defer func() {
+		var msg string
+
+		if code != 200 {
+			logging.Error(err)
+			msg = errCode[code].Error()
 		}
+		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questionInfo": questionInfo, "hash": hash})
+	}()
 
-		if hash, err = hashEverything(questions); err != nil {
-			return
-		}
-	})
+	var sid = context.Param("id")
+	if sid == "" {
+		code = 1003
+		return
+	}
 
-	server.GET("/questions/:id", func(context *gin.Context) {
-		var err error
+	var id int
+	if id, err = strconv.Atoi(sid); err != nil {
+		code = 1003
+		return
+	}
 
-		var questionInfo = &table.QuestionInfo{}
-		var hash string
+	questionInfo.QuestionID = id
 
-		var code = 200
+	if err = questionInfo.Find(); err != nil {
+		code = 1001
+		return
+	}
 
-		defer func() {
-			var msg string
-
-			if code != 200 {
-				logging.Error(err)
-				msg = errCode[code].Error()
-			}
-			context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questionInfo": questionInfo, "hash": hash})
-		}()
-
-		var sid = context.Param("id")
-		if sid == "" {
-			code = 1003
-			return
-		}
-
-		var id int
-		if id, err = strconv.Atoi(sid); err != nil {
-			code = 1003
-			return
-		}
-
-		questionInfo.QuestionID = id
-
-		if err = questionInfo.Find(); err != nil {
-			code = 1001
-			return
-		}
-
-		if hash, err = hashEverything(questionInfo); err != nil {
-			return
-		}
-	})
-
-	server.GET("/hash/questions/:id", func(context *gin.Context) {
-		var err error
-
-		var questionInfo = &table.QuestionInfo{}
-		var hash string
-
-		var code = 200
-
-		defer func() {
-			var msg string
-
-			if code != 200 {
-				logging.Error(err)
-				msg = errCode[code].Error()
-			}
-			context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "hash": hash})
-		}()
-
-		var sid = context.Param("id")
-		if sid == "" {
-			code = 1003
-			return
-		}
-
-		var id int
-		if id, err = strconv.Atoi(sid); err != nil {
-			code = 1003
-			return
-		}
-
-		questionInfo.QuestionID = id
-
-		if err = questionInfo.Find(); err != nil {
-			code = 1001
-			return
-		}
-
-		if hash, err = hashEverything(questionInfo); err != nil {
-			return
-		}
-	})
+	if hash, err = hashEverything(questionInfo); err != nil {
+		return
+	}
 }
 
 func hashEverything(content interface{}) (hash string, err error) {

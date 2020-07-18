@@ -12,7 +12,8 @@ WORKDIR /go/src/app
 
 ADD . .
 
-RUN cd apps/web && npm install --registry https://registry.npm.taobao.org && \
+RUN cd apps/web && env SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass \
+  npm install --registry https://registry.npm.taobao.org && \
   npm run build
 
 FROM golang:alpine AS stage3
@@ -32,13 +33,17 @@ RUN sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /e
 
 FROM alpine:edge
 
+ADD apps/server/wait-for-it.sh /usr/local/bin
+
 RUN sed -i 's/https:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories && \
-  apk add --no-cache ca-certificates bash && \
+  apk add --no-cache ca-certificates bash wget && \
   mkdir -p /etc/6leetcode
 
 COPY --from=stage3 /tmp/6leetcode /usr/bin
 COPY --from=stage3 /tmp/config.yml /etc/6leetcode
 
+VOLUME /etc/6leetcode
+
 EXPOSE 4000
 
-CMD ["6leetcode", "server"]
+CMD ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "server"]
