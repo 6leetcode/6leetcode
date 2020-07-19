@@ -1,9 +1,8 @@
 FROM golang:alpine AS stage1
 
 # sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories
-
-RUN apk add --no-cache git && \
-  env GOPROXY="https://goproxy.cn,direct" go get -u -v github.com/go-bindata/go-bindata/...
+# env GOPROXY="https://goproxy.cn,direct"
+RUN apk add --no-cache git && go get -u -v github.com/go-bindata/go-bindata/...
 
 FROM node:alpine AS stage2
 
