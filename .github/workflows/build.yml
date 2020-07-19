@@ -12,16 +12,44 @@ jobs:
   leetcode-ci:
     name: leetcode-ci
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go: ["1.13", "1.14"]
+        node: ["12", "14"]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
           fetch-depth: 10
-      - name: Build server
+      - name: Generate config files
         run: |
           cd apps/server
           if [ ! -f .env ]; then cp .env.sample .env; fi
           if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
+      - name: Setup golang
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go }}
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install go-bindata
+        run: go get -u github.com/go-bindata/go-bindata/...
+      - name: Build fontend
+        run: |
+          cd apps/web
+          npm install
+          npm run build
+      - name: Build server
+        run: |
+          cd apps/server
+          make
+      - name: Lint code
+        uses: golangci/golangci-lint-action@v1
+        with:
+          version: v1.28
+          working-directory: apps/server
       - name: Build and push Docker images
         uses: docker/build-push-action@v1
         with:
