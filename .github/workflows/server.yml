@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Server Build CI
 
 on:
   push:
@@ -61,5 +61,3 @@ jobs:
           push: true
           dockerfile: apps/server/Dockerfile
           path: .
-      - name: Test code in specific image
-        run: make all
