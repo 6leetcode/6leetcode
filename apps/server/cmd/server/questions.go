@@ -14,8 +14,9 @@ import (
 )
 
 func (c *Controller) questions() {
-	var questionsGroup = c.Group("/questions", questions)
+	var questionsGroup = c.Group("/questions")
 	{
+		questionsGroup.GET("/all", questions)
 		questionsGroup.GET("/hash", hashQuestions)
 		questionsGroup.GET("/:id", questionsGet)
 	}
