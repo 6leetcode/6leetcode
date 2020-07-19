@@ -19,5 +19,16 @@ jobs:
           fetch-depth: 10
       - name: Build server
         run: cd apps/server && make docker-build
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: 6leetcode/6leetcode
+          tag_with_ref: true
+          always_pull: true
+          push: true
+          dockerfile: apps/server/Dockerfile
+          path: .
       - name: Test code in specific image
         run: make all
