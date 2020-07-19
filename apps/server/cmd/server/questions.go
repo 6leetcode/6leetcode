@@ -14,12 +14,9 @@ import (
 )
 
 func (c *Controller) questions() {
-	var questionsGroup = c.Group("/questions")
-	{
-		questionsGroup.GET("/all", questions)
-		questionsGroup.GET("/hash", hashQuestions)
-		questionsGroup.GET("/:id", questionsGet)
-	}
+	c.GET("/questions", questions)
+	c.GET("/questions/:id", questionsGet)
+	c.GET("/hash/questions", hashQuestions)
 }
 
 func hashQuestions(context *gin.Context) {
