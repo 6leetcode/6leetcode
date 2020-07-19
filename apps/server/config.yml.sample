@@ -1,5 +1,5 @@
 AppName: 6leetcode
-Debug: true
+Debug: false
 ServerPort: 4000
 Login:
   name: # leetcode username

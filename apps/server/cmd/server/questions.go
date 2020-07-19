@@ -14,16 +14,13 @@ import (
 )
 
 func (c *Controller) questions() {
-	c.GET("/questions", questions)
-	c.GET("/questions/:id", questionsGet)
-	c.GET("/hash/questions", hashQuestions)
+	c.GET("/questions", questionsRoute)
+	c.GET("/questions/:id", questionsGetRoute)
+	c.GET("/sync", syncRoute)
 }
 
-func hashQuestions(context *gin.Context) {
+func syncRoute(context *gin.Context) {
 	var err error
-
-	var questions []table.Question
-	var hash string
 
 	var code = 200
 
@@ -34,19 +31,16 @@ func hashQuestions(context *gin.Context) {
 			logging.Error(err)
 			msg = errCode[code].Error()
 		}
-		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "hash": hash})
+		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg})
 	}()
 
-	if questions, err = new(table.Question).Find(); err != nil {
-		code = 1001
-	}
-
-	if hash, err = hashEverything(questions); err != nil {
+	if err = sync(); err != nil {
+		code = 1002
 		return
 	}
 }
 
-func questions(context *gin.Context) {
+func questionsRoute(context *gin.Context) {
 	var err error
 
 	var questions []table.Question
@@ -74,7 +68,7 @@ func questions(context *gin.Context) {
 	}
 }
 
-func questionsGet(context *gin.Context) {
+func questionsGetRoute(context *gin.Context) {
 	var err error
 
 	var questionInfo = &table.QuestionInfo{}

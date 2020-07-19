@@ -137,18 +137,24 @@ var mime = map[string]string{
 func cronTask() (err error) {
 	var c = cron.New()
 	if err = c.AddFunc("@daily", func() {
-		var instance *leetcode.Instance
-		if instance, err = leetcode.New(); err != nil {
+		var err error
+		if err = sync(); err != nil {
 			logging.Error(err)
-			return
-		}
-		if err = instance.All(); err != nil {
-			logging.Error(err)
-			return
 		}
 	}); err != nil {
 		return
 	}
 	c.Start()
+	return
+}
+
+func sync() (err error) {
+	var instance *leetcode.Instance
+	if instance, err = leetcode.New(); err != nil {
+		return
+	}
+	if err = instance.All(); err != nil {
+		return
+	}
 	return
 }
