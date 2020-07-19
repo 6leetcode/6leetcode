@@ -58,3 +58,11 @@ up-database:
 .PHONY: up-server
 up-server:
 	docker-compose up --force-recreate 6leetcode
+
+.PHONY: up-init
+up-init:
+	if [ -d data ]; then sudo rm -rf data; fi
+	mkdir -p data/postgresql-master data/postgresql-slave data/traefik
+	touch data/traefik/acme.json
+	sudo chown -R 1001:1001 data/postgresql-master
+	sudo chown -R 1001:1001 data/postgresql-slave
