@@ -26,6 +26,8 @@ services:
       - traefik.http.routers.http-catchall.entrypoints=web
       - traefik.http.routers.http-catchall.middlewares=redirect-to-https
       - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
+    networks:
+      - default
   postgresql-master:
     image: "bitnami/postgresql:12"
     volumes:
@@ -37,6 +39,8 @@ services:
       - POSTGRESQL_USERNAME=${USERNAME}
       - POSTGRESQL_PASSWORD=${SECRETPERSONAL}
       - POSTGRESQL_DATABASE=${DATABASE_NAME}
+    networks:
+      - default
   postgresql-slave:
     image: "bitnami/postgresql:12"
     volumes:
@@ -50,6 +54,8 @@ services:
       - POSTGRESQL_MASTER_HOST=postgresql-master
       - POSTGRESQL_PASSWORD=${SECRETPERSONAL}
       - POSTGRESQL_MASTER_PORT_NUMBER=5432
+    networks:
+      - default
   6leetcode:
     container_name: 6leetcode
     image: 6leetcode:release
@@ -71,3 +77,9 @@ services:
       - traefik.http.routers.6leetcode.tls.certresolver=leresolver
       - traefik.http.services=6leetcode
       - traefik.http.services.6leetcode.loadbalancer.server.port=4000
+    networks:
+      - default
+networks:
+  default:
+    external:
+      name: ${DOCKER_NETWORK:-webproxy}
