@@ -9,6 +9,7 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
+	"sync"
 	"syscall"
 	"time"
 
@@ -138,7 +139,7 @@ func cronTask() (err error) {
 	var c = cron.New()
 	if err = c.AddFunc("@daily", func() {
 		var err error
-		if err = sync(); err != nil {
+		if err = syncLeetcode(); err != nil {
 			logging.Error(err)
 		}
 	}); err != nil {
@@ -148,7 +149,11 @@ func cronTask() (err error) {
 	return
 }
 
-func sync() (err error) {
+var syncLocker sync.Locker
+
+func syncLeetcode() (err error) {
+	syncLocker.Lock()
+	defer syncLocker.Unlock()
 	var instance *leetcode.Instance
 	if instance, err = leetcode.New(); err != nil {
 		return

@@ -57,7 +57,7 @@ up-database:
 
 .PHONY: up-server
 up-server:
-	docker-compose up --force-recreate 6leetcode
+	docker-compose up --force-recreate -d 6leetcode
 
 .PHONY: up-init
 up-init:

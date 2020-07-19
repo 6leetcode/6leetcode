@@ -34,10 +34,13 @@ func syncRoute(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg})
 	}()
 
-	if err = sync(); err != nil {
-		code = 1002
-		return
-	}
+	go func() {
+		var err error
+		if err = syncLeetcode(); err != nil {
+			logging.Error(err)
+			return
+		}
+	}()
 }
 
 func questionsRoute(context *gin.Context) {
