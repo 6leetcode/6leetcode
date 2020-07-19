@@ -18,7 +18,7 @@ jobs:
         with:
           fetch-depth: 10
       - name: Build server
-        run: cd apps/server && make docker-build
+        run: cd apps/server && if [ ! -f .env ]; then cp .env.sample .env; fi && make docker-build
       - name: Build and push Docker images
         uses: docker/build-push-action@v1
         with:

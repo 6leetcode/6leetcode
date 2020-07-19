@@ -51,3 +51,10 @@ docker-exec:
 up:
 	docker-compose up --force-recreate
 
+.PHONY: up-database
+up-database:
+	docker-compose up --force-recreate -d postgresql-master postgresql-slave
+
+.PHONY: up-server
+up-server:
+	docker-compose up --force-recreate 6leetcode

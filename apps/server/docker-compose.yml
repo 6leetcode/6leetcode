@@ -17,7 +17,7 @@ services:
       - 443:443
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-      # - ${VOLUME_PREFIX}/traefik/acme.json:/acme.json
+      - ${VOLUME_PREFIX}/traefik/acme.json:/acme.json
     labels:
       - traefik.http.routers.traefik.entrypoints=websecure
       - traefik.http.routers.traefik.middlewares=authtraefik
@@ -56,7 +56,6 @@ services:
     hostname: 6leetcode
     depends_on:
       - postgresql-master
-      - traefik
     command:
       ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "server"]
     build:

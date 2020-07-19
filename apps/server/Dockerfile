@@ -46,4 +46,4 @@ VOLUME /etc/6leetcode
 
 EXPOSE 4000
 
-CMD ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "server"]
+CMD ["6leetcode", "server"]

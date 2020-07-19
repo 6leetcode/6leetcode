@@ -48,3 +48,4 @@ apps/uni-app/node_modules/
 apps/web/bindata.go
 apps/server/cmd/server/bindata.go
 apps/server/data
+apps/server/.env

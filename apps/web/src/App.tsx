@@ -43,6 +43,8 @@ interface IState {
   language: string;
 }
 
+const leetcodeServer = "https://6leetcode.tosone.cn";
+
 export default class App extends React.Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
@@ -84,7 +86,7 @@ export default class App extends React.Component<IProps, IState> {
   }
 
   componentDidMount() {
-    axios.get("/questions").then(response => {
+    axios.get(leetcodeServer + "/questions").then(response => {
       if (response.status !== 200) {
         console.error("request questions list with error:", response.status);
       } else {
