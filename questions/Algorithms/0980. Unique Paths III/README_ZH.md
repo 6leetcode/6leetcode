@@ -9,7 +9,9 @@
 	<li><code>-1</code> 表示我们无法跨越的障碍。</li>
 </ul>
 
-<p>返回在四个方向（上、下、左、右）上行走时，从起始方格到结束方格的不同路径的数目，<strong>每一个无障碍方格都要通过一次</strong>。</p>
+<p>返回在四个方向（上、下、左、右）上行走时，从起始方格到结束方格的不同路径的数目<strong>。</strong></p>
+
+<p><strong>每一个无障碍方格都要通过一次，但是一条路径中不能重复通过同一个方格</strong>。</p>
 
 <p>&nbsp;</p>
 
@@ -44,6 +46,6 @@
 
 <p><strong>提示：</strong></p>
 
-<ol>
+<ul>
 	<li><code>1 &lt;= grid.length * grid[0].length &lt;= 20</code></li>
-</ol>
+</ul>
