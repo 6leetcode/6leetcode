@@ -25,26 +25,26 @@ type Question struct {
 // Create create question
 func (q *Question) Create() (err error) {
 	var t Question
-	if err = engine.Model(new(Question)).Where(Question{
+	if err = engine.Debug().Model(new(Question)).Where(Question{
 		QuestionID: q.QuestionID,
 	}).First(&t).Error; err == gorm.ErrRecordNotFound {
-		return engine.Create(q).Error
+		return engine.Debug().Create(q).Error
 	} else if err != nil {
 		return
 	}
-	return engine.Model(new(Question)).Where(Question{QuestionID: q.QuestionID}).Updates(q).Error
+	return engine.Model(new(Question)).Where(Question{QuestionID: q.QuestionID}).Debug().Updates(q).Error
 }
 
 // Find find all the questions
 func (q *Question) Find() (questions []Question, err error) {
 	questions = []Question{}
-	err = engine.Order("id").Find(&questions).Error
+	err = engine.Debug().Order("id").Find(&questions).Error
 	return
 }
 
 // FindByID find question by id
 func (q *Question) FindByID() (err error) {
-	err = engine.Where(Question{QuestionID: q.QuestionID}).First(q).Error
+	err = engine.Debug().Where(Question{QuestionID: q.QuestionID}).First(q).Error
 	return
 }
 
@@ -66,18 +66,18 @@ type QuestionInfo struct {
 // Create create question info
 func (q *QuestionInfo) Create() (err error) {
 	var t QuestionInfo
-	if err = engine.Model(new(QuestionInfo)).Where(QuestionInfo{
+	if err = engine.Debug().Model(new(QuestionInfo)).Where(QuestionInfo{
 		QuestionID: q.QuestionID,
 	}).First(&t).Error; err == gorm.ErrRecordNotFound {
-		return engine.Create(q).Error
+		return engine.Debug().Create(q).Error
 	} else if err != nil {
 		return
 	}
-	return engine.Model(new(QuestionInfo)).Where(QuestionInfo{QuestionID: q.QuestionID}).Updates(q).Error
+	return engine.Model(new(QuestionInfo)).Where(QuestionInfo{QuestionID: q.QuestionID}).Debug().Updates(q).Error
 }
 
 // Find find the specific question
 func (q *QuestionInfo) Find() (err error) {
-	err = engine.Preload("Question").Where(QuestionInfo{QuestionID: q.QuestionID}).First(q).Error
+	err = engine.Debug().Preload("Question").Where(QuestionInfo{QuestionID: q.QuestionID}).First(q).Error
 	return
 }

@@ -109,10 +109,6 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 		return
 	}
 
-	if err = q.Create(); err != nil {
-		return
-	}
-
 	if viper.GetString("Generate.Readme") != "" {
 		if err = i.readme(q, questionInfo, viper.GetString("Generate.Readme")); err != nil {
 			return
@@ -126,10 +122,11 @@ func (i *Instance) readme(q *table.Question, questionInfo table.QuestionInfo, ba
 	var dir = fmt.Sprintf("%s/%s/%04d. %s", basedir, q.CategoryTitle, q.FrontendQuestionID, q.Title)
 	if q.PaidOnly {
 		if com.IsDir(dir) {
-			if err = os.Remove(dir); err != nil {
+			if err = os.RemoveAll(dir); err != nil {
 				return
 			}
 		}
+		return
 	}
 	if !com.IsDir(dir) {
 		if err = os.MkdirAll(dir, 0755); err != nil {

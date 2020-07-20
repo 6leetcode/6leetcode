@@ -45,7 +45,7 @@ func Initialize() (err error) {
 		return
 	}
 
-	if err = engine.AutoMigrate(
+	if err = engine.Debug().AutoMigrate(
 		new(Question),
 		new(QuestionInfo),
 	); err != nil {
