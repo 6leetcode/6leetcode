@@ -22,10 +22,12 @@ import (
 	"6leetcode/common/leetcode"
 )
 
+// Controller controller
 type Controller struct {
 	*gin.Engine
 }
 
+// Initialize initialize
 func Initialize() (err error) {
 	if err = cronTask(); err != nil {
 		return

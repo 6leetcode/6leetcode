@@ -4,6 +4,7 @@ import (
 	"6leetcode/common/leetcode"
 )
 
+// Initialize initialize the crawler
 func Initialize() (err error) {
 	var instance *leetcode.Instance
 

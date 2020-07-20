@@ -8,6 +8,7 @@ import (
 	"github.com/spf13/viper"
 )
 
+// Login login
 func (i *Instance) Login() (err error) {
 	var response gorequest.Response
 	var errs []error

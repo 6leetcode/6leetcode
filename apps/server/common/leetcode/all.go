@@ -13,6 +13,7 @@ import (
 	"6leetcode/common/table"
 )
 
+// All all
 func (i *Instance) All() (err error) {
 	var response gorequest.Response
 	var errs []error
