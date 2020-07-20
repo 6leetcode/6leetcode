@@ -224,10 +224,23 @@ if __name__ == "__main__":
         .replace(",", "")\
         .lower() + ")"
     if len(sql[problem]) != 0:
+      if lang(sql[problem], problem, code_prefix_database) == "":
+        continue
       s += "|-|-|-|-|-|-|-|-|" + lang(sql[problem], problem, code_prefix_database) + "|-|"
     if len(shell[problem]) != 0:
+      if lang(shell[problem], problem, code_prefix_shell) == "":
+        continue
       s += "|-|-|-|-|-|-|-|-|-|" + lang(shell[problem], problem, code_prefix_shell) + "|"
     else:
+      if lang(c[problem], problem, code_prefix_algorithm) == "" and \
+              lang(cc[problem], problem, code_prefix_algorithm) == "" and \
+              lang(go[problem], problem, code_prefix_algorithm) == "" and \
+              lang(java[problem], problem, code_prefix_algorithm) == "" and \
+              lang(javascript[problem], problem, code_prefix_algorithm) == "" and \
+              lang(php[problem], problem, code_prefix_algorithm) == "" and \
+              lang(python[problem], problem, code_prefix_algorithm) == "" and \
+              lang(rust[problem], problem, code_prefix_algorithm) == "":
+        continue
       s += "|"+lang(c[problem], problem, code_prefix_algorithm) + "|" +\
            lang(cc[problem], problem, code_prefix_algorithm) + "|" + \
           lang(go[problem], problem, code_prefix_algorithm) + "|" + \
