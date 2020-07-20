@@ -1,9 +1,10 @@
 package table
 
 import (
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
+// Question question
 type Question struct {
 	gorm.Model         `json:"-"`
 	QuestionID         int    `json:"question_id"`
@@ -21,7 +22,7 @@ type Question struct {
 	ACRate             string `json:"acRate"`
 }
 
-// Create ..
+// Create create question
 func (q *Question) Create() (err error) {
 	var t Question
 	if err = engine.Model(new(Question)).Where(Question{
@@ -34,18 +35,20 @@ func (q *Question) Create() (err error) {
 	return engine.Model(new(Question)).Where(Question{QuestionID: q.QuestionID}).Updates(q).Error
 }
 
+// Find find all the questions
 func (q *Question) Find() (questions []Question, err error) {
 	questions = []Question{}
-	err = engine.Find(&questions).Error
+	err = engine.Order("id").Find(&questions).Error
 	return
 }
 
+// FindByID find question by id
 func (q *Question) FindByID() (err error) {
 	err = engine.Where(Question{QuestionID: q.QuestionID}).First(q).Error
 	return
 }
 
-// QuestionInfo ..
+// QuestionInfo question info
 type QuestionInfo struct {
 	gorm.Model            `json:"-"`
 	QuestionID            int      `json:"question_id"`
@@ -60,7 +63,7 @@ type QuestionInfo struct {
 	TopicTags             []byte   `json:"topic_tags" gorm:"type:text"`
 }
 
-// Create ..
+// Create create question info
 func (q *QuestionInfo) Create() (err error) {
 	var t QuestionInfo
 	if err = engine.Model(new(QuestionInfo)).Where(QuestionInfo{
@@ -73,6 +76,7 @@ func (q *QuestionInfo) Create() (err error) {
 	return engine.Model(new(QuestionInfo)).Where(QuestionInfo{QuestionID: q.QuestionID}).Updates(q).Error
 }
 
+// Find find the specific question
 func (q *QuestionInfo) Find() (err error) {
 	err = engine.Preload("Question").Where(QuestionInfo{QuestionID: q.QuestionID}).First(q).Error
 	return
