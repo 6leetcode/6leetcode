@@ -22,9 +22,9 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 	var data []byte
 
 	if response, data, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
-		Post("https://leetcode-cn.com/graphql").
-		Set("origin", "https://leetcode-cn.com").
-		Set("referer", "https://leetcode-cn.com/problemset/all/").
+		Post(fmt.Sprintf("%s/graphql", HostLeetcode)).
+		Set("origin", HostLeetcode).
+		Set("referer", HostLeetcode).
 		Set("user-agent", i.userAgent).
 		Set("x-csrftoken", i.csrftoken).
 		AddCookies(i.cookie).
@@ -124,6 +124,13 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 
 func (i *Instance) readme(q *table.Question, questionInfo table.QuestionInfo, basedir string) (err error) {
 	var dir = fmt.Sprintf("%s/%s/%04d. %s", basedir, q.CategoryTitle, q.FrontendQuestionID, q.Title)
+	if q.PaidOnly {
+		if com.IsDir(dir) {
+			if err = os.Remove(dir); err != nil {
+				return
+			}
+		}
+	}
 	if !com.IsDir(dir) {
 		if err = os.MkdirAll(dir, 0755); err != nil {
 			return

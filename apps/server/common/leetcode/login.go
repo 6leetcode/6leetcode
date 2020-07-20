@@ -1,6 +1,7 @@
 package leetcode
 
 import (
+	"fmt"
 	"net/http"
 	"time"
 
@@ -28,9 +29,9 @@ func (i *Instance) Login() (err error) {
 	}
 
 	if response, _, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
-		Post("https://leetcode-cn.com/accounts/login").
-		Set("Referer", "https://leetcode-cn.com/").
-		Set("origin", "https://leetcode-cn.com").
+		Post(fmt.Sprintf("%s/accounts/login", HostLeetcode)).
+		Set("Referer", HostLeetcode).
+		Set("origin", HostLeetcode).
 		Set("x-csrftoken", i.csrftoken).
 		Set("user-agent", i.userAgent).
 		Type("multipart").

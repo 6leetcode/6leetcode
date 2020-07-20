@@ -2,6 +2,7 @@ package leetcode
 
 import (
 	"encoding/json"
+	"fmt"
 	"math/rand"
 	"strconv"
 	"time"
@@ -21,9 +22,9 @@ func (i *Instance) All() (err error) {
 	var data []byte
 
 	if response, data, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
-		Post("https://leetcode-cn.com/graphql").
-		Set("origin", "https://leetcode-cn.com").
-		Set("referer", "https://leetcode-cn.com/problemset/all/").
+		Post(fmt.Sprintf("%s/graphql", HostLeetcode)).
+		Set("origin", HostLeetcode).
+		Set("referer", fmt.Sprintf("%s/problemset/all/", HostLeetcode)).
 		Set("user-agent", i.userAgent).
 		Set("x-csrftoken", i.csrftoken).
 		AddCookies(i.cookie).
