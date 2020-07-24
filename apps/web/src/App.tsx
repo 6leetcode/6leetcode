@@ -4,9 +4,7 @@ import { Layout, Menu, List, Pagination, Dropdown, Button, Typography } from 'an
 import { DownOutlined, UserOutlined, LockOutlined, UnlockOutlined } from '@ant-design/icons';
 import { MenuInfo } from 'rc-menu/lib/interface';
 
-import moment from 'moment/moment';
 import axios from 'axios';
-import _ from 'lodash';
 
 import './App.scss';
 
@@ -26,24 +24,13 @@ interface IState {
     category_title: string,
     acRate: string
   }[];
-  totalQuestions: {
-    title: string,
-    translated_title: string,
-    question_id: number,
-    frontend_question_id: number,
-    difficulty: string,
-    paid_only: boolean,
-    title_slug: string,
-    category_title: string,
-    acRate: string
-  }[];
   totalQuestionLength: number;
-  pageSize: number;
   currentPage: number;
   language: string;
 }
 
 const leetcodeServer = "https://6leetcode.tosone.cn";
+const pageSize = 50;
 
 export default class App extends React.Component<IProps, IState> {
   constructor(props: IProps) {
@@ -62,19 +49,7 @@ export default class App extends React.Component<IProps, IState> {
         category_title: "",
         acRate: ""
       }],
-      totalQuestions: [{
-        title: "",
-        translated_title: "",
-        question_id: 0,
-        frontend_question_id: 0,
-        difficulty: "",
-        paid_only: false,
-        title_slug: "",
-        category_title: "",
-        acRate: ""
-      }],
       totalQuestionLength: 0,
-      pageSize: 50,
       currentPage: 1,
       language: "中文"
     };
@@ -86,24 +61,32 @@ export default class App extends React.Component<IProps, IState> {
   }
 
   componentDidMount() {
-    axios.get(leetcodeServer + "/questions").then(response => {
-      if (response.status !== 200) {
-        console.error("request questions list with error:", response.status);
-      } else {
-        this.setState({
-          questions: response.data.questions.slice(0, this.state.pageSize),
-          totalQuestions: response.data.questions,
-          totalQuestionLength: response.data.questions.length
-        });
-      }
-    });
+    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString())
+      .then(response => {
+        if (response.status !== 200) {
+          console.error("request questions list with error:", response.status);
+        } else {
+          this.setState({
+            questions: response.data.questions,
+            totalQuestionLength: response.data.count
+          });
+        }
+      });
   }
 
   pageChange = (number: number) => {
-    this.setState({
-      currentPage: number,
-      questions: this.state.totalQuestions.slice((number - 1) * this.state.pageSize, number * this.state.pageSize)
-    });
+    let offset = ((number - 1) * pageSize).toString()
+    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset)
+      .then(response => {
+        if (response.status !== 200) {
+          console.error("request questions list with error:", response.status);
+        } else {
+          this.setState({
+            questions: response.data.questions,
+            totalQuestionLength: response.data.count
+          });
+        }
+      });
   }
 
   languageChange = (e: MenuInfo) => {
@@ -115,9 +98,6 @@ export default class App extends React.Component<IProps, IState> {
   }
 
   render() {
-    console.log(moment().format());
-    console.log(_.now());
-
     return (
       <Layout>
         <Layout.Header className="header">
@@ -188,7 +168,7 @@ export default class App extends React.Component<IProps, IState> {
                 current={this.state.currentPage}
                 total={this.state.totalQuestionLength}
                 showSizeChanger={false}
-                pageSize={this.state.pageSize}
+                pageSize={pageSize}
                 onChange={this.pageChange}
               />
             </div>
