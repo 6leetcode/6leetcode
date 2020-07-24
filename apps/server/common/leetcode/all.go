@@ -105,7 +105,6 @@ func (i *Instance) All() (err error) {
 		var err error
 		if err = q.Create(); err != nil {
 			logging.Error(err)
-			err = nil // ignore this error
 		}
 		rand.Seed(time.Now().UnixNano())
 		time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
