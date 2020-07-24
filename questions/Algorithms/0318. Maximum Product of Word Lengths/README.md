@@ -23,3 +23,12 @@
 <b>Output: </b><code>0 
 <strong>Explanation: </strong></code>No such pair of words.
 </pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>0 &lt;= words.length &lt;= 10^3</code></li>
+	<li><code>0 &lt;= words[i].length &lt;= 10^3</code></li>
+	<li><code>words[i]</code> consists only of lowercase English letters.</li>
+</ul>

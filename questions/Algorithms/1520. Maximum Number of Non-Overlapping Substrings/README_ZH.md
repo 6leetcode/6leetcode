@@ -4,7 +4,7 @@
 
 <ol>
 	<li>这些字符串之间互不重叠，也就是说对于任意两个子字符串&nbsp;<code>s[i..j]</code> 和&nbsp;<code>s[k..l]</code>&nbsp;，要么&nbsp;<code>j &lt; k</code>&nbsp;要么&nbsp;<code>i &gt; l</code>&nbsp;。</li>
-	<li>如果一个子字符串包含字符&nbsp;<code>c</code>&nbsp;，那么&nbsp;<code>s</code>&nbsp;中所有&nbsp;<code>c</code>&nbsp;字符都应该在这个子字符串中。</li>
+	<li>如果一个子字符串包含字符&nbsp;<code>char</code> ，那么&nbsp;<code>s</code>&nbsp;中所有&nbsp;<code>char</code> 字符都应该在这个子字符串中。</li>
 </ol>
 
 <p>请你找到满足上述条件的最多子字符串数目。如果有多个解法有相同的子字符串数目，请返回这些子字符串总长度最小的一个解。可以证明最小总长度解是唯一的。</p>
