@@ -4,6 +4,7 @@ services:
   traefik:
     image: traefik:v2.2
     container_name: traefik
+    hostname: traefik
     command:
       - --entrypoints.web.address=:80
       - --entrypoints.websecure.address=:443
@@ -30,6 +31,8 @@ services:
       - default
   postgresql-master:
     image: "bitnami/postgresql:12"
+    container_name: postgresql-master
+    hostname: postgresql-master
     volumes:
       - ${VOLUME_PREFIX}/postgresql-master/:/bitnami/postgresql
     environment:
@@ -43,6 +46,8 @@ services:
       - default
   postgresql-slave:
     image: "bitnami/postgresql:12"
+    container_name: postgresql-slave
+    hostname: postgresql-slave
     volumes:
       - ${VOLUME_PREFIX}/postgresql-slave/:/bitnami/postgresql
     depends_on:
@@ -57,8 +62,8 @@ services:
     networks:
       - default
   6leetcode:
-    container_name: 6leetcode
     image: 6leetcode:release
+    container_name: 6leetcode
     hostname: 6leetcode
     depends_on:
       - postgresql-master
