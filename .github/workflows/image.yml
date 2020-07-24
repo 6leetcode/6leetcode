@@ -5,7 +5,7 @@ on:
     branches:
       - master
     tags:
-      - '*'
+      - "*"
   pull_request:
     branches:
       - master
@@ -32,6 +32,6 @@ jobs:
           repository: 6leetcode/6leetcode
           tag_with_ref: true
           always_pull: true
-          push: ${{ startsWith(github.ref, 'refs/tags/') }}
+          push: true # ${{ startsWith(github.ref, 'refs/tags/') }}
           dockerfile: apps/server/Dockerfile
           path: .
