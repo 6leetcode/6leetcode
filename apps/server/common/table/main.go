@@ -48,7 +48,7 @@ func Initialize() (err error) {
 		log.New(os.Stdout, "\r\n", log.LstdFlags),
 		logger.Config{
 			SlowThreshold: 500 * time.Millisecond,
-			LogLevel:      logger.Warn,
+			LogLevel:      logger.Silent,
 			Colorful:      true,
 		},
 	)

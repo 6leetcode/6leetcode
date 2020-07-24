@@ -6,9 +6,9 @@ import (
 
 // Question question
 type Question struct {
-	gorm.Model
+	gorm.Model            `json:"-"`
 	QuestionID            int    `json:"question_id"`
-	FrontendQuestionID    int    `json:"frontend_question_id"`
+	FrontendQuestionID    int    `json:"frontend_question_id" gorm:"index:unique"`
 	Difficulty            string `json:"difficulty"`
 	PaidOnly              bool   `json:"paid_only"`
 	Title                 string `json:"title"`
@@ -32,10 +32,10 @@ type Question struct {
 // Create create question
 func (q *Question) Create() (err error) {
 	var t Question
-	if err = engine.Model(new(Question)).Where(Question{
-		QuestionID: q.QuestionID,
-	}).First(&t).Error; err == gorm.ErrRecordNotFound {
-		return engine.Debug().Create(q).Error
+	if err = engine.Model(new(Question)).Where(
+		Question{QuestionID: q.QuestionID},
+	).First(&t).Error; err == gorm.ErrRecordNotFound {
+		return engine.Create(q).Error
 	} else if err != nil {
 		return
 	}
@@ -54,9 +54,13 @@ func (q *Question) Create() (err error) {
 func (q *Question) Find(offset, limit int) (questions []Question, err error) {
 	questions = []Question{}
 	if limit == 0 {
-		limit = 50
+		limit = pageSize
 	}
-	err = engine.Limit(limit).Offset(offset).Order("id").Find(&questions).Error
+	err = engine.Limit(limit).Select([]string{
+		"question_id", "frontend_question_id", "difficulty", "paid_only", "title", "title_slug",
+		"translated_title", "category_title", "total_accepted", "total_submission",
+		"total_accepted_raw", "total_submission_raw", "ac_rate",
+	}).Offset(offset).Order("frontend_question_id").Find(&questions).Error
 	return
 }
 

@@ -24,13 +24,14 @@ interface IState {
     category_title: string,
     acRate: string
   }[];
-  totalQuestionLength: number;
+  totalQuestions: number;
   currentPage: number;
   language: string;
 }
 
 const leetcodeServer = "https://6leetcode.tosone.cn";
-const pageSize = 50;
+// const leetcodeServer = "http://127.0.0.1:4000";
+const pageSize = 100;
 
 export default class App extends React.Component<IProps, IState> {
   constructor(props: IProps) {
@@ -49,7 +50,7 @@ export default class App extends React.Component<IProps, IState> {
         category_title: "",
         acRate: ""
       }],
-      totalQuestionLength: 0,
+      totalQuestions: 0,
       currentPage: 1,
       language: "中文"
     };
@@ -68,7 +69,7 @@ export default class App extends React.Component<IProps, IState> {
         } else {
           this.setState({
             questions: response.data.questions,
-            totalQuestionLength: response.data.count
+            totalQuestions: response.data.total
           });
         }
       });
@@ -83,7 +84,8 @@ export default class App extends React.Component<IProps, IState> {
         } else {
           this.setState({
             questions: response.data.questions,
-            totalQuestionLength: response.data.count
+            totalQuestions: response.data.total,
+            currentPage: number
           });
         }
       });
@@ -148,7 +150,7 @@ export default class App extends React.Component<IProps, IState> {
                 <List.Item>
                   <div className="questionItem">
                     <div>
-                      {item.frontend_question_id}. {this.state.language === "English" ? item.title : item.translated_title}
+                      {item.frontend_question_id}. {this.state.language === "English" ? item.title : item.translated_title === "" ? item.title : item.translated_title}
                     </div>
                     <div className="description">
                       <div className="paid_only">{item.paid_only ? <LockOutlined style={{ color: "#cca766" }} /> : <UnlockOutlined style={{ color: "#009975" }} />}</div>
@@ -166,7 +168,7 @@ export default class App extends React.Component<IProps, IState> {
             <div className="pagination">
               <Pagination
                 current={this.state.currentPage}
-                total={this.state.totalQuestionLength}
+                total={this.state.totalQuestions}
                 showSizeChanger={false}
                 pageSize={pageSize}
                 onChange={this.pageChange}

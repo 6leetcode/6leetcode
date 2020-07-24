@@ -3,9 +3,8 @@ package leetcode
 import (
 	"encoding/json"
 	"fmt"
-	"math/rand"
 	"strconv"
-	"time"
+	"sync"
 
 	"github.com/parnurzeal/gorequest"
 	"github.com/spf13/viper"
@@ -39,20 +38,22 @@ func (i *Instance) All() (err error) {
 		i.cookie = response.Request.Response.Cookies()
 	}
 
+	type AllQuestion struct {
+		CategoryTitle      string  `json:"categoryTitle"`
+		Difficulty         string  `json:"difficulty"`
+		IsPaidOnly         bool    `json:"isPaidOnly"`
+		QuestionFrontendID string  `json:"questionFrontendId"`
+		QuestionId         string  `json:"questionId"`
+		Status             *string `json:"status"`
+		Title              string  `json:"title"`
+		TitleSlug          string  `json:"titleSlug"`
+		TranslatedTitle    string  `json:"translatedTitle"`
+		Stats              string  `json:"stats"`
+	}
+
 	type body struct {
 		Data struct {
-			AllQuestions []struct {
-				CategoryTitle      string  `json:"categoryTitle"`
-				Difficulty         string  `json:"difficulty"`
-				IsPaidOnly         bool    `json:"isPaidOnly"`
-				QuestionFrontendID string  `json:"questionFrontendId"`
-				QuestionId         string  `json:"questionId"`
-				Status             *string `json:"status"`
-				Title              string  `json:"title"`
-				TitleSlug          string  `json:"titleSlug"`
-				TranslatedTitle    string  `json:"translatedTitle"`
-				Stats              string  `json:"stats"`
-			} `json:"allQuestions"`
+			AllQuestions []AllQuestion `json:"allQuestions"`
 		} `json:"data"`
 	}
 
@@ -69,6 +70,8 @@ func (i *Instance) All() (err error) {
 	if err = json.Unmarshal(data, &b); err != nil {
 		return
 	}
+
+	var waitGroup = new(sync.WaitGroup)
 
 	for _, question := range b.Data.AllQuestions {
 		var qid, fqid int
@@ -105,14 +108,17 @@ func (i *Instance) All() (err error) {
 		var err error
 		if err = q.Create(); err != nil {
 			logging.Error(err)
-		}
-		rand.Seed(time.Now().UnixNano())
-		time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
-		if err = i.Question(question.TitleSlug); err != nil {
-			logging.Error(err)
 			err = nil // ignore this error
 		}
+		go func(question AllQuestion) {
+			waitGroup.Add(1)
+			defer waitGroup.Done()
+			if err = i.Question(question.TitleSlug); err != nil {
+				logging.Error(err)
+				err = nil // ignore this error
+			}
+		}(question)
 	}
-
+	waitGroup.Wait()
 	return
 }
