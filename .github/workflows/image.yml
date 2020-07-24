@@ -21,6 +21,7 @@ jobs:
           fetch-depth: 10
       - name: Generate config files
         run: |
+          echo $GITHUB_REF
           cd apps/server
           if [ ! -f .env ]; then cp .env.sample .env; fi
           if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
