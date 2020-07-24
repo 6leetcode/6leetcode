@@ -110,8 +110,9 @@ func (i *Instance) All() (err error) {
 			logging.Error(err)
 			err = nil // ignore this error
 		}
+
+		waitGroup.Add(1)
 		go func(question AllQuestion) {
-			waitGroup.Add(1)
 			defer waitGroup.Done()
 			if err = i.Question(question.TitleSlug); err != nil {
 				logging.Error(err)

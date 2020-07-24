@@ -6,14 +6,13 @@ import (
 	"os"
 	"time"
 
-	"gorm.io/gorm/logger"
-
 	"github.com/spf13/viper"
 	"github.com/tosone/logging"
 	"gorm.io/driver/mysql"
 	"gorm.io/driver/postgres"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
+	"gorm.io/gorm/logger"
 )
 
 var engine *gorm.DB
