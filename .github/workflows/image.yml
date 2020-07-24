@@ -32,6 +32,6 @@ jobs:
           repository: 6leetcode/6leetcode
           tag_with_ref: true
           always_pull: true
-          push: ${{ startsWith(github.ref, 'refs/tags/') && github.ref == 'refs/remotes/origin/master' }}
+          push: ${{ startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/remotes/origin/master' }}
           dockerfile: apps/server/Dockerfile
           path: .
