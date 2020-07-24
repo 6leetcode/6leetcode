@@ -2,6 +2,11 @@ package table
 
 import (
 	"fmt"
+	"log"
+	"os"
+	"time"
+
+	"gorm.io/gorm/logger"
 
 	"github.com/spf13/viper"
 	"github.com/tosone/logging"
@@ -14,7 +19,6 @@ import (
 var engine *gorm.DB
 
 func Initialize() (err error) {
-	//var dialString string
 	var engineType = viper.GetString("Database.Engine")
 	var dialector gorm.Dialector
 	if engineType == "sqlite3" {
@@ -40,14 +44,21 @@ func Initialize() (err error) {
 		logging.Fatal(fmt.Sprintf("Not support this database: %s", engineType))
 	}
 
-	if engine, err = gorm.Open(dialector, &gorm.Config{}); err != nil {
+	var newLogger = logger.New(
+		log.New(os.Stdout, "\r\n", log.LstdFlags),
+		logger.Config{
+			SlowThreshold: 500 * time.Millisecond,
+			LogLevel:      logger.Warn,
+			Colorful:      true,
+		},
+	)
+	if engine, err = gorm.Open(dialector, &gorm.Config{Logger: newLogger}); err != nil {
 		logging.Error(err.Error())
 		return
 	}
 
-	if err = engine.Debug().AutoMigrate(
+	if err = engine.AutoMigrate(
 		new(Question),
-		new(QuestionInfo),
 	); err != nil {
 		logging.Panic(err.Error())
 	}

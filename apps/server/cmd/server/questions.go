@@ -1,9 +1,6 @@
 package server
 
 import (
-	"crypto/sha256"
-	"encoding/hex"
-	"encoding/json"
 	"net/http"
 	"strconv"
 
@@ -53,7 +50,7 @@ func questionsRoute(context *gin.Context) {
 	var err error
 
 	var questions []table.Question
-	var hash string
+	var total int64
 
 	var code = 200
 
@@ -64,7 +61,7 @@ func questionsRoute(context *gin.Context) {
 			logging.Error(err)
 			msg = errCode[code].Error()
 		}
-		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questions": questions, "hash": hash})
+		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "total": total, "questions": questions})
 	}()
 
 	var options Options
@@ -78,16 +75,13 @@ func questionsRoute(context *gin.Context) {
 		return
 	}
 
-	if hash, err = hashEverything(questions); err != nil {
-		return
-	}
+	total = new(table.Question).Total()
 }
 
 func questionsGetRoute(context *gin.Context) {
 	var err error
 
-	var questionInfo = &table.QuestionInfo{}
-	var hash string
+	var question = &table.Question{}
 
 	var code = 200
 
@@ -98,7 +92,7 @@ func questionsGetRoute(context *gin.Context) {
 			logging.Error(err)
 			msg = errCode[code].Error()
 		}
-		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questionInfo": questionInfo, "hash": hash})
+		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questionInfo": question})
 	}()
 
 	var sid = context.Param("id")
@@ -113,28 +107,10 @@ func questionsGetRoute(context *gin.Context) {
 		return
 	}
 
-	questionInfo.QuestionID = id
+	question.QuestionID = id
 
-	if err = questionInfo.Find(); err != nil {
+	if err = question.FindByID(); err != nil {
 		code = 1001
 		return
 	}
-
-	if hash, err = hashEverything(questionInfo); err != nil {
-		return
-	}
-}
-
-func hashEverything(content interface{}) (hash string, err error) {
-	var data []byte
-	if data, err = json.Marshal(content); err != nil {
-		return
-	}
-
-	var h = sha256.New()
-	if _, err = h.Write(data); err != nil {
-		return
-	}
-	hash = hex.EncodeToString(h.Sum(nil))
-	return
 }

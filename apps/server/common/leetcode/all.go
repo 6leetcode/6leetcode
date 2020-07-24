@@ -73,9 +73,11 @@ func (i *Instance) All() (err error) {
 	for _, question := range b.Data.AllQuestions {
 		var qid, fqid int
 		if qid, err = strconv.Atoi(question.QuestionId); err != nil {
+			logging.Error(err)
 			continue
 		}
 		if fqid, err = strconv.Atoi(question.QuestionFrontendID); err != nil {
+			logging.Error(err)
 			err = nil
 			continue
 		}
@@ -100,13 +102,16 @@ func (i *Instance) All() (err error) {
 			TotalSubmissionRaw: questionStats.TotalSubmissionRaw,
 			ACRate:             questionStats.ACRate,
 		}
-		if err := q.Create(); err != nil {
+		var err error
+		if err = q.Create(); err != nil {
 			logging.Error(err)
+			err = nil // ignore this error
 		}
 		rand.Seed(time.Now().UnixNano())
 		time.Sleep(time.Duration(rand.Intn(500)) * time.Millisecond)
-		if err := i.Question(question.TitleSlug, q); err != nil {
+		if err = i.Question(question.TitleSlug); err != nil {
 			logging.Error(err)
+			err = nil // ignore this error
 		}
 	}
 

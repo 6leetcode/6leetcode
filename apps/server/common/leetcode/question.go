@@ -6,6 +6,8 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/tosone/logging"
+
 	"github.com/parnurzeal/gorequest"
 	"github.com/spf13/viper"
 	"github.com/unknwon/com"
@@ -14,7 +16,7 @@ import (
 )
 
 // Question question
-func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
+func (i *Instance) Question(titleSlug string) (err error) {
 	var query = fmt.Sprintf(`{"operationName":"questionData","variables":{"titleSlug":"%s"},"query":"query questionData($titleSlug: String!) {\n  question(titleSlug: $titleSlug) {\n    questionId\n    questionFrontendId\n    boundTopicId\n    title\n    titleSlug\n    content\n    translatedTitle\n    translatedContent\n    isPaidOnly\n    difficulty\n    likes\n    dislikes\n    isLiked\n    similarQuestions\n    contributors {\n      username\n      profileUrl\n      avatarUrl\n      __typename\n    }\n    langToValidPlayground\n    topicTags {\n      name\n      slug\n      translatedName\n      __typename\n    }\n    companyTagStats\n    codeSnippets {\n      lang\n      langSlug\n      code\n      __typename\n    }\n    stats\n    hints\n    solution {\n      id\n      canSeeDetail\n      __typename\n    }\n    status\n    sampleTestCase\n    metaData\n    judgerAvailable\n    judgeType\n    mysqlSchemas\n    enableRunCode\n    enableTestMode\n    envInfo\n    __typename\n  }\n}\n"}`, titleSlug)
 
 	var response gorequest.Response
@@ -74,11 +76,8 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 		return
 	}
 
-	var qid, fqid int
-	if qid, err = strconv.Atoi(b.Data.Question.QuestionId); err != nil {
-		return
-	}
-	if fqid, err = strconv.Atoi(b.Data.Question.QuestionFrontendID); err != nil {
+	var questionID int
+	if questionID, err = strconv.Atoi(b.Data.Question.QuestionId); err != nil {
 		return
 	}
 
@@ -92,10 +91,10 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 		return
 	}
 
-	var questionInfo = table.QuestionInfo{
-		QuestionID:            qid,
-		Question:              *q,
-		FrontendQuestionID:    fqid,
+	logging.Infof("got question %d", questionID)
+
+	var question = &table.Question{
+		QuestionID:            questionID,
 		Content:               []byte(b.Data.Question.Content),
 		TranslatedContent:     []byte(b.Data.Question.TranslatedContent),
 		CodeSnippets:          codeSnippets,
@@ -105,12 +104,12 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 		TopicTags:             topicTags,
 	}
 
-	if err = questionInfo.Create(); err != nil {
+	if err = question.Create(); err != nil {
 		return
 	}
 
 	if viper.GetString("Generate.Readme") != "" {
-		if err = i.readme(q, questionInfo, viper.GetString("Generate.Readme")); err != nil {
+		if err = i.readme(question, viper.GetString("Generate.Readme")); err != nil {
 			return
 		}
 	}
@@ -118,9 +117,10 @@ func (i *Instance) Question(titleSlug string, q *table.Question) (err error) {
 	return
 }
 
-func (i *Instance) readme(q *table.Question, questionInfo table.QuestionInfo, basedir string) (err error) {
-	var dir = fmt.Sprintf("%s/%s/%04d. %s", basedir, q.CategoryTitle, q.FrontendQuestionID, q.Title)
-	if q.PaidOnly {
+func (i *Instance) readme(question *table.Question, basedir string) (err error) {
+	var dir = fmt.Sprintf("%s/%s/%04d. %s", basedir, question.CategoryTitle,
+		question.FrontendQuestionID, question.Title)
+	if question.PaidOnly {
 		if com.IsDir(dir) {
 			if err = os.RemoveAll(dir); err != nil {
 				return
@@ -133,10 +133,10 @@ func (i *Instance) readme(q *table.Question, questionInfo table.QuestionInfo, ba
 			return
 		}
 	}
-	if err = i.readmeEN(q, questionInfo, dir); err != nil {
+	if err = i.readmeEN(question, dir); err != nil {
 		return
 	}
-	if err = i.readmeZH(q, questionInfo, dir); err != nil {
+	if err = i.readmeZH(question, dir); err != nil {
 		return
 	}
 	if err = i.makefile(dir); err != nil {
@@ -145,7 +145,7 @@ func (i *Instance) readme(q *table.Question, questionInfo table.QuestionInfo, ba
 	return
 }
 
-func (i *Instance) readmeEN(q *table.Question, questionInfo table.QuestionInfo, dir string) (err error) {
+func (i *Instance) readmeEN(question *table.Question, dir string) (err error) {
 	var filename = dir + "/README.md"
 	if com.IsFile(filename) {
 		if err = os.Remove(filename); err != nil {
@@ -156,10 +156,11 @@ func (i *Instance) readmeEN(q *table.Question, questionInfo table.QuestionInfo, 
 	if file, err = os.Create(dir + "/README.md"); err != nil {
 		return
 	}
-	if _, err = file.WriteString(fmt.Sprintf("### [%s](https://leetcode.com/problems/%s)\n\n", q.Title, q.TitleSlug)); err != nil {
+	if _, err = file.WriteString(fmt.Sprintf("### [%s](https://leetcode.com/problems/%s)\n\n",
+		question.Title, question.TitleSlug)); err != nil {
 		return
 	}
-	if _, err = file.Write(questionInfo.Content); err != nil {
+	if _, err = file.Write(question.Content); err != nil {
 		return
 	}
 	if err = file.Close(); err != nil {
@@ -168,7 +169,7 @@ func (i *Instance) readmeEN(q *table.Question, questionInfo table.QuestionInfo, 
 	return
 }
 
-func (i *Instance) readmeZH(q *table.Question, questionInfo table.QuestionInfo, dir string) (err error) {
+func (i *Instance) readmeZH(question *table.Question, dir string) (err error) {
 	var filename = dir + "/README_ZH.md"
 	if com.IsFile(filename) {
 		if err = os.Remove(filename); err != nil {
@@ -179,10 +180,11 @@ func (i *Instance) readmeZH(q *table.Question, questionInfo table.QuestionInfo, 
 	if file, err = os.Create(dir + "/README_ZH.md"); err != nil {
 		return
 	}
-	if _, err = file.WriteString(fmt.Sprintf("### [%s](https://leetcode-cn.com/problems/%s)\n\n", q.TranslatedTitle, q.TitleSlug)); err != nil {
+	if _, err = file.WriteString(fmt.Sprintf("### [%s](https://leetcode-cn.com/problems/%s)\n\n",
+		question.TranslatedTitle, question.TitleSlug)); err != nil {
 		return
 	}
-	if _, err = file.Write(questionInfo.TranslatedContent); err != nil {
+	if _, err = file.Write(question.TranslatedContent); err != nil {
 		return
 	}
 	if err = file.Close(); err != nil {
