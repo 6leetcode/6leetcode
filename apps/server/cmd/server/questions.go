@@ -43,6 +43,12 @@ func syncRoute(context *gin.Context) {
 	}()
 }
 
+// Options ..
+type Options struct {
+	Limit  int `form:"limit"`
+	Offset int `form:"offset"`
+}
+
 func questionsRoute(context *gin.Context) {
 	var err error
 
@@ -61,7 +67,13 @@ func questionsRoute(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "questions": questions, "hash": hash})
 	}()
 
-	if questions, err = new(table.Question).Find(); err != nil {
+	var options Options
+	if err = context.ShouldBind(&options); err != nil {
+		code = 1002
+		return
+	}
+
+	if questions, err = new(table.Question).Find(options.Offset, options.Limit); err != nil {
 		code = 1001
 		return
 	}

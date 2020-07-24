@@ -36,9 +36,12 @@ func (q *Question) Create() (err error) {
 }
 
 // Find find all the questions
-func (q *Question) Find() (questions []Question, err error) {
+func (q *Question) Find(offset, limit int) (questions []Question, err error) {
 	questions = []Question{}
-	err = engine.Debug().Order("id").Find(&questions).Error
+	if limit == 0 {
+		limit = 50
+	}
+	err = engine.Debug().Limit(limit).Offset(offset).Order("id").Find(&questions).Error
 	return
 }
 
