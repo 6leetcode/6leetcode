@@ -1,0 +1,63 @@
+name: Create Pull Request
+
+on:
+  schedule:
+    - cron: "0 2 * * 3" # At 02:00 on Wednesday
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 10
+          ref: master
+      - name: Config git
+        run: |
+          git config user.name 'Tosone'
+          git config user.email 'i@tosone.cn'
+      - name: Generate config files
+        run: |
+          cd apps/server
+          if [ ! -f .env ]; then cp .env.sample .env; fi
+          if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
+      - name: Setup golang
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.14
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install go-bindata
+        run: go get -u github.com/go-bindata/go-bindata/...
+      - name: Build fontend
+        run: |
+          cd apps/web
+          npm install
+          npm run build
+      - name: Build server
+        run: |
+          cd apps/server
+          make
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v2
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          PASSPHRASE: ${{ secrets.PASSPHRASE }}
+      - name: Run executable
+        run: |
+          env LOGIN_NAME=${{ secrets.LEETCODE_NAME }} LOGIN_PASSWORD=${{ secrets.LEETCODE_PASSWORD }} DATABASE_ENGINE=sqlite3 \
+          ./apps/server/release/6leetcode crawler -c ./apps/server/config.yml
+          if [ ! -z "$(git status --untracked-files=no --porcelain)" ]; then \
+            git add . && \
+            git commit -S -m "Generate questions"; \
+          fi
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.PAT }}
+          branch: generate-questions
+          title: Generate questions

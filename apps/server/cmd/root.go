@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"fmt"
+	"os"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -33,12 +33,15 @@ func init() {
 		Args:  cobra.MinimumNArgs(0),
 		Run: func(_ *cobra.Command, _ []string) {
 			var err error
+			if err = initConfig(config); err != nil {
+				logging.Error(err)
+			}
 			if err = table.Initialize(); err != nil {
-				fmt.Printf("Got error: %+v\n", err)
+				logging.Errorf("Got error: %+v", err)
 				return
 			}
 			if err = server.Initialize(); err != nil {
-				fmt.Printf("Got error: %+v\n", err)
+				logging.Errorf("Got error: %+v", err)
 			}
 		},
 	}
@@ -51,12 +54,16 @@ func init() {
 		Args:  cobra.MinimumNArgs(0),
 		Run: func(_ *cobra.Command, _ []string) {
 			var err error
+			if err = initConfig(config); err != nil {
+				logging.Error(err)
+			}
 			if err = table.Initialize(); err != nil {
-				fmt.Printf("Got error: %+v\n", err)
+				logging.Errorf("Got error: %+v", err)
 				return
 			}
 			if err = crawler.Initialize(); err != nil {
-				fmt.Printf("Got error: %+v\n", err)
+				logging.Errorf("Got error: %+v", err)
+				return
 			}
 		},
 	}
@@ -72,17 +79,30 @@ func init() {
 	}
 	RootCmd.AddCommand(versionCmd) // version commander
 
+	RootCmd.Use = viper.GetString("AppName")
+}
+
+func initConfig(config string) (err error) {
+	viper.AutomaticEnv()
 	viper.SetConfigType("yaml")
 	if com.IsFile(config) {
 		viper.SetConfigFile(config)
 	} else if config == "./config.yml" && com.IsFile(DefaultConfig) {
 		viper.SetConfigFile(DefaultConfig)
-	} else {
-		logging.Fatal("Cannot find config file. Please check.")
 	}
 	if err := viper.ReadInConfig(); err != nil {
-		logging.Panic("Cannot find the specified config file.")
+		logging.Error("Cannot find the specified config file.")
 	}
 
-	RootCmd.Use = viper.GetString("AppName")
+	if os.Getenv("DATABASE_ENGINE") != "" {
+		viper.Set("Database.Engine", "sqlite3")
+		viper.Set("Database.Path", "6leetcode.db")
+	}
+	if os.Getenv("LOGIN_NAME") != "" {
+		viper.Set("LOGIN_NAME", os.Getenv("LOGIN_NAME"))
+	}
+	if os.Getenv("LOGIN_PASSWORD") != "" {
+		viper.Set("LOGIN_PASSWORD", os.Getenv("LOGIN_PASSWORD"))
+	}
+	return
 }

@@ -13,4 +13,4 @@ Database:
   Database: database
   SSLMode: disable
 Generate:
-  Readme:
+  Readme: questions

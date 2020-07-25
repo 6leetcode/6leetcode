@@ -19,6 +19,10 @@ var engine *gorm.DB
 
 func Initialize() (err error) {
 	var engineType = viper.GetString("Database.Engine")
+	if engineType == "" {
+		engineType = "sqlite3"
+		viper.SetDefault("Database.Path", "6leetcode.db")
+	}
 	var dialector gorm.Dialector
 	if engineType == "sqlite3" {
 		dialector = sqlite.Open(viper.GetString("Database.Path") + "?_busy_timeout=10000&_txlock=immediate")
