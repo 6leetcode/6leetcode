@@ -72,16 +72,16 @@ func init() {
 	}
 	RootCmd.AddCommand(versionCmd) // version commander
 
+	viper.AutomaticEnv()
+
 	viper.SetConfigType("yaml")
 	if com.IsFile(config) {
 		viper.SetConfigFile(config)
 	} else if config == "./config.yml" && com.IsFile(DefaultConfig) {
 		viper.SetConfigFile(DefaultConfig)
-	} else {
-		logging.Fatal("Cannot find config file. Please check.")
 	}
 	if err := viper.ReadInConfig(); err != nil {
-		logging.Panic("Cannot find the specified config file.")
+		logging.Error("Cannot find the specified config file.")
 	}
 
 	RootCmd.Use = viper.GetString("AppName")
