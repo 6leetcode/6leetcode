@@ -14,6 +14,7 @@ import (
 	"time"
 
 	"github.com/gin-contrib/cors"
+	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 	"github.com/robfig/cron"
 	"github.com/spf13/viper"
@@ -42,6 +43,14 @@ func Initialize() (err error) {
 	router.Use(gin.Recovery())
 	router.Use(gin.Logger())
 	router.Use(cors.Default())
+
+	var rateLimitMiddleware gin.HandlerFunc
+	if rateLimitMiddleware, err = rateLimit(); err != nil {
+		logging.Fatalf("create gin rate limit middleware with error: %v", err)
+	}
+
+	router.Use(rateLimitMiddleware)
+	router.Use(gzip.Gzip(gzip.DefaultCompression))
 
 	var controller = &Controller{Engine: router}
 	controller.questions()

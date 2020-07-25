@@ -29,6 +29,13 @@ type Question struct {
 	TopicTags             []byte `json:"topic_tags" gorm:"type:text"`
 }
 
+// Options ..
+type Options struct {
+	Limit    int    `form:"limit"`
+	Offset   int    `form:"offset"`
+	Category string `form:"category"`
+}
+
 // Create create question
 func (q *Question) Create() (err error) {
 	var t Question
@@ -51,16 +58,17 @@ func (q *Question) Create() (err error) {
 }
 
 // Find find all the questions
-func (q *Question) Find(offset, limit int) (questions []Question, err error) {
+func (q *Question) Find(options Options) (questions []Question, err error) {
 	questions = []Question{}
-	if limit == 0 {
-		limit = pageSize
+	if options.Limit == 0 {
+		options.Limit = pageSize
 	}
-	err = engine.Limit(limit).Select([]string{
+	err = engine.Debug().Limit(options.Limit).Select([]string{
 		"question_id", "frontend_question_id", "difficulty", "paid_only", "title", "title_slug",
 		"translated_title", "category_title", "total_accepted", "total_submission",
 		"total_accepted_raw", "total_submission_raw", "ac_rate",
-	}).Offset(offset).Order("frontend_question_id").Find(&questions).Error
+	}).Where(&Question{CategoryTitle: options.Category}).Offset(options.Offset).Order("frontend_question_id").
+		Find(&questions).Error
 	return
 }
 
