@@ -1,0 +1,42 @@
+name: Create Pull Request
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  import-gpg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 10
+      - name: Config git
+        run: |
+          git config user.name 'Tosone'
+          git config user.email 'i@tosone.cn'
+      - name: Uncommitted change
+        run: date +%s > report.txt
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v2
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          PASSPHRASE: ${{ secrets.PASSPHRASE }}
+      - name: GPG user IDs
+        run: |
+          echo "fingerprint: ${{ steps.import_gpg.outputs.fingerprint }}"
+          echo "keyid:       ${{ steps.import_gpg.outputs.keyid }}"
+          echo "name:        ${{ steps.import_gpg.outputs.name }}"
+          echo "email:       ${{ steps.import_gpg.outputs.email }}"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.PAT }}
+          commit-message: Generate questions
+          committer: Tosone <i@tosone.cn>
+          author: Tosone <i@tosone.cn>
+          branch: master
+          title: Generate questions
