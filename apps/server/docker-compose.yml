@@ -62,7 +62,7 @@ services:
     networks:
       - default
   6leetcode:
-    image: 6leetcode:release
+    image: 6leetcode/6leetcode:latest
     container_name: 6leetcode
     hostname: 6leetcode
     depends_on:
