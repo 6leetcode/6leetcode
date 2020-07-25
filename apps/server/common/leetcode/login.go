@@ -23,8 +23,8 @@ func (i *Instance) Login() (err error) {
 
 	var b = loginBody{
 		CSRFMiddlewareToken: i.csrftoken,
-		Login:               viper.GetString("Login.Name"),
-		Password:            viper.GetString("Login.Password"),
+		Login:               viper.GetString("LOGIN_NAME"),
+		Password:            viper.GetString("LOGIN_PASSWORD"),
 		Next:                "/problemset/all/",
 	}
 
