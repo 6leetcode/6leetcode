@@ -7,6 +7,7 @@ require (
 	github.com/fatih/color v1.9.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gin-contrib/cors v1.3.1
+	github.com/gin-contrib/gzip v0.0.2
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-playground/validator/v10 v10.3.0 // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
@@ -27,10 +28,11 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.7.0
 	github.com/tosone/logging v1.1.0
+	github.com/ulule/limiter/v3 v3.5.0
 	github.com/unknwon/com v1.0.1
 	golang.org/x/crypto v0.0.0-20200709230013-948cd5f35899 // indirect
 	golang.org/x/net v0.0.0-20200707034311-ab3426394381 // indirect
-	golang.org/x/sys v0.0.0-20200722175500-76b94024e4b6 // indirect
+	golang.org/x/sys v0.0.0-20200724161237-0e2f3a69832c // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/ini.v1 v1.57.0 // indirect
 	gorm.io/driver/mysql v0.3.1
