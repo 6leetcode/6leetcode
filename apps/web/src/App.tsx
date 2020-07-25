@@ -27,6 +27,7 @@ interface IState {
   totalQuestions: number;
   currentPage: number;
   language: string;
+  category: string;
 }
 
 const leetcodeServer = "https://6leetcode.tosone.cn";
@@ -38,7 +39,7 @@ export default class App extends React.Component<IProps, IState> {
     super(props);
 
     this.state = {
-      menuKey: "1",
+      menuKey: "All",
       questions: [{
         title: "",
         translated_title: "",
@@ -52,17 +53,37 @@ export default class App extends React.Component<IProps, IState> {
       }],
       totalQuestions: 0,
       currentPage: 1,
-      language: "中文"
+      language: "中文",
+      category: ""
     };
   }
 
   menuClick = (info: MenuInfo) => {
-    console.log(info);
-    this.setState({ "menuKey": info.key.toString() });
+    let category = "";
+    if (info.key.toString() !== "All") {
+      category = info.key.toString();
+    }
+    this.setState({
+      "menuKey": info.key.toString(),
+      "category": category
+    });
+    let offset = ((this.state.currentPage - 1) * pageSize).toString()
+    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + category)
+      .then(response => {
+        if (response.status !== 200) {
+          console.error("request questions list with error:", response.status);
+        } else {
+          this.setState({
+            questions: response.data.questions,
+            totalQuestions: response.data.total
+          });
+        }
+      });
   }
 
   componentDidMount() {
-    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString())
+    let offset = ((this.state.currentPage - 1) * pageSize).toString()
+    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + this.state.category)
       .then(response => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
@@ -77,7 +98,7 @@ export default class App extends React.Component<IProps, IState> {
 
   pageChange = (number: number) => {
     let offset = ((number - 1) * pageSize).toString()
-    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset)
+    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + this.state.category)
       .then(response => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
@@ -107,11 +128,11 @@ export default class App extends React.Component<IProps, IState> {
             <div className="logo" />
             <div className="layoutMenu">
               <Menu theme="light" onClick={this.menuClick} mode="horizontal" defaultSelectedKeys={[this.state.menuKey]}>
-                <Menu.Item key="1">All</Menu.Item>
-                <Menu.Item key="2">Algorithms</Menu.Item>
-                <Menu.Item key="3">Concurrency</Menu.Item>
-                <Menu.Item key="4">Database</Menu.Item>
-                <Menu.Item key="5">Shell</Menu.Item>
+                <Menu.Item key="All">All</Menu.Item>
+                <Menu.Item key="Algorithms">Algorithms</Menu.Item>
+                <Menu.Item key="Concurrency">Concurrency</Menu.Item>
+                <Menu.Item key="Database">Database</Menu.Item>
+                <Menu.Item key="Shell">Shell</Menu.Item>
               </Menu>
               <div className="language">
                 <Dropdown overlay={
@@ -137,11 +158,11 @@ export default class App extends React.Component<IProps, IState> {
             <List
               header={
                 <div className="questionHeader">
-                  <div><Typography.Text strong>题目</Typography.Text></div>
+                  <div><Typography.Text strong>{this.state.language === "English" ? "Question" : "题目"}</Typography.Text></div>
                   <div className="description">
-                    <div className="difficult"><Typography.Text strong>付费</Typography.Text></div>
-                    <div className="difficult"><Typography.Text strong>难度</Typography.Text></div>
-                    <div className="ace"><Typography.Text strong>通过率</Typography.Text></div>
+                    <div className="paid_only"><Typography.Text strong>{this.state.language === "English" ? "Pay" : "付费"}</Typography.Text></div>
+                    <div className="difficult"><Typography.Text strong>{this.state.language === "English" ? "Difficulty" : "难度"}</Typography.Text></div>
+                    <div className="ace"><Typography.Text strong>{this.state.language === "English" ? "Ac Rate" : "通过率"}</Typography.Text></div>
                   </div>
                 </div>
               }

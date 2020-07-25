@@ -56,10 +56,6 @@ $content-width: 900px;
     justify-content: space-between;
     text-align: right;
 
-    .paid_only {
-      text-align: center;
-    }
-
     .difficult {
       margin-right: 10px;
 
@@ -79,7 +75,8 @@ $content-width: 900px;
     .ace,
     .difficult,
     .paid_only {
-      width: 50px;
+      text-align: center;
+      width: 80px;
     }
   }
 }
