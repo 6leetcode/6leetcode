@@ -1,12 +1,16 @@
 ### [猜数字大小](https://leetcode-cn.com/problems/guess-number-higher-or-lower)
 
-<p>我们正在玩一个猜数字游戏。 游戏规则如下：<br>
-我从&nbsp;<strong>1</strong>&nbsp;到&nbsp;<em><strong>n</strong></em>&nbsp;选择一个数字。 你需要猜我选择了哪个数字。<br>
-每次你猜错了，我会告诉你这个数字是大了还是小了。<br>
-你调用一个预先定义好的接口&nbsp;<code>guess(int num)</code>，它会返回 3 个可能的结果（<code>-1</code>，<code>1</code>&nbsp;或 <code>0</code>）：</p>
+<p>猜数字游戏的规则如下：</p>
 
-<pre>-1 : 我的数字比较小
- 1 : 我的数字比较大
+<ul>
+	<li>每轮游戏，系统都会从&nbsp;<strong>1</strong>&nbsp;到&nbsp;<em><strong>n</strong></em> 随机选择一个数字。 请你猜选出的是哪个数字。</li>
+	<li>如果你猜错了，系统会告诉你这个数字比系统选出的数字是大了还是小了。</li>
+</ul>
+
+<p>你可以通过调用一个预先定义好的接口&nbsp;<code>guess(int num)</code> 来获取猜测结果，返回值一共有 3 种可能的情况（<code>-1</code>，<code>1</code>&nbsp;或 <code>0</code>）：</p>
+
+<pre>-1 : 系统选出的数字比你猜测的数字小
+ 1 : 系统选出的数字比你猜测的数字大
  0 : 恭喜！你猜对了！
 </pre>
 

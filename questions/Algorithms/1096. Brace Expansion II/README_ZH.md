@@ -5,28 +5,28 @@
 <p>花括号展开的表达式可以看作一个由 <strong>花括号</strong>、<strong>逗号</strong> 和 <strong>小写英文字母</strong> 组成的字符串，定义下面几条语法规则：</p>
 
 <ul>
-	<li>如果只给出单一的元素&nbsp;<code>x</code>，那么表达式表示的字符串就只有&nbsp;<code>&quot;x&quot;</code>。&nbsp;
+	<li>如果只给出单一的元素&nbsp;<code>x</code>，那么表达式表示的字符串就只有&nbsp;<code>&quot;x&quot;</code>。<code>R(x) = {x}</code>
 
 	<ul>
-		<li>例如，表达式 <code>{a}</code>&nbsp;表示字符串 <code>&quot;a&quot;</code>。</li>
-		<li>而表达式 <code>{ab}</code>&nbsp;就表示字符串 <code>&quot;ab&quot;</code>。</li>
+		<li>例如，表达式 <code>{&quot;a&quot;}</code>&nbsp;表示字符串 <code>&quot;a&quot;</code>。</li>
+		<li>而表达式 <code>{&quot;w&quot;}</code>&nbsp;就表示字符串 <code>&quot;w&quot;</code>。</li>
 	</ul>
 	</li>
-	<li>当两个或多个表达式并列，以逗号分隔时，我们取这些表达式中元素的并集。
+	<li>当两个或多个表达式并列，以逗号分隔时，我们取这些表达式中元素的并集。<code>R({e_1,e_2,...}) = R(e_1)&nbsp;&cup; R(e_2)&nbsp;&cup; ...</code>
 	<ul>
-		<li>例如，表达式&nbsp;<code>{a,b,c}</code> 表示字符串&nbsp;<code>&quot;a&quot;,&quot;b&quot;,&quot;c&quot;</code>。</li>
-		<li>而表达式 <code>{a,b},{b,c}</code>&nbsp;也可以表示字符串&nbsp;<code>&quot;a&quot;,&quot;b&quot;,&quot;c&quot;</code>。</li>
+		<li>例如，表达式 <code>&quot;{a,b,c}&quot;</code> 表示字符串&nbsp;<code>&quot;a&quot;,&quot;b&quot;,&quot;c&quot;</code>。</li>
+		<li>而表达式 <code>&quot;{{a,b},{b,c}}&quot;</code> 也可以表示字符串&nbsp;<code>&quot;a&quot;,&quot;b&quot;,&quot;c&quot;</code>。</li>
 	</ul>
 	</li>
-	<li>要是两个或多个表达式相接，中间没有隔开时，我们从这些表达式中各取一个元素依次连接形成字符串。
+	<li>要是两个或多个表达式相接，中间没有隔开时，我们从这些表达式中各取一个元素依次连接形成字符串。<code>R(e_1 + e_2) = {a + b for (a, b) in&nbsp;R(e_1)&nbsp;&times; R(e_2)}</code>
 	<ul>
-		<li>例如，表达式 <code>{a,b}{c,d}</code> 表示字符串&nbsp;<code>&quot;ac&quot;,&quot;ad&quot;,&quot;bc&quot;,&quot;bd&quot;</code>。</li>
+		<li>例如，表达式 <code>&quot;{a,b}{c,d}&quot;</code> 表示字符串&nbsp;<code>&quot;ac&quot;,&quot;ad&quot;,&quot;bc&quot;,&quot;bd&quot;</code>。</li>
 	</ul>
 	</li>
 	<li>表达式之间允许嵌套，单一元素与表达式的连接也是允许的。
 	<ul>
-		<li>例如，表达式&nbsp;<code>a{b,c,d}</code> 表示字符串&nbsp;<code>&quot;ab&quot;,&quot;ac&quot;,&quot;ad&quot;​​​​​​</code>。</li>
-		<li>例如，表达式&nbsp;<code>{a{b,c}}{{d,e}f{g,h}}</code> 可以代换为&nbsp;<code>{ab,ac}{dfg,dfh,efg,efh}</code>，表示字符串&nbsp;<code>&quot;abdfg&quot;, &quot;abdfh&quot;, &quot;abefg&quot;, &quot;abefh&quot;, &quot;acdfg&quot;, &quot;acdfh&quot;, &quot;acefg&quot;, &quot;acefh</code>&quot;。</li>
+		<li>例如，表达式 <code>&quot;a{b,c,d}&quot;</code> 表示字符串&nbsp;<code>&quot;ab&quot;,&quot;ac&quot;,&quot;ad&quot;​​​​​​</code>。</li>
+		<li>例如，表达式 <code>&quot;a{b,c}}{{d,e}f{g,h}&quot;</code> 可以表示字符串&nbsp;<code>&quot;abdfg&quot;, &quot;abdfh&quot;, &quot;abefg&quot;, &quot;abefh&quot;, &quot;acdfg&quot;, &quot;acdfh&quot;, &quot;acefg&quot;, &quot;acefh&quot;</code>。</li>
 	</ul>
 	</li>
 </ul>
@@ -39,13 +39,12 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>&quot;{a,b}{c{d,e}}&quot;
-<strong>输出：</strong>[&quot;acd&quot;,&quot;ace&quot;,&quot;bcd&quot;,&quot;bce&quot;]
-</pre>
+<pre><strong>输入：</strong>&quot;{a,b}{c,{d,e}}&quot;
+<strong>输出：</strong>[&quot;ac&quot;,&quot;ad&quot;,&quot;ae&quot;,&quot;bc&quot;,&quot;bd&quot;,&quot;be&quot;]</pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>&quot;{{a,z}, a{b,c}, {ab,z}}&quot;
+<pre><strong>输入：</strong>&quot;{{a,z},a{b,c},{ab,z}}&quot;
 <strong>输出：</strong>[&quot;a&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;z&quot;]
 <strong>解释：</strong>输出中 <strong>不应 </strong>出现重复的组合结果。
 </pre>

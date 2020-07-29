@@ -4,7 +4,7 @@
 
 <p><strong>示例:</strong></p>
 
-<pre><strong>输入:</strong> [-2,1,-3,4,-1,2,1,-5,4],
+<pre><strong>输入:</strong> [-2,1,-3,4,-1,2,1,-5,4]
 <strong>输出:</strong> 6
 <strong>解释:</strong>&nbsp;连续子数组&nbsp;[4,-1,2,1] 的和最大，为&nbsp;6。
 </pre>
