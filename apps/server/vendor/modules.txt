@@ -49,7 +49,7 @@ github.com/hashicorp/hcl/json/token
 github.com/inconshreveable/mousetrap
 # github.com/jackc/chunkreader/v2 v2.0.1
 github.com/jackc/chunkreader/v2
-# github.com/jackc/pgconn v1.6.3
+# github.com/jackc/pgconn v1.6.4
 github.com/jackc/pgconn
 github.com/jackc/pgconn/internal/ctxwatch
 github.com/jackc/pgconn/stmtcache
@@ -57,13 +57,14 @@ github.com/jackc/pgconn/stmtcache
 github.com/jackc/pgio
 # github.com/jackc/pgpassfile v1.0.0
 github.com/jackc/pgpassfile
-# github.com/jackc/pgproto3/v2 v2.0.2
+# github.com/jackc/pgproto3/v2 v2.0.4
+## explicit
 github.com/jackc/pgproto3/v2
 # github.com/jackc/pgservicefile v0.0.0-20200714003250-2b9c44734f2b
 github.com/jackc/pgservicefile
 # github.com/jackc/pgtype v1.4.2
 github.com/jackc/pgtype
-# github.com/jackc/pgx/v4 v4.8.0
+# github.com/jackc/pgx/v4 v4.8.1
 ## explicit
 github.com/jackc/pgx/v4
 github.com/jackc/pgx/v4/internal/sanitize
@@ -103,7 +104,6 @@ github.com/parnurzeal/gorequest
 ## explicit
 github.com/pelletier/go-toml
 # github.com/pkg/errors v0.9.1
-## explicit
 github.com/pkg/errors
 # github.com/robfig/cron v1.2.0
 ## explicit
@@ -124,7 +124,7 @@ github.com/spf13/jwalterweatherman
 # github.com/spf13/pflag v1.0.5
 ## explicit
 github.com/spf13/pflag
-# github.com/spf13/viper v1.7.0
+# github.com/spf13/viper v1.7.1
 ## explicit
 github.com/spf13/viper
 # github.com/subosito/gotenv v1.2.0
@@ -143,13 +143,13 @@ github.com/ulule/limiter/v3/drivers/store/memory
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/crypto v0.0.0-20200709230013-948cd5f35899
+# golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de
 ## explicit
 golang.org/x/crypto/pbkdf2
 # golang.org/x/net v0.0.0-20200707034311-ab3426394381
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20200724161237-0e2f3a69832c
+# golang.org/x/sys v0.0.0-20200728102440-3e129f6d46b1
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
@@ -214,7 +214,7 @@ gorm.io/driver/postgres
 # gorm.io/driver/sqlite v1.0.8
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v0.2.24
+# gorm.io/gorm v0.2.26
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks
