@@ -108,7 +108,7 @@ github.com/pkg/errors
 # github.com/robfig/cron v1.2.0
 ## explicit
 github.com/robfig/cron
-# github.com/spf13/afero v1.3.2
+# github.com/spf13/afero v1.3.3
 ## explicit
 github.com/spf13/afero
 github.com/spf13/afero/mem
@@ -149,7 +149,7 @@ golang.org/x/crypto/pbkdf2
 # golang.org/x/net v0.0.0-20200707034311-ab3426394381
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20200728102440-3e129f6d46b1
+# golang.org/x/sys v0.0.0-20200803210538-64077c9b5642
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
@@ -167,7 +167,8 @@ golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
 golang.org/x/text/unicode/norm
 golang.org/x/text/width
-# golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
+# golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+## explicit
 golang.org/x/xerrors
 golang.org/x/xerrors/internal
 # google.golang.org/protobuf v1.25.0
@@ -214,7 +215,7 @@ gorm.io/driver/postgres
 # gorm.io/driver/sqlite v1.0.8
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v0.2.26
+# gorm.io/gorm v0.2.27
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks
