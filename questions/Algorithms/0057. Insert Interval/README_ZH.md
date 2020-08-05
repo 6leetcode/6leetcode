@@ -4,15 +4,21 @@
 
 <p>在列表中插入一个新的区间，你需要确保列表中的区间仍然有序且不重叠（如果有必要的话，可以合并区间）。</p>
 
-<p><strong>示例&nbsp;1:</strong></p>
+<p>&nbsp;</p>
 
-<pre><strong>输入:</strong> intervals = [[1,3],[6,9]], newInterval = [2,5]
-<strong>输出:</strong> [[1,5],[6,9]]
+<p><strong>示例&nbsp;1：</strong></p>
+
+<pre><strong>输入：</strong>intervals = [[1,3],[6,9]], newInterval = [2,5]
+<strong>输出：</strong>[[1,5],[6,9]]
 </pre>
 
-<p><strong>示例&nbsp;2:</strong></p>
+<p><strong>示例&nbsp;2：</strong></p>
 
-<pre><strong>输入:</strong> intervals = <code>[[1,2],[3,5],[6,7],[8,10],[12,16]]</code>, newInterval = <code>[4,8]</code>
-<strong>输出:</strong> [[1,2],[3,10],[12,16]]
-<strong>解释:</strong> 这是因为新的区间 <code>[4,8]</code> 与 <code>[3,5],[6,7],[8,10]</code>&nbsp;重叠。
+<pre><strong>输入：</strong>intervals = <code>[[1,2],[3,5],[6,7],[8,10],[12,16]]</code>, newInterval = <code>[4,8]</code>
+<strong>输出：</strong>[[1,2],[3,10],[12,16]]
+<strong>解释：</strong>这是因为新的区间 <code>[4,8]</code> 与 <code>[3,5],[6,7],[8,10]</code>&nbsp;重叠。
 </pre>
+
+<p>&nbsp;</p>
+
+<p><strong>注意：</strong>输入类型已在 2019 年 4 月 15 日更改。请重置为默认代码定义以获取新的方法签名。</p>

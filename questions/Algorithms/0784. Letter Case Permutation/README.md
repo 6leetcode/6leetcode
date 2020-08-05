@@ -14,7 +14,8 @@
 <strong>Output:</strong> [&quot;12345&quot;]
 </pre>
 
-<p><strong>Note:</strong></p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>S</code> will be a string with length between <code>1</code> and <code>12</code>.</li>

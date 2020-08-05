@@ -2,7 +2,7 @@
 
 <p>你有一个日志数组 <code>logs</code>。每条日志都是以空格分隔的字串。</p>
 
-<p>对于每条日志，其第一个字为字母与数字混合的<em> 标识符</em>。</p>
+<p>对于每条日志，其第一个字为字母与数字混合的<em> </em><strong>标识符</strong> ，除标识符之外的所有字为这一条日志的 <strong>内容</strong> 。</p>
 
 <ul>
 	<li>除标识符之外，所有字均由小写字母组成的，称为 <strong>字母日志</strong></li>
@@ -33,8 +33,8 @@
 
 <p><strong>提示：</strong></p>
 
-<ol>
+<ul>
 	<li><code>0 &lt;= logs.length &lt;= 100</code></li>
 	<li><code>3 &lt;= logs[i].length &lt;= 100</code></li>
 	<li><code>logs[i]</code>&nbsp;保证有一个标识符，并且标识符后面有一个字。</li>
-</ol>
+</ul>
