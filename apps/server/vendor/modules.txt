@@ -108,7 +108,7 @@ github.com/pkg/errors
 # github.com/robfig/cron v1.2.0
 ## explicit
 github.com/robfig/cron
-# github.com/spf13/afero v1.3.3
+# github.com/spf13/afero v1.3.4
 ## explicit
 github.com/spf13/afero
 github.com/spf13/afero/mem
@@ -149,7 +149,7 @@ golang.org/x/crypto/pbkdf2
 # golang.org/x/net v0.0.0-20200707034311-ab3426394381
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20200803210538-64077c9b5642
+# golang.org/x/sys v0.0.0-20200812155832-6a926be9bd1d
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
@@ -212,10 +212,10 @@ gorm.io/driver/mysql
 # gorm.io/driver/postgres v0.2.6
 ## explicit
 gorm.io/driver/postgres
-# gorm.io/driver/sqlite v1.0.8
+# gorm.io/driver/sqlite v1.0.9
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v0.2.27
+# gorm.io/gorm v0.2.31
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks
