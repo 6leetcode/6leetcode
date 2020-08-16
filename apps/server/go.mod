@@ -31,11 +31,11 @@ require (
 	github.com/ulule/limiter/v3 v3.5.0
 	github.com/unknwon/com v1.0.1
 	golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de // indirect
-	golang.org/x/net v0.0.0-20200707034311-ab3426394381 // indirect
-	golang.org/x/sys v0.0.0-20200812155832-6a926be9bd1d // indirect
+	golang.org/x/net v0.0.0-20200813134508-3edf25e44fcc // indirect
+	golang.org/x/sys v0.0.0-20200814200057-3d37ad5750ed // indirect
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
-	gopkg.in/ini.v1 v1.57.0 // indirect
+	gopkg.in/ini.v1 v1.60.0 // indirect
 	gorm.io/driver/mysql v0.3.1
 	gorm.io/driver/postgres v0.2.6
 	gorm.io/driver/sqlite v1.0.9
