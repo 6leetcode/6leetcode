@@ -29,6 +29,7 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>-100.0 &lt;&nbsp;<em>x</em>&nbsp;&lt; 100.0</code></li>
+	<li><code>-100.0 &lt;&nbsp;x&nbsp;&lt; 100.0</code></li>
 	<li><code>-2<sup>31</sup>&nbsp;&lt;= n &lt;=&nbsp;2<sup>31</sup>-1</code></li>
+	<li><code>-10<sup>4</sup> &lt;= x<sup>n</sup> &lt;= 10<sup>4</sup></code></li>
 </ul>

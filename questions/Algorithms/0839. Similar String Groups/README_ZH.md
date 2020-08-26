@@ -6,7 +6,7 @@
 
 <p>总之，它们通过相似性形成了两个关联组：<code>{&quot;tars&quot;, &quot;rats&quot;, &quot;arts&quot;}</code> 和 <code>{&quot;star&quot;}</code>。注意，<code>&quot;tars&quot;</code> 和 <code>&quot;arts&quot;</code> 是在同一组中，即使它们并不相似。形式上，对每个组而言，要确定一个单词在组中，只需要这个词和该组中至少一个单词相似。</p>
 
-<p>我们给出了一个不包含重复的字符串列表 <code>A</code>。列表中的每个字符串都是 <code>A</code> 中其它所有字符串的一个字母异位词。请问 <code>A</code> 中有多少个相似字符串组？</p>
+<p>我们给出了一个字符串列表 <code>A</code>。列表中的每个字符串都是 <code>A</code> 中其它所有字符串的一个字母异位词。请问 <code>A</code> 中有多少个相似字符串组？</p>
 
 <p>&nbsp;</p>
 
@@ -19,14 +19,14 @@
 
 <p><strong>提示：</strong></p>
 
-<ol>
+<ul>
 	<li><code>A.length &lt;= 2000</code></li>
 	<li><code>A[i].length &lt;= 1000</code></li>
 	<li><code>A.length * A[i].length &lt;= 20000</code></li>
 	<li><code>A</code> 中的所有单词都只包含小写字母。</li>
 	<li><code>A</code> 中的所有单词都具有相同的长度，且是彼此的字母异位词。</li>
 	<li>此问题的判断限制时间已经延长。</li>
-</ol>
+</ul>
 
 <p>&nbsp;</p>
 

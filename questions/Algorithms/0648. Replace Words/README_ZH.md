@@ -8,10 +8,34 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>dict(词典) = [&quot;cat&quot;, &quot;bat&quot;, &quot;rat&quot;] sentence(句子) = &quot;the cattle was rattled by the battery&quot;
+<pre><strong>输入：</strong>dictionary = [&quot;cat&quot;,&quot;bat&quot;,&quot;rat&quot;], sentence = &quot;the cattle was rattled by the battery&quot;
 <strong>输出：</strong>&quot;the cat was rat by the bat&quot;
+</pre>
+
+<p><strong>示例 2：</strong></p>
+
+<pre><strong>输入：</strong>dictionary = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], sentence = &quot;aadsfasf absbs bbab cadsfafs&quot;
+<strong>输出：</strong>&quot;a a b c&quot;
+</pre>
+
+<p><strong>示例 3：</strong></p>
+
+<pre><strong>输入：</strong>dictionary = [&quot;a&quot;, &quot;aa&quot;, &quot;aaa&quot;, &quot;aaaa&quot;], sentence = &quot;a aa a aaaa aaa aaa aaa aaaaaa bbb baba ababa&quot;
+<strong>输出：</strong>&quot;a a a a a a a a bbb baba a&quot;
+</pre>
+
+<p><strong>示例 4：</strong></p>
+
+<pre><strong>输入：</strong>dictionary = [&quot;catt&quot;,&quot;cat&quot;,&quot;bat&quot;,&quot;rat&quot;], sentence = &quot;the cattle was rattled by the battery&quot;
+<strong>输出：</strong>&quot;the cat was rat by the bat&quot;
+</pre>
+
+<p><strong>示例 5：</strong></p>
+
+<pre><strong>输入：</strong>dictionary = [&quot;ac&quot;,&quot;ab&quot;], sentence = &quot;it is abnormal that this solution is accepted&quot;
+<strong>输出：</strong>&quot;it is ab that this solution is ac&quot;
 </pre>
 
 <p>&nbsp;</p>
@@ -19,9 +43,13 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li>输入只包含小写字母。</li>
-	<li><code>1 &lt;= dict.length&nbsp;&lt;= 1000</code></li>
-	<li><code>1 &lt;= dict[i].length &lt;= 100</code></li>
-	<li>1 &lt;= 句中词语数 &lt;= 1000</li>
-	<li>1 &lt;= 句中词语长度 &lt;= 1000</li>
+	<li><code>1 &lt;= dictionary.length&nbsp;&lt;= 1000</code></li>
+	<li><code>1 &lt;= dictionary[i].length &lt;= 100</code></li>
+	<li><code>dictionary[i]</code>&nbsp;仅由小写字母组成。</li>
+	<li><code>1 &lt;= sentence.length &lt;= 10^6</code></li>
+	<li><code>sentence</code>&nbsp;仅由小写字母和空格组成。</li>
+	<li><code>sentence</code> 中单词的总量在范围 <code>[1, 1000]</code> 内。</li>
+	<li><code>sentence</code> 中每个单词的长度在范围 <code>[1, 1000]</code> 内。</li>
+	<li><code>sentence</code> 中单词之间由一个空格隔开。</li>
+	<li><code>sentence</code>&nbsp;没有前导或尾随空格。</li>
 </ul>
