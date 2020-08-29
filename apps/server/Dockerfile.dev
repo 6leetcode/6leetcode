@@ -1,0 +1,10 @@
+FROM debian:buster
+
+RUN mkdir -p /etc/6leetcode
+ADD wait-for-it.sh /usr/bin
+ADD config.yml /etc/6leetcode
+ADD release/6leetcode /usr/bin
+
+EXPOSE 4000
+
+CMD ["6leetcode", "server"]

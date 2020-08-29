@@ -1,6 +1,3 @@
-include .env
-export $(shell sed 's/=.*//' .env)
-
 export COMPOSE_IGNORE_ORPHANS=True # ignore others container
 
 app_name                = 6leetcode
@@ -20,7 +17,7 @@ endif
 
 .PHONY: ${OSName}
 ${OSName}:
-	env GOOS=$@ go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release:
@@ -58,6 +55,10 @@ up-database:
 .PHONY: up-server
 up-server:
 	docker-compose up --force-recreate -d 6leetcode
+
+.PHONY: up-server-dev
+up-server-dev:
+	docker-compose up --force-recreate --build -d 6leetcode-dev
 
 .PHONY: up-init
 up-init:
