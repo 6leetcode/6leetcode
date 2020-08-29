@@ -148,7 +148,6 @@ func (tx *DB) assignInterfacesToValue(values ...interface{}) {
 						if field := tx.Statement.Schema.LookUpField(column.Name); field != nil {
 							tx.AddError(field.Set(tx.Statement.ReflectValue, eq.Value))
 						}
-					default:
 					}
 				}
 			}
@@ -290,11 +289,14 @@ func (db *DB) Count(count *int64) (tx *DB) {
 	tx = db.getInstance()
 	if tx.Statement.Model == nil {
 		tx.Statement.Model = tx.Statement.Dest
+		defer func() {
+			tx.Statement.Model = nil
+		}()
 	}
 
 	if len(tx.Statement.Selects) == 0 {
 		tx.Statement.AddClause(clause.Select{Expression: clause.Expr{SQL: "count(1)"}})
-		defer tx.Statement.AddClause(clause.Select{})
+		defer delete(tx.Statement.Clauses, "SELECT")
 	} else if !strings.Contains(strings.ToLower(tx.Statement.Selects[0]), "count(") {
 		expr := clause.Expr{SQL: "count(1)"}
 
@@ -360,7 +362,7 @@ func (db *DB) Pluck(column string, dest interface{}) (tx *DB) {
 		tx.AddError(ErrModelValueRequired)
 	}
 
-	fields := strings.FieldsFunc(column, utils.IsChar)
+	fields := strings.FieldsFunc(column, utils.IsValidDBNameChar)
 	tx.Statement.AddClauseIfNotExists(clause.Select{
 		Distinct: tx.Statement.Distinct,
 		Columns:  []clause.Column{{Name: column, Raw: len(fields) != 1}},
@@ -445,7 +447,7 @@ func (db *DB) Begin(opts ...*sql.TxOptions) *DB {
 
 // Commit commit a transaction
 func (db *DB) Commit() *DB {
-	if committer, ok := db.Statement.ConnPool.(TxCommitter); ok && committer != nil {
+	if committer, ok := db.Statement.ConnPool.(TxCommitter); ok && committer != nil && !reflect.ValueOf(committer).IsNil() {
 		db.AddError(committer.Commit())
 	} else {
 		db.AddError(ErrInvalidTransaction)
@@ -456,7 +458,9 @@ func (db *DB) Commit() *DB {
 // Rollback rollback a transaction
 func (db *DB) Rollback() *DB {
 	if committer, ok := db.Statement.ConnPool.(TxCommitter); ok && committer != nil {
-		db.AddError(committer.Rollback())
+		if !reflect.ValueOf(committer).IsNil() {
+			db.AddError(committer.Rollback())
+		}
 	} else {
 		db.AddError(ErrInvalidTransaction)
 	}

@@ -22,6 +22,7 @@ type Dialector struct {
 }
 
 type Config struct {
+	DriverName           string
 	DSN                  string
 	PreferSimpleProtocol bool
 	Conn                 *sql.DB
@@ -47,22 +48,24 @@ func (dialector Dialector) Initialize(db *gorm.DB) (err error) {
 
 	if dialector.Conn != nil {
 		db.ConnPool = dialector.Conn
+	} else if dialector.DriverName != "" {
+		db.ConnPool, err = sql.Open(dialector.DriverName, dialector.Config.DSN)
 	} else {
 		var config *pgx.ConnConfig
 
 		config, err = pgx.ParseConfig(dialector.Config.DSN)
+		if err != nil {
+			return
+		}
 		if dialector.Config.PreferSimpleProtocol {
 			config.PreferSimpleProtocol = true
 		}
-
 		result := regexp.MustCompile("(time_zone|TimeZone)=(.*)($|&| )").FindStringSubmatch(dialector.Config.DSN)
 		if len(result) > 2 {
 			config.RuntimeParams["timezone"] = result[2]
 		}
-
 		db.ConnPool = stdlib.OpenDB(*config)
 	}
-
 	return
 }
 
@@ -130,6 +133,12 @@ func (dialector Dialector) DataTypeOf(field *schema.Field) string {
 			}
 		}
 	case schema.Float:
+		if field.Precision > 0 {
+			if field.Scale > 0 {
+				fmt.Sprintf("numeric(%d, %d)", field.Precision, field.Scale)
+			}
+			return fmt.Sprintf("numeric(%d)", field.Precision)
+		}
 		return "decimal"
 	case schema.String:
 		if field.Size > 0 {

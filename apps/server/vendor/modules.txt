@@ -80,7 +80,8 @@ github.com/json-iterator/go
 github.com/leodido/go-urn
 # github.com/lib/pq v1.7.0
 ## explicit
-# github.com/magiconair/properties v1.8.1
+# github.com/magiconair/properties v1.8.2
+## explicit
 github.com/magiconair/properties
 # github.com/mattn/go-colorable v0.1.7
 ## explicit
@@ -143,13 +144,13 @@ github.com/ulule/limiter/v3/drivers/store/memory
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/crypto v0.0.0-20200728195943-123391ffb6de
+# golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
 ## explicit
 golang.org/x/crypto/pbkdf2
-# golang.org/x/net v0.0.0-20200813134508-3edf25e44fcc
+# golang.org/x/net v0.0.0-20200822124328-c89045814202
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20200814200057-3d37ad5750ed
+# golang.org/x/sys v0.0.0-20200828194041-157a740278f4
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
@@ -199,23 +200,23 @@ google.golang.org/protobuf/reflect/protoreflect
 google.golang.org/protobuf/reflect/protoregistry
 google.golang.org/protobuf/runtime/protoiface
 google.golang.org/protobuf/runtime/protoimpl
-# gopkg.in/ini.v1 v1.60.0
+# gopkg.in/ini.v1 v1.60.2
 ## explicit
 gopkg.in/ini.v1
 # gopkg.in/natefinch/lumberjack.v2 v2.0.0
 gopkg.in/natefinch/lumberjack.v2
 # gopkg.in/yaml.v2 v2.3.0
 gopkg.in/yaml.v2
-# gorm.io/driver/mysql v0.3.1
+# gorm.io/driver/mysql v1.0.0
 ## explicit
 gorm.io/driver/mysql
-# gorm.io/driver/postgres v0.2.6
+# gorm.io/driver/postgres v1.0.0
 ## explicit
 gorm.io/driver/postgres
-# gorm.io/driver/sqlite v1.0.9
+# gorm.io/driver/sqlite v1.1.0
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v0.2.31
+# gorm.io/gorm v1.9.19
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks

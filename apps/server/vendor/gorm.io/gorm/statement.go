@@ -29,7 +29,7 @@ type Statement struct {
 	Distinct             bool
 	Selects              []string // selected columns
 	Omits                []string // omit columns
-	Joins                map[string][]interface{}
+	Joins                []join
 	Preloads             map[string][]interface{}
 	Settings             sync.Map
 	ConnPool             ConnPool
@@ -42,6 +42,11 @@ type Statement struct {
 	CurDestIndex         int
 	attrs                []interface{}
 	assigns              []interface{}
+}
+
+type join struct {
+	Name  string
+	Conds []interface{}
 }
 
 // StatementModifier statement modifier interface
@@ -156,6 +161,8 @@ func (stmt *Statement) AddVar(writer clause.Writer, vars ...interface{}) {
 			stmt.Vars = append(stmt.Vars, v.Value)
 		case clause.Column, clause.Table:
 			stmt.QuoteTo(writer, v)
+		case Valuer:
+			stmt.AddVar(writer, v.GormValue(stmt.Context, stmt.DB))
 		case clause.Expr:
 			var varStr strings.Builder
 			var sql = v.SQL
@@ -374,7 +381,6 @@ func (stmt *Statement) Build(clauses ...string) {
 			}
 		}
 	}
-	// TODO handle named vars
 }
 
 func (stmt *Statement) Parse(value interface{}) (err error) {
@@ -401,7 +407,6 @@ func (stmt *Statement) clone() *Statement {
 		Distinct:             stmt.Distinct,
 		Selects:              stmt.Selects,
 		Omits:                stmt.Omits,
-		Joins:                map[string][]interface{}{},
 		Preloads:             map[string][]interface{}{},
 		ConnPool:             stmt.ConnPool,
 		Schema:               stmt.Schema,
@@ -417,8 +422,9 @@ func (stmt *Statement) clone() *Statement {
 		newStmt.Preloads[k] = p
 	}
 
-	for k, j := range stmt.Joins {
-		newStmt.Joins[k] = j
+	if len(stmt.Joins) > 0 {
+		newStmt.Joins = make([]join, len(stmt.Joins))
+		copy(newStmt.Joins, stmt.Joins)
 	}
 
 	stmt.Settings.Range(func(k, v interface{}) bool {
