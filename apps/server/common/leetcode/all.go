@@ -15,11 +15,9 @@ import (
 
 // All all
 func (i *Instance) All() (err error) {
-	var response gorequest.Response
-	var errs []error
-
 	var data []byte
-
+	var errs []error
+	var response gorequest.Response
 	if response, data, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
 		Post(fmt.Sprintf("%s/graphql", HostLeetcode)).
 		Set("origin", HostLeetcode).

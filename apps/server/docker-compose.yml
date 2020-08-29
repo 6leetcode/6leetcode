@@ -30,26 +30,26 @@ services:
     networks:
       - default
   postgresql-master:
-    image: "bitnami/postgresql:12"
+    image: "bitnami/postgresql:12-debian-10"
     container_name: postgresql-master
     hostname: postgresql-master
     volumes:
-     - ${VOLUME_PREFIX}/postgresql-master/:/bitnami/postgresql
+      - ${VOLUME_PREFIX}/postgresql-master/:/bitnami/postgresql
     environment:
       - POSTGRESQL_REPLICATION_MODE=master
       - POSTGRESQL_REPLICATION_USER=${DATABASE_USERNAME}
       - POSTGRESQL_REPLICATION_PASSWORD=${DATABASE_SECRET}
-      - POSTGRESQL_USERNAME=${DATABASE_USERNAME}
+      - POSTGRESQL_USERNAME=postgres
       - POSTGRESQL_PASSWORD=${DATABASE_SECRET}
       - POSTGRESQL_DATABASE=${DATABASE_NAME}
     networks:
       - default
   postgresql-slave:
-    image: "bitnami/postgresql:12"
+    image: "bitnami/postgresql:12-debian-10"
     container_name: postgresql-slave
     hostname: postgresql-slave
     volumes:
-     - ${VOLUME_PREFIX}/postgresql-slave/:/bitnami/postgresql
+      - ${VOLUME_PREFIX}/postgresql-slave/:/bitnami/postgresql
     depends_on:
       - postgresql-master
     environment:

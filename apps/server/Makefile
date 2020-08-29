@@ -1,3 +1,6 @@
+include .env
+export $(shell sed 's/=.*//' .env)
+
 export COMPOSE_IGNORE_ORPHANS=True # ignore others container
 
 app_name                = 6leetcode
@@ -50,6 +53,10 @@ up:
 
 .PHONY: up-database
 up-database:
+	$(shell if [ ! -d $(VOLUME_PREFIX)/postgresql-master ]; then mkdir -p $(VOLUME_PREFIX)/postgresql-master; fi)
+	$(shell if [ ! -d $(VOLUME_PREFIX)/postgresql-slave ]; then mkdir -p $(VOLUME_PREFIX)/postgresql-slave; fi)
+	sudo chown -R 1001:1001 $(VOLUME_PREFIX)/postgresql-master
+	sudo chown -R 1001:1001 $(VOLUME_PREFIX)/postgresql-slave
 	docker-compose up --force-recreate -d postgresql-master postgresql-slave
 
 .PHONY: up-server

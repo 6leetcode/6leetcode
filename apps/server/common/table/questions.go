@@ -72,6 +72,7 @@ func (q *Question) Find(options Options) (questions []Question, err error) {
 	return
 }
 
+// Total total
 func (q *Question) Total() (total int64) {
 	engine.Model(new(Question)).Count(&total)
 	return

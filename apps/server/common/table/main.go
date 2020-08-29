@@ -17,6 +17,7 @@ import (
 
 var engine *gorm.DB
 
+// Initialize initialize
 func Initialize() (err error) {
 	var engineType = viper.GetString("Database.Engine")
 	if engineType == "" {

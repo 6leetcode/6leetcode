@@ -11,9 +11,6 @@ import (
 
 // Login login
 func (i *Instance) Login() (err error) {
-	var response gorequest.Response
-	var errs []error
-
 	type loginBody struct {
 		CSRFMiddlewareToken string `json:"csrfmiddlewaretoken"`
 		Login               string `json:"login"`
@@ -28,6 +25,8 @@ func (i *Instance) Login() (err error) {
 		Next:                "/problemset/all/",
 	}
 
+	var errs []error
+	var response gorequest.Response
 	if response, _, errs = gorequest.New().SetDebug(viper.GetBool("Debug")).
 		Post(fmt.Sprintf("%s/accounts/login", HostLeetcode)).
 		Set("Referer", HostLeetcode).

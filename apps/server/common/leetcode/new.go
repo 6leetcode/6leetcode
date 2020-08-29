@@ -11,10 +11,12 @@ type Instance struct {
 
 // New new
 func New() (instance *Instance, err error) {
-	instance = &Instance{
-		userAgent: USERAGENT,
-		csrftoken: CSRFTOKEN,
+	instance = &Instance{userAgent: USERAGENT}
+	if err = instance.CSRF(); err != nil {
+		return
 	}
-	err = instance.Login()
+	if err = instance.Login(); err != nil {
+		return
+	}
 	return
 }
