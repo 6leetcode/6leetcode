@@ -48,7 +48,7 @@ docker-exec:
 	docker-compose exec $(app_name) /bin/bash
 
 .PHONY: up
-up:
+up: up-init
 	docker-compose up --force-recreate
 
 .PHONY: up-database
@@ -66,6 +66,10 @@ up-server:
 .PHONY: up-server-dev
 up-server-dev:
 	docker-compose up --force-recreate --build -d 6leetcode-dev
+
+.PHONY: up-database-dev
+up-database-dev:
+	docker-compose up --force-recreate -d postgresql-dev
 
 .PHONY: up-init
 up-init:
