@@ -18,8 +18,8 @@ else
 	OSName = $(shell echo $(shell uname -s) | tr '[:upper:]' '[:lower:]')
 endif
 
-.PHONY: ${OSName}
-${OSName}:
+.PHONY: build
+build:
 	go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
