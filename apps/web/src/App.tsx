@@ -30,8 +30,6 @@ interface IState {
   category: string;
 }
 
-const leetcodeServer = "https://6leetcode.tosone.cn";
-// const leetcodeServer = "http://127.0.0.1:4000";
 const pageSize = 100;
 
 export default class App extends React.Component<IProps, IState> {
@@ -68,7 +66,7 @@ export default class App extends React.Component<IProps, IState> {
       "category": category
     });
     let offset = ((this.state.currentPage - 1) * pageSize).toString()
-    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + category)
+    axios.get("/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + category)
       .then(response => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
@@ -83,7 +81,7 @@ export default class App extends React.Component<IProps, IState> {
 
   componentDidMount() {
     let offset = ((this.state.currentPage - 1) * pageSize).toString()
-    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + this.state.category)
+    axios.get("/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + this.state.category)
       .then(response => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
@@ -98,7 +96,7 @@ export default class App extends React.Component<IProps, IState> {
 
   pageChange = (number: number) => {
     let offset = ((number - 1) * pageSize).toString()
-    axios.get(leetcodeServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + this.state.category)
+    axios.get("/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + this.state.category)
       .then(response => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);

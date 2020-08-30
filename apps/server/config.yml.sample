@@ -1,5 +1,5 @@
 LOGIN_NAME: tosone@qq.com # leetcode username
-LOGIN_PASSWORD: wC6JW9ra4z2Gfqe # leetcode password
+LOGIN_PASSWORD: yourpassword # leetcode password
 DATABASE_ENGINE: postgres
 
 AppName: 6leetcode
