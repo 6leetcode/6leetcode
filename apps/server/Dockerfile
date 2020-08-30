@@ -50,4 +50,4 @@ VOLUME /etc/6leetcode
 
 EXPOSE 4000
 
-CMD ["6leetcode", "server"]
+CMD ["wait-for-it.sh", "postgresql-dev:5432", "--", "6leetcode", "server"]

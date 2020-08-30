@@ -7,4 +7,4 @@ ADD release/6leetcode /usr/bin
 
 EXPOSE 4000
 
-CMD ["6leetcode", "server"]
+CMD CMD ["wait-for-it.sh", "postgresql-dev:5432", "--", "6leetcode", "server"]

@@ -90,7 +90,7 @@ services:
     container_name: 6leetcode
     hostname: 6leetcode
     command:
-      ["wait-for-it.sh", "postgresql-dev:5432", "--", "6leetcode", "crawler"]
+      ["wait-for-it.sh", "postgresql-dev:5432", "--", "6leetcode", "server"]
     build:
       context: .
       dockerfile: Dockerfile.dev
