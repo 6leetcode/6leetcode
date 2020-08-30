@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        go: ["1.14", "1.15"]
-        node: ["12", "14"]
+        go: ["1.15"]
+        node: ["14"]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
