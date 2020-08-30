@@ -12,7 +12,6 @@ require (
 	github.com/go-playground/validator/v10 v10.3.0 // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/jackc/pgproto3/v2 v2.0.4 // indirect
-	github.com/jackc/pgx/v4 v4.8.1 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/lib/pq v1.7.0 // indirect
 	github.com/magiconair/properties v1.8.2 // indirect

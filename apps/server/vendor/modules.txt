@@ -65,7 +65,6 @@ github.com/jackc/pgservicefile
 # github.com/jackc/pgtype v1.4.2
 github.com/jackc/pgtype
 # github.com/jackc/pgx/v4 v4.8.1
-## explicit
 github.com/jackc/pgx/v4
 github.com/jackc/pgx/v4/internal/sanitize
 github.com/jackc/pgx/v4/stdlib
