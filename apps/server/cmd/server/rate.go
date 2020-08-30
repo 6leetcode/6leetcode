@@ -9,7 +9,7 @@ import (
 
 func rateLimit() (handlerFunc gin.HandlerFunc, err error) {
 	var rate limiter.Rate
-	if rate, err = limiter.NewRateFromFormatted("2-S"); err != nil {
+	if rate, err = limiter.NewRateFromFormatted("20-S"); err != nil {
 		return
 	}
 
