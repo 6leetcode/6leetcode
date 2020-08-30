@@ -1,12 +1,13 @@
+LOGIN_NAME: tosone@qq.com # leetcode username
+LOGIN_PASSWORD: wC6JW9ra4z2Gfqe # leetcode password
+DATABASE_ENGINE: postgres
+
 AppName: 6leetcode
 Debug: false
 ServerPort: 4000
-Login:
-  name: # leetcode username
-  password: # leetcode password
 Database:
   Engine: postgres # DB type
-  Username: repl_tosone
+  Username: postgres
   Password: repl_secret
   Host: postgresql-master
   Port: 5432
