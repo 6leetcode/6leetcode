@@ -61,4 +61,4 @@ jobs:
           token: ${{ secrets.PAT }}
           branch: generate-questions
           branch-suffix: timestamp
-          title: Generate questions
+          title: ":robot: Generate questions"
