@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM buildpack-deps:curl
 
 RUN mkdir -p /etc/6leetcode
 ADD wait-for-it.sh /usr/bin

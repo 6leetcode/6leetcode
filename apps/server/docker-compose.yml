@@ -90,7 +90,7 @@ services:
     container_name: 6leetcode
     hostname: 6leetcode
     command:
-      ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "crawler"]
+      ["wait-for-it.sh", "postgresql-dev:5432", "--", "6leetcode", "crawler"]
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -99,6 +99,15 @@ services:
       - $PWD/config.yml:/etc/6leetcode/config.yml
     networks:
       - default
+  postgresql-dev:
+    image: 'docker.io/bitnami/postgresql:12-debian-10'
+    container_name: postgresql-dev
+    hostname: postgresql-dev
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRESQL_PASSWORD=${DATABASE_SECRET}
+      - POSTGRESQL_DATABASE=${DATABASE_NAME}
 networks:
   default:
     external:
