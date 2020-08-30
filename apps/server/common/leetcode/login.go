@@ -47,6 +47,11 @@ func (i *Instance) Login() (err error) {
 		return
 	}
 
+	if response.Request.Response == nil {
+		err = fmt.Errorf("cannot login the leetcode, please check you password")
+		return
+	}
+
 	for _, c := range response.Request.Response.Cookies() {
 		if c.Name == "csrftoken" {
 			i.csrftoken = c.Value

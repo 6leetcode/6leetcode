@@ -160,7 +160,7 @@ func cronTask() (err error) {
 	return
 }
 
-var syncLocker sync.Locker
+var syncLocker = sync.Mutex{}
 
 func syncLeetcode() (err error) {
 	syncLocker.Lock()
