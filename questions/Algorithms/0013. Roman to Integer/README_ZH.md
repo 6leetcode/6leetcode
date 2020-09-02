@@ -23,6 +23,8 @@ M             1000</pre>
 
 <p>给定一个罗马数字，将其转换成整数。输入确保在 1&nbsp;到 3999 的范围内。</p>
 
+<p>&nbsp;</p>
+
 <p><strong>示例&nbsp;1:</strong></p>
 
 <pre><strong>输入:</strong>&nbsp;&quot;III&quot;
@@ -50,3 +52,13 @@ M             1000</pre>
 <pre><strong>输入:</strong>&nbsp;&quot;MCMXCIV&quot;
 <strong>输出:</strong> 1994
 <strong>解释:</strong> M = 1000, CM = 900, XC = 90, IV = 4.</pre>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li>题目所给测试用例皆符合罗马数字书写规则，不会出现跨位等情况。</li>
+	<li>IC 和 IM 这样的例子并不符合题目要求，49 应该写作 XLIX，999 应该写作 CMXCIX 。</li>
+	<li>关于罗马数字的详尽书写规则，可以参考 <a href="https://b2b.partcommunity.com/community/knowledge/zh_CN/detail/10753/%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97#knowledge_article">罗马数字 - Mathematics </a>。</li>
+</ul>
