@@ -53,7 +53,7 @@ jobs:
           ./apps/server/release/6leetcode crawler -c ./apps/server/config.yml
           if [ ! -z "$(git status --untracked-files=no --porcelain)" ]; then \
             git add . && \
-            git commit -S -m "Generate questions"; \
+            git commit -S -m ":robot: Generate questions"; \
           fi
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
@@ -61,4 +61,4 @@ jobs:
           token: ${{ secrets.PAT }}
           branch: generate-questions
           branch-suffix: timestamp
-          title: ":robot: Generate questions"
+          title: "Generate questions"
