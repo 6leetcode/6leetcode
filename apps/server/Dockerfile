@@ -41,10 +41,12 @@ ADD apps/server/wait-for-it.sh /usr/local/bin
 # sed -i 's/https:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories
 
 RUN apk add --no-cache ca-certificates bash wget && \
-  mkdir -p /etc/6leetcode
+  mkdir -p /etc/6leetcode && \
+  mkdir -p /data
 
 COPY --from=stage3 /tmp/6leetcode /usr/bin
 COPY --from=stage3 /tmp/config.yml /etc/6leetcode
+COPY questions /data
 
 VOLUME /etc/6leetcode
 
