@@ -16,7 +16,7 @@ ADD . .
 #   npm install --registry https://registry.npm.taobao.org && \
 #   npm run build
 
-RUN cd apps/web && npm install && npm run build
+RUN cd apps/web && yarn && yarn build
 
 FROM golang:alpine AS stage3
 
