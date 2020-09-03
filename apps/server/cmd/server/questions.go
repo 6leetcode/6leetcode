@@ -69,7 +69,7 @@ func questionsRoute(context *gin.Context) {
 		return
 	}
 
-	total = new(table.Question).Total()
+	total = new(table.Question).Total(options)
 }
 
 func questionsGetRoute(context *gin.Context) {

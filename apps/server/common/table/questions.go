@@ -73,8 +73,8 @@ func (q *Question) Find(options Options) (questions []Question, err error) {
 }
 
 // Total total
-func (q *Question) Total() (total int64) {
-	engine.Model(new(Question)).Count(&total)
+func (q *Question) Total(options Options) (total int64) {
+	engine.Model(new(Question)).Where(&Question{CategoryTitle: options.Category}).Count(&total)
 	return
 }
 
