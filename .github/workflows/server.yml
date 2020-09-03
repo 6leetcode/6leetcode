@@ -39,8 +39,9 @@ jobs:
       - name: Build fontend
         run: |
           cd apps/web
-          npm install
-          npm run build
+          npm install -g yarn
+          yarn
+          yarn build
       - name: Lint code
         uses: golangci/golangci-lint-action@v1
         with:
