@@ -29,8 +29,15 @@ services:
       - traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https
     networks:
       - default
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: traefik
+    hostname: traefik
+    command: ["watchtower", "--cleanup", "--interval", "20", "6leetcode"]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
   postgresql-master:
-    image: "bitnami/postgresql:12-debian-10"
+    image: bitnami/postgresql:12-debian-10
     container_name: postgresql-master
     hostname: postgresql-master
     volumes:
@@ -45,7 +52,7 @@ services:
     networks:
       - default
   postgresql-slave:
-    image: "bitnami/postgresql:12-debian-10"
+    image: bitnami/postgresql:12-debian-10
     container_name: postgresql-slave
     hostname: postgresql-slave
     volumes:
@@ -102,7 +109,7 @@ services:
     networks:
       - default
   postgresql-dev:
-    image: 'docker.io/bitnami/postgresql:12-debian-10'
+    image: docker.io/bitnami/postgresql:12-debian-10
     container_name: postgresql-dev
     hostname: postgresql-dev
     ports:
