@@ -2,39 +2,16 @@ import React from 'react';
 
 import { Layout, Menu, List, Pagination, Dropdown, Button, Typography } from 'antd';
 import { DownOutlined, UserOutlined, LockOutlined, UnlockOutlined } from '@ant-design/icons';
-import { MenuInfo } from 'rc-menu/lib/interface';
 
 import axios from 'axios';
 
 import './App.scss';
 
-interface IProps {
-}
-
-interface IState {
-  menuKey: string;
-  questions: {
-    title: string,
-    translated_title: string,
-    question_id: number,
-    frontend_question_id: number,
-    difficulty: string,
-    paid_only: boolean,
-    title_slug: string,
-    category_title: string,
-    acRate: string
-  }[];
-  totalQuestions: number;
-  currentPage: number;
-  language: string;
-  category: string;
-}
-
 const localServer = process.env.NODE_ENV === "development" ? "http://127.0.0.1:4000" : "";
 const pageSize = 100;
 
-export default class App extends React.Component<IProps, IState> {
-  constructor(props: IProps) {
+export default class App extends React.Component {
+  constructor(props) {
     super(props);
 
     this.state = {
@@ -57,7 +34,7 @@ export default class App extends React.Component<IProps, IState> {
     };
   }
 
-  menuClick = (info: MenuInfo) => {
+  menuClick = (info) => {
     let category = "";
     if (info.key.toString() !== "All") {
       category = info.key.toString();
@@ -95,7 +72,7 @@ export default class App extends React.Component<IProps, IState> {
       });
   }
 
-  pageChange = (number: number) => {
+  pageChange = (number) => {
     let offset = ((number - 1) * pageSize).toString()
     axios.get(localServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + this.state.category)
       .then(response => {
@@ -111,7 +88,7 @@ export default class App extends React.Component<IProps, IState> {
       });
   }
 
-  languageChange = (e: MenuInfo) => {
+  languageChange = (e) => {
     if (e.key === "2") {
       this.setState({ language: "English" });
     } else if (e.key === "1") {
