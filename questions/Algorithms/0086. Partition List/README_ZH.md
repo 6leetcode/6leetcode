@@ -4,6 +4,8 @@
 
 <p>你应当保留两个分区中每个节点的初始相对位置。</p>
 
+<p>&nbsp;</p>
+
 <p><strong>示例:</strong></p>
 
 <pre><strong>输入:</strong> head = 1-&gt;4-&gt;3-&gt;2-&gt;5-&gt;2, <em>x</em> = 3

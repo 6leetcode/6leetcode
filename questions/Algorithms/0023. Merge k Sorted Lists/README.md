@@ -1,8 +1,8 @@
 ### [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists)
 
-<p>Given an array of linked-lists lists, each linked list is sorted in ascending order.</p>
+<p>You are given an array of <code>k</code> linked-lists <code>lists</code>, each linked-list is sorted in ascending order.</p>
 
-<p>Merge all the linked-lists into one sort linked-list and return it.</p>
+<p><em>Merge all the linked-lists into one sorted linked-list and return it.</em></p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

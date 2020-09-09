@@ -1,6 +1,6 @@
 ### [Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii)
 
-<p>Given a string <code>s</code>, partition <code>s</code> such that every substring of the partition is a palindrome</p>
+<p>Given a string <code>s</code>, partition <code>s</code> such that every substring of the partition is a palindrome.</p>
 
 <p>Return <em>the minimum cuts needed</em> for a palindrome partitioning of <code>s</code>.</p>
 
