@@ -85,3 +85,13 @@ services:
     volumes:
       - .:/app
     tty: true
+  shell:
+    image: 6leetcode:shell
+    container_name: shell
+    hostname: shell
+    build:
+      context: .
+      dockerfile: ./docker/shell.Dockerfile
+    volumes:
+      - .:/app
+    tty: true

@@ -63,6 +63,8 @@ def genMakefile(pathname, suffix):
     langName = "rust"
   elif suffix == "go":
     langName = "golang"
+  elif suffix == "sh":
+    langName = "shell"
   with open(pathname + "/" + langName + ".makefile", "w+") as f:
     targets = []
     for p in problemsPath:
@@ -134,7 +136,11 @@ if __name__ == "__main__":
       # Python
       elif os.path.splitext(inner)[1] == ".py":
         python[dir].append(inner)
+      # Bash
+      elif os.path.splitext(inner)[1] == ".sh":
+        shell[dir].append(inner)
   for dir in os.listdir(basedir + "/Concurrency"):
+    problemsPath.append("questions/Concurrency/"+dir)
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -174,7 +180,11 @@ if __name__ == "__main__":
       # Python
       elif os.path.splitext(inner)[1] == ".py":
         python[dir].append(inner)
+      # Bash
+      elif os.path.splitext(inner)[1] == ".sh":
+        shell[dir].append(inner)
   for dir in os.listdir(basedir + "/Database"):
+    problemsPath.append("questions/Database/"+dir)
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -195,6 +205,7 @@ if __name__ == "__main__":
       if os.path.splitext(inner)[1] == ".sql":
         sql[dir].append(inner)
   for dir in os.listdir(basedir + "/Shell"):
+    problemsPath.append("questions/Shell/"+dir)
     problems.append(dir)
     c[dir] = []
     cc[dir] = []
@@ -211,7 +222,7 @@ if __name__ == "__main__":
     filelist = os.listdir(basedir + "/Shell/" + dir)
     filelist.sort()
     for inner in filelist:
-      # BASH
+      # Bash
       if os.path.splitext(inner)[1] == ".sh":
         shell[dir].append(inner)
   problems.sort()
@@ -261,3 +272,4 @@ if __name__ == "__main__":
   genMakefile("testing", "js")
   genMakefile("testing", "java")
   genMakefile("testing", "php")
+  genMakefile("testing", "sh")

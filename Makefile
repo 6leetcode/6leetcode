@@ -1,4 +1,4 @@
-TARGETS = c cc golang java python rust node php
+TARGETS = c cc golang java python rust node php shell
 
 all: ${TARGETS}
 
