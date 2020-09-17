@@ -6,9 +6,10 @@ PythonFiles := $(wildcard *.py)
 PHPFiles    := $(wildcard *.php)
 NodeFiles   := $(wildcard *.js)
 JavaFiles   := $(wildcard *.java)
+ShellFiles  := $(wildcard *.sh)
 
 .PHONY: all
-all: c cc rust golang python php node java
+all: c cc rust golang python php node java shell
 
 .PHONY: c
 c: $(CFiles)
@@ -98,4 +99,14 @@ $(PHPFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
 	@php $@
+	@echo
+
+.PHONY: shell
+shell: $(ShellFiles)
+
+.PHONY: $(ShellFiles)
+$(ShellFiles):
+	@echo Running `echo $@ | cut -d. -f1`:
+	@echo
+	@./`echo $@ | cut -d. -f1`.sh
 	@echo
