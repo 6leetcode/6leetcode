@@ -15,6 +15,7 @@
 </pre>
 
 <p><strong>Example 2:</strong></p>
+
 <pre>
 <strong>Input:</strong>
 [

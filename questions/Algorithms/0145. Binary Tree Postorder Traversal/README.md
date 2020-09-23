@@ -1,8 +1,6 @@
 ### [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)
 
-<p>Given the <code>root</code> of a&nbsp;binary tree, return the <em>postorder</em> traversal of its nodes&#39; values.</p>
-
-<p><strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
+<p>Given the <code>root</code> of a&nbsp;binary tree, return <em>the postorder traversal of its nodes&#39; values</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -47,3 +45,11 @@
 	<li>The number of the nodes in the tree is in the range <code>[0, 100]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Follow up:</strong></p>
+
+<p>Recursive solution is trivial, could you do it iteratively?</p>
+
+<p>&nbsp;</p>
