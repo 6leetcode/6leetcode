@@ -1,6 +1,6 @@
 ### [解数独](https://leetcode-cn.com/problems/sudoku-solver)
 
-<p>编写一个程序，通过已填充的空格来解决数独问题。</p>
+<p>编写一个程序，通过填充空格来解决数独问题。</p>
 
 <p>一个数独的解法需<strong>遵循如下规则</strong>：</p>
 
@@ -20,7 +20,7 @@
 
 <p><small>答案被标成红色。</small></p>
 
-<p><strong>Note:</strong></p>
+<p><strong>提示：</strong></p>
 
 <ul>
 	<li>给定的数独序列只包含数字&nbsp;<code>1-9</code>&nbsp;和字符&nbsp;<code>&#39;.&#39;</code>&nbsp;。</li>
