@@ -7,7 +7,7 @@ ${TARGETS}:
 	@docker-compose run $@ make -f testing/$@.makefile run
 
 format:
-	@python3 scripts/format.py
+	@python3 scripts/$@.py
 
 generate:
-	@python3 scripts/gen.py
+	@python3 scripts/$@.py
