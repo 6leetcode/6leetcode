@@ -2,7 +2,7 @@
 // +build !appengine
 // +build go1.7
 
-// Copyright (c) 2012-2018 Ugorji Nwoke. All rights reserved.
+// Copyright (c) 2012-2020 Ugorji Nwoke. All rights reserved.
 // Use of this source code is governed by a MIT license found in the LICENSE file.
 
 package codec
@@ -15,7 +15,7 @@ import (
 )
 
 // This file has unsafe variants of some helper methods.
-// NOTE: See helper_not_unsafe.go for the usage information.
+// MARKER: See helper_not_unsafe.go for the usage information.
 
 // For reflect.Value code, we decided to do the following:
 //    - if we know the kind, we can elide conditional checks for
@@ -27,7 +27,7 @@ import (
 
 const safeMode = false
 
-// keep in sync with GO_ROOT/src/reflect/value.go
+// MARKER: keep in sync with GO_ROOT/src/reflect/value.go
 const (
 	unsafeFlagIndir    = 1 << 7
 	unsafeFlagAddr     = 1 << 8
@@ -72,21 +72,6 @@ func bytesView(v string) []byte {
 	sx := (*unsafeString)(unsafe.Pointer(&v))
 	return *(*[]byte)(unsafe.Pointer(&unsafeSlice{sx.Data, sx.Len, sx.Len}))
 }
-
-// // isNilRef says whether the interface is a nil reference or not.
-// //
-// // A reference here is a pointer-sized reference i.e. map, ptr, chan, func, unsafepointer.
-// // It is optional to extend this to also check if slices or interfaces are nil also.
-// //
-// // NOTE: There is no global way of checking if an interface is nil.
-// // For true references (map, ptr, func, chan), you can just look
-// // at the word of the interface.
-// // However, for slices, you have to dereference
-// // the word, and get a pointer to the 3-word interface value.
-// func isNilRef(v interface{}) (rv reflect.Value, isnil bool) {
-// 	isnil = ((*unsafeIntf)(unsafe.Pointer(&v))).word == nil
-// 	return
-// }
 
 func isNil(v interface{}) (rv reflect.Value, isnil bool) {
 	var ui = (*unsafeIntf)(unsafe.Pointer(&v))
@@ -297,15 +282,15 @@ func (x *atomicClsErr) store(p clsErr) {
 
 // --------------------------
 
-// to create a reflect.Value for each member field of decNaked,
-// we first create a global decNaked, and create reflect.Value
+// to create a reflect.Value for each member field of fauxUnion,
+// we first create a global fauxUnion, and create reflect.Value
 // for them all.
 // This way, we have the flags and type in the reflect.Value.
 // Then, when a reflect.Value is called, we just copy it,
-// update the ptr to the decNaked's, and return it.
+// update the ptr to the fauxUnion's, and return it.
 
 type unsafeDecNakedWrapper struct {
-	decNaked
+	fauxUnion
 	ru, ri, rf, rl, rs, rb, rt reflect.Value // mapping to the primitives above
 }
 
@@ -326,37 +311,37 @@ func init() {
 	defUnsafeDecNakedWrapper.init()
 }
 
-func (n *decNaked) ru() (v reflect.Value) {
+func (n *fauxUnion) ru() (v reflect.Value) {
 	v = defUnsafeDecNakedWrapper.ru
 	((*unsafeReflectValue)(unsafe.Pointer(&v))).ptr = unsafe.Pointer(&n.u)
 	return
 }
-func (n *decNaked) ri() (v reflect.Value) {
+func (n *fauxUnion) ri() (v reflect.Value) {
 	v = defUnsafeDecNakedWrapper.ri
 	((*unsafeReflectValue)(unsafe.Pointer(&v))).ptr = unsafe.Pointer(&n.i)
 	return
 }
-func (n *decNaked) rf() (v reflect.Value) {
+func (n *fauxUnion) rf() (v reflect.Value) {
 	v = defUnsafeDecNakedWrapper.rf
 	((*unsafeReflectValue)(unsafe.Pointer(&v))).ptr = unsafe.Pointer(&n.f)
 	return
 }
-func (n *decNaked) rl() (v reflect.Value) {
+func (n *fauxUnion) rl() (v reflect.Value) {
 	v = defUnsafeDecNakedWrapper.rl
 	((*unsafeReflectValue)(unsafe.Pointer(&v))).ptr = unsafe.Pointer(&n.l)
 	return
 }
-func (n *decNaked) rs() (v reflect.Value) {
+func (n *fauxUnion) rs() (v reflect.Value) {
 	v = defUnsafeDecNakedWrapper.rs
 	((*unsafeReflectValue)(unsafe.Pointer(&v))).ptr = unsafe.Pointer(&n.s)
 	return
 }
-func (n *decNaked) rt() (v reflect.Value) {
+func (n *fauxUnion) rt() (v reflect.Value) {
 	v = defUnsafeDecNakedWrapper.rt
 	((*unsafeReflectValue)(unsafe.Pointer(&v))).ptr = unsafe.Pointer(&n.t)
 	return
 }
-func (n *decNaked) rb() (v reflect.Value) {
+func (n *fauxUnion) rb() (v reflect.Value) {
 	v = defUnsafeDecNakedWrapper.rb
 	((*unsafeReflectValue)(unsafe.Pointer(&v))).ptr = unsafe.Pointer(&n.b)
 	return

@@ -1,6 +1,6 @@
 // +build codecgen.exec
 
-// Copyright (c) 2012-2018 Ugorji Nwoke. All rights reserved.
+// Copyright (c) 2012-2020 Ugorji Nwoke. All rights reserved.
 // Use of this source code is governed by a MIT license found in the LICENSE file.
 
 package codec
@@ -58,7 +58,7 @@ if {{var "l"}} != 0 {
 		{{var "v"}}[{{var "mk"}}] = {{var "mv"}}
 	}
 }
-} // else len==0: TODO: Should we clear map entries?
+} // else len==0: leave as-is (do not clear map entries)
 z.DecReadMapEnd()
 }
 `

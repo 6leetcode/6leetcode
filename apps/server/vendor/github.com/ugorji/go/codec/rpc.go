@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 Ugorji Nwoke. All rights reserved.
+// Copyright (c) 2012-2020 Ugorji Nwoke. All rights reserved.
 // Use of this source code is governed by a MIT license found in the LICENSE file.
 
 package codec
@@ -52,7 +52,7 @@ func newRPCCodec(conn io.ReadWriteCloser, h Handle) rpcCodec {
 func newRPCCodec2(r io.Reader, w io.Writer, c io.Closer, h Handle) rpcCodec {
 	// defensive: ensure that jsonH has TermWhitespace turned on.
 	if jsonH, ok := h.(*JsonHandle); ok && !jsonH.TermWhitespace {
-		panic(errRpcJsonNeedsTermWhitespace)
+		halt.onerror(errRpcJsonNeedsTermWhitespace)
 	}
 	// always ensure that we use a flusher, and always flush what was written to the connection.
 	// we lose nothing by using a buffered writer internally.
@@ -68,8 +68,7 @@ func newRPCCodec2(r io.Reader, w io.Writer, c io.Closer, h Handle) rpcCodec {
 		if bh.ReaderBufferSize <= 0 {
 			if _, ok = w.(ioPeeker); !ok {
 				if _, ok = w.(ioBuffered); !ok {
-					br := bufio.NewReader(r)
-					r = br
+					r = bufio.NewReader(r)
 				}
 			}
 		}
@@ -108,11 +107,6 @@ func (c *rpcCodec) write(obj1, obj2 interface{}, writeObj2 bool) (err error) {
 	return
 }
 
-func (c *rpcCodec) swallow(err *error) {
-	defer panicToErr(c.dec, err)
-	c.dec.swallow()
-}
-
 func (c *rpcCodec) read(obj interface{}) (err error) {
 	if c.c != nil {
 		cls := c.cls.load()
@@ -124,7 +118,8 @@ func (c *rpcCodec) read(obj interface{}) (err error) {
 	if obj == nil {
 		// var obj2 interface{}
 		// return c.dec.Decode(&obj2)
-		c.swallow(&err)
+		defer panicToErr(c.dec, &err)
+		c.dec.swallow()
 		return
 	}
 	return c.dec.Decode(obj)

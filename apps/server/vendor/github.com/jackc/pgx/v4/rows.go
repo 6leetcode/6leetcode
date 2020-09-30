@@ -42,8 +42,7 @@ type Rows interface {
 
 	// Scan reads the values from the current row into dest values positionally.
 	// dest can include pointers to core types, values implementing the Scanner
-	// interface, []byte, and nil. []byte will skip the decoding process and directly
-	// copy the raw bytes received from PostgreSQL. nil will skip the value entirely.
+	// interface, and nil. nil will skip the value entirely.
 	Scan(dest ...interface{}) error
 
 	// Values returns the decoded row values.
@@ -204,10 +203,7 @@ func (rows *connRows) Scan(dest ...interface{}) error {
 
 	if rows.scanPlans == nil {
 		rows.scanPlans = make([]pgtype.ScanPlan, len(values))
-		for i, dst := range dest {
-			if dst == nil {
-				continue
-			}
+		for i := range dest {
 			rows.scanPlans[i] = ci.PlanScan(fieldDescriptions[i].DataTypeOID, fieldDescriptions[i].Format, dest[i])
 		}
 	}

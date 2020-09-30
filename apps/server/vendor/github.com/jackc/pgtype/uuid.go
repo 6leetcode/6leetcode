@@ -1,6 +1,7 @@
 package pgtype
 
 import (
+	"bytes"
 	"database/sql/driver"
 	"encoding/hex"
 	"fmt"
@@ -202,4 +203,30 @@ func (dst *UUID) Scan(src interface{}) error {
 // Value implements the database/sql/driver Valuer interface.
 func (src UUID) Value() (driver.Value, error) {
 	return EncodeValueText(src)
+}
+
+func (src UUID) MarshalJSON() ([]byte, error) {
+	switch src.Status {
+	case Present:
+		var buff bytes.Buffer
+		buff.WriteByte('"')
+		buff.WriteString(encodeUUID(src.Bytes))
+		buff.WriteByte('"')
+		return buff.Bytes(), nil
+	case Null:
+		return []byte("null"), nil
+	case Undefined:
+		return nil, errUndefined
+	}
+	return nil, errBadStatus
+}
+
+func (dst *UUID) UnmarshalJSON(src []byte) error {
+	if bytes.Compare(src, []byte("null")) == 0 {
+		return dst.Set(nil)
+	}
+	if len(src) != 38 {
+		return errors.Errorf("invalid length for UUID: %v", len(src))
+	}
+	return dst.Set(string(src[1 : len(src)-1]))
 }
