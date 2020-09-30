@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2018 Ugorji Nwoke. All rights reserved.
+// Copyright (c) 2012-2020 Ugorji Nwoke. All rights reserved.
 // Use of this source code is governed by a MIT license found in the LICENSE file.
 
 package codec
@@ -134,6 +134,16 @@ type EncodeOptions struct {
 	// are ALWAYS encoded as UTF-8 strings.
 	// These include encoding.TextMarshaler, time.Format calls, struct field names, etc.
 	StringToRaw bool
+
+	// OptimumSize controls whether we optimize for the smallest size.
+	//
+	// Some formats will use this flag to determine whether to encode
+	// in the smallest size possible, even if it takes slightly longer.
+	//
+	// For example, some formats that support half-floats might check if it is possible
+	// to store a float64 as a half float. Doing this check has a small performance cost,
+	// but the benefit is that the encoded message will be smaller.
+	OptimumSize bool
 
 	// // AsSymbols defines what should be encoded as symbols.
 	// //
@@ -306,7 +316,6 @@ func (e *Encoder) kSliceWMbs(rv reflect.Value, ti *typeInfo) {
 	} else {
 		if l%2 == 1 {
 			e.errorf("mapBySlice requires even slice length, but got %v", l)
-			return
 		}
 		e.mapStart(l / 2)
 		fn := e.kSeqFn(ti.elem)
@@ -342,7 +351,6 @@ func (e *Encoder) kSeqWMbs(rv reflect.Value, ti *typeInfo) {
 	} else {
 		if l%2 == 1 {
 			e.errorf("mapBySlice requires even slice length, but got %v", l)
-			return
 		}
 		e.mapStart(l / 2)
 		fn := e.kSeqFn(ti.elem)
@@ -378,7 +386,6 @@ func (e *Encoder) kChan(f *codecFnInfo, rv reflect.Value) {
 	}
 	if f.ti.chandir&uint8(reflect.RecvDir) == 0 {
 		e.errorf("send-only channel cannot be encoded")
-		return
 	}
 	if !f.ti.mbs && uint8TypId == rt2id(f.ti.elem) {
 		e.kSliceBytesChan(rv)
@@ -915,6 +922,9 @@ func (e *Encoder) ResetBytes(out *[]byte) {
 		in = make([]byte, defEncByteBufSize)
 	}
 	e.bytes = true
+	// if e.wb == nil {
+	// 	e.wb = new(bytesEncAppender)
+	// }
 	e.wb.reset(in, out)
 	e.resetCommon()
 }
@@ -1039,9 +1049,7 @@ func (e *Encoder) Encode(v interface{}) (err error) {
 // MustEncode is like Encode, but panics if unable to Encode.
 // This provides insight to the code location that triggered the error.
 func (e *Encoder) MustEncode(v interface{}) {
-	if e.err != nil {
-		panic(e.err)
-	}
+	halt.onerror(e.err)
 	e.mustEncode(v)
 }
 
@@ -1250,9 +1258,7 @@ TOP:
 }
 
 func (e *Encoder) marshalUtf8(bs []byte, fnerr error) {
-	if fnerr != nil {
-		panic(fnerr)
-	}
+	halt.onerror(fnerr)
 	if bs == nil {
 		e.e.EncodeNil()
 	} else {
@@ -1262,9 +1268,7 @@ func (e *Encoder) marshalUtf8(bs []byte, fnerr error) {
 }
 
 func (e *Encoder) marshalAsis(bs []byte, fnerr error) {
-	if fnerr != nil {
-		panic(fnerr)
-	}
+	halt.onerror(fnerr)
 	if bs == nil {
 		e.e.EncodeNil()
 	} else {
@@ -1273,9 +1277,7 @@ func (e *Encoder) marshalAsis(bs []byte, fnerr error) {
 }
 
 func (e *Encoder) marshalRaw(bs []byte, fnerr error) {
-	if fnerr != nil {
-		panic(fnerr)
-	}
+	halt.onerror(fnerr)
 	if bs == nil {
 		e.e.EncodeNil()
 	} else {
@@ -1291,7 +1293,7 @@ func (e *Encoder) rawBytes(vv Raw) {
 	e.encWr.writeb(v) // e.asis(v)
 }
 
-func (e *Encoder) wrapErr(v interface{}, err *error) {
+func (e *Encoder) wrapErr(v error, err *error) {
 	*err = encodeError{codecError{name: e.hh.Name(), err: v}}
 }
 
@@ -1354,7 +1356,6 @@ func (e *Encoder) sideEncode(v interface{}, bs *[]byte) {
 
 func encStructFieldKey(encName string, ee encDriver, w *encWr,
 	keyType valueType, encNameAsciiAlphaNum bool, js bool) {
-	var m must
 	// use if-else-if, not switch (which compiles to binary-search)
 	// since keyType is typically valueTypeString, branch prediction is pretty good.
 	if keyType == valueTypeString {
@@ -1364,10 +1365,10 @@ func encStructFieldKey(encName string, ee encDriver, w *encWr,
 			ee.EncodeString(encName)
 		}
 	} else if keyType == valueTypeInt {
-		ee.EncodeInt(m.Int(strconv.ParseInt(encName, 10, 64)))
+		ee.EncodeInt(must.Int(strconv.ParseInt(encName, 10, 64)))
 	} else if keyType == valueTypeUint {
-		ee.EncodeUint(m.Uint(strconv.ParseUint(encName, 10, 64)))
+		ee.EncodeUint(must.Uint(strconv.ParseUint(encName, 10, 64)))
 	} else if keyType == valueTypeFloat {
-		ee.EncodeFloat64(m.Float(strconv.ParseFloat(encName, 64)))
+		ee.EncodeFloat64(must.Float(strconv.ParseFloat(encName, 64)))
 	}
 }

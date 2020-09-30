@@ -14,7 +14,7 @@ import (
 type Namer interface {
 	TableName(table string) string
 	ColumnName(table, column string) string
-	JoinTableName(table string) string
+	JoinTableName(joinTable string) string
 	RelationshipFKName(Relationship) string
 	CheckerName(table, column string) string
 	IndexName(table, column string) string
@@ -41,6 +41,10 @@ func (ns NamingStrategy) ColumnName(table, column string) string {
 
 // JoinTableName convert string to join table name
 func (ns NamingStrategy) JoinTableName(str string) string {
+	if strings.ToLower(str) == str {
+		return str
+	}
+
 	if ns.SingularTable {
 		return ns.TablePrefix + toDBName(str)
 	}

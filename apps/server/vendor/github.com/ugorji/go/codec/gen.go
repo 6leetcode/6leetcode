@@ -1,6 +1,6 @@
 // +build codecgen.exec
 
-// Copyright (c) 2012-2018 Ugorji Nwoke. All rights reserved.
+// Copyright (c) 2012-2020 Ugorji Nwoke. All rights reserved.
 // Use of this source code is governed by a MIT license found in the LICENSE file.
 
 package codec
@@ -14,6 +14,7 @@ import (
 	"io"
 	"io/ioutil"
 	"math/rand"
+	"os"
 	"reflect"
 	"regexp"
 	"sort"
@@ -90,7 +91,7 @@ import (
 
 // GenVersion is the current version of codecgen.
 //
-// NOTE: Increment this value each time codecgen changes fundamentally.
+// MARKER: Increment this value each time codecgen changes fundamentally.
 // Fundamental changes are:
 //   - helper methods change (signature change, new ones added, some removed, etc)
 //   - codecgen command line changes
@@ -112,10 +113,11 @@ import (
 // v14: 20190611 refactored nil handling: TryDecodeAsNil -> selective TryNil, etc
 // v15: 20190626 encDriver.EncodeString handles StringToRaw flag inside handle
 // v16: 20190629 refactoring for v1.1.6
-const genVersion = 16
+// v17: 20200911 reduce number of types for which we generate fast path functions (v1.1.8)
+const genVersion = 17
 
 const (
-	genCodecPkg        = "codec1978"
+	genCodecPkg        = "codec1978" // MARKER: keep in sync with codecgen/gen.go
 	genTempVarPfx      = "yy"
 	genTopLevelVarName = "x"
 
@@ -133,7 +135,7 @@ const (
 	// genFastpathCanonical configures whether we support Canonical in fast path.
 	// The savings is not much.
 	//
-	// NOTE: This MUST ALWAYS BE TRUE. fast-path.go.tmp doesn't handle it being false.
+	// MARKER: This MUST ALWAYS BE TRUE. fast-path.go.tmp doesn't handle it being false.
 	genFastpathCanonical = true // MUST be true
 
 	// genFastpathTrimTypes configures whether we trim uncommon fastpath types.
@@ -155,8 +157,9 @@ const (
 )
 
 var (
-	errGenAllTypesSamePkg  = errors.New("All types must be in the same package")
-	errGenExpectArrayOrMap = errors.New("unexpected type. Expecting array/map/slice")
+	errGenAllTypesSamePkg        = errors.New("All types must be in the same package")
+	errGenExpectArrayOrMap       = errors.New("unexpected type - expecting array/map/slice")
+	errGenUnexpectedTypeFastpath = errors.New("fast-path: unexpected type - requires map or slice")
 
 	genBase64enc  = base64.NewEncoding("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789__")
 	genQNameRegex = regexp.MustCompile(`[A-Za-z_.]+`)
@@ -275,7 +278,7 @@ func Gen(w io.Writer, buildTags, pkgName, uid string, noExtensions bool,
 	for _, t := range typ {
 		// fmt.Printf("###########: PkgPath: '%v', Name: '%s'\n", genImportPath(t), t.Name())
 		if genImportPath(t) != x.bp {
-			panic(errGenAllTypesSamePkg)
+			halt.onerror(errGenAllTypesSamePkg)
 		}
 		x.genRefPkgs(t)
 	}
@@ -334,7 +337,7 @@ func Gen(w io.Writer, buildTags, pkgName, uid string, noExtensions bool,
 	x.linef("codecSelferDecContainerLenNil%s = %d", x.xs, int64(decContainerLenNil))
 	x.line(")")
 	x.line("var (")
-	x.line("errCodecSelferOnlyMapOrArrayEncodeToStruct" + x.xs + " = " + "\nerrors.New(`only encoded map or array can be decoded into a struct`)")
+	x.line("errCodecSelferOnlyMapOrArrayEncodeToStruct" + x.xs + " = " + "errors.New(`only encoded map or array can be decoded into a struct`)")
 	x.line(")")
 	x.line("")
 
@@ -348,7 +351,7 @@ func Gen(w io.Writer, buildTags, pkgName, uid string, noExtensions bool,
 	x.linef("if %sGenVersion != %v {", x.cpfx, genVersion)
 	x.line("_, file, _, _ := runtime.Caller(0)")
 	x.linef("ver := strconv.FormatInt(int64(%sGenVersion), 10)", x.cpfx)
-	x.outf(`panic("codecgen version mismatch: current: %v, need " + ver + ". Re-generate file: " + file)`, genVersion)
+	x.outf(`panic(errors.New("codecgen version mismatch: current: %v, need " + ver + ". Re-generate file: " + file))`, genVersion)
 	x.linef("}")
 	if len(imKeys) > 0 {
 		x.line("if false { // reference the types, but skip this branch at build/run time")
@@ -380,7 +383,7 @@ func Gen(w io.Writer, buildTags, pkgName, uid string, noExtensions bool,
 		case reflect.Map:
 			x.encMapFallback("v", t)
 		default:
-			panic(errGenExpectArrayOrMap)
+			halt.onerror(errGenExpectArrayOrMap)
 		}
 		x.line("}")
 		x.line("")
@@ -395,7 +398,7 @@ func Gen(w io.Writer, buildTags, pkgName, uid string, noExtensions bool,
 		case reflect.Map:
 			x.decMapFallback("v", rtid, t)
 		default:
-			panic(errGenExpectArrayOrMap)
+			halt.onerror(errGenExpectArrayOrMap)
 		}
 		x.line("}")
 		x.line("")
@@ -479,16 +482,12 @@ func (x *genRunner) varsfxreset() {
 
 func (x *genRunner) out(s string) {
 	_, err := io.WriteString(x.w, s)
-	if err != nil {
-		panic(err)
-	}
+	genCheckErr(err)
 }
 
 func (x *genRunner) outf(s string, params ...interface{}) {
 	_, err := fmt.Fprintf(x.w, s, params...)
-	if err != nil {
-		panic(err)
-	}
+	genCheckErr(err)
 }
 
 func (x *genRunner) line(s string) {
@@ -512,8 +511,6 @@ func (x *genRunner) linef(s string, params ...interface{}) {
 }
 
 func (x *genRunner) genTypeName(t reflect.Type) (n string) {
-	// defer func() { xdebugf(">>>> ####: genTypeName: t: %v, name: '%s'\n", t, n) }()
-
 	// if the type has a PkgPath, which doesn't match the current package,
 	// then include it.
 	// We cannot depend on t.String() because it includes current package,
@@ -1178,15 +1175,11 @@ func (x *genRunner) encListFallback(varname string, t reflect.Type) {
 			Label, Chan, Slice, Sfx string
 		}
 		tm, err := template.New("").Parse(genEncChanTmpl)
-		if err != nil {
-			panic(err)
-		}
+		genCheckErr(err)
 		x.linef("if %s == nil { r.EncodeNil() } else { ", varname)
 		x.linef("var sch%s []%s", i, x.genTypeName(t.Elem()))
 		err = tm.Execute(x.w, &ts{"Lsch" + i, varname, "sch" + i, i})
-		if err != nil {
-			panic(err)
-		}
+		genCheckErr(err)
 		if elemBytes {
 			x.linef("r.EncodeStringBytesRaw([]byte(%s))", "sch"+i)
 			x.line("}")
@@ -1209,7 +1202,7 @@ func (x *genRunner) encListFallback(varname string, t reflect.Type) {
 
 func (x *genRunner) encMapFallback(varname string, t reflect.Type) {
 	x.linef("if %s == nil { r.EncodeNil(); return }", varname)
-	// NOTE: Canonical Option is not honored
+	// MARKER: Canonical Option is not honored
 	i := x.varsfx()
 	x.line("z.EncWriteMapStart(len(" + varname + "))")
 	x.linef("for %sk%s, %sv%s := range %s {", genTempVarPfx, i, genTempVarPfx, i, varname)
@@ -1581,12 +1574,8 @@ func (x *genRunner) decListFallback(varname string, rtid uintptr, t reflect.Type
 		return t.Kind() == reflect.Chan
 	}
 	tm, err := template.New("").Funcs(funcs).Parse(genDecListTmpl)
-	if err != nil {
-		panic(err)
-	}
-	if err = tm.Execute(x.w, &ts); err != nil {
-		panic(err)
-	}
+	genCheckErr(err)
+	genCheckErr(tm.Execute(x.w, &ts))
 }
 
 func (x *genRunner) decMapFallback(varname string, rtid uintptr, t reflect.Type) {
@@ -1635,12 +1624,8 @@ func (x *genRunner) decMapFallback(varname string, rtid uintptr, t reflect.Type)
 	}
 
 	tm, err := template.New("").Funcs(funcs).Parse(genDecMapTmpl)
-	if err != nil {
-		panic(err)
-	}
-	if err = tm.Execute(x.w, &ts); err != nil {
-		panic(err)
-	}
+	genCheckErr(err)
+	genCheckErr(tm.Execute(x.w, &ts))
 }
 
 func (x *genRunner) decStructMapSwitch(kName string, varname string, rtid uintptr, t reflect.Type) {
@@ -1811,7 +1796,7 @@ func (x *genRunner) newFastpathGenV(t reflect.Type) (v fastpathGenV) {
 		v.MapKey = x.genTypeName(tk)
 		v.Size = int(te.Size() + tk.Size())
 	default:
-		panic("unexpected type for newFastpathGenV. Requires map or slice type")
+		halt.onerror(errGenUnexpectedTypeFastpath)
 	}
 	return
 }
@@ -2090,35 +2075,44 @@ func genInternalDecCommandAsString(s string) string {
 	case "bool":
 		return "d.d.DecodeBool()"
 	default:
-		panic(errors.New("gen internal: unknown type for decode: " + s))
+		halt.onerror(errors.New("gen internal: unknown type for decode: " + s))
 	}
+	return ""
 }
+
+// func genInternalSortType(s string, elem bool) string {
+// 	for _, v := range [...]string{
+// 		"int",
+// 		"uint",
+// 		"float",
+// 		"bool",
+// 		"string",
+// 		"bytes", "[]uint8", "[]byte",
+// 	} {
+// 		if v == "[]byte" || v == "[]uint8" {
+// 			v = "bytes"
+// 		}
+// 		if strings.HasPrefix(s, v) {
+// 			if v == "int" || v == "uint" || v == "float" {
+// 				v += "64"
+// 			}
+// 			if elem {
+// 				return v
+// 			}
+// 			return v + "Slice"
+// 		}
+// 	}
+// 	halt.onerror(errors.New("sorttype: unexpected type: " + s))
+// }
 
 func genInternalSortType(s string, elem bool) string {
-	for _, v := range [...]string{
-		"int",
-		"uint",
-		"float",
-		"bool",
-		"string",
-		"bytes", "[]uint8", "[]byte",
-	} {
-		if v == "[]byte" || v == "[]uint8" {
-			v = "bytes"
-		}
-		if strings.HasPrefix(s, v) {
-			if v == "int" || v == "uint" || v == "float" {
-				v += "64"
-			}
-			if elem {
-				return v
-			}
-			return v + "Slice"
-		}
+	if elem {
+		return s
 	}
-	panic("sorttype: unexpected type: " + s)
+	return s + "Slice"
 }
 
+// MARKER: keep in sync with codecgen/gen.go
 func genStripVendor(s string) string {
 	// HACK: Misbehaviour occurs in go 1.5. May have to re-visit this later.
 	// if s contains /vendor/ OR startsWith vendor/, then return everything after it.
@@ -2191,65 +2185,12 @@ func genInternalInit() {
 	mapvaltypes = types[:]
 
 	if genFastpathTrimTypes {
-		slicetypes = []string{
-			"interface{}",
-			"string",
-			"[]byte",
-			"float32",
-			"float64",
-			"uint",
-			// "uint8", // no need for fastpath of []uint8, as it is handled specially
-			"uint16",
-			"uint32",
-			"uint64",
-			// "uintptr",
-			"int",
-			"int8",
-			"int16",
-			"int32",
-			"int64",
-			"bool",
-		}
+		// Note: we only create fast-paths for commonly used types.
+		// Consequently, things like int8, uint16, uint, etc are commented out.
 
-		mapkeytypes = []string{
-			//"interface{}",
-			"string",
-			//"[]byte",
-			//"float32",
-			//"float64",
-			"uint",
-			"uint8",
-			//"uint16",
-			//"uint32",
-			"uint64",
-			//"uintptr",
-			"int",
-			//"int8",
-			//"int16",
-			//"int32",
-			"int64",
-			// "bool",
-		}
-
-		mapvaltypes = []string{
-			"interface{}",
-			"string",
-			"[]byte",
-			"uint",
-			"uint8",
-			//"uint16",
-			//"uint32",
-			"uint64",
-			// "uintptr",
-			"int",
-			//"int8",
-			//"int16",
-			//"int32",
-			"int64",
-			"float32",
-			"float64",
-			"bool",
-		}
+		slicetypes = genInternalFastpathSliceTypes()
+		mapkeytypes = genInternalFastpathMapKeyTypes()
+		mapvaltypes = genInternalFastpathMapValueTypes()
 	}
 
 	// var mapkeytypes [len(&types) - 1]string // skip bool
@@ -2303,9 +2244,6 @@ func genInternalInit() {
 }
 
 // genInternalGoFile is used to generate source files from templates.
-// It is run by the program author alone.
-// Unfortunately, it has to be exported so that it can be called from a command line tool.
-// *** DO NOT USE ***
 func genInternalGoFile(r io.Reader, w io.Writer) (err error) {
 	genInternalOnce.Do(genInternalInit)
 
@@ -2336,4 +2274,183 @@ func genInternalGoFile(r io.Reader, w io.Writer) (err error) {
 	}
 	w.Write(bout)
 	return
+}
+
+func genInternalFastpathSliceTypes() []string {
+	return []string{
+		"interface{}",
+		"string",
+		"[]byte",
+		// "float32",
+		"float64",
+		// "uint",
+		// "uint8", // no need for fastpath of []uint8, as it is handled specially
+		// "uint16",
+		// "uint32",
+		"uint64",
+		// "uintptr",
+		"int",
+		// "int8",
+		// "int16",
+		"int32", // rune
+		"int64",
+		"bool",
+	}
+}
+
+func genInternalFastpathMapKeyTypes() []string {
+	return []string{
+		// "interface{}",
+		"string",
+		// "[]byte",
+		// "float32",
+		// "float64",
+		// "uint",
+		"uint8",
+		// "uint16",
+		// "uint32",
+		"uint64",
+		// "uintptr",
+		"int",
+		// "int8",
+		// "int16",
+		// "int32",
+		"int64",
+		// "bool",
+	}
+}
+
+func genInternalFastpathMapValueTypes() []string {
+	return []string{
+		"interface{}",
+		"string",
+		"[]byte",
+		// "uint",
+		"uint8",
+		// "uint16",
+		// "uint32",
+		"uint64",
+		// "uintptr",
+		"int",
+		//"int8",
+		// "int16",
+		// "int32", // rune (mostly used for unicode)
+		"int64",
+		// "float32",
+		"float64",
+		"bool",
+	}
+}
+
+// sort-slice ...
+// generates sort implementations for
+// various slice types and combination slice+reflect.Value types.
+//
+// The combination slice+reflect.Value types are used
+// during canonical encode, and the others are used during fast-path
+// encoding of map keys.
+
+// genInternalSortableTypes returns the types
+// that are used for fast-path canonical's encoding of maps.
+//
+// For now, we only support the highest sizes for
+// int64, uint64, float64, bool, string, bytes.
+func genInternalSortableTypes() []string {
+	return genInternalFastpathMapKeyTypes()
+}
+
+// genInternalSortablePlusTypes returns the types
+// that are used for reflection-based canonical's encoding of maps.
+//
+// For now, we only support the highest sizes for
+// int64, uint64, float64, bool, string, bytes.
+func genInternalSortablePlusTypes() []string {
+	return []string{
+		"string",
+		"float64",
+		"uint64",
+		// "uintptr",
+		"int64",
+		"bool",
+		"time",
+		"bytes",
+	}
+}
+
+func genTypeForShortName(s string) string {
+	switch s {
+	case "time":
+		return "time.Time"
+	case "bytes":
+		return "[]byte"
+	}
+	return s
+}
+
+func genArgs(args ...interface{}) map[string]interface{} {
+	m := make(map[string]interface{}, len(args)/2)
+	for i := 0; i < len(args); {
+		m[args[i].(string)] = args[i+1]
+		i += 2
+	}
+	return m
+}
+
+func genEndsWith(s0 string, sn ...string) bool {
+	for _, s := range sn {
+		if strings.HasSuffix(s0, s) {
+			return true
+		}
+	}
+	return false
+}
+
+func genCheckErr(err error) {
+	halt.onerror(err)
+}
+
+func genRunSortTmpl2Go(fnameIn, fnameOut string) {
+	var err error
+
+	funcs := make(template.FuncMap)
+	funcs["sortables"] = genInternalSortableTypes
+	funcs["sortablesplus"] = genInternalSortablePlusTypes
+	funcs["tshort"] = genTypeForShortName
+	funcs["endswith"] = genEndsWith
+	funcs["args"] = genArgs
+
+	t := template.New("").Funcs(funcs)
+	fin, err := os.Open(fnameIn)
+	genCheckErr(err)
+	defer fin.Close()
+	fout, err := os.Create(fnameOut)
+	genCheckErr(err)
+	defer fout.Close()
+	tmplstr, err := ioutil.ReadAll(fin)
+	genCheckErr(err)
+	t, err = t.Parse(string(tmplstr))
+	genCheckErr(err)
+	var out bytes.Buffer
+	err = t.Execute(&out, 0)
+	genCheckErr(err)
+	bout, err := format.Source(out.Bytes())
+	if err != nil {
+		fout.Write(out.Bytes()) // write out if error, so we can still see.
+	}
+	genCheckErr(err)
+	// write out if error, as much as possible, so we can still see.
+	_, err = fout.Write(bout)
+	genCheckErr(err)
+}
+
+func genRunTmpl2Go(fnameIn, fnameOut string) {
+	// println("____ " + fnameIn + " --> " + fnameOut + " ______")
+	fin, err := os.Open(fnameIn)
+	genCheckErr(err)
+	defer fin.Close()
+	fout, err := os.Create(fnameOut)
+	genCheckErr(err)
+	defer fout.Close()
+	err = genInternalGoFile(fin, fout)
+	genCheckErr(err)
 }

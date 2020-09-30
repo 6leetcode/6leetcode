@@ -1,6 +1,6 @@
 // comment this out // + build ignore
 
-// Copyright (c) 2012-2018 Ugorji Nwoke. All rights reserved.
+// Copyright (c) 2012-2020 Ugorji Nwoke. All rights reserved.
 // Use of this source code is governed by a MIT license found in the LICENSE file.
 
 // Code generated from gen-helper.go.tmpl - DO NOT EDIT.
@@ -10,7 +10,7 @@ package codec
 import "encoding"
 
 // GenVersion is the current version of codecgen.
-const GenVersion = 16
+const GenVersion = 17
 
 // This file is used to generate helper code for codecgen.
 // The values here i.e. genHelper(En|De)coder are not to be used directly by
@@ -44,7 +44,7 @@ type genHelperDecDriver struct {
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 type genHelperEncoder struct {
-	M must
+	M mustHdl
 	F fastpathT
 	e *Encoder
 }
@@ -157,10 +157,10 @@ func (f genHelperDecoder) DecBinary() bool {
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecSwallow() { f.d.swallow() }
 
-// FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
-func (f genHelperDecoder) DecScratchBuffer() []byte {
-	return f.d.b[:]
-}
+// // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
+// func (f genHelperDecoder) DecScratchBuffer() []byte {
+// 	return f.d.b[:]
+// }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecScratchArrayBuffer() *[decScratchByteArrayLen]byte {
@@ -194,7 +194,7 @@ func (f genHelperDecoder) DecArrayCannotExpand(sliceLen, streamLen int) {
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecTextUnmarshal(tm encoding.TextUnmarshaler) {
 	if fnerr := tm.UnmarshalText(f.d.d.DecodeStringAsBytes()); fnerr != nil {
-		panic(fnerr)
+		halt.onerror(fnerr)
 	}
 }
 
@@ -202,15 +202,19 @@ func (f genHelperDecoder) DecTextUnmarshal(tm encoding.TextUnmarshaler) {
 func (f genHelperDecoder) DecJSONUnmarshal(tm jsonUnmarshaler) {
 	// bs := f.dd.DecodeStringAsBytes()
 	// grab the bytes to be read, as UnmarshalJSON needs the full JSON so as to unmarshal it itself.
-	if fnerr := tm.UnmarshalJSON(f.d.nextValueBytes()); fnerr != nil {
-		panic(fnerr)
+	bs := f.d.blist.get(256)[:0]
+	bs = f.d.d.nextValueBytes(bs)
+	fnerr := tm.UnmarshalJSON(bs)
+	f.d.blist.put(bs)
+	if fnerr != nil {
+		halt.onerror(fnerr)
 	}
 }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecBinaryUnmarshal(bm encoding.BinaryUnmarshaler) {
 	if fnerr := bm.UnmarshalBinary(f.d.d.DecodeBytes(nil, true)); fnerr != nil {
-		panic(fnerr)
+		halt.onerror(fnerr)
 	}
 }
 
