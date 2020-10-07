@@ -1,6 +1,16 @@
 ### [K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array)
 
-<p>Given an array of integers and an integer <b>k</b>, you need to find the number of <b>unique</b> k-diff pairs in the array. Here a <b>k-diff</b> pair is defined as an integer pair (i, j), where <b>i</b> and <b>j</b> are both numbers in the array and their absolute difference is <b>k</b>.</p>
+<p>Given an array of integers <code>nums</code> and an integer <code>k</code>, return <em>the number of <b>unique</b> k-diff pairs in the array</em>.</p>
+
+<p>A <b>k-diff</b> pair is&nbsp;an integer pair <code>(nums[i], nums[j])</code>, where the following are true:</p>
+
+<ul>
+	<li><code>0 &lt;= i, j &lt; nums.length</code></li>
+	<li><code>i != j</code></li>
+	<li><code>|nums[i] - nums[j]| == k</code></li>
+</ul>
+
+<p><strong>Notice</strong>&nbsp;that <code>|val|</code> denotes the absolute value of <code>val</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -8,8 +18,8 @@
 <pre>
 <strong>Input:</strong> nums = [3,1,4,1,5], k = 2
 <strong>Output:</strong> 2
-<strong>Explanation:</strong><b> </b>There are two 2-diff pairs in the array, (1, 3) and (3, 5).
-Although we have two 1s in the input, we should only return the number of <b>unique</b> pairs.
+<strong>Explanation:</strong> There are two 2-diff pairs in the array, (1, 3) and (3, 5).
+Although we have two 1s in the input, we should only return the number of <strong>unique</strong> pairs.
 </pre>
 
 <p><strong>Example 2:</strong></p>

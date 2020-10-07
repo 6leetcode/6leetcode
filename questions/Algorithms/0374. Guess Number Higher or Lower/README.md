@@ -9,8 +9,8 @@
 <p>You call a pre-defined API <code>int guess(int num)</code>, which returns 3 possible results:</p>
 
 <ul>
-	<li><code>-1</code>: The number I picked is lower than your guess (i.e. <code>pick &gt; num</code>).</li>
-	<li><code>1</code>: The number I picked is higher than your guess (i.e. <code>pick &lt; num</code>).</li>
+	<li><code>-1</code>: The number I picked is lower than your guess (i.e. <code>pick &lt; num</code>).</li>
+	<li><code>1</code>: The number I picked is higher than your guess (i.e. <code>pick &gt; num</code>).</li>
 	<li><code>0</code>: The number I picked is equal to your guess (i.e. <code>pick == num</code>).</li>
 </ul>
 
