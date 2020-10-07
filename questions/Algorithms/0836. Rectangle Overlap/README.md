@@ -6,23 +6,24 @@
 
 <p>Given two (axis-aligned) rectangles, return whether&nbsp;they overlap.</p>
 
+<p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-
-<pre>
-<strong>Input: </strong>rec1 = [0,0,2,2], rec2 = [1,1,3,3]
-<strong>Output: </strong>true
+<pre><strong>Input:</strong> rec1 = [0,0,2,2], rec2 = [1,1,3,3]
+<strong>Output:</strong> true
+</pre><p><strong>Example 2:</strong></p>
+<pre><strong>Input:</strong> rec1 = [0,0,1,1], rec2 = [1,0,2,1]
+<strong>Output:</strong> false
+</pre><p><strong>Example 3:</strong></p>
+<pre><strong>Input:</strong> rec1 = [0,0,1,1], rec2 = [2,2,3,3]
+<strong>Output:</strong> false
 </pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
-<p><strong>Example 2:</strong></p>
-
-<pre>
-<strong>Input: </strong>rec1 = [0,0,1,1], rec2 = [1,0,2,1]
-<strong>Output: </strong>false
-</pre>
-
-<p><strong>Notes:</strong></p>
-
-<ol>
-	<li>Both rectangles <code>rec1</code> and <code>rec2</code> are lists of 4 integers.</li>
-	<li>All coordinates in rectangles will be between&nbsp;<code>-10^9 </code>and<code> 10^9</code>.</li>
-</ol>
+<ul>
+	<li><code>rect1.length == 4</code></li>
+	<li><code>rect2.length == 4</code></li>
+	<li><code><sup>9</sup> &lt;= rec1[i], rec2[i] &lt;= 10<sup>9</sup></code></li>
+	<li><code>rec1[0] &lt;= rec1[2]</code> and <code>rec1[1] &lt;= rec1[3]</code></li>
+	<li><code>rec2[0] &lt;= rec2[2]</code> and <code>rec2[1] &lt;= rec2[3]</code></li>
+</ul>

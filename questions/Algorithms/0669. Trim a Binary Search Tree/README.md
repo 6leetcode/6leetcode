@@ -46,5 +46,5 @@
 	<li><code>0 &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
 	<li>The value of each node in the tree is <strong>unique</strong>.</li>
 	<li><code>root</code> is guaranteed to be a valid binary search tree.</li>
-	<li><code>0 &lt;= l &lt;= r &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= low &lt;= high &lt;= 10<sup>4</sup></code></li>
 </ul>

@@ -35,19 +35,13 @@
 <pre>
 <strong>Input:</strong> s = &quot;0&quot;
 <strong>Output:</strong> 0
+<strong>Explanation:</strong> There is no character that is mapped to a number starting with &#39;0&#39;. We cannot ignore a zero when we face it while decoding. So, each &#39;0&#39; should be part of &quot;10&quot; --&gt; &#39;J&#39; or &quot;20&quot; --&gt; &#39;T&#39;.
 </pre>
 
 <p><strong>Example 4:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;1&quot;
-<strong>Output:</strong> 1
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;2&quot;
 <strong>Output:</strong> 1
 </pre>
 

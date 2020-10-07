@@ -6,27 +6,35 @@
 
 <p>You are given a string <code>s</code>, an <strong>infix expression</strong> containing operands, the operators described above, and parentheses <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code>.</p>
 
-<p>Return <em>the <strong>binary expression tree</strong>,&nbsp;which its <strong><a href="https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)" target="_blank">in-order traversal</a></strong>&nbsp;reproduce&nbsp;</em><code>s</code><em>.</em></p>
+<p>Return <em>any valid&nbsp;<strong>binary expression tree</strong>,&nbsp;which its <strong><a href="https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)" target="_blank">in-order traversal</a></strong>&nbsp;reproduces&nbsp;</em><code>s</code>&nbsp;after omitting&nbsp;the parenthesis from it (see examples below)<em>.</em></p>
 
 <p><strong>Please note that order of operations applies in </strong><code>s</code><strong>.</strong> That is, expressions in parentheses are evaluated first, and multiplication and division happen before addition and subtraction.</p>
+
+<p>Operands must also appear in the <strong>same order</strong> in both <code>s</code>&nbsp;and the in-order traversal of the tree.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/09/20/sample_1_1978.png" style="width: 190px; height: 285px;" /></strong></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-2.png" style="width: 201px; height: 281px;" /></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;2-3/(5*2)+1&quot;
 <strong>Output:</strong> [+,-,1,2,/,null,null,null,null,3,*,null,null,5,2]
+<strong>Explanation: </strong>The inorder traversal of the tree above is 2-3/5*2+1 which is the same as s without the parenthesis. The tree also produces the correct result and its operands are in the same order as they appear in s.
+The tree below is also a valid binary expression tree with the same inorder traversal as s:
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-1.png" style="width: 201px; height: 281px;" />
+The third tree below however is not valid. Although it produces the same result and is equivalent to the above trees, its inorder traversal doesn&#39;t produce s and its operands are not in the same order as s.
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-3.png" style="width: 281px; height: 281px;" />
 </pre>
 
 <p><strong>Example 2:</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/09/20/sample_2_1978.png" style="width: 224px; height: 170px;" /></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-4.png" style="width: 281px; height: 161px;" /></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;3*4-2*5&quot;
 <strong>Output:</strong> [-,*,*,3,4,2,5]
+<strong>Explanation: </strong>The tree above is the only valid tree whose inorder traversal produces s.
 </pre>
 
 <p><strong>Example 3:</strong></p>
@@ -34,6 +42,7 @@
 <pre>
 <strong>Input:</strong> s = &quot;1+2+3+4+5&quot;
 <strong>Output:</strong> [+,+,5,+,4,null,null,+,3,null,null,1,2]
+<strong>Explanation: </strong>The tree [+,+,5,+,+,null,null,1,2,3,4] is also one of many other valid trees.
 </pre>
 
 <p>&nbsp;</p>

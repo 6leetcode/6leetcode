@@ -21,8 +21,8 @@
 <p><strong>Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> n = 1
-<strong>Output:</strong> true
+<strong>Input:</strong> n = 11
+<strong>Output:</strong> false
 <strong>Explanation:</strong> The binary representation of 11 is: 1011.</pre>
 
 <p><strong>Example 4:</strong></p>

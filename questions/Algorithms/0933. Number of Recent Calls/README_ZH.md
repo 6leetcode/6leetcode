@@ -23,7 +23,7 @@
 
 <strong>解释：</strong>
 RecentCounter recentCounter = new RecentCounter();
-recentCounter.ping(1);     // requests = [&lt;u&gt;1&lt;/u&gt;]，范围是 [-2999,1]，返回 1
+recentCounter.ping(1);     // requests = [1]，范围是 [-2999,1]，返回 1
 recentCounter.ping(100);   // requests = [&lt;u&gt;1&lt;/u&gt;, &lt;u&gt;100&lt;/u&gt;]，范围是 [-2900,100]，返回 2
 recentCounter.ping(3001);  // requests = [&lt;u&gt;1&lt;/u&gt;, &lt;u&gt;100&lt;/u&gt;, &lt;u&gt;3001&lt;/u&gt;]，范围是 [1,3001]，返回 3
 recentCounter.ping(3002);  // requests = [1, &lt;u&gt;100&lt;/u&gt;, &lt;u&gt;3001&lt;/u&gt;, &lt;u&gt;3002&lt;/u&gt;]，范围是 [2,3002]，返回 3

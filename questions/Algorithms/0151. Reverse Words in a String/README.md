@@ -1,12 +1,12 @@
 ### [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)
 
-<p>Given an input string, reverse the string word by word.</p>
+<p>Given an input string <code>s</code>, reverse the order of the <strong>words</strong>.</p>
 
-<p>A <strong>word</strong> is defined as a sequence of non-space characters.</p>
+<p>A <strong>word</strong> is defined as a sequence of non-space characters. The <strong>words</strong> in <code>s</code> will be separated by at least one space.</p>
 
-<p><strong>Notice</strong> that the input string may contain leading or trailing spaces. However, your reversed string should not contain leading or trailing spaces.</p>
+<p>Return <em>a string of the words in reverse order concatenated by a single space.</em></p>
 
-<p>Also, <strong>notice</strong> that you need to reduce multiple spaces between two words to a single space in the reversed string.</p>
+<p><b>Note</b> that <code>s</code> may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -60,7 +60,7 @@
 <p><strong>Follow up:</strong></p>
 
 <ul>
-	<li>Could you solve it <strong>in-place</strong> in <code>O(1)</code> extra space.</li>
+	<li>Could you solve it <strong>in-place</strong> with <code>O(1)</code> extra space?</li>
 </ul>
 
 <p>&nbsp;</p>
