@@ -45,4 +45,5 @@ myStack.empty(); // return False
 <ul>
 	<li><code>1 &lt;= x &lt;= 9</code></li>
 	<li>At most <code>100</code>&nbsp;calls will be made to <code>push</code>, <code>pop</code>, <code>top</code>, and <code>empty</code>.</li>
+	<li>All the calls to <code>pop</code> and <code>top</code> are valid.</li>
 </ul>

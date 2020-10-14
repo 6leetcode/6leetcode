@@ -8,29 +8,15 @@
 <p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> s = &quot;cdadabcc&quot;
-<strong>Output:</strong> &quot;adbc&quot;
+<strong>Input:</strong> s = &quot;bcabc&quot;
+<strong>Output:</strong> &quot;abc&quot;
 </pre>
 
 <p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> s = &quot;abcd&quot;
-<strong>Output:</strong> &quot;abcd&quot;
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;ecbacba&quot;
-<strong>Output:</strong> &quot;eacb&quot;
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;leetcode&quot;
-<strong>Output:</strong> &quot;letcod&quot;
+<strong>Input:</strong> s = &quot;cbacdcbc&quot;
+<strong>Output:</strong> &quot;acdb&quot;
 </pre>
 
 <p>&nbsp;</p>

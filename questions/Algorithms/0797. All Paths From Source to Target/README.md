@@ -1,8 +1,8 @@
 ### [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target)
 
-<p>Given a directed&nbsp;acyclic graph of <code>N</code> nodes.&nbsp;Find all possible paths from node <code>0</code> to node <code>N-1</code>, and return them in any order.</p>
+<p>Given a directed&nbsp;acyclic graph (<strong>DAG</strong>) of <code>n</code> nodes labeled from 0 to n - 1,&nbsp;find all possible paths from node <code>0</code> to node <code>n - 1</code>, and return them in any order.</p>
 
-<p>The graph is given as follows:&nbsp; the nodes are 0, 1, ..., graph.length - 1.&nbsp; graph[i] is a list of all nodes j for which the edge (i, j) exists.</p>
+<p>The graph is given as follows:&nbsp;<code>graph[i]</code> is a list of all nodes you can visit from node <code>i</code>&nbsp;(i.e., there is a directed edge from node <code>i</code> to node <code>graph[i][j]</code>).</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -45,6 +45,9 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The number of nodes in the graph will be in the range <code>[2, 15]</code>.</li>
-	<li>You can print different paths in any order, but you should keep the order of nodes inside one path.</li>
+	<li><code>n == graph.length</code></li>
+	<li><code>2 &lt;= n &lt;= 15</code></li>
+	<li><code>0 &lt;= graph[i][j] &lt; n</code></li>
+	<li><code>graph[i][j] != i</code> (i.e., there will be no self-loops).</li>
+	<li>The input graph is <strong>guaranteed</strong> to be a <strong>DAG</strong>.</li>
 </ul>

@@ -28,7 +28,7 @@
 <p><strong>Example 4:</strong></p>
 
 <pre>
-<strong>Input:</strong> n = 2
+<strong>Input:</strong> n = 10
 <strong>Output:</strong> true
 <strong>Explanation:</strong> The binary representation of 10 is: 1010.</pre>
 
