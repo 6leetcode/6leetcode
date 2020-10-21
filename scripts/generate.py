@@ -44,32 +44,6 @@ def lang(_list, problem_name, code_prefix):
                   problem_name.replace(" ", "%20") + "/" + _list[i] + ")"
     return result
 
-
-# def genMakefile(pathname, suffix):
-#     lang_name = suffix
-#     if suffix == "py":
-#         lang_name = "python"
-#     elif suffix == "js":
-#         lang_name = "node"
-#     elif suffix == "rs":
-#         lang_name = "rust"
-#     elif suffix == "go":
-#         lang_name = "golang"
-#     elif suffix == "sh":
-#         lang_name = "shell"
-#     with open(pathname + "/" + lang_name + ".makefile", "w+") as f:
-#         targets = []
-#         for p in problemsPath:
-#             files = os.listdir(p)
-#             files.sort()
-#             for _inner in files:
-#                 if os.path.splitext(_inner)[1] == suffix:
-#                     targets.append("\"" + p.replace(" ", "\\ ") + "\"")
-#         f.writelines("DIRS = " + " ".join(targets))
-#         f.writelines("\nrun: ${DIRS}\n${DIRS}:")
-#         f.writelines("\n\tmake -C $@ " + lang_name + "\n")
-
-
 if __name__ == "__main__":
     c = {}
     cc = {}
