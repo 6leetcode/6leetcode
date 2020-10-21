@@ -3,6 +3,7 @@ package gorm
 import (
 	"database/sql"
 	"database/sql/driver"
+	"encoding/json"
 	"reflect"
 
 	"gorm.io/gorm/clause"
@@ -22,6 +23,18 @@ func (n DeletedAt) Value() (driver.Value, error) {
 		return nil, nil
 	}
 	return n.Time, nil
+}
+
+func (n DeletedAt) MarshalJSON() ([]byte, error) {
+	return json.Marshal(n.Time)
+}
+
+func (n *DeletedAt) UnmarshalJSON(b []byte) error {
+	err := json.Unmarshal(b, &n.Time)
+	if err == nil {
+		n.Valid = true
+	}
+	return err
 }
 
 func (DeletedAt) QueryClauses(f *schema.Field) []clause.Interface {
@@ -44,6 +57,19 @@ func (sd SoftDeleteQueryClause) MergeClause(*clause.Clause) {
 
 func (sd SoftDeleteQueryClause) ModifyStatement(stmt *Statement) {
 	if _, ok := stmt.Clauses["soft_delete_enabled"]; !ok {
+		if c, ok := stmt.Clauses["WHERE"]; ok {
+			if where, ok := c.Expression.(clause.Where); ok && len(where.Exprs) > 1 {
+				for _, expr := range where.Exprs {
+					if orCond, ok := expr.(clause.OrConditions); ok && len(orCond.Exprs) == 1 {
+						where.Exprs = []clause.Expression{clause.And(where.Exprs...)}
+						c.Expression = where
+						stmt.Clauses["WHERE"] = c
+						break
+					}
+				}
+			}
+		}
+
 		stmt.AddClause(clause.Where{Exprs: []clause.Expression{
 			clause.Eq{Column: clause.Column{Table: clause.CurrentTable, Name: sd.Field.DBName}, Value: nil},
 		}})
