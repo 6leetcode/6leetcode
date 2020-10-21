@@ -44,6 +44,7 @@ def lang(_list, problem_name, code_prefix):
                   problem_name.replace(" ", "%20") + "/" + _list[i] + ")"
     return result
 
+
 if __name__ == "__main__":
     c = {}
     cc = {}
@@ -65,6 +66,8 @@ if __name__ == "__main__":
     problemsPath = []
     for base in os.listdir(basedir):
         for d in os.listdir(os.path.join(basedir, base)):
+            if base == "library":
+                continue
             problemsPath.append("questions/" + base + "/" + d)
             problems.append(d)
             c[d] = []
