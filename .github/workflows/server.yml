@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         go: ["1.15"]
-        node: ["14"]
+        node: ["15"]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
