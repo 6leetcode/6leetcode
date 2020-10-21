@@ -1,8 +1,3 @@
-/*
-# @Time : 2019-07-19 14:13
-# @Author : smallForest
-# @SoftWare : GoLand
-*/
 package main
 
 import "fmt"
