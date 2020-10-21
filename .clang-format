@@ -1,7 +1,7 @@
 BasedOnStyle: LLVM
 AccessModifierOffset: -2
 AlignAfterOpenBracket: true
-AlignConsecutiveAssignments: true
+AlignConsecutiveAssignments: false # 等号对齐
 AlignEscapedNewlinesLeft: false
 AlignOperands: true
 AlignTrailingComments: true
@@ -21,7 +21,7 @@ BreakBeforeBraces: Attach
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializersBeforeComma: false
 ColumnLimit: 0
-CommentPragmas: '^ IWYU pragma:'
+CommentPragmas: "^ IWYU pragma:"
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
