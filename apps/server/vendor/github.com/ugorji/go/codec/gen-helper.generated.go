@@ -10,7 +10,7 @@ package codec
 import "encoding"
 
 // GenVersion is the current version of codecgen.
-const GenVersion = 17
+const GenVersion = 19
 
 // This file is used to generate helper code for codecgen.
 // The values here i.e. genHelper(En|De)coder are not to be used directly by
@@ -99,13 +99,8 @@ func (f genHelperEncoder) EncBinaryMarshal(iv encoding.BinaryMarshaler) {
 func (f genHelperEncoder) EncRaw(iv Raw) { f.e.rawBytes(iv) }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
-func (f genHelperEncoder) I2Rtid(v interface{}) uintptr {
-	return i2rtid(v)
-}
-
-// FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
-func (f genHelperEncoder) Extension(rtid uintptr) (xfn *extTypeTagFn) {
-	return f.e.h.getExt(rtid, true)
+func (f genHelperEncoder) Extension(v interface{}) (xfn *extTypeTagFn) {
+	return f.e.h.getExtForI(v)
 }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
@@ -117,9 +112,6 @@ func (f genHelperEncoder) EncExtension(v interface{}, xfFn *extTypeTagFn) {
 func (f genHelperEncoder) WriteStr(s string) {
 	f.e.w().writestr(s)
 }
-
-// FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
-func (f genHelperEncoder) BytesView(v string) []byte { return bytesView(v) }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperEncoder) EncWriteMapStart(length int) { f.e.mapStart(length) }
@@ -170,8 +162,8 @@ func (f genHelperDecoder) DecScratchArrayBuffer() *[decScratchByteArrayLen]byte 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecFallback(iv interface{}, chkPtr bool) {
 	rv := rv4i(iv)
-	if chkPtr {
-		f.d.ensureDecodeable(rv)
+	if chkPtr && !isDecodeable(rv) {
+		f.d.haltAsNotDecodeable(rv)
 	}
 	f.d.decodeValue(rv, nil)
 }
@@ -193,29 +185,23 @@ func (f genHelperDecoder) DecArrayCannotExpand(sliceLen, streamLen int) {
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecTextUnmarshal(tm encoding.TextUnmarshaler) {
-	if fnerr := tm.UnmarshalText(f.d.d.DecodeStringAsBytes()); fnerr != nil {
-		halt.onerror(fnerr)
-	}
+	halt.onerror(tm.UnmarshalText(f.d.d.DecodeStringAsBytes()))
 }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecJSONUnmarshal(tm jsonUnmarshaler) {
 	// bs := f.dd.DecodeStringAsBytes()
 	// grab the bytes to be read, as UnmarshalJSON needs the full JSON so as to unmarshal it itself.
-	bs := f.d.blist.get(256)[:0]
+	bs := f.d.blist.get(256)
 	bs = f.d.d.nextValueBytes(bs)
 	fnerr := tm.UnmarshalJSON(bs)
 	f.d.blist.put(bs)
-	if fnerr != nil {
-		halt.onerror(fnerr)
-	}
+	halt.onerror(fnerr)
 }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
 func (f genHelperDecoder) DecBinaryUnmarshal(bm encoding.BinaryUnmarshaler) {
-	if fnerr := bm.UnmarshalBinary(f.d.d.DecodeBytes(nil, true)); fnerr != nil {
-		halt.onerror(fnerr)
-	}
+	halt.onerror(bm.UnmarshalBinary(f.d.d.DecodeBytes(nil, true)))
 }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
@@ -232,8 +218,8 @@ func (f genHelperDecoder) I2Rtid(v interface{}) uintptr {
 }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*
-func (f genHelperDecoder) Extension(rtid uintptr) (xfn *extTypeTagFn) {
-	return f.d.h.getExt(rtid, true)
+func (f genHelperDecoder) Extension(v interface{}) (xfn *extTypeTagFn) {
+	return f.d.h.getExtForI(v)
 }
 
 // FOR USE BY CODECGEN ONLY. IT *WILL* CHANGE WITHOUT NOTICE. *DO NOT USE*

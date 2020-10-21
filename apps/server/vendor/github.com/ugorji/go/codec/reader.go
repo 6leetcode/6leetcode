@@ -30,14 +30,18 @@ type decReader interface {
 	// or EOF. If it sees a non-numeric character, it will unread that.
 	jsonReadNum() []byte
 
+	// jsonReadAsisChars will read json plain characters (anything but " or \)
+	// and return a slice terminated by a non-json asis character.
+	jsonReadAsisChars() []byte
+
 	// skip will skip any byte that matches, and return the first non-matching byte
 	// skip(accept *bitset256) (token byte)
 
 	// readTo will read any byte that matches, stopping once no-longer matching.
 	// readTo(accept *bitset256) (out []byte)
 
-	// readUntil will read, only stopping once it matches the 'stop' byte.
-	readUntil(stop byte, includeLast bool) (out []byte)
+	// readUntil will read, only stopping once it matches the 'stop' byte (which it excludes).
+	readUntil(stop byte) (out []byte)
 }
 
 // ------------------------------------------------
@@ -61,17 +65,13 @@ type ioDecReaderCommon struct {
 
 	l  byte             // last byte
 	ls unreadByteStatus // last byte status
-	_  [2]byte
-	b  [4]byte // tiny buffer for reading single bytes
+
+	b [6]byte // tiny buffer for reading single bytes
 
 	blist *bytesFreelist
 
 	bufr []byte // buffer for readTo/readUntil
 }
-
-// func (z *ioDecReaderCommon) last() byte {
-// 	return z.l
-// }
 
 func (z *ioDecReaderCommon) reset(r io.Reader, blist *bytesFreelist) {
 	z.blist = blist
@@ -92,11 +92,9 @@ func (z *ioDecReaderCommon) numread() uint {
 type ioDecReader struct {
 	ioDecReaderCommon
 
-	// rr io.Reader
 	br io.ByteScanner
 
-	x [64 + 16]byte // for: get struct field name, swallow valueTypeBytes, etc
-	// _ [1]uint64                 // padding
+	x [64 + 48]byte // for: get struct field name, swallow valueTypeBytes, etc
 }
 
 func (z *ioDecReader) reset(r io.Reader, blist *bytesFreelist) {
@@ -227,7 +225,7 @@ func (z *ioDecReader) readn1eof() (b uint8, eof bool) {
 
 func (z *ioDecReader) jsonReadNum() (bs []byte) {
 	z.unreadn1()
-	z.bufr = z.blist.check(z.bufr, 256)[:0]
+	z.bufr = z.blist.check(z.bufr, 256)
 LOOP:
 	i, eof := z.readn1eof()
 	if eof {
@@ -241,6 +239,17 @@ LOOP:
 	return z.bufr
 }
 
+func (z *ioDecReader) jsonReadAsisChars() (bs []byte) {
+	z.bufr = z.blist.check(z.bufr, 256)
+LOOP:
+	i := z.readn1()
+	z.bufr = append(z.bufr, i)
+	if i == '"' || i == '\\' {
+		return z.bufr
+	}
+	goto LOOP
+}
+
 func (z *ioDecReader) skipWhitespace() (token byte) {
 LOOP:
 	token = z.readn1()
@@ -250,15 +259,12 @@ LOOP:
 	return
 }
 
-func (z *ioDecReader) readUntil(stop byte, includeLast bool) []byte {
-	z.bufr = z.blist.check(z.bufr, 256)[:0]
+func (z *ioDecReader) readUntil(stop byte) []byte {
+	z.bufr = z.blist.check(z.bufr, 256)
 LOOP:
 	token := z.readn1()
 	z.bufr = append(z.bufr, token)
 	if token == stop {
-		if includeLast {
-			return z.bufr
-		}
 		return z.bufr[:len(z.bufr)-1]
 	}
 	goto LOOP
@@ -284,8 +290,9 @@ func (z *bufioDecReader) reset(r io.Reader, bufsize int, blist *bytesFreelist) {
 	z.c = 0
 	if cap(z.buf) < bufsize {
 		z.buf = blist.get(bufsize)
+	} else {
+		z.buf = z.buf[:0]
 	}
-	z.buf = z.buf[:0]
 }
 
 func (z *bufioDecReader) readb(p []byte) {
@@ -297,7 +304,17 @@ func (z *bufioDecReader) readb(p []byte) {
 	}
 }
 
-func (z *bufioDecReader) readbFill(p0 []byte, n uint, must bool, eof bool) (isEOF bool, err error) {
+func readbFillHandleErr(err error, must, eof bool) (isEOF bool) {
+	if err == io.EOF {
+		isEOF = true
+	}
+	if must && !(eof && isEOF) {
+		halt.onerror(err)
+	}
+	return
+}
+
+func (z *bufioDecReader) readbFill(p0 []byte, n uint, must, eof bool) (isEOF bool, err error) {
 	// at this point, there's nothing in z.buf to read (z.buf is fully consumed)
 	var p []byte
 	if p0 != nil {
@@ -307,12 +324,7 @@ func (z *bufioDecReader) readbFill(p0 []byte, n uint, must bool, eof bool) (isEO
 	if len(p) > cap(z.buf) {
 		n2, err = readFull(z.r, p)
 		if err != nil {
-			if err == io.EOF {
-				isEOF = true
-			}
-			if must && !(eof && isEOF) {
-				halt.onerror(err)
-			}
+			isEOF = readbFillHandleErr(err, must, eof)
 			return
 		}
 		n += n2
@@ -331,12 +343,7 @@ LOOP:
 	n1, err = z.r.Read(z.buf)
 	n2 = uint(n1)
 	if n2 == 0 && err != nil {
-		if err == io.EOF {
-			isEOF = true
-		}
-		if must && !(eof && isEOF) {
-			halt.onerror(err)
-		}
+		isEOF = readbFillHandleErr(err, must, eof)
 		return
 	}
 	err = nil
@@ -359,10 +366,6 @@ LOOP:
 	}
 	return
 }
-
-// func (z *bufioDecReader) last() byte {
-// 	return z.buf[z.c-1]
-// }
 
 func (z *bufioDecReader) readn1() (b byte) {
 	if z.c >= uint(len(z.buf)) {
@@ -389,7 +392,7 @@ func (z *bufioDecReader) readn1eof() (b byte, eof bool) {
 
 func (z *bufioDecReader) unreadn1() {
 	if z.c == 0 {
-		panic(errDecUnreadByteNothingToRead)
+		halt.onerror(errDecUnreadByteNothingToRead)
 	}
 	z.c--
 	z.n--
@@ -421,7 +424,7 @@ func (z *bufioDecReader) readx(n uint) (bs []byte) {
 
 func (z *bufioDecReader) jsonReadNum() (bs []byte) {
 	z.unreadn1()
-	z.bufr = z.blist.check(z.bufr, 256)[:0]
+	z.bufr = z.blist.check(z.bufr, 256)
 LOOP:
 	i, eof := z.readn1eof()
 	if eof {
@@ -433,6 +436,17 @@ LOOP:
 	}
 	z.unreadn1()
 	return z.bufr
+}
+
+func (z *bufioDecReader) jsonReadAsisChars() (bs []byte) {
+	z.bufr = z.blist.check(z.bufr, 256)
+LOOP:
+	i := z.readn1()
+	z.bufr = append(z.bufr, i)
+	if i == '"' || i == '\\' {
+		return z.bufr
+	}
+	goto LOOP
 }
 
 func (z *bufioDecReader) skipWhitespace() (token byte) {
@@ -479,7 +493,7 @@ func (z *bufioDecReader) loopFn(i uint) {
 	z.c = i
 }
 
-func (z *bufioDecReader) readUntil(stop byte, includeLast bool) (out []byte) {
+func (z *bufioDecReader) readUntil(stop byte) (out []byte) {
 	i := z.c
 LOOP:
 	if i < uint(len(z.buf)) {
@@ -495,14 +509,11 @@ LOOP:
 	}
 	out = z.readUntilFill(stop)
 FINISH:
-	if includeLast {
-		return
-	}
 	return out[:len(out)-1]
 }
 
 func (z *bufioDecReader) readUntilFill(stop byte) []byte {
-	z.bufr = z.blist.check(z.bufr, 256)[:0]
+	z.bufr = z.blist.check(z.bufr, 256)
 	z.n += uint(len(z.buf)) - z.c
 	z.bufr = append(z.bufr, z.buf[z.c:]...)
 	for {
@@ -539,29 +550,16 @@ func (z *bufioDecReader) readUntilFill(stop byte) []byte {
 type bytesDecReader struct {
 	b []byte // data
 	c uint   // cursor
-	// a int    // available
 }
 
 func (z *bytesDecReader) reset(in []byte) {
-	// z.b = in
-	z.b = in[:len(in):len(in)] // so reslicing will not go past capacity
+	z.b = in[:len(in):len(in)] // reslicing must not go past capacity
 	z.c = 0
 }
 
 func (z *bytesDecReader) numread() uint {
 	return z.c
 }
-
-// func (z *bytesDecReader) last() byte {
-// 	return z.b[z.c-1]
-// }
-
-// func (z *bytesDecReader) unreadn1() {
-// 	// if z.c == 0 || len(z.b) == 0 {
-// 	// 	panic(errBytesDecReaderCannotUnread)
-// 	// }
-// 	z.c--
-// }
 
 func (z *bytesDecReader) readx(n uint) (bs []byte) {
 	// slicing from a non-constant start position is more expensive,
@@ -611,10 +609,22 @@ LOOP:
 		i++
 		goto LOOP
 	}
-
 	out = z.b[z.c:i]
 	z.c = i
 	return // z.b[c:i]
+}
+
+func (z *bytesDecReader) jsonReadAsisChars() (out []byte) {
+	i := z.c
+LOOP:
+	token := z.b[i]
+	i++
+	if token == '"' || token == '\\' {
+		out = z.b[z.c:i]
+		z.c = i
+		return // z.b[c:i]
+	}
+	goto LOOP
 }
 
 func (z *bytesDecReader) skipWhitespace() (token byte) {
@@ -627,25 +637,17 @@ LOOP:
 	return
 }
 
-func (z *bytesDecReader) readUntil(stop byte, includeLast bool) (out []byte) {
+func (z *bytesDecReader) readUntil(stop byte) (out []byte) {
 	i := z.c
 LOOP:
-	// if i < uint(len(z.b)) {
 	if z.b[i] == stop {
 		i++
-		if includeLast {
-			out = z.b[z.c:i]
-		} else {
-			out = z.b[z.c : i-1]
-		}
-		// z.a -= (i - z.c)
+		out = z.b[z.c : i-1]
 		z.c = i
 		return
 	}
 	i++
 	goto LOOP
-	// }
-	// panic(io.EOF)
 }
 
 // --------------
@@ -754,13 +756,13 @@ func (z *decRd) skipWhitespace() (token byte) {
 	}
 }
 
-func (z *decRd) readUntil(stop byte, includeLast bool) (out []byte) {
+func (z *decRd) readUntil(stop byte) (out []byte) {
 	if z.bytes {
-		return z.rb.readUntil(stop, includeLast)
+		return z.rb.readUntil(stop)
 	} else if z.bufio {
-		return z.bi.readUntil(stop, includeLast)
+		return z.bi.readUntil(stop)
 	} else {
-		return z.ri.readUntil(stop, includeLast)
+		return z.ri.readUntil(stop)
 	}
 }
 
@@ -771,6 +773,16 @@ func (z *decRd) jsonReadNum() (bs []byte) {
 		return z.bi.jsonReadNum()
 	} else {
 		return z.ri.jsonReadNum()
+	}
+}
+
+func (z *decRd) jsonReadAsisChars() (bs []byte) {
+	if z.bytes {
+		return z.rb.jsonReadAsisChars()
+	} else if z.bufio {
+		return z.bi.jsonReadAsisChars()
+	} else {
+		return z.ri.jsonReadAsisChars()
 	}
 }
 
@@ -786,7 +798,7 @@ func readFull(r io.Reader, bs []byte) (n uint, err error) {
 			n += uint(nn)
 		}
 	}
-	// do not do this - it serves no purpose
+	// do not do this below - it serves no purpose
 	// if n != len(bs) && err == io.EOF { err = io.ErrUnexpectedEOF }
 	return
 }
