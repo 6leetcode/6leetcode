@@ -2,9 +2,8 @@ FROM golang:alpine
 
 WORKDIR /app
 
-# sed -i 's/http:\/\/dl-cdn.alpinelinux.org/https:\/\/mirrors.aliyun.com/g' /etc/apk/repositories
-
-RUN apk add --no-cache ca-certificates make
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+    apk add --no-cache ca-certificates make
 
 VOLUME /app
 

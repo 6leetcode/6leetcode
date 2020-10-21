@@ -86,8 +86,8 @@ if __name__ == "__main__":
             fileList.sort()
             for inner in fileList:
                 # Golang
-                if os.path.splitext(inner)[1] == ".go":
-                    go[d].append(inner)
+                if inner.startswith("go"):
+                    go[d].append(inner+"/"+inner+".go")
                 # C/C++
                 elif os.path.splitext(inner)[1] == ".c":
                     c[d].append(inner)
@@ -168,6 +168,8 @@ if __name__ == "__main__":
                 hasLang = False
                 for _inner in files:
                     if os.path.splitext(_inner)[1] == "." + suffix:
+                        hasLang = True
+                    elif suffix == "go" and _inner.startswith(suffix):
                         hasLang = True
                 if hasLang:
                     targets.append("\"" + p.replace(" ", "\\ ") + "\"")

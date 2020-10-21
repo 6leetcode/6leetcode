@@ -1,6 +1,8 @@
 package main
 
-func LengthOfLongestSubstring(s string) int {
+import "fmt"
+
+func lengthOfLongestSubstring(s string) int {
 	n := len(s)
 	if n < 2 {
 		return n
@@ -21,4 +23,10 @@ func LengthOfLongestSubstring(s string) int {
 		}
 	}
 	return max
+}
+
+func main() {
+	var str = "abcabcbb"
+	fmt.Printf("Input:  %s\n", str)
+	fmt.Printf("Output: %d\n", lengthOfLongestSubstring(str))
 }
