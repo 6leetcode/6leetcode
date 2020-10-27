@@ -45,7 +45,7 @@ jobs:
       - name: Lint code
         uses: golangci/golangci-lint-action@v1
         with:
-          version: v2.3
+          version: v1.29
           working-directory: apps/server
       - name: Build server
         run: |
