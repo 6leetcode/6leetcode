@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/apps/web"
+    schedule:
+      interval: daily
+      time: "16:00"
+    open-pull-requests-limit: 10
+  - package-ecosystem: gomod
+    directory: "/apps/server"
+    schedule:
+      interval: daily
+      time: "16:00"
+    open-pull-requests-limit: 10

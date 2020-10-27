@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         go: ["1.15"]
-        node: ["15"]
+        node: ["14"]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
@@ -45,7 +45,7 @@ jobs:
       - name: Lint code
         uses: golangci/golangci-lint-action@v1
         with:
-          version: v1.28
+          version: v1.32
           working-directory: apps/server
       - name: Build server
         run: |
