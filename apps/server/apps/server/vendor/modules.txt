@@ -1,6 +1,9 @@
+# github.com/armon/consul-api v0.0.0-20180202201655-eb2c6b5be1b6
+## explicit
 # github.com/elazarl/goproxy v0.0.0-20200315184450-1f3cb6622dad
 ## explicit
 # github.com/fatih/color v1.9.0
+## explicit
 github.com/fatih/color
 # github.com/fsnotify/fsnotify v1.4.9
 ## explicit
@@ -119,6 +122,7 @@ github.com/spf13/cobra
 ## explicit
 github.com/spf13/jwalterweatherman
 # github.com/spf13/pflag v1.0.5
+## explicit
 github.com/spf13/pflag
 # github.com/spf13/viper v1.7.1
 ## explicit
@@ -141,6 +145,8 @@ github.com/ulule/limiter/v3/drivers/store/memory
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
+# github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77
+## explicit
 # golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897
 ## explicit
 golang.org/x/crypto/pbkdf2
