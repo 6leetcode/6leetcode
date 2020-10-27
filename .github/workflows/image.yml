@@ -3,12 +3,12 @@ name: Server Build Image
 on:
   push:
     branches:
-      - master
+      - main
     tags:
       - "*"
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   leetcode-image:
@@ -32,6 +32,6 @@ jobs:
           repository: 6leetcode/6leetcode
           tag_with_ref: true
           always_pull: true
-          push: ${{ startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master' }}
+          push: ${{ startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/main' }}
           dockerfile: apps/server/Dockerfile
           path: .
