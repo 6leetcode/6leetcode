@@ -46,8 +46,6 @@ func (dialector Dialector) Initialize(db *gorm.DB) (err error) {
 		WithReturning: true,
 	})
 
-	db.Callback().Query().Replace("gorm:query", Query)
-
 	if dialector.Conn != nil {
 		db.ConnPool = dialector.Conn
 	} else if dialector.DriverName != "" {
@@ -152,6 +150,9 @@ func (dialector Dialector) DataTypeOf(field *schema.Field) string {
 		}
 		return "text"
 	case schema.Time:
+		if field.Precision > 0 {
+			return fmt.Sprintf("timestamptz(%d)", field.Precision)
+		}
 		return "timestamptz"
 	case schema.Bytes:
 		return "bytea"

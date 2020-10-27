@@ -145,10 +145,10 @@ github.com/unknwon/com
 ## explicit
 golang.org/x/crypto/pbkdf2
 golang.org/x/crypto/sha3
-# golang.org/x/net v0.0.0-20201021035429-f5854403a974
+# golang.org/x/net v0.0.0-20201026091529-146b70c837a4
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20201020230747-6e5568b54d1a
+# golang.org/x/sys v0.0.0-20201027090413-e1471140ff15
 ## explicit
 golang.org/x/sys/cpu
 golang.org/x/sys/internal/unsafeheader
@@ -210,7 +210,7 @@ gopkg.in/yaml.v2
 # gorm.io/driver/mysql v1.0.3
 ## explicit
 gorm.io/driver/mysql
-# gorm.io/driver/postgres v1.0.4
+# gorm.io/driver/postgres v1.0.5
 ## explicit
 gorm.io/driver/postgres
 # gorm.io/driver/sqlite v1.1.3
