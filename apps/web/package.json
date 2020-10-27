@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@blueprintjs/core": "^3.34.1",
+    "@blueprintjs/core": "^3.35.0",
     "@popperjs/core": "^2.5.3",
     "@testing-library/dom": "^7.26.3",
     "@testing-library/jest-dom": "^5.11.4",
