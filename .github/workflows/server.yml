@@ -3,10 +3,10 @@ name: Server Build CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   leetcode-ci:
