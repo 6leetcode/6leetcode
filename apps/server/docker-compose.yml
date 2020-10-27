@@ -31,9 +31,9 @@ services:
       - default
   watchtower:
     image: containrrr/watchtower:latest
-    container_name: traefik
-    hostname: traefik
-    command: ["watchtower", "--cleanup", "--interval", "20", "6leetcode"]
+    container_name: watchtower
+    hostname: watchtower
+    command: ["watchtower", "--cleanup", "--interval", "3600", "6leetcode"]
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
   postgresql-master:
@@ -102,6 +102,8 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     restart: always
+    depends_on:
+      - postgresql-dev
     ports:
       - 4000:4000
     volumes:
