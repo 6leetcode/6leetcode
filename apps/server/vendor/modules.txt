@@ -3,7 +3,6 @@
 # github.com/fatih/color v1.9.0
 github.com/fatih/color
 # github.com/fsnotify/fsnotify v1.4.9
-## explicit
 github.com/fsnotify/fsnotify
 # github.com/gin-contrib/cors v1.3.1
 ## explicit
@@ -132,7 +131,7 @@ github.com/tosone/logging
 ## explicit
 # github.com/ugorji/go/codec v1.1.13
 github.com/ugorji/go/codec
-# github.com/ulule/limiter/v3 v3.5.0
+# github.com/ulule/limiter/v3 v3.6.0
 ## explicit
 github.com/ulule/limiter/v3
 github.com/ulule/limiter/v3/drivers/middleware/gin
@@ -205,7 +204,6 @@ gopkg.in/ini.v1
 # gopkg.in/natefinch/lumberjack.v2 v2.0.0
 gopkg.in/natefinch/lumberjack.v2
 # gopkg.in/yaml.v2 v2.3.0
-## explicit
 gopkg.in/yaml.v2
 # gorm.io/driver/mysql v1.0.3
 ## explicit
