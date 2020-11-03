@@ -4,7 +4,6 @@ go 1.15
 
 require (
 	github.com/elazarl/goproxy v0.0.0-20200315184450-1f3cb6622dad // indirect
-	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gin-contrib/cors v1.3.1
 	github.com/gin-contrib/gzip v0.0.3
 	github.com/gin-gonic/gin v1.6.3
@@ -25,7 +24,7 @@ require (
 	github.com/spf13/viper v1.7.1
 	github.com/tosone/logging v1.2.1
 	github.com/ugorji/go v1.1.13 // indirect
-	github.com/ulule/limiter/v3 v3.5.0
+	github.com/ulule/limiter/v3 v3.6.0
 	github.com/unknwon/com v1.0.1
 	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897 // indirect
 	golang.org/x/net v0.0.0-20201026091529-146b70c837a4 // indirect
@@ -33,7 +32,6 @@ require (
 	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
-	gopkg.in/yaml.v2 v2.3.0 // indirect
 	gorm.io/driver/mysql v1.0.3
 	gorm.io/driver/postgres v1.0.5
 	gorm.io/driver/sqlite v1.1.3
