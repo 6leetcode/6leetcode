@@ -2,7 +2,7 @@ name: Create Pull Request
 
 on:
   schedule:
-    - cron: "0 16 * * 7" # At 16:00 on Sunday
+    - cron: "@weekly"
 
 jobs:
   create-pull-request:
