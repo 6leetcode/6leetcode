@@ -43,7 +43,7 @@ RUN apk add --no-cache ca-certificates bash wget && \
 
 COPY --from=stage3 /tmp/6leetcode /usr/bin
 COPY --from=stage3 /tmp/config.yml /etc/6leetcode
-COPY questions /data
+COPY questions /questions
 
 VOLUME /etc/6leetcode
 
