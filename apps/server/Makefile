@@ -48,7 +48,7 @@ docker-exec:
 	docker-compose exec $(app_name) /bin/bash
 
 .PHONY: up
-up: up-init
+up:
 	docker-compose up --force-recreate
 
 .PHONY: up-database
@@ -63,6 +63,13 @@ up-database:
 up-server:
 	docker-compose up --force-recreate -d 6leetcode
 
+.PHONY: up-traefik
+up-traefik:
+	$(shell if [ ! -d $(VOLUME_PREFIX)/traefik ]; then mkdir -p $(VOLUME_PREFIX)/traefik; fi)
+	$(shell if [ ! -d $(VOLUME_PREFIX)/traefik/acme.json ]; then touch $(VOLUME_PREFIX)/traefik/acme.json; fi)
+	sudo 0600 $(VOLUME_PREFIX)/traefik/acme.json
+	docker-compose up --force-recreate -d traefik
+
 .PHONY: up-server-dev
 up-server-dev:
 	docker-compose -f docker-compose-dev.yml up --force-recreate --build -d 6leetcode-dev
@@ -70,11 +77,3 @@ up-server-dev:
 .PHONY: up-database-dev
 up-database-dev:
 	docker-compose -f docker-compose-dev.yml up --force-recreate -d postgresql-dev
-
-.PHONY: up-init
-up-init:
-	if [ -d data ]; then sudo rm -rf data; fi
-	mkdir -p data/postgresql-master data/postgresql-slave data/traefik
-	touch data/traefik/acme.json
-	sudo chown -R 1001:1001 data/postgresql-master
-	sudo chown -R 1001:1001 data/postgresql-slave
