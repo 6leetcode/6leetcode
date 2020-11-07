@@ -37,4 +37,5 @@ kthLargest.add(4);   // return 8
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>-10<sup>4</sup> &lt;= val &lt;= 10<sup>4</sup></code></li>
 	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>add</code>.</li>
+	<li>It is guaranteed that there will be at least <code>k</code> elements in the array when you search for the <code>k<sup>th</sup></code> element.</li>
 </ul>

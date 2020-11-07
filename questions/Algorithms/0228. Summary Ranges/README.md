@@ -63,4 +63,5 @@
 	<li><code>0 &lt;= nums.length &lt;= 20</code></li>
 	<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>
 	<li>All the values of <code>nums</code> are <strong>unique</strong>.</li>
+	<li><code>nums</code> is sorted in ascending order.</li>
 </ul>
