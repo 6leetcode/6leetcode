@@ -24,7 +24,7 @@ require (
 	github.com/spf13/viper v1.7.1
 	github.com/tosone/logging v1.2.1
 	github.com/ugorji/go v1.1.13 // indirect
-	github.com/ulule/limiter/v3 v3.6.0
+	github.com/ulule/limiter/v3 v3.7.0
 	github.com/unknwon/com v1.0.1
 	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897 // indirect
 	golang.org/x/net v0.0.0-20201026091529-146b70c837a4 // indirect
