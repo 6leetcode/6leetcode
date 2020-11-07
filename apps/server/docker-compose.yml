@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   traefik:
-    image: traefik:v2.2
+    image: traefik:v2.3
     container_name: traefik
     hostname: traefik
     command:
@@ -20,6 +20,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ${VOLUME_PREFIX}/traefik/acme.json:/acme.json
     labels:
+      - traefik.http.routers.traefik.rule=Host(`traefik.${HOST_DOMAIN}`)
+      - traefik.http.routers.traefik.service=api@internal
+      - traefik.http.routers.traefik.tls.certresolver=leresolver
       - traefik.http.routers.traefik.entrypoints=websecure
       - traefik.http.routers.traefik.middlewares=authtraefik
       - traefik.http.middlewares.authtraefik.basicauth.users=tosone:$$apr1$$2DvxBXHm$$7iRM18fGqs30h2r0gDZK0/
@@ -36,6 +39,8 @@ services:
     command: ["watchtower", "--cleanup", "--interval", "3600", "6leetcode"]
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - 6leetcode
   postgresql-master:
     image: bitnami/postgresql:13-debian-10
     container_name: postgresql-master
@@ -73,6 +78,7 @@ services:
     container_name: 6leetcode
     hostname: 6leetcode
     depends_on:
+      - traefik
       - postgresql-master
       - postgresql-slave
     command:
@@ -84,7 +90,7 @@ services:
     volumes:
       - $PWD/config.yml:/etc/6leetcode/config.yml
     labels:
-      - traefik.http.routers.6leetcode.rule=Host(`6leetcode${HOST_DOMAIN}`)
+      - traefik.http.routers.6leetcode.rule=Host(`${HOST_DOMAIN}`)
       - traefik.http.routers.6leetcode.entrypoints=websecure
       - traefik.http.routers.6leetcode.tls=true
       - traefik.http.routers.6leetcode.tls.certresolver=leresolver
