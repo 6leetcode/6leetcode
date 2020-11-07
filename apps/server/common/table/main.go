@@ -63,6 +63,7 @@ func Initialize() (err error) {
 
 	if err = engine.AutoMigrate(
 		new(Question),
+		new(Solution),
 	); err != nil {
 		logging.Panic(err.Error())
 	}

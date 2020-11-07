@@ -49,9 +49,7 @@ func (q *Question) Create() (err error) {
 	if err = engine.Model(new(Question)).Where(Question{QuestionID: q.QuestionID}).Updates(q).Error; err != nil {
 		return
 	}
-	if err = engine.Model(new(Question)).Where(Question{
-		QuestionID: q.QuestionID,
-	}).First(&q).Error; err != nil {
+	if err = engine.Model(new(Question)).Where(Question{QuestionID: q.QuestionID}).First(&q).Error; err != nil {
 		return
 	}
 	return
