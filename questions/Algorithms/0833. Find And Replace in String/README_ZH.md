@@ -1,8 +1,8 @@
 ### [字符串中的查找与替换](https://leetcode-cn.com/problems/find-and-replace-in-string)
 
-<p>对于某些字符串 <code>S</code>，我们将执行一些替换操作，用新的字母组替换原有的字母组（不一定大小相同）。</p>
+<p>某个字符串 <code>S</code> 需要执行一些替换操作，用新的字母组替换原有的字母组（不一定大小相同）。</p>
 
-<p>每个替换操作具有 3 个参数：起始索引 <code>i</code>，源字 <code>x</code> 和目标字 <code>y</code>。规则是如果 <code>x</code> 从<strong>原始字符串 <code>S</code></strong> 中的位置 <code>i</code> 开始，那么就用 <code>y</code> 替换出现的 <code>x</code>。如果没有，则什么都不做。</p>
+<p>每个替换操作具有 3 个参数：起始索引 <code>i</code>，源字 <code>x</code> 和目标字 <code>y</code>。规则是：如果 <code>x</code> 从<strong>原始字符串 <code>S</code></strong> 中的位置 <code>i</code> 开始，那么就用 <code>y</code> 替换出现的 <code>x</code>。如果没有，则什么都不做。</p>
 
 <p>举个例子，如果 <code>S = “abcd”</code> 并且替换操作 <code>i = 2，x = “cd”，y = “ffff”</code>，那么因为 <code>“cd”</code> 从原始字符串 <code>S</code> 中的位置 <code>2</code> 开始，所以用 <code>“ffff”</code> 替换它。</p>
 
@@ -37,9 +37,14 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>0 <= indexes.length = sources.length = targets.length <= 100</code></li>
-	<li><code>0 <= indexes[i] < S.length <= 1000</code></li>
-	<li>给定输入中的所有字符都是小写字母。</li>
+	<li><code>0 <= S.length <= 1000</code></li>
+	<li><code>S</code> 仅由小写英文字母组成</li>
+	<li><code>0 <= indexes.length <= 100</code></li>
+	<li><code>0 <= indexes[i] < S.length</code></li>
+	<li><code>sources.length == indexes.length</code></li>
+	<li><code>targets.length == indexes.length</code></li>
+	<li><code>1 <= sources[i].length, targets[i].length <= 50</code></li>
+	<li><code>sources[i]</code> 和 <code>targets[i]</code> 仅由小写英文字母组成</li>
 </ul>
 
 <p> </p>

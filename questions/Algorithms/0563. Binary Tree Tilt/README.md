@@ -1,10 +1,8 @@
 ### [Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt)
 
-<p>Given the <code>root</code> of a binary tree, return <em>the tilt of the whole tree</em>.</p>
+<p>Given the <code>root</code> of a binary tree, return <em>the sum of every tree node&#39;s <strong>tilt</strong>.</em></p>
 
-<p>The tilt of a <b>tree node</b> is&nbsp;the <b>absolute difference</b> between the sum of all left subtree node values and all right subtree node values. Null node has tilt <code>0</code>.</p>
-
-<p>The tilt of the <b>whole tree</b> is the sum of all nodes&#39; tilt.</p>
+<p>The <strong>tilt</strong> of a tree node is the <b>absolute difference</b> between the sum of all left subtree node <strong>values</strong> and all right subtree node <strong>values</strong>. If a node does not have a left child, then the sum of the left subtree node <strong>values</strong> is treated as <code>0</code>. The rule is similar if there the node does not have a right child.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -13,10 +11,10 @@
 <strong>Input:</strong> root = [1,2,3]
 <strong>Output:</strong> 1
 <strong>Explanation:</strong> 
-Tilt of node 2 : 0
-Tilt of node 3 : 0
-Tilt of node 1 : |2-3| = 1
-Tilt of binary tree : 0 + 0 + 1 = 1
+Tilt of node 2 : |0-0| = 0 (no children)
+Tilt of node 3 : |0-0| = 0 (no children)
+Tile of node 1 : |2-3| = 1 (left subtree is just left child, so sum is 2; right subtree is just right child, so sum is 3)
+Sum of every tilt : 0 + 0 + 1 = 1
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -25,13 +23,13 @@ Tilt of binary tree : 0 + 0 + 1 = 1
 <strong>Input:</strong> root = [4,2,9,3,5,null,7]
 <strong>Output:</strong> 15
 <strong>Explanation:</strong> 
-Tilt of node 3 : 0
-Tilt of node 5 : 0
-Tilt of node 7 : 0
-Tilt of node 2 : |3-5| = 2
-Tilt of node 9 : |0-7| = 7
-Tilt of node 4 : |(3+5+2)-(9+7)| = 6
-Tilt of binary tree : 0 + 0 + 0 + 2 + 7 + 6 = 15
+Tilt of node 3 : |0-0| = 0 (no children)
+Tilt of node 5 : |0-0| = 0 (no children)
+Tilt of node 7 : |0-0| = 0 (no children)
+Tilt of node 2 : |3-5| = 2 (left subtree is just left child, so sum is 3; right subtree is just right child, so sum is 5)
+Tilt of node 9 : |0-7| = 7 (no left child, so sum is 0; right subtree is just right child, so sum is 7)
+Tilt of node 4 : |(3+5+2)-(9+7)| = |10-16| = 6 (left subtree values are 3, 5, and 2, which sums to 10; right subtree values are 9 and 7, which sums to 16)
+Sum of every tilt : 0 + 0 + 0 + 2 + 7 + 6 = 15
 </pre>
 
 <p><strong>Example 3:</strong></p>

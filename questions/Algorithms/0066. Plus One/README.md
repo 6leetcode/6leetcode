@@ -1,6 +1,6 @@
 ### [Plus One](https://leetcode.com/problems/plus-one)
 
-<p>Given a <strong>non-empty</strong> array of digits&nbsp;representing a non-negative integer, increment&nbsp;one to the integer.</p>
+<p>Given a <strong>non-empty</strong> array of decimal digits&nbsp;representing a non-negative integer, increment&nbsp;one to the integer.</p>
 
 <p>The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit.</p>
 

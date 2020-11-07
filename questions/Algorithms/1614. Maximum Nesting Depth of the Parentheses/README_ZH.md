@@ -12,6 +12,7 @@
 
 <ul>
 	<li><code>depth("") = 0</code></li>
+	<li><code>depth(C) = 0</code>，其中 <code>C</code> 是单个字符的字符串，且该字符不是 <code>"("</code> 或者 <code>")"</code></li>
 	<li><code>depth(A + B) = max(depth(A), depth(B))</code>，其中 <code>A</code> 和 <code>B</code> 都是 <strong>有效括号字符串</strong></li>
 	<li><code>depth("(" + A + ")") = 1 + depth(A)</code>，其中 <code>A</code> 是一个 <strong>有效括号字符串</strong></li>
 </ul>
@@ -25,7 +26,7 @@
 <p><strong>示例 1：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "(1+(2*3)+((8)/4))+1"
+<strong>输入：</strong>s = "(1+(2*3)+((<strong>8</strong>)/4))+1"
 <strong>输出：</strong>3
 <strong>解释：</strong>数字 8 在嵌套的 3 层括号中。
 </pre>
@@ -33,21 +34,21 @@
 <p><strong>示例 2：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "(1)+((2))+(((3)))"
+<strong>输入：</strong>s = "(1)+((2))+(((<strong>3</strong>)))"
 <strong>输出：</strong>3
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "1+(2*3)/(2-1)"
+<strong>输入：</strong>s = "1+(<strong>2</strong>*3)/(2-1)"
 <strong>输出：</strong>1
 </pre>
 
 <p><strong>示例 4：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "1"
+<strong>输入：</strong>s = "<strong>1</strong>"
 <strong>输出：</strong>0
 </pre>
 
