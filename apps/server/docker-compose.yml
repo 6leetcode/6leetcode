@@ -37,7 +37,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
   postgresql-master:
-    image: bitnami/postgresql:12-debian-10
+    image: bitnami/postgresql:13-debian-10
     container_name: postgresql-master
     hostname: postgresql-master
     volumes:
@@ -52,7 +52,7 @@ services:
     networks:
       - default
   postgresql-slave:
-    image: bitnami/postgresql:12-debian-10
+    image: bitnami/postgresql:13-debian-10
     container_name: postgresql-slave
     hostname: postgresql-slave
     volumes:
@@ -92,33 +92,6 @@ services:
       - traefik.http.services.6leetcode.loadbalancer.server.port=4000
     networks:
       - default
-  6leetcode-dev:
-    image: 6leetcode/6leetcode:latest
-    container_name: 6leetcode
-    hostname: 6leetcode
-    command:
-      ["wait-for-it.sh", "postgresql-dev:5432", "--", "6leetcode", "server"]
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    restart: always
-    depends_on:
-      - postgresql-dev
-    ports:
-      - 4000:4000
-    volumes:
-      - $PWD/config.yml:/etc/6leetcode/config.yml
-    networks:
-      - default
-  postgresql-dev:
-    image: docker.io/bitnami/postgresql:12-debian-10
-    container_name: postgresql-dev
-    hostname: postgresql-dev
-    ports:
-      - 5432:5432
-    environment:
-      - POSTGRESQL_PASSWORD=${DATABASE_SECRET}
-      - POSTGRESQL_DATABASE=${DATABASE_NAME}
 networks:
   default:
     external:
