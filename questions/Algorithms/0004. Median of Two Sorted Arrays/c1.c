@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// ------------------------------- solution begin -------------------------------
 int cmpfunc(const void *a, const void *b) {
   return (*(signed int *)b > *(signed int *)a) ? 1 : 0;
 }
@@ -27,6 +28,8 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
   free(merge);
   return result;
 }
+
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input1[] = {0, 1, 2, 3};

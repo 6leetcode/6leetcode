@@ -4,6 +4,7 @@
 
 #include <ListNode.h>
 
+// ------------------------------- solution begin -------------------------------
 struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
   int carry = 0;
   struct ListNode dummy;
@@ -48,6 +49,8 @@ struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
 
   return dummy.next;
 }
+
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char **argv) {
   int arr1[3] = {2, 4, 6};

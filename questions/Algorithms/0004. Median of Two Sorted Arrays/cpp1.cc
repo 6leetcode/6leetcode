@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
@@ -12,7 +13,7 @@ public:
     nums1.insert(nums1.end(), nums2.begin(), nums2.end());
     sort(nums1.begin(), nums1.end());
 
-    uint length = nums1.size();
+    size_t length = nums1.size();
     if (length % 2 == 0) {
       result = (nums1[length / 2 - 1] + nums1[length / 2]) / 2.0;
     } else {
@@ -21,6 +22,8 @@ public:
     return result;
   }
 };
+
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input1 = {4, 3, 2, 1};
