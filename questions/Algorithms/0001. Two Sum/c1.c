@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
   *returnSize = 2;
 
@@ -17,6 +18,8 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
   }
   return ans;
 }
+
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int numsSize = 3;
