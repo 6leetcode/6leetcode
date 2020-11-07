@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// ------------------------------- solution begin -------------------------------
 func twoSum(nums []int, target int) []int {
 	var res = make([]int, 2)
 	res[0] = -1
@@ -27,6 +28,8 @@ func twoSum(nums []int, target int) []int {
 	}
 	return res
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var input1 = []int{2, 7, 3}
