@@ -70,7 +70,7 @@ var tokens = []token{
 	},
 }
 
-var re = regexp.MustCompile(`(?m)(\d{4})\.\s[\w\W]*`)
+var re = regexp.MustCompile(`(?m)(\d{4,10})\.\s[\w\W]*`)
 
 // Travel ..
 func Travel(questionDir string) (err error) {

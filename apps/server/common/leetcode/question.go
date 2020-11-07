@@ -133,14 +133,14 @@ func (i *Instance) Question(titleSlug string) (err error) {
 func (i *Instance) readme(question *table.Question, basedir string) (err error) {
 	var dir = fmt.Sprintf("%s/%s/%04d. %s", basedir, question.CategoryTitle,
 		question.FrontendQuestionID, question.Title)
-	if question.PaidOnly {
-		if com.IsDir(dir) {
-			if err = os.RemoveAll(dir); err != nil {
-				return
-			}
-		}
-		return
-	}
+	//if question.PaidOnly {
+	//	if com.IsDir(dir) {
+	//		if err = os.RemoveAll(dir); err != nil {
+	//			return
+	//		}
+	//	}
+	//	return
+	//}
 	if !com.IsDir(dir) {
 		if err = os.MkdirAll(dir, 0755); err != nil {
 			return
@@ -217,7 +217,7 @@ func (i *Instance) makefile(dir string) (err error) {
 	if file, err = os.Create(dir + "/Makefile"); err != nil {
 		return
 	}
-	if _, err = file.WriteString(fmt.Sprintf("%s\n", "include ../../../Makefile.rules")); err != nil {
+	if _, err = file.WriteString(fmt.Sprintf("%s\n", "include ../../../Makefile.lang.mk")); err != nil {
 		return
 	}
 	if err = file.Close(); err != nil {
