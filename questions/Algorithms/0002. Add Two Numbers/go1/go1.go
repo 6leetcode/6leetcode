@@ -10,6 +10,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
+// ------------------------------- solution begin -------------------------------
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var head = &ListNode{Val: 0}
 	n1, n2, carry, current := 0, 0, 0, head
@@ -32,6 +33,8 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	}
 	return head.Next
 }
+
+// ------------------------------- solution end ---------------------------------
 
 // Ints2List convert []int to List
 func Ints2List(nums []int) (listNode *ListNode) {

@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// ------------------------------- solution begin -------------------------------
 func FindMedianSortedArFrays(nums1 []int, nums2 []int) (result float64) {
 	var total = make([]int, len(nums1)+len(nums2))
 	copy(total, nums1)
@@ -19,6 +20,8 @@ func FindMedianSortedArFrays(nums1 []int, nums2 []int) (result float64) {
 	}
 	return
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var input1 = []int{4, 3, 2, 1}

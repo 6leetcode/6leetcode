@@ -7,6 +7,7 @@ class ListNode {
     }
 }
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode a = l1;
@@ -35,6 +36,8 @@ class Solution {
         return resultNode.next;
     }
 }
+
+// ------------------------------- solution end ---------------------------------
 
 public class java1 {
     public static void main(String[] args) {

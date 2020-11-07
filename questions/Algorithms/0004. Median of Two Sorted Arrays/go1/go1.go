@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// ------------------------------- solution begin -------------------------------
 func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64 {
 	total := len(nums1) + len(nums2)
 
@@ -57,6 +58,8 @@ func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64 {
 	}
 	return float64(min+max) / 2
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var input1 = []int{4, 3, 2, 1}
