@@ -131,7 +131,7 @@ github.com/tosone/logging
 ## explicit
 # github.com/ugorji/go/codec v1.1.13
 github.com/ugorji/go/codec
-# github.com/ulule/limiter/v3 v3.6.0
+# github.com/ulule/limiter/v3 v3.7.0
 ## explicit
 github.com/ulule/limiter/v3
 github.com/ulule/limiter/v3/drivers/middleware/gin
