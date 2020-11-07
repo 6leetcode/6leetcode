@@ -11,6 +11,7 @@ import (
 	"6leetcode/cmd/crawler"
 	"6leetcode/cmd/server"
 	"6leetcode/cmd/version"
+	"6leetcode/common/solutions"
 	"6leetcode/common/table"
 )
 
@@ -39,6 +40,12 @@ func init() {
 			if err = table.Initialize(); err != nil {
 				logging.Errorf("Got error: %+v", err)
 				return
+			}
+			if viper.GetBool("QUESTION_INITIALIZE") {
+				if err = solutions.Travel(viper.GetString("QUESTION_DIR")); err != nil {
+					logging.Errorf("Travel questions error: %+v", err)
+					return
+				}
 			}
 			if err = server.Initialize(); err != nil {
 				logging.Errorf("Got error: %+v", err)
