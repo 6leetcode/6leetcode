@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"strconv"
+	"strings"
 	"sync"
 
 	"github.com/parnurzeal/gorequest"
@@ -77,15 +78,19 @@ func (i *Instance) All() (err error) {
 			logging.Error(err)
 			continue
 		}
+
 		if fqid, err = strconv.Atoi(question.QuestionFrontendID); err != nil {
-			logging.Error(err)
 			err = nil
-			continue
+			fqid = qid
 		}
 
 		var questionStats QuestionStats
 		if err = json.Unmarshal([]byte(question.Stats), &questionStats); err != nil {
 			return
+		}
+
+		if strings.HasSuffix(question.Title, question.CategoryTitle) {
+			question.Title = strings.TrimSuffix(question.Title, " "+question.CategoryTitle)
 		}
 
 		var q = &table.Question{
