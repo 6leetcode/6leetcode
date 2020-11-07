@@ -75,6 +75,9 @@ var re = regexp.MustCompile(`(?m)(\d{4})\.\s[\w\W]*`)
 // Travel ..
 func Travel(questionDir string) (err error) {
 	if err = filepath.Walk(questionDir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
 		if info.IsDir() && re.Match([]byte(info.Name())) {
 			var matches = re.FindStringSubmatch(info.Name())
 			if len(matches) != 2 {
@@ -98,6 +101,9 @@ func Travel(questionDir string) (err error) {
 // Initialize ..
 func QuestionItem(questionItemDir string, questionID int) (err error) {
 	if err = filepath.Walk(questionItemDir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
 		if !info.IsDir() {
 			var status uint8
 			var answer []string
