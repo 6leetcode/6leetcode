@@ -31,7 +31,7 @@ cc: $(CCFiles)
 $(CCFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
-	@$(CXX) -std=c++11 -Os -g3 -fsanitize=address,signed-integer-overflow \
+	@$(CXX) -std=c++17 -I../../library/cc -lm -Os -g3 -fsanitize=address,signed-integer-overflow \
 	-o `echo $@ | cut -d. -f1`.test $@
 	@./`echo $@ | cut -d. -f1`.test
 	@$(RM) -rf `echo $@ | cut -d. -f1`.test *.dSYM
