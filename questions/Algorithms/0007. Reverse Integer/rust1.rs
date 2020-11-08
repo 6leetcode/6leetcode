@@ -1,5 +1,6 @@
 pub struct Solution {}
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
   pub fn reverse(x: i32) -> i32 {
     let mut ret = 0i32;
@@ -21,6 +22,7 @@ impl Solution {
     ret
   }
 }
+// ------------------------------- solution end ---------------------------------
 
 fn main() {
   let input: i32 = 123;

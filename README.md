@@ -61,3 +61,4 @@ LeetCode Solutions.
 |[1106](https://leetcode.com/problems/parsing-a-boolean-expression)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/1106.%20Parsing%20A%20Boolean%20Expression/cpp1.cc)|||||||-|-|
 |[1165](https://leetcode.com/problems/single-row-keyboard)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/1165.%20Single-Row%20Keyboard/cpp1.cc)|||||||-|-|
 |[1309](https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/1309.%20Decrypt%20String%20from%20Alphabet%20to%20Integer%20Mapping/cpp1.cc)|||||||-|-|
+|[1358](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters)||[1](https://github.com/6leetcode/6leetcode/blob/master/questions/Algorithms/1358.%20Number%20of%20Substrings%20Containing%20All%20Three%20Characters/cpp1.cc)|||||||-|-|

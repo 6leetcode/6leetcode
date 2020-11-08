@@ -1,23 +1,12 @@
 struct Solution {}
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
     pub fn int_to_roman(num: i32) -> String {
         let mut number: i32 = num;
         let mut result = String::from("");
         let symbol = [
-            "M",
-            "CM",
-            "D",
-            "CD",
-            "C",
-            "XC",
-            "L",
-            "XL",
-            "X",
-            "IX",
-            "V",
-            "IV",
-            "I",
+            "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I",
         ];
         let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
         let mut index: usize = 0;
@@ -31,6 +20,7 @@ impl Solution {
         return result;
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 fn main() {
     let input: i32 = 3999;
