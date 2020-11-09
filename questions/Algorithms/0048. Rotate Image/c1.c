@@ -20,7 +20,6 @@ void rotate(int **matrix, int matrixSize, int *matrixColSize) {
     }
   }
 }
-
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {

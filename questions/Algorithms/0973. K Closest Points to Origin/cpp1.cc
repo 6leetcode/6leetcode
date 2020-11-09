@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   vector<vector<int>> kClosest(vector<vector<int>> &points, int K) {
@@ -20,6 +21,7 @@ public:
     return p1[0] * p1[0] + p1[1] * p1[1] < p2[0] * p2[0] + p2[1] * p2[1];
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<vector<int>> input1 = {{3, 3}, {5, -1}, {-2, 4}};
