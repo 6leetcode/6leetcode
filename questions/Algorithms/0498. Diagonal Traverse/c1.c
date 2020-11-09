@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int *findDiagonalOrder(int **matrix, int matrixSize, int *matrixColSize, int *returnSize) {
   if (matrix == NULL || *matrix == NULL || matrixSize <= 0 || *matrixColSize <= 0 || matrixColSize == NULL || returnSize == NULL) {
     return NULL;
@@ -34,12 +35,13 @@ int *findDiagonalOrder(int **matrix, int matrixSize, int *matrixColSize, int *re
 
   return ret;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
-  int matrixSize    = 3;
+  int matrixSize = 3;
   int matrixColSize = 3;
 
-  int index    = 1;
+  int index = 1;
   int **matrix = (int **)malloc(sizeof(int *) * 3);
   printf("Input:  [");
   for (int i = 0; i < 3; i++) {
@@ -60,7 +62,7 @@ int main(int argc, char const *argv[]) {
   }
   printf("]]\n");
   int returnSize = 0;
-  int *result    = findDiagonalOrder(matrix, matrixSize, &matrixColSize, &returnSize);
+  int *result = findDiagonalOrder(matrix, matrixSize, &matrixColSize, &returnSize);
 
   for (int i = 0; i < 3; i++) {
     free(matrix[i]);
