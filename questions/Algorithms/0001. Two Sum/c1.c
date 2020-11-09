@@ -18,7 +18,6 @@ int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
   }
   return ans;
 }
-
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {

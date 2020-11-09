@@ -1,7 +1,6 @@
 pub struct Solution {}
 
 // ------------------------------- solution begin -------------------------------
-
 use std::collections::HashMap;
 impl Solution {
   pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
@@ -17,7 +16,6 @@ impl Solution {
     vec![]
   }
 }
-
 // ------------------------------- solution end ---------------------------------
 
 fn main() {

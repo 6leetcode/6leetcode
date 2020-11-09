@@ -3,25 +3,24 @@
 #include <string.h>
 #include <strings.h>
 
+// ------------------------------- solution begin -------------------------------
 int *plusOne(int *digits, int digitsSize, int *returnSize) {
+  int carry = 1;
   for (int i = digitsSize - 1; i >= 0; i--) {
-    if (digits[i] == 9) {
-      digits[i] = 0;
-    } else {
-      digits[i]++;
-      break;
-    }
+    int new_digit = (digits[i] + carry) % 10;
+    carry = (digits[i] + carry) / 10;
+    digits[i] = new_digit;
   }
 
   *returnSize = digitsSize;
 
   int *ans;
 
-  if (digits[0] == 0) {
+  if (carry == 1) {
     ans = (int *)malloc(sizeof(int) * (digitsSize + 1));
     bzero(ans, sizeof(int) * (digitsSize + 1));
     *returnSize = digitsSize + 1;
-    ans[0]      = 1;
+    ans[0] = 1;
   } else {
     ans = (int *)malloc(sizeof(int) * digitsSize);
     memcpy(ans, digits, sizeof(int) * digitsSize);
@@ -29,9 +28,10 @@ int *plusOne(int *digits, int digitsSize, int *returnSize) {
 
   return ans;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
-  int digits[]   = {1, 2, 3};
+  int digits[]   = {0, 0};
   int returnSize = 0;
 
   printf("Input:  [%d", digits[0]);
