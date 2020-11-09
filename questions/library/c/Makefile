@@ -1,15 +1,18 @@
 CFLAGS  += -I. -Os -g3 -Wall -fsanitize=address,signed-integer-overflow
 LDFLAGS += -lm
 
-test: ListNode matrix
+C_SRCS = $(wildcard *.c)
+C_OUTS = $(patsubst %.c, %.out, $(C_SRCS))
+# CXX_SRCS = $(wildcard src/*.cpp)
+# CXX_OUTS = $(patsubst %.cpp, %, $(CXX_SRCS))
 
-ListNode:
-	$(CC) $(CFLAGS) -o $@.test $@.c $(LDFLAGS)
-	@./$@.test
+.PHONY: test
+test: $(C_OUTS)
 
-matrix:
-	$(CC) $(CFLAGS) -o $@.test $@.c $(LDFLAGS)
-	@./$@.test
+%.out : %.c
+	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
+	@./$@
 
+.PHONY: clean
 clean:
-	$(RM) -rf *.test *.out *.dSYM
+	$(RM) -rf *.out *.dSYM

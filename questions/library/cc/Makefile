@@ -1,19 +1,16 @@
-CXXFLAGS  += -I. -Os -g3 -Wall -fsanitize=address,signed-integer-overflow -std=c++11
-LDFLAGS += -lm
+CXXFLAGS  += -I. -Os -g3 -Wall -fsanitize=address,signed-integer-overflow -std=c++17
+LDFLAGS   += -lm
 
-test: vector ListNode matrix
+CXX_SRCS = $(wildcard *.cc)
+CXX_OUTS = $(patsubst %.cc, %.out, $(CXX_SRCS))
 
-vector:
-	$(CXX) $(CXXFLAGS) -o $@.test $@.cc $(LDFLAGS)
-	@./$@.test
+.PHONY: test
+test: $(CXX_OUTS)
 
-ListNode:
-	$(CXX) $(CXXFLAGS) -o $@.test $@.cc $(LDFLAGS)
-	@./$@.test
+%.out : %.cc
+	$(CXX) $(CXXFLAGS) $< -o $@ $(LDFLAGS)
+	@./$@
 
-matrix:
-	$(CXX) $(CXXFLAGS) -o $@.test $@.cc $(LDFLAGS)
-	@./$@.test
-
+.PHONY: clean
 clean:
-	$(RM) -rf *.test *.out *.dSYM
+	$(RM) -rf *.out *.dSYM
