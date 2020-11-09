@@ -26,10 +26,17 @@ func (n DeletedAt) Value() (driver.Value, error) {
 }
 
 func (n DeletedAt) MarshalJSON() ([]byte, error) {
-	return json.Marshal(n.Time)
+	if n.Valid {
+		return json.Marshal(n.Time)
+	}
+	return json.Marshal(nil)
 }
 
 func (n *DeletedAt) UnmarshalJSON(b []byte) error {
+	if string(b) == "null" {
+		n.Valid = false
+		return nil
+	}
 	err := json.Unmarshal(b, &n.Time)
 	if err == nil {
 		n.Valid = true
@@ -115,6 +122,12 @@ func (sd SoftDeleteDeleteClause) ModifyStatement(stmt *Statement) {
 					stmt.AddClause(clause.Where{Exprs: []clause.Expression{clause.IN{Column: column, Values: values}}})
 				}
 			}
+		}
+
+		if _, ok := stmt.Clauses["WHERE"]; !stmt.DB.AllowGlobalUpdate && !ok {
+			stmt.DB.AddError(ErrMissingWhereClause)
+		} else {
+			SoftDeleteQueryClause{Field: sd.Field}.ModifyStatement(stmt)
 		}
 
 		stmt.AddClauseIfNotExists(clause.Update{})
