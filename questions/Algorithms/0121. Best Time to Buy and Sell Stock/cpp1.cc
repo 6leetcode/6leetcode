@@ -6,7 +6,7 @@ using namespace std;
 
 // ------------------------------- solution begin -------------------------------
 class Solution {
-public:
+ public:
   int maxProfit(vector<int> &prices) {
     if (prices.size() == 0) {
       return 0;
@@ -26,7 +26,6 @@ public:
     return max_profit;
   }
 };
-
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
