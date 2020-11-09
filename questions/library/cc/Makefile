@@ -16,4 +16,4 @@ matrix:
 	@./$@.test
 
 clean:
-	$(RM) *.test *.out
+	$(RM) -rf *.test *.out *.dSYM
