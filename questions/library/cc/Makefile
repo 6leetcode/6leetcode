@@ -6,6 +6,8 @@ CXX_OUTS = $(patsubst %.cc, %, $(CXX_SRCS))
 
 .PHONY: test
 test: $(CXX_OUTS)
+	$(foreach out, $?, ./$(out);)
+	@$(MAKE) clean
 
 .PHONY: clean
 clean:
