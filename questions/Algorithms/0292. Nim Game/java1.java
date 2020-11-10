@@ -14,4 +14,4 @@ public class java1 {
     System.out.printf("Output: %b\n", solution.canWinNim(input));
   }
 }
-l
+
