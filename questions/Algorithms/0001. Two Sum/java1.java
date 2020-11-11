@@ -34,3 +34,4 @@ public class java1 {
     System.out.printf("Output: [%d, %d]\n", result[0], result[1]);
   }
 }
+ 
