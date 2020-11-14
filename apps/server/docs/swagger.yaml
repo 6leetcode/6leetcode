@@ -1,0 +1,116 @@
+basePath: /api
+definitions:
+  table.QuestionDetail:
+    properties:
+      acRate:
+        type: string
+      category_title:
+        type: string
+      code_snippets:
+        items:
+          type: integer
+        type: array
+      content:
+        items:
+          type: integer
+        type: array
+      difficulty:
+        type: string
+      frontend_question_id:
+        type: integer
+      lang_to_valid_playground:
+        items:
+          type: integer
+        type: array
+      paid_only:
+        type: boolean
+      question_id:
+        example: 1
+        type: integer
+      similar_questions:
+        items:
+          type: integer
+        type: array
+      stats:
+        items:
+          type: integer
+        type: array
+      title:
+        type: string
+      title_slug:
+        type: string
+      topic_tags:
+        items:
+          type: integer
+        type: array
+      totalAccepted:
+        type: string
+      totalAcceptedRaw:
+        type: integer
+      totalSubmission:
+        type: string
+      totalSubmissionRaw:
+        type: integer
+      translated_content:
+        items:
+          type: integer
+        type: array
+      translated_title:
+        type: string
+    type: object
+host: 6leetcode.com
+info:
+  contact: {}
+  description: 6leetcode API get question and solutions.
+  title: 6leetcode API
+  version: "1.0"
+paths:
+  /questions:
+    get:
+      description: Get all of questions
+      parameters:
+      - description: Offset
+        in: query
+        name: offset
+        type: integer
+      - description: Limit
+        in: query
+        name: limit
+        type: integer
+      - description: Category
+        in: query
+        name: category
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/table.QuestionDetail'
+            type: array
+      summary: Get questions
+  /questions/{id}:
+    get:
+      description: Get question by id
+      parameters:
+      - description: question id
+        in: path
+        name: id
+        required: true
+        type: integer
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/table.QuestionDetail'
+      summary: Get questions
+  /sync:
+    get:
+      description: Sync question from leetcode
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+      summary: Sync question
+swagger: "2.0"
