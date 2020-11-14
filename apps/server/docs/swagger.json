@@ -1,0 +1,176 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "6leetcode API get question and solutions.",
+        "title": "6leetcode API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "6leetcode.com",
+    "basePath": "/api",
+    "paths": {
+        "/questions": {
+            "get": {
+                "description": "Get all of questions",
+                "summary": "Get questions",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "Offset",
+                        "name": "offset",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Limit",
+                        "name": "limit",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "Category",
+                        "name": "category",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/table.QuestionDetail"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/questions/{id}": {
+            "get": {
+                "description": "Get question by id",
+                "summary": "Get questions",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "question id",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/table.QuestionDetail"
+                        }
+                    }
+                }
+            }
+        },
+        "/sync": {
+            "get": {
+                "description": "Sync question from leetcode",
+                "summary": "Sync question",
+                "responses": {
+                    "200": {
+                        "description": "ok",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "table.QuestionDetail": {
+            "type": "object",
+            "properties": {
+                "acRate": {
+                    "type": "string"
+                },
+                "category_title": {
+                    "type": "string"
+                },
+                "code_snippets": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "content": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "difficulty": {
+                    "type": "string"
+                },
+                "frontend_question_id": {
+                    "type": "integer"
+                },
+                "lang_to_valid_playground": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "paid_only": {
+                    "type": "boolean"
+                },
+                "question_id": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "similar_questions": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "stats": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "title": {
+                    "type": "string"
+                },
+                "title_slug": {
+                    "type": "string"
+                },
+                "topic_tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "totalAccepted": {
+                    "type": "string"
+                },
+                "totalAcceptedRaw": {
+                    "type": "integer"
+                },
+                "totalSubmission": {
+                    "type": "string"
+                },
+                "totalSubmissionRaw": {
+                    "type": "integer"
+                },
+                "translated_content": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    }
+                },
+                "translated_title": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
