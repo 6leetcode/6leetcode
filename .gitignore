@@ -43,8 +43,6 @@ $HOME/
 venv/
 apps/server/config.yml
 apps/server/release/
-apps/uni-app/unpackage/
-apps/uni-app/node_modules/
 apps/server/questions/
 apps/web/bindata.go
 apps/server/cmd/server/bindata.go
