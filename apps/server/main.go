@@ -16,6 +16,13 @@ var BuildStamp = "no provided"
 // GitHash version command output msg
 var GitHash = "no provided"
 
+//go:generate swag init
+// @title 6leetcode API
+// @version 1.0
+// @description 6leetcode API get question and solutions.
+
+// @host https://6leetcode.com
+// @BasePath /api
 func main() {
 	// set version command output
 	version.Setting(Version, BuildStamp, GitHash)

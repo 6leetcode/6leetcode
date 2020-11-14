@@ -18,9 +18,12 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/robfig/cron"
 	"github.com/spf13/viper"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/tosone/logging"
 
 	"6leetcode/common/leetcode"
+	_ "6leetcode/docs"
 )
 
 // Controller controller
@@ -44,6 +47,9 @@ func Initialize() (err error) {
 	router.Use(gin.Logger())
 	router.Use(cors.Default())
 
+	router.GET("/swagger/*any", ginSwagger.WrapHandler(
+		swaggerFiles.Handler, ginSwagger.URL("/swagger/doc.json")))
+
 	var rateLimitMiddleware gin.HandlerFunc
 	if rateLimitMiddleware, err = rateLimit(); err != nil {
 		logging.Fatalf("create gin rate limit middleware with error: %v", err)
@@ -61,15 +67,11 @@ func Initialize() (err error) {
 		c.Redirect(http.StatusMovedPermanently, "/static")
 	})
 
-	router.GET("/ping", func(c *gin.Context) {
-		c.String(200, "pong")
-	})
-
 	router.NoRoute(func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"code": 200, "msg": "Sorry, nothing here."})
 	})
 
-	fmt.Printf("Listening and serving HTTP on 0.0.0.0:%s\n", viper.GetString("ServerPort"))
+	fmt.Printf("Listening and serving HTTP on http://127.0.0.1:%s\n", viper.GetString("ServerPort"))
 
 	var srv = &http.Server{
 		Addr:    fmt.Sprintf(":%s", viper.GetString("ServerPort")),

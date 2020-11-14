@@ -11,11 +11,18 @@ import (
 )
 
 func (c *Controller) questions() {
-	c.GET("/questions", questionsRoute)
-	c.GET("/questions/:id", questionsGetRoute)
-	c.GET("/sync", syncRoute)
+	var api = c.Group("/api")
+	{
+		api.GET("/questions", questionsRoute)
+		api.GET("/questions/:id", questionsGetRoute)
+		api.GET("/sync", syncRoute)
+	}
 }
 
+// @Summary Sync question
+// @Description Sync question from leetcode
+// @Success 200 {string} string	"ok"
+// @Router /sync [get]
 func syncRoute(context *gin.Context) {
 	var err error
 
@@ -40,6 +47,13 @@ func syncRoute(context *gin.Context) {
 	}()
 }
 
+// @Summary Get questions
+// @Description Get all of questions
+// @Param offset query int false "Offset"
+// @Param limit query int false "Limit"
+// @Param category query string false "Category"
+// @Success 200 {array} table.QuestionDetail
+// @Router /questions [get]
 func questionsRoute(context *gin.Context) {
 	var err error
 
@@ -72,6 +86,11 @@ func questionsRoute(context *gin.Context) {
 	total = new(table.Question).Total(options)
 }
 
+// @Summary Get questions
+// @Description Get question by id
+// @Param id path int true "question id"
+// @Success 200 {object} table.QuestionDetail
+// @Router /questions/{id} [get]
 func questionsGetRoute(context *gin.Context) {
 	var err error
 
