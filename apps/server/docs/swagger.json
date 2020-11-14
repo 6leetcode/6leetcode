@@ -6,7 +6,7 @@
         "contact": {},
         "version": "1.0"
     },
-    "host": "6leetcode.com",
+    "host": "https://6leetcode.com",
     "basePath": "/api",
     "paths": {
         "/questions": {

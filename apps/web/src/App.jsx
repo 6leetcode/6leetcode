@@ -7,7 +7,7 @@ import axios from 'axios';
 
 import './App.scss';
 
-const localServer = process.env.NODE_ENV === "development" ? "http://127.0.0.1:4000" : "";
+const localServer = process.env.NODE_ENV === "development" ? "http://127.0.0.1:4000/api" : "/api";
 const pageSize = 100;
 
 export default class App extends React.Component {
