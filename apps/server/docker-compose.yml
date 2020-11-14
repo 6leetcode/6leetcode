@@ -36,7 +36,7 @@ services:
     image: containrrr/watchtower:latest
     container_name: watchtower
     hostname: watchtower
-    command: ["watchtower", "--cleanup", "--interval", "3600", "6leetcode"]
+    command: 6leetcode postgresql-master postgresql-slave traefik --interval 3600 --cleanup
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     depends_on:
@@ -81,6 +81,7 @@ services:
       - traefik
       - postgresql-master
       - postgresql-slave
+      - watchtower
     command:
       ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "server"]
     build:
@@ -101,4 +102,4 @@ services:
 networks:
   default:
     external:
-      name: ${DOCKER_NETWORK:-webproxy}
+      name: ${DOCKER_NETWORK:-6leetcode}
