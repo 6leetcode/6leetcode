@@ -1,3 +1,11 @@
+# 1.7.2 (November 3, 2020)
+
+* Fix data value slices into work buffer with capacities larger than length.
+
+# 1.7.1 (October 31, 2020)
+
+* Do not asyncClose after receiving FATAL error from PostgreSQL server
+
 # 1.7.0 (September 26, 2020)
 
 * Exec(Params|Prepared) return ResultReader with FieldDescriptions loaded
