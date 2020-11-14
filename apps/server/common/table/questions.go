@@ -29,6 +29,30 @@ type Question struct {
 	TopicTags             []byte `json:"topic_tags" gorm:"type:text"`
 }
 
+// QuestionDetail question detail
+type QuestionDetail struct {
+	QuestionID            int    `json:"question_id" example:"1"`
+	FrontendQuestionID    int    `json:"frontend_question_id" gorm:"index:unique"`
+	Difficulty            string `json:"difficulty"`
+	PaidOnly              bool   `json:"paid_only"`
+	Title                 string `json:"title"`
+	TitleSlug             string `json:"title_slug"`
+	TranslatedTitle       string `json:"translated_title"`
+	CategoryTitle         string `json:"category_title"`
+	TotalAccepted         string `json:"totalAccepted"`
+	TotalSubmission       string `json:"totalSubmission"`
+	TotalAcceptedRaw      uint64 `json:"totalAcceptedRaw"`
+	TotalSubmissionRaw    uint64 `json:"totalSubmissionRaw"`
+	ACRate                string `json:"acRate"`
+	CodeSnippets          []byte `json:"code_snippets" gorm:"type:text"`
+	Content               []byte `json:"content" gorm:"type:text"`
+	TranslatedContent     []byte `json:"translated_content" gorm:"type:text"`
+	LangToValidPlayground []byte `json:"lang_to_valid_playground" gorm:"type:text"`
+	SimilarQuestions      []byte `json:"similar_questions" gorm:"type:text"`
+	Stats                 []byte `json:"stats" gorm:"type:text"`
+	TopicTags             []byte `json:"topic_tags" gorm:"type:text"`
+}
+
 // Options ..
 type Options struct {
 	Limit    int    `form:"limit"`
