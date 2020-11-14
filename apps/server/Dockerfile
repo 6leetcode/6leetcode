@@ -1,8 +1,9 @@
 FROM golang:alpine AS stage1
 
 # ENV GOPROXY="https://goproxy.cn,direct"
-# sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk add --no-cache git && go get -u -v github.com/go-bindata/go-bindata/...
+# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+RUN apk add --no-cache git && go get -u -v github.com/go-bindata/go-bindata/... && \
+  go get -u -v github.com/swaggo/swag/cmd/swag
 
 FROM node:14-alpine3.12 AS stage2
 
@@ -14,8 +15,8 @@ ADD . .
 
 # ENV SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass
 
-RUN cd apps/web && \
-  yarn install --registry https://registry.npm.taobao.org && yarn build
+RUN cd apps/web && yarn install && yarn build
+# RUN cd apps/web && yarn install --registry https://registry.npm.taobao.org && yarn build
 
 FROM golang:alpine AS stage3
 
@@ -23,9 +24,10 @@ WORKDIR /go/src/app
 
 ADD . .
 
+COPY --from=stage1 /go/bin/swag /usr/bin
 COPY --from=stage2 /go/src/app/apps/server/cmd/server/bindata.go apps/server/cmd/server
 
-# sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --no-cache gcc make musl-dev git && \
   cd apps/server && \
   make release && \
@@ -36,8 +38,8 @@ FROM alpine:3.12
 
 ADD apps/server/wait-for-it.sh /usr/local/bin
 
-# sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk add --no-cache ca-certificates bash wget && \
+# RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
+RUN apk add --no-cache ca-certificates bash && \
   mkdir -p /etc/6leetcode && \
   mkdir -p /data
 

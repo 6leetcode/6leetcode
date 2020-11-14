@@ -19,12 +19,18 @@ else
 endif
 
 .PHONY: build
-build:
-	go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags "-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+build: generate
+	go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags \
+	"-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
-release:
-	env GOOS=${OSName} go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags "-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+release: generate
+	env GOOS=${OSName} go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags \
+	"-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+
+.PHONY: generate
+generate:
+	go generate
 
 .PHONY: lint
 lint:
