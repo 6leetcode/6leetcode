@@ -1,8 +1,9 @@
 ### [仓库经理](https://leetcode-cn.com/problems/warehouse-manager)
 
-<p>表:&nbsp;<code>Warehouse</code></p>
+<p>表: <code>Warehouse</code></p>
 
-<pre>+--------------+---------+
+<pre>
++--------------+---------+
 | Column Name  | Type    |
 +--------------+---------+
 | name         | varchar |
@@ -13,11 +14,12 @@
 该表的行包含了每个仓库的所有商品信息.
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p>表: <code>Products</code></p>
 
-<pre>+---------------+---------+
+<pre>
++---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
 | product_id    | int     |
@@ -30,9 +32,9 @@ product_id 是该表主键.
 该表的行包含了每件商品以英尺为单位的尺寸(宽度, 长度和高度)信息.
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p>写一个 SQL&nbsp;查询来报告,&nbsp;每个仓库的存货量是多少立方英尺.</p>
+<p>写一个 SQL 查询来报告, 每个仓库的存货量是多少立方英尺.</p>
 
 <ul>
 	<li>仓库名</li>
@@ -43,9 +45,10 @@ product_id 是该表主键.
 
 <p>查询结果如下例所示.</p>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<pre><code>Warehouse 表</code>:
+<pre>
+<code>Warehouse 表</code>:
 +------------+--------------+-------------+
 | name       | product_id   | units       |
 +------------+--------------+-------------+
@@ -69,7 +72,7 @@ Products 表:
 
 Result 表:
 +----------------+------------+
-| <code>warehouse_name </code>| <code>volume   </code>  | 
+| <code>WAREHOUSE_NAME </code>| <code>VOLUME   </code>  | 
 +----------------+------------+
 | LCHouse1       | 12250      | 
 | LCHouse2       | 20250      |
@@ -80,9 +83,9 @@ Id为2的商品(LC-KeyChain)的存货量为 5x5x5 = 125
 Id为3的商品(LC-Phone)的存货量为 2x10x10 = 200
 Id为4的商品(LC-T-Shirt)的存货量为 4x10x20 = 800
 仓库LCHouse1: 1个单位的LC-TV + 10个单位的LC-KeyChain + 5个单位的LC-Phone.
-&nbsp;         总存货量为: 1*10000 + 10*125  + 5*200 = 12250 立方英尺
+          总存货量为: 1*10000 + 10*125  + 5*200 = 12250 立方英尺
 仓库LCHouse2: 2个单位的LC-TV + 2个单位的LC-KeyChain.
-&nbsp;         总存货量为: 2*10000 + 2*125 = 20250 立方英尺
+          总存货量为: 2*10000 + 2*125 = 20250 立方英尺
 仓库LCHouse3: 1个单位的LC-T-Shirt.
           总存货量为: 1*800 = 800 立方英尺.
 </pre>

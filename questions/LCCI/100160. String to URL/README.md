@@ -7,8 +7,6 @@
 <pre>
 <strong>Input: </strong>&quot;Mr John Smith &quot;, 13
 <strong>Output: </strong>&quot;Mr%20John%20Smith&quot;
-<strong>Explanation: </strong>
-The missing numbers are [5,6,8,...], hence the third missing number is 8.
 </pre>
 
 <p><strong>Example 2:</strong></p>

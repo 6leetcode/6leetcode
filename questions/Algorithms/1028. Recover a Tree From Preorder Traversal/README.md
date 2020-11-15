@@ -6,7 +6,7 @@
 
 <p>If a node has only one child, that child is guaranteed to be <strong>the left child</strong>.</p>
 
-<p>Given the output <code>S</code> of this traversal, recover the tree, and return <em>its <code>root</code></em>.</p>
+<p>Given the output <code>S</code> of this traversal, recover the tree and return <em>its</em> <code>root</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

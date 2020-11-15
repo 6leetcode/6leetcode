@@ -30,7 +30,3 @@
 	<li><code>0 <= nums.length <= 10<sup>4</sup></code></li>
 	<li><code>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></code></li>
 </ul>
-
-<ul>
-	<li> </li>
-</ul>
