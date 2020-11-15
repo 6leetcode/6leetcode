@@ -4,7 +4,7 @@
 
 <p>设计一个算法来计算你所能获取的最大利润。你最多可以完成 <strong>k</strong> 笔交易。</p>
 
-<p><strong>注意:</strong> 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。</p>
+<p><strong>注意：</strong>你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。</p>
 
 <p> </p>
 
@@ -29,6 +29,6 @@
 
 <ul>
 	<li><code>0 <= k <= 10<sup>9</sup></code></li>
-	<li><code>0 <= prices.length <= 10<sup>4</sup></code></li>
+	<li><code>0 <= prices.length <= 1000</code></li>
 	<li><code>0 <= prices[i] <= 1000</code></li>
 </ul>

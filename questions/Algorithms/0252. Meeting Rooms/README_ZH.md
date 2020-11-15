@@ -24,6 +24,6 @@
 
 <ul>
 	<li><code>0 <= intervals.length <= 10<sup>4</sup></code></li>
-	<li><code>intervals.length == 2</code></li>
+	<li><code>intervals[i].length == 2</code></li>
 	<li><code>0 <= start<sub>i</sub> < end<sub>i</sub> <= 10<sup>6</sup></code></li>
 </ul>
