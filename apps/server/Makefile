@@ -9,23 +9,15 @@ BuildStamp              = $(shell date '+%Y%m%d%H%M%S')
 GitHash                 = $(shell git rev-parse HEAD)
 Version                 = $(shell git describe --abbrev=0 --tags --always)
 Target                  = ${app_name}
-Suffix                  =
-
-ifeq ($(OS),Windows_NT)
-	OSName = windows
-	Suffix = .exe
-else
-	OSName = $(shell echo $(shell uname -s) | tr '[:upper:]' '[:lower:]')
-endif
 
 .PHONY: build
 build: generate
-	go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags \
+	go build -v -o release/${Target} -tags=jsoniter -ldflags \
 	"-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release: generate
-	env GOOS=${OSName} go build -v -o release/${Target}${Suffix} -tags=jsoniter -ldflags \
+	go build -v -o release/${Target} -tags=jsoniter -ldflags \
 	"-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: generate
