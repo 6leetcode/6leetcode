@@ -1,4 +1,4 @@
-### [LRU缓存机制](https://leetcode-cn.com/problems/lru-cache)
+### [LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache)
 
 <div class="title__3Vvk">运用你所掌握的数据结构，设计和实现一个  <a href="https://baike.baidu.com/item/LRU" target="_blank">LRU (最近最少使用) 缓存机制</a> 。</div>
 

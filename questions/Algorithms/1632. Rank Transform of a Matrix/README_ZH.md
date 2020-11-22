@@ -5,7 +5,7 @@
 <p>每个元素的 <b>秩</b> 是一个整数，表示这个元素相对于其他元素的大小关系，它按照如下规则计算：</p>
 
 <ul>
-	<li>如果一个元素是它所在行和列的最小值，那么它的 <strong>秩</strong> 为 1。</li>
+	<li>秩是从 1 开始的一个整数。</li>
 	<li>如果两个元素 <code>p</code> 和 <code>q</code> 在 <strong>同一行</strong> 或者 <strong>同一列</strong> ，那么：
 	<ul>
 		<li>如果 <code>p < q</code> ，那么 <code>rank(p) < rank(q)</code></li>
