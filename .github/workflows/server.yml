@@ -45,7 +45,7 @@ jobs:
           yarn
           yarn build
       - name: Lint code
-        uses: golangci/golangci-lint-action@v1
+        uses: golangci/golangci-lint-action@v2
         with:
           version: v1.32
           working-directory: apps/server
