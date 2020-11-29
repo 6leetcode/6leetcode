@@ -15,5 +15,5 @@ int main(int argc, char const *argv[]) {
   cout << "Input:  " << input << endl;
   Solution solution;
   cout << "Output: " << solution.bulbSwitch(input) << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }

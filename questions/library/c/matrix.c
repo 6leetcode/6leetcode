@@ -22,5 +22,5 @@ int main(int argc, char const *argv[]) {
   }
   free(matrix);
   free(matrixColSize);
-  return 0;
+  return EXIT_SUCCESS;
 }

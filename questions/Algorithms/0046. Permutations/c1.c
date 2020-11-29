@@ -67,5 +67,5 @@ int main(int argc, char const *argv[]) {
     free(output3[i]);
   }
   free(output3);
-  return 0;
+  return EXIT_SUCCESS;
 }

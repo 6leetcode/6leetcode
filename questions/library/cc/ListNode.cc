@@ -7,5 +7,5 @@ int main(int argc, char const *argv[]) {
   struct ListNode *node = init(arr, sizeof(arr) / sizeof(int));
   show(node);
   destory(node);
-  return 0;
+  return EXIT_SUCCESS;
 }

@@ -38,5 +38,5 @@ int main(int argc, char const *argv[]) {
   cout << "Input:  " << input1 << " " << input2 << endl;
   Solution solution;
   cout << "Output: " << solution.findRotateSteps(input1, input2) << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }

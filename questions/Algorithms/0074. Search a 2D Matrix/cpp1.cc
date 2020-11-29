@@ -36,5 +36,5 @@ int main(int argc, char const *argv[]) {
   cout << "Input:  " << matrix_show(input1) << endl;
   Solution solution;
   cout << "Output: " << (solution.searchMatrix(input1, input2) ? "true" : "false") << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }
