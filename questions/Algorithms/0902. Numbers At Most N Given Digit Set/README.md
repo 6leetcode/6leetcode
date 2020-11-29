@@ -1,8 +1,8 @@
 ### [Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set)
 
-<p>Given an array of <code>digits</code>, you can&nbsp;write numbers using each <code>digits[i]</code> as many times as we want.&nbsp; For example, if <code>digits = [&#39;1&#39;,&#39;3&#39;,&#39;5&#39;]</code>, we may write numbers such as <code>&#39;13&#39;</code>, <code>&#39;551&#39;</code>, and <code>&#39;1351315&#39;</code>.</p>
+<p>Given an array of <code>digits</code> which is sorted in <strong>non-decreasing</strong> order. You can write numbers using each <code>digits[i]</code> as many times as we want. For example, if <code>digits = [&#39;1&#39;,&#39;3&#39;,&#39;5&#39;]</code>, we may write numbers such as <code>&#39;13&#39;</code>, <code>&#39;551&#39;</code>, and <code>&#39;1351315&#39;</code>.</p>
 
-<p>Return <em>the number of positive integers that can be generated&nbsp;</em>that are less than or equal to a given integer <code>n</code>.</p>
+<p>Return <em>the number of positive integers that can be generated </em>that are less than or equal to a given integer <code>n</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -42,5 +42,6 @@ In total, this is 29523 integers that can be written using the digits array.
 	<li><code>digits[i].length == 1</code></li>
 	<li><code>digits[i]</code> is a digit from&nbsp;<code>&#39;1&#39;</code>&nbsp;to <code>&#39;9&#39;</code>.</li>
 	<li>All the values in&nbsp;<code>digits</code> are <strong>unique</strong>.</li>
+	<li><code>digits</code> is sorted in&nbsp;<strong>non-decreasing</strong> order.</li>
 	<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>
 </ul>

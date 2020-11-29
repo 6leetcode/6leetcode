@@ -2,7 +2,8 @@
 
 <p>Table: <code>Activity</code></p>
 
-<pre>+---------------+---------+
+<pre>
++---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
 | user_id       | int     |
@@ -11,19 +12,20 @@
 | activity_type | enum    |
 +---------------+---------+
 该表没有主键，它可能有重复的行。
-activity_type列是一种类型的ENUM（&ldquo; open_session&rdquo;，&ldquo; end_session&rdquo;，&ldquo; scroll_down&rdquo;，&ldquo; send_message&rdquo;）。
+activity_type 列是 ENUM（“ open_session”，“ end_session”，“ scroll_down”，“ send_message”）中的某一类型。
 该表显示了社交媒体网站的用户活动。
 请注意，每个会话完全属于一个用户。</pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p>编写SQL查询以查找截至2019年7月27日（含）的30天内每个用户的平均会话数，四舍五入到小数点后两位。我们只统计那些会话期间用户至少进行一项活动的有效会话。</p>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p>查询结果格式如下例所示：</p>
 
-<pre>Activity table:
+<pre>
+Activity table:
 +---------+------------+---------------+---------------+
 | user_id | session_id | activity_date | activity_type |
 +---------+------------+---------------+---------------+
