@@ -44,5 +44,5 @@ int main(int argc, char const *argv[]) {
   }
   printf("]\n");
   printf("Output: %f\n", findMedianSortedArrays(input1, sizeof(input1) / sizeof(int), input2, sizeof(input2) / sizeof(int)));
-  return 0;
+  return EXIT_SUCCESS;
 }
