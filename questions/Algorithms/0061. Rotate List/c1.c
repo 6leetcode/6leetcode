@@ -11,7 +11,7 @@ struct ListNode {
 struct ListNode *create_node(int val) {
   struct ListNode *node = (struct ListNode *)malloc(sizeof(struct ListNode));
   if (node != NULL) {
-    node->val  = val;
+    node->val = val;
     node->next = NULL;
   }
   return node;
@@ -26,24 +26,24 @@ struct ListNode *rotateRight(struct ListNode *head, int k) {
 
   struct ListNode *old_head = head;
   struct ListNode *new_head = NULL;
-  struct ListNode *new_cur  = NULL;
+  struct ListNode *new_cur = NULL;
   for (int length = k % sz; length > 0; length--) {
     if (new_head == NULL) {
-      new_cur  = create_node(0);
+      new_cur = create_node(0);
       new_head = new_cur;
     } else {
       new_cur->next = create_node(0);
-      new_cur       = new_cur->next;
+      new_cur = new_cur->next;
     }
   }
 
   for (int length = sz - (k % sz); length > 0; length--) {
     if (new_head == NULL) {
-      new_cur  = create_node(old_head->val);
+      new_cur = create_node(old_head->val);
       new_head = new_cur;
     } else {
       new_cur->next = create_node(old_head->val);
-      new_cur       = new_cur->next;
+      new_cur = new_cur->next;
     }
     old_head = old_head->next;
   }
@@ -52,8 +52,8 @@ struct ListNode *rotateRight(struct ListNode *head, int k) {
 
   for (int length = k % sz; length > 0; length--) {
     new_tmp->val = old_head->val;
-    new_tmp      = new_tmp->next;
-    old_head     = old_head->next;
+    new_tmp = new_tmp->next;
+    old_head = old_head->next;
   }
 
   return new_head;
@@ -121,5 +121,5 @@ int main(int argc, char const *argv[]) {
 
   free_node(ans);
 
-  return 0;
+  return EXIT_SUCCESS;
 }

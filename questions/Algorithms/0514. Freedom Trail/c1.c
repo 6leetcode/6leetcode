@@ -41,5 +41,5 @@ int main(int argc, char const *argv[]) {
   printf("Input:  %s %s\n", input1, input2);
   int output = findRotateSteps(input1, input2);
   printf("Output: %d\n", output);
-  return 0;
+  return EXIT_SUCCESS;
 }

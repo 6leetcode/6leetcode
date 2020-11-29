@@ -29,5 +29,5 @@ int main(int argc, char const *argv[]) {
   cout << "Input:  " << matrix_show(input1) << endl;
   Solution solution;
   cout << "Output: " << matrix_show(solution.kClosest(input1, input2)) << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }

@@ -1,12 +1,13 @@
 #include <iostream>
-#include <vector.hpp>
 #include <vector>
+
+#include <vector.hpp>
 
 using namespace std;
 
 // ------------------------------- solution begin -------------------------------
 class Solution {
- public:
+public:
   int maxProfit(vector<int> &prices) {
     if (prices.size() == 0) {
       return 0;

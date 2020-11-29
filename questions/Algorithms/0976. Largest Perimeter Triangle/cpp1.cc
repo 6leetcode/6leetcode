@@ -23,5 +23,5 @@ int main(int argc, char const *argv[]) {
   cout << "Input:  " << vector_show(input) << endl;
   Solution solution;
   cout << "Output: " << solution.largestPerimeter(input) << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }

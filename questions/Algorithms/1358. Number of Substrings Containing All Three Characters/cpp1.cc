@@ -45,5 +45,5 @@ int main(int argc, char const *argv[]) {
   Solution solution;
   int output = solution.numberOfSubstrings(input);
   cout << "Output: " << output << endl;
-  return 0;
+  return EXIT_SUCCESS;
 }
