@@ -85,5 +85,11 @@ int main(int argc, char const *argv[]) {
 
   printf("Output: %s\n", isValidSudoku(new_board, N, col) ? "true" : "false");
 
+  for (int i = 0; i < N; i++) {
+    free(new_board[i]);
+  }
+  free(new_board);
+  // free(matrixColSize);
+
   return 0;
 }
