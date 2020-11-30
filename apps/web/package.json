@@ -5,13 +5,13 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
-    "antd": "^4.8.5",
+    "antd": "^4.8.6",
     "@testing-library/user-event": "^12.2.2",
     "axios": "^0.21.0",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.0",
+    "react-scripts": "4.0.1",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
