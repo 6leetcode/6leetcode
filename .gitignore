@@ -50,3 +50,4 @@ apps/server/data
 apps/server/.env
 
 *.dSYM/
+dist/
