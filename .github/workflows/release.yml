@@ -1,7 +1,7 @@
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 name: Create Release
 
@@ -12,17 +12,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Build release
         run: |
           zip --junk-paths install apps/server/docker-compose.yml apps/server/install.sh
-      - name: Generate changelog
-        id: generate-changelog
-        uses: heinrichreimer/action-github-changelog-generator@v2.1
+      - name: Set up Go
+        uses: actions/setup-go@v2
         with:
-          onlyLastTag: "true"
-          stripHeaders: "true"
-          stripGeneratorNotice: "true"
-          token: ${{ secrets.PAT }}
+          go-version: 1.15
       - name: Create Release
         id: create_release
         uses: actions/create-release@latest
@@ -35,7 +33,7 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload Release Asset
-        id: upload-release-asset 
+        id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.PAT }}
@@ -44,3 +42,33 @@ jobs:
           asset_path: ./install.zip
           asset_name: install.zip
           asset_content_type: application/zip
+      - name: Generate config files
+        run: |
+          cd apps/server
+          if [ ! -f .env ]; then cp .env.sample .env; fi
+          if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install go-bindata
+        run: go get -u -v github.com/go-bindata/go-bindata/...
+      - name: Install swag
+        run: go get -u -v github.com/swaggo/swag/cmd/swag
+      - name: Build fontend
+        run: |
+          cd apps/web
+          npm install -g yarn
+          yarn
+          yarn build
+      - name: Build server
+        run: |
+          cd apps/server
+          make
+      - name: Run GoReleaser
+        uses: goreleaser/goreleaser-action@v2
+        with:
+          version: latest
+          args: release --rm-dist --skip-validate
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
