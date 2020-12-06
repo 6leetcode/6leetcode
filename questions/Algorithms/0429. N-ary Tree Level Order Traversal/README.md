@@ -28,5 +28,5 @@
 
 <ul>
 	<li>The height of the n-ary tree is less than or equal to <code>1000</code></li>
-	<li>The total number of nodes is between <code>[0,&nbsp;10^4]</code></li>
+	<li>The total number of nodes is between <code>[0, 10<sup>4</sup>]</code></li>
 </ul>

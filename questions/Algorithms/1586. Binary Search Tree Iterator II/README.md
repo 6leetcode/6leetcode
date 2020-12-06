@@ -14,8 +14,6 @@
 
 <p>You may assume that <code>next()</code> and <code>prev()</code> calls will always be valid. That is, there will be at least a next/previous number in the in-order traversal&nbsp;when <code>next()</code>/<code>prev()</code> is called.</p>
 
-<p><strong>Follow up:</strong> Could you solve the problem without precalculating the values of the tree?</p>
-
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
@@ -51,5 +49,8 @@ bSTIterator.prev(); // state becomes [3, 7, <u>9</u>, 15, 20], return 9
 <ul>
 	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>5</sup>]</code>.</li>
 	<li><code>0 &lt;= Node.val &lt;= 10<sup>6</sup></code></li>
-	<li>At most 10<sup>5</sup> calls will be made to <code>hasNext</code>, <code>next</code>, <code>hasPrev</code>, and <code>prev</code>.</li>
+	<li>At most <code>10<sup>5</sup></code> calls will be made to <code>hasNext</code>, <code>next</code>, <code>hasPrev</code>, and <code>prev</code>.</li>
 </ul>
+
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Could you solve the problem without precalculating the values of the tree?
