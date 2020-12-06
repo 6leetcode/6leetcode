@@ -21,7 +21,7 @@
 <p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/10/04/tree1.png" style="width: 211px; height: 131px;" /></strong></p>
 
 <pre>
-<strong>Input:</strong> root1 = [+,a,+,null,null,b,c], root2 = [+,+,b,c,a]
+<strong>Input:</strong> root1 = [+,a,+,null,null,b,c], root2 = [+,+,a,b,c]
 <strong>Output:</strong> true
 <strong>Explaination:</strong> <code>a + (b + c) == (b + c) + a</code></pre>
 
@@ -30,7 +30,7 @@
 <p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/10/04/tree2.png" style="width: 211px; height: 131px;" /></strong></p>
 
 <pre>
-<strong>Input:</strong> root1 = [+,a,+,null,null,b,c], root2 = [+,+,b,d,a]
+<strong>Input:</strong> root1 = [+,a,+,null,null,b,c], root2 = [+,+,a,b,d]
 <strong>Output:</strong> false
 <strong>Explaination:</strong> <code>a + (b + c) != (b + d) + a</code>
 </pre>

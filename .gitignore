@@ -38,6 +38,8 @@ $HOME/
 *.class
 *.db
 
+.eslintcache
+
 .idea/
 .vscode/
 venv/

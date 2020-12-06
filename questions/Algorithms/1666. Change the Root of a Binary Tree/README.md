@@ -1,12 +1,12 @@
-### [Change the Root of a Binary Tree](https://leetcode.com/problems/flip-binary-tree)
+### [Change the Root of a Binary Tree](https://leetcode.com/problems/change-the-root-of-a-binary-tree)
 
 <p>Given the <code>root</code> of a binary tree and a <code>leaf</code> node, reroot the tree so that the <code>leaf</code> is the new root.</p>
 
 <p>You can reroot the tree with the following steps for each node <code>cur</code> on the path <strong>starting from the </strong><code>leaf</code> up to the <code>root</code>​​​ <strong>excluding the root</strong>:</p>
 
 <ol>
-	<li>If <code>cur</code> has a left child, then that child becomes <code>cur</code>&#39;s right child. Note that it is guaranteed that <code>cur</code> will have at most one child.</li>
-	<li><code>cur</code>&#39;s original parent becomes <code>cur</code>&#39;s left child.</li>
+	<li>If <code>cur</code> has a left child, then that child becomes <code>cur</code>&#39;s right child.</li>
+	<li><code>cur</code>&#39;s original parent becomes <code>cur</code>&#39;s left child. Note that in this process the original parent&#39;s pointer to <code>cur</code> becomes <code>null</code>, making it have at most one child.</li>
 </ol>
 
 <p>Return <em>the new root </em><em>of the rerooted tree.</em></p>
