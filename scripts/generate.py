@@ -31,6 +31,7 @@ def rewrite_readme(name, table_content):
   result.append(table_content)
 
   file.write("\n".join(result))
+  file.write("\n")
   file.close()
 
 
