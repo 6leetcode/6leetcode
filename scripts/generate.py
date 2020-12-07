@@ -23,10 +23,10 @@ def rewrite_readme(name, table_content):
   result = []
 
   for _data in data:
-    if _data.strip() != "### Solutions' list":
+    if _data.strip() != "## Solutions' list":
       result.append(_data.strip())
     else:
-      result.append("### Solutions' list")
+      result.append("## Solutions' list")
       break
   result.append(table_content)
 
