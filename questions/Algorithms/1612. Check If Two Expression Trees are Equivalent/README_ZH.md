@@ -1,6 +1,6 @@
 ### [检查两棵二叉表达式树是否等价](https://leetcode-cn.com/problems/check-if-two-expression-trees-are-equivalent)
 
-<p><strong><a href="https://en.wikipedia.org/wiki/Binary_expression_tree" target="_blank">二叉表达式树</a></strong>是一种表达算术表达式的二叉树。二叉表达式树中的每一个节点都有零个或两个子节点。 叶节点（有 0 个子节点的节点）表示操作数，非叶节点（有 2 个子节点的节点）&lt;meta charset="UTF-8"&gt;表示运算符。在本题中，我们只考虑 <code>'+'</code> 运算符（即加法）。</p>
+<p><strong><a href="https://en.wikipedia.org/wiki/Binary_expression_tree" target="_blank">二叉表达式树</a></strong>是一种表达算术表达式的二叉树。二叉表达式树中的每一个节点都有零个或两个子节点。 叶节点（有 0 个子节点的节点）表示操作数，非叶节点（有 2 个子节点的节点）表示运算符。在本题中，我们只考虑 <code>'+'</code> 运算符（即加法）。</p>
 
 <p>给定两棵二叉表达式树的根节点 <code>root1</code> 和 <code>root2</code> 。<em>如果两棵二叉表达式树等价</em>，返回 <code>true</code> ，否则返回 <code>false</code> 。</p>
 
@@ -12,23 +12,26 @@
 
 <p><strong>示例 1:</strong></p>
 
-<pre><b>输入：</b> root1 = [x], root2 = [x]
+<pre>
+<b>输入：</b> root1 = [x], root2 = [x]
 <b>输出：</b> true
 </pre>
 
 <p><strong>示例 2:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/10/04/tree1.png" style="width: 211px; height: 131px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/10/04/tree1.png" style="width: 211px; height: 131px;" /></strong></p>
 
-<pre><b>输入：</b>root1 = [+,a,+,null,null,b,c], root2 = [+,+,b,c,a]
+<pre>
+<b>输入：</b>root1 = [+,a,+,null,null,b,c], root2 = [+,+,a,b,c]
 <b>输出：</b>true
 <code><span style=""><b>解释：</b></span>a + (b + c) == (b + c) + a</code></pre>
 
 <p><strong>示例 3:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/10/04/tree2.png" style="width: 211px; height: 131px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2020/10/04/tree2.png" style="width: 211px; height: 131px;" /></strong></p>
 
-<pre><b>输入：</b> root1 = [+,a,+,null,null,b,c], root2 = [+,+,b,d,a]
+<pre>
+<b>输入：</b> root1 = [+,a,+,null,null,b,c], root2 = [+,+,a,b,d]
 <b>输出：</b> false
 <b>解释：</b> <code>a + (b + c) != (b + d) + a</code>
 </pre>

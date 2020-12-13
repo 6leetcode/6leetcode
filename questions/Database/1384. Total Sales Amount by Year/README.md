@@ -22,7 +22,7 @@ product_name is the name of the product.
 | Column Name         | Type    |
 +---------------------+---------+
 | product_id          | int     |
-| period_start        | varchar |
+| period_start        | date    |
 | period_end          | date    |
 | average_daily_sales | int     |
 +---------------------+---------+
@@ -39,7 +39,6 @@ The average_daily_sales column holds the average daily&nbsp;sales amount of the 
 <p>The query result format is in the following example:</p>
 
 <pre>
-
 <code>Product</code> table:
 +------------+--------------+
 | product_id | product_name |
