@@ -1,6 +1,6 @@
 ### [分割数组为连续子序列](https://leetcode-cn.com/problems/split-array-into-consecutive-subsequences)
 
-<p>给你一个按升序排序的整数数组 <code>num</code>（可能包含重复数字），请你将它们分割成一个或多个长度为 3 的子序列，其中每个子序列都由连续整数组成。</p>
+<p>给你一个按升序排序的整数数组 <code>num</code>（可能包含重复数字），请你将它们分割成一个或多个长度至少为 3 的子序列，其中每个子序列都由连续整数组成。</p>
 
 <p>如果可以完成上述分割，则返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
 
