@@ -1,25 +1,21 @@
 ### [Leftmost Column with at Least a One](https://leetcode.com/problems/leftmost-column-with-at-least-a-one)
 
-<p><em>(This problem is an&nbsp;<strong>interactive problem</strong>.)</em></p>
+<p><em>(This problem is an <strong>interactive problem</strong>.)</em></p>
 
-<p>A binary matrix means that all elements are&nbsp;<code>0</code>&nbsp;or&nbsp;<code>1</code>. For each&nbsp;<strong>individual</strong> row of the matrix, this row&nbsp;is sorted in non-decreasing order.</p>
+<p>A <strong>row-sorted binary matrix</strong> means that all elements are <code>0</code> or <code>1</code> and each row of the matrix is sorted in non-decreasing order.</p>
 
-<p>Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a&nbsp;<code>1</code>&nbsp;in it. If such&nbsp;index&nbsp;doesn&#39;t exist, return <code>-1</code>.</p>
+<p>Given a <strong>row-sorted binary matrix</strong> <code>binaryMatrix</code>, return <em>the index (0-indexed) of the <strong>leftmost column</strong> with a 1 in it</em>. If such an index does not exist, return <code>-1</code>.</p>
 
-<p><strong>You can&#39;t access the Binary Matrix directly.</strong>&nbsp; You may only access the matrix using a&nbsp;<code>BinaryMatrix</code>&nbsp;interface:</p>
+<p><strong>You can&#39;t access the Binary Matrix directly.</strong> You may only access the matrix using a <code>BinaryMatrix</code> interface:</p>
 
 <ul>
-	<li><code>BinaryMatrix.get(row, col)</code> returns the element of the matrix&nbsp;at index <code>(row, col)</code>&nbsp;(0-indexed).</li>
-	<li><code>BinaryMatrix.dimensions()</code>&nbsp;returns a list of 2 elements&nbsp;<code>[rows, cols]</code>, which means the matrix is <code>rows * cols</code>.</li>
+	<li><code>BinaryMatrix.get(row, col)</code> returns the element of the matrix at index <code>(row, col)</code> (0-indexed).</li>
+	<li><code>BinaryMatrix.dimensions()</code> returns the dimensions of the matrix as a list of 2 elements <code>[rows, cols]</code>, which means the matrix is <code>rows x cols</code>.</li>
 </ul>
 
-<p>Submissions making more than <code>1000</code>&nbsp;calls to&nbsp;<code>BinaryMatrix.get</code>&nbsp;will be judged <em>Wrong Answer</em>.&nbsp; Also, any solutions that attempt to circumvent the judge&nbsp;will result in disqualification.</p>
+<p>Submissions making more than <code>1000</code> calls to <code>BinaryMatrix.get</code> will be judged <em>Wrong Answer</em>. Also, any solutions that attempt to circumvent the judge will result in disqualification.</p>
 
-<p>For custom testing purposes you&#39;re given the binary matrix <code>mat</code>&nbsp;as input&nbsp;in the following four examples. You will not have&nbsp;access the binary matrix directly.</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
+<p>For custom testing purposes, the input will be the entire binary matrix <code>mat</code>. You will not have access to the binary matrix directly.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -63,7 +59,7 @@
 <ul>
 	<li><code>rows == mat.length</code></li>
 	<li><code>cols == mat[i].length</code></li>
-	<li><code>1 &lt;= rows, cols&nbsp;&lt;= 100</code></li>
-	<li><code>mat[i][j]</code> is either <code>0</code>&nbsp;or&nbsp;<code>1</code>.</li>
-	<li><code>mat[i]</code>&nbsp;is sorted in a&nbsp;non-decreasing way.</li>
+	<li><code>1 &lt;= rows, cols &lt;= 100</code></li>
+	<li><code>mat[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
+	<li><code>mat[i]</code> is sorted in non-decreasing order.</li>
 </ul>
