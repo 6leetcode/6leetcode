@@ -36,6 +36,10 @@ type Config struct {
 	DisableForeignKeyConstraintWhenMigrating bool
 	// AllowGlobalUpdate allow global update
 	AllowGlobalUpdate bool
+	// QueryFields executes the SQL query with all fields of the table
+	QueryFields bool
+	// CreateBatchSize default create batch size
+	CreateBatchSize int
 
 	// ClauseBuilders clause builder
 	ClauseBuilders map[string]clause.ClauseBuilder
@@ -68,9 +72,11 @@ type Session struct {
 	SkipDefaultTransaction bool
 	AllowGlobalUpdate      bool
 	FullSaveAssociations   bool
+	QueryFields            bool
 	Context                context.Context
 	Logger                 logger.Interface
 	NowFunc                func() time.Time
+	CreateBatchSize        int
 }
 
 // Open initialize db session based on dialector
@@ -158,6 +164,10 @@ func (db *DB) Session(config *Session) *DB {
 		}
 	)
 
+	if config.CreateBatchSize > 0 {
+		tx.Config.CreateBatchSize = config.CreateBatchSize
+	}
+
 	if config.SkipDefaultTransaction {
 		tx.Config.SkipDefaultTransaction = true
 	}
@@ -202,6 +212,10 @@ func (db *DB) Session(config *Session) *DB {
 
 	if config.DryRun {
 		tx.Config.DryRun = true
+	}
+
+	if config.QueryFields {
+		tx.Config.QueryFields = true
 	}
 
 	if config.Logger != nil {

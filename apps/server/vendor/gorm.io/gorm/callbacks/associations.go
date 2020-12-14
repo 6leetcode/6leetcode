@@ -318,12 +318,8 @@ func onConflictOption(stmt *gorm.Statement, s *schema.Schema, selectColumns map[
 
 	if len(defaultUpdatingColumns) > 0 {
 		var columns []clause.Column
-		if s.PrioritizedPrimaryField != nil {
-			columns = []clause.Column{{Name: s.PrioritizedPrimaryField.DBName}}
-		} else {
-			for _, dbName := range s.PrimaryFieldDBNames {
-				columns = append(columns, clause.Column{Name: dbName})
-			}
+		for _, dbName := range s.PrimaryFieldDBNames {
+			columns = append(columns, clause.Column{Name: dbName})
 		}
 
 		return clause.OnConflict{
@@ -359,7 +355,7 @@ func saveAssociations(db *gorm.DB, rel *schema.Relationship, values interface{},
 		}
 	}
 
-	tx := db.Session(&gorm.Session{NewDB: true}).Clauses(onConflict)
+	tx := db.Session(&gorm.Session{NewDB: true}).Clauses(onConflict).Session(&gorm.Session{SkipHooks: db.Statement.SkipHooks})
 
 	if len(selects) > 0 {
 		tx = tx.Select(selects)
