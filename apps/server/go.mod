@@ -31,11 +31,10 @@ require (
 	github.com/swaggo/swag v1.7.0
 	github.com/tosone/logging v1.2.1
 	github.com/ugorji/go v1.2.0 // indirect
-	github.com/ulule/limiter/v3 v3.7.1
+	github.com/ulule/limiter/v3 v3.8.0
 	github.com/unknwon/com v1.0.1
 	golang.org/x/crypto v0.0.0-20201112155050-0c6587e931a9 // indirect
 	golang.org/x/sys v0.0.0-20201113233024-12cec1faf1ba // indirect
-	golang.org/x/text v0.3.4 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gorm.io/driver/mysql v1.0.3
