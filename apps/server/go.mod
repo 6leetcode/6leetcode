@@ -35,12 +35,13 @@ require (
 	github.com/unknwon/com v1.0.1
 	golang.org/x/crypto v0.0.0-20201112155050-0c6587e931a9 // indirect
 	golang.org/x/sys v0.0.0-20201113233024-12cec1faf1ba // indirect
+	golang.org/x/text v0.3.4 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gorm.io/driver/mysql v1.0.3
 	gorm.io/driver/postgres v1.0.5
-	gorm.io/driver/sqlite v1.1.3
-	gorm.io/gorm v1.20.6
+	gorm.io/driver/sqlite v1.1.4
+	gorm.io/gorm v1.20.7
 	moul.io/http2curl v1.0.0 // indirect
 )
 
