@@ -1,6 +1,6 @@
 ### [Customers Who Bought All Products](https://leetcode.com/problems/customers-who-bought-all-products)
 
-<p>Table:&nbsp;<code>Customer</code></p>
+<p>Table: <code>Customer</code></p>
 
 <pre>
 +-------------+---------+
@@ -12,7 +12,9 @@
 product_key is a foreign key to <code>Product</code> table.
 </pre>
 
-<p>Table:&nbsp;<code>Product</code></p>
+<p>&nbsp;</p>
+
+<p>Table: <code>Product</code></p>
 
 <pre>
 +-------------+---------+
@@ -25,9 +27,13 @@ product_key is the primary key column for this table.
 
 <p>&nbsp;</p>
 
-<p>Write an SQL query for a report that provides the customer ids from the&nbsp;<code>Customer</code>&nbsp;table&nbsp;that bought all the products in the <code>Product</code>&nbsp;table.</p>
+<p>Write an SQL query for a report that provides the customer ids from the <code>Customer</code> table that bought all the products in the <code>Product</code> table.</p>
 
-<p>For example:</p>
+<p>Return the result table in <strong>any order</strong>.</p>
+
+<p>The query result format is in the following example:</p>
+
+<p>&nbsp;</p>
 
 <pre>
 Customer table:

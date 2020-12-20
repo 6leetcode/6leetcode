@@ -46,7 +46,7 @@
 
 <ul>
 	<li><code>rows == matrix.length</code></li>
-	<li><code>cols == matrix.length</code></li>
+	<li><code>cols == matrix[0].length</code></li>
 	<li><code>0 <= row, cols <= 200</code></li>
 	<li><code>matrix[i][j]</code> 为 <code>'0'</code> 或 <code>'1'</code></li>
 </ul>
