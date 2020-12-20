@@ -11,7 +11,7 @@
 | operation_day | int     |
 | price         | int     |
 +---------------+---------+
-(stock_name, day) is the primary key for this table.
+(stock_name, operation_day) is the primary key for this table.
 The operation column is an ENUM of type (&#39;Sell&#39;, &#39;Buy&#39;)
 Each row of this table indicates that the stock which has stock_name had an operation on the day operation_day with the price.
 It is guaranteed that each &#39;Sell&#39; operation for a stock has a corresponding &#39;Buy&#39; operation in a previous day.
@@ -26,6 +26,8 @@ It is guaranteed that each &#39;Sell&#39; operation for a stock has a correspond
 <p>Return the result table in any order.</p>
 
 <p>The query result format is in the following example:</p>
+
+<p>&nbsp;</p>
 
 <pre>
 <code>Stocks</code> table:

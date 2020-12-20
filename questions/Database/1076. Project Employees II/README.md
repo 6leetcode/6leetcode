@@ -1,6 +1,6 @@
 ### [Project Employees II](https://leetcode.com/problems/project-employees-ii)
 
-<p>Table:&nbsp;<code>Project</code></p>
+<p>Table: <code>Project</code></p>
 
 <pre>
 +-------------+---------+
@@ -13,7 +13,9 @@
 employee_id is a foreign key to <code>Employee</code> table.
 </pre>
 
-<p>Table:&nbsp;<code>Employee</code></p>
+<p>&nbsp;</p>
+
+<p>Table: <code>Employee</code></p>
 
 <pre>
 +------------------+---------+
@@ -28,9 +30,11 @@ employee_id is the primary key of this table.
 
 <p>&nbsp;</p>
 
-<p>Write an SQL query that reports all the <strong>projects</strong>&nbsp;that have the most employees.</p>
+<p>Write an SQL query that reports all the <strong>projects</strong> that have the most employees.</p>
 
 <p>The query result format is in the following example:</p>
+
+<p>&nbsp;</p>
 
 <pre>
 Project table:

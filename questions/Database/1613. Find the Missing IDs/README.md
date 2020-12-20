@@ -26,7 +26,7 @@ Each row of this table contains the name and the id customer.
 <p>&nbsp;</p>
 
 <pre>
-<code>Customer</code> table:
+<code>Customers</code> table:
 +-------------+---------------+
 | customer_id | customer_name |
 +-------------+---------------+
