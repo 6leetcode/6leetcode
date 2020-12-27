@@ -1,6 +1,6 @@
 ### [按年度列出销售总额](https://leetcode-cn.com/problems/total-sales-amount-by-year)
 
-<p>&nbsp;<code>Product</code>&nbsp;表：</p>
+<p> <code>Product</code> 表：</p>
 
 <pre>
 +---------------+---------+
@@ -13,29 +13,29 @@ product_id 是这张表的主键。
 product_name 是产品的名称。
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p><code>Sales</code>&nbsp;表：</p>
+<p><code>Sales</code> 表：</p>
 
 <pre>
 +---------------------+---------+
 | Column Name         | Type    |
 +---------------------+---------+
 | product_id          | int     |
-| period_start        | varchar |
+| period_start        | date    |
 | period_end          | date    |
 | average_daily_sales | int     |
 +---------------------+---------+
 product_id 是这张表的主键。
-period_start&nbsp;和 period_end&nbsp;是该产品销售期的起始日期和结束日期，且这两个日期包含在销售期内。
+period_start 和 period_end 是该产品销售期的起始日期和结束日期，且这两个日期包含在销售期内。
 average_daily_sales 列存储销售期内该产品的日平均销售额。
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p>编写一段SQL查询每个产品每年的总销售额，并包含 product_id, product_name 以及 report_year 等信息。</p>
+<p>编写一段 SQL 查询每个产品每年的总销售额，并包含 product_id, product_name 以及 report_year 等信息。</p>
 
-<p>销售年份的日期介于 2018 年到 2020 年之间。你返回的结果需要按&nbsp;product_id 和 report_year<strong> 排序</strong>。</p>
+<p>销售年份的日期介于 2018 年到 2020 年之间。你返回的结果需要按 product_id 和 report_year<strong> 排序</strong>。</p>
 
 <p>查询结果格式如下例所示：</p>
 
@@ -70,6 +70,6 @@ Result table:
 | 3          | LC Keychain  |    2020     | 31           |
 +------------+--------------+-------------+--------------+
 LC Phone 在 2019-01-25 至 2019-02-28 期间销售，该产品销售时间总计35天。销售总额 35*100 = 3500。
-LC T-shirt 在 2018-12-01&nbsp;至 2020-01-01 期间销售，该产品在2018年、2019年、2020年的销售时间分别是31天、365天、1天，2018年、2019年、2020年的销售总额分别是31*10=310、365*10=3650、1*10=10。
-LC Keychain 在 2019-12-01&nbsp;至 2020-01-31 期间销售，该产品在2019年、2020年的销售时间分别是：31天、31天，2019年、2020年的销售总额分别是31*1=31、31*1=31。
+LC T-shirt 在 2018-12-01 至 2020-01-01 期间销售，该产品在2018年、2019年、2020年的销售时间分别是31天、365天、1天，2018年、2019年、2020年的销售总额分别是31*10=310、365*10=3650、1*10=10。
+LC Keychain 在 2019-12-01 至 2020-01-31 期间销售，该产品在2019年、2020年的销售时间分别是：31天、31天，2019年、2020年的销售总额分别是31*1=31、31*1=31。
 </pre>

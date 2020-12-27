@@ -26,7 +26,7 @@
 
 <pre>
 <strong>Input:</strong> n = 4, k = 2
-<strong>Output:</strong> 6
+<strong>Output:</strong> 7
 <strong>Explanation:</strong> You can distribute 4 candies into 2 bags in 7 ways:
 (1), (2,3,4)
 (1,2), (3,4)
