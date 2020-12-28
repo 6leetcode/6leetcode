@@ -165,16 +165,7 @@ func (stmt *Statement) AddVar(writer clause.Writer, vars ...interface{}) {
 		case Valuer:
 			stmt.AddVar(writer, v.GormValue(stmt.Context, stmt.DB))
 		case clause.Expr:
-			var varStr strings.Builder
-			var sql = v.SQL
-			for _, arg := range v.Vars {
-				stmt.Vars = append(stmt.Vars, arg)
-				stmt.DB.Dialector.BindVarTo(&varStr, stmt, arg)
-				sql = strings.Replace(sql, "?", varStr.String(), 1)
-				varStr.Reset()
-			}
-
-			writer.WriteString(sql)
+			v.Build(stmt)
 		case driver.Valuer:
 			stmt.Vars = append(stmt.Vars, v)
 			stmt.DB.Dialector.BindVarTo(writer, stmt, v)
@@ -447,9 +438,15 @@ func (stmt *Statement) clone() *Statement {
 
 // Helpers
 // SetColumn set column's value
-func (stmt *Statement) SetColumn(name string, value interface{}) {
+//   stmt.SetColumn("Name", "jinzhu") // Hooks Method
+//   stmt.SetColumn("Name", "jinzhu", true) // Callbacks Method
+func (stmt *Statement) SetColumn(name string, value interface{}, fromCallbacks ...bool) {
 	if v, ok := stmt.Dest.(map[string]interface{}); ok {
 		v[name] = value
+	} else if v, ok := stmt.Dest.([]map[string]interface{}); ok {
+		for _, m := range v {
+			m[name] = value
+		}
 	} else if stmt.Schema != nil {
 		if field := stmt.Schema.LookUpField(name); field != nil {
 			destValue := reflect.ValueOf(stmt.Dest)
@@ -475,7 +472,13 @@ func (stmt *Statement) SetColumn(name string, value interface{}) {
 
 			switch stmt.ReflectValue.Kind() {
 			case reflect.Slice, reflect.Array:
-				field.Set(stmt.ReflectValue.Index(stmt.CurDestIndex), value)
+				if len(fromCallbacks) > 0 {
+					for i := 0; i < stmt.ReflectValue.Len(); i++ {
+						field.Set(stmt.ReflectValue.Index(i), value)
+					}
+				} else {
+					field.Set(stmt.ReflectValue.Index(stmt.CurDestIndex), value)
+				}
 			case reflect.Struct:
 				field.Set(stmt.ReflectValue, value)
 			}
@@ -576,7 +579,7 @@ func (stmt *Statement) SelectAndOmitColumns(requireCreate, requireUpdate bool) (
 	}
 
 	if stmt.Schema != nil {
-		for _, field := range stmt.Schema.Fields {
+		for _, field := range stmt.Schema.FieldsByName {
 			name := field.DBName
 			if name == "" {
 				name = field.Name
