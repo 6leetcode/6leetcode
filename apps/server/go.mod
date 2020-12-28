@@ -11,7 +11,6 @@ require (
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-playground/validator/v10 v10.4.1 // indirect
 	github.com/golang/protobuf v1.4.3 // indirect
-	github.com/jackc/pgx/v4 v4.9.2 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/lib/pq v1.7.0 // indirect
 	github.com/magiconair/properties v1.8.4 // indirect
@@ -38,7 +37,7 @@ require (
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gorm.io/driver/mysql v1.0.3
-	gorm.io/driver/postgres v1.0.5
+	gorm.io/driver/postgres v1.0.6
 	gorm.io/driver/sqlite v1.1.4
 	gorm.io/gorm v1.20.8
 	moul.io/http2curl v1.0.0 // indirect
