@@ -25,6 +25,7 @@ type Config struct {
 	DriverName           string
 	DSN                  string
 	PreferSimpleProtocol bool
+	WithoutReturning     bool
 	Conn                 *sql.DB
 }
 
@@ -43,7 +44,7 @@ func (dialector Dialector) Name() string {
 func (dialector Dialector) Initialize(db *gorm.DB) (err error) {
 	// register callbacks
 	callbacks.RegisterDefaultCallbacks(db, &callbacks.Config{
-		WithReturning: true,
+		WithReturning: !dialector.WithoutReturning,
 	})
 
 	if dialector.Conn != nil {
@@ -60,7 +61,7 @@ func (dialector Dialector) Initialize(db *gorm.DB) (err error) {
 		if dialector.Config.PreferSimpleProtocol {
 			config.PreferSimpleProtocol = true
 		}
-		result := regexp.MustCompile("(time_zone|TimeZone)=(.*)($|&| )").FindStringSubmatch(dialector.Config.DSN)
+		result := regexp.MustCompile("(time_zone|TimeZone)=(.*?)($|&| )").FindStringSubmatch(dialector.Config.DSN)
 		if len(result) > 2 {
 			config.RuntimeParams["timezone"] = result[2]
 		}
