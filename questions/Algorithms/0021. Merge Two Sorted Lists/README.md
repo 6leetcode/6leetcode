@@ -1,6 +1,6 @@
 ### [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
-<p>Merge two sorted linked lists and return it as a new <strong>sorted</strong> list. The new list should be made by splicing together the nodes of the first two lists.</p>
+<p>Merge two sorted linked lists and return it as a <strong>sorted</strong> list. The list should be made by splicing together the nodes of the first two lists.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

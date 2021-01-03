@@ -52,6 +52,5 @@ Result table:
 | 2020-12-7 | honda     | 3            | 2               |
 +-----------+-----------+--------------+-----------------+
 For 2020-12-8, toyota gets leads = [0, 1] and partners = [0, 1, 2] while honda gets leads = [1, 2] and partners = [1, 2].
-For 2020-12-7, toyota gets leads = [0] and partners = [1, 2] while honda gets leads = [0, 1, 2] and partners = [1, 2].</pre>
-
-<p>&nbsp;</p>
+For 2020-12-7, toyota gets leads = [0] and partners = [1, 2] while honda gets leads = [0, 1, 2] and partners = [1, 2].
+</pre>

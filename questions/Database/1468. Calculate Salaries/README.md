@@ -45,7 +45,7 @@ Salaries table:
 | 3          | 7           | Bocaben       | 100    |
 | 3          | 2           | Ognjen        | 2200   |
 | 3          | 13          | Nyancat       | 3300   |
-| 3          | 15          | Morninngcat   | 1866   |
+| 3          | 15          | Morninngcat   | 7777   |
 +------------+-------------+---------------+--------+
 
 Result table:
