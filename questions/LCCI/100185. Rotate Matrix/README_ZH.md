@@ -44,4 +44,4 @@
 ]
 </pre>
 
-<p><strong>注意</strong>：本题与主站 48 题相同：<a href="https://leetcode-cn.com/problems/reverse-linked-list/">https://leetcode-cn.com/problems/rotate-image/</a></p>
+<p><strong>注意</strong>：本题与主站 48 题相同：<a href="https://leetcode-cn.com/problems/rotate-image/">https://leetcode-cn.com/problems/rotate-image/</a></p>
