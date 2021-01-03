@@ -10,7 +10,7 @@
 <pre>
 <strong>Input:</strong> s = &quot;aabbaba&quot;
 <strong>Output:</strong> 21
-<strong>Explanation:</strong> The set of distinct strings is [&quot;a&quot;,&quot;b&quot;,&quot;aa&quot;,&quot;bb&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;aab&quot;,&quot;abb&quot;,&quot;bba&quot;,&quot;aba&quot;,&quot;aabb&quot;,&quot;abba&quot;,&quot;bbab&quot;,&quot;baba&quot;,&quot;aabba&quot;,&quot;abbab&quot;,&quot;bbaba&quot;,&quot;aabbab&quot;,&quot;abbaba&quot;,&quot;aabbaba&quot;]
+<strong>Explanation:</strong> The set of distinct strings is [&quot;a&quot;,&quot;b&quot;,&quot;aa&quot;,&quot;bb&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;aab&quot;,&quot;abb&quot;,&quot;bab&quot;,&quot;bba&quot;,&quot;aba&quot;,&quot;aabb&quot;,&quot;abba&quot;,&quot;bbab&quot;,&quot;baba&quot;,&quot;aabba&quot;,&quot;abbab&quot;,&quot;bbaba&quot;,&quot;aabbab&quot;,&quot;abbaba&quot;,&quot;aabbaba&quot;]
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -27,3 +27,6 @@
 	<li><code>1 &lt;= s.length &lt;= 500</code></li>
 	<li><code>s</code> consists of lowercase English letters.</li>
 </ul>
+
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Can you solve this problem in <code>O(n)</code> time complexity?
