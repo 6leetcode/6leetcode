@@ -50,7 +50,7 @@ validWordAbbr.isUnique(&quot;cake&quot;); // return true, because &quot;cake&quo
 	<li><code>1 &lt;= dictionary.length &lt;= 3 * 10<sup>4</sup></code></li>
 	<li><code>1 &lt;= dictionary[i].length &lt;= 20</code></li>
 	<li><code>dictionary[i]</code> consists of lowercase English letters.</li>
-	<li><code>1 &lt;= word &lt;= 20</code></li>
+	<li><code>1 &lt;= word.length &lt;= 20</code></li>
 	<li><code>word</code> consists of lowercase English letters.</li>
 	<li>At most <code>5000</code> calls will be made to <code>isUnique</code>.</li>
 </ul>

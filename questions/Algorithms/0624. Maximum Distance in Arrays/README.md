@@ -1,6 +1,10 @@
 ### [Maximum Distance in Arrays](https://leetcode.com/problems/maximum-distance-in-arrays)
 
-<p>You are given&nbsp;<code>m</code>&nbsp;<code>arrays</code>, where each array is sorted in <strong>ascending order</strong>. Now you can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers <code>a</code> and <code>b</code> to be their absolute difference <code>|a - b|</code>. Your task is to find the maximum distance.</p>
+<p>You are given <code>m</code> <code>arrays</code>, where each array is sorted in <strong>ascending order</strong>.</p>
+
+<p>You can pick up two integers from two different arrays (each array picks one) and calculate the distance. We define the distance between two integers <code>a</code> and <code>b</code> to be their absolute difference <code>|a - b|</code>.</p>
+
+<p>Return <em>the maximum distance</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -37,7 +41,7 @@
 
 <ul>
 	<li><code>m == arrays.length</code></li>
-	<li><code>2&nbsp;&lt;= m &lt;= 10<sup>4</sup></code></li>
+	<li><code>2&nbsp;&lt;= m &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= arrays[i].length &lt;= 500</code></li>
 	<li><code>-10<sup>4</sup> &lt;= arrays[i][j] &lt;= 10<sup>4</sup></code></li>
 	<li><code>arrays[i]</code> is sorted in <strong>ascending order</strong>.</li>

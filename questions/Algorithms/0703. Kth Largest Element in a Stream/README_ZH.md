@@ -6,7 +6,7 @@
 
 <ul>
 	<li><code>KthLargest(int k, int[] nums)</code> 使用整数 <code>k</code> 和整数流 <code>nums</code> 初始化对象。</li>
-	<li><code>int add(int val)</code> 返回当前数据流中第 <code>k</code> 大的元素。</li>
+	<li><code>int add(int val)</code> 将 <code>val</code> 插入数据流 <code>nums</code> 后，返回当前数据流中第 <code>k</code> 大的元素。</li>
 </ul>
 
 <p> </p>

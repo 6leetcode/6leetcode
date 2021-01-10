@@ -1,13 +1,13 @@
 ### [Beautiful Arrangement](https://leetcode.com/problems/beautiful-arrangement)
 
-<p>Suppose you have <code>n</code> integers from <code>1</code> to <code>n</code>. We define a beautiful arrangement as an array that is constructed by these <code>n</code> numbers successfully if one of the following is true for the <code>i<sup>th</sup></code> position (<code>1 &lt;= i &lt;= n</code>) in this array:</p>
+<p>Suppose you have <code>n</code> integers labeled <code>1</code> through <code>n</code>. A permutation of those <code>n</code> integers <code>perm</code> (<strong>1-indexed</strong>) is considered a <strong>beautiful arrangement</strong> if for every <code>i</code> (<code>1 &lt;= i &lt;= n</code>), <strong>either</strong> of the following is true:</p>
 
 <ul>
-	<li>The number at the <code>i<sup>th</sup></code> position is divisible by <code>i</code>.</li>
-	<li><code>i</code> is divisible by the number at the <code>i<sup>th</sup></code> position.</li>
+	<li><code>perm[i]</code> is divisible by <code>i</code>.</li>
+	<li><code>i</code> is divisible by <code>perm[i]</code>.</li>
 </ul>
 
-<p>Given an integer <code>n</code>, return <em>the number of the beautiful arrangements that you can construct</em>.</p>
+<p>Given an integer <code>n</code>, return <em>the <strong>number</strong> of the <strong>beautiful arrangements</strong> that you can construct</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -16,12 +16,12 @@
 <strong>Input:</strong> n = 2
 <strong>Output:</strong> 2
 <b>Explanation:</b> 
-The first beautiful arrangement is [1, 2]:
-Number at the 1st position (i=1) is 1, and 1 is divisible by i (i=1).
-Number at the 2nd position (i=2) is 2, and 2 is divisible by i (i=2).
-The second beautiful arrangement is [2, 1]:
-Number at the 1st position (i=1) is 2, and 2 is divisible by i (i=1).
-Number at the 2nd position (i=2) is 1, and i (i=2) is divisible by 1.
+The first beautiful arrangement is [1,2]:
+    - perm[1] = 1 is divisible by i = 1
+    - perm[2] = 2 is divisible by i = 2
+The second beautiful arrangement is [2,1]:
+    - perm[1] = 2 is divisible by i = 1
+    - i = 2 is divisible by perm[2] = 1
 </pre>
 
 <p><strong>Example 2:</strong></p>
