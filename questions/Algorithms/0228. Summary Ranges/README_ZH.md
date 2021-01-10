@@ -7,57 +7,63 @@
 <p>列表中的每个区间范围 <code>[a,b]</code> 应该按如下格式输出：</p>
 
 <ul>
-	<li><code>&quot;a-&gt;b&quot;</code> ，如果 <code>a != b</code></li>
-	<li><code>&quot;a&quot;</code> ，如果 <code>a == b</code></li>
+	<li><code>"a->b"</code> ，如果 <code>a != b</code></li>
+	<li><code>"a"</code> ，如果 <code>a == b</code></li>
 </ul>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>nums = [0,1,2,4,5,7]
-<strong>输出：</strong>[&quot;0-&gt;2&quot;,&quot;4-&gt;5&quot;,&quot;7&quot;]
+<pre>
+<strong>输入：</strong>nums = [0,1,2,4,5,7]
+<strong>输出：</strong>["0->2","4->5","7"]
 <strong>解释：</strong>区间范围是：
-[0,2] --&gt; &quot;0-&gt;2&quot;
-[4,5] --&gt; &quot;4-&gt;5&quot;
-[7,7] --&gt; &quot;7&quot;
+[0,2] --> "0->2"
+[4,5] --> "4->5"
+[7,7] --> "7"
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>nums = [0,2,3,4,6,8,9]
-<strong>输出：</strong>[&quot;0&quot;,&quot;2-&gt;4&quot;,&quot;6&quot;,&quot;8-&gt;9&quot;]
+<pre>
+<strong>输入：</strong>nums = [0,2,3,4,6,8,9]
+<strong>输出：</strong>["0","2->4","6","8->9"]
 <strong>解释：</strong>区间范围是：
-[0,0] --&gt; &quot;0&quot;
-[2,4] --&gt; &quot;2-&gt;4&quot;
-[6,6] --&gt; &quot;6&quot;
-[8,9] --&gt; &quot;8-&gt;9&quot;
+[0,0] --> "0"
+[2,4] --> "2->4"
+[6,6] --> "6"
+[8,9] --> "8->9"
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>nums = []
+<pre>
+<strong>输入：</strong>nums = []
 <strong>输出：</strong>[]
 </pre>
 
 <p><strong>示例 4：</strong></p>
 
-<pre><strong>输入：</strong>nums = [-1]
-<strong>输出：</strong>[&quot;-1&quot;]
+<pre>
+<strong>输入：</strong>nums = [-1]
+<strong>输出：</strong>["-1"]
 </pre>
 
 <p><strong>示例 5：</strong></p>
 
-<pre><strong>输入：</strong>nums = [0]
-<strong>输出：</strong>[&quot;0&quot;]
+<pre>
+<strong>输入：</strong>nums = [0]
+<strong>输出：</strong>["0"]
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>0 &lt;= nums.length &lt;= 20</code></li>
-	<li><code>-2<sup>31</sup> &lt;= nums[i] &lt;= 2<sup>31</sup> - 1</code></li>
+	<li><code>0 <= nums.length <= 20</code></li>
+	<li><code>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1</code></li>
 	<li><code>nums</code> 中的所有值都 <strong>互不相同</strong></li>
+	<li><code>nums</code> 按升序排列</li>
 </ul>

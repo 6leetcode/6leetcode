@@ -29,5 +29,5 @@
 <ul>
 	<li><code>2 &lt;= stones.length &lt;= 2000</code></li>
 	<li><code>0 &lt;= stones[i] &lt;= 2<sup>31</sup> - 1</code></li>
-	<li><code>stones[i] == 0</code></li>
+	<li><code>stones[0] == 0</code></li>
 </ul>

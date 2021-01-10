@@ -1,35 +1,35 @@
 ### [N皇后 II](https://leetcode-cn.com/problems/n-queens-ii)
 
-<p><em>n&nbsp;</em>皇后问题研究的是如何将 <em>n</em>&nbsp;个皇后放置在 <em>n</em>&times;<em>n</em> 的棋盘上，并且使皇后彼此之间不能相互攻击。</p>
+<p><strong>n 皇后问题</strong> 研究的是如何将 <code>n</code> 个皇后放置在 <code>n×n</code> 的棋盘上，并且使皇后彼此之间不能相互攻击。</p>
 
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/8-queens.png" style="height: 276px; width: 258px;"></p>
+<p>给你一个整数 <code>n</code> ，返回 <strong>n 皇后问题</strong> 不同的解决方案的数量。</p>
 
-<p><small>上图为 8 皇后问题的一种解法。</small></p>
+<p> </p>
 
-<p>给定一个整数 <em>n</em>，返回 <em>n</em> 皇后不同的解决方案的数量。</p>
-
-<p><strong>示例:</strong></p>
-
-<pre><strong>输入:</strong> 4
-<strong>输出:</strong> 2
-<strong>解释:</strong> 4 皇后问题存在如下两个不同的解法。
-[
-&nbsp;[&quot;.Q..&quot;, &nbsp;// 解法 1
-&nbsp; &quot;...Q&quot;,
-&nbsp; &quot;Q...&quot;,
-&nbsp; &quot;..Q.&quot;],
-
-&nbsp;[&quot;..Q.&quot;, &nbsp;// 解法 2
-&nbsp; &quot;Q...&quot;,
-&nbsp; &quot;...Q&quot;,
-&nbsp; &quot;.Q..&quot;]
-]
+<div class="original__bRMd">
+<div>
+<p><strong>示例 1：</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/11/13/queens.jpg" style="width: 600px; height: 268px;" />
+<pre>
+<strong>输入：</strong>n = 4
+<strong>输出：</strong>2
+<strong>解释：</strong>如上图所示，4 皇后问题存在两个不同的解法。
 </pre>
 
-<p>&nbsp;</p>
+<p><strong>示例 2：</strong></p>
+
+<pre>
+<strong>输入：</strong>n = 1
+<strong>输出：</strong>1
+</pre>
+
+<p> </p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><strong>皇后</strong>，是<a href="https://baike.baidu.com/item/%E5%9B%BD%E9%99%85%E8%B1%A1%E6%A3%8B" target="_blank">国际象棋</a>中的棋子，意味着<a href="https://baike.baidu.com/item/%E5%9B%BD%E7%8E%8B" target="_blank">国王</a>的妻子。皇后只做一件事，那就是&ldquo;<a href="https://baike.baidu.com/item/%E5%90%83%E5%AD%90" target="_blank">吃子</a>&rdquo;。当她遇见可以吃的棋子时，就迅速冲上去吃掉棋子。当然，她横、竖、斜都可走一或 N-1 步，可进可退。（引用自 <a href="https://baike.baidu.com/item/%E7%9A%87%E5%90%8E/15860305?fr=aladdin">百度百科 - 皇后</a> ）</li>
+	<li><code>1 <= n <= 9</code></li>
+	<li>皇后彼此不能相互攻击，也就是说：任何两个皇后都不能处于同一条横行、纵行或斜线上。</li>
 </ul>
+</div>
+</div>
