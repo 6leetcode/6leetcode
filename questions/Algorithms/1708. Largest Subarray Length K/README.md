@@ -43,6 +43,7 @@ Of these, [4,5,2,3] is the largest.</pre>
 <ul>
 	<li><code>1 &lt;= k &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+	<li>All the integers of <code>nums</code> are <strong>unique</strong>.</li>
 </ul>
 
 <p>&nbsp;</p>

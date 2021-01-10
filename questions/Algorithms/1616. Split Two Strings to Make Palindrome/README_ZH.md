@@ -6,7 +6,7 @@
 
 <p>如果 <strong>能构成回文字符串</strong> ，那么请返回 <code>true</code>，否则返回<em> </em><code>false</code> 。</p>
 
-<p><strong>请注意</strong>， <code>x + y</code> 表示连接字符串 <code>x</code> 和 <code>y</code> 。</p>
+<p><strong>注意</strong>， <code>x + y</code> 表示连接字符串 <code>x</code> 和 <code>y</code> 。</p>
 
 <p> </p>
 
@@ -24,12 +24,26 @@ b<sub>prefix</sub> = "", b<sub>suffix</sub> = "y"
 <p><strong>示例 2：</strong></p>
 
 <pre>
+<strong>输入：</strong>a = "abdef", b = "fecab"
+<strong>输出：</strong>true
+</pre>
+
+<p><strong>示例 3：</strong></p>
+
+<pre>
 <b>输入：</b>a = "ulacfd", b = "jizalu"
 <b>输出：</b>true
 <b>解释：</b>在下标为 3 处分割：
 a<sub>prefix</sub> = "ula", a<sub>suffix</sub> = "cfd"
 b<sub>prefix</sub> = "jiz", b<sub>suffix</sub> = "alu"
 那么 a<sub>prefix</sub> + b<sub>suffix</sub> = "ula" + "alu" = "ulaalu" 是回文串。</pre>
+
+<p><strong>示例 4：</strong></p>
+
+<pre>
+<strong>输入：</strong>a = "xbdef", b = "xecab"
+<strong>输出：</strong>false
+</pre>
 
 <p> </p>
 
