@@ -126,7 +126,7 @@ func Open(dialector Dialector, config *Config) (db *DB, err error) {
 
 	preparedStmt := &PreparedStmtDB{
 		ConnPool:    db.ConnPool,
-		Stmts:       map[string]*sql.Stmt{},
+		Stmts:       map[string]Stmt{},
 		Mux:         &sync.RWMutex{},
 		PreparedSQL: make([]string, 0, 100),
 	}
@@ -163,6 +163,7 @@ func (db *DB) Session(config *Session) *DB {
 		tx       = &DB{
 			Config:    &txConfig,
 			Statement: db.Statement,
+			Error:     db.Error,
 			clone:     1,
 		}
 	)
@@ -379,15 +380,14 @@ func (db *DB) SetupJoinTable(model interface{}, field string, joinTable interfac
 	return nil
 }
 
-func (db *DB) Use(plugin Plugin) (err error) {
+func (db *DB) Use(plugin Plugin) error {
 	name := plugin.Name()
-	if _, ok := db.Plugins[name]; !ok {
-		if err = plugin.Initialize(db); err == nil {
-			db.Plugins[name] = plugin
-		}
-	} else {
+	if _, ok := db.Plugins[name]; ok {
 		return ErrRegistered
 	}
-
-	return err
+	if err := plugin.Initialize(db); err != nil {
+		return err
+	}
+	db.Plugins[name] = plugin
+	return nil
 }

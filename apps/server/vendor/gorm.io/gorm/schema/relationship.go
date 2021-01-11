@@ -396,15 +396,37 @@ func (schema *Schema) guessRelation(relation *Relationship, field *Field, gl gue
 			}
 		}
 	} else {
-		for _, primaryField := range primarySchema.PrimaryFields {
+		var primaryFields []*Field
+
+		if len(relation.primaryKeys) > 0 {
+			for _, primaryKey := range relation.primaryKeys {
+				if f := primarySchema.LookUpField(primaryKey); f != nil {
+					primaryFields = append(primaryFields, f)
+				}
+			}
+		} else {
+			primaryFields = primarySchema.PrimaryFields
+		}
+
+		for _, primaryField := range primaryFields {
 			lookUpName := primarySchema.Name + primaryField.Name
 			if gl == guessBelongs {
 				lookUpName = field.Name + primaryField.Name
 			}
 
-			if f := foreignSchema.LookUpField(lookUpName); f != nil {
-				foreignFields = append(foreignFields, f)
-				primaryFields = append(primaryFields, primaryField)
+			lookUpNames := []string{lookUpName}
+			if len(primaryFields) == 1 {
+				lookUpNames = append(lookUpNames, strings.TrimSuffix(lookUpName, primaryField.Name)+"ID")
+				lookUpNames = append(lookUpNames, strings.TrimSuffix(lookUpName, primaryField.Name)+"Id")
+				lookUpNames = append(lookUpNames, schema.namer.ColumnName(foreignSchema.Table, strings.TrimSuffix(lookUpName, primaryField.Name)+"ID"))
+			}
+
+			for _, name := range lookUpNames {
+				if f := foreignSchema.LookUpField(name); f != nil {
+					foreignFields = append(foreignFields, f)
+					primaryFields = append(primaryFields, primaryField)
+					break
+				}
 			}
 		}
 	}
