@@ -70,7 +70,7 @@ func (db *DB) Save(value interface{}) (tx *DB) {
 		if _, ok := tx.Statement.Clauses["ON CONFLICT"]; !ok {
 			tx = tx.Clauses(clause.OnConflict{UpdateAll: true})
 		}
-		tx.callbacks.Create().Execute(tx)
+		tx.callbacks.Create().Execute(tx.InstanceSet("gorm:update_track_time", true))
 	case reflect.Struct:
 		if err := tx.Statement.Parse(value); err == nil && tx.Statement.Schema != nil {
 			for _, pf := range tx.Statement.Schema.PrimaryFields {
@@ -178,8 +178,13 @@ func (db *DB) FindInBatches(dest interface{}, batchSize int, fc func(tx *DB, bat
 			break
 		} else {
 			resultsValue := reflect.Indirect(reflect.ValueOf(dest))
-			primaryValue, _ := result.Statement.Schema.PrioritizedPrimaryField.ValueOf(resultsValue.Index(resultsValue.Len() - 1))
-			queryDB = tx.Clauses(clause.Gt{Column: clause.Column{Table: clause.CurrentTable, Name: clause.PrimaryKey}, Value: primaryValue})
+			if result.Statement.Schema.PrioritizedPrimaryField == nil {
+				tx.AddError(ErrPrimaryKeyRequired)
+				break
+			} else {
+				primaryValue, _ := result.Statement.Schema.PrioritizedPrimaryField.ValueOf(resultsValue.Index(resultsValue.Len() - 1))
+				queryDB = tx.Clauses(clause.Gt{Column: clause.Column{Table: clause.CurrentTable, Name: clause.PrimaryKey}, Value: primaryValue})
+			}
 		}
 	}
 
