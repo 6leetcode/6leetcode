@@ -13,7 +13,7 @@ on:
 jobs:
   leetcode-image:
     name: leetcode-image
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
