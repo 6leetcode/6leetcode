@@ -11,11 +11,23 @@ on:
 jobs:
   solution-check:
     name: solution-check
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        solution:
+          - "c"
+          - "cc"
+          - "golang"
+          - "java"
+          - "python"
+          - "rust"
+          - "node"
+          - "php"
+          - "shell"
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
           fetch-depth: 10
       - name: Test code in specific image
-        run: make all
+        run: make ${{ matrix.solution }}

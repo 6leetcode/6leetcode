@@ -6,7 +6,7 @@ on:
 
 jobs:
   create-pull-request:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
