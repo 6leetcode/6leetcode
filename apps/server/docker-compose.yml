@@ -39,8 +39,6 @@ services:
     command: 6leetcode postgresql-master postgresql-slave traefik --interval 3600 --cleanup
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    depends_on:
-      - 6leetcode
   postgresql-master:
     image: bitnami/postgresql:13-debian-10
     container_name: postgresql-master
