@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   traefik:
-    image: traefik:v2.3
+    image: traefik:v2.4
     container_name: traefik
     hostname: traefik
     command:
@@ -13,6 +13,7 @@ services:
       - --certificatesresolvers.leresolver.acme.email=${LETSENCRYPT_EMAIL}
       - --certificatesresolvers.leresolver.acme.tlschallenge=true
       - --certificatesresolvers.leresolver.acme.caserver=${LETSENCRYPT_CASERVER}
+      - --pilot.token=7fe62aab-ace7-4f74-92e1-7cc3ce9ba8e8
     ports:
       - 80:80
       - 443:443
