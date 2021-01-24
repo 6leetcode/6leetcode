@@ -48,8 +48,8 @@ jobs:
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v3
         env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          PASSPHRASE: ${{ secrets.PASSPHRASE }}
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
       - name: Run executable
         run: |
           env LOGIN_NAME=${{ secrets.LEETCODE_NAME }} LOGIN_PASSWORD=${{ secrets.LEETCODE_PASSWORD }} DATABASE_ENGINE=sqlite3 \
