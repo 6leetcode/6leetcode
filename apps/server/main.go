@@ -21,7 +21,7 @@ var GitHash = "no provided"
 // @version 1.0
 // @description 6leetcode API get question and solutions.
 
-// @host https://6leetcode.com
+// @host 6leetcode.com
 // @BasePath /api
 func main() {
 	// set version command output
