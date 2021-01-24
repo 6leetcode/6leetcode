@@ -58,7 +58,7 @@ definitions:
       translated_title:
         type: string
     type: object
-host: https://6leetcode.com
+host: 6leetcode.com
 info:
   contact: {}
   description: 6leetcode API get question and solutions.
