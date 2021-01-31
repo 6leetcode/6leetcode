@@ -2,7 +2,7 @@ name: Create Pull Request
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "20 3 * * 0"
 
 jobs:
   create-pull-request:
@@ -47,7 +47,7 @@ jobs:
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v3
-        env:
+        with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
       - name: Run executable
