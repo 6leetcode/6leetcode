@@ -1,6 +1,6 @@
 ### [Permutation II](https://leetcode.com/problems/permutation-ii-lcci)
 
-<p>Write a method to compute all permutations of a string whose charac&shy; ters are not necessarily unique. The list of permutations should not have duplicates.</p>
+<p>Write a method to compute all permutations of a string whose characters are not necessarily unique. The list of permutations should not have duplicates.</p>
 
 <p><strong>Example1:</strong></p>
 

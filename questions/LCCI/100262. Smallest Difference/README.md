@@ -14,5 +14,5 @@
 <ul>
 	<li><code>1 &lt;= a.length, b.length &lt;= 100000</code></li>
 	<li><code>-2147483648 &lt;= a[i], b[i] &lt;= 2147483647</code></li>
-	<li>The result is in the range [-2147483648, 2147483647]</li>
+	<li>The result is in the range [0, 2147483647]</li>
 </ul>

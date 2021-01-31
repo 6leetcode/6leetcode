@@ -4,13 +4,7 @@
 
 <p>此题中，我们使用整数 <code>0</code>、 <code>1</code> 和 <code>2</code> 分别表示红色、白色和蓝色。</p>
 
-<p> </p>
-
-<p><strong>进阶：</strong></p>
-
 <ul>
-	<li>你可以不使用代码库中的排序函数来解决这道题吗？</li>
-	<li>你能想出一个仅使用常数空间的一趟扫描算法吗？</li>
 </ul>
 
 <p> </p>
@@ -51,4 +45,13 @@
 	<li><code>n == nums.length</code></li>
 	<li><code>1 <= n <= 300</code></li>
 	<li><code>nums[i]</code> 为 <code>0</code>、<code>1</code> 或 <code>2</code></li>
+</ul>
+
+<p> </p>
+
+<p><strong>进阶：</strong></p>
+
+<ul>
+	<li>你可以不使用代码库中的排序函数来解决这道题吗？</li>
+	<li>你能想出一个仅使用常数空间的一趟扫描算法吗？</li>
 </ul>

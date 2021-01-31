@@ -2,11 +2,9 @@
 
 <p>Implement a basic calculator to evaluate a simple expression string.</p>
 
-<p>The expression string contains only non-negative integers, <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> operators , open <code>(</code> and closing parentheses <code>)</code> and empty spaces <code> </code>. The integer division should truncate toward zero.</p>
+<p>The expression string contains only non-negative integers, <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;*&#39;</code>, <code>&#39;/&#39;</code> operators, open <code>&#39;(&#39;</code> and closing parentheses <code>&#39;)&#39;</code> and empty spaces <code>&#39; &#39;</code>. The integer division should <strong>truncate toward zero</strong>.</p>
 
-<p>You may assume that the given expression is always valid. All intermediate results will be in the range of <code>[-2147483648, 2147483647]</code>.</p>
-
-<p><strong>Follow up:</strong>&nbsp;Could you solve the problem without using&nbsp;built-in library functions.</p>
+<p>You may assume that the given expression is always valid. All intermediate results will be in the range of <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -33,3 +31,6 @@
 	<li><code>s</code> consists of digits, <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;*&#39;</code>, <code>&#39;/&#39;</code>, <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code> and&nbsp;<code>&#39; &#39;</code>.</li>
 	<li><code>s</code> is a <strong>valid</strong> expression.</li>
 </ul>
+
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Could you solve the problem without using built-in library functions?
