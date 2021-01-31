@@ -11,6 +11,13 @@
 <strong>Explanation: </strong>Only 1 and 5 appeared in the three arrays.
 </pre>
 
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr1 = [197,418,523,876,1356], arr2 = [501,880,1593,1710,1870], arr3 = [521,682,1337,1395,1764]
+<strong>Output:</strong> []
+</pre>
+
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

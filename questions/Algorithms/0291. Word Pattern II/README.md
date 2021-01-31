@@ -45,7 +45,6 @@ Note that &#39;a&#39; and &#39;b&#39; cannot both map to &quot;asd&quot; since t
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>0 &lt;= pattern.length &lt;= 20</code></li>
-	<li><code>0 &lt;= s.length &lt;= 50</code></li>
+	<li><code>1 &lt;= pattern.length, s.length &lt;= 20</code></li>
 	<li><code>pattern</code> and <code>s</code> consist of only lower-case English letters.</li>
 </ul>

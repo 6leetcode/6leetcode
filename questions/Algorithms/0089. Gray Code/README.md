@@ -35,5 +35,5 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>0 &lt;= n &lt;= 15</code></li>
+	<li><code>1 &lt;= n &lt;= 16</code></li>
 </ul>
