@@ -1,7 +1,10 @@
 ### [子集](https://leetcode-cn.com/problems/subsets)
 
-<p>给你一个整数数组 <code>nums</code> ，返回该数组所有可能的子集（幂集）。解集不能包含重复的子集。</p>
- 
+<p>给你一个整数数组 <code>nums</code> ，数组中的元素 <strong>互不相同</strong> 。返回该数组所有可能的子集（幂集）。</p>
+
+<p>解集 <strong>不能</strong> 包含重复的子集。你可以按 <strong>任意顺序</strong> 返回解集。</p>
+
+<p> </p>
 
 <p><strong>示例 1：</strong></p>
 
@@ -24,4 +27,5 @@
 <ul>
 	<li><code>1 <= nums.length <= 10</code></li>
 	<li><code>-10 <= nums[i] <= 10</code></li>
+	<li><code>nums</code> 中的所有元素 <strong>互不相同</strong></li>
 </ul>

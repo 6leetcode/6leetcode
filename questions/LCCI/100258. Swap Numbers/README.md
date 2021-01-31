@@ -1,6 +1,6 @@
 ### [Swap Numbers](https://leetcode.com/problems/swap-numbers-lcci)
 
-<p>Write a function to swap a number in place (that is, without temporary vari&shy; ables).</p>
+<p>Write a function to swap a number in place (that is, without temporary variables).</p>
 
 <p><strong>Example: </strong></p>
 

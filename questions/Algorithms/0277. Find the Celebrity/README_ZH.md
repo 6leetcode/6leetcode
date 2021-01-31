@@ -50,5 +50,9 @@
 	<li><code>graph[i][i] == 1</code></li>
 </ul>
 
+<p> </p>
+
+<p><strong>进阶：</strong>如果允许调用 API <code>knows</code> 的最大次数为 <code>3 * n</code> ，你可以设计一个不超过最大调用次数的解决方案吗？</p>
+
 <ol>
 </ol>

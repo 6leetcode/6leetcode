@@ -12,13 +12,9 @@
 
 <p><strong>注意</strong>「项的使用次数」就是自插入该项以来对其调用 <code>get</code> 和 <code>put</code> 函数的次数之和。使用次数会在对应项被移除后置为 0 。</p>
 
-<p> </p>
+<p>为了确定最不常使用的键，可以为缓存中的每个键维护一个 <strong>使用计数器</strong> 。使用计数最小的键是最久未使用的键。</p>
 
-<p><strong>进阶：</strong></p>
-
-<ul>
-	<li>你是否可以在 <strong>O(1) </strong>时间复杂度内执行两项操作？</li>
-</ul>
+<p>当一个键首次插入到缓存中时，它的使用计数器被设置为 <code>1</code> (由于 put 操作)。对缓存中的键执行 <code>get</code> 或 <code>put</code> 操作，使用计数器的值将会递增。</p>
 
 <p> </p>
 
@@ -32,18 +28,25 @@
 [null, null, null, 1, null, -1, 3, null, -1, 3, 4]
 
 <strong>解释：</strong>
+// cnt(x) = 键 x 的使用计数
+// cache=[] 将显示最后一次使用的顺序（最左边的元素是最近的）
 LFUCache lFUCache = new LFUCache(2);
-lFUCache.put(1, 1);
-lFUCache.put(2, 2);
+lFUCache.put(1, 1);   // cache=[1,_], cnt(1)=1
+lFUCache.put(2, 2);   // cache=[2,1], cnt(2)=1, cnt(1)=1
 lFUCache.get(1);      // 返回 1
-lFUCache.put(3, 3);   // 去除键 2
+                      // cache=[1,2], cnt(2)=1, cnt(1)=2
+lFUCache.put(3, 3);   // 去除键 2 ，因为 cnt(2)=1 ，使用计数最小
+                      // cache=[3,1], cnt(3)=1, cnt(1)=2
 lFUCache.get(2);      // 返回 -1（未找到）
 lFUCache.get(3);      // 返回 3
-lFUCache.put(4, 4);   // 去除键 1
+                      // cache=[3,1], cnt(3)=2, cnt(1)=2
+lFUCache.put(4, 4);   // 去除键 1 ，1 和 3 的 cnt 相同，但 1 最久未使用
+                      // cache=[4,3], cnt(4)=1, cnt(3)=2
 lFUCache.get(1);      // 返回 -1（未找到）
 lFUCache.get(3);      // 返回 3
+                      // cache=[3,4], cnt(4)=1, cnt(3)=3
 lFUCache.get(4);      // 返回 4
-</pre>
+                      // cache=[3,4], cnt(4)=2, cnt(3)=3</pre>
 
 <p> </p>
 
@@ -53,3 +56,7 @@ lFUCache.get(4);      // 返回 4
 	<li><code>0 <= capacity, key, value <= 10<sup>4</sup></code></li>
 	<li>最多调用 <code>10<sup>5</sup></code> 次 <code>get</code> 和 <code>put</code> 方法</li>
 </ul>
+
+<p> </p>
+
+<p><strong>进阶：</strong>你可以为这两种操作设计时间复杂度为 <code>O(1)</code> 的实现吗？</p>

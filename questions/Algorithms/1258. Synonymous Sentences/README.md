@@ -1,6 +1,6 @@
 ### [Synonymous Sentences](https://leetcode.com/problems/synonymous-sentences)
 
-Given a list of pairs of equivalent words&nbsp;<code>synonyms</code> and a sentence <code>text</code>,&nbsp;Return all possible synonymous sentences <strong>sorted lexicographically</strong>.
+Given a list of pairs of equivalent words <code>synonyms</code> and a sentence <code>text</code>, Return all possible synonymous sentences <strong>sorted lexicographically</strong>.
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 

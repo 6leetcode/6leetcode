@@ -1,10 +1,10 @@
 ### [Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)
 
-<p>Given a&nbsp;<code>root</code>&nbsp;of an <a href="https://leetcode.com/articles/introduction-to-n-ary-trees/">N-ary tree</a>,&nbsp;you need to compute the length of the diameter of the tree.</p>
+<p>Given a <code>root</code> of an <a href="https://leetcode.com/articles/introduction-to-n-ary-trees/" target="_blank">N-ary tree</a>, you need to compute the length of the diameter of the tree.</p>
 
-<p>The diameter of an N-ary tree is the length of the&nbsp;<strong>longest</strong>&nbsp;path between any two nodes in the&nbsp;tree. This path may or may not pass through the root.</p>
+<p>The diameter of an N-ary tree is the length of the <strong>longest</strong> path between any two nodes in the tree. This path may or may not pass through the root.</p>
 
-<p>(<em>Nary-Tree input serialization&nbsp;is represented in their level order traversal, each group of children is separated by the null value.)</em></p>
+<p>(<em>Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value.)</em></p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -39,5 +39,5 @@
 
 <ul>
 	<li>The depth of the n-ary tree is less than or equal to <code>1000</code>.</li>
-	<li>The total number of nodes is between <code>[0,&nbsp;10^4]</code>.</li>
+	<li>The total number of nodes is between <code>[1, 10<sup>4</sup>]</code>.</li>
 </ul>

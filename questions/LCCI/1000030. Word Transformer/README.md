@@ -2,7 +2,7 @@
 
 <p>Given two words of equal length that are in a dictionary, write a method to transform one word into another word by changing only one letter at a time. The new word you get in each step must be in the dictionary.</p>
 
-<p>Write code to return a possible transforming sequence. If there are more that one sequence, any one is ok.</p>
+<p>Write code to return a possible transforming sequence. If there is more than one sequence, return any of them.</p>
 
 <p><strong>Example 1:</strong></p>
 

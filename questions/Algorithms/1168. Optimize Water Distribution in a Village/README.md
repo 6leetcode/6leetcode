@@ -1,10 +1,10 @@
 ### [Optimize Water Distribution in a Village](https://leetcode.com/problems/optimize-water-distribution-in-a-village)
 
-<p>There are <code><font face="monospace">n</font></code>&nbsp;houses in a village. We want to supply water for all the houses by building wells and laying pipes.</p>
+<p>There are <code>n</code> houses in a village. We want to supply water for all the houses by building wells and laying pipes.</p>
 
-<p>For each house <code>i</code>, we can either build a well inside it directly with cost <code>wells[i]</code>, or pipe in water from another well to it. The costs to lay pipes between houses are given by the array <code>pipes</code>, where each&nbsp;<code>pipes[i] = [house1, house2, cost]</code>&nbsp;represents the cost to connect&nbsp;<code>house1</code>&nbsp;and <code>house2</code>&nbsp;together using a pipe.&nbsp;Connections are bidirectional.</p>
+<p>For each house <code>i</code>, we can either build a well inside it directly with cost <code>wells[i - 1]</code> (note the <code>-1</code> due to <strong>0-indexing</strong>), or pipe in water from another well to it. The costs to lay pipes between houses are given by the array <code>pipes</code>, where each <code>pipes[j] = [house1<sub>j</sub>, house2<sub>j</sub>, cost<sub>j</sub>]</code> represents the cost to connect <code>house1<sub>j</sub></code> and <code>house2<sub>j</sub></code> together using a pipe. Connections are bidirectional.</p>
 
-<p>Find the minimum total cost to supply water to all houses.</p>
+<p>Return <em>the minimum total cost to supply water to all houses</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -23,11 +23,12 @@ The best strategy is to build a well in the first house with cost 1 and connect 
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= n&nbsp;&lt;= 10000</code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>
 	<li><code>wells.length == n</code></li>
-	<li><code>0 &lt;= wells[i] &lt;= 10^5</code></li>
-	<li><code>1 &lt;= pipes.length &lt;= 10000</code></li>
-	<li><code>1 &lt;= pipes[i][0], pipes[i][1] &lt;= n</code></li>
-	<li><code>0 &lt;= pipes[i][2] &lt;= 10^5</code></li>
-	<li><code>pipes[i][0] != pipes[i][1]</code></li>
+	<li><code>0 &lt;= wells[i] &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= pipes.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>pipes[j].length == 3</code></li>
+	<li><code>1 &lt;= house1<sub>j</sub>, house2<sub>j</sub> &lt;= n</code></li>
+	<li><code>0 &lt;= cost<sub>j</sub> &lt;= 10<sup>5</sup></code></li>
+	<li><code>house1<sub>j</sub> != house2<sub>j</sub></code></li>
 </ul>
