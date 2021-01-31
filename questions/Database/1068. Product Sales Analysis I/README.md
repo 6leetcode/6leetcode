@@ -1,6 +1,6 @@
 ### [Product Sales Analysis I](https://leetcode.com/problems/product-sales-analysis-i)
 
-<p>Table:&nbsp;<code>Sales</code></p>
+<p>Table: <code>Sales</code></p>
 
 <pre>
 +-------------+-------+
@@ -17,7 +17,9 @@ product_id is a foreign key to <code>Product</code> table.
 Note that the price is per unit.
 </pre>
 
-<p>Table:&nbsp;<code>Product</code></p>
+<p>&nbsp;</p>
+
+<p>Table: <code>Product</code></p>
 
 <pre>
 +--------------+---------+
@@ -31,9 +33,13 @@ product_id is the primary key of this table.
 
 <p>&nbsp;</p>
 
-<p>Write an SQL query that reports all <strong>product names</strong> of the products in the <code>Sales</code> table along with their selling <strong>year</strong> and&nbsp;<strong>price</strong>.</p>
+<p>Write an SQL query that reports the <strong>price</strong> each <strong>year</strong> for all <strong>product names</strong> of the products in the <code>Sales</code> table.</p>
 
-<p>For example:</p>
+<p>Return the resulting table in <strong>any order</strong>.</p>
+
+<p>The query result format is in the following example:</p>
+
+<p>&nbsp;</p>
 
 <pre>
 <code>Sales</code> table:
@@ -62,4 +68,7 @@ Result table:
 | Nokia        | 2009  | 5000  |
 | Apple        | 2011  | 9000  |
 +--------------+-------+-------+
+From sale_id = 1, we can conclude that Nokia was sold for 5000 in the year 2008.
+From sale_id = 2, we can conclude that Nokia was sold for 5000 in the year 2009.
+From sale_id = 7, we can conclude that Apple was sold for 9000 in the year 2011.
 </pre>

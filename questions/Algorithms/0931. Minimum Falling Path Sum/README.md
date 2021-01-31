@@ -9,7 +9,7 @@
 
 <pre>
 <strong>Input:</strong> matrix = [[2,1,3],[6,5,4],[7,8,9]]
-<strong>Output:</strong> 12
+<strong>Output:</strong> 13
 <strong>Explanation:</strong> There are two falling paths with a minimum sum underlined below:
 [[2,<u>1</u>,3],      [[2,<u>1</u>,3],
  [6,<u>5</u>,4],       [6,5,<u>4</u>],

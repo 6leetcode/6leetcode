@@ -44,8 +44,9 @@
 <p><strong>示例 4：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "1"
-<strong>输出：</strong>1
+<strong>输入：</strong>s = "06"
+<strong>输出：</strong>0
+<strong>解释：</strong>"06" 不能映射到 "F" ，因为字符串开头的 0 无法指向一个有效的字符。 
 </pre>
 
 <p> </p>

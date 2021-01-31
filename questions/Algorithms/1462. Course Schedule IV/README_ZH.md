@@ -1,4 +1,4 @@
-### [课程安排 IV](https://leetcode-cn.com/problems/course-schedule-iv)
+### [课程表 IV](https://leetcode-cn.com/problems/course-schedule-iv)
 
 <p>你总共需要上 <code>n</code>&nbsp;门课，课程编号依次为 <code>0</code>&nbsp;到 <code>n-1</code>&nbsp;。</p>
 

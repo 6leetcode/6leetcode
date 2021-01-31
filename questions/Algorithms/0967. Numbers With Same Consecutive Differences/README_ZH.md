@@ -32,13 +32,6 @@
 <p><strong>示例 4：</strong></p>
 
 <pre>
-<strong>输入：</strong>n = 2, k = 1
-<strong>输出：</strong>[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre>
 <strong>输入：</strong>n = 2, k = 2
 <strong>输出：</strong>[13,20,24,31,35,42,46,53,57,64,68,75,79,86,97]
 </pre>

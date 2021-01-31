@@ -40,5 +40,5 @@ wordDictionary.search("b.."); // return True
 	<li><code>1 <= word.length <= 500</code></li>
 	<li><code>addWord</code> 中的 <code>word</code> 由小写英文字母组成</li>
 	<li><code>search</code> 中的 <code>word</code> 由 '.' 或小写英文字母组成</li>
-	<li>最调用多 <code>50000</code> 次 <code>addWord</code> 和 <code>search</code></li>
+	<li>最多调用 <code>50000</code> 次 <code>addWord</code> 和 <code>search</code></li>
 </ul>

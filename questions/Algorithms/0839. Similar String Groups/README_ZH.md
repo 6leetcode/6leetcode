@@ -29,9 +29,8 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= strs.length <= 100</code></li>
-	<li><code>1 <= strs[i].length <= 1000</code></li>
-	<li><code>sum(strs[i].length) <= 2 * 10<sup>4</sup></code></li>
+	<li><code>1 <= strs.length <= 300</code></li>
+	<li><code>1 <= strs[i].length <= 300</code></li>
 	<li><code>strs[i]</code> 只包含小写字母。</li>
 	<li><code>strs</code> 中的所有单词都具有相同的长度，且是彼此的字母异位词。</li>
 </ul>

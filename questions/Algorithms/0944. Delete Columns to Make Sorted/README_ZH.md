@@ -1,53 +1,62 @@
 ### [删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted)
 
-<p>给定由&nbsp;<code>N</code>&nbsp;个小写字母字符串组成的数组 <code>A</code>，其中每个字符串长度相等。</p>
+<p>给你由 <code>n</code> 个小写字母字符串组成的数组 <code>strs</code>，其中每个字符串长度相等。</p>
 
-<p>你需要选出一组要删掉的列&nbsp;<code>D</code>，对&nbsp;<code>A</code> 执行删除操作，使 <code>A</code> 中剩余的每一列都是 <strong>非降序</strong>&nbsp;排列的，然后请你返回&nbsp;<code>D.length</code>&nbsp;的最小可能值。</p>
+<p>这些字符串可以每个一行，排成一个网格。例如，<code>strs = ["abc", "bce", "cae"]</code> 可以排列为：</p>
 
-<p><strong>删除</strong> 操作的定义是：选出一组要删掉的列，删去&nbsp;<code>A</code> 中对应列中的所有字符，形式上，第 <code>n</code>&nbsp;列为&nbsp;<code>[A[0][n], A[1][n], ..., A[A.length-1][n]]</code>）。（可以参见 <strong>删除操作范例</strong>）</p>
+<pre>
+abc
+bce
+cae</pre>
 
-<p>&nbsp;</p>
+<p>你需要找出并删除 <strong>不是按字典序升序排列的</strong> 列。在上面的例子（下标从 0 开始）中，列 0（<code>'a'</code>, <code>'b'</code>, <code>'c'</code>）和列 2（<code>'c'</code>, <code>'e'</code>, <code>'e'</code>）都是按升序排列的，而列 1（<code>'b'</code>, <code>'c'</code>, <code>'a'</code>）不是，所以要删除列 1 。</p>
+
+<p>返回你需要删除的列数。</p>
+
+<p> </p>
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>[&quot;cba&quot;, &quot;daf&quot;, &quot;ghi&quot;]
+<pre>
+<strong>输入：</strong>strs = ["cba","daf","ghi"]
 <strong>输出：</strong>1
-<strong>解释：</strong>
-当选择 D = {1}，删除后 A 的列为：[&quot;c&quot;,&quot;d&quot;,&quot;g&quot;] 和 [&quot;a&quot;,&quot;f&quot;,&quot;i&quot;]，均为非降序排列。
-若选择 D = {}，那么 A 的列 [&quot;b&quot;,&quot;a&quot;,&quot;h&quot;] 就不是非降序排列了。
+<strong>解释：</strong>网格示意如下：
+  cba
+  daf
+  ghi
+列 0 和列 2 按升序排列，但列 1 不是，所以只需要删除列 1 。
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>[&quot;a&quot;, &quot;b&quot;]
+<pre>
+<strong>输入：</strong>strs = ["a","b"]
 <strong>输出：</strong>0
-<strong>解释：</strong>D = {}
+<strong>解释：</strong>网格示意如下：
+  a
+  b
+只有列 0 这一列，且已经按升序排列，所以不用删除任何列。
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>[&quot;zyx&quot;, &quot;wvu&quot;, &quot;tsr&quot;]
+<pre>
+<strong>输入：</strong>strs = ["zyx","wvu","tsr"]
 <strong>输出：</strong>3
-<strong>解释：</strong>D = {0, 1, 2}
+<strong>解释：</strong>网格示意如下：
+  zyx
+  wvu
+  tsr
+所有 3 列都是非升序排列的，所以都要删除。
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>提示：</strong></p>
 
-<ol>
-	<li><code>1 &lt;= A.length &lt;= 100</code></li>
-	<li><code>1 &lt;= A[i].length &lt;= 1000</code></li>
-</ol>
-
-<p>&nbsp;</p>
-
-<p><strong>删除操作范例：</strong></p>
-
-<p>比如，有&nbsp;<code>A = [&quot;abcdef&quot;, &quot;uvwxyz&quot;]</code>，</p>
-
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/07/06/944_1.png" style="height: 48px; width: 300px;"></p>
-
-<p>要删掉的列为&nbsp;<code>{0, 2, 3}</code>，删除后 <code>A</code>&nbsp;为<code>[&quot;bef&quot;, &quot;vyz&quot;]</code>， <code>A</code>&nbsp;的列分别为<code>[&quot;b&quot;,&quot;v&quot;], [&quot;e&quot;,&quot;y&quot;], [&quot;f&quot;,&quot;z&quot;]</code>。</p>
-
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/07/06/944_2.png" style="height: 76px; width: 300px;"></p>
+<ul>
+	<li><code>n == strs.length</code></li>
+	<li><code>1 <= n <= 100</code></li>
+	<li><code>1 <= strs[i].length <= 1000</code></li>
+	<li><code>strs[i]</code> 由小写英文字母组成</li>
+</ul>
