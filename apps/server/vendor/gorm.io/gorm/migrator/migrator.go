@@ -82,7 +82,7 @@ func (m Migrator) FullDataTypeOf(field *schema.Field) (expr clause.Expr) {
 // AutoMigrate
 func (m Migrator) AutoMigrate(values ...interface{}) error {
 	for _, value := range m.ReorderModels(values, true) {
-		tx := m.DB.Session(&gorm.Session{NewDB: true})
+		tx := m.DB.Session(&gorm.Session{})
 		if !tx.Migrator().HasTable(value) {
 			if err := tx.Migrator().CreateTable(value); err != nil {
 				return err
@@ -154,7 +154,7 @@ func (m Migrator) AutoMigrate(values ...interface{}) error {
 
 func (m Migrator) CreateTable(values ...interface{}) error {
 	for _, value := range m.ReorderModels(values, false) {
-		tx := m.DB.Session(&gorm.Session{NewDB: true})
+		tx := m.DB.Session(&gorm.Session{})
 		if err := m.RunWithValue(value, func(stmt *gorm.Statement) (errr error) {
 			var (
 				createTableSQL          = "CREATE TABLE ? ("
@@ -183,7 +183,9 @@ func (m Migrator) CreateTable(values ...interface{}) error {
 			for _, idx := range stmt.Schema.ParseIndexes() {
 				if m.CreateIndexAfterCreateTable {
 					defer func(value interface{}, name string) {
-						errr = tx.Migrator().CreateIndex(value, name)
+						if errr == nil {
+							errr = tx.Migrator().CreateIndex(value, name)
+						}
 					}(value, idx.Name)
 				} else {
 					if idx.Class != "" {
@@ -237,7 +239,7 @@ func (m Migrator) CreateTable(values ...interface{}) error {
 func (m Migrator) DropTable(values ...interface{}) error {
 	values = m.ReorderModels(values, false)
 	for i := len(values) - 1; i >= 0; i-- {
-		tx := m.DB.Session(&gorm.Session{NewDB: true})
+		tx := m.DB.Session(&gorm.Session{})
 		if err := m.RunWithValue(values[i], func(stmt *gorm.Statement) error {
 			return tx.Exec("DROP TABLE IF EXISTS ?", m.CurrentTable(stmt)).Error
 		}); err != nil {
@@ -404,7 +406,7 @@ func (m Migrator) MigrateColumn(value interface{}, field *schema.Field, columnTy
 func (m Migrator) ColumnTypes(value interface{}) (columnTypes []gorm.ColumnType, err error) {
 	columnTypes = make([]gorm.ColumnType, 0)
 	err = m.RunWithValue(value, func(stmt *gorm.Statement) error {
-		rows, err := m.DB.Session(&gorm.Session{NewDB: true}).Table(stmt.Table).Limit(1).Rows()
+		rows, err := m.DB.Session(&gorm.Session{}).Table(stmt.Table).Limit(1).Rows()
 		if err == nil {
 			defer rows.Close()
 			rawColumnTypes, err := rows.ColumnTypes()
@@ -449,50 +451,80 @@ func buildConstraint(constraint *schema.Constraint) (sql string, results []inter
 	return
 }
 
+func (m Migrator) GuessConstraintAndTable(stmt *gorm.Statement, name string) (_ *schema.Constraint, _ *schema.Check, table string) {
+	if stmt.Schema == nil {
+		return nil, nil, stmt.Table
+	}
+
+	checkConstraints := stmt.Schema.ParseCheckConstraints()
+	if chk, ok := checkConstraints[name]; ok {
+		return nil, &chk, stmt.Table
+	}
+
+	getTable := func(rel *schema.Relationship) string {
+		switch rel.Type {
+		case schema.HasOne, schema.HasMany:
+			return rel.FieldSchema.Table
+		case schema.Many2Many:
+			return rel.JoinTable.Table
+		}
+		return stmt.Table
+	}
+
+	for _, rel := range stmt.Schema.Relationships.Relations {
+		if constraint := rel.ParseConstraint(); constraint != nil && constraint.Name == name {
+			return constraint, nil, getTable(rel)
+		}
+	}
+
+	if field := stmt.Schema.LookUpField(name); field != nil {
+		for _, cc := range checkConstraints {
+			if cc.Field == field {
+				return nil, &cc, stmt.Table
+			}
+		}
+
+		for _, rel := range stmt.Schema.Relationships.Relations {
+			if constraint := rel.ParseConstraint(); constraint != nil && rel.Field == field {
+				return constraint, nil, getTable(rel)
+			}
+		}
+	}
+	return nil, nil, ""
+}
+
 func (m Migrator) CreateConstraint(value interface{}, name string) error {
 	return m.RunWithValue(value, func(stmt *gorm.Statement) error {
-		checkConstraints := stmt.Schema.ParseCheckConstraints()
-		if chk, ok := checkConstraints[name]; ok {
+		constraint, chk, table := m.GuessConstraintAndTable(stmt, name)
+		if chk != nil {
 			return m.DB.Exec(
 				"ALTER TABLE ? ADD CONSTRAINT ? CHECK (?)",
 				m.CurrentTable(stmt), clause.Column{Name: chk.Name}, clause.Expr{SQL: chk.Constraint},
 			).Error
 		}
 
-		for _, rel := range stmt.Schema.Relationships.Relations {
-			if constraint := rel.ParseConstraint(); constraint != nil && constraint.Name == name {
-				sql, values := buildConstraint(constraint)
-				return m.DB.Exec("ALTER TABLE ? ADD "+sql, append([]interface{}{m.CurrentTable(stmt)}, values...)...).Error
+		if constraint != nil {
+			var vars = []interface{}{clause.Table{Name: table}}
+			if stmt.TableExpr != nil {
+				vars[0] = stmt.TableExpr
 			}
+			sql, values := buildConstraint(constraint)
+			return m.DB.Exec("ALTER TABLE ? ADD "+sql, append(vars, values...)...).Error
 		}
 
-		err := fmt.Errorf("failed to create constraint with name %v", name)
-		if field := stmt.Schema.LookUpField(name); field != nil {
-			for _, cc := range checkConstraints {
-				if err = m.DB.Migrator().CreateIndex(value, cc.Name); err != nil {
-					return err
-				}
-			}
-
-			for _, rel := range stmt.Schema.Relationships.Relations {
-				if constraint := rel.ParseConstraint(); constraint != nil && constraint.Field == field {
-					if err = m.DB.Migrator().CreateIndex(value, constraint.Name); err != nil {
-						return err
-					}
-				}
-			}
-		}
-
-		return err
+		return nil
 	})
 }
 
 func (m Migrator) DropConstraint(value interface{}, name string) error {
 	return m.RunWithValue(value, func(stmt *gorm.Statement) error {
-		return m.DB.Exec(
-			"ALTER TABLE ? DROP CONSTRAINT ?",
-			m.CurrentTable(stmt), clause.Column{Name: name},
-		).Error
+		constraint, chk, table := m.GuessConstraintAndTable(stmt, name)
+		if constraint != nil {
+			name = constraint.Name
+		} else if chk != nil {
+			name = chk.Name
+		}
+		return m.DB.Exec("ALTER TABLE ? DROP CONSTRAINT ?", clause.Table{Name: table}, clause.Column{Name: name}).Error
 	})
 }
 
@@ -500,9 +532,16 @@ func (m Migrator) HasConstraint(value interface{}, name string) bool {
 	var count int64
 	m.RunWithValue(value, func(stmt *gorm.Statement) error {
 		currentDatabase := m.DB.Migrator().CurrentDatabase()
+		constraint, chk, table := m.GuessConstraintAndTable(stmt, name)
+		if constraint != nil {
+			name = constraint.Name
+		} else if chk != nil {
+			name = chk.Name
+		}
+
 		return m.DB.Raw(
 			"SELECT count(*) FROM INFORMATION_SCHEMA.table_constraints WHERE constraint_schema = ? AND table_name = ? AND constraint_name = ?",
-			currentDatabase, stmt.Table, name,
+			currentDatabase, table, name,
 		).Row().Scan(&count)
 	})
 
@@ -667,13 +706,15 @@ func (m Migrator) ReorderModels(values []interface{}, autoAdd bool) (results []i
 		}
 		orderedModelNamesMap[name] = true
 
-		dep := valuesMap[name]
-		for _, d := range dep.Depends {
-			if _, ok := valuesMap[d.Table]; ok {
-				insertIntoOrderedList(d.Table)
-			} else if autoAdd {
-				parseDependence(reflect.New(d.ModelType).Interface(), autoAdd)
-				insertIntoOrderedList(d.Table)
+		if autoAdd {
+			dep := valuesMap[name]
+			for _, d := range dep.Depends {
+				if _, ok := valuesMap[d.Table]; ok {
+					insertIntoOrderedList(d.Table)
+				} else {
+					parseDependence(reflect.New(d.ModelType).Interface(), autoAdd)
+					insertIntoOrderedList(d.Table)
+				}
 			}
 		}
 

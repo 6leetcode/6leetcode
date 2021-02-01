@@ -53,7 +53,7 @@ type Reference struct {
 	OwnPrimaryKey bool
 }
 
-func (schema *Schema) parseRelation(field *Field) {
+func (schema *Schema) parseRelation(field *Field) *Relationship {
 	var (
 		err        error
 		fieldValue = reflect.New(field.IndirectFieldType).Interface()
@@ -67,13 +67,10 @@ func (schema *Schema) parseRelation(field *Field) {
 	)
 
 	cacheStore := schema.cacheStore
-	if field.OwnerSchema != nil {
-		cacheStore = field.OwnerSchema.cacheStore
-	}
 
 	if relation.FieldSchema, err = getOrParse(fieldValue, cacheStore, schema.namer); err != nil {
 		schema.err = err
-		return
+		return nil
 	}
 
 	if polymorphic := field.TagSettings["POLYMORPHIC"]; polymorphic != "" {
@@ -92,7 +89,8 @@ func (schema *Schema) parseRelation(field *Field) {
 	}
 
 	if relation.Type == "has" {
-		if relation.FieldSchema != relation.Schema && relation.Polymorphic == nil {
+		// don't add relations to embeded schema, which might be shared
+		if relation.FieldSchema != relation.Schema && relation.Polymorphic == nil && field.OwnerSchema == nil {
 			relation.FieldSchema.Relationships.Relations["_"+relation.Schema.Name+"_"+relation.Name] = relation
 		}
 
@@ -117,6 +115,8 @@ func (schema *Schema) parseRelation(field *Field) {
 			schema.Relationships.Many2Many = append(schema.Relationships.Many2Many, relation)
 		}
 	}
+
+	return relation
 }
 
 // User has many Toys, its `Polymorphic` is `Owner`, Pet has one Toy, its `Polymorphic` is `Owner`
@@ -219,7 +219,7 @@ func (schema *Schema) buildMany2ManyRelation(relation *Relationship, field *Fiel
 	}
 
 	for idx, ownField := range ownForeignFields {
-		joinFieldName := schema.Name + ownField.Name
+		joinFieldName := strings.Title(schema.Name) + ownField.Name
 		if len(joinForeignKeys) > idx {
 			joinFieldName = strings.Title(joinForeignKeys[idx])
 		}
@@ -258,7 +258,7 @@ func (schema *Schema) buildMany2ManyRelation(relation *Relationship, field *Fiel
 	}
 
 	joinTableFields = append(joinTableFields, reflect.StructField{
-		Name: schema.Name + field.Name,
+		Name: strings.Title(schema.Name) + field.Name,
 		Type: schema.ModelType,
 		Tag:  `gorm:"-"`,
 	})
@@ -519,7 +519,7 @@ func (rel *Relationship) ParseConstraint() *Constraint {
 	}
 
 	for _, ref := range rel.References {
-		if ref.PrimaryKey != nil {
+		if ref.PrimaryKey != nil && (rel.JoinTable == nil || ref.OwnPrimaryKey) {
 			constraint.ForeignKeys = append(constraint.ForeignKeys, ref.ForeignKey)
 			constraint.References = append(constraint.References, ref.PrimaryKey)
 
@@ -531,10 +531,6 @@ func (rel *Relationship) ParseConstraint() *Constraint {
 				constraint.ReferenceSchema = ref.PrimaryKey.Schema
 			}
 		}
-	}
-
-	if rel.JoinTable != nil {
-		return nil
 	}
 
 	return &constraint
