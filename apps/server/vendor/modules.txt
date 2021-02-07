@@ -103,7 +103,8 @@ github.com/leodido/go-urn
 # github.com/magiconair/properties v1.8.4
 ## explicit
 github.com/magiconair/properties
-# github.com/mailru/easyjson v0.7.6
+# github.com/mailru/easyjson v0.7.7
+## explicit
 github.com/mailru/easyjson/buffer
 github.com/mailru/easyjson/jlexer
 github.com/mailru/easyjson/jwriter
@@ -164,9 +165,9 @@ github.com/swaggo/swag
 # github.com/tosone/logging v1.2.1
 ## explicit
 github.com/tosone/logging
-# github.com/ugorji/go v1.2.3
+# github.com/ugorji/go v1.2.4
 ## explicit
-# github.com/ugorji/go/codec v1.2.3
+# github.com/ugorji/go/codec v1.2.4
 github.com/ugorji/go/codec
 # github.com/ulule/limiter/v3 v3.8.0
 ## explicit
@@ -187,7 +188,7 @@ golang.org/x/net/idna
 golang.org/x/net/publicsuffix
 golang.org/x/net/webdav
 golang.org/x/net/webdav/internal/xml
-# golang.org/x/sys v0.0.0-20210123231150-1d476976d117
+# golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
 ## explicit
 golang.org/x/sys/cpu
 golang.org/x/sys/execabs
@@ -251,16 +252,16 @@ gopkg.in/ini.v1
 gopkg.in/natefinch/lumberjack.v2
 # gopkg.in/yaml.v2 v2.4.0
 gopkg.in/yaml.v2
-# gorm.io/driver/mysql v1.0.3
+# gorm.io/driver/mysql v1.0.4
 ## explicit
 gorm.io/driver/mysql
-# gorm.io/driver/postgres v1.0.6
+# gorm.io/driver/postgres v1.0.8
 ## explicit
 gorm.io/driver/postgres
 # gorm.io/driver/sqlite v1.1.4
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v1.20.11
+# gorm.io/gorm v1.20.12
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks
