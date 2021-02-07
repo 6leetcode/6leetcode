@@ -1,5 +1,5 @@
-CFLAGS  += -I. -Os -g3 -Wall -fsanitize=address,signed-integer-overflow
-LDFLAGS += -lm
+CFLAGS  += -I. -I./sds -Os -g3 -Wall -fsanitize=address,signed-integer-overflow
+LDFLAGS += ./sds/sds.o -lm
 
 C_SRCS = $(wildcard *.c)
 C_OUTS = $(patsubst %.c, %, $(C_SRCS))

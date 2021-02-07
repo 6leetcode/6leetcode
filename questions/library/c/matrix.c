@@ -16,7 +16,9 @@ int main(int argc, char const *argv[]) {
       matrix[i][j] = i * matrixSize + j + 1;
     }
   }
-  matrix_show(matrix, matrixSize, matrixColSize);
+  sds str = matrix_show(matrix, matrixSize, matrixColSize);
+  printf("%s\n", str);
+  sdsfree(str);
   for (int i = 0; i < matrixSize; i++) {
     free(matrix[i]);
   }

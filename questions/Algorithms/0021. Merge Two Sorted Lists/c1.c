@@ -22,17 +22,20 @@ struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2) {
 int main(int argc, char const *argv[]) {
   int arr1[3] = {1, 2, 4};
   struct ListNode *l1 = init(arr1, sizeof(arr1) / sizeof(int));
-  printf("Input:  ");
-  show(l1);
+  sds input1 = show(l1);
 
   int arr2[3] = {1, 3, 4};
   struct ListNode *l2 = init(arr2, sizeof(arr2) / sizeof(int));
-  printf("Input:  ");
-  show(l2);
+  sds input2 = show(l2);
+  printf("Input:  %s %s\n", input1, input2);
+
+  sdsfree(input1);
+  sdsfree(input2);
 
   struct ListNode *res = mergeTwoLists(l1, l2);
-  printf("Output: ");
-  show(res);
+  sds output = show(res);
+  printf("Output: %s\n", output);
+  sdsfree(output);
 
   destory(res);
 

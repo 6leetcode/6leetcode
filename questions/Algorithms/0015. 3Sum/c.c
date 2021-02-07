@@ -69,16 +69,16 @@ int **threeSum(int *nums, int numsSize, int *returnSize, int **returnColumnSizes
 int main(int argc, char const *argv[]) {
   int input1[] = {4, -10, -11, -12, -8, -12, -14, -11, -6, 2, -4, 2, 3, 12, -3, -12, -14, -12, -8, -9, -6, -3, 10, 2, 14, 10, 7, -7, -9, 0, -9, 10, -2, -5, 14, 5, -9, 7, 9, 0, -14, 12, 10, 4, 9, -8, 8, 11, -5, -15, -13, -3, -11, 4, 14, 11, -1, -2, -11, 5, 14, -4, -8, -3, 6, -9, 9, 12, 6, 3, -10, 7, 0, -15, -3, -13, -8, 12, 13, -5, 12, -15, 7, 8, -4, -2, 4, 2, 3, 9, -8, 2, -10, -1, 6, 3, -2, 0, -7, 11, -12, -2, 3, -4, -2, 7, -2, -3, 4, -12, -1, 1, 10, 13, -5, -9, -12, 6, 8, 7, 0, 7, -6, 5, 13, 8, -14, -12};
   int input2 = sizeof(input1) / sizeof(int);
-  printf("Input:  ");
-  array_show(input1, input2);
-  printf("\n");
+  sds input3 = array_show(input1, input2);
+  printf("Input:  %s\n", input3);
+  sdsfree(input3);
 
   int output1 = 1;
   int *output2;
   int **output3 = threeSum(input1, input2, &output1, &output2);
-  printf("Output: ");
-  matrix_show(output3, output1, output2);
-  printf("\n");
+  sds output4 = matrix_show(output3, output1, output2);
+  printf("Output: %s\n", output4);
+  sdsfree(output4);
   free(output2);
   for (int i = 0; i < output1; i++) {
     free(output3[i]);

@@ -35,9 +35,9 @@ int main(int argc, char const *argv[]) {
   int input1[] = {-1, 2, 1, -4};
   int input2 = sizeof(input1) / sizeof(int);
   int input3 = 2;
-  printf("Input:  ");
-  array_show(input1, input2);
-  printf("\n");
+  sds input4 = array_show(input1, input2);
+  printf("Input:  %s\n", input4);
+  sdsfree(input4);
   printf("Output: %d\n", threeSumClosest(input1, input2, input3));
   return EXIT_SUCCESS;
 }

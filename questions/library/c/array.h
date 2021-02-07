@@ -1,16 +1,20 @@
 #include <stdio.h>
+#include <string.h>
 
-void array_show(int* arr, int size) {
-  printf("[");
+#include <sds.h>
+
+sds array_show(int *arr, int size) {
+  sds str = sdsnew("[");
   if (size == 0) {
-    printf(" ");
+    str = sdscat(str, " ");
   } else if (size == 1) {
-    printf("%d", arr[0]);
+    str = sdscatprintf(str, "%d", arr[0]);
   } else {
-    printf("%d", arr[0]);
+    str = sdscatprintf(str, "%d", arr[0]);
     for (int i = 1; i < size; ++i) {
-      printf(", %d", arr[i]);
+      str = sdscatprintf(str, ", %d", arr[i]);
     }
   }
-  printf("]");
+  str = sdscat(str, "]");
+  return str;
 }
