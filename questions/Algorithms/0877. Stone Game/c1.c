@@ -13,9 +13,9 @@ bool stoneGame(int *piles, int pilesSize) {
 int main(int argc, char const *argv[]) {
   int input1[] = {1, 2, 3, 4};
   int input2 = (int)(sizeof(input1) / sizeof(int));
-  printf("Input:  ");
-  array_show(input1, input2);
-  printf(" %d\n", input2);
+  sds s = array_show(input1, input2);
+  printf("Input:  %s %d\n", s, input2);
+  sdsfree(s);
   printf("Output: %s\n", stoneGame(input1, input2) ? "true" : "false");
   return EXIT_SUCCESS;
 }

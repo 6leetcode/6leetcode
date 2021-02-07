@@ -53,15 +53,16 @@ int **permute(int *nums, int numsSize, int *returnSize, int **returnColumnSizes)
 int main(int argc, char const *argv[]) {
   int input1[] = {1};
   int input2 = sizeof(input1) / sizeof(int);
-  printf("Input:  ");
-  array_show(input1, input2);
-  printf("\n");
+  sds input3 = array_show(input1, input2);
+  printf("Input:  %s\n", input3);
+  sdsfree(input3);
 
   int output1;
   int *output2;
-  printf("Output: ");
   int **output3 = permute(input1, input2, &output1, &output2);
-  matrix_show(output3, output1, output2);
+  sds output4 = matrix_show(output3, output1, output2);
+  printf("Output: %s\n", output4);
+  sdsfree(output4);
   free(output2);
   for (int i = 0; i < output1; i++) {
     free(output3[i]);

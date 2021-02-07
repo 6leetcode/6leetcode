@@ -36,11 +36,13 @@ int main(int argc, char const *argv[]) {
     }
   }
 
-  printf("Input:  ");
-  matrix_show(matrix, matrixSize, matrixColSize);
+  sds input1 = matrix_show(matrix, matrixSize, matrixColSize);
+  printf("Input:  %s\n", input1);
+  sdsfree(input1);
   rotate(matrix, matrixSize, matrixColSize);
-  printf("Output: ");
-  matrix_show(matrix, matrixSize, matrixColSize);
+  sds output = matrix_show(matrix, matrixSize, matrixColSize);
+  printf("Output: %s\n", output);
+  sdsfree(output);
 
   for (int i = 0; i < matrixSize; i++) {
     free(matrix[i]);

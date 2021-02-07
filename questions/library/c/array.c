@@ -9,7 +9,9 @@ int main(int argc, char const *argv[]) {
   for (int i = 0; i < size; ++i) {
     arr[i] = i;
   }
-  array_show(arr, size);
+  sds str = array_show(arr, size);
+  printf("%s\n", str);
+  sdsfree(str);
   free(arr);
   return EXIT_SUCCESS;
 }

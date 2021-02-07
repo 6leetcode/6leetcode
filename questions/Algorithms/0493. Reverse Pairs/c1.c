@@ -53,9 +53,9 @@ int reversePairs(int *nums, int numsSize) {
 int main(int argc, char const *argv[]) {
   int input[] = {1, 3, 2, 3, 1};
   int size = sizeof(input) / sizeof(int);
-  printf("Input:  ");
-  array_show(input, size);
-  printf("\n");
+  sds s = array_show(input, size);
+  printf("Input:  %s\n", s);
+  sdsfree(s);
   int output = reversePairs(input, size);
   printf("Output: %d", output);
   return EXIT_SUCCESS;

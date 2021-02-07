@@ -1,6 +1,9 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
+#include <sds.h>
 
 #pragma once
 
@@ -9,20 +12,21 @@ struct ListNode {
   struct ListNode *next;
 };
 
-void show(struct ListNode *node) {
+sds show(struct ListNode *node) {
   bool first = true;
 
+  sds str = sdsnew("");
   struct ListNode *p = node;
   while (p != NULL) {
     if (first) {
-      printf("%d", p->val);
+      str = sdscatprintf(str, "%d", p->val);
       first = false;
     } else {
-      printf(" -> %d", p->val);
+      str = sdscatprintf(str, " -> %d", p->val);
     }
     p = p->next;
   }
-  printf("\n");
+  return str;
 }
 
 struct ListNode *init(int *arr, int len) {

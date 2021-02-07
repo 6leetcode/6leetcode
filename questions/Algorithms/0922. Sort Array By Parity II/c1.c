@@ -22,13 +22,14 @@ int *sortArrayByParityII(int *A, int ASize, int *returnSize) {
 int main(int argc, char const *argv[]) {
   int input1[] = {4, 2, 5, 7};
   int input2 = sizeof(input1) / sizeof(int);
-  printf("Input:  ");
-  array_show(input1, input2);
-  printf(" %d\n", input2);
+  sds input3 = array_show(input1, input2);
+  printf("Input:  %s %d\n", input3, input2);
+  sdsfree(input3);
+
   int output2;
   int *output1 = sortArrayByParityII(input1, input2, &output2);
-  printf("Output: ");
-  array_show(output1, output2);
-  printf(" %d", output2);
+  sds output3 = array_show(output1, output2);
+  printf("Output: %s %d\n", output3, output2);
+  sdsfree(output3);
   return EXIT_SUCCESS;
 }

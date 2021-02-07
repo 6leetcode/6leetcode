@@ -18,7 +18,8 @@ c: $(CFiles)
 $(CFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
-	@$(CC) -std=c99 -I../../library/c -lm -Os -g3 -Wall -fsanitize=address,signed-integer-overflow \
+	@make -C ../../library/c/sds
+	@$(CC) -std=c99 -I../../library/c -I../../library/c/sds ../../library/c/sds/sds.o -lm -Os -g3 -Wall -fsanitize=address,signed-integer-overflow \
 	-o `echo $@ | cut -d. -f1`.test $@
 	@./`echo $@ | cut -d. -f1`.test
 	@$(RM) -rf `echo $@ | cut -d. -f1`.test *.dSYM

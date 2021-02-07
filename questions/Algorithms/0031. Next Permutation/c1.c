@@ -35,12 +35,13 @@ void nextPermutation(int *nums, int numsSize) {
 int main(int argc, char const *argv[]) {
   int input1[] = {1, 2, 3};
   int input2 = (int)(sizeof(input1) / sizeof(int));
-  printf("Input:  ");
-  array_show(input1, input2);
-  printf("\n");
+  sds input3 = array_show(input1, input2);
+  printf("Input:  %s\n", input3);
+  sdsfree(input3);
   nextPermutation(input1, input2);
   printf("Output: ");
-  array_show(input1, input2);
-  printf("\n");
+  sds output = array_show(input1, input2);
+  printf("%s\n", output);
+  sdsfree(output);
   return EXIT_SUCCESS;
 }

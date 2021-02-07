@@ -21,9 +21,9 @@ int largestPerimeter(int *A, int ASize) {
 int main(int argc, char const *argv[]) {
   int input[] = {3, 6, 2, 3};
   int size = sizeof(input) / sizeof(int);
-  printf("Input:  ");
-  array_show(input, size);
-  printf("\n");
+  sds input1 = array_show(input, size);
+  printf("Input:  %s\n", input1);
+  sdsfree(input1);
   printf("Output: %d\n", largestPerimeter(input, size));
   return EXIT_SUCCESS;
 }
