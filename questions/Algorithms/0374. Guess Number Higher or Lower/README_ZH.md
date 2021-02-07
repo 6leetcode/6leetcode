@@ -15,6 +15,8 @@
 	<li>0：我选出的数字和你猜的数字一样。恭喜！你猜对了！<code>pick == num</code></li>
 </ul>
 
+<p>返回我选出的数字。</p>
+
 <p> </p>
 
 <p><strong>示例 1：</strong></p>

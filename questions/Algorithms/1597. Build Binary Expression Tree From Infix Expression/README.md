@@ -14,27 +14,23 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-2.png" style="width: 201px; height: 281px;" /></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;2-3/(5*2)+1&quot;
-<strong>Output:</strong> [+,-,1,2,/,null,null,null,null,3,*,null,null,5,2]
-<strong>Explanation: </strong>The inorder traversal of the tree above is 2-3/5*2+1 which is the same as s without the parenthesis. The tree also produces the correct result and its operands are in the same order as they appear in s.
-The tree below is also a valid binary expression tree with the same inorder traversal as s:
-<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-1.png" style="width: 201px; height: 281px;" />
-The third tree below however is not valid. Although it produces the same result and is equivalent to the above trees, its inorder traversal doesn&#39;t produce s and its operands are not in the same order as s.
-<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-3.png" style="width: 281px; height: 281px;" />
-</pre>
-
-<p><strong>Example 2:</strong></p>
-
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-4.png" style="width: 281px; height: 161px;" /></p>
-
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-4.png" style="width: 250px; height: 161px;" />
 <pre>
 <strong>Input:</strong> s = &quot;3*4-2*5&quot;
 <strong>Output:</strong> [-,*,*,3,4,2,5]
-<strong>Explanation: </strong>The tree above is the only valid tree whose inorder traversal produces s.
+<strong>Explanation:</strong> The tree above is the only valid tree whose inorder traversal produces s.
+</pre>
+
+<p><strong>Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-2.png" style="width: 150px; height: 210px;" />
+<pre>
+<strong>Input:</strong> s = &quot;2-3/(5*2)+1&quot;
+<strong>Output:</strong> [+,-,1,2,/,null,null,null,null,3,*,null,null,5,2]
+<strong>Explanation:</strong> The inorder traversal of the tree above is 2-3/5*2+1 which is the same as s without the parenthesis. The tree also produces the correct result and its operands are in the same order as they appear in s.
+The tree below is also a valid binary expression tree with the same inorder traversal as s, but it not a valid answer because it does not evaluate to the same value.
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-1.png" style="width: 201px; height: 281px;" />
+The third tree below is also not valid. Although it produces the same result and is equivalent to the above trees, its inorder traversal does not produce s and its operands are not in the same order as s.
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/ex1-3.png" style="width: 281px; height: 281px;" />
 </pre>
 
 <p><strong>Example 3:</strong></p>
@@ -42,15 +38,15 @@ The third tree below however is not valid. Although it produces the same result 
 <pre>
 <strong>Input:</strong> s = &quot;1+2+3+4+5&quot;
 <strong>Output:</strong> [+,+,5,+,4,null,null,+,3,null,null,1,2]
-<strong>Explanation: </strong>The tree [+,+,5,+,+,null,null,1,2,3,4] is also one of many other valid trees.
+<strong>Explanation:</strong> The tree [+,+,5,+,+,null,null,1,2,3,4] is also one of many other valid trees.
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>s</code> consists of digits and the characters <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;*&#39;</code>, <code>&#39;/&#39;</code>, <code>&#39;(&#39;</code>, and <code>&#39;)&#39;</code>.</li>
+	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
+	<li><code>s</code> consists of digits and the characters <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;*&#39;</code>, and <code>&#39;/&#39;</code>.</li>
 	<li>Operands in <code>s</code> are <strong>exactly</strong> 1 digit.</li>
 	<li>It is guaranteed that <code>s</code> is a valid expression.</li>
 </ul>

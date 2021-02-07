@@ -2,11 +2,17 @@
 
 <p>You are given an array of <code>n</code> strings <code>strs</code>, all of the same length.</p>
 
-<p>We may choose any deletion indices, and we delete all the characters in those indices for each string.</p>
+<p>The strings can be arranged such that there is one on each line, making a grid. For example, <code>strs = [&quot;abc&quot;, &quot;bce&quot;, &quot;cae&quot;]</code> can be arranged as:</p>
 
-<p>For example, if we have <code>strs = [&quot;abcdef&quot;,&quot;uvwxyz&quot;]</code> and deletion indices <code>{0, 2, 3}</code>, then the final array after deletions is <code>[&quot;bef&quot;, &quot;vyz&quot;]</code>, and the remaining columns of <code>strs</code> are <code>[&quot;b&quot;,&quot;v&quot;]</code>, <code>[&quot;e&quot;,&quot;y&quot;]</code>, and <code>[&quot;f&quot;,&quot;z&quot;]</code>. (Formally, the <code>c<sup>th</sup></code> column is <code>[strs[0][c], strs[1][c], ..., strs[n - 1][c]]</code>).</p>
+<pre>
+abc
+bce
+cae
+</pre>
 
-<p>Suppose we chose a set of deletion indices <code>answer</code> such that after deletions, each remaining column in <code>strs</code> is in <strong>non-decreasing sorted order</strong>. Return <em>the minimum possible value of</em> <code>answer.length</code>.</p>
+<p>You want to <strong>delete</strong> the columns that are <strong>not sorted lexicographically</strong>. In the above example (0-indexed), columns 0 (<code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, <code>&#39;c&#39;</code>) and 2 (<code>&#39;c&#39;</code>, <code>&#39;e&#39;</code>, <code>&#39;e&#39;</code>) are sorted while column 1 (<code>&#39;b&#39;</code>, <code>&#39;c&#39;</code>, <code>&#39;a&#39;</code>) is not, so you would delete column 1.</p>
+
+<p>Return <em>the number of columns that you will delete</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -14,9 +20,11 @@
 <pre>
 <strong>Input:</strong> strs = [&quot;cba&quot;,&quot;daf&quot;,&quot;ghi&quot;]
 <strong>Output:</strong> 1
-<strong>Explanation:</strong>
-After choosing answer = {1}, each column [&quot;c&quot;,&quot;d&quot;,&quot;g&quot;] and [&quot;a&quot;,&quot;f&quot;,&quot;i&quot;] are in non-decreasing sorted order.
-If we chose answer = {}, then a column [&quot;b&quot;,&quot;a&quot;,&quot;h&quot;] would not be in non-decreasing sorted order.
+<strong>Explanation:</strong> The grid looks as follows:
+  cba
+  daf
+  ghi
+Columns 0 and 2 are sorted, but column 1 is not, so you only need to delete 1 column.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -24,7 +32,10 @@ If we chose answer = {}, then a column [&quot;b&quot;,&quot;a&quot;,&quot;h&quot
 <pre>
 <strong>Input:</strong> strs = [&quot;a&quot;,&quot;b&quot;]
 <strong>Output:</strong> 0
-<strong>Explanation:</strong> answer = {}
+<strong>Explanation:</strong> The grid looks as follows:
+  a
+  b
+Column 0 is the only column and is sorted, so you will not delete any columns.
 </pre>
 
 <p><strong>Example 3:</strong></p>
@@ -32,7 +43,11 @@ If we chose answer = {}, then a column [&quot;b&quot;,&quot;a&quot;,&quot;h&quot
 <pre>
 <strong>Input:</strong> strs = [&quot;zyx&quot;,&quot;wvu&quot;,&quot;tsr&quot;]
 <strong>Output:</strong> 3
-<strong>Explanation:</strong> answer = {0, 1, 2}
+<strong>Explanation:</strong> The grid looks as follows:
+  zyx
+  wvu
+  tsr
+All 3 columns are not sorted, so you will delete all 3.
 </pre>
 
 <p>&nbsp;</p>
