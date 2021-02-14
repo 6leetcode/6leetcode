@@ -33,7 +33,7 @@ product_id is the primary key of this table.
 
 <p>&nbsp;</p>
 
-<p>Write an SQL query that reports the <strong>price</strong> each <strong>year</strong> for all <strong>product names</strong> of the products in the <code>Sales</code> table.</p>
+<p>Write an SQL query that reports the <code>product_name</code>, <code>year</code>, and <code>price</code> for each <code>sale_id</code> in the <code>Sales</code> table.</p>
 
 <p>Return the resulting table in <strong>any order</strong>.</p>
 
