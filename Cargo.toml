@@ -1,5 +1,5 @@
 [package]
-name = "6leetcode"
+name = "leetcode"
 version = "0.1.0"
 
 [lib]
