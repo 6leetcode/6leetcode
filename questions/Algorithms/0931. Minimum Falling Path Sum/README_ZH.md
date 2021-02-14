@@ -10,8 +10,8 @@
 
 <pre>
 <strong>输入：</strong>matrix = [[2,1,3],[6,5,4],[7,8,9]]
-<strong>输出：</strong>12
-<strong>解释：</strong>There are two falling paths with a minimum sum underlined below:
+<strong>输出：</strong>13
+<strong>解释：</strong>下面是两条和最小的下降路径，用加粗标注：
 [[2,<strong>1</strong>,3],      [[2,<strong>1</strong>,3],
  [6,<strong>5</strong>,4],       [6,5,<strong>4</strong>],
  [<strong>7</strong>,8,9]]       [7,<strong>8</strong>,9]]
@@ -22,7 +22,7 @@
 <pre>
 <strong>输入：</strong>matrix = [[-19,57],[-40,-5]]
 <strong>输出：</strong>-59
-<strong>解释：</strong>The falling path with a minimum sum is underlined below:
+<strong>解释：</strong>下面是一条和最小的下降路径，用加粗标注：
 [[<strong>-19</strong>,57],
  [<strong>-40</strong>,-5]]
 </pre>

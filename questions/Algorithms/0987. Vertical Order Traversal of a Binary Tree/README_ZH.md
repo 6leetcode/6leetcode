@@ -1,39 +1,49 @@
 ### [二叉树的垂序遍历](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree)
 
-<p>给你二叉树的根结点 <code>root</code> ，按<em> </em><strong>垂序遍历</strong> 返回其结点值。</p>
+<p>给你二叉树的根结点 <code>root</code> ，请你设计算法计算二叉树的<em> </em><strong>垂序遍历</strong> 序列。</p>
 
-<p>对位于 <code>(x, y)</code> 的每个结点而言，其左右子结点分别位于 <code>(x - 1, y - 1)</code> 和 <code>(x + 1, y - 1)</code> 。</p>
+<p>对位于 <code>(row, col)</code> 的每个结点而言，其左右子结点分别位于 <code>(row + 1, col - 1)</code> 和 <code>(row + 1, col + 1)</code> 。树的根结点位于 <code>(0, 0)</code> 。</p>
 
-<p>二叉树 <strong>垂序遍历</strong> 是由从左到右每个唯一 <code>x</code> 坐标的非空 <strong>报告</strong> 形成的列表，<strong>报告</strong> 是一个包含给定 <code>x</code> 坐标下所有节点的列表，其中节点需要按 <code>y</code> 坐标从最高到最低排序。如果 <strong>报告</strong> 中任意两个节点的 <code>y</code> 坐标相同，则值较小的节点应排在前面。</p>
+<p>二叉树的 <strong>垂序遍历</strong> 从最左边的列开始直到最右边的列结束，按列索引每一列上的所有结点，形成一个按出现位置从上到下排序的有序列表。如果同行同列上有多个结点，则按结点的值从小到大进行排序。</p>
+
+<p>返回二叉树的 <strong>垂序遍历</strong> 序列。</p>
 
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/02/1236_example_1.PNG" style="height: 186px; width: 201px;" /></p>
-
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/29/vtree1.jpg" style="width: 431px; height: 304px;" />
 <pre>
 <strong>输入：</strong>root = [3,9,20,null,null,15,7]
 <strong>输出：</strong>[[9],[3,15],[20],[7]]
-<strong>解释： </strong>
-在不丧失其普遍性的情况下，我们可以假设根结点位于 (0, 0)：
-然后，值为 9 的结点出现在 (-1, -1)；
-值为 3 和 15 的两个结点分别出现在 (0, 0) 和 (0, -2)；
-值为 20 的结点出现在 (1, -1)；
-值为 7 的结点出现在 (2, -2)。
-</pre>
+<strong>解释：</strong>
+列 -1 ：只有结点 9 在此列中。
+列  0 ：只有结点 3 和 15 在此列中，按从上到下顺序。
+列  1 ：只有结点 20 在此列中。
+列  2 ：只有结点 7 在此列中。</pre>
 
 <p><strong>示例 2：</strong></p>
-
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/23/tree2.png" style="height: 150px; width: 236px;" /></strong></p>
-
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/29/vtree2.jpg" style="width: 512px; height: 304px;" />
 <pre>
 <strong>输入：</strong>root = [1,2,3,4,5,6,7]
 <strong>输出：</strong>[[4],[2],[1,5,6],[3],[7]]
 <strong>解释：</strong>
-根据给定的方案，值为 5 和 6 的两个结点出现在同一位置。
-然而，在报告 "[1,5,6]" 中，结点值 5 排在前面，因为 5 小于 6。
+列 -2 ：只有结点 4 在此列中。
+列 -1 ：只有结点 2 在此列中。
+列  0 ：结点 1 、5 和 6 都在此列中。
+          1 在上面，所以它出现在前面。
+          5 和 6 位置都是 (2, 0) ，所以按值从小到大排序，5 在 6 的前面。
+列  1 ：只有结点 3 在此列中。
+列  2 ：只有结点 7 在此列中。
 </pre>
+
+<p><strong>示例 3：</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/29/vtree3.jpg" style="width: 512px; height: 304px;" />
+<pre>
+<strong>输入：</strong>root = [1,2,3,4,6,5,7]
+<strong>输出：</strong>[[4],[2],[1,5,6],[3],[7]]
+<strong>解释：</strong>
+这个示例实际上与示例 2 完全相同，只是结点 5 和 6 在树中的位置发生了交换。
+因为 5 和 6 的位置仍然相同，所以答案保持不变，仍然按值从小到大排序。</pre>
 
 <p> </p>
 

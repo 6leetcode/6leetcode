@@ -1,4 +1,4 @@
-### [判定井字棋胜负](https://leetcode-cn.com/problems/design-tic-tac-toe)
+### [设计井字棋](https://leetcode-cn.com/problems/design-tic-tac-toe)
 
 <p>请在 n &times;&nbsp;n 的棋盘上，实现一个判定井字棋（Tic-Tac-Toe）胜负的神器，判断每一次玩家落子后，是否有胜出的玩家。</p>
 

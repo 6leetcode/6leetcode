@@ -4,7 +4,7 @@
 
 <p>Recall that a graph is <em>bipartite</em> if we can split its set of nodes into two independent subsets A and B, such that every edge in the graph has one node in A and another node in B.</p>
 
-<p>The graph is given in the following form: <code>graph[i]</code> is a list of indexes <code>j</code> for which the edge between nodes <code>i</code> and <code>j</code> exists.&nbsp; Each node is an integer between <code>0</code> and <code>graph.length - 1</code>.&nbsp; There are no self edges or parallel edges: <code>graph[i]</code> does not contain <code>i</code>, and it doesn&#39;t contain any element twice.</p>
+<p>The graph is given in the following form: <code>graph[i]</code> is a list of indexes <code>j</code> for which the edge between nodes <code>i</code> and <code>j</code> exists. Each node is an integer between <code>0</code> and <code>graph.length - 1</code>. There are no self edges or parallel edges: <code>graph[i]</code> does not contain <code>i</code>, and it doesn&#39;t contain any element twice.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -22,7 +22,6 @@
 <strong>Input:</strong> graph = [[1,2,3],[0,2],[0,1,3],[0,2]]
 <strong>Output:</strong> false
 <strong>Explanation:</strong> We cannot find a way to divide the set of nodes into two independent subsets.
-
 </pre>
 
 <p>&nbsp;</p>
