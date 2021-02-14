@@ -36,8 +36,6 @@ RUN apk add --no-cache gcc make musl-dev git && \
 
 FROM alpine:3.12
 
-ADD apps/server/wait-for-it.sh /usr/local/bin
-
 # RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --no-cache ca-certificates bash && \
   mkdir -p /etc/6leetcode && \
@@ -51,4 +49,4 @@ VOLUME /etc/6leetcode
 
 EXPOSE 4000
 
-CMD ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "server"]
+CMD ["6leetcode", "server"]
