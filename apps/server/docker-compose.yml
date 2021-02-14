@@ -79,10 +79,7 @@ services:
     depends_on:
       - traefik
       - postgresql-master
-      - postgresql-slave
       - watchtower
-    command:
-      ["wait-for-it.sh", "postgresql-master:5432", "--", "6leetcode", "server"]
     build:
       context: $PWD/../..
       dockerfile: apps/server/Dockerfile
