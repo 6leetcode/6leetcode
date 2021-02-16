@@ -1,14 +1,11 @@
 package server
 
 import (
-	"bytes"
 	"context"
 	"fmt"
-	"io"
 	"net/http"
 	"os"
 	"os/signal"
-	"path/filepath"
 	"sync"
 	"syscall"
 	"time"
@@ -61,12 +58,6 @@ func Initialize() (err error) {
 	var controller = &Controller{Engine: router}
 	controller.questions()
 
-	router.GET("/static/*filepath", bindataStaticHandler)
-
-	router.GET("/", func(c *gin.Context) {
-		c.Redirect(http.StatusMovedPermanently, "/static")
-	})
-
 	router.NoRoute(func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{"code": 200, "msg": "Sorry, nothing here."})
 	})
@@ -108,44 +99,6 @@ func Initialize() (err error) {
 	}
 
 	return
-}
-
-func bindataStaticHandler(c *gin.Context) {
-	var err error
-
-	var file = c.Param("filepath")
-	if file == "/" {
-		file = "build/index.html"
-	} else {
-		file = "build" + file
-	}
-
-	defer func() {
-		if err != nil {
-			logging.Error(err)
-		}
-	}()
-
-	var data []byte
-	data, err = Asset(file)
-	if err != nil {
-		return
-	}
-	c.Header("Content-Type", mime[filepath.Ext(file)])
-
-	if _, err = io.Copy(c.Writer, bytes.NewReader(data)); err != nil {
-		return
-	}
-}
-
-var mime = map[string]string{
-	".html": "text/html",
-	".css":  "text/css",
-	".js":   "text/javascript",
-	".png":  "image/png",
-	".map":  "application/json",
-	".txt":  "text/plain",
-	".json": "application/json",
 }
 
 func cronTask() (err error) {
