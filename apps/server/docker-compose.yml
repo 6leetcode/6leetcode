@@ -72,14 +72,32 @@ services:
       - POSTGRESQL_MASTER_PORT_NUMBER=5432
     networks:
       - default
+  web:
+    image: 6leetcode/web:latest
+    container_name: 6leetcode
+    hostname: 6leetcode
+    build:
+      context: $PWD/../..
+      dockerfile: apps/web/Dockerfile
+    restart: always
+    labels:
+      - traefik.http.routers.6leetcode.rule=Host(`${HOST_DOMAIN}`)
+      - traefik.http.routers.6leetcode.entrypoints=websecure
+      - traefik.http.routers.6leetcode.tls=true
+      - traefik.http.routers.6leetcode.tls.certresolver=leresolver
+      - traefik.http.services=6leetcode
+      - traefik.http.services.6leetcode.loadbalancer.server.port=80
+    networks:
+      - default
   6leetcode:
-    image: 6leetcode/6leetcode:latest
+    image: 6leetcode/server:latest
     container_name: 6leetcode
     hostname: 6leetcode
     depends_on:
       - traefik
       - postgresql-master
       - watchtower
+      - web
     build:
       context: $PWD/../..
       dockerfile: apps/server/Dockerfile
@@ -87,7 +105,7 @@ services:
     volumes:
       - $PWD/config.yml:/etc/6leetcode/config.yml
     labels:
-      - traefik.http.routers.6leetcode.rule=Host(`${HOST_DOMAIN}`)
+      - traefik.http.routers.6leetcode.rule=Host(`api.${HOST_DOMAIN}`)
       - traefik.http.routers.6leetcode.entrypoints=websecure
       - traefik.http.routers.6leetcode.tls=true
       - traefik.http.routers.6leetcode.tls.certresolver=leresolver
