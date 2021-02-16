@@ -8,7 +8,7 @@ import (
 type Question struct {
 	gorm.Model            `json:"-"`
 	QuestionID            int    `json:"question_id"`
-	FrontendQuestionID    int    `json:"frontend_question_id" gorm:"index:unique"`
+	QuestionFrontendID    string `json:"question_frontend_id" gorm:"index:unique"`
 	Difficulty            string `json:"difficulty"`
 	PaidOnly              bool   `json:"paid_only"`
 	Title                 string `json:"title"`

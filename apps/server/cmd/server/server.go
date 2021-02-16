@@ -171,7 +171,7 @@ func syncLeetcode() (err error) {
 	if instance, err = leetcode.New(); err != nil {
 		return
 	}
-	if err = instance.All(); err != nil {
+	if _, err = instance.All(false); err != nil {
 		return
 	}
 	return

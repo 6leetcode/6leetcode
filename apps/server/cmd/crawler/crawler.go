@@ -12,7 +12,7 @@ func Initialize() (err error) {
 		return
 	}
 
-	err = instance.All()
+	_, err = instance.All(false)
 
 	return
 }
