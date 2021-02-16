@@ -43,9 +43,11 @@ func init() {
 				return
 			}
 			if viper.GetBool("QUESTION_INITIALIZE") {
-				if err = solutions.Travel(viper.GetString("QUESTION_DIR")); err != nil {
-					logging.Errorf("Travel questions error: %+v", err)
-					return
+				if viper.GetString("QUESTION_DIR") != "" && com.IsDir(viper.GetString("QUESTION_DIR")) {
+					if err = solutions.Travel(viper.GetString("QUESTION_DIR")); err != nil {
+						logging.Errorf("Travel questions error: %+v", err)
+						return
+					}
 				}
 			}
 			if err = server.Initialize(); err != nil {
