@@ -53,3 +53,5 @@ apps/server/.env
 
 *.dSYM/
 dist/
+
+config.yml
