@@ -30,8 +30,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      - name: Install go-bindata
-        run: go get -u -v github.com/go-bindata/go-bindata/...
       - name: Install swag
         run: go get -u -v github.com/swaggo/swag/cmd/swag
       - name: Build fontend
