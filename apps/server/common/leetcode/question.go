@@ -121,8 +121,8 @@ func (i *Instance) Question(titleSlug string) (err error) {
 		return
 	}
 
-	if viper.GetString("Generate.Readme") != "" {
-		if err = i.readme(question, viper.GetString("Generate.Readme")); err != nil {
+	if viper.GetString("QUESTION_DIR") != "" {
+		if err = i.readme(question, viper.GetString("QUESTION_DIR")); err != nil {
 			return
 		}
 	}
