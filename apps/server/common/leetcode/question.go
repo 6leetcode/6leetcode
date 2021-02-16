@@ -131,8 +131,7 @@ func (i *Instance) Question(titleSlug string) (err error) {
 }
 
 func (i *Instance) readme(question *table.Question, basedir string) (err error) {
-	var dir = fmt.Sprintf("%s/%s/%04d. %s", basedir, question.CategoryTitle,
-		question.FrontendQuestionID, question.Title)
+	var dir = fmt.Sprintf("%s/%s/%s. %s", basedir, question.CategoryTitle, QuestionID(question.QuestionFrontendID), question.Title)
 	if !com.IsDir(dir) {
 		if err = os.MkdirAll(dir, 0755); err != nil {
 			return

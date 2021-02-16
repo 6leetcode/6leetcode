@@ -9,6 +9,7 @@ import (
 	"github.com/unknwon/com"
 
 	"6leetcode/cmd/crawler"
+	"6leetcode/cmd/gen"
 	"6leetcode/cmd/server"
 	"6leetcode/cmd/version"
 	"6leetcode/common/solutions"
@@ -75,6 +76,28 @@ func init() {
 		},
 	}
 	RootCmd.AddCommand(crawlerCmd) // crawler commander
+
+	var genCmd = &cobra.Command{
+		Use:   "gen",
+		Short: "Generate readme.",
+		Long:  `Generate readme.`,
+		Args:  cobra.MinimumNArgs(0),
+		Run: func(_ *cobra.Command, _ []string) {
+			var err error
+			if err = initConfig(config); err != nil {
+				logging.Error(err)
+			}
+			// if err = table.Initialize(); err != nil {
+			// 	logging.Errorf("Got error: %+v", err)
+			// 	return
+			// }
+			if err = gen.Initialize(); err != nil {
+				logging.Errorf("Got error: %+v", err)
+				return
+			}
+		},
+	}
+	RootCmd.AddCommand(genCmd)
 
 	var versionCmd = &cobra.Command{
 		Use:   "version",

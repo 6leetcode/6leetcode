@@ -14,8 +14,21 @@ import (
 	"6leetcode/common/table"
 )
 
+type AllQuestion struct {
+	CategoryTitle      string  `json:"categoryTitle"`
+	Difficulty         string  `json:"difficulty"`
+	IsPaidOnly         bool    `json:"isPaidOnly"`
+	QuestionFrontendID string  `json:"questionFrontendId"`
+	QuestionId         string  `json:"questionId"`
+	Status             *string `json:"status"`
+	Title              string  `json:"title"`
+	TitleSlug          string  `json:"titleSlug"`
+	TranslatedTitle    string  `json:"translatedTitle"`
+	Stats              string  `json:"stats"`
+}
+
 // All all
-func (i *Instance) All() (err error) {
+func (i *Instance) All(gen bool) (questions []table.Question, err error) {
 	var data []byte
 	var errs []error
 	var response gorequest.Response
@@ -35,19 +48,6 @@ func (i *Instance) All() (err error) {
 
 	if response.Request.Response != nil {
 		i.cookie = response.Request.Response.Cookies()
-	}
-
-	type AllQuestion struct {
-		CategoryTitle      string  `json:"categoryTitle"`
-		Difficulty         string  `json:"difficulty"`
-		IsPaidOnly         bool    `json:"isPaidOnly"`
-		QuestionFrontendID string  `json:"questionFrontendId"`
-		QuestionId         string  `json:"questionId"`
-		Status             *string `json:"status"`
-		Title              string  `json:"title"`
-		TitleSlug          string  `json:"titleSlug"`
-		TranslatedTitle    string  `json:"translatedTitle"`
-		Stats              string  `json:"stats"`
 	}
 
 	type body struct {
@@ -72,17 +72,20 @@ func (i *Instance) All() (err error) {
 
 	var waitGroup = new(sync.WaitGroup)
 
+	// fmt.Println(string(data))
+
 	for _, question := range b.Data.AllQuestions {
-		var qid, fqid int
+		var qid int
+		// var fqid int
 		if qid, err = strconv.Atoi(question.QuestionId); err != nil {
 			logging.Error(err)
 			continue
 		}
 
-		if fqid, err = strconv.Atoi(question.QuestionFrontendID); err != nil {
-			err = nil
-			fqid = qid
-		}
+		// if fqid, err = strconv.Atoi(question.QuestionFrontendID); err != nil {
+		// 	err = nil
+		// 	fqid = qid
+		// }
 
 		var questionStats QuestionStats
 		if err = json.Unmarshal([]byte(question.Stats), &questionStats); err != nil {
@@ -95,7 +98,7 @@ func (i *Instance) All() (err error) {
 
 		var q = &table.Question{
 			QuestionID:         qid,
-			FrontendQuestionID: fqid,
+			QuestionFrontendID: question.QuestionFrontendID,
 			Difficulty:         question.Difficulty,
 			PaidOnly:           question.IsPaidOnly,
 			Title:              question.Title,
@@ -108,20 +111,24 @@ func (i *Instance) All() (err error) {
 			TotalSubmissionRaw: questionStats.TotalSubmissionRaw,
 			ACRate:             questionStats.ACRate,
 		}
-		var err error
-		if err = q.Create(); err != nil {
-			logging.Error(err)
-			err = nil // ignore this error
-		}
 
-		waitGroup.Add(1)
-		go func(question AllQuestion) {
-			defer waitGroup.Done()
-			if err = i.Question(question.TitleSlug); err != nil {
+		questions = append(questions, *q)
+
+		if !gen {
+			// var err error
+			if err = q.Create(); err != nil {
 				logging.Error(err)
 				err = nil // ignore this error
 			}
-		}(question)
+			waitGroup.Add(1)
+			go func(question AllQuestion) {
+				defer waitGroup.Done()
+				if err = i.Question(question.TitleSlug); err != nil {
+					logging.Error(err)
+					err = nil // ignore this error
+				}
+			}(question)
+		}
 	}
 	waitGroup.Wait()
 	return
