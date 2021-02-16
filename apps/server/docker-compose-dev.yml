@@ -5,8 +5,6 @@ services:
     image: 6leetcode/6leetcode:latest
     container_name: 6leetcode-dev
     hostname: 6leetcode-dev
-    command:
-      ["wait-for-it.sh", "postgresql-dev:5432", "--", "6leetcode", "server"]
     build:
       context: $PWD/../..
       dockerfile: apps/server/Dockerfile.dev
