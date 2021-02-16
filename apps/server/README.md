@@ -1,12 +1,12 @@
 # LeetCode Server
 
-### Development
+## Development
 
 ``` bash
 make build up-database-dev up-server-dev
 ```
 
-#### Release
+## Release
 
 ``` bash
 make up
