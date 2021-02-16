@@ -15,7 +15,7 @@ import (
 	"6leetcode/common/table"
 )
 
-var suffixes = []string{".c", ".cc", ".go", ".java", ".js", "php", ".py", ".rs", ".sql", ".sh"}
+var suffixes = []string{".c", ".cc", ".go", ".java", ".js", ".php", ".py", ".rs", ".sql", ".sh"}
 
 const tableTitle = "|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
 
