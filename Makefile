@@ -6,8 +6,5 @@ ${TARGETS}:
 	@docker-compose build $@
 	@docker-compose run $@ make -f testing/$@.makefile run
 
-format:
-	@python3 scripts/$@.py
-
-generate:
-	@python3 scripts/$@.py
+gen:
+	@6leetcode gen
