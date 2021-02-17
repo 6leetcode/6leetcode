@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"embed"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -24,6 +25,8 @@ var RootCmd = &cobra.Command{
 
 const DefaultConfig = "/etc/6leetcode/config.yml"
 
+var Questions embed.FS
+
 func init() {
 	var config string
 	RootCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
@@ -36,19 +39,12 @@ func init() {
 		Run: func(_ *cobra.Command, _ []string) {
 			var err error
 			if err = initConfig(config); err != nil {
-				logging.Error(err)
-			}
-			if err = table.Initialize(); err != nil {
-				logging.Errorf("Got error: %+v", err)
+				logging.Errorf("Init config with error: %+v", err)
 				return
 			}
-			if viper.GetBool("QUESTION_INITIALIZE") {
-				if viper.GetString("QUESTION_DIR") != "" && com.IsDir(viper.GetString("QUESTION_DIR")) {
-					if err = solutions.Travel(viper.GetString("QUESTION_DIR")); err != nil {
-						logging.Errorf("Travel questions error: %+v", err)
-						return
-					}
-				}
+			if err = initTable(Questions); err != nil {
+				logging.Errorf("Init table with error: %+v", err)
+				return
 			}
 			if err = server.Initialize(); err != nil {
 				logging.Errorf("Got error: %+v", err)
@@ -65,14 +61,15 @@ func init() {
 		Run: func(_ *cobra.Command, _ []string) {
 			var err error
 			if err = initConfig(config); err != nil {
-				logging.Error(err)
+				logging.Errorf("Init config with error: %+v", err)
+				return
 			}
-			if err = table.Initialize(); err != nil {
-				logging.Errorf("Got error: %+v", err)
+			if err = initTable(Questions); err != nil {
+				logging.Errorf("Init table with error: %+v", err)
 				return
 			}
 			if err = crawler.Initialize(); err != nil {
-				logging.Errorf("Got error: %+v", err)
+				logging.Errorf("Init crawler with error: %+v", err)
 				return
 			}
 		},
@@ -89,10 +86,6 @@ func init() {
 			if err = initConfig(config); err != nil {
 				logging.Error(err)
 			}
-			// if err = table.Initialize(); err != nil {
-			// 	logging.Errorf("Got error: %+v", err)
-			// 	return
-			// }
 			if err = gen.Initialize(); err != nil {
 				logging.Errorf("Got error: %+v", err)
 				return
@@ -112,6 +105,23 @@ func init() {
 	RootCmd.AddCommand(versionCmd) // version commander
 
 	RootCmd.Use = viper.GetString("AppName")
+}
+
+func initTable(questions embed.FS) (err error) {
+	if err = table.Initialize(); err != nil {
+		logging.Errorf("Got error: %+v", err)
+		return
+	}
+	if viper.GetBool("QUESTION_INITIALIZE") {
+		if viper.GetString("QUESTION_DIR") != "" && com.IsDir(viper.GetString("QUESTION_DIR")) {
+			go func() {
+				if err := solutions.Travel(questions); err != nil {
+					logging.Errorf("Travel questions error: %+v", err)
+				}
+			}()
+		}
+	}
+	return
 }
 
 func initConfig(config string) (err error) {
