@@ -188,7 +188,7 @@ golang.org/x/net/idna
 golang.org/x/net/publicsuffix
 golang.org/x/net/webdav
 golang.org/x/net/webdav/internal/xml
-# golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
+# golang.org/x/sys v0.0.0-20210216224549-f992740a1bac
 ## explicit
 golang.org/x/sys/cpu
 golang.org/x/sys/execabs
