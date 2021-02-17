@@ -11,8 +11,9 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
-          fetch-depth: 10
+          fetch-depth: 0
           ref: main
+          lfs: true
       - name: Config git
         run: |
           git config user.name 'Tosone'
@@ -25,7 +26,7 @@ jobs:
       - name: Setup golang
         uses: actions/setup-go@v2
         with:
-          go-version: 1.15
+          go-version: 1.16
       - name: Setup node
         uses: actions/setup-node@v1
         with:
