@@ -36,6 +36,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
+      - name: Install go-bindata
+        run: go get -u -v github.com/go-bindata/go-bindata/...
       - name: Install swag
         run: go get -u -v github.com/swaggo/swag/cmd/swag
       - name: Build fontend
@@ -44,6 +46,9 @@ jobs:
           npm install -g yarn
           yarn
           yarn build
+      - name: Move the questions
+        run: |
+          cp -r questions apps/server
       - name: Lint code
         uses: golangci/golangci-lint-action@v2
         with:

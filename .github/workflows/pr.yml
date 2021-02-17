@@ -39,6 +39,9 @@ jobs:
           npm install -g yarn
           yarn
           yarn build
+      - name: Move the questions
+        run: |
+          cp -r questions apps/server
       - name: Build server
         run: |
           cd apps/server
