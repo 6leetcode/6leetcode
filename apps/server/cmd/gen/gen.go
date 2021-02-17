@@ -54,7 +54,9 @@ func Initialize() (err error) {
 	}
 
 	var questions []table.Question
-	questions, err = instance.All(true)
+	if questions, err = instance.All(true); err != nil {
+		return
+	}
 
 	if err = generate(questions, "README.md", EngReadme); err != nil {
 		return
@@ -125,7 +127,10 @@ func entry(questions []table.Question, categoryTitle string) (str string) {
 				continue
 			}
 			str += fmt.Sprintf("|[%s](%s)|%s|", leetcode.QuestionID(question.QuestionFrontendID), leetcode.HostLeetcode+"/problems/"+question.TitleSlug, question.Difficulty)
-			filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+			if err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+				if err != nil {
+					return err
+				}
 				if info == nil {
 					return nil
 				}
@@ -144,7 +149,10 @@ func entry(questions []table.Question, categoryTitle string) (str string) {
 					}
 				}
 				return nil
-			})
+			}); err != nil {
+				logging.Error(err)
+				return
+			}
 
 			for _, suffix := range suffixes {
 				for index, language := range languageMap[suffix] {
