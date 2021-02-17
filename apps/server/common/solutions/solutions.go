@@ -2,7 +2,9 @@ package solutions
 
 import (
 	"bufio"
+	"embed"
 	"fmt"
+	"io/fs"
 	"os"
 	"path/filepath"
 	"regexp"
@@ -85,8 +87,8 @@ var tokens = []token{
 var re = regexp.MustCompile(`(?m)(\d{4,10})\.\s[\w\W]*`)
 
 // Travel ..
-func Travel(questionDir string) (err error) {
-	if err = filepath.Walk(questionDir, func(path string, info os.FileInfo, err error) error {
+func Travel(questions embed.FS) (err error) {
+	if err = fs.WalkDir(questions, "questions", func(path string, info fs.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}

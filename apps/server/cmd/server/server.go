@@ -78,6 +78,7 @@ func Initialize() (err error) {
 	var quit = make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 	<-quit
+	fmt.Println()
 	logging.Info("server is shutting down")
 
 	var ctx, cancel = context.WithTimeout(context.Background(), 5*time.Second)
