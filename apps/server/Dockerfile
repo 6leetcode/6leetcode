@@ -1,10 +1,10 @@
-FROM golang:alpine AS stage1
+FROM golang:1.16-alpine AS stage1
 
 ENV GOPROXY="https://goproxy.cn,direct"
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --no-cache git && go get -u -v github.com/swaggo/swag/cmd/swag
 
-FROM golang:alpine AS stage2
+FROM golang:1.16-alpine AS stage2
 
 WORKDIR /go/src/app
 
@@ -19,7 +19,7 @@ RUN apk add --no-cache gcc make musl-dev git && \
   cp release/6leetcode /tmp && \
   cp config.yml /tmp
 
-FROM alpine:3.12
+FROM alpine:3.13
 
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add --no-cache ca-certificates bash && \
