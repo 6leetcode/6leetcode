@@ -2,7 +2,7 @@
 
 <p>In a 1 million by 1 million grid, the coordinates of each grid square are <code>(x, y)</code>.</p>
 
-<p>We start at the <code>source</code> square and want to reach the <code>target</code> square.&nbsp; Each move, we can walk to a 4-directionally adjacent square in the grid that isn&#39;t in the given list of <code>blocked</code> squares.</p>
+<p>We start at the <code>source</code> square and want to reach the <code>target</code> square. Each move, we can walk to a 4-directionally adjacent square in the grid that isn&#39;t in the given list of <code>blocked</code> squares.</p>
 
 <p>Return <code>true</code> if and only if it is possible to reach the target square through a sequence of moves.</p>
 
@@ -29,8 +29,8 @@
 <ul>
 	<li><code>0 &lt;= blocked.length &lt;= 200</code></li>
 	<li><code>blocked[i].length == 2</code></li>
-	<li><code>0 &lt;= blocked[i][j] &lt; 10^6</code></li>
+	<li><code>0 &lt;= blocked[i][j] &lt; 10<sup>6</sup></code></li>
 	<li><code>source.length == target.length == 2</code></li>
-	<li><code>0 &lt;= source[i][j], target[i][j] &lt; 10^6</code></li>
+	<li><code>0 &lt;= source[i][j], target[i][j] &lt; 10<sup>6</sup></code></li>
 	<li><code>source != target</code></li>
 </ul>

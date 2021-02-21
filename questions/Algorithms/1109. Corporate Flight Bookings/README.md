@@ -14,11 +14,18 @@
 <strong>Output:</strong> [10,55,45,25,25]
 </pre>
 
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> bookings = [[1,2,10],[2,2,15]], n = 2
+<strong>Output:</strong> [10,25]
+</pre>
+
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= bookings.length &lt;= 20000</code></li>
-	<li><code>1 &lt;= bookings[i][0] &lt;= bookings[i][1] &lt;= n &lt;= 20000</code></li>
-	<li><code>1 &lt;= bookings[i][2] &lt;= 10000</code></li>
+	<li><code>1 &lt;= bookings.length &lt;= 2 * 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= bookings[i][0] &lt;= bookings[i][1] &lt;= n &lt;= 2 * 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= bookings[i][2] &lt;= 10<sup>4</sup></code></li>
 </ul>

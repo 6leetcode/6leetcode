@@ -15,6 +15,8 @@ Each row of this table contains the name of a person and their phone number.
 Phone number will be in the form &#39;xxx-yyyyyyy&#39; where xxx is the country code (3 characters) and yyyyyyy is the phone number (7 characters) where x and y are digits. Both can contain leading zeros.
 </pre>
 
+<p>&nbsp;</p>
+
 <p>Table <code>Country</code>:</p>
 
 <pre>
@@ -44,13 +46,17 @@ There is no primary key for this table, it may contain duplicates.
 Each row of this table contains the caller id, callee id and the duration of the call in minutes. caller_id != callee_id
 </pre>
 
+<p>&nbsp;</p>
+
 <p>A telecommunications company wants to invest in new countries. The company intends to invest in the countries where the average call duration of the calls in this country is strictly greater than the global average call duration.</p>
 
 <p>Write an SQL query to find the countries where this company can invest.</p>
 
 <p>Return the result table in any order.</p>
 
-<p>The query result format is in the following example.</p>
+<p>The query result format is in the following example:</p>
+
+<p>&nbsp;</p>
 
 <pre>
 <code>Person</code> table:
@@ -101,6 +107,6 @@ Result table:
 The average call duration for Peru is (102 + 102 + 330 + 330 + 5 + 5) / 6 = 145.666667
 The average call duration for Israel is (33 + 4 + 13 + 13 + 3 + 1 + 1 + 7) / 8 = 9.37500
 The average call duration for Morocco is (33 + 4 + 59 + 59 + 3 + 7) / 6 = 27.5000 
-Global call duration average = (2 * (33 + 3 + 59 + 102 + 330 + 5 + 13 + 3 + 1 + 7)) / 20 = 55.70000
+Global call duration average = (2 * (33 + 4 + 59 + 102 + 330 + 5 + 13 + 3 + 1 + 7)) / 20 = 55.70000
 Since Peru is the only country where average call duration is greater than the global average, it&#39;s the only recommended country.
 </pre>
