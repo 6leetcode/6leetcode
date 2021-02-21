@@ -6,28 +6,27 @@
 
 <p>总而言之，从给定项目中选择最多 <strong>k</strong> 个不同项目的列表，以最大化最终资本，并输出最终可获得的最多资本。</p>
 
-<p><strong>示例 1:</strong></p>
+<p> </p>
 
-<pre><strong>输入:</strong> k=2, W=0, Profits=[1,2,3], Capital=[0,1,1].
+<p><strong>示例：</strong></p>
 
-<strong>输出:</strong> 4
-
-<strong>解释:
-</strong>由于你的初始资本为 0，你尽可以从 0 号项目开始。
+<pre>
+<strong>输入：</strong>k=2, W=0, Profits=[1,2,3], Capital=[0,1,1].
+<strong>输出：</strong>4
+<strong>解释：
+</strong>由于你的初始资本为 0，你仅可以从 0 号项目开始。
 在完成后，你将获得 1 的利润，你的总资本将变为 1。
 此时你可以选择开始 1 号或 2 号项目。
 由于你最多可以选择两个项目，所以你需要完成 2 号项目以获得最大的资本。
 因此，输出最后最大化的资本，为 0 + 1 + 3 = 4。
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p><strong>注意:</strong></p>
+<p><strong>提示：</strong></p>
 
-<ol>
+<ul>
 	<li>假设所有输入数字都是非负整数。</li>
 	<li>表示利润和资本的数组的长度不超过 50000。</li>
 	<li>答案保证在 32 位有符号整数范围内。</li>
-</ol>
-
-<p>&nbsp;</p>
+</ul>
