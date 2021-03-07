@@ -17,7 +17,9 @@ LeetCode 题解
 
 ## Solutions' list
 
-### Algorithms
+<details>
+
+  <summary>Algorithms</summary>
 
 |Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -127,7 +129,7 @@ LeetCode 题解
 |[0104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)|Easy|||||||||||
 |[0105](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)|Medium|||||||||||
 |[0106](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)|Medium|||||||||||
-|[0107](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii)|Easy|||||||||||
+|[0107](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii)|Medium|||||||||||
 |[0108](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree)|Easy|||||||||||
 |[0109](https://leetcode-cn.com/problems/convert-sorted-list-to-binary-search-tree)|Medium|||||||||||
 |[0110](https://leetcode-cn.com/problems/balanced-binary-tree)|Easy|||||||||||
@@ -279,7 +281,7 @@ LeetCode 题解
 |[0273](https://leetcode-cn.com/problems/integer-to-english-words)|Hard|||||||||||
 |[0274](https://leetcode-cn.com/problems/h-index)|Medium|||||||||||
 |[0275](https://leetcode-cn.com/problems/h-index-ii)|Medium|||||||||||
-|[0276](https://leetcode-cn.com/problems/paint-fence)|Easy|||||||||||
+|[0276](https://leetcode-cn.com/problems/paint-fence)|Medium|||||||||||
 |[0277](https://leetcode-cn.com/problems/find-the-celebrity)|Medium|||||||||||
 |[0278](https://leetcode-cn.com/problems/first-bad-version)|Easy|||||||||||
 |[0279](https://leetcode-cn.com/problems/perfect-squares)|Medium|||||||||||
@@ -374,7 +376,7 @@ LeetCode 题解
 |[0368](https://leetcode-cn.com/problems/largest-divisible-subset)|Medium|||||||||||
 |[0369](https://leetcode-cn.com/problems/plus-one-linked-list)|Medium|||||||||||
 |[0370](https://leetcode-cn.com/problems/range-addition)|Medium|||||||||||
-|[0371](https://leetcode-cn.com/problems/sum-of-two-integers)|Easy|||||||||||
+|[0371](https://leetcode-cn.com/problems/sum-of-two-integers)|Medium|||||||||||
 |[0372](https://leetcode-cn.com/problems/super-pow)|Medium|||||||||||
 |[0373](https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums)|Medium|||||||||||
 |[0374](https://leetcode-cn.com/problems/guess-number-higher-or-lower)|Easy|||||||||||
@@ -1033,7 +1035,7 @@ LeetCode 题解
 |[1133](https://leetcode-cn.com/problems/largest-unique-number)|Easy|||||||||||
 |[1102](https://leetcode-cn.com/problems/path-with-maximum-minimum-value)|Medium|||||||||||
 |[1135](https://leetcode-cn.com/problems/connecting-cities-with-minimum-cost)|Medium|||||||||||
-|[1136](https://leetcode-cn.com/problems/parallel-courses)|Hard|||||||||||
+|[1136](https://leetcode-cn.com/problems/parallel-courses)|Medium|||||||||||
 |[1150](https://leetcode-cn.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array)|Easy|||||||||||
 |[1033](https://leetcode-cn.com/problems/moving-stones-until-consecutive)|Easy|||||||||||
 |[1034](https://leetcode-cn.com/problems/coloring-a-border)|Medium|||||||||||
@@ -1337,7 +1339,7 @@ LeetCode 题解
 |[1408](https://leetcode-cn.com/problems/string-matching-in-an-array)|Easy|||||||||||
 |[1409](https://leetcode-cn.com/problems/queries-on-a-permutation-with-key)|Medium|||||||||||
 |[1410](https://leetcode-cn.com/problems/html-entity-parser)|Medium|||||||||||
-|[1411](https://leetcode-cn.com/problems/number-of-ways-to-paint-n-x-3-grid)|Hard|||||||||||
+|[1411](https://leetcode-cn.com/problems/number-of-ways-to-paint-n-3-grid)|Hard|||||||||||
 |[1431](https://leetcode-cn.com/problems/kids-with-the-greatest-number-of-candies)|Easy|||||||||||
 |[1432](https://leetcode-cn.com/problems/max-difference-you-can-get-from-changing-an-integer)|Medium|||||||||||
 |[1433](https://leetcode-cn.com/problems/check-if-a-string-can-break-another-string)|Medium|||||||||||
@@ -1609,6 +1611,10 @@ LeetCode 题解
 |[1743](https://leetcode-cn.com/problems/restore-the-array-from-adjacent-pairs)|Medium|||||||||||
 |[1745](https://leetcode-cn.com/problems/palindrome-partitioning-iv)|Hard|||||||||||
 |[1744](https://leetcode-cn.com/problems/can-you-eat-your-favorite-candy-on-your-favorite-day)|Medium|||||||||||
+|[1763](https://leetcode-cn.com/problems/longest-nice-substring)|Easy|||||||||||
+|[1764](https://leetcode-cn.com/problems/form-array-by-concatenating-subarrays-of-another-array)|Medium|||||||||||
+|[1766](https://leetcode-cn.com/problems/tree-of-coprimes)|Hard|||||||||||
+|[1765](https://leetcode-cn.com/problems/map-of-highest-peak)|Medium|||||||||||
 |[1752](https://leetcode-cn.com/problems/check-if-array-is-sorted-and-rotated)|Easy|||||||||||
 |[1753](https://leetcode-cn.com/problems/maximum-score-from-removing-stones)|Medium|||||||||||
 |[1754](https://leetcode-cn.com/problems/largest-merge-of-two-strings)|Medium|||||||||||
@@ -1618,7 +1624,23 @@ LeetCode 题解
 |[1759](https://leetcode-cn.com/problems/count-number-of-homogenous-substrings)|Medium|||||||||||
 |[1760](https://leetcode-cn.com/problems/minimum-limit-of-balls-in-a-bag)|Medium|||||||||||
 |[1761](https://leetcode-cn.com/problems/minimum-degree-of-a-connected-trio-in-a-graph)|Hard|||||||||||
+|[5680](https://leetcode-cn.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate)|Easy|||||||||||
+|[5681](https://leetcode-cn.com/problems/check-if-number-is-a-sum-of-powers-of-three)|Medium|||||||||||
+|[5682](https://leetcode-cn.com/problems/sum-of-beauty-of-all-substrings)|Medium|||||||||||
+|[5683](https://leetcode-cn.com/problems/count-pairs-of-nodes)|Hard|||||||||||
 |[1746](https://leetcode-cn.com/problems/maximum-subarray-sum-after-one-operation)|Medium|||||||||||
+|[1768](https://leetcode-cn.com/problems/merge-strings-alternately)|Easy|||||||||||
+|[1769](https://leetcode-cn.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box)|Medium|||||||||||
+|[1770](https://leetcode-cn.com/problems/maximum-score-from-performing-multiplication-operations)|Medium|||||||||||
+|[1771](https://leetcode-cn.com/problems/maximize-palindrome-length-from-subsequences)|Hard|||||||||||
+|[1773](https://leetcode-cn.com/problems/count-items-matching-a-rule)|Easy|||||||||||
+|[1774](https://leetcode-cn.com/problems/closest-dessert-cost)|Medium|||||||||||
+|[1775](https://leetcode-cn.com/problems/equal-sum-arrays-with-minimum-number-of-operations)|Medium|||||||||||
+|[1776](https://leetcode-cn.com/problems/car-fleet-ii)|Hard|||||||||||
+|[1756](https://leetcode-cn.com/problems/design-most-recently-used-queue)|Medium|||||||||||
+|[1762](https://leetcode-cn.com/problems/buildings-with-an-ocean-view)|Medium|||||||||||
+|[1772](https://leetcode-cn.com/problems/sort-features-by-popularity)|Medium|||||||||||
+|[1778](https://leetcode-cn.com/problems/shortest-path-in-a-hidden-grid)|Medium|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
@@ -1647,7 +1669,11 @@ LeetCode 题解
 |[LCP 18](https://leetcode-cn.com/problems/2vYnGI)|Easy|||||||||||
 |[LCP 27](https://leetcode-cn.com/problems/IQvJ9i)|Hard|||||||||||
 
-### Database
+</details>
+
+<details>
+
+  <summary>Database</summary>
 
 |Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -1800,8 +1826,15 @@ LeetCode 题解
 |[1741](https://leetcode-cn.com/problems/find-total-time-spent-by-each-employee)|Easy|||||||||||
 |[1747](https://leetcode-cn.com/problems/leetflex-banned-accounts)|Medium|||||||||||
 |[1757](https://leetcode-cn.com/problems/recyclable-and-low-fat-products)|Easy|||||||||||
+|[1767](https://leetcode-cn.com/problems/find-the-subtasks-that-did-not-execute)|Hard|||||||||||
+|[1777](https://leetcode-cn.com/problems/products-price-for-each-store)|Easy|||||||||||
+|[1783](https://leetcode-cn.com/problems/grand-slam-titles)|Medium|||||||||||
 
-### Shell
+</details>
+
+<details>
+
+  <summary>Shell</summary>
 
 |Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -1810,7 +1843,11 @@ LeetCode 题解
 |[0194](https://leetcode-cn.com/problems/transpose-file)|Medium||||||||||[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Shell/0194.%20Transpose%20File/bash1.sh)|
 |[0195](https://leetcode-cn.com/problems/tenth-line)|Easy||||||||||[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Shell/0195.%20Tenth%20Line/bash1.sh) [2](https://github.com/6leetcode/6leetcode/blob/main/questions/Shell/0195.%20Tenth%20Line/bash2.sh)|
 
-### Concurrency
+</details>
+
+<details>
+
+  <summary>Concurrency</summary>
 
 |Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -1824,7 +1861,11 @@ LeetCode 题解
 |[1242](https://leetcode-cn.com/problems/web-crawler-multithreaded)|Medium|||||||||||
 |[1279](https://leetcode-cn.com/problems/traffic-light-controlled-intersection)|Easy|||||||||||
 
-### LCCI
+</details>
+
+<details>
+
+  <summary>LCCI</summary>
 
 |Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -1938,7 +1979,11 @@ LeetCode 题解
 |[面试题 16.22](https://leetcode-cn.com/problems/langtons-ant-lcci)|Medium|||||||||||
 |[面试题 17.26](https://leetcode-cn.com/problems/sparse-similarity-lcci)|Hard|||||||||||
 
-### LCOF
+</details>
+
+<details>
+
+  <summary>LCOF</summary>
 
 |Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -2017,3 +2062,5 @@ LeetCode 题解
 |[剑指 Offer 64](https://leetcode-cn.com/problems/qiu-12n-lcof)|Medium|||||||||||
 |[剑指 Offer 68 - I](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof)|Easy|||||||||||
 |[剑指 Offer 68 - II](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof)|Easy|||||||||||
+
+</details>
