@@ -1,8 +1,10 @@
 ### [Check SubTree](https://leetcode.com/problems/check-subtree-lcci)
 
-<p>T1&nbsp;and T2 are two very large binary trees, with T1&nbsp;much bigger than T2. Create an algorithm to determine if T2 is a subtree of T1.</p>
+<p>T1&nbsp;and T2 are two very large binary trees. Create an algorithm to determine if T2 is a subtree of T1.</p>
 
 <p>A tree T2 is a subtree of T1&nbsp;if there exists a node n in T1&nbsp;such that the subtree of n is identical to T2. That is, if you cut off the tree at node n, the two trees would be identical.</p>
+
+<p><strong>Note:</strong> This problem is slightly different from the original problem.</p>
 
 <p><strong>Example1:</strong></p>
 

@@ -27,7 +27,7 @@
 NumArray numArray = new NumArray([1, 3, 5]);
 numArray.sumRange(0, 2); // 返回 9 ，sum([1,3,5]) = 9
 numArray.update(1, 2);   // nums = [1,2,5]
-numArray.sumRange(0, 2); // 返回 8 ，sum([1,2,5]) = 9
+numArray.sumRange(0, 2); // 返回 8 ，sum([1,2,5]) = 8
 </pre>
 
 <p> </p>
