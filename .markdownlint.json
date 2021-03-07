@@ -1,0 +1,9 @@
+{
+  "no-inline-html": {
+    "allowed_elements": [
+      "details",
+      "summary"
+    ]
+  },
+  "MD013": false
+}

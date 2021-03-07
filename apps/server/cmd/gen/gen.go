@@ -112,7 +112,7 @@ func generate(questions []table.Question, filename, prefix string) (err error) {
 const URLPrefix = "https://github.com/6leetcode/6leetcode/blob/main/questions/"
 
 func entry(questions []table.Question, categoryTitle string) (str string) {
-	str += fmt.Sprintf("\n### %s\n\n", categoryTitle)
+	str += fmt.Sprintf("\n<details>\n\n  <summary>%s</summary>\n\n", categoryTitle)
 
 	str += tableTitle
 	for _, question := range questions {
@@ -167,5 +167,8 @@ func entry(questions []table.Question, categoryTitle string) (str string) {
 			str += "\n"
 		}
 	}
+
+	str += "\n</details>\n"
+
 	return
 }
