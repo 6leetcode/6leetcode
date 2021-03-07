@@ -1,10 +1,12 @@
 ### [Kill Process](https://leetcode.com/problems/kill-process)
 
-<p>You have <code>n</code> processes. You are given two integer arrays <code>pid</code> and <code>ppid</code>, where the ID of the <code>i<sup>th</sup></code> process is <code>pid[i]</code> and the ID of the parent process of the <code>i<sup>th</sup></code> process is <code>ppid[i]</code>.</p>
+<p>You have <code>n</code> processes forming a rooted tree structure. You are given two integer arrays <code>pid</code> and <code>ppid</code>, where <code>pid[i]</code> is the ID of the <code>i<sup>th</sup></code> process and <code>ppid[i]</code> is the ID of the <code>i<sup>th</sup></code> process&#39;s parent process.</p>
 
-<p>Each process only has <strong>one parent process</strong> but may have one or more children processes. This is just like a tree structure. Only one process has <code>ppid[i]</code> that is <code>0</code>, which means this process has <strong>no parent process</strong>.</p>
+<p>Each process has only <strong>one parent process</strong> but may have multiple children processes. Only one process has <code>ppid[i] = 0</code>, which means this process has <strong>no parent process</strong> (the root of the tree).</p>
 
-<p>Given an integer <code>kill</code> representing the ID of a process you want to kill, return a list of the IDs of the processes that will be killed in the end. You should assume that when a process is killed, all its children processes will be killed. No order is required for the final answer.</p>
+<p>When a process is <strong>killed</strong>, all of its children processes will also be killed.</p>
+
+<p>Given an integer <code>kill</code> representing the ID of a process you want to kill, return <em>a list of the IDs of the processes that will be killed. You may return the answer in <strong>any order</strong>.</em></p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -12,6 +14,7 @@
 <pre>
 <strong>Input:</strong> pid = [1,3,10,5], ppid = [3,0,5,3], kill = 5
 <strong>Output:</strong> [5,10]
+<strong>Explanation:</strong>&nbsp;The processes colored in red are the processes that should be killed.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -32,5 +35,5 @@
 	<li><code>0 &lt;= ppid[i] &lt;= 5 * 10<sup>4</sup></code></li>
 	<li>Only one process has no parent.</li>
 	<li>All the values of <code>pid</code> are <strong>unique</strong>.</li>
-	<li><code>kill</code> is <strong>guaranteed</strong> to be one of the values of <code>pid</code>.</li>
+	<li><code>kill</code> is <strong>guaranteed</strong> to be in <code>pid</code>.</li>
 </ul>

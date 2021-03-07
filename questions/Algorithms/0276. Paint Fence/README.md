@@ -1,16 +1,22 @@
 ### [Paint Fence](https://leetcode.com/problems/paint-fence)
 
-<p>There is a fence with <code>n</code> posts. Each post can be painted with one of the <code>k</code> colors. You have to paint all the posts such that no more than two adjacent fence posts have the same color.</p>
+<p>You are painting a fence of <code>n</code> posts with <code>k</code> different colors. You must paint the posts following these rules:</p>
 
-<p>Given the two integers <code>n</code> and <code>k</code>, return <em>the total number of ways you can paint the fence</em>.</p>
+<ul>
+	<li>Every post must be painted <strong>exactly one</strong> color.</li>
+	<li><strong>At most one pair</strong> of adjacent fence posts can have the same color.</li>
+</ul>
+
+<p>Given the two integers <code>n</code> and <code>k</code>, return <em>the <strong>number of ways</strong> you can paint the fence</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/02/24/fences.jpg" style="width: 492px; height: 332px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/28/paintfenceex1.png" style="width: 507px; height: 313px;" />
 <pre>
 <strong>Input:</strong> n = 3, k = 2
 <strong>Output:</strong> 6
 <strong>Explanation: </strong>All the possibilities are shown.
+Note that painting all the posts red or all the posts green is invalid because there can only be at most one pair of adjacent posts that are the same color.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -18,6 +24,13 @@
 <pre>
 <strong>Input:</strong> n = 1, k = 1
 <strong>Output:</strong> 1
+</pre>
+
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 7, k = 2
+<strong>Output:</strong> 42
 </pre>
 
 <p>&nbsp;</p>

@@ -1,10 +1,10 @@
 ### [Sort Features by Popularity](https://leetcode.com/problems/sort-features-by-popularity)
 
-<p>You are given a string array <code>features</code>&nbsp;where <code>features[i]</code>&nbsp;is a single word representing the name of a feature of the latest product you are working on. You made a survey where users reported which features they like. You are given a string array&nbsp;<code>responses</code>, where&nbsp;<code>responses[i]</code>&nbsp;is a string containing space-separated words.</p>
+<p>You are given a string array <code>features</code> where <code>features[i]</code> is a single word that represents the name of a feature of the latest product you are working on. You have made a survey where users have reported which features they like. You are given a string array <code>responses</code>, where each <code>responses[i]</code> is a string containing space-separated words.</p>
 
-<p>You want to sort the features according to their popularity. More formally, let&nbsp;<code>appearances(word)</code>&nbsp;be the number of&nbsp;<code>i</code>s such that&nbsp;<code>responses[i]</code>&nbsp;contains <code>word</code>&nbsp;as a word. Then the&nbsp;<code>x<sup>th</sup></code>&nbsp;feature&nbsp;is more popular than the&nbsp;<code>y<sup>th</sup></code> feature&nbsp;if&nbsp;<code>appearances(features[x]) &gt; appearances(features[y])</code>.</p>
+<p>The <strong>popularity</strong> of a feature is the number of <code>responses[i]</code> that contain the feature. You want to sort the features in non-increasing order by their popularity. If two features have the same popularity, order them by their original index in <code>features</code>. Notice that one response could contain the same feature multiple times; this feature is only counted once in its popularity.</p>
 
-<p>Return an array <code>sortedFeatures</code>&nbsp;consisting of the&nbsp;feature names&nbsp;sorted by their popularity. If the&nbsp;<code>x<sup>th</sup></code>&nbsp; and <code>y<sup>th&nbsp;</sup></code>features&nbsp;have the same popularity where&nbsp;<code>x &lt; y</code>, then you should put the&nbsp;<code>x<sup>th</sup></code>&nbsp;feature&nbsp;before the&nbsp;<code>y<sup>th</sup></code>&nbsp;one.</p>
+<p>Return <em>the features in sorted order.</em></p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -26,13 +26,13 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= features.length&nbsp;&lt;= 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= features.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>1 &lt;= features[i].length &lt;= 10</code></li>
-	<li><code>features</code>&nbsp;contains no duplicates.</li>
-	<li><code>features[i]</code>&nbsp;consists of lowercase letters.</li>
+	<li><code>features</code> contains no duplicates.</li>
+	<li><code>features[i]</code> consists of lowercase letters.</li>
 	<li><code>1 &lt;= responses.length &lt;= 10<sup>2</sup></code></li>
 	<li><code>1 &lt;= responses[i].length &lt;= 10<sup>3</sup></code></li>
-	<li><code>responses[i]</code>&nbsp;consists of lowercase letters and spaces.</li>
-	<li><code>responses[i]</code>&nbsp;contains no two consecutive spaces.</li>
-	<li><code>responses[i]</code>&nbsp;has no leading or trailing spaces.</li>
+	<li><code>responses[i]</code> consists of lowercase letters and spaces.</li>
+	<li><code>responses[i]</code> contains no two consecutive spaces.</li>
+	<li><code>responses[i]</code> has no leading or trailing spaces.</li>
 </ul>

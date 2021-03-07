@@ -4,15 +4,19 @@
 
 <p>如果 T1 有这么一个节点 n，其子树与 T2 一模一样，则 T2 为 T1 的子树，也就是说，从节点 n 处把树砍断，得到的树与 T2 完全相同。</p>
 
+<p><strong>注意：</strong>此题相对书上原题略有改动。</p>
+
 <p><strong>示例1:</strong></p>
 
-<pre><strong> 输入</strong>：t1 = [1, 2, 3], t2 = [2]
+<pre>
+<strong> 输入</strong>：t1 = [1, 2, 3], t2 = [2]
 <strong> 输出</strong>：true
 </pre>
 
 <p><strong>示例2:</strong></p>
 
-<pre><strong> 输入</strong>：t1 = [1, null, 2, 4], t2 = [3, 2]
+<pre>
+<strong> 输入</strong>：t1 = [1, null, 2, 4], t2 = [3, 2]
 <strong> 输出</strong>：false
 </pre>
 
