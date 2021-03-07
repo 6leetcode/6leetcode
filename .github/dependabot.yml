@@ -3,12 +3,12 @@ updates:
   - package-ecosystem: npm
     directory: "/apps/web"
     schedule:
-      interval: weekly
-      time: "02:00"
+      interval: monthly
+      time: "00:00"
     open-pull-requests-limit: 10
   - package-ecosystem: gomod
     directory: "/apps/server"
     schedule:
-      interval: weekly
-      time: "02:00"
+      interval: monthly
+      time: "00:00"
     open-pull-requests-limit: 10
