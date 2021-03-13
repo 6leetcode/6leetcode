@@ -1,4 +1,4 @@
-FROM node:14-alpine3.12 AS builder
+FROM node:lts-alpine AS builder
 
 WORKDIR /web
 
@@ -9,6 +9,6 @@ ADD . .
 RUN cd apps/web && yarn install && yarn build
 # RUN cd apps/web && yarn install --registry https://registry.npm.taobao.org && yarn build
 
-FROM httpd:2.4-alpine
+FROM httpd:alpine
 
 COPY --from=builder /web/apps/web/build /usr/local/apache2/htdocs/
