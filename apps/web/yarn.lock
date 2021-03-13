@@ -1748,7 +1748,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.12.0", "@babel/runtime@^7.13.6":
+"@babel/runtime@^7.12.0", "@babel/runtime@^7.13.6", "@babel/runtime@^7.7.6":
   version "7.13.10"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
   integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
@@ -2411,6 +2411,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/history@*":
+  version "4.7.8"
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.8.tgz#49348387983075705fe8f4e02fb67f7daaec4934"
+  integrity sha512-S78QIYirQcUoo6UJZx9CSP0O2ix9IaeAXwQi26Rhr/+mg7qqPy8TzaxHSUut7eGjL8WmLccT7/MXf304WjqHcA==
+
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-5.1.1.tgz#3c9ee980f1a10d6021ae6632ca3e79ca2ec4fb50"
@@ -2498,6 +2503,30 @@
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.2.tgz#35654cf6c49ae162d5bc90843d5437dc38008d43"
   integrity sha512-Icd9KEgdnFfJs39KyRyr0jQ7EKhq8U6CcHRMGAS45fp5qgUvxL3ujUCfWFttUK2UErqZNj97t9gsVPNAqcwoCg==
   dependencies:
+    "@types/react" "*"
+
+"@types/react-highlight@^0.12.2":
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/@types/react-highlight/-/react-highlight-0.12.2.tgz#205b3437bf3611c185884a564d20548a4780480b"
+  integrity sha512-Pd0jkT7OB0eVccQeytwf1e+RoszedNHnsmJWbyr4F6407xdRz1Si7zmF9imO/Qr88DidnNv63Vyy9UfGHSMDrg==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-router-dom@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.1.7.tgz#a126d9ea76079ffbbdb0d9225073eb5797ab7271"
+  integrity sha512-D5mHD6TbdV/DNHYsnwBTv+y73ei+mMjrkGrla86HthE4/PVvL1J94Bu3qABU+COXzpL23T1EZapVVpwHuBXiUg==
+  dependencies:
+    "@types/history" "*"
+    "@types/react" "*"
+    "@types/react-router" "*"
+
+"@types/react-router@*":
+  version "5.1.12"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-5.1.12.tgz#0f300e09468e7aed86e18241c90238c18c377e51"
+  integrity sha512-0bhXQwHYfMeJlCh7mGhc0VJTRm0Gk+Z8T00aiP4702mDUuLs9SMhnd2DitpjWFjdOecx2UXtICK14H9iMnziGA==
+  dependencies:
+    "@types/history" "*"
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^17.0.3":
@@ -6387,6 +6416,18 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
+
+highlight.js@^10.5.0:
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.6.0.tgz#0073aa71d566906965ba6e1b7be7b2682f5e18b6"
+  integrity sha512-8mlRcn5vk/r4+QcqerapwBYTe+iPL5ih6xrNylxrnBdHQiijDETfXX7VIxC3UiCRiINBJfANBAsPzAvRQj8RpQ==
+
+history@5:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/history/-/history-5.0.0.tgz#0cabbb6c4bbf835addb874f8259f6d25101efd08"
+  integrity sha512-3NyRMKIiFSJmIPdq7FxkNMJkQ7ZEtVblOQ38VtKaA0zZMW1Eo6Q6W8oDKEflr1kNNTItSnk4JMCO1deeSgbLLg==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
 
 hmac-drbg@^1.0.1:
   version "1.0.1"
@@ -10495,6 +10536,13 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
+react-highlight@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/react-highlight/-/react-highlight-0.14.0.tgz#5aefa5518baa580f96b68d48129d7a5d2dc0c9ef"
+  integrity sha512-kWE+KXOXidS7SABhVopOgMnowbI3RAfeGZbnrduLNlWrYAED8sycL9l/Fvw3w0PFpIIawB7mRDnyhDcM/cIIGA==
+  dependencies:
+    highlight.js "^10.5.0"
+
 react-i18next@^11.8.10:
   version "11.8.10"
   resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.8.10.tgz#aa64bc20410ee8f660a5b918d53f4e41271edf00"
@@ -10517,6 +10565,21 @@ react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+
+react-router-dom@^6.0.0-beta.0:
+  version "6.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.0.0-beta.0.tgz#9dcc8555365f22f7fbd09f26b6b82543f3eb97d6"
+  integrity sha512-36yNNGMT8RB9FRPL9nKJi6HKDkgOakU+o/2hHpSzR6e37gN70MpOU6QQlmif4oAWWBwjyGc3ZNOMFCsFuHUY5w==
+  dependencies:
+    prop-types "^15.7.2"
+    react-router "6.0.0-beta.0"
+
+react-router@6.0.0-beta.0:
+  version "6.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.0.0-beta.0.tgz#3e11f39b6ded4412c2fed9e4f989dd4c8156724d"
+  integrity sha512-VgMdfpVcmFQki/LZuLh8E/MNACekDetz4xqft+a6fBZvvJnVqKbLqebF7hyoawGrV1HcO5tVaUang2Og4W2j1Q==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-scripts@^4.0.3:
   version "4.0.3"
@@ -12634,11 +12697,6 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   integrity sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
   dependencies:
     minimalistic-assert "^1.0.0"
-
-web-vitals@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-1.1.0.tgz#7f410d9a1f7a1cd5d952806b45776204b47dc274"
-  integrity sha512-1cx54eRxY/+M0KNKdNpNnuXAXG+vJEvwScV4DiV9rOYDguHoeDIzm09ghBohOPtkqPO5OtPC14FWkNva3SDisg==
 
 webidl-conversions@^5.0.0:
   version "5.0.0"
