@@ -30,3 +30,9 @@ func (s *Solution) Create() (err error) {
 	}
 	return
 }
+
+// FindByID find solution by id
+func (s *Solution) FindByID() (solutions []Solution, err error) {
+	err = engine.Where(Solution{QuestionID: s.QuestionID}).Find(&solutions).Error
+	return
+}

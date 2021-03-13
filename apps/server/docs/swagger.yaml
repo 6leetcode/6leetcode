@@ -16,14 +16,14 @@ definitions:
         type: array
       difficulty:
         type: string
-      frontend_question_id:
-        type: integer
       lang_to_valid_playground:
         items:
           type: integer
         type: array
       paid_only:
         type: boolean
+      question_frontend_id:
+        type: integer
       question_id:
         example: 1
         type: integer

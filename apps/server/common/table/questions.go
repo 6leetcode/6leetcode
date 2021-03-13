@@ -32,7 +32,7 @@ type Question struct {
 // QuestionDetail question detail
 type QuestionDetail struct {
 	QuestionID            int    `json:"question_id" example:"1"`
-	FrontendQuestionID    int    `json:"frontend_question_id" gorm:"index:unique"`
+	QuestionFrontendID    int    `json:"question_frontend_id" gorm:"index:unique"`
 	Difficulty            string `json:"difficulty"`
 	PaidOnly              bool   `json:"paid_only"`
 	Title                 string `json:"title"`
@@ -85,17 +85,23 @@ func (q *Question) Find(options Options) (questions []Question, err error) {
 	if options.Limit == 0 {
 		options.Limit = pageSize
 	}
+	if options.Category == "All" {
+		options.Category = ""
+	}
 	err = engine.Debug().Limit(options.Limit).Select([]string{
-		"question_id", "frontend_question_id", "difficulty", "paid_only", "title", "title_slug",
+		"question_id", "question_frontend_id", "difficulty", "paid_only", "title", "title_slug",
 		"translated_title", "category_title", "total_accepted", "total_submission",
 		"total_accepted_raw", "total_submission_raw", "ac_rate",
-	}).Where(&Question{CategoryTitle: options.Category}).Offset(options.Offset).Order("frontend_question_id").
+	}).Where(&Question{CategoryTitle: options.Category}).Offset(options.Offset).Order("question_frontend_id").
 		Find(&questions).Error
 	return
 }
 
 // Total total
 func (q *Question) Total(options Options) (total int64) {
+	if options.Category == "All" {
+		options.Category = ""
+	}
 	engine.Model(new(Question)).Where(&Question{CategoryTitle: options.Category}).Count(&total)
 	return
 }
