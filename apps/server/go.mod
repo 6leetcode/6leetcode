@@ -35,15 +35,16 @@ require (
 	github.com/ugorji/go v1.2.4 // indirect
 	github.com/ulule/limiter/v3 v3.8.0
 	github.com/unknwon/com v1.0.1
-	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad // indirect
-	golang.org/x/sys v0.0.0-20210216224549-f992740a1bac // indirect
+	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83 // indirect
+	golang.org/x/net v0.0.0-20210226172049-e18ecbb05110 // indirect
+	golang.org/x/sys v0.0.0-20210309074719-68d13333faf2 // indirect
 	golang.org/x/tools v0.1.0 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
-	gorm.io/driver/mysql v1.0.4
+	gorm.io/driver/mysql v1.0.5
 	gorm.io/driver/postgres v1.0.8
 	gorm.io/driver/sqlite v1.1.4
-	gorm.io/gorm v1.20.12
+	gorm.io/gorm v1.21.3
 	moul.io/http2curl v1.0.0 // indirect
 )
 
