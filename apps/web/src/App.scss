@@ -35,12 +35,18 @@ $content-width: 900px;
   background-size: auto 60px;
   background-repeat: no-repeat;
   background-position: center;
+
+  cursor: pointer;
 }
 
 .content {
   padding: 20px 0px;
   width: $content-width;
   margin: 0 auto;
+}
+
+.questionItem {
+  cursor: pointer;
 }
 
 .questionItem,
