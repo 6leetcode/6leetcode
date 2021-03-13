@@ -16,6 +16,49 @@ func (c *Controller) questions() {
 		api.GET("/questions", questionsRoute)
 		api.GET("/questions/:id", questionsGetRoute)
 		api.GET("/sync", syncRoute)
+		api.GET("/solutions/:id", solutionsGetRoute)
+	}
+}
+
+// @Summary get question solution
+// @Description get question solution
+// @Success 200 {string} string	"ok"
+// @Router /sync [get]
+func solutionsGetRoute(context *gin.Context) {
+	var err error
+
+	var solutions = []table.Solution{}
+
+	var code = 200
+
+	defer func() {
+		var msg string
+
+		if code != 200 {
+			logging.Error(err)
+			msg = errCode[code].Error()
+		}
+		context.JSON(http.StatusOK, gin.H{"code": code, "msg": msg, "solutions": solutions})
+	}()
+
+	var sid = context.Param("id")
+	if sid == "" {
+		code = 1003
+		return
+	}
+
+	var id int
+	if id, err = strconv.Atoi(sid); err != nil {
+		code = 1003
+		return
+	}
+
+	var solution = &table.Solution{}
+	solution.QuestionID = id
+
+	if solutions, err = solution.FindByID(); err != nil {
+		code = 1001
+		return
 	}
 }
 

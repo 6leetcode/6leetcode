@@ -124,9 +124,6 @@ var doc = `{
                 "difficulty": {
                     "type": "string"
                 },
-                "frontend_question_id": {
-                    "type": "integer"
-                },
                 "lang_to_valid_playground": {
                     "type": "array",
                     "items": {
@@ -135,6 +132,9 @@ var doc = `{
                 },
                 "paid_only": {
                     "type": "boolean"
+                },
+                "question_frontend_id": {
+                    "type": "integer"
                 },
                 "question_id": {
                     "type": "integer",
