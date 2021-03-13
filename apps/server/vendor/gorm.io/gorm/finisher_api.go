@@ -35,10 +35,12 @@ func (db *DB) CreateInBatches(value interface{}, batchSize int) (tx *DB) {
 		tx = db.getInstance()
 
 		callFc := func(tx *DB) error {
-			for i := 0; i < reflectValue.Len(); i += batchSize {
+			// the reflection length judgment of the optimized value
+			reflectLen := reflectValue.Len()
+			for i := 0; i < reflectLen; i += batchSize {
 				ends := i + batchSize
-				if ends > reflectValue.Len() {
-					ends = reflectValue.Len()
+				if ends > reflectLen {
+					ends = reflectLen
 				}
 
 				subtx := tx.getInstance()
@@ -565,7 +567,7 @@ func (db *DB) Transaction(fc func(tx *DB) error, opts ...*sql.TxOptions) (err er
 func (db *DB) Begin(opts ...*sql.TxOptions) *DB {
 	var (
 		// clone statement
-		tx  = db.Session(&Session{Context: db.Statement.Context})
+		tx  = db.getInstance().Session(&Session{Context: db.Statement.Context})
 		opt *sql.TxOptions
 		err error
 	)

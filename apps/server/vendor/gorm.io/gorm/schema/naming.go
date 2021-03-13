@@ -4,7 +4,6 @@ import (
 	"crypto/sha1"
 	"fmt"
 	"strings"
-	"sync"
 	"unicode/utf8"
 
 	"github.com/jinzhu/inflection"
@@ -20,11 +19,17 @@ type Namer interface {
 	IndexName(table, column string) string
 }
 
+// Replacer replacer interface like strings.Replacer
+type Replacer interface {
+	Replace(name string) string
+}
+
 // NamingStrategy tables, columns naming strategy
 type NamingStrategy struct {
 	TablePrefix   string
 	SingularTable bool
-	NameReplacer  *strings.Replacer
+	NameReplacer  Replacer
+	NoLowerCase   bool
 }
 
 // TableName convert string to table name
@@ -42,7 +47,7 @@ func (ns NamingStrategy) ColumnName(table, column string) string {
 
 // JoinTableName convert string to join table name
 func (ns NamingStrategy) JoinTableName(str string) string {
-	if strings.ToLower(str) == str {
+	if !ns.NoLowerCase && strings.ToLower(str) == str {
 		return ns.TablePrefix + str
 	}
 
@@ -54,38 +59,40 @@ func (ns NamingStrategy) JoinTableName(str string) string {
 
 // RelationshipFKName generate fk name for relation
 func (ns NamingStrategy) RelationshipFKName(rel Relationship) string {
-	return strings.Replace(fmt.Sprintf("fk_%s_%s", rel.Schema.Table, ns.toDBName(rel.Name)), ".", "_", -1)
+	return ns.formatName("fk", rel.Schema.Table, ns.toDBName(rel.Name))
 }
 
 // CheckerName generate checker name
 func (ns NamingStrategy) CheckerName(table, column string) string {
-	return strings.Replace(fmt.Sprintf("chk_%s_%s", table, column), ".", "_", -1)
+	return ns.formatName("chk", table, column)
 }
 
 // IndexName generate index name
 func (ns NamingStrategy) IndexName(table, column string) string {
-	idxName := fmt.Sprintf("idx_%v_%v", table, ns.toDBName(column))
-	idxName = strings.Replace(idxName, ".", "_", -1)
+	return ns.formatName("idx", table, ns.toDBName(column))
+}
 
-	if utf8.RuneCountInString(idxName) > 64 {
+func (ns NamingStrategy) formatName(prefix, table, name string) string {
+	formatedName := strings.Replace(fmt.Sprintf("%v_%v_%v", prefix, table, name), ".", "_", -1)
+
+	if utf8.RuneCountInString(formatedName) > 64 {
 		h := sha1.New()
-		h.Write([]byte(idxName))
+		h.Write([]byte(formatedName))
 		bs := h.Sum(nil)
 
-		idxName = fmt.Sprintf("idx%v%v", table, column)[0:56] + string(bs)[:8]
+		formatedName = fmt.Sprintf("%v%v%v", prefix, table, name)[0:56] + string(bs)[:8]
 	}
-	return idxName
+	return formatedName
 }
 
 var (
-	smap sync.Map
 	// https://github.com/golang/lint/blob/master/lint.go#L770
 	commonInitialisms         = []string{"API", "ASCII", "CPU", "CSS", "DNS", "EOF", "GUID", "HTML", "HTTP", "HTTPS", "ID", "IP", "JSON", "LHS", "QPS", "RAM", "RHS", "RPC", "SLA", "SMTP", "SSH", "TLS", "TTL", "UID", "UI", "UUID", "URI", "URL", "UTF8", "VM", "XML", "XSRF", "XSS"}
 	commonInitialismsReplacer *strings.Replacer
 )
 
 func init() {
-	var commonInitialismsForReplacer []string
+	commonInitialismsForReplacer := make([]string, 0, len(commonInitialisms))
 	for _, initialism := range commonInitialisms {
 		commonInitialismsForReplacer = append(commonInitialismsForReplacer, initialism, strings.Title(strings.ToLower(initialism)))
 	}
@@ -95,12 +102,14 @@ func init() {
 func (ns NamingStrategy) toDBName(name string) string {
 	if name == "" {
 		return ""
-	} else if v, ok := smap.Load(name); ok {
-		return v.(string)
 	}
 
 	if ns.NameReplacer != nil {
 		name = ns.NameReplacer.Replace(name)
+	}
+
+	if ns.NoLowerCase {
+		return name
 	}
 
 	var (
@@ -140,6 +149,5 @@ func (ns NamingStrategy) toDBName(name string) string {
 		buf.WriteByte(value[len(value)-1])
 	}
 	ret := buf.String()
-	smap.Store(name, ret)
 	return ret
 }

@@ -396,7 +396,7 @@ func (m Migrator) MigrateColumn(value interface{}, field *schema.Field, columnTy
 		}
 	}
 
-	if alterColumn {
+	if alterColumn && !field.IgnoreMigration {
 		return m.DB.Migrator().AlterColumn(value, field.Name)
 	}
 
@@ -490,7 +490,8 @@ func (m Migrator) GuessConstraintAndTable(stmt *gorm.Statement, name string) (_ 
 			}
 		}
 	}
-	return nil, nil, ""
+
+	return nil, nil, stmt.Schema.Table
 }
 
 func (m Migrator) CreateConstraint(value interface{}, name string) error {
