@@ -38,7 +38,7 @@ func init() {
 				logging.Errorf("Init config with error: %+v", err)
 				return
 			}
-			if err = initTable(Questions); err != nil {
+			if err = initTable(); err != nil {
 				logging.Errorf("Init table with error: %+v", err)
 				return
 			}
@@ -61,7 +61,7 @@ func init() {
 				logging.Errorf("Init config with error: %+v", err)
 				return
 			}
-			if err = initTable(Questions); err != nil {
+			if err = initTable(); err != nil {
 				logging.Errorf("Init table with error: %+v", err)
 				return
 			}
@@ -101,10 +101,10 @@ func init() {
 	}
 	RootCmd.AddCommand(versionCmd) // version commander
 
-	RootCmd.Use = viper.GetString("AppName")
+	RootCmd.Use = "6leetcode"
 }
 
-func initTable(questions embed.FS) (err error) {
+func initTable() (err error) {
 	if err = table.Initialize(); err != nil {
 		logging.Errorf("Got error: %+v", err)
 		return
@@ -124,10 +124,6 @@ func initConfig(config string) (err error) {
 		logging.Error("Cannot find the specified config file.")
 	}
 
-	if os.Getenv("DATABASE_ENGINE") != "" {
-		viper.Set("Database.Engine", "sqlite3")
-		viper.Set("Database.Path", "6leetcode.db")
-	}
 	if os.Getenv("LOGIN_NAME") != "" {
 		viper.Set("LOGIN_NAME", os.Getenv("LOGIN_NAME"))
 	}
