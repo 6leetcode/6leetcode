@@ -2,13 +2,9 @@ package solutions
 
 import (
 	"bufio"
-	"embed"
-	"fmt"
-	"io/fs"
 	"os"
 	"path/filepath"
 	"regexp"
-	"strconv"
 	"strings"
 
 	"6leetcode/common/table"
@@ -85,32 +81,6 @@ var tokens = []token{
 }
 
 var re = regexp.MustCompile(`(?m)(\d{4,10})\.\s[\w\W]*`)
-
-// Travel ..
-func Travel(questions embed.FS) (err error) {
-	if err = fs.WalkDir(questions, "questions", func(path string, info fs.DirEntry, err error) error {
-		if err != nil {
-			return err
-		}
-		if info.IsDir() && re.Match([]byte(info.Name())) {
-			var matches = re.FindStringSubmatch(info.Name())
-			if len(matches) != 2 {
-				return fmt.Errorf("%s dir can not get its question id", info.Name())
-			}
-			var id int
-			if id, err = strconv.Atoi(matches[1]); err != nil {
-				return fmt.Errorf("%s dir cannot convert its question id to int", info.Name())
-			}
-			if err = QuestionItem(path, id); err != nil {
-				return err
-			}
-		}
-		return nil
-	}); err != nil {
-		return
-	}
-	return
-}
 
 // Initialize ..
 func QuestionItem(questionItemDir string, questionID int) (err error) {

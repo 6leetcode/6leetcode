@@ -79,6 +79,11 @@ func (q *Question) Create() (err error) {
 	return
 }
 
+func (q *Question) FindAll() (questions []Question, err error) {
+	err = engine.Find(&questions).Error
+	return
+}
+
 // Find find all the questions
 func (q *Question) Find(options Options) (questions []Question, err error) {
 	questions = []Question{}
