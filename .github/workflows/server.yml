@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         go: ["1.16"]
-        node: ["14"]
+        node: ["15"]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
@@ -52,7 +52,7 @@ jobs:
       - name: Lint code
         uses: golangci/golangci-lint-action@v2
         with:
-          version: v1.36
+          version: latest
           working-directory: apps/server
           args: -v --timeout=5m
       - name: Build server
