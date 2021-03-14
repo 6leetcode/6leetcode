@@ -121,7 +121,7 @@ func entry(questions []table.Question, categoryTitle string) (str string) {
 			for _, suffix := range suffixes {
 				languageMap[suffix] = []string{}
 			}
-			var dir = fmt.Sprintf("%s/%s/%s. %s", viper.GetString("QUESTION_DIR"), question.CategoryTitle, leetcode.QuestionID(question.QuestionFrontendID), question.Title)
+			var dir = fmt.Sprintf("%s/%s/%s. %s", viper.GetString("QuestionDir"), question.CategoryTitle, leetcode.QuestionID(question.QuestionFrontendID), question.Title)
 			if !com.IsDir(dir) {
 				logging.Info(dir)
 				continue

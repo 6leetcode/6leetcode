@@ -129,14 +129,17 @@ func initConfig(config string) (err error) {
 		viper.SetConfigFile(DefaultConfig)
 	}
 	if err := viper.ReadInConfig(); err != nil {
-		logging.Error("Cannot find the specified config file.")
+		logging.Warn("Cannot find the specified config file.")
 	}
 
-	if os.Getenv("LOGIN_NAME") != "" {
-		viper.Set("LOGIN_NAME", os.Getenv("LOGIN_NAME"))
+	if os.Getenv("Username") != "" {
+		viper.Set("Username", os.Getenv("Username"))
 	}
-	if os.Getenv("LOGIN_PASSWORD") != "" {
-		viper.Set("LOGIN_PASSWORD", os.Getenv("LOGIN_PASSWORD"))
+	if os.Getenv("Password") != "" {
+		viper.Set("Password", os.Getenv("Password"))
 	}
+
+	viper.SetDefault("QuestionDir", "questions")
+
 	return
 }

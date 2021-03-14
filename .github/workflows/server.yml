@@ -18,9 +18,6 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Move the questions
-        run: |
-          cp -r questions apps/server
       - name: Lint code
         uses: golangci/golangci-lint-action@v2
         with:
@@ -33,27 +30,16 @@ jobs:
     strategy:
       matrix:
         go: ["1.16"]
-        node: ["15"]
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
           lfs: true
-      - name: Generate config files
-        run: |
-          cd apps/server
-          if [ ! -f .env ]; then cp .env.sample .env; fi
-          if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
       - name: Setup golang
         uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go }}
-      - name: Install swag
-        run: go get -u -v github.com/swaggo/swag/cmd/swag
-      - name: Move the questions
-        run: |
-          cp -r questions apps/server
       - name: Build server
         run: |
           cd apps/server

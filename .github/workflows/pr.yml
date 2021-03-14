@@ -7,6 +7,10 @@ on:
 jobs:
   create-pull-request:
     runs-on: ubuntu-20.04
+    env:
+      Username: ${{ secrets.LEETCODE_NAME }}
+      Password: ${{ secrets.LEETCODE_PASSWORD }}
+      PREFIX: /usr
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
@@ -20,31 +24,16 @@ jobs:
       - name: Generate config files
         run: |
           cd apps/server
-          if [ ! -f .env ]; then cp .env.sample .env; fi
           if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
       - name: Setup golang
         uses: actions/setup-go@v2
         with:
           go-version: 1.16
-      - name: Setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14
-      - name: Install swag
-        run: go get -u -v github.com/swaggo/swag/cmd/swag
-      - name: Build fontend
-        run: |
-          cd apps/web
-          npm install -g yarn
-          yarn
-          yarn build
-      - name: Move the questions
-        run: |
-          cp -r questions apps/server
       - name: Build server
         run: |
           cd apps/server
           make
+          make install
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v3
@@ -53,8 +42,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
       - name: Run executable
         run: |
-          env LOGIN_NAME=${{ secrets.LEETCODE_NAME }} LOGIN_PASSWORD=${{ secrets.LEETCODE_PASSWORD }} DATABASE_ENGINE=sqlite3 \
-          ./apps/server/release/6leetcode crawler -c ./apps/server/config.yml
+          6leetcode all
           if [ ! -z "$(git status --untracked-files=no --porcelain)" ]; then \
             git add . && \
             git commit -S -m ":robot: Generate questions"; \

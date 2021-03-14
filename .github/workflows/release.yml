@@ -15,30 +15,20 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Generate config files
-        run: |
-          cd apps/server
-          if [ ! -f .env ]; then cp .env.sample .env; fi
-          if [ ! -f config.yml ]; then cp config.yml.sample config.yml; fi
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 15
       - name: Setup golang
         uses: actions/setup-go@v2
         with:
           go-version: 1.16
-      - name: Install swag
-        run: go get -u -v github.com/swaggo/swag/cmd/swag
       - name: Build fontend
         run: |
           cd apps/web
           npm install -g yarn
           yarn
           yarn build
-      - name: Move the questions
-        run: |
-          cp -r questions apps/server
       - name: Build server
         run: |
           cd apps/server

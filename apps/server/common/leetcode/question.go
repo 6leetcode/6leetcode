@@ -122,13 +122,13 @@ func (i *Instance) Question(titleSlug string) (err error) {
 		return
 	}
 
-	if viper.GetString("QUESTION_DIR") != "" {
-		if err = i.readme(question, viper.GetString("QUESTION_DIR")); err != nil {
+	if viper.GetString("QuestionDir") != "" {
+		if err = i.readme(question, viper.GetString("QuestionDir")); err != nil {
 			return
 		}
 	}
 
-	var dir = fmt.Sprintf("%s/%s/%s. %s", viper.GetString("QUESTION_DIR"), question.CategoryTitle, QuestionID(question.QuestionFrontendID), question.Title)
+	var dir = fmt.Sprintf("%s/%s/%s. %s", viper.GetString("QuestionDir"), question.CategoryTitle, QuestionID(question.QuestionFrontendID), question.Title)
 	if err = solutions.QuestionItem(dir, question.QuestionID); err != nil {
 		return
 	}
