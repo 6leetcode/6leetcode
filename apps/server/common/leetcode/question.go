@@ -12,6 +12,7 @@ import (
 	"github.com/tosone/logging"
 	"github.com/unknwon/com"
 
+	"6leetcode/common/solutions"
 	"6leetcode/common/table"
 )
 
@@ -125,6 +126,11 @@ func (i *Instance) Question(titleSlug string) (err error) {
 		if err = i.readme(question, viper.GetString("QUESTION_DIR")); err != nil {
 			return
 		}
+	}
+
+	var dir = fmt.Sprintf("%s/%s/%s. %s", viper.GetString("QUESTION_DIR"), question.CategoryTitle, QuestionID(question.QuestionFrontendID), question.Title)
+	if err = solutions.QuestionItem(dir, question.QuestionID); err != nil {
+		return
 	}
 
 	return

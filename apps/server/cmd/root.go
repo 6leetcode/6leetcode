@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"embed"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -10,10 +9,9 @@ import (
 	"github.com/unknwon/com"
 
 	"6leetcode/cmd/crawler"
+	"6leetcode/cmd/csvgen"
 	"6leetcode/cmd/gen"
-	"6leetcode/cmd/server"
 	"6leetcode/cmd/version"
-	"6leetcode/common/solutions"
 	"6leetcode/common/table"
 )
 
@@ -25,33 +23,9 @@ var RootCmd = &cobra.Command{
 
 const DefaultConfig = "/etc/6leetcode/config.yml"
 
-var Questions embed.FS
-
 func init() {
 	var config string
 	RootCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
-
-	var serverCmd = &cobra.Command{
-		Use:   "server",
-		Short: "Restful API server for leetcode problems info.",
-		Long:  `Restful API server for leetcode problems info.`,
-		Args:  cobra.MinimumNArgs(0),
-		Run: func(_ *cobra.Command, _ []string) {
-			var err error
-			if err = initConfig(config); err != nil {
-				logging.Errorf("Init config with error: %+v", err)
-				return
-			}
-			if err = initTable(Questions); err != nil {
-				logging.Errorf("Init table with error: %+v", err)
-				return
-			}
-			if err = server.Initialize(); err != nil {
-				logging.Errorf("Got error: %+v", err)
-			}
-		},
-	}
-	RootCmd.AddCommand(serverCmd) // server commander
 
 	var crawlerCmd = &cobra.Command{
 		Use:   "crawler",
@@ -75,6 +49,29 @@ func init() {
 		},
 	}
 	RootCmd.AddCommand(crawlerCmd) // crawler commander
+
+	var csvCmd = &cobra.Command{
+		Use:   "csv",
+		Short: "Travel all of the leetcode problems info.",
+		Long:  `Travel all of the leetcode problems info.`,
+		Args:  cobra.MinimumNArgs(0),
+		Run: func(_ *cobra.Command, _ []string) {
+			var err error
+			if err = initConfig(config); err != nil {
+				logging.Errorf("Init config with error: %+v", err)
+				return
+			}
+			if err = initTable(Questions); err != nil {
+				logging.Errorf("Init table with error: %+v", err)
+				return
+			}
+			if err = csvgen.Initialize(); err != nil {
+				logging.Errorf("Init crawler with error: %+v", err)
+				return
+			}
+		},
+	}
+	RootCmd.AddCommand(csvCmd) // crawler commander
 
 	var genCmd = &cobra.Command{
 		Use:   "gen",
@@ -111,15 +108,6 @@ func initTable(questions embed.FS) (err error) {
 	if err = table.Initialize(); err != nil {
 		logging.Errorf("Got error: %+v", err)
 		return
-	}
-	if viper.GetBool("QUESTION_INITIALIZE") {
-		if viper.GetString("QUESTION_DIR") != "" && com.IsDir(viper.GetString("QUESTION_DIR")) {
-			go func() {
-				if err := solutions.Travel(questions); err != nil {
-					logging.Errorf("Travel questions error: %+v", err)
-				}
-			}()
-		}
 	}
 	return
 }
