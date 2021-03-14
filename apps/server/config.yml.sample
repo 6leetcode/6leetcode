@@ -1,17 +1,8 @@
 LOGIN_NAME: tosone@qq.com # leetcode username
 LOGIN_PASSWORD: yourpassword # leetcode password
-DATABASE_ENGINE: postgres
 QUESTION_INITIALIZE: true
 QUESTION_DIR: "questions"
 
-AppName: 6leetcode
 Debug: false
 ServerPort: 4000
-Database:
-  Engine: postgres # DB type
-  Username: postgres
-  Password: repl_secret
-  Host: postgresql-master
-  Port: 5432
-  Database: database
-  SSLMode: disable
+Database: 6leetcode.db
