@@ -1,4 +1,3 @@
-import _ from "lodash";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
@@ -41,7 +40,7 @@ export const languages = [
 i18n.use(initReactI18next)
   .init({
     resources,
-    lng: _.keys(resources)[0],
+    lng: Object.keys(resources)[0],
     keySeparator: false,
     interpolation: {
       escapeValue: false,

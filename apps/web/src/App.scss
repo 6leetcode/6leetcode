@@ -1,4 +1,4 @@
-$content-width: 900px;
+$content-width: 1200px;
 
 .header {
   background-color: #fff;
@@ -6,12 +6,16 @@ $content-width: 900px;
   .layout {
     width: $content-width;
     margin: 0 auto;
-    padding: 0px 20px;
 
     .layoutMenu {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
+
+      .menuItem {
+        width: 120px;
+        text-align: center;
+      }
 
       .language {
         float: right;
