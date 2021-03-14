@@ -18,6 +18,9 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
+      - name: Move the questions
+        run: |
+          cp -r questions apps/server
       - name: Lint code
         uses: golangci/golangci-lint-action@v2
         with:
