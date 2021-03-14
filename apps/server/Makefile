@@ -7,12 +7,12 @@ Target     = ${app_name}
 
 .PHONY: build
 build:
-	go build -v -o release/${Target} -tags=jsoniter -ldflags \
+	go build -v -o release/${Target} -ldflags \
 	"-X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: release
 release:
-	go build -v -o release/${Target} -tags=jsoniter -ldflags \
+	go build -v -o release/${Target} -ldflags \
 	"-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
 
 .PHONY: lint
