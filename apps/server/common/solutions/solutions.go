@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"os"
 	"path/filepath"
-	"regexp"
 	"strings"
 
 	"6leetcode/common/table"
@@ -79,8 +78,6 @@ var tokens = []token{
 		End:      "# ------------------------------- solution end ---------------------------------",
 	},
 }
-
-var re = regexp.MustCompile(`(?m)(\d{4,10})\.\s[\w\W]*`)
 
 // Initialize ..
 func QuestionItem(questionItemDir string, questionID int) (err error) {
