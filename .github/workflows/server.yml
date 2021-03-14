@@ -9,8 +9,23 @@ on:
       - main
 
 jobs:
-  leetcode-ci:
-    name: leetcode-ci
+  leetcode-server-lint:
+    name: leetcode-server-lint
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          lfs: true
+      - name: Lint code
+        uses: golangci/golangci-lint-action@v2
+        with:
+          version: latest
+          working-directory: apps/server
+          args: -v --timeout=5m
+  leetcode-server:
+    name: leetcode-server
     runs-on: ubuntu-20.04
     strategy:
       matrix:
@@ -31,30 +46,34 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go }}
+      - name: Install swag
+        run: go get -u -v github.com/swaggo/swag/cmd/swag
+      - name: Move the questions
+        run: |
+          cp -r questions apps/server
+      - name: Build server
+        run: |
+          cd apps/server
+          make
+  leetcode-fe:
+    name: leetcode-fe
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node: ["15"]
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          lfs: true
       - name: Setup node
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-      - name: Install go-bindata
-        run: go get -u -v github.com/go-bindata/go-bindata/...
-      - name: Install swag
-        run: go get -u -v github.com/swaggo/swag/cmd/swag
       - name: Build fontend
         run: |
           cd apps/web
           npm install -g yarn
           yarn
           yarn build
-      - name: Move the questions
-        run: |
-          cp -r questions apps/server
-      - name: Lint code
-        uses: golangci/golangci-lint-action@v2
-        with:
-          version: latest
-          working-directory: apps/server
-          args: -v --timeout=5m
-      - name: Build server
-        run: |
-          cd apps/server
-          make
