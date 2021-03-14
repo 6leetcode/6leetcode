@@ -18,7 +18,8 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
-          fetch-depth: 10
+          fetch-depth: 0
+          lfs: true
       - name: Generate config files
         run: |
           cd apps/server
