@@ -55,3 +55,4 @@ apps/server/.env
 dist/
 
 config.yml
+*.db-journal

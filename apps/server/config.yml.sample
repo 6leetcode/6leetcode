@@ -1,6 +1,5 @@
-LOGIN_NAME: tosone@qq.com # leetcode username
-LOGIN_PASSWORD: yourpassword # leetcode password
-QUESTION_DIR: questions
-
 Debug: false
+Username: tosone@qq.com # leetcode username
+Password: yourpassword # leetcode password
+QuestionDir: questions
 Database: 6leetcode.db
