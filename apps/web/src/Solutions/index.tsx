@@ -59,7 +59,7 @@ export default function Solutions({ localServer }: any) {
   }, [solutions]);
 
   useEffect(() => {
-    if (solutions.length >= 1) {
+    if (tabList.length >= 1) {
       setActive(tabList[0].key);
     }
   }, [tabList]);

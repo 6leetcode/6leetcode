@@ -36,11 +36,11 @@ export default function Header() {
           <Menu theme="light" onClick={(info) => {
             setMenuKey(info.key.toString());
           }} mode="horizontal" selectedKeys={[menuKey]} defaultSelectedKeys={[menuKey]}>
-            <Menu.Item key="All"><Link to="/categories/All">All</Link></Menu.Item>
-            <Menu.Item key="Algorithms"><Link to="/categories/Algorithms">Algorithms</Link></Menu.Item>
-            <Menu.Item key="Concurrency"><Link to="/categories/Concurrency">Concurrency</Link></Menu.Item>
-            <Menu.Item key="Database"><Link to="/categories/Database">Database</Link></Menu.Item>
-            <Menu.Item key="Shell"><Link to="/categories/Shell">Shell</Link></Menu.Item>
+            <Menu.Item key="All" className="menuItem"><Link to="/categories/All">All</Link></Menu.Item>
+            <Menu.Item key="Algorithms" className="menuItem"><Link to="/categories/Algorithms">Algorithms</Link></Menu.Item>
+            <Menu.Item key="Concurrency" className="menuItem"><Link to="/categories/Concurrency">Concurrency</Link></Menu.Item>
+            <Menu.Item key="Database" className="menuItem"><Link to="/categories/Database">Database</Link></Menu.Item>
+            <Menu.Item key="Shell" className="menuItem"><Link to="/categories/Shell">Shell</Link></Menu.Item>
           </Menu>
           <div className="language">
             <Dropdown overlay={
