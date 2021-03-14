@@ -3,8 +3,6 @@ package version
 import (
 	"fmt"
 	"runtime"
-
-	"github.com/spf13/viper"
 )
 
 // Version version
@@ -25,7 +23,7 @@ func Setting(version, buildStamp, gitHash string) {
 
 // Initialize version command entry
 func Initialize() {
-	fmt.Printf("%s %s/%s %s\n", viper.GetString("AppName"), runtime.GOOS, runtime.GOARCH, runtime.Version())
+	fmt.Printf("%s %s/%s %s\n", "6leetcode", runtime.GOOS, runtime.GOARCH, runtime.Version())
 	fmt.Printf("Version: %s\n", Version)
 	fmt.Printf("BuildDate: %s\n", BuildStamp)
 	fmt.Printf("BuildHash: %s\n", GitHash)

@@ -1,8 +1,6 @@
 LOGIN_NAME: tosone@qq.com # leetcode username
 LOGIN_PASSWORD: yourpassword # leetcode password
-QUESTION_INITIALIZE: true
-QUESTION_DIR: "questions"
+QUESTION_DIR: questions
 
 Debug: false
-ServerPort: 4000
 Database: 6leetcode.db
