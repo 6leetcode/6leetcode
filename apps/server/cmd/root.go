@@ -10,7 +10,7 @@ import (
 
 	"6leetcode/cmd/crawler"
 	"6leetcode/cmd/csvgen"
-	"6leetcode/cmd/gen"
+	"6leetcode/cmd/readme"
 	"6leetcode/cmd/version"
 	"6leetcode/common/table"
 )
@@ -27,8 +27,8 @@ func init() {
 	var config string
 	RootCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
 
-	var crawlerCmd = &cobra.Command{
-		Use:   "crawler",
+	var allCmd = &cobra.Command{
+		Use:   "all",
 		Short: "Travel all of the leetcode problems info.",
 		Long:  `Travel all of the leetcode problems info.`,
 		Args:  cobra.MinimumNArgs(0),
@@ -46,14 +46,22 @@ func init() {
 				logging.Errorf("Init crawler with error: %+v", err)
 				return
 			}
+			if err = readme.Initialize(); err != nil {
+				logging.Errorf("Got error: %+v", err)
+				return
+			}
+			if err = csvgen.Initialize(); err != nil {
+				logging.Errorf("Init crawler with error: %+v", err)
+				return
+			}
 		},
 	}
-	RootCmd.AddCommand(crawlerCmd) // crawler commander
+	RootCmd.AddCommand(allCmd) // crawler commander
 
 	var csvCmd = &cobra.Command{
 		Use:   "csv",
-		Short: "Travel all of the leetcode problems info.",
-		Long:  `Travel all of the leetcode problems info.`,
+		Short: "Generate portable csv file.",
+		Long:  `Generate portable csv file.`,
 		Args:  cobra.MinimumNArgs(0),
 		Run: func(_ *cobra.Command, _ []string) {
 			var err error
@@ -73,8 +81,8 @@ func init() {
 	}
 	RootCmd.AddCommand(csvCmd) // crawler commander
 
-	var genCmd = &cobra.Command{
-		Use:   "gen",
+	var readmeCmd = &cobra.Command{
+		Use:   "readme",
 		Short: "Generate readme.",
 		Long:  `Generate readme.`,
 		Args:  cobra.MinimumNArgs(0),
@@ -83,13 +91,13 @@ func init() {
 			if err = initConfig(config); err != nil {
 				logging.Error(err)
 			}
-			if err = gen.Initialize(); err != nil {
+			if err = readme.Initialize(); err != nil {
 				logging.Errorf("Got error: %+v", err)
 				return
 			}
 		},
 	}
-	RootCmd.AddCommand(genCmd)
+	RootCmd.AddCommand(readmeCmd)
 
 	var versionCmd = &cobra.Command{
 		Use:   "version",
