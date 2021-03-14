@@ -1,8 +1,6 @@
 package main
 
 import (
-	"embed"
-
 	"github.com/tosone/logging"
 
 	"6leetcode/cmd"
@@ -18,9 +16,6 @@ var BuildStamp = "no provided"
 // GitHash version command output msg
 var GitHash = "no provided"
 
-//go:embed questions
-var questions embed.FS
-
 //go:generate swag init
 // @title 6leetcode API
 // @version 1.0
@@ -31,8 +26,6 @@ var questions embed.FS
 func main() {
 	// set version command output
 	version.Setting(Version, BuildStamp, GitHash)
-
-	cmd.Questions = questions
 
 	// init cobra commander
 	if err := cmd.RootCmd.Execute(); err != nil {
