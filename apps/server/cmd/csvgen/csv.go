@@ -63,6 +63,11 @@ func solutions() (res string, err error) {
 	if csvFile, err = os.OpenFile("solutions.csv", os.O_CREATE|os.O_RDWR, 0644); err != nil {
 		return
 	}
+	defer func() {
+		if err = csvFile.Close(); err != nil {
+			return
+		}
+	}()
 
 	var csvWriter = csv.NewWriter(csvFile)
 
@@ -73,19 +78,19 @@ func solutions() (res string, err error) {
 		return
 	}
 
-	csvWriter.Write([]string{"questionId", "language", "filename", "data"})
+	if err = csvWriter.Write([]string{"questionId", "language", "filename", "data"}); err != nil {
+		return
+	}
 
 	for _, solution := range solutions {
-		csvWriter.Write([]string{
+		if err = csvWriter.Write([]string{
 			fmt.Sprintf("%d", solution.QuestionID),
-			solution.Language, solution.Filename, solution.Filename, string(solution.Data)})
+			solution.Language, solution.Filename, solution.Filename, string(solution.Data)}); err != nil {
+			return
+		}
 	}
 
 	csvWriter.Flush()
-
-	if err = csvFile.Close(); err != nil {
-		return
-	}
 
 	if res, err = hash("solutions.csv"); err != nil {
 		return
@@ -100,6 +105,11 @@ func questions() (res string, err error) {
 	if csvFile, err = os.OpenFile("questions.csv", os.O_CREATE|os.O_RDWR, 0644); err != nil {
 		return
 	}
+	defer func() {
+		if err = csvFile.Close(); err != nil {
+			return
+		}
+	}()
 
 	var csvWriter = csv.NewWriter(csvFile)
 
@@ -110,14 +120,16 @@ func questions() (res string, err error) {
 		return
 	}
 
-	csvWriter.Write([]string{
+	if err = csvWriter.Write([]string{
 		"id", "question_frontend_id", "difficulty", "paid_only", "title", "title_slug",
 		"translated_title", "category_title", "totalAccepted", "totalSubmission", "totalAcceptedRaw", "totalSubmissionRaw",
 		"acRate", "code_snippets", "content", "translated_content", "lang_to_valid_playground", "similar_questions", "stats", "topic_tags",
-	})
+	}); err != nil {
+		return
+	}
 
 	for _, question := range questions {
-		csvWriter.Write([]string{
+		if err = csvWriter.Write([]string{
 			fmt.Sprintf("%d", question.QuestionID),
 			question.QuestionFrontendID, question.Difficulty,
 			fmt.Sprintf("%t", question.PaidOnly),
@@ -128,7 +140,9 @@ func questions() (res string, err error) {
 			question.ACRate, string(question.CodeSnippets),
 			string(question.Content), string(question.TranslatedContent),
 			string(question.LangToValidPlayground), string(question.SimilarQuestions), string(question.Stats),
-		})
+		}); err != nil {
+			return
+		}
 	}
 
 	csvWriter.Flush()

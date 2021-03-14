@@ -18,8 +18,7 @@ var engine *gorm.DB
 func Initialize() (err error) {
 	viper.SetDefault("DatabaseFile", "6leetcode.db")
 
-	var dialector gorm.Dialector
-	dialector = sqlite.Open(viper.GetString("DatabaseFile") + "?_busy_timeout=10000&_txlock=immediate")
+	var dialector = sqlite.Open(viper.GetString("DatabaseFile") + "?_busy_timeout=10000&_txlock=immediate")
 
 	var newLogger = logger.New(
 		log.New(os.Stdout, "\r\n", log.LstdFlags),
