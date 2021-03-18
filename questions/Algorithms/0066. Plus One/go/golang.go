@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// ------------------------------- solution begin -------------------------------
 func plusOne(digits []int) []int {
 	for i := len(digits) - 1; i >= 0; i-- {
 		if digits[i] == 9 {
@@ -19,6 +20,8 @@ func plusOne(digits []int) []int {
 	}
 	return digits
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var digits = []int{1, 2, 3}

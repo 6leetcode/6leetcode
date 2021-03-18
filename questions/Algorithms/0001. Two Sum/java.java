@@ -17,7 +17,7 @@ class Solution {
 }
 // ------------------------------- solution end ---------------------------------
 
-public class java1 {
+public class java {
   public static void main(String[] args) {
     Solution solution = new Solution();
     int[] input1 = new int[] {1, 2, 3};

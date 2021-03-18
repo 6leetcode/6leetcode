@@ -39,7 +39,7 @@ class Solution {
 
 // ------------------------------- solution end ---------------------------------
 
-public class java1 {
+public class java {
     public static void main(String[] args) {
         ListNode input1_0 = new ListNode(2);
         ListNode input1_1 = new ListNode(4);

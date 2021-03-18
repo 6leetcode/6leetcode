@@ -4,6 +4,7 @@
 #define __USE_MISC
 #include <math.h>
 
+// ------------------------------- solution begin -------------------------------
 int mySqrt(int x) {
   if (x < 2) return x;
 
@@ -11,6 +12,7 @@ int mySqrt(int x) {
   int right = left + 1;
   return (long)right * right > x ? left : right;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 8;

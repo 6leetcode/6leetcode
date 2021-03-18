@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// ------------------------------- solution begin -------------------------------
 func lengthOfLongestSubstring(s string) int {
 	max := 0
 	n := len(s)
@@ -25,6 +26,8 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	return max
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var str = "abcabcbb"
