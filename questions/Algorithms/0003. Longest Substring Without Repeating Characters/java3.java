@@ -1,5 +1,6 @@
 import java.util.HashMap;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) {
@@ -20,6 +21,7 @@ class Solution {
         return result;
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 public class java3 {
     public static void main(String[] args) {

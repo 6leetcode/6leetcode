@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   void sortColors(vector<int> &nums) {
@@ -24,6 +25,7 @@ public:
     }
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {2, 0, 2, 1, 1, 0};

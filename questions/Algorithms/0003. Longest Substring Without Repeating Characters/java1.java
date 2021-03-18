@@ -1,6 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int result = 0;
@@ -28,6 +29,7 @@ class Solution {
         return false;
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 public class java1 {
     public static void main(String[] args) {

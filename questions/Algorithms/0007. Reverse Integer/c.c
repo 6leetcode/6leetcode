@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int reverse(int x) {
   int y = 0;
   int n;
@@ -15,6 +16,7 @@ int reverse(int x) {
   }
   return y;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 12345;

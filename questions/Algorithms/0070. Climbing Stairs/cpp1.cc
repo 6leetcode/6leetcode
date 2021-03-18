@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int climbStairs(int n) {
@@ -16,6 +17,7 @@ public:
     return cur;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 10;
