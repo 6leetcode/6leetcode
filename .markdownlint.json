@@ -2,8 +2,21 @@
   "no-inline-html": {
     "allowed_elements": [
       "details",
-      "summary"
+      "summary",
+      "strong",
+      "p",
+      "code",
+      "em",
+      "img",
+      "pre",
+      "ul",
+      "li",
+      "a",
+      "sup",
+      "b"
     ]
   },
-  "MD013": false
+  "MD013": false,
+  "MD010": false,
+  "MD041": false
 }

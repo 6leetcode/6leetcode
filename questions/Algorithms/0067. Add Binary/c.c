@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// ------------------------------- solution begin -------------------------------
 char *addBinary(char *a, char *b) {
   int len_a = strlen(a);
   int len_b = strlen(b);
@@ -38,6 +39,7 @@ char *addBinary(char *a, char *b) {
   }
   return res;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   char *input1 = "1011";

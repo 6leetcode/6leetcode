@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// ------------------------------- solution begin -------------------------------
 func lengthOfLongestSubstring(s string) int {
 	n := len(s)
 	if n < 2 {
@@ -24,6 +25,8 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	return max
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var str = "abcabcbb"

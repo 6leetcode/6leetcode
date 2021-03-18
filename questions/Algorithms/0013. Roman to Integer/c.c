@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int roman_to_integer(char c) {
   switch (c) {
   case 'I':
@@ -38,6 +39,7 @@ int romanToInt(char *s) {
 
   return result;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   char input[] = "MCMXCIV";
