@@ -1,7 +1,7 @@
 BuildStamp = $(shell date '+%Y%m%d%H%M%S')
 GitHash    = $(shell git rev-parse HEAD)
 Version    = $(shell git describe --abbrev=0 --tags --always)
-TARGET     = 6leetcode
+TARGET     = leet
 PREFIX    ?= /usr/local
 
 .PHONY: build
