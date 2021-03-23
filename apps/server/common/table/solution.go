@@ -36,9 +36,3 @@ func (s *Solution) FindAll() (solutions []Solution, err error) {
 	err = engine.Find(&solutions).Error
 	return
 }
-
-// FindByID find solution by id
-func (s *Solution) FindByID() (solutions []Solution, err error) {
-	err = engine.Where(Solution{QuestionID: s.QuestionID}).Find(&solutions).Error
-	return
-}
