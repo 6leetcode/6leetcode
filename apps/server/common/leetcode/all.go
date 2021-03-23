@@ -72,20 +72,12 @@ func (i *Instance) All(gen bool) (questions []table.Question, err error) {
 
 	var waitGroup = new(sync.WaitGroup)
 
-	// fmt.Println(string(data))
-
 	for _, question := range b.Data.AllQuestions {
 		var qid int
-		// var fqid int
 		if qid, err = strconv.Atoi(question.QuestionId); err != nil {
 			logging.Error(err)
 			continue
 		}
-
-		// if fqid, err = strconv.Atoi(question.QuestionFrontendID); err != nil {
-		// 	err = nil
-		// 	fqid = qid
-		// }
 
 		var questionStats QuestionStats
 		if err = json.Unmarshal([]byte(question.Stats), &questionStats); err != nil {
