@@ -167,6 +167,8 @@ func (stmt *Statement) AddVar(writer clause.Writer, vars ...interface{}) {
 			stmt.AddVar(writer, v.GormValue(stmt.Context, stmt.DB))
 		case clause.Expr:
 			v.Build(stmt)
+		case *clause.Expr:
+			v.Build(stmt)
 		case driver.Valuer:
 			stmt.Vars = append(stmt.Vars, v)
 			stmt.DB.Dialector.BindVarTo(writer, stmt, v)
@@ -339,6 +341,10 @@ func (stmt *Statement) BuildCondition(query interface{}, args ...interface{}) []
 			}
 		default:
 			reflectValue := reflect.Indirect(reflect.ValueOf(arg))
+			for reflectValue.Kind() == reflect.Ptr {
+				reflectValue = reflectValue.Elem()
+			}
+
 			if s, err := schema.Parse(arg, stmt.DB.cacheStore, stmt.DB.NamingStrategy); err == nil {
 				selectedColumns := map[string]bool{}
 				if idx == 0 {

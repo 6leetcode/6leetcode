@@ -96,7 +96,7 @@ func (p *processor) Execute(db *DB) {
 	if stmt.Dest != nil {
 		stmt.ReflectValue = reflect.ValueOf(stmt.Dest)
 		for stmt.ReflectValue.Kind() == reflect.Ptr {
-			if stmt.ReflectValue.IsNil() {
+			if stmt.ReflectValue.IsNil() && stmt.ReflectValue.CanAddr() {
 				stmt.ReflectValue.Set(reflect.New(stmt.ReflectValue.Type().Elem()))
 				break
 			}
@@ -109,10 +109,12 @@ func (p *processor) Execute(db *DB) {
 	}
 
 	// call scopes
-	scopes := stmt.scopes
-	stmt.scopes = nil
-	for _, scope := range scopes {
-		db = scope(db)
+	for len(stmt.scopes) > 0 {
+		scopes := stmt.scopes
+		stmt.scopes = nil
+		for _, scope := range scopes {
+			db = scope(db)
+		}
 	}
 
 	for _, f := range p.fns {
