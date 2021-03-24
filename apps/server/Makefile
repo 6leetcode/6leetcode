@@ -23,5 +23,5 @@ clean:
 	@$(RM) -r release *.db *.db-journal
 
 .PHONY: install
-install:
+install: build
 	install -m 755 release/$(TARGET) $(PREFIX)/bin

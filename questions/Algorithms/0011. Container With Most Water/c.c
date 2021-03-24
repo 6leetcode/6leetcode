@@ -24,7 +24,9 @@ int maxArea(int *height, int heightSize) {
 int main(int argc, char const *argv[]) {
   int input1[] = {1, 8, 6, 2, 5, 4, 8, 3, 7};
   int input2 = (int)(sizeof(input1) / sizeof(int));
-  printf("Input:  %s %d\n", array_show(input1, input2), input2);
+  // sds show = array_show(input1, input2);
+  // printf("Input:  %s %d\n", show, input2);
+  // sds_free(&show);
   printf("Output: %d\n", maxArea(input1, input2));
   return EXIT_SUCCESS;
 }

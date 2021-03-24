@@ -37,6 +37,8 @@ int main(int argc, char const *argv[]) {
   }
   printf("] %d\n", input2);
 
-  printf("Output: %s\n", longestCommonPrefix(input1, input2));
+  char *output = longestCommonPrefix(input1, input2);
+  printf("Output: %s\n", output);
+  free(output);
   return EXIT_SUCCESS;
 }
