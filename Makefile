@@ -4,7 +4,7 @@ all: ${TARGETS}
 
 ${TARGETS}:
 	@docker-compose build $@
-	@docker-compose run $@ make -f testing/$@.makefile run -j 8
+	@docker-compose run $@ make -f testing/$@.makefile run
 
 gen:
 	@6leetcode gen

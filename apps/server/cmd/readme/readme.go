@@ -16,6 +16,32 @@ import (
 )
 
 var suffixes = []string{".c", ".cc", ".go", ".java", ".js", ".php", ".py", ".rs", ".sql", ".sh"}
+var makefiles = map[string]string{
+	".c":    "c.makefile",
+	".cc":   "cc.makefile",
+	".go":   "golang.makefile",
+	".java": "java.makefile",
+	".js":   "node.makefile",
+	".php":  "php.makefile",
+	".py":   "python.makefile",
+	".rs":   "rust.makefile",
+	".sql":  "",
+	".sh":   "shell.makefile",
+}
+var targets = map[string]string{
+	".c":    "c",
+	".cc":   "cc",
+	".go":   "golang",
+	".java": "java",
+	".js":   "node",
+	".php":  "php",
+	".py":   "python",
+	".rs":   "rust",
+	".sql":  "",
+	".sh":   "shell",
+}
+
+const makefileDir = "testing"
 
 const tableTitle = "|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
 
@@ -100,21 +126,68 @@ func generate(questions []table.Question, filename, prefix string) (err error) {
 		return
 	}
 
+	var makefileMap = make(map[string][]string)
+	for _, suffix := range suffixes {
+		makefileMap[suffix] = []string{}
+	}
+
 	for _, category := range categories(questions) {
-		if _, err = file.WriteString(entry(questions, category)); err != nil {
+		if _, err = file.WriteString(entry(questions, category, makefileMap)); err != nil {
 			return
 		}
 	}
 
+	if filename == "README.md" {
+		if !com.IsDir(makefileDir) {
+			if err = os.Mkdir(makefileDir, 0755); err != nil {
+				return
+			}
+		}
+		for key, value := range makefileMap {
+			var filename = makefiles[key]
+			if filename == "" {
+				continue
+			}
+			filename = fmt.Sprintf("%s/%s", makefileDir, filename)
+			if com.IsFile(filename) {
+				if err = os.Remove(filename); err != nil {
+					return
+				}
+			}
+			var file *os.File
+			if file, err = os.OpenFile(filename, os.O_WRONLY|os.O_CREATE, 0644); err != nil {
+				return
+			}
+
+			var str = "DIRS = "
+			for index, val := range value {
+				if index == 0 {
+					str += strings.ReplaceAll(fmt.Sprintf("\"%s\"", val), " ", "\\ ")
+				} else {
+					str += " " + strings.ReplaceAll(fmt.Sprintf("\"%s\"", val), " ", "\\ ")
+				}
+			}
+			if _, err = file.WriteString(str); err != nil {
+				return
+			}
+			if _, err = file.WriteString(fmt.Sprintf("\nrun: ${DIRS}\n${DIRS}:\n\tmake -C $@ %s\n", targets[key])); err != nil {
+				return
+			}
+			if err = file.Close(); err != nil {
+				return
+			}
+		}
+	}
 	return
 }
 
 const URLPrefix = "https://github.com/6leetcode/6leetcode/blob/main/questions/"
 
-func entry(questions []table.Question, categoryTitle string) (str string) {
+func entry(questions []table.Question, categoryTitle string, makefileMap map[string][]string) (str string) {
 	str += fmt.Sprintf("\n<details>\n\n  <summary>%s</summary>\n\n", categoryTitle)
 
 	str += tableTitle
+
 	for _, question := range questions {
 		if question.CategoryTitle == categoryTitle {
 			var languageMap = make(map[string][]string)
@@ -123,7 +196,6 @@ func entry(questions []table.Question, categoryTitle string) (str string) {
 			}
 			var dir = fmt.Sprintf("%s/%s/%s. %s", viper.GetString("QuestionDir"), question.CategoryTitle, leetcode.QuestionID(question.QuestionFrontendID), question.Title)
 			if !com.IsDir(dir) {
-				logging.Info(dir)
 				continue
 			}
 			str += fmt.Sprintf("|[%s](%s)|%s|", leetcode.QuestionID(question.QuestionFrontendID), leetcode.HostLeetcode+"/problems/"+question.TitleSlug, question.Difficulty)
@@ -143,7 +215,17 @@ func entry(questions []table.Question, categoryTitle string) (str string) {
 						if filepath.Ext(path) == ".go" {
 							var s = strings.TrimSuffix(info.Name(), ".go")
 							languageMap[filepath.Ext(path)] = append(languageMap[filepath.Ext(path)], prefix+"/"+s+"/"+info.Name())
+							var dir = filepath.Dir(path)
+							dir = strings.TrimSuffix(dir, "/go")
+							dir = strings.TrimSuffix(dir, "/go1")
+							dir = strings.TrimSuffix(dir, "/go2")
+							if !com.IsSliceContainsStr(makefileMap[filepath.Ext(path)], dir) {
+								makefileMap[filepath.Ext(path)] = append(makefileMap[filepath.Ext(path)], dir)
+							}
 						} else {
+							if !com.IsSliceContainsStr(makefileMap[filepath.Ext(path)], filepath.Dir(path)) {
+								makefileMap[filepath.Ext(path)] = append(makefileMap[filepath.Ext(path)], filepath.Dir(path))
+							}
 							languageMap[filepath.Ext(path)] = append(languageMap[filepath.Ext(path)], prefix+"/"+info.Name())
 						}
 					}

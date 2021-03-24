@@ -39,8 +39,8 @@ LeetCode 题解
 |[0014](https://leetcode-cn.com/problems/longest-common-prefix)|Easy|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0014.%20Longest%20Common%20Prefix/c.c)||||||||||
 |[0015](https://leetcode-cn.com/problems/3sum)|Medium|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0015.%203Sum/c.c)|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0015.%203Sum/cpp.cc)|||||||||
 |[0016](https://leetcode-cn.com/problems/3sum-closest)|Medium|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0016.%203Sum%20Closest/c.c)|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0016.%203Sum%20Closest/cpp.cc)|||||||||
-|[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0017.%20Letter%20Combinations%20of%20a%20Phone%20Number/c.c)||||||||||
-|[0018](https://leetcode-cn.com/problems/4sum)|Medium|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0018.%204Sum/c.c)||||||||||
+|[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|||||||||||
+|[0018](https://leetcode-cn.com/problems/4sum)|Medium|||||||||||
 |[0019](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|Medium|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0019.%20Remove%20Nth%20Node%20From%20End%20of%20List/c.c)||||||||||
 |[0020](https://leetcode-cn.com/problems/valid-parentheses)|Easy|||||||||||
 |[0021](https://leetcode-cn.com/problems/merge-two-sorted-lists)|Easy|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/c1.c)|[1](https://github.com/6leetcode/6leetcode/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/cpp1.cc)|||||||||
