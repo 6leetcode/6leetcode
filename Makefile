@@ -1,10 +1,22 @@
-TARGETS = c cc golang java python rust node php shell
+APPNAME = leet
+TARGETS = bash c cc golang java javascript php python rust
 
+.PHONY: all
 all: ${TARGETS}
 
-${TARGETS}:
-	@docker-compose build $@
-	@docker-compose run $@ make -f testing/$@.makefile run
+.PHONY: ${TARGETS}
+${TARGETS}: clean
+	docker build -t ${APPNAME}:$@ -f docker/$@.Dockerfile .
+	docker run -v ${PWD}:/app ${APPNAME}:$@ make -f testing/$@.makefile run
 
-gen:
-	@6leetcode gen
+.PHONY: clean
+clean:
+	$(RM) questions/library/c/sds/*.o
+
+.PHONY: install
+install:
+	env TARGET=${APPNAME} make -C apps/cli install
+
+.PHONY: readme
+readme:
+	${APPNAME} $@

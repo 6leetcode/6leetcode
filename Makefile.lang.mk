@@ -1,15 +1,15 @@
-CFiles      := $(wildcard *.c)
-CCFiles     := $(wildcard *.cc)
-RustFiles   := $(wildcard *.rs)
-GolangFiles := $(wildcard go*)
-PythonFiles := $(wildcard *.py)
-PHPFiles    := $(wildcard *.php)
-NodeFiles   := $(wildcard *.js)
-JavaFiles   := $(wildcard *.java)
-ShellFiles  := $(wildcard *.sh)
+CFiles          := $(wildcard *.c)
+CCFiles         := $(wildcard *.cc)
+RustFiles       := $(wildcard *.rs)
+GolangFiles     := $(wildcard go*)
+PythonFiles     := $(wildcard *.py)
+PHPFiles        := $(wildcard *.php)
+JavascriptFiles := $(wildcard *.js)
+JavaFiles       := $(wildcard *.java)
+BashFiles       := $(wildcard *.sh)
 
 .PHONY: all
-all: c cc rust golang python php node java shell
+all: c cc rust golang python php javascript java bash
 
 .PHONY: c
 c: $(CFiles)
@@ -70,11 +70,11 @@ $(PythonFiles):
 	@python3 $@
 	@echo
 
-.PHONY: node
-node: $(NodeFiles)
+.PHONY: javascript
+javascript: $(JavascriptFiles)
 
-.PHONY: $(NodeFiles)
-$(NodeFiles):
+.PHONY: $(JavascriptFiles)
+$(JavascriptFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
 	@node $@
@@ -102,11 +102,11 @@ $(PHPFiles):
 	@php $@
 	@echo
 
-.PHONY: shell
-shell: $(ShellFiles)
+.PHONY: bash
+bash: $(BashFiles)
 
-.PHONY: $(ShellFiles)
-$(ShellFiles):
+.PHONY: $(BashFiles)
+$(BashFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
 	@./`echo $@ | cut -d. -f1`.sh

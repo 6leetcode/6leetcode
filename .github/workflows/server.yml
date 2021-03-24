@@ -22,7 +22,7 @@ jobs:
         uses: golangci/golangci-lint-action@v2
         with:
           version: latest
-          working-directory: apps/server
+          working-directory: apps/cli
           args: -v --timeout=5m
   leetcode-server:
     name: leetcode-server
@@ -42,7 +42,7 @@ jobs:
           go-version: ${{ matrix.go }}
       - name: Build server
         run: |
-          cd apps/server
+          cd apps/cli
           make
   leetcode-fe:
     name: leetcode-fe

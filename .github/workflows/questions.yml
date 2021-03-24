@@ -15,15 +15,15 @@ jobs:
     strategy:
       matrix:
         solution:
+          - "bash"
           - "c"
           - "cc"
           - "golang"
           - "java"
+          - "javascript"
+          - "php"
           - "python"
           - "rust"
-          - "node"
-          - "php"
-          - "shell"
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
