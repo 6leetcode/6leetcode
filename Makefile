@@ -20,3 +20,7 @@ install:
 .PHONY: readme
 readme:
 	${APPNAME} $@
+
+.PHONY: changelog
+changelog:
+	git-chglog -o CHANGELOG.md
