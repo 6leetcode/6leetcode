@@ -1,2 +1,0 @@
-questions.csv filter=lfs diff=lfs merge=lfs -text
-solutions.csv filter=lfs diff=lfs merge=lfs -text
