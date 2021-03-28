@@ -11,26 +11,32 @@
 | y_value       | int     |
 +---------------+---------+
 id is the primary key for this table.
-Each point is represented as a 2D Dimensional (x_value, y_value).</pre>
+Each point is represented as a 2D coordinate (x_value, y_value).</pre>
 
-<p>Write an SQL query to&nbsp;report&nbsp;of all possible rectangles which can be formed by any two points of the table.&nbsp;</p>
+<p>&nbsp;</p>
 
-<p>Each row in the result contains three columns (p1, p2, area) where:</p>
+<p>Write an SQL query to report all possible <strong>axis-aligned</strong> rectangles with <strong>non-zero area</strong> that can be formed by any two points in the <code>Points</code> table.</p>
+
+<p>Each row in the result should contain three columns <code>(p1, p2, area)</code> where:</p>
 
 <ul>
-	<li><strong>p1</strong> and <strong>p2</strong> are the id of&nbsp;two opposite corners of a rectangle and p1 &lt; p2.</li>
-	<li>Area of this rectangle is represented by the column <strong>area</strong>.</li>
+	<li><code>p1</code> and <code>p2</code> are the <code>id</code>&#39;s of the two points that determine the opposite corners of a rectangle.</li>
+	<li><code>area</code> is the area of the rectangle and must be <strong>non-zero</strong>.</li>
 </ul>
 
-<p>Report the query in&nbsp;descending&nbsp;order by area in case of tie in ascending order by p1 and p2.</p>
+<p>Report the query in descending order by <code>area</code> first, then in ascending order by <code>p1</code>&#39;s <code>id</code> if there is a tie, then in ascending order by <code>p2</code>&#39;s <code>id</code> if there is another tie.</p>
+
+<p>The query result format is in the following table:</p>
+
+<p>&nbsp;</p>
 
 <pre>
 Points table:
 +----------+-------------+-------------+
 | id       | x_value     | y_value     |
 +----------+-------------+-------------+
-| 1        | 2           | 8           |
-| 2        | 4           | 7           |
+| 1        | 2           | 7           |
+| 2        | 4           | 8           |
 | 3        | 2           | 10          |
 +----------+-------------+-------------+
 
@@ -38,12 +44,12 @@ Result table:
 +----------+-------------+-------------+
 | p1       | p2          | area        |
 +----------+-------------+-------------+
-| 2        | 3           | 6           |
+| 2        | 3           | 4           |
 | 1        | 2           | 2           |
 +----------+-------------+-------------+
 
-p1 should be less than p2 and area greater than 0.
-p1 = 1 and p2 = 2, has an area equal to |2-4| * |8-7| = 2.
-p1 = 2 and p2 = 3, has an area equal to |4-2| * |7-10| = 6.
-p1 = 1 and p2 = 3 It&#39;s not possible because the rectangle has an area equal to 0.
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/12/rect.png" style="width: 200px; height: 330px;" />
+The rectangle formed by p1 = 2 and p2 = 3 has an area equal to |4-2| * |8-10| = 4.
+The rectangle formed by p1 = 1 and p2 = 2 has an area equal to |2-4| * |7-8| = 2.
+Note that the rectangle formed by p1 = 1 and p2 = 3 is invalid because the area is 0.
 </pre>

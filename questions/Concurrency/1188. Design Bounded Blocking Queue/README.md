@@ -1,20 +1,19 @@
 ### [Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue)
 
-<p>Implement a thread safe bounded&nbsp;blocking queue that has&nbsp;the following&nbsp;methods:</p>
+<p>Implement a thread-safe bounded blocking queue that has the following methods:</p>
 
 <ul>
 	<li><code>BoundedBlockingQueue(int capacity)</code> The constructor initializes the queue with a maximum <code>capacity</code>.</li>
 	<li><code>void enqueue(int element)</code> Adds an <code>element</code> to the front of the queue. If the queue is full, the calling thread is blocked until the queue is no longer full.</li>
 	<li><code>int dequeue()</code> Returns the element at the rear of the queue and removes it. If the queue is empty, the calling thread is blocked until the queue is no longer empty.</li>
-	<li><code>int size()</code>&nbsp;Returns the number of elements currently in the queue.</li>
+	<li><code>int size()</code> Returns the number of elements currently in the queue.</li>
 </ul>
 
-<p>Your implementation will be tested using multiple threads at the same time. Each thread will either be a producer thread that only makes calls to the&nbsp;<code>enqueue</code>&nbsp;method or a consumer thread that only makes calls to the&nbsp;<code>dequeue</code>&nbsp;method. The&nbsp;<code>size</code>&nbsp;method will be called after every test case.</p>
+<p>Your implementation will be tested using multiple threads at the same time. Each thread will either be a producer thread that only makes calls to the <code>enqueue</code> method or a consumer thread that only makes calls to the <code>dequeue</code> method. The <code>size</code> method will be called after every test case.</p>
 
-<p>Please do not use built-in implementations of bounded&nbsp;blocking queue as this will not be accepted in an interview.</p>
+<p>Please do not use built-in implementations of bounded blocking queue as this will not be accepted in an interview.</p>
 
 <p>&nbsp;</p>
-
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -27,8 +26,8 @@
 <strong>Output:</strong>
 [1,0,2,2]
 
-<strong>Explanation:
-</strong>Number of producer threads = 1
+<strong>Explanation:</strong>
+Number of producer threads = 1
 Number of consumer threads = 1
 
 BoundedBlockingQueue queue = new BoundedBlockingQueue(2);   // initialize the queue with capacity = 2.
@@ -44,8 +43,6 @@ queue.dequeue();    // The consumer thread returns 2 from the queue. The produce
 queue.size();       // 2 elements remaining in the queue. size() is always called at the end of each test case.
 </pre>
 
-<p>&nbsp;</p>
-
 <p><strong>Example 2:</strong></p>
 
 <pre>
@@ -54,12 +51,11 @@ queue.size();       // 2 elements remaining in the queue. size() is always calle
 4
 [&quot;BoundedBlockingQueue&quot;,&quot;enqueue&quot;,&quot;enqueue&quot;,&quot;enqueue&quot;,&quot;dequeue&quot;,&quot;dequeue&quot;,&quot;dequeue&quot;,&quot;enqueue&quot;]
 [[3],[1],[0],[2],[],[],[],[3]]
-
 <strong>Output:</strong>
 [1,0,2,1]
 
-<strong>Explanation:
-</strong>Number of producer threads = 3
+<strong>Explanation:</strong>
+Number of producer threads = 3
 Number of consumer threads = 4
 
 BoundedBlockingQueue queue = new BoundedBlockingQueue(3);   // initialize the queue with capacity = 3.
@@ -73,4 +69,17 @@ queue.dequeue();    // Consumer thread C3 calls dequeue.
 queue.enqueue(3);   // One of the producer threads enqueues 3 to the queue.
 queue.size();       // 1 element remaining in the queue.
 
-Since the number of threads for producer/consumer is greater than 1, we do not know how the threads will be scheduled in the operating system, even though the input seems to imply the ordering. Therefore, any of the output [1,0,2] or [1,2,0] or [0,1,2] or [0,2,1] or [2,0,1] or [2,1,0] will be accepted.</pre>
+Since the number of threads for producer/consumer is greater than 1, we do not know how the threads will be scheduled in the operating system, even though the input seems to imply the ordering. Therefore, any of the output [1,0,2] or [1,2,0] or [0,1,2] or [0,2,1] or [2,0,1] or [2,1,0] will be accepted.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= Number of Prdoucers &lt;= 8</code></li>
+	<li><code>1 &lt;= Number of Consumers &lt;= 8</code></li>
+	<li><code>1 &lt;= size &lt;= 30</code></li>
+	<li><code>0 &lt;= element &lt;= 20</code></li>
+	<li>The number of calls to <code>enqueue</code> is <strong>greater than or equal to</strong> the number of calls to <code>dequeue</code>.</li>
+	<li>At most <code>40</code> calls will be made to <code>enque</code>, <code>deque</code>, and <code>size</code>.</li>
+</ul>

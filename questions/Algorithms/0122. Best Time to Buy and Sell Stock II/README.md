@@ -1,6 +1,6 @@
 ### [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)
 
-<p>You are given an array <code>prices</code> for which the <code>i<sup>th</sup></code> element is the price of a given stock on day <code>i</code>.</p>
+<p>You are given an array <code>prices</code> where <code>prices[i]</code> is the price of a given stock on the <code>i<sup>th</sup></code> day.</p>
 
 <p>Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).</p>
 

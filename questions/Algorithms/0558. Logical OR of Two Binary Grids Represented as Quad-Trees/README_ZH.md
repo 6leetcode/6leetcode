@@ -1,6 +1,6 @@
 ### [四叉树交集](https://leetcode-cn.com/problems/logical-or-of-two-binary-grids-represented-as-quad-trees)
 
-<p>二进制矩阵中的所有元素不是 0 就是 <strong>1 </strong>。</p>
+<p>二进制矩阵中的所有元素不是 <strong>0</strong> 就是 <strong>1 </strong>。</p>
 
 <p>给你两个四叉树，<code>quadTree1</code> 和 <code>quadTree2</code>。其中 <code>quadTree1</code> 表示一个 <code>n * n</code> 二进制矩阵，而 <code>quadTree2</code> 表示另一个 <code>n * n</code> 二进制矩阵。</p>
 
@@ -15,13 +15,14 @@
 	<li><code>isLeaf</code>: 当这个节点是一个叶子结点时为 <strong>True</strong>，如果它有 4 个子节点则为 <strong>False</strong> 。</li>
 </ul>
 
-<pre>class Node {
+<pre>
+class Node {
     public boolean val;
-&nbsp; &nbsp; public boolean isLeaf;
-&nbsp; &nbsp; public Node topLeft;
-&nbsp; &nbsp; public Node topRight;
-&nbsp; &nbsp; public Node bottomLeft;
-&nbsp; &nbsp; public Node bottomRight;
+    public boolean isLeaf;
+    public Node topLeft;
+    public Node topRight;
+    public Node bottomLeft;
+    public Node bottomRight;
 }</pre>
 
 <p>我们可以按以下步骤为二维区域构建四叉树：</p>
@@ -32,7 +33,7 @@
 	<li>使用适当的子网格递归每个子节点。</li>
 </ol>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/new_top.png" style="height: 181px; width: 777px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/new_top.png" style="height: 181px; width: 777px;" /></p>
 
 <p>如果你想了解更多关于四叉树的内容，可以参考 <a href="https://en.wikipedia.org/wiki/Quadtree">wiki</a> 。</p>
 
@@ -42,26 +43,28 @@
 
 <p>它与二叉树的序列化非常相似。唯一的区别是节点以列表形式表示 <code>[isLeaf, val]</code> 。</p>
 
-<p>如果 <code>isLeaf</code> 或者 <code>val</code> 的值为 True ，则表示它在列表&nbsp;<code>[isLeaf, val]</code> 中的值为 <strong>1</strong> ；如果 <code>isLeaf</code> 或者 <code>val</code> 的值为 False ，则表示值为 <strong>0 </strong>。</p>
+<p>如果 <code>isLeaf</code> 或者 <code>val</code> 的值为 True ，则表示它在列表 <code>[isLeaf, val]</code> 中的值为 <strong>1</strong> ；如果 <code>isLeaf</code> 或者 <code>val</code> 的值为 False ，则表示值为 <strong>0 </strong>。</p>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/qt1.png" style="height: 196px; width: 550px;"> <img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/qt2.png" style="height: 278px; width: 550px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/qt1.png" style="height: 196px; width: 550px;" /> <img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/qt2.png" style="height: 278px; width: 550px;" /></p>
 
-<pre><strong>输入：</strong>quadTree1 = [[0,1],[1,1],[1,1],[1,0],[1,0]]
+<pre>
+<strong>输入：</strong>quadTree1 = [[0,1],[1,1],[1,1],[1,0],[1,0]]
 , quadTree2 = [[0,1],[1,1],[0,1],[1,1],[1,0],null,null,null,null,[1,0],[1,0],[1,1],[1,1]]
 <strong>输出：</strong>[[0,0],[1,1],[1,1],[1,1],[1,0]]
 <strong>解释：</strong>quadTree1 和 quadTree2 如上所示。由四叉树所表示的二进制矩阵也已经给出。
 如果我们对这两个矩阵进行按位逻辑或运算，则可以得到下面的二进制矩阵，由一个作为结果的四叉树表示。
 注意，我们展示的二进制矩阵仅仅是为了更好地说明题意，你无需构造二进制矩阵来获得结果四叉树。
-<img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/qtr.png" style="height: 222px; width: 777px;">
+<img alt="" src="https://assets.leetcode.com/uploads/2020/02/11/qtr.png" style="height: 222px; width: 777px;" />
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>quadTree1 = [[1,0]]
+<pre>
+<strong>输入：</strong>quadTree1 = [[1,0]]
 , quadTree2 = [[1,0]]
 <strong>输出：</strong>[[1,0]]
 <strong>解释：</strong>两个数所表示的矩阵大小都为 1*1，值全为 0 
@@ -70,30 +73,33 @@
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>quadTree1 = [[0,0],[1,0],[1,0],[1,1],[1,1]]
+<pre>
+<strong>输入：</strong>quadTree1 = [[0,0],[1,0],[1,0],[1,1],[1,1]]
 , quadTree2 = [[0,0],[1,1],[1,1],[1,0],[1,1]]
 <strong>输出：</strong>[[1,1]]
 </pre>
 
 <p><strong>示例 4：</strong></p>
 
-<pre><strong>输入：</strong>quadTree1 = [[0,0],[1,1],[1,0],[1,1],[1,1]]
+<pre>
+<strong>输入：</strong>quadTree1 = [[0,0],[1,1],[1,0],[1,1],[1,1]]
 , quadTree2 = [[0,0],[1,1],[0,1],[1,1],[1,1],null,null,null,null,[1,1],[1,0],[1,0],[1,1]]
 <strong>输出：</strong>[[0,0],[1,1],[0,1],[1,1],[1,1],null,null,null,null,[1,1],[1,0],[1,0],[1,1]]
 </pre>
 
 <p><strong>示例 5：</strong></p>
 
-<pre><strong>输入：</strong>quadTree1 = [[0,1],[1,0],[0,1],[1,1],[1,0],null,null,null,null,[1,0],[1,0],[1,1],[1,1]]
+<pre>
+<strong>输入：</strong>quadTree1 = [[0,1],[1,0],[0,1],[1,1],[1,0],null,null,null,null,[1,0],[1,0],[1,1],[1,1]]
 , quadTree2 = [[0,1],[0,1],[1,0],[1,1],[1,0],[1,0],[1,0],[1,1],[1,1]]
 <strong>输出：</strong>[[0,0],[0,1],[0,1],[1,1],[1,0],[1,0],[1,0],[1,1],[1,1],[1,0],[1,0],[1,1],[1,1]]
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
 	<li><code>quadTree1</code> 和 <code>quadTree2</code> 都是符合题目要求的四叉树，每个都代表一个 <code>n * n</code> 的矩阵。</li>
-	<li><code>n == 2^x</code> ，其中 <code>0 &lt;= x &lt;= 9</code>.</li>
+	<li><code>n == 2^x</code> ，其中 <code>0 <= x <= 9</code>.</li>
 </ul>

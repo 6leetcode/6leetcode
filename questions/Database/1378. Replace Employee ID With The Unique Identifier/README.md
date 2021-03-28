@@ -30,14 +30,14 @@ Each row of this table contains the id and the corresponding unique id of an emp
 
 <p>&nbsp;</p>
 
-<p>Write an SQL query to&nbsp;show&nbsp;the <strong>unique ID&nbsp;</strong>of each user, If a user doesn&#39;t have a unique ID replace just show null.</p>
+<p>Write an SQL query to show the <strong>unique ID </strong>of each user, If a user doesn&#39;t have a unique ID replace just show null.</p>
 
 <p>Return the result table in <strong>any</strong> order.</p>
 
 <p>The query result format is in the following example:</p>
 
 <pre>
-<code>Employees</code> table:
+Employees table:
 +----+----------+
 | id | name     |
 +----+----------+
@@ -48,7 +48,7 @@ Each row of this table contains the id and the corresponding unique id of an emp
 | 3  | Jonathan |
 +----+----------+
 
-<code>EmployeeUNI</code> table:
+EmployeeUNI table:
 +----+-----------+
 | id | unique_id |
 +----+-----------+
@@ -57,7 +57,7 @@ Each row of this table contains the id and the corresponding unique id of an emp
 | 90 | 3         |
 +----+-----------+
 
-<code>EmployeeUNI</code> table:
+Result table:
 +-----------+----------+
 | unique_id | name     |
 +-----------+----------+

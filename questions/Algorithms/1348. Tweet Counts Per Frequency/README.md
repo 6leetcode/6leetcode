@@ -1,19 +1,16 @@
 ### [Tweet Counts Per Frequency](https://leetcode.com/problems/tweet-counts-per-frequency)
 
-<p>Implement the class <code>TweetCounts</code> that supports two methods:</p>
-
-<p>1.<code> recordTweet(string tweetName, int time)</code></p>
+<p>Implement the <code>TweetCounts</code> class:</p>
 
 <ul>
-	<li>Stores the <code>tweetName</code> at the recorded <code>time</code> (in <strong>seconds</strong>).</li>
-</ul>
-
-<p>2.<code> getTweetCountsPerFrequency(string freq, string tweetName, int startTime, int endTime)</code></p>
-
-<ul>
-	<li>Returns the total number of occurrences for the given <code>tweetName</code> per <strong>minute</strong>, <strong>hour</strong>, or <strong>day</strong> (depending on <code>freq</code>) starting from the <code>startTime</code> (in <strong>seconds</strong>) and ending at the <code>endTime</code> (in <strong>seconds</strong>).</li>
-	<li><code>freq</code> is always <strong>minute</strong><em>, </em><strong>hour</strong><em>&nbsp;or <strong>day</strong></em>, representing the time interval to get the total number of occurrences for the given&nbsp;<code>tweetName</code>.</li>
-	<li>The first time interval always starts from the <code>startTime</code>, so the time intervals are <code>[startTime, startTime + delta*1&gt;, &nbsp;[startTime + delta*1, startTime + delta*2&gt;, [startTime + delta*2, startTime + delta*3&gt;, ... , [startTime + delta*i, <strong>min</strong>(startTime + delta*(i+1), endTime + 1)&gt;</code> for some non-negative number <code>i</code> and <code>delta</code> (which depends on <code>freq</code>).&nbsp;&nbsp;</li>
+	<li><code>TweetCounts()</code> initializes the object.</li>
+	<li><code>void recordTweet(String tweetName, int time)</code> stores the <code>tweetName</code> at the recorded <code>time</code> (in <strong>seconds</strong>).</li>
+	<li><code>List&lt;Integer&gt; getTweetCountsPerFrequency(String freq, String tweetName, int startTime, int endTime)</code> returns the total number of occurrences for the given <code>tweetName</code> per <strong>minute</strong>, <strong>hour</strong>, or <strong>day</strong> (depending on <code>freq</code>) starting from the <code>startTime</code> (in <strong>seconds</strong>) and ending at the <code>endTime</code> (in <strong>seconds</strong>).
+	<ul>
+		<li><code>freq</code> is always <strong>minute</strong><em>, </em><strong>hour,</strong><em> or <strong>day</strong></em>, representing the time interval to get the total number of occurrences for the given <code>tweetName</code>.</li>
+		<li>The first time interval always starts from the <code>startTime</code>, so the time intervals are <code>[startTime, startTime + delta*1&gt;, [startTime + delta*1, startTime + delta*2&gt;, [startTime + delta*2, startTime + delta*3&gt;, ... , [startTime + delta*i, <strong>min</strong>(startTime + delta*(i+1), endTime + 1)&gt;</code> for some non-negative number <code>i</code> and <code>delta</code> (which depends on <code>freq</code>).</li>
+	</ul>
+	</li>
 </ul>
 
 <p>&nbsp;</p>
@@ -43,6 +40,6 @@ tweetCounts.getTweetCountsPerFrequency(&quot;hour&quot;, &quot;tweet3&quot;, 0, 
 
 <ul>
 	<li>There will be at most <code>10000</code>&nbsp;operations considering both <code>recordTweet</code> and <code>getTweetCountsPerFrequency</code>.</li>
-	<li><code>0 &lt;= time, startTime, endTime &lt;=&nbsp;10^9</code></li>
-	<li><code>0 &lt;= endTime - startTime &lt;= 10^4</code></li>
+	<li><code>0 &lt;= time, startTime, endTime &lt;=&nbsp;10<sup>9</sup></code></li>
+	<li><code>0 &lt;= endTime - startTime &lt;= 10<sup>4</sup></code></li>
 </ul>
