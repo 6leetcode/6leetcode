@@ -147,10 +147,6 @@ func questions() (res string, err error) {
 
 	csvWriter.Flush()
 
-	if err = csvFile.Close(); err != nil {
-		return
-	}
-
 	if res, err = hash("questions.csv"); err != nil {
 		return
 	}
