@@ -27,7 +27,9 @@ int lengthOfLIS(int *nums, int numsSize) {
 int main(int argc, char const *argv[]) {
   int input1[] = {10, 9, 2, 5, 3, 7, 101, 18};
   int input2 = sizeof(input1) / sizeof(int);
-  printf("Input:  %s %d\n", array_show(input1, input2), input2);
+  sds str = array_show(input1, input2);
+  printf("Input:  %s %d\n", str, input2);
+  sdsfree(str);
   printf("Output: %d\n", lengthOfLIS(input1, input2));
   return EXIT_SUCCESS;
 }
