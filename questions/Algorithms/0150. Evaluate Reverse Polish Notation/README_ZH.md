@@ -2,9 +2,9 @@
 
 <p>根据<a href="https://baike.baidu.com/item/%E9%80%86%E6%B3%A2%E5%85%B0%E5%BC%8F/128437" target="_blank"> 逆波兰表示法</a>，求表达式的值。</p>
 
-<p>有效的运算符包括&nbsp;<code>+</code>,&nbsp;<code>-</code>,&nbsp;<code>*</code>,&nbsp;<code>/</code>&nbsp;。每个运算对象可以是整数，也可以是另一个逆波兰表达式。</p>
+<p>有效的算符包括 <code>+</code>、<code>-</code>、<code>*</code>、<code>/</code> 。每个运算对象可以是整数，也可以是另一个逆波兰表达式。</p>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>说明：</strong></p>
 
@@ -13,27 +13,30 @@
 	<li>给定逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。</li>
 </ul>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p><strong>示例&nbsp;1：</strong></p>
+<p><strong>示例 1：</strong></p>
 
-<pre><strong>输入:</strong> [&quot;2&quot;, &quot;1&quot;, &quot;+&quot;, &quot;3&quot;, &quot;*&quot;]
-<strong>输出:</strong> 9
-<strong>解释:</strong> 该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9
+<pre>
+<strong>输入：</strong>tokens = ["2","1","+","3","*"]
+<strong>输出：</strong>9
+<strong>解释：</strong>该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9
 </pre>
 
-<p><strong>示例&nbsp;2：</strong></p>
+<p><strong>示例 2：</strong></p>
 
-<pre><strong>输入:</strong> [&quot;4&quot;, &quot;13&quot;, &quot;5&quot;, &quot;/&quot;, &quot;+&quot;]
-<strong>输出:</strong> 6
-<strong>解释:</strong> 该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6
+<pre>
+<strong>输入：</strong>tokens = ["4","13","5","/","+"]
+<strong>输出：</strong>6
+<strong>解释：</strong>该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6
 </pre>
 
-<p><strong>示例&nbsp;3：</strong></p>
+<p><strong>示例 3：</strong></p>
 
-<pre><strong>输入:</strong> [&quot;10&quot;, &quot;6&quot;, &quot;9&quot;, &quot;3&quot;, &quot;+&quot;, &quot;-11&quot;, &quot;*&quot;, &quot;/&quot;, &quot;*&quot;, &quot;17&quot;, &quot;+&quot;, &quot;5&quot;, &quot;+&quot;]
-<strong>输出:</strong> 22
-<strong>解释:</strong> 
+<pre>
+<strong>输入：</strong>tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
+<strong>输出：</strong>22
+<strong>解释：</strong>
 该算式转化为常见的中缀算术表达式为：
   ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 = ((10 * (6 / (12 * -11))) + 17) + 5
@@ -43,7 +46,16 @@
 = 17 + 5
 = 22</pre>
 
-<p>&nbsp;</p>
+<p> </p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 <= tokens.length <= 10<sup>4</sup></code></li>
+	<li><code>tokens[i]</code> 要么是一个算符（<code>"+"</code>、<code>"-"</code>、<code>"*"</code> 或 <code>"/"</code>），要么是一个在范围 <code>[-200, 200]</code> 内的整数</li>
+</ul>
+
+<p> </p>
 
 <p><strong>逆波兰表达式：</strong></p>
 

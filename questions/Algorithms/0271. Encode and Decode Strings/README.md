@@ -35,11 +35,42 @@ vector&lt;string&gt; strs2 = decode(encoded_string);
 <p>Implement the <code>encode</code> and <code>decode</code> methods.</p>
 
 <p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
-<p><b>Note:</b></p>
+<pre>
+<strong>Input:</strong> dummy_input = [&quot;Hello&quot;,&quot;World&quot;]
+<strong>Output:</strong> [&quot;Hello&quot;,&quot;World&quot;]
+<strong>Explanation:</strong>
+Machine 1:
+Codec encoder = new Codec();
+String msg = encoder.encode(strs);
+Machine 1 ---msg---&gt; Machine 2
+
+Machine 2:
+Codec decoder = new Codec();
+String[] strs = decoder.decode(msg);
+</pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> dummy_input = [&quot;&quot;]
+<strong>Output:</strong> [&quot;&quot;]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The string may contain any possible characters out of 256 valid ascii characters. Your algorithm should be generalized enough to work on any possible characters.</li>
-	<li>Do not use class member/global/static variables to store states. Your encode and decode algorithms should be stateless.</li>
-	<li>Do not rely on any library method such as <code>eval</code> or serialize methods. You should implement your own encode/decode algorithm.</li>
+	<li><code>1 &lt;= strs.length &lt;= 200</code></li>
+	<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>
+	<li><code>strs[i]</code> contains any possible characters out of <code>256</code> valid ASCII characters.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong></p>
+
+<ul>
+	<li>Could you write a generalized algorithm to work on any possible characters?</li>
+	<li>Could you solve the problem without using any serialize methods (such as <code>eval</code>)?</li>
 </ul>

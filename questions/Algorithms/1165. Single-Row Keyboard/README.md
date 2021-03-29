@@ -2,7 +2,7 @@
 
 <p>There is a special keyboard with <strong>all keys in a single row</strong>.</p>
 
-<p>Given a string <code>keyboard</code> of length 26 indicating the layout of the keyboard (indexed from 0 to&nbsp;25), initially your finger is at index 0. To type a character, you have to move your finger to the index of the desired character. The time taken to move your finger from index <code>i</code> to index <code>j</code> is <code>|i - j|</code>.</p>
+<p>Given a string <code>keyboard</code> of length <code>26</code> indicating the layout of the keyboard (indexed from <code>0</code> to <code>25</code>). Initially, your finger is at index <code>0</code>. To type a character, you have to move your finger to the index of the desired character. The time taken to move your finger from index <code>i</code> to index <code>j</code> is <code>|i - j|</code>.</p>
 
 <p>You want to type a string <code>word</code>. Write a function to calculate how much time it takes to type it with one finger.</p>
 
@@ -28,7 +28,7 @@ Total time = 2 + 1 + 1 = 4.
 
 <ul>
 	<li><code>keyboard.length == 26</code></li>
-	<li><code><font face="monospace">keyboard</font></code> contains each&nbsp;English lowercase letter&nbsp;exactly once in some order.</li>
-	<li><code>1 &lt;= word.length &lt;= 10^4</code></li>
-	<li><code>word[i]</code>&nbsp;is an English lowercase letter.</li>
+	<li><code>keyboard</code> contains each English lowercase letter exactly once in some order.</li>
+	<li><code>1 &lt;= word.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>word[i]</code> is an English lowercase letter.</li>
 </ul>

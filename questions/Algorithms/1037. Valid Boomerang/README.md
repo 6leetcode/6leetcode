@@ -18,5 +18,5 @@
 <ul>
 	<li><code>points.length == 3</code></li>
 	<li><code>points[i].length == 2</code></li>
-	<li><code>0 &lt;= points[i][j] &lt;= 100</code></li>
+	<li><code>0 &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= 100</code></li>
 </ul>

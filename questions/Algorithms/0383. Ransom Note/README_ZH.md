@@ -4,13 +4,33 @@
 
 <p>(题目说明：为了不暴露赎金信字迹，要从杂志上搜索各个需要的字母，组成单词来表达意思。杂志字符串中的每个字符只能在赎金信字符串中使用一次。)</p>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p><strong>注意：</strong></p>
+<p><strong>示例 1：</strong></p>
 
-<p>你可以假设两个字符串均只含有小写字母。</p>
-
-<pre>canConstruct(&quot;a&quot;, &quot;b&quot;) -&gt; false
-canConstruct(&quot;aa&quot;, &quot;ab&quot;) -&gt; false
-canConstruct(&quot;aa&quot;, &quot;aab&quot;) -&gt; true
+<pre>
+<strong>输入：</strong>ransomNote = "a", magazine = "b"
+<strong>输出：</strong>false
 </pre>
+
+<p><strong>示例 2：</strong></p>
+
+<pre>
+<strong>输入：</strong>ransomNote = "aa", magazine = "ab"
+<strong>输出：</strong>false
+</pre>
+
+<p><strong>示例 3：</strong></p>
+
+<pre>
+<strong>输入：</strong>ransomNote = "aa", magazine = "aab"
+<strong>输出：</strong>true
+</pre>
+
+<p> </p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li>你可以假设两个字符串均只含有小写字母。</li>
+</ul>

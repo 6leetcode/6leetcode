@@ -1,29 +1,37 @@
 ### [Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum)
 
-<p>Given a list of <b>non-negative</b> numbers and a target <b>integer</b> k, write a function to check if the array has a continuous subarray of size at least 2 that sums up to a multiple of <b>k</b>, that is, sums up to n*k where n is also an <b>integer</b>.</p>
+<p>Given an integer array <code>nums</code> and an integer <code>k</code>, return <code>true</code> <em>if the array has a continuous subarray of size <strong>at least two</strong>, that sums up to a multiple of</em> <code>k</code>. That is, it sums up to <code>n * k</code> where <code>n</code> is also an integer.</p>
 
 <p>&nbsp;</p>
-
-<p><b>Example 1:</b></p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-<b>Input:</b> [23, 2, 4, 6, 7],  k=6
-<b>Output:</b> True
-<b>Explanation:</b> Because [2, 4] is a continuous subarray of size 2 and sums up to 6.
+<strong>Input:</strong> nums = [23,2,4,6,7], k = 6
+<strong>Output:</strong> true
+<strong>Explanation:</strong> Because [2, 4] is a continuous subarray of size 2 and sums up to 6.
 </pre>
 
-<p><b>Example 2:</b></p>
+<p><strong>Example 2:</strong></p>
 
 <pre>
-<b>Input:</b> [23, 2, 6, 4, 7],  k=6
-<b>Output:</b> True
-<b>Explanation:</b> Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and sums up to 42.
+<strong>Input:</strong> nums = [23,2,6,4,7], k = 6
+<strong>Output:</strong> true
+<strong>Explanation:</strong> Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and sums up to 42.
+</pre>
+
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [23,2,6,4,7], k = 13
+<strong>Output:</strong> false
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The length of the array won&#39;t exceed 10,000.</li>
-	<li>You may assume the sum of all the numbers is in the range of a signed 32-bit integer.</li>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+	<li><code>0 &lt;= sum(nums[i]) &lt;= 2<sup>31</sup> - 1</code></li>
+	<li><code>-2<sup>31</sup> &lt;= k &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>

@@ -1,6 +1,6 @@
 ### [排名靠前的旅行者](https://leetcode-cn.com/problems/top-travellers)
 
-<p>表单: <code>Users</code></p>
+<p>表：<code>Users</code></p>
 
 <pre>
 +---------------+---------+
@@ -9,13 +9,12 @@
 | id            | int     |
 | name          | varchar |
 +---------------+---------+
-id 是该表单主键.
-name 是用户名字.
-</pre>
+id 是该表单主键。
+name 是用户名字。</pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p>表单: <code>Rides</code></p>
+<p>表：<code>Rides</code></p>
 
 <pre>
 +---------------+---------+
@@ -25,22 +24,20 @@ name 是用户名字.
 | user_id       | int     |
 | distance      | int     |
 +---------------+---------+
-id 是该表单主键.
-user_id 是本次行程的用户的 id, 而该用户此次行程距离为 distance.
+id 是该表单主键。
+user_id 是本次行程的用户的 id, 而该用户此次行程距离为 distance 。
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p>写一段 SQL ,&nbsp;报告每个用户的旅行距离.</p>
+<p>写一段 SQL , 报告每个用户的旅行距离。</p>
 
-<p>返回的结果表单,&nbsp; 以&nbsp;<code>travelled_distance</code>&nbsp;降序排列,&nbsp;如果有两个或者更多的用户旅行了相同的距离,&nbsp;那么再以&nbsp;<code>name</code>&nbsp;升序排列.</p>
+<p>返回的结果表单，以 <code>travelled_distance</code> <strong>降序排列</strong> ，如果有两个或者更多的用户旅行了相同的距离, 那么再以 <code>name</code> <strong>升序排列</strong> 。</p>
 
-<p>查询结果格式,&nbsp;如下例所示.</p>
-
-<p>&nbsp;</p>
+<p>查询结果格式如下例所示。</p>
 
 <pre>
-Users 表单:
+Users 表：
 +------+-----------+
 | id   | name      |
 +------+-----------+
@@ -53,7 +50,7 @@ Users 表单:
 | 19   | Elvis     |
 +------+-----------+
 
-Rides 表单:
+Rides 表：
 +------+----------+----------+
 | id   | user_id  | distance |
 +------+----------+----------+
@@ -68,7 +65,7 @@ Rides 表单:
 | 9    | 7        | 230      |
 +------+----------+----------+
 
-Result 表单:
+Result 表：
 +----------+--------------------+
 | name     | travelled_distance |
 +----------+--------------------+
@@ -80,7 +77,7 @@ Result 表单:
 | Alice    | 120                |
 | Donald   | 0                  |
 +----------+--------------------+
-Elvis 和 Lee 旅行了 450 英里, Elvis 是排名靠前的旅行者, 因为他的名字在字母表上的排序比 Lee 更小.
-Bob, Jonathan, Alex 和 Alice 只有一次行程, 我们只按此次行程的全部距离对他们排序.
-Donald 没有任何行程, 他的旅行距离为 0.
+Elvis 和 Lee 旅行了 450 英里，Elvis 是排名靠前的旅行者，因为他的名字在字母表上的排序比 Lee 更小。
+Bob, Jonathan, Alex 和 Alice 只有一次行程，我们只按此次行程的全部距离对他们排序。
+Donald 没有任何行程, 他的旅行距离为 0。
 </pre>

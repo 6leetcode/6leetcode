@@ -1,8 +1,6 @@
 ### [Counting Elements](https://leetcode.com/problems/counting-elements)
 
-<p>Given an integer array <code>arr</code>, count how many elements&nbsp;<code>x</code>&nbsp;there are, such that <code>x + 1</code> is also in <code>arr</code>.</p>
-
-<p>If there&#39;re duplicates in&nbsp;<code>arr</code>, count them seperately.</p>
+<p>Given an integer array <code>arr</code>, count how many elements <code>x</code> there are, such that <code>x + 1</code> is also in <code>arr</code>. If there are duplicates in <code>arr</code>, count them separately.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

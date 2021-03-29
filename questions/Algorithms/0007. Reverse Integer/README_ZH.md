@@ -1,6 +1,6 @@
 ### [整数反转](https://leetcode-cn.com/problems/reverse-integer)
 
-<p>给你一个 32 位的有符号整数 <code>x</code> ，返回 <code>x</code> 中每位上的数字反转后的结果。</p>
+<p>给你一个 32 位的有符号整数 <code>x</code> ，返回将 <code>x</code> 中的数字部分反转后的结果。</p>
 
 <p>如果反转后整数超过 32 位的有符号整数的范围 <code>[−2<sup>31</sup>,  2<sup>31 </sup>− 1]</code> ，就返回 0。</p>
 <strong>假设环境不允许存储 64 位整数（有符号或无符号）。</strong>
