@@ -14,8 +14,8 @@ import (
 )
 
 type Checksum struct {
-	QuestionsHash string `json:"questionsHash"`
-	SolutionsHash string `json:"solutionsHash"`
+	QuestionsHash string `json:"questions"`
+	SolutionsHash string `json:"solutions"`
 }
 
 func Initialize() (err error) {
@@ -60,7 +60,7 @@ func hash(filename string) (res string, err error) {
 func solutions() (res string, err error) {
 	var csvFile *os.File
 
-	if csvFile, err = os.OpenFile("solutions.csv", os.O_CREATE|os.O_RDWR, 0644); err != nil {
+	if csvFile, err = os.OpenFile("solution.csv", os.O_CREATE|os.O_RDWR, 0644); err != nil {
 		return
 	}
 	defer func() {
@@ -92,7 +92,7 @@ func solutions() (res string, err error) {
 
 	csvWriter.Flush()
 
-	if res, err = hash("solutions.csv"); err != nil {
+	if res, err = hash("solution.csv"); err != nil {
 		return
 	}
 
@@ -146,10 +146,6 @@ func questions() (res string, err error) {
 	}
 
 	csvWriter.Flush()
-
-	if err = csvFile.Close(); err != nil {
-		return
-	}
 
 	if res, err = hash("questions.csv"); err != nil {
 		return
