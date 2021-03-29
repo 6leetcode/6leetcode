@@ -19,8 +19,8 @@
 <pre>
 <strong>Input:</strong> n = 2
 <strong>Output:</strong> 1
-<strong>Explanation:</strong> prem = [0,1] initially.
-After the 1<sup>st</sup> operation, prem = [0,1]
+<strong>Explanation:</strong> perm = [0,1] initially.
+After the 1<sup>st</sup> operation, perm = [0,1]
 So it takes only 1 operation.
 </pre>
 
@@ -29,9 +29,9 @@ So it takes only 1 operation.
 <pre>
 <strong>Input:</strong> n = 4
 <strong>Output:</strong> 2
-<strong>Explanation:</strong> prem = [0,1,2,3] initially.
-After the 1<sup>st</sup> operation, prem = [0,2,1,3]
-After the 2<sup>nd</sup> operation, prem = [0,1,2,3]
+<strong>Explanation:</strong> perm = [0,1,2,3] initially.
+After the 1<sup>st</sup> operation, perm = [0,2,1,3]
+After the 2<sup>nd</sup> operation, perm = [0,1,2,3]
 So it takes only 2 operations.
 </pre>
 

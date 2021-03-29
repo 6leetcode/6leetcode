@@ -1657,10 +1657,10 @@ LeetCode Solutions.
 |[1802](https://leetcode-cn.com/problems/maximum-value-at-a-given-index-in-a-bounded-array)|Medium|||||||||||
 |[1798](https://leetcode-cn.com/problems/maximum-number-of-consecutive-values-you-can-make)|Medium|||||||||||
 |[1778](https://leetcode-cn.com/problems/shortest-path-in-a-hidden-grid)|Medium|||||||||||
-|[5713](https://leetcode-cn.com/problems/number-of-different-integers-in-a-string)|Easy|||||||||||
-|[5714](https://leetcode-cn.com/problems/evaluate-the-bracket-pairs-of-a-string)|Medium|||||||||||
+|[1805](https://leetcode-cn.com/problems/number-of-different-integers-in-a-string)|Easy|||||||||||
+|[1807](https://leetcode-cn.com/problems/evaluate-the-bracket-pairs-of-a-string)|Medium|||||||||||
 |[1806](https://leetcode-cn.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation)|Medium|||||||||||
-|[5716](https://leetcode-cn.com/problems/maximize-number-of-nice-divisors)|Hard|||||||||||
+|[1808](https://leetcode-cn.com/problems/maximize-number-of-nice-divisors)|Hard|||||||||||
 |[1788](https://leetcode-cn.com/problems/maximize-the-beauty-of-the-garden)|Hard|||||||||||
 |[1794](https://leetcode-cn.com/problems/count-pairs-of-equal-substrings-with-minimum-difference)|Medium|||||||||||
 |[1804](https://leetcode-cn.com/problems/implement-trie-ii-prefix-tree)|Medium|||||||||||
@@ -1854,6 +1854,7 @@ LeetCode Solutions.
 |[1783](https://leetcode-cn.com/problems/grand-slam-titles)|Medium|||||||||||
 |[1789](https://leetcode-cn.com/problems/primary-department-for-each-employee)|Easy|||||||||||
 |[1795](https://leetcode-cn.com/problems/rearrange-products-table)|Easy|||||||||||
+|[1809](https://leetcode-cn.com/problems/ad-free-sessions)|Easy|||||||||||
 
 </details>
 
