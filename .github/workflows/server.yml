@@ -63,6 +63,5 @@ jobs:
       - name: Build fontend
         run: |
           cd apps/web
-          npm install -g yarn
-          yarn
-          yarn build
+          npm install
+          npm run build

@@ -6,8 +6,8 @@ ADD . .
 
 # ENV SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass
 
-RUN cd apps/web && yarn install && yarn build
-# RUN cd apps/web && yarn install --registry https://registry.npm.taobao.org && yarn build
+RUN cd apps/web && npm install && npm run build
+# RUN cd apps/web && npm install --registry https://registry.npm.taobao.org && npm build
 
 FROM httpd:alpine
 
