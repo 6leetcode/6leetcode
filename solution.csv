@@ -1,0 +1,1824 @@
+questionId,language,filename,data
+8,C,c.c,c.c,"int myAtoi(char *str) {
+  char *s;
+  long n = 0;
+  int sign = 0;
+
+  while (*str == ' ' || *str == '\t') {
+    str++;
+  }
+
+  if (*str == '-') {
+    if (isdigit(*++str)) {
+      sign = 1;
+    } else {
+      return 0;
+    }
+  }
+
+  if (*str == '+') {
+    if (isdigit(*++str)) {
+      sign = 0;
+    } else {
+      return 0;
+    }
+  }
+
+  for (s = str; *s != '\0'; s++) {
+    if (isdigit(*s)) {
+      int d = *s - '0';
+      if (sign) {
+        if (-n < (INT_MIN + d) / 10) {
+          n = INT_MIN;
+          break;
+        }
+      } else {
+        if (n > (INT_MAX - d) / 10) {
+          n = INT_MAX;
+          break;
+        }
+      }
+      n = n * 10 + d;
+    } else {
+      break;
+    }
+  }
+
+  return sign ? -n : n;
+}"
+7,C,c.c,c.c,"int reverse(int x) {
+  int y = 0;
+  int n;
+  while (x != 0) {
+    n = x % 10;
+    if (y > INT_MAX / 10 || y < INT_MIN / 10) {
+      return 0;
+    }
+    y = y * 10 + n;
+    x /= 10;
+  }
+  return y;
+}"
+7,Rust,rust1.rs,rust1.rs,"impl Solution {
+  pub fn reverse(x: i32) -> i32 {
+    let mut ret = 0i32;
+    let mut x_clone = x;
+    while x_clone != 0 {
+      let i = x_clone % 10;
+      let x1 = ret.overflowing_mul(10);
+      if x1.1 == true {
+        return 0;
+      }
+      let x2 = x1.0.overflowing_add(i);
+      if x2.1 == true {
+        return 0;
+      }
+      ret = x2.0;
+      x_clone = x_clone / 10;
+    }
+
+    ret
+  }
+}"
+4,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
+  return (*(signed int *)b > *(signed int *)a) ? 1 : 0;
+}
+
+double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Size) {
+  int total_length = nums1Size + nums2Size;
+
+  int *merge = (int *)malloc(sizeof(int) * total_length);
+
+  memcpy(merge, nums1, sizeof(int) * nums1Size);
+  memcpy(merge + nums1Size, nums2, sizeof(int) * nums2Size);
+
+  qsort(merge, total_length, sizeof(int), cmpfunc);
+
+  double result = 0;
+
+  if (total_length % 2 == 0) {
+    result = (*(merge + total_length / 2 - 1) + *(merge + total_length / 2)) / 2.0;
+  } else {
+    result = *(merge + total_length / 2);
+  }
+
+  free(merge);
+  return result;
+}"
+4,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
+    double result = 0;
+    nums1.insert(nums1.end(), nums2.begin(), nums2.end());
+    sort(nums1.begin(), nums1.end());
+
+    size_t length = nums1.size();
+    if (length % 2 == 0) {
+      result = (nums1[length / 2 - 1] + nums1[length / 2]) / 2.0;
+    } else {
+      result = double(nums1[length / 2]);
+    }
+    return result;
+  }
+};
+"
+4,Golang,go1.go,go1.go,"func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64 {
+	total := len(nums1) + len(nums2)
+
+	minKey := int(math.Ceil(float64(total)/2 - 1))
+	maxKey := total / 2
+
+	i := 0 // nums1 索引
+	j := 0 // nums2 索引
+	min := 0
+	max := 0
+	current := 0
+	v1 := 0
+	v2 := 0
+	for k := 0; k < 1; k-- {
+
+		if i < len(nums1) && !math.IsNaN(float64(nums1[i])) {
+			v1 = nums1[i]
+		} else {
+			v1 = nums2[j] + 1
+		}
+
+		if j < len(nums2) && !math.IsNaN(float64(nums2[j])) {
+			v2 = nums2[j]
+		} else {
+			fmt.Println(i)
+			v2 = nums1[i] + 1
+		}
+		if v1 > v2 {
+			j++
+		} else {
+			i++
+		}
+
+		if current == minKey {
+			if v1 > v2 {
+				min = v2
+			} else {
+				min = v1
+			}
+		}
+		if current == maxKey {
+			if v1 > v2 {
+				max = v2
+			} else {
+				max = v1
+			}
+			break
+		}
+		current++
+	}
+	return float64(min+max) / 2
+}
+"
+4,Golang,go2.go,go2.go,"func FindMedianSortedArFrays(nums1 []int, nums2 []int) (result float64) {
+	var total = make([]int, len(nums1)+len(nums2))
+	copy(total, nums1)
+	copy(total[len(nums1):], nums2)
+	sort.Ints(total)
+	var length = len(total)
+	if length%2 == 0 {
+		result = float64((total[int(length/2-1)] +
+			total[int(length/2)]) / 2.0)
+	} else {
+		result = float64(total[int(length/2)])
+	}
+	return
+}
+"
+6,C,c.c,c.c,"char *convert(char *s, int numRows) {
+  int len;
+  int i, j, k = 0;
+  char *p;
+  int step, up;
+
+  if (!s || !*s || numRows == 1) return s;
+
+  len = strlen(s);
+  p = malloc((len + 1) * sizeof(char));
+  //assert(p);
+
+  step = (numRows - 1) * 2; // max span
+
+  for (i = 0; i < numRows; i++) {
+    j = i; // first letter of each row
+    up = 1;
+    while (j < len) {
+      p[k++] = s[j];
+      if (i == 0 || i == numRows - 1) {
+        j += step; // full span
+      } else if (up) {
+        j += step - i * 2; // full span - offset
+        up = 0;
+      } else {
+        j += i * 2; // offset
+        up = 1;
+      }
+    }
+  }
+  p[k] = 0;
+  return p;
+}"
+3,C,c.c,c.c,"int lengthOfLongestSubstring(char *s) {
+  int offset[128];
+  int max_len = 0;
+  int len = 0;
+
+  memset(offset, 0xff, sizeof(offset));
+  for (int i = 0; i < strlen(s); i++) {
+    if (offset[(int)*(s + i)] == -1) {
+      len++;
+    } else {
+      if (i - offset[(int)*(s + i)] > len) {
+        len++;
+      } else {
+        len = i - offset[(int)*(s + i)];
+      }
+    }
+    if (len > max_len) {
+      max_len = len;
+    }
+    offset[(int)*(s + i)] = i;
+  }
+
+  return max_len;
+}"
+3,Golang,go1.go,go1.go,"func lengthOfLongestSubstring(s string) int {
+	max := 0
+	n := len(s)
+	start := 0
+	end := 0
+	mp := make(map[string]int, 0)
+	if n < 2 {
+		return n
+	}
+	for ; end < n; end++ {
+		char := s[end : end+1]
+		v, ok := mp[char]
+		if ok {
+			start = int(math.Max(float64(start), float64(v)))
+		}
+		max = int(math.Max(float64(max), float64(end-start+1)))
+		mp[char] = end + 1
+	}
+	return max
+}
+"
+3,Golang,go2.go,go2.go,"func lengthOfLongestSubstring(s string) int {
+	n := len(s)
+	if n < 2 {
+		return n
+	}
+	max := 0
+	for i := 0; i < n; i++ {
+		mp := make(map[uint8]int)
+		mp[s[i]] = 1
+		for j := i + 1; j < n; j++ {
+			if _, ok := mp[s[j]]; !ok {
+				mp[s[j]] = 1
+			} else {
+				break
+			}
+		}
+		if max < len(mp) {
+			max = len(mp)
+		}
+	}
+	return max
+}
+"
+3,Java,java1.java,java1.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int result = 0;
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1; j <= s.length(); j++) {
+                String substring = s.substring(i, j);
+                if (hasRepeat(substring)) {
+                    break;
+                } else if (substring.length() > result) {
+                    result = substring.length();
+                }
+            }
+        }
+        return result;
+    }
+
+    private boolean hasRepeat(String substring) {
+        Set<Character> charList = new HashSet<>();
+        for (int i = 0; i < substring.length(); i++) {
+            if (charList.contains(substring.charAt(i))) {
+                return true;
+            }
+            charList.add(substring.charAt(i));
+        }
+        return false;
+    }
+}"
+3,Java,java2.java,java2.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        int result = 0;
+        int length = 0;
+        HashMap<Character, Integer> resultMap = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (resultMap.containsKey(s.charAt(i))) {
+                i = resultMap.get(s.charAt(i));
+                resultMap.clear();
+                length = 0;
+                continue;
+            }
+            length++;
+            resultMap.put(s.charAt(i), i);
+            result = Math.max(result, length);
+        }
+        return result;
+    }
+}"
+3,Java,java3.java,java3.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        int result = 0;
+        int start = 0;
+        int length = 0;
+        HashMap<Character, Integer> indexMap = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (indexMap.containsKey(s.charAt(i)) && indexMap.get(s.charAt(i)) >= start) {
+                start = indexMap.get(s.charAt(i)) + 1;
+            }
+            length = i - start + 1;
+            indexMap.put(s.charAt(i), i);
+            result = Math.max(length, result);
+        }
+        return result;
+    }
+}"
+3,Java,java4.java,java4.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int result = 0;
+        LinkedList<Character> linkedList = new LinkedList<>();
+        for (int i = 0; i < s.length(); i++) {
+            while (linkedList.contains(s.charAt(i))) {
+                linkedList.removeFirst();
+            }
+            linkedList.add(s.charAt(i));
+            result = Math.max(result, linkedList.size());
+        }
+        return result;
+    }
+}"
+2,C,c.c,c.c,"struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
+  int carry = 0;
+  struct ListNode dummy;
+  struct ListNode *p = l1, *prev = &dummy;
+
+  dummy.next = p;
+  while (l1 != NULL || l2 != NULL) {
+    int sum = 0;
+    int last_carry = carry;
+
+    if (l1 != NULL) {
+      if (p == NULL) {
+        prev->next = l1;
+        p = l1;
+      }
+      sum += l1->val;
+      l1 = l1->next;
+    }
+
+    if (l2 != NULL) {
+      if (p == NULL) {
+        prev->next = l2;
+        p = l2;
+      }
+      sum += l2->val;
+      l2 = l2->next;
+    }
+
+    sum += last_carry;
+    carry = sum / 10;
+    p->val = sum % 10;
+    prev = p;
+    p = p->next;
+  }
+
+  if (carry) {
+    p = malloc(sizeof(*p));
+    p->val = carry;
+    p->next = NULL;
+    prev->next = p;
+  }
+
+  return dummy.next;
+}
+"
+2,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+    int carry = 0;
+    struct ListNode dummy;
+    struct ListNode *p = l1, *prev = &dummy;
+
+    dummy.next = p;
+    while (l1 != NULL || l2 != NULL) {
+      int sum = 0;
+      int last_carry = carry;
+
+      if (l1 != NULL) {
+        if (p == NULL) {
+          prev->next = l1;
+          p = l1;
+        }
+        sum += l1->val;
+        l1 = l1->next;
+      }
+
+      if (l2 != NULL) {
+        if (p == NULL) {
+          prev->next = l2;
+          p = l2;
+        }
+        sum += l2->val;
+        l2 = l2->next;
+      }
+
+      sum += last_carry;
+      carry = sum / 10;
+      p->val = sum % 10;
+      prev = p;
+      p = p->next;
+    }
+
+    if (carry) {
+      p = (struct ListNode *)malloc(sizeof(*p));
+      p->val = carry;
+      p->next = NULL;
+      prev->next = p;
+    }
+
+    return dummy.next;
+  }
+};
+"
+2,Golang,golang.go,golang.go,"func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	var head = &ListNode{Val: 0}
+	n1, n2, carry, current := 0, 0, 0, head
+	for l1 != nil || l2 != nil || carry != 0 {
+		if l1 == nil {
+			n1 = 0
+		} else {
+			n1 = l1.Val
+			l1 = l1.Next
+		}
+		if l2 == nil {
+			n2 = 0
+		} else {
+			n2 = l2.Val
+			l2 = l2.Next
+		}
+		current.Next = &ListNode{Val: (n1 + n2 + carry) % 10}
+		current = current.Next
+		carry = (n1 + n2 + carry) / 10
+	}
+	return head.Next
+}
+"
+2,Java,java.java,java.java,"class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode a = l1;
+        ListNode b = l2;
+        ListNode resultNode = new ListNode(0);
+        ListNode finalResult = resultNode;
+        int additional = 0;
+        while (a != null || b != null) {
+            int aVal = a != null ? a.val : 0;
+            int bVal = b != null ? b.val : 0;
+            int result = additional + aVal + bVal; // 计算两数相加
+            int m = result % 10; // 两数相加的余数是下一个链表的值
+            additional = result / 10; // 求商：如果商大于0,则下一个链表的值需要加n
+            finalResult.next = new ListNode(m);
+            finalResult = finalResult.next;
+            if (a != null) {
+                a = a.next;
+            }
+            if (b != null) {
+                b = b.next;
+            }
+        }
+        if (additional > 0) {
+            finalResult.next = new ListNode(additional);
+        }
+        return resultNode.next;
+    }
+}
+"
+2,PHP,php.php,php.php,"class Solution
+{
+
+    /**
+     * @param ListNode $l1
+     * @param ListNode $l2
+     * @return ListNode
+     */
+    public function addTwoNumbers($l1, $l2)
+    {
+        $obj     = null;
+        $prevObj = null;
+        $carry   = 0;
+        do {
+            $v1 = is_object($l1) ? $l1->val : 0;
+            $v2 = is_object($l2) ? $l2->val : 0;
+
+            $nodeVal = $v1 + $v2 + $carry;
+            if ($nodeVal >= 10) {
+                $nodeVal -= 10;
+                $carry   = 1;
+            } else {
+                $carry = 0;
+            }
+
+            $tmpObj = new listNode($nodeVal);
+
+            if (empty($obj)) {
+                $obj = $tmpObj;
+            } else {
+                $prevObj->next = $tmpObj;
+            }
+
+            $prevObj = $tmpObj;
+            $l1      = (is_object($l1) && $l1->next) ? $l1->next : 0;
+            $l2      = (is_object($l2) && $l2->next) ? $l2->next : 0;
+        } while (is_object($l1) || is_object($l2) || $carry);
+
+        return $obj;
+    }
+}
+"
+1,C,c.c,c.c,"int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
+  *returnSize = 2;
+
+  int *ans = (int *)malloc(sizeof(int) * *returnSize);
+  for (int i = 0; i < numsSize; i++) {
+    for (int j = i + 1; j < numsSize; j++) {
+      if (nums[i] + nums[j] == target) {
+        ans[0] = i;
+        ans[1] = j;
+        return ans;
+      }
+    }
+  }
+  return ans;
+}"
+1,C++,cpp.cc,cpp.cc,"class Solution {
+ public:
+  vector<int> twoSum(vector<int> &nums, int target) {
+    unordered_map<int, int> umap;
+    for (int i = 0; i < nums.size(); i++) {
+      if (umap.find(target - nums[i]) != umap.end()) {
+        return vector<int> {umap.find(target - nums[i])->second, i};
+      }
+      umap[nums[i]] = i;
+    }
+    return vector<int> { -1, -1};
+  }
+};"
+1,Golang,golang.go,golang.go,"func twoSum(nums []int, target int) []int {
+	var res = make([]int, 2)
+	res[0] = -1
+	res[1] = -1
+
+	var length = len(nums)
+
+	if length < 2 {
+		return res
+	}
+
+	var mp = make(map[int]int, len(nums))
+
+	for i := 0; i < length; i++ {
+		v, ok := mp[target-nums[i]]
+		if ok {
+			res[0] = v
+			res[1] = i
+			return res
+		} else {
+			mp[nums[i]] = i
+		}
+	}
+	return res
+}
+"
+1,Java,java.java,java.java,"class Solution {
+  public int[] twoSum(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+    for (int i = 0; i < nums.length; ++i) {
+      if (map.containsKey(target - nums[i])) {
+        return new int[] {map.get(target - nums[i]), i};
+      }
+      map.put(nums[i], i);
+    }
+    return new int[] { -1, -1};
+  }
+}"
+1,Rust,rust.rs,rust.rs,"use std::collections::HashMap;
+impl Solution {
+  pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    let mut map = HashMap::with_capacity(nums.len());
+    for (index, num) in nums.iter().enumerate() {
+      match map.get(&(target - num)) {
+        None => {
+          map.insert(num, index);
+        }
+        Some(sub_index) => return vec![*sub_index as i32, index as i32],
+      }
+    }
+    vec![]
+  }
+}"
+5,C,c.c,c.c,"char *longestPalindrome(char *s) {
+  int sz;
+  int i, j, k, l;
+  int where = 0, len = 0;
+
+  if (!s || !*s) return s;
+
+  sz = strlen(s);
+
+  for (i = 0, j = 0, k = 0; len < (sz - k) * 2; i = k, j = k) {
+    while (j + 1 < sz && s[j] == s[j + 1]) {
+      j++; // skip all repeating characters
+    }
+    k = j + 1; // where to start next try
+    while (i > 0 && j + 1 < sz && s[i - 1] == s[j + 1]) {
+      i--; // expand dual direction
+      j++;
+    }
+    l = j - i + 1; // what we have fond so far
+    if (len < l) {
+      len = l;
+      where = i;
+    }
+  }
+  char *news = (char *)malloc(sz + 1);
+  memcpy(news, s + where, len);
+  news[len] = 0;
+  return news;
+}"
+9,C,c.c,c.c,"bool isPalindrome(int x) {
+  int n, d, k = 0;
+
+  if (x < 0) return false;
+
+  n = x;
+  while (n) {
+    d = n % 10;
+    if (k > (0x7fffffff - d) / 10) return false; // overflow
+    k = k * 10 + d;
+    n = n / 10;
+  }
+
+  return (k == x);
+}"
+10,C,c.c,c.c,"bool isMatch(char *s, char *p) {
+  if (*p == '\0') {
+    return *s == '\0';
+  }
+
+  bool first_match = (*s != '\0') && (*s == *p || *p == '.');
+
+  if (p[1] == '*') {
+    return isMatch(s, p + 2) || (first_match && isMatch(s + 1, p));
+  } else {
+    return first_match && isMatch(s + 1, p + 1);
+  }
+}"
+11,C,c.c,c.c,"int maxArea(int *height, int heightSize) {
+  int min = 0, max = heightSize - 1;
+  int area_max = 0;
+  while (min < max) {
+    int area = (max - min) * (height[min] < height[max] ? height[min] : height[max]);
+    area_max = area > area_max ? area : area_max;
+    if (height[min] < height[max]) {
+      min++;
+    } else {
+      max--;
+    }
+  }
+  return area_max;
+}"
+12,C,c.c,c.c,"char *intToRoman(int num) {
+  char *symbol[] = {""M"", ""CM"", ""D"", ""CD"", ""C"", ""XC"", ""L"", ""XL"", ""X"", ""IX"", ""V"", ""IV"", ""I""};
+  int value[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+  char *result = (char *)malloc(30 * sizeof(char));
+  bzero(result, 30 * sizeof(char));
+  for (int i = 0; num != 0; i++) {
+    while (num >= value[i]) {
+      num -= value[i];
+      strcat(result, symbol[i]);
+    }
+  }
+  return result;
+}"
+12,Rust,rust.rs,rust.rs,"impl Solution {
+    pub fn int_to_roman(num: i32) -> String {
+        let mut number: i32 = num;
+        let mut result = String::from("""");
+        let symbol = [
+            ""M"", ""CM"", ""D"", ""CD"", ""C"", ""XC"", ""L"", ""XL"", ""X"", ""IX"", ""V"", ""IV"", ""I"",
+        ];
+        let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+        let mut index: usize = 0;
+        while number > 0 {
+            while number >= value[index] {
+                number -= value[index];
+                result += symbol[index];
+            }
+            index += 1;
+        }
+        return result;
+    }
+}"
+13,C,c.c,c.c,"int roman_to_integer(char c) {
+  switch (c) {
+  case 'I':
+    return 1;
+  case 'V':
+    return 5;
+  case 'X':
+    return 10;
+  case 'L':
+    return 50;
+  case 'C':
+    return 100;
+  case 'D':
+    return 500;
+  case 'M':
+    return 1000;
+  default:
+    return 0;
+  }
+}
+
+int romanToInt(char *s) {
+  int i, result = roman_to_integer(s[0]);
+
+  for (i = 1; s[i] != '\0'; i++) {
+    int prev = roman_to_integer(s[i - 1]);
+    int curr = roman_to_integer(s[i]);
+    // if left < right such as : IV(4), XL(40), IX(9) ...
+    if (prev < curr) {
+      result = result - prev + (curr - prev);
+    } else {
+      result += curr;
+    }
+  }
+
+  return result;
+}"
+14,C,c.c,c.c,"char *longestCommonPrefix(char **strs, int strsSize) {
+  if (strsSize == 0) {
+    return """";
+  }
+
+  int i, count = 0;
+  char *result = malloc(1000);
+  while (strs[0][count] != '\0') {
+    char c = strs[0][count];
+    for (i = 1; i < strsSize; i++) {
+      if (c != strs[i][count]) {
+        break;
+      }
+    }
+
+    if (i == strsSize) {
+      result[count++] = c;
+    } else {
+      break;
+    }
+  }
+  result[count++] = '\0';
+  return result;
+}"
+15,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
+  return *(int *)a - *(int *)b;
+}
+
+int **threeSum(int *nums, int numsSize, int *returnSize, int **returnColumnSizes) {
+  qsort(nums, numsSize, sizeof(int), cmpfunc);
+  int **ans = NULL;
+  *returnSize = 0;
+  *returnColumnSizes = NULL;
+
+  int virtual_size = 165;
+
+  ans = (int **)malloc(sizeof(int *) * virtual_size);
+  *returnColumnSizes = (int *)malloc(sizeof(int) * virtual_size);
+
+  for (uint16_t i = 0; i < numsSize; i++) {
+    if (nums[i] > 0) {
+      return ans;
+    }
+    if (i > 0 && nums[i] == nums[i - 1]) {
+      continue;
+    }
+    int left = i + 1;
+    int right = numsSize - 1;
+    while (left < right) {
+      int temp = nums[i] + nums[left] + nums[right];
+      if (temp > 0) {
+        right--;
+      } else if (temp < 0) {
+        left++;
+      } else {
+        if (*returnSize >= virtual_size) {
+          virtual_size *= 2;
+          ans = (int **)realloc(ans, sizeof(int *) * virtual_size);
+          *returnColumnSizes = (int *)realloc(*returnColumnSizes, sizeof(int) * virtual_size);
+        }
+        *(ans + *returnSize) = (int *)malloc(sizeof(int) * 3);
+        *(*returnColumnSizes + *returnSize) = 3;
+        ans[*returnSize][0] = nums[i];
+        ans[*returnSize][1] = nums[left];
+        ans[*returnSize][2] = nums[right];
+        while (left < right && nums[left] == nums[left + 1]) {
+          left++;
+        }
+        while (left < right && nums[right] == nums[right - 1]) {
+          right--;
+        }
+        left++;
+        right--;
+        (*returnSize)++;
+      }
+    }
+  }
+  ans = (int **)realloc(ans, sizeof(int *) * *returnSize);
+  *returnColumnSizes = (int *)realloc(*returnColumnSizes, sizeof(int) * *returnSize);
+  return ans;
+}"
+15,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  vector<vector<int>> threeSum(vector<int> &nums) {
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> ans;
+    for (int i = 0; i < nums.size(); i++) {
+      if (nums[i] > 0) {
+        return ans;
+      }
+      if (i > 0 and nums[i] == nums[i - 1]) {
+        continue;
+      }
+      int left = i + 1;
+      int right = nums.size() - 1;
+      while (left < right) {
+        int temp = nums[i] + nums[left] + nums[right];
+        if (temp < 0) {
+          left++;
+        } else if (temp > 0) {
+          right--;
+        } else {
+          ans.push_back({nums[i], nums[left], nums[right]});
+          while (left < right && nums[left] == nums[left + 1])
+            left++;
+          while (left < right && nums[right] == nums[right - 1])
+            right--;
+          left++;
+          right--;
+        }
+      }
+    }
+    return ans;
+  }
+};"
+16,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
+  return *(int *)a - *(int *)b;
+}
+
+int threeSumClosest(int *nums, int numsSize, int target) {
+  qsort(nums, numsSize, sizeof(int), cmpfunc);
+  int ans = nums[0] + nums[1] + nums[numsSize - 1];
+  for (int i = 0; i < numsSize; i++) {
+    int left = i + 1;
+    int right = numsSize - 1;
+    while (left < right) {
+      int temp = nums[i] + nums[left] + nums[right];
+      if (abs(target - ans) > abs(target - temp)) {
+        ans = temp;
+      }
+      if (target > temp) {
+        left++;
+      } else {
+        right--;
+      }
+    }
+  }
+  return ans;
+}"
+16,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  int threeSumClosest(vector<int> &nums, int target) {
+    sort(nums.begin(), nums.end());
+    int ans = nums[0] + nums[1] + nums[nums.size() - 1];
+    for (int i = 0; i < nums.size(); i++) {
+      int left = i + 1;
+      int right = nums.size() - 1;
+      while (left < right) {
+        int temp = nums[i] + nums[left] + nums[right];
+        if (abs(target - ans) > abs(target - temp)) {
+          ans = temp;
+        }
+        if (target - temp > 0) {
+          left++;
+        } else {
+          right--;
+        }
+      }
+    }
+    return ans;
+  }
+};"
+21,C,c1.c,c1.c,"struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2) {
+  if (l1 == NULL) {
+    return l2;
+  } else if (l2 == NULL) {
+    return l1;
+  } else if (l1->val < l2->val) {
+    l1->next = mergeTwoLists(l1->next, l2);
+    return l1;
+  } else {
+    l2->next = mergeTwoLists(l1, l2->next);
+    return l2;
+  }
+}
+"
+21,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
+    if (l1 == nullptr) {
+      return l2;
+    } else if (l2 == nullptr) {
+      return l1;
+    } else if (l1->val < l2->val) {
+      l1->next = mergeTwoLists(l1->next, l2);
+      return l1;
+    } else {
+      l2->next = mergeTwoLists(l1, l2->next);
+      return l2;
+    }
+  }
+};
+"
+31,C,c1.c,c1.c,"void swap(int *a, int *b) {
+  int t = *a;
+  *a = *b, *b = t;
+}
+
+void reverse(int *nums, int left, int right) {
+  while (left < right) {
+    swap(nums + left, nums + right);
+    left++, right--;
+  }
+}
+
+void nextPermutation(int *nums, int numsSize) {
+  int i = numsSize - 2;
+  while (i >= 0 && nums[i] >= nums[i + 1]) {
+    i--;
+  }
+  if (i >= 0) {
+    int j = numsSize - 1;
+    while (j >= 0 && nums[i] >= nums[j]) {
+      j--;
+    }
+    swap(nums + i, nums + j);
+  }
+  reverse(nums, i + 1, numsSize - 1);
+}"
+31,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  void nextPermutation(vector<int> &nums) {
+    int n = nums.size();
+
+    int mx = nums.back();
+    int i;
+    for (i = n - 2; i >= 0; i--)
+      if (nums[i] < nums[i + 1])
+        break;
+
+    if (~i) {
+      int j = i + 1;
+      for (int k = j; k < n; k++)
+        if (nums[k] > nums[i] && nums[k] <= nums[j])
+          j = k;
+
+      swap(nums[i], nums[j]);
+    }
+
+    reverse(nums.begin() + i + 1, nums.end());
+  }
+};"
+48,C,c1.c,c1.c,"void rotate(int **matrix, int matrixSize, int *matrixColSize) {
+  for (int i = 0; i < matrixSize; i++) {
+    if (i < matrixSize / 2) {
+      int *temp = matrix[i];
+      matrix[i] = matrix[matrixSize - 1 - i];
+      matrix[matrixSize - 1 - i] = temp;
+    }
+  }
+  for (int i = 0; i < matrixSize; ++i) {
+    for (int j = i + 1; j < matrixColSize[i]; ++j) {
+      int temp = matrix[i][j];
+      matrix[i][j] = matrix[j][i];
+      matrix[j][i] = temp;
+    }
+  }
+}"
+48,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  void rotate(vector<vector<int>> &matrix) {
+    reverse(matrix.begin(), matrix.end());
+    for (int i = 0; i < matrix.size(); ++i) {
+      for (int j = i + 1; j < matrix[i].size(); ++j)
+        swap(matrix[i][j], matrix[j][i]);
+    }
+  }
+};
+"
+66,C,c.c,c.c,"int *plusOne(int *digits, int digitsSize, int *returnSize) {
+  int carry = 1;
+  for (int i = digitsSize - 1; i >= 0; i--) {
+    int new_digit = (digits[i] + carry) % 10;
+    carry = (digits[i] + carry) / 10;
+    digits[i] = new_digit;
+  }
+
+  *returnSize = digitsSize;
+
+  int *ans;
+
+  if (carry == 1) {
+    ans = (int *)malloc(sizeof(int) * (digitsSize + 1));
+    bzero(ans, sizeof(int) * (digitsSize + 1));
+    *returnSize = digitsSize + 1;
+    ans[0] = 1;
+  } else {
+    ans = (int *)malloc(sizeof(int) * digitsSize);
+    memcpy(ans, digits, sizeof(int) * digitsSize);
+  }
+
+  return ans;
+}"
+66,C++,cpp.cc,cpp.cc,"class Solution {
+ public:
+  vector<int> plusOne(vector<int> &digits) {
+    int n = digits.size();
+    int carry = 1;
+    for (int i = n - 1; i >= 0; i--) {
+      int new_digit = (digits[i] + carry) % 10;
+      carry = (digits[i] + carry) / 10;
+      digits[i] = new_digit;
+    }
+    if (carry) digits.insert(digits.begin(), 1);
+    return digits;
+  }
+};"
+66,Golang,golang.go,golang.go,"func plusOne(digits []int) []int {
+	for i := len(digits) - 1; i >= 0; i-- {
+		if digits[i] == 9 {
+			digits[i] = 0
+		} else {
+			digits[i] = digits[i] + 1
+			break
+		}
+	}
+
+	if digits[0] == 0 {
+		var ans = make([]int, len(digits)+1)
+		ans[0] = 1
+		return ans
+	}
+	return digits
+}
+"
+66,Rust,rust1.rs,rust1.rs,"impl Solution {
+  pub fn plus_one(digits: Vec<i32>) -> Vec<i32> {
+    let mut digits = digits;
+    let mut carry = 1;
+    for i in (0..digits.len()).rev() {
+      let new_digit: i32 = (digits[i] + carry) % 10;
+      carry = (digits[i] + carry) / 10;
+      digits[i] = new_digit;
+    }
+    if carry > 0 {
+      digits.insert(0, 1);
+    }
+    digits
+  }
+}"
+67,C,c.c,c.c,"char *addBinary(char *a, char *b) {
+  int len_a = strlen(a);
+  int len_b = strlen(b);
+
+  int len    = len_a > len_b ? len_a + 1 : len_b + 1;
+  int length = len;
+
+  char *res = (char *)malloc(len * (sizeof(char)));
+  memset(res, '\0', len);
+
+  int upper = 0;
+  while (len_a > 0 || len_b > 0) {
+    int an = len_a > 0 ? a[--len_a] - '0' : 0;
+    int bn = len_b > 0 ? b[--len_b] - '0' : 0;
+    if (an + bn + upper == 3) {
+      res[len - 2] = 49;
+      upper        = 1;
+    } else if (an + bn + upper == 2) {
+      res[len - 2] = 48;
+      upper        = 1;
+    } else if (an + bn + upper == 1) {
+      res[len - 2] = 49;
+      upper        = 0;
+    } else if (an + bn + upper == 0) {
+      res[len - 2] = 48;
+      upper        = 0;
+    }
+    len--;
+  }
+  if (upper == 1) {
+    res = (char *)realloc(res, (length + 1) * (sizeof(char)));
+    memmove(res + 1, res, length * sizeof(char));
+    res[0] = '1';
+  }
+  return res;
+}"
+67,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  string addBinary(string a, string b) {
+    int len_a = a.size();
+    int len_b = b.size();
+
+    int len = len_a > len_b ? len_a : len_b;
+
+    string res = """";
+
+    int upper = 0;
+    while (len_a > 0 || len_b > 0) {
+      int an = len_a > 0 ? a[--len_a] - '0' : 0;
+      int bn = len_b > 0 ? b[--len_b] - '0' : 0;
+      if (an + bn + upper == 3) {
+        res = ""1"" + res;
+        upper = 1;
+      } else if (an + bn + upper == 2) {
+        res = ""0"" + res;
+        upper = 1;
+      } else if (an + bn + upper == 1) {
+        res = ""1"" + res;
+        upper = 0;
+      } else if (an + bn + upper == 0) {
+        res = ""0"" + res;
+        upper = 0;
+      }
+      len--;
+    }
+    if (upper == 1) {
+      res = ""1"" + res;
+    }
+    return res;
+  }
+};"
+69,C,c.c,c.c,"int mySqrt(int x) {
+  if (x < 2) return x;
+
+  int left = (int)pow(M_E, 0.5 * log(x));
+  int right = left + 1;
+  return (long)right * right > x ? left : right;
+}"
+69,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  int mySqrt(int x) {
+    if (x < 2) return x;
+
+    int left = (int)pow(M_E, 0.5 * log(x));
+    int right = left + 1;
+    return (long)right * right > x ? left : right;
+  }
+};"
+70,C,c1.c,c1.c,"int climbStairs(int n) {
+  int prev = 0;
+  int cur  = 1;
+  for (int i = 1; i <= n; ++i) {
+    int tmp = cur;
+    cur += prev;
+    prev = tmp;
+  }
+  return cur;
+}"
+70,C,c2.c,c2.c,"int climbStairs(int n) {
+  // with this formal `$\frac{\frac{1+\sqrt{5}^{n}}{2}-\frac{1-\sqrt{5}^{n}}{2}}{\sqrt{5}}$`
+  const double s = sqrt(5);
+  return floor((pow((1 + s) / 2, n + 1) + pow((1 - s) / 2, n + 1)) / s + 0.5);
+}"
+70,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int climbStairs(int n) {
+    int prev = 0;
+    int cur  = 1;
+    for (int i = 1; i <= n; ++i) {
+      int tmp = cur;
+      cur += prev;
+      prev = tmp;
+    }
+    return cur;
+  }
+};"
+70,C++,cpp2.cc,cpp2.cc,"class Solution {
+public:
+  int climbStairs(int n) {
+    // with this formal `$\frac{\frac{1+\sqrt{5}^{n}}{2}-\frac{1-\sqrt{5}^{n}}{2}}{\sqrt{5}}$`
+    const double s = sqrt(5);
+    return floor((pow((1 + s) / 2, n + 1) + pow((1 - s) / 2, n + 1)) / s + 0.5);
+  }
+};"
+70,Rust,rust1.rs,rust1.rs,"impl Solution {
+  pub fn climb_stairs(n: i32) -> i32 {
+    let mut prev: i32 = 0;
+    let mut cur: i32 = 1;
+    for _i in 1..(n + 1) {
+      let tmp: i32 = cur;
+      cur += prev;
+      prev = tmp;
+    }
+    cur
+  }
+}
+"
+74,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  bool searchMatrix(vector<vector<int>> &matrix, int target) {
+    int n = matrix.size();
+    if (!n)
+      return false;
+    int m = matrix[0].size();
+
+    int i = 0;
+    int j = m - 1;
+
+    while (i < n && j >= 0)
+      if (matrix[i][j] == target)
+        return true;
+      else if (matrix[i][j] > target)
+        j--;
+      else
+        i++;
+
+    return false;
+  }
+};"
+75,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  void sortColors(vector<int> &nums) {
+    int n = nums.size();
+    int ptr = 0;
+    for (int i = 0; i < n; ++i) {
+      if (nums[i] == 0) {
+        swap(nums[i], nums[ptr]);
+        ++ptr;
+      }
+    }
+    for (int i = ptr; i < n; ++i) {
+      if (nums[i] == 1) {
+        swap(nums[i], nums[ptr]);
+        ++ptr;
+      }
+    }
+  }
+};"
+89,C,c1.c,c1.c,"int *grayCode(int n, int *returnSize) {
+  *returnSize = (int)(pow(2, n));
+  int *ans = (int *)malloc(sizeof(int) * (*returnSize));
+  for (int i = 0; i < *returnSize; i++) {
+    ans[i] = (i >> 1) ^ i;
+  }
+  return ans;
+}"
+89,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  vector<int> grayCode(int n) {
+    vector<int> res;
+    for (int i = 0; i < pow(2, n); ++i) {
+      res.push_back((i >> 1) ^ i);
+    }
+    return res;
+  }
+};"
+118,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  vector<vector<int>> generate(int numRows) {
+    vector<vector<int>> ans(numRows);
+    if (numRows == 0)
+      return ans;
+    for (int i = 0; i < numRows; ++i) {
+      ans[i].resize(i + 1);
+      ans[i][0] = 1;
+      ans[i][i] = 1;
+      if (i > 1) {
+        for (int j = 1; j <= i >> 1; ++j) {
+          ans[i][j] = ans[i - 1][j - 1] + ans[i - 1][j];
+          ans[i][i - j] = ans[i][j];
+        }
+      }
+    }
+    return ans;
+  }
+};"
+121,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int maxProfit(vector<int> &prices) {
+    if (prices.size() == 0) {
+      return 0;
+    }
+    int max_profit = 0;
+    int min_price = prices[0];
+    for (auto p = prices.begin(); p != prices.end(); p++) {
+      if (p == prices.begin()) {
+        continue;
+      }
+      if (*p <= min_price) {
+        min_price = *p;
+      } else {
+        max_profit = max_profit > *p - min_price ? max_profit : *p - min_price;
+      }
+    }
+    return max_profit;
+  }
+};"
+204,C,c1.c,c1.c,"int countPrimes(int n) {
+  bool *isPrim = (bool *)malloc(sizeof(bool) * n);
+  memset(isPrim, true, n);
+  for (int i = 2; i * i < n; i++) {
+    if (isPrim[i]) {
+      for (int j = i * i; j < n; j += i)
+        isPrim[j] = false;
+    }
+  }
+  int count = 0;
+  for (int i = 2; i < n; i++)
+    if (isPrim[i]) count++;
+  free(isPrim);
+  return count;
+}"
+204,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int countPrimes(int n) {
+    bool *isPrim = new bool[n];
+    memset(isPrim, true, n);
+    for (int i = 2; i * i < n; i++) {
+      if (isPrim[i]) {
+        for (int j = i * i; j < n; j += i)
+          isPrim[j] = false;
+      }
+    }
+    int count = 0;
+    for (int i = 2; i < n; i++)
+      if (isPrim[i]) count++;
+    delete[] isPrim;
+    return count;
+  }
+};"
+204,Java,java1.java,java1.java,"class Solution {
+  public int countPrimes(int n) {
+    boolean[] isPrim = new boolean[n];
+    Arrays.fill(isPrim, true);
+    for (int i = 2; i * i < n; i++)
+      if (isPrim[i])
+        for (int j = i * i; j < n; j += i)
+          isPrim[j] = false;
+
+    int count = 0;
+    for (int i = 2; i < n; i++)
+      if (isPrim[i]) count++;
+    return count;
+  }
+}"
+205,C,c.c,c.c,"bool isIsomorphic(char *s, char *t) {
+  char a[128] = {0};
+  char b[128] = {0};
+  while (*s) {
+    if (a[(int)(*s)] == 0 && b[(int)(*t)] == 0) {
+      a[(int)(*s)] = *t;
+      b[(int)(*t)] = *s;
+    } else if (a[(int)(*s)] == *t && b[(int)(*t)] == *s) {
+    } else {
+      return false;
+    }
+    s++;
+    t++;
+  }
+  return true;
+}"
+292,C,c1.c,c1.c,"bool canWinNim(int n) {
+  return n % 4 != 0;
+}"
+292,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  bool canWinNim(int n) {
+    return n % 4 != 0;
+  }
+};"
+292,Golang,go1.go,go1.go,"func canWinNim(n int) bool {
+	return n%4 == 0
+}
+"
+292,Java,java1.java,java1.java,"class Solution {
+  public boolean canWinNim(int n) {
+    return n % 4 == 0;
+  }
+}"
+292,JavaScript,js1.js,js1.js,"/**
+ * @param {number} n
+ * @return {boolean}
+ */
+var canWinNim = function(n) {
+    return n % 4 ==0;
+};"
+292,Rust,rust1.rs,rust1.rs,"impl Solution {
+    pub fn can_win_nim(n: i32) -> bool {
+        n % 4 == 0
+    }
+}"
+300,C,c1.c,c1.c,"int lengthOfLIS(int *nums, int numsSize) {
+  if (nums == NULL || numsSize == 0) return 0;
+  int *dp = (int *)malloc(numsSize * sizeof(int));
+  int i, j;
+  int max = 1;
+  for (i = 0; i < numsSize; i++) {
+    int v = 1;
+    for (j = 0; j < i; j++) {
+      if (nums[i] > nums[j] && dp[j] + 1 > v)
+        v = dp[j] + 1;
+    }
+    dp[i] = v;
+    if (v > max)
+      max = v;
+  }
+  free(dp);
+  return max;
+}"
+300,C,c2.c,c2.c,"int lengthOfLIS(int *nums, int numsSize) {
+  if (nums == NULL || numsSize == 0) return 0;
+  int *lis = (int *)malloc(numsSize * sizeof(int));
+  lis[0] = nums[0];
+  int len = 1;
+  int i;
+  for (i = 1; i < numsSize; i++) {
+    if (nums[i] > lis[len - 1]) {
+      lis[len++] = nums[i];
+    } else {
+      int l = 0, r = len - 1;
+      while (l < r) {
+        int m = l + (r - l) / 2;
+        if (lis[m] >= nums[i]) {
+          r = m;
+        } else {
+          l = m + 1;
+        }
+      }
+      lis[l] = nums[i];
+    }
+  }
+  free(lis);
+  return len;
+}"
+498,C,c1.c,c1.c,"int *findDiagonalOrder(int **matrix, int matrixSize, int *matrixColSize, int *returnSize) {
+  if (matrix == NULL || *matrix == NULL || matrixSize <= 0 || *matrixColSize <= 0 || matrixColSize == NULL || returnSize == NULL) {
+    return NULL;
+  }
+
+  *returnSize = matrixSize * *matrixColSize;
+
+  int *ret = (int *)malloc(sizeof(int) * *returnSize);
+
+  if (ret == NULL) {
+    return NULL;
+  }
+
+  for (int i = 0; i < *returnSize; i++) {
+    ret[i] = 0;
+  }
+
+  int index = 0;
+  for (int idx = 0; idx < matrixSize + *matrixColSize - 1; idx++) {
+    for (int i = idx, j = 0; i >= 0; i--, j++) {
+      if (i < matrixSize && j < *matrixColSize) {
+        if (idx % 2 == 0) {
+          ret[index] = matrix[i][j];
+        } else {
+          ret[index] = matrix[j][i];
+        }
+        index++;
+      }
+    }
+  }
+
+  return ret;
+}"
+514,C,c1.c,c1.c,"int findRotateSteps(char *ring, char *key) {
+  int n = strlen(ring), m = strlen(key);
+  int pos[26][n], posSize[26];
+  memset(posSize, 0, sizeof(posSize));
+  for (int i = 0; i < n; ++i) {
+    int x = ring[i] - 'a';
+    pos[x][posSize[x]++] = i;
+  }
+  int dp[m][n];
+  memset(dp, 0x3f3f3f3f, sizeof(dp));
+  for (int i = 0; i < posSize[key[0] - 'a']; i++) {
+    int x = pos[key[0] - 'a'][i];
+    dp[0][x] = fmin(x, n - x) + 1;
+  }
+  for (int i = 1; i < m; ++i) {
+    for (int j = 0; j < posSize[key[i] - 'a']; ++j) {
+      int x = pos[key[i] - 'a'][j];
+      for (int k = 0; k < posSize[key[i - 1] - 'a']; ++k) {
+        int y = pos[key[i - 1] - 'a'][k];
+        dp[i][x] = fmin(dp[i][x], dp[i - 1][y] + fmin(abs(x - y), n - abs(x - y)) + 1);
+      }
+    }
+  }
+  int ret = dp[m - 1][0];
+  for (int i = 1; i < n; ++i) {
+    ret = fmin(ret, dp[m - 1][i]);
+  }
+  return ret;
+}"
+514,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int findRotateSteps(string ring, string key) {
+    int n = ring.size(), m = key.size();
+    vector<int> pos[26];
+    for (int i = 0; i < n; ++i) {
+      pos[ring[i] - 'a'].push_back(i);
+    }
+    int dp[m][n];
+    memset(dp, 0x3f3f3f3f, sizeof(dp));
+    for (auto &i : pos[key[0] - 'a']) {
+      dp[0][i] = min(i, n - i) + 1;
+    }
+    for (int i = 1; i < m; ++i) {
+      for (auto &j : pos[key[i] - 'a']) {
+        for (auto &k : pos[key[i - 1] - 'a']) {
+          dp[i][j] = min(dp[i][j], dp[i - 1][k] + min(abs(j - k), n - abs(j - k)) + 1);
+        }
+      }
+    }
+    return *min_element(dp[m - 1], dp[m - 1] + n);
+  }
+};"
+514,Java,java1.java,java1.java,"class Solution {
+  public int findRotateSteps(String ring, String key) {
+    int n = ring.length(), m = key.length();
+    @SuppressWarnings(""unchecked"")
+    ArrayList<Integer>[] pos = new ArrayList[26];
+    for (int i = 0; i < 26; ++i) {
+      pos[i] = new ArrayList<Integer>();
+    }
+    for (int i = 0; i < n; ++i) {
+      pos[ring.charAt(i) - 'a'].add(i);
+    }
+    int[][] dp = new int[m][n];
+    for (int i = 0; i < m; ++i) {
+      Arrays.fill(dp[i], 0x3f3f3f);
+    }
+    for (int i : pos[key.charAt(0) - 'a']) {
+      dp[0][i] = Math.min(i, n - i) + 1;
+    }
+    for (int i = 1; i < m; ++i) {
+      for (int j : pos[key.charAt(i) - 'a']) {
+        for (int k : pos[key.charAt(i - 1) - 'a']) {
+          dp[i][j] = Math.min(dp[i][j], dp[i - 1][k] + Math.min(Math.abs(j - k), n - Math.abs(j - k)) + 1);
+        }
+      }
+    }
+    return Arrays.stream(dp[m - 1]).min().getAsInt();
+  }
+}"
+514,JavaScript,js1.js,js1.js,"const getIdx = (str, v) => str.codePointAt(v) - 'a'.codePointAt(0);
+var findRotateSteps = function (ring, key) {
+  const n = ring.length, m = key.length;
+  const pos = new Array(26).fill(0).map(v => []);
+  for (let i = 0; i < n; ++i) {
+    pos[getIdx(ring, i)].push(i);
+  }
+  const dp = new Array(m).fill(0).map(v => new Array(n).fill(Number.MAX_SAFE_INTEGER));
+  for (const i of pos[getIdx(key, 0)]) {
+    dp[0][i] = Math.min(i, n - i) + 1;
+  }
+  for (let i = 1; i < m; ++i) {
+    for (const j of pos[getIdx(key, i)]) {
+      for (const k of pos[getIdx(key, i - 1)]) {
+        dp[i][j] = Math.min(dp[i][j], dp[i - 1][k] + Math.min(Math.abs(j - k), n - Math.abs(j - k)) + 1);
+      }
+    }
+  }
+  return dp[m - 1].reduce((pre, cur) => Math.min(pre, cur), Number.MAX_SAFE_INTEGER);
+};"
+909,C,c1.c,c1.c,"bool stoneGame(int *piles, int pilesSize) {
+  return true;
+}"
+909,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  bool stoneGame(vector<int> &piles) {
+    return true;
+  }
+};"
+909,Golang,go1.go,go1.go,"func stoneGame(piles []int) bool {
+	return true
+}
+"
+909,Java,java1.java,java1.java,"class Solution {
+  public boolean stoneGame(int[] piles) {
+    return true;
+  }
+}"
+909,JavaScript,js1.js,js1.js,"/**
+ * @param {number[]} piles
+ * @return {boolean}
+ */
+var stoneGame = function (piles) {
+    return true;
+};"
+909,Rust,rust1.rs,rust1.rs,"impl Solution {
+    pub fn stone_game(_piles: Vec<i32>) -> bool {
+        true
+    }
+}"
+1014,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  vector<vector<int>> kClosest(vector<vector<int>> &points, int K) {
+    nth_element(points.begin(), points.begin() + K, points.end(),
+                [](vector<int> &p, vector<int> &q) {
+                  return p[0] * p[0] + p[1] * p[1] < q[0] * q[0] + q[1] * q[1];
+                });
+    return vector<vector<int>>(points.begin(), points.begin() + K);
+  }
+
+  static bool f(vector<int> p1, vector<int> p2) {
+    return p1[0] * p1[0] + p1[1] * p1[1] < p2[0] * p2[0] + p2[1] * p2[1];
+  }
+};"
+1084,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int numKLenSubstrNoRepeats(string S, int k) {
+    unordered_map<char, int> mp;
+    int n = S.size();
+    if (n < k)
+      return 0;
+    int ans = 0;
+
+    for (int i = 0; i < k; i++)
+      mp[S[i]]++;
+
+    if (mp.size() == k)
+      ans++;
+
+    for (int i = k; i < n; i++) {
+      mp[S[i - k]]--;
+      if (!mp[S[i - k]])
+        mp.erase(S[i - k]);
+
+      mp[S[i]]++;
+
+      if (mp.size() == k)
+        ans++;
+    }
+    return ans;
+  }
+};
+"
+1123,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int calculateTime(string keyboard, string word) {
+    unordered_map<char, int> mp;
+    for (int i = 0; i < 26; i++)
+      mp[keyboard[i]] = i;
+    int ans = 0;
+    int i = 0;
+    for (char c : word) {
+      ans += abs(i - mp[c]);
+      i = mp[c];
+    }
+
+    return ans;
+  }
+};
+"
+1197,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  bool parseBoolExpr(string expression) {
+    vector<char> stack;
+
+    for (char c : expression) {
+      switch (c) {
+      case 't':
+      case 'f':
+      case '(':
+      case '!':
+      case '&':
+      case '|':
+        stack.push_back(c);
+        break;
+      case ')':
+        resolve(stack);
+      }
+    }
+    return stack[0] == 't';
+  }
+
+  void resolve(vector<char> &stack) {
+    vector<char> temp;
+
+    while (stack.back() != '(') {
+      temp.push_back(stack.back());
+      stack.pop_back();
+    }
+
+    stack.pop_back();
+    char op = stack.back();
+    stack.pop_back();
+    if (op == '!')
+      stack.push_back(temp[0] == 'f' ? 't' : 'f');
+    else if (op == '&')
+      stack.push_back(find(temp.begin(), temp.end(), 'f') == temp.end() ? 't' : 'f');
+    else if (op == '|')
+      stack.push_back(find(temp.begin(), temp.end(), 't') != temp.end() ? 't' : 'f');
+  }
+};
+"
+1434,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  string freqAlphabets(string s) {
+    unordered_map<string, char> mp;
+    for (int i = 1; i <= 9; i++)
+      mp[to_string(i)] = 'a' + i - 1;
+
+    for (int i = 10; i <= 26; i++)
+      mp[to_string(i) + '#'] = 'j' + i - 10;
+
+    string result = """";
+    for (int i = 0; i < s.size(); i++) {
+      if (i + 2 < s.size()) {
+        auto t = s.substr(i, 3);
+        if (mp.count(t)) {
+          result += mp[t];
+          i += 2;
+          continue;
+        }
+      }
+      result += mp[s.substr(i, 1)];
+    }
+    return result;
+  }
+};
+"
+1460,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int numberOfSubstrings(string s) {
+    int a, b, c, l, ans;
+    a = b = c = l = ans = 0;
+
+    for (int r = 0; r < s.size(); r++) {
+      if (s[r] == 'a')
+        a++;
+      if (s[r] == 'b')
+        b++;
+      if (s[r] == 'c')
+        c++;
+      while (a > 1 || b > 1 || c > 1) {
+        if (s[l] == 'a' && a > 1) {
+          a--;
+          l++;
+        } else if (s[l] == 'b' && b > 1) {
+          b--;
+          l++;
+        } else if (s[l] == 'c' && c > 1) {
+          c--;
+          l++;
+        } else
+          break;
+      }
+
+      if (a && b && c)
+        ans += l + 1;
+    }
+    return ans;
+  }
+};
+"
