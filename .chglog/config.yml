@@ -1,0 +1,31 @@
+style: github
+template: CHANGELOG.tpl.md
+info:
+  title: CHANGELOG
+  repository_url: https://github.com/6leetcode/6leetcode
+options:
+  commits:
+    filters:
+      Type:
+        - sparkles
+        - bug
+        - zap
+        - recycle
+        - chicken
+        - fire
+  commit_groups:
+    title_maps:
+      sparkles: Features
+      bug: Bug Fixes
+      zap: Performance Improvements
+      recycle: Code Refactoring
+      chicken: Problems
+      fire: Code Refactoring
+  header:
+    pattern: "^:(\\w*)\\:\\s(.*)$"
+    pattern_maps:
+      - Type
+      - Subject
+  notes:
+    keywords:
+      - BREAKING CHANGE
