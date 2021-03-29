@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 	"strconv"
-	"sync"
 	"time"
 
 	"github.com/parnurzeal/gorequest"
@@ -16,8 +15,6 @@ import (
 	"leet/common/solutions"
 	"leet/common/table"
 )
-
-var locker sync.Mutex
 
 const maxWorker = 8
 
