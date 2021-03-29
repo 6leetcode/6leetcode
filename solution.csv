@@ -1,4 +1,168 @@
 questionId,language,filename,data
+1,C,c.c,c.c,"int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
+  *returnSize = 2;
+
+  int *ans = (int *)malloc(sizeof(int) * *returnSize);
+  for (int i = 0; i < numsSize; i++) {
+    for (int j = i + 1; j < numsSize; j++) {
+      if (nums[i] + nums[j] == target) {
+        ans[0] = i;
+        ans[1] = j;
+        return ans;
+      }
+    }
+  }
+  return ans;
+}"
+1,C++,cpp.cc,cpp.cc,"class Solution {
+ public:
+  vector<int> twoSum(vector<int> &nums, int target) {
+    unordered_map<int, int> umap;
+    for (int i = 0; i < nums.size(); i++) {
+      if (umap.find(target - nums[i]) != umap.end()) {
+        return vector<int> {umap.find(target - nums[i])->second, i};
+      }
+      umap[nums[i]] = i;
+    }
+    return vector<int> { -1, -1};
+  }
+};"
+1,Golang,golang.go,golang.go,"func twoSum(nums []int, target int) []int {
+	var res = make([]int, 2)
+	res[0] = -1
+	res[1] = -1
+
+	var length = len(nums)
+
+	if length < 2 {
+		return res
+	}
+
+	var mp = make(map[int]int, len(nums))
+
+	for i := 0; i < length; i++ {
+		v, ok := mp[target-nums[i]]
+		if ok {
+			res[0] = v
+			res[1] = i
+			return res
+		} else {
+			mp[nums[i]] = i
+		}
+	}
+	return res
+}
+"
+1,Java,java.java,java.java,"class Solution {
+  public int[] twoSum(int[] nums, int target) {
+    Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+    for (int i = 0; i < nums.length; ++i) {
+      if (map.containsKey(target - nums[i])) {
+        return new int[] {map.get(target - nums[i]), i};
+      }
+      map.put(nums[i], i);
+    }
+    return new int[] { -1, -1};
+  }
+}"
+1,Rust,rust.rs,rust.rs,"use std::collections::HashMap;
+impl Solution {
+  pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+    let mut map = HashMap::with_capacity(nums.len());
+    for (index, num) in nums.iter().enumerate() {
+      match map.get(&(target - num)) {
+        None => {
+          map.insert(num, index);
+        }
+        Some(sub_index) => return vec![*sub_index as i32, index as i32],
+      }
+    }
+    vec![]
+  }
+}"
+9,C,c.c,c.c,"bool isPalindrome(int x) {
+  int n, d, k = 0;
+
+  if (x < 0) return false;
+
+  n = x;
+  while (n) {
+    d = n % 10;
+    if (k > (0x7fffffff - d) / 10) return false; // overflow
+    k = k * 10 + d;
+    n = n / 10;
+  }
+
+  return (k == x);
+}"
+7,C,c.c,c.c,"int reverse(int x) {
+  int y = 0;
+  int n;
+  while (x != 0) {
+    n = x % 10;
+    if (y > INT_MAX / 10 || y < INT_MIN / 10) {
+      return 0;
+    }
+    y = y * 10 + n;
+    x /= 10;
+  }
+  return y;
+}"
+7,Rust,rust1.rs,rust1.rs,"impl Solution {
+  pub fn reverse(x: i32) -> i32 {
+    let mut ret = 0i32;
+    let mut x_clone = x;
+    while x_clone != 0 {
+      let i = x_clone % 10;
+      let x1 = ret.overflowing_mul(10);
+      if x1.1 == true {
+        return 0;
+      }
+      let x2 = x1.0.overflowing_add(i);
+      if x2.1 == true {
+        return 0;
+      }
+      ret = x2.0;
+      x_clone = x_clone / 10;
+    }
+
+    ret
+  }
+}"
+6,C,c.c,c.c,"char *convert(char *s, int numRows) {
+  int len;
+  int i, j, k = 0;
+  char *p;
+  int step, up;
+
+  if (!s || !*s || numRows == 1) return s;
+
+  len = strlen(s);
+  p = malloc((len + 1) * sizeof(char));
+  //assert(p);
+
+  step = (numRows - 1) * 2; // max span
+
+  for (i = 0; i < numRows; i++) {
+    j = i; // first letter of each row
+    up = 1;
+    while (j < len) {
+      p[k++] = s[j];
+      if (i == 0 || i == numRows - 1) {
+        j += step; // full span
+      } else if (up) {
+        j += step - i * 2; // full span - offset
+        up = 0;
+      } else {
+        j += i * 2; // offset
+        up = 1;
+      }
+    }
+  }
+  p[k] = 0;
+  return p;
+}"
 8,C,c.c,c.c,"int myAtoi(char *str) {
   char *s;
   long n = 0;
@@ -45,334 +209,6 @@ questionId,language,filename,data
   }
 
   return sign ? -n : n;
-}"
-7,C,c.c,c.c,"int reverse(int x) {
-  int y = 0;
-  int n;
-  while (x != 0) {
-    n = x % 10;
-    if (y > INT_MAX / 10 || y < INT_MIN / 10) {
-      return 0;
-    }
-    y = y * 10 + n;
-    x /= 10;
-  }
-  return y;
-}"
-7,Rust,rust1.rs,rust1.rs,"impl Solution {
-  pub fn reverse(x: i32) -> i32 {
-    let mut ret = 0i32;
-    let mut x_clone = x;
-    while x_clone != 0 {
-      let i = x_clone % 10;
-      let x1 = ret.overflowing_mul(10);
-      if x1.1 == true {
-        return 0;
-      }
-      let x2 = x1.0.overflowing_add(i);
-      if x2.1 == true {
-        return 0;
-      }
-      ret = x2.0;
-      x_clone = x_clone / 10;
-    }
-
-    ret
-  }
-}"
-4,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
-  return (*(signed int *)b > *(signed int *)a) ? 1 : 0;
-}
-
-double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Size) {
-  int total_length = nums1Size + nums2Size;
-
-  int *merge = (int *)malloc(sizeof(int) * total_length);
-
-  memcpy(merge, nums1, sizeof(int) * nums1Size);
-  memcpy(merge + nums1Size, nums2, sizeof(int) * nums2Size);
-
-  qsort(merge, total_length, sizeof(int), cmpfunc);
-
-  double result = 0;
-
-  if (total_length % 2 == 0) {
-    result = (*(merge + total_length / 2 - 1) + *(merge + total_length / 2)) / 2.0;
-  } else {
-    result = *(merge + total_length / 2);
-  }
-
-  free(merge);
-  return result;
-}"
-4,C++,cpp.cc,cpp.cc,"class Solution {
-public:
-  double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
-    double result = 0;
-    nums1.insert(nums1.end(), nums2.begin(), nums2.end());
-    sort(nums1.begin(), nums1.end());
-
-    size_t length = nums1.size();
-    if (length % 2 == 0) {
-      result = (nums1[length / 2 - 1] + nums1[length / 2]) / 2.0;
-    } else {
-      result = double(nums1[length / 2]);
-    }
-    return result;
-  }
-};
-"
-4,Golang,go1.go,go1.go,"func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64 {
-	total := len(nums1) + len(nums2)
-
-	minKey := int(math.Ceil(float64(total)/2 - 1))
-	maxKey := total / 2
-
-	i := 0 // nums1 索引
-	j := 0 // nums2 索引
-	min := 0
-	max := 0
-	current := 0
-	v1 := 0
-	v2 := 0
-	for k := 0; k < 1; k-- {
-
-		if i < len(nums1) && !math.IsNaN(float64(nums1[i])) {
-			v1 = nums1[i]
-		} else {
-			v1 = nums2[j] + 1
-		}
-
-		if j < len(nums2) && !math.IsNaN(float64(nums2[j])) {
-			v2 = nums2[j]
-		} else {
-			fmt.Println(i)
-			v2 = nums1[i] + 1
-		}
-		if v1 > v2 {
-			j++
-		} else {
-			i++
-		}
-
-		if current == minKey {
-			if v1 > v2 {
-				min = v2
-			} else {
-				min = v1
-			}
-		}
-		if current == maxKey {
-			if v1 > v2 {
-				max = v2
-			} else {
-				max = v1
-			}
-			break
-		}
-		current++
-	}
-	return float64(min+max) / 2
-}
-"
-4,Golang,go2.go,go2.go,"func FindMedianSortedArFrays(nums1 []int, nums2 []int) (result float64) {
-	var total = make([]int, len(nums1)+len(nums2))
-	copy(total, nums1)
-	copy(total[len(nums1):], nums2)
-	sort.Ints(total)
-	var length = len(total)
-	if length%2 == 0 {
-		result = float64((total[int(length/2-1)] +
-			total[int(length/2)]) / 2.0)
-	} else {
-		result = float64(total[int(length/2)])
-	}
-	return
-}
-"
-6,C,c.c,c.c,"char *convert(char *s, int numRows) {
-  int len;
-  int i, j, k = 0;
-  char *p;
-  int step, up;
-
-  if (!s || !*s || numRows == 1) return s;
-
-  len = strlen(s);
-  p = malloc((len + 1) * sizeof(char));
-  //assert(p);
-
-  step = (numRows - 1) * 2; // max span
-
-  for (i = 0; i < numRows; i++) {
-    j = i; // first letter of each row
-    up = 1;
-    while (j < len) {
-      p[k++] = s[j];
-      if (i == 0 || i == numRows - 1) {
-        j += step; // full span
-      } else if (up) {
-        j += step - i * 2; // full span - offset
-        up = 0;
-      } else {
-        j += i * 2; // offset
-        up = 1;
-      }
-    }
-  }
-  p[k] = 0;
-  return p;
-}"
-3,C,c.c,c.c,"int lengthOfLongestSubstring(char *s) {
-  int offset[128];
-  int max_len = 0;
-  int len = 0;
-
-  memset(offset, 0xff, sizeof(offset));
-  for (int i = 0; i < strlen(s); i++) {
-    if (offset[(int)*(s + i)] == -1) {
-      len++;
-    } else {
-      if (i - offset[(int)*(s + i)] > len) {
-        len++;
-      } else {
-        len = i - offset[(int)*(s + i)];
-      }
-    }
-    if (len > max_len) {
-      max_len = len;
-    }
-    offset[(int)*(s + i)] = i;
-  }
-
-  return max_len;
-}"
-3,Golang,go1.go,go1.go,"func lengthOfLongestSubstring(s string) int {
-	max := 0
-	n := len(s)
-	start := 0
-	end := 0
-	mp := make(map[string]int, 0)
-	if n < 2 {
-		return n
-	}
-	for ; end < n; end++ {
-		char := s[end : end+1]
-		v, ok := mp[char]
-		if ok {
-			start = int(math.Max(float64(start), float64(v)))
-		}
-		max = int(math.Max(float64(max), float64(end-start+1)))
-		mp[char] = end + 1
-	}
-	return max
-}
-"
-3,Golang,go2.go,go2.go,"func lengthOfLongestSubstring(s string) int {
-	n := len(s)
-	if n < 2 {
-		return n
-	}
-	max := 0
-	for i := 0; i < n; i++ {
-		mp := make(map[uint8]int)
-		mp[s[i]] = 1
-		for j := i + 1; j < n; j++ {
-			if _, ok := mp[s[j]]; !ok {
-				mp[s[j]] = 1
-			} else {
-				break
-			}
-		}
-		if max < len(mp) {
-			max = len(mp)
-		}
-	}
-	return max
-}
-"
-3,Java,java1.java,java1.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        int result = 0;
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = i + 1; j <= s.length(); j++) {
-                String substring = s.substring(i, j);
-                if (hasRepeat(substring)) {
-                    break;
-                } else if (substring.length() > result) {
-                    result = substring.length();
-                }
-            }
-        }
-        return result;
-    }
-
-    private boolean hasRepeat(String substring) {
-        Set<Character> charList = new HashSet<>();
-        for (int i = 0; i < substring.length(); i++) {
-            if (charList.contains(substring.charAt(i))) {
-                return true;
-            }
-            charList.add(substring.charAt(i));
-        }
-        return false;
-    }
-}"
-3,Java,java2.java,java2.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        if (s == null || s.length() == 0) {
-            return 0;
-        }
-        int result = 0;
-        int length = 0;
-        HashMap<Character, Integer> resultMap = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (resultMap.containsKey(s.charAt(i))) {
-                i = resultMap.get(s.charAt(i));
-                resultMap.clear();
-                length = 0;
-                continue;
-            }
-            length++;
-            resultMap.put(s.charAt(i), i);
-            result = Math.max(result, length);
-        }
-        return result;
-    }
-}"
-3,Java,java3.java,java3.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        if (s == null || s.length() == 0) {
-            return 0;
-        }
-        int result = 0;
-        int start = 0;
-        int length = 0;
-        HashMap<Character, Integer> indexMap = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (indexMap.containsKey(s.charAt(i)) && indexMap.get(s.charAt(i)) >= start) {
-                start = indexMap.get(s.charAt(i)) + 1;
-            }
-            length = i - start + 1;
-            indexMap.put(s.charAt(i), i);
-            result = Math.max(length, result);
-        }
-        return result;
-    }
-}"
-3,Java,java4.java,java4.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        int result = 0;
-        LinkedList<Character> linkedList = new LinkedList<>();
-        for (int i = 0; i < s.length(); i++) {
-            while (linkedList.contains(s.charAt(i))) {
-                linkedList.removeFirst();
-            }
-            linkedList.add(s.charAt(i));
-            result = Math.max(result, linkedList.size());
-        }
-        return result;
-    }
 }"
 2,C,c.c,c.c,"struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
   int carry = 0;
@@ -561,87 +397,266 @@ public:
     }
 }
 "
-1,C,c.c,c.c,"int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
-  *returnSize = 2;
+4,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
+  return (*(signed int *)b > *(signed int *)a) ? 1 : 0;
+}
 
-  int *ans = (int *)malloc(sizeof(int) * *returnSize);
-  for (int i = 0; i < numsSize; i++) {
-    for (int j = i + 1; j < numsSize; j++) {
-      if (nums[i] + nums[j] == target) {
-        ans[0] = i;
-        ans[1] = j;
-        return ans;
-      }
-    }
+double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Size) {
+  int total_length = nums1Size + nums2Size;
+
+  int *merge = (int *)malloc(sizeof(int) * total_length);
+
+  memcpy(merge, nums1, sizeof(int) * nums1Size);
+  memcpy(merge + nums1Size, nums2, sizeof(int) * nums2Size);
+
+  qsort(merge, total_length, sizeof(int), cmpfunc);
+
+  double result = 0;
+
+  if (total_length % 2 == 0) {
+    result = (*(merge + total_length / 2 - 1) + *(merge + total_length / 2)) / 2.0;
+  } else {
+    result = *(merge + total_length / 2);
   }
-  return ans;
+
+  free(merge);
+  return result;
 }"
-1,C++,cpp.cc,cpp.cc,"class Solution {
- public:
-  vector<int> twoSum(vector<int> &nums, int target) {
-    unordered_map<int, int> umap;
-    for (int i = 0; i < nums.size(); i++) {
-      if (umap.find(target - nums[i]) != umap.end()) {
-        return vector<int> {umap.find(target - nums[i])->second, i};
-      }
-      umap[nums[i]] = i;
+4,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
+    double result = 0;
+    nums1.insert(nums1.end(), nums2.begin(), nums2.end());
+    sort(nums1.begin(), nums1.end());
+
+    size_t length = nums1.size();
+    if (length % 2 == 0) {
+      result = (nums1[length / 2 - 1] + nums1[length / 2]) / 2.0;
+    } else {
+      result = double(nums1[length / 2]);
     }
-    return vector<int> { -1, -1};
+    return result;
   }
-};"
-1,Golang,golang.go,golang.go,"func twoSum(nums []int, target int) []int {
-	var res = make([]int, 2)
-	res[0] = -1
-	res[1] = -1
+};
+"
+4,Golang,go1.go,go1.go,"func FindMedianSortedArFrays(nums1 []int, nums2 []int) float64 {
+	total := len(nums1) + len(nums2)
 
-	var length = len(nums)
+	minKey := int(math.Ceil(float64(total)/2 - 1))
+	maxKey := total / 2
 
-	if length < 2 {
-		return res
-	}
+	i := 0 // nums1 索引
+	j := 0 // nums2 索引
+	min := 0
+	max := 0
+	current := 0
+	v1 := 0
+	v2 := 0
+	for k := 0; k < 1; k-- {
 
-	var mp = make(map[int]int, len(nums))
-
-	for i := 0; i < length; i++ {
-		v, ok := mp[target-nums[i]]
-		if ok {
-			res[0] = v
-			res[1] = i
-			return res
+		if i < len(nums1) && !math.IsNaN(float64(nums1[i])) {
+			v1 = nums1[i]
 		} else {
-			mp[nums[i]] = i
+			v1 = nums2[j] + 1
 		}
+
+		if j < len(nums2) && !math.IsNaN(float64(nums2[j])) {
+			v2 = nums2[j]
+		} else {
+			fmt.Println(i)
+			v2 = nums1[i] + 1
+		}
+		if v1 > v2 {
+			j++
+		} else {
+			i++
+		}
+
+		if current == minKey {
+			if v1 > v2 {
+				min = v2
+			} else {
+				min = v1
+			}
+		}
+		if current == maxKey {
+			if v1 > v2 {
+				max = v2
+			} else {
+				max = v1
+			}
+			break
+		}
+		current++
 	}
-	return res
+	return float64(min+max) / 2
 }
 "
-1,Java,java.java,java.java,"class Solution {
-  public int[] twoSum(int[] nums, int target) {
-    Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+4,Golang,go2.go,go2.go,"func FindMedianSortedArFrays(nums1 []int, nums2 []int) (result float64) {
+	var total = make([]int, len(nums1)+len(nums2))
+	copy(total, nums1)
+	copy(total[len(nums1):], nums2)
+	sort.Ints(total)
+	var length = len(total)
+	if length%2 == 0 {
+		result = float64((total[int(length/2-1)] +
+			total[int(length/2)]) / 2.0)
+	} else {
+		result = float64(total[int(length/2)])
+	}
+	return
+}
+"
+3,C,c.c,c.c,"int lengthOfLongestSubstring(char *s) {
+  int offset[128];
+  int max_len = 0;
+  int len = 0;
 
-    for (int i = 0; i < nums.length; ++i) {
-      if (map.containsKey(target - nums[i])) {
-        return new int[] {map.get(target - nums[i]), i};
+  memset(offset, 0xff, sizeof(offset));
+  for (int i = 0; i < strlen(s); i++) {
+    if (offset[(int)*(s + i)] == -1) {
+      len++;
+    } else {
+      if (i - offset[(int)*(s + i)] > len) {
+        len++;
+      } else {
+        len = i - offset[(int)*(s + i)];
       }
-      map.put(nums[i], i);
     }
-    return new int[] { -1, -1};
+    if (len > max_len) {
+      max_len = len;
+    }
+    offset[(int)*(s + i)] = i;
   }
+
+  return max_len;
 }"
-1,Rust,rust.rs,rust.rs,"use std::collections::HashMap;
-impl Solution {
-  pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
-    let mut map = HashMap::with_capacity(nums.len());
-    for (index, num) in nums.iter().enumerate() {
-      match map.get(&(target - num)) {
-        None => {
-          map.insert(num, index);
+3,Golang,go1.go,go1.go,"func lengthOfLongestSubstring(s string) int {
+	max := 0
+	n := len(s)
+	start := 0
+	end := 0
+	mp := make(map[string]int, 0)
+	if n < 2 {
+		return n
+	}
+	for ; end < n; end++ {
+		char := s[end : end+1]
+		v, ok := mp[char]
+		if ok {
+			start = int(math.Max(float64(start), float64(v)))
+		}
+		max = int(math.Max(float64(max), float64(end-start+1)))
+		mp[char] = end + 1
+	}
+	return max
+}
+"
+3,Golang,go2.go,go2.go,"func lengthOfLongestSubstring(s string) int {
+	n := len(s)
+	if n < 2 {
+		return n
+	}
+	max := 0
+	for i := 0; i < n; i++ {
+		mp := make(map[uint8]int)
+		mp[s[i]] = 1
+		for j := i + 1; j < n; j++ {
+			if _, ok := mp[s[j]]; !ok {
+				mp[s[j]] = 1
+			} else {
+				break
+			}
+		}
+		if max < len(mp) {
+			max = len(mp)
+		}
+	}
+	return max
+}
+"
+3,Java,java1.java,java1.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int result = 0;
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1; j <= s.length(); j++) {
+                String substring = s.substring(i, j);
+                if (hasRepeat(substring)) {
+                    break;
+                } else if (substring.length() > result) {
+                    result = substring.length();
+                }
+            }
         }
-        Some(sub_index) => return vec![*sub_index as i32, index as i32],
-      }
+        return result;
     }
-    vec![]
-  }
+
+    private boolean hasRepeat(String substring) {
+        Set<Character> charList = new HashSet<>();
+        for (int i = 0; i < substring.length(); i++) {
+            if (charList.contains(substring.charAt(i))) {
+                return true;
+            }
+            charList.add(substring.charAt(i));
+        }
+        return false;
+    }
+}"
+3,Java,java2.java,java2.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        int result = 0;
+        int length = 0;
+        HashMap<Character, Integer> resultMap = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (resultMap.containsKey(s.charAt(i))) {
+                i = resultMap.get(s.charAt(i));
+                resultMap.clear();
+                length = 0;
+                continue;
+            }
+            length++;
+            resultMap.put(s.charAt(i), i);
+            result = Math.max(result, length);
+        }
+        return result;
+    }
+}"
+3,Java,java3.java,java3.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0) {
+            return 0;
+        }
+        int result = 0;
+        int start = 0;
+        int length = 0;
+        HashMap<Character, Integer> indexMap = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (indexMap.containsKey(s.charAt(i)) && indexMap.get(s.charAt(i)) >= start) {
+                start = indexMap.get(s.charAt(i)) + 1;
+            }
+            length = i - start + 1;
+            indexMap.put(s.charAt(i), i);
+            result = Math.max(length, result);
+        }
+        return result;
+    }
+}"
+3,Java,java4.java,java4.java,"class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int result = 0;
+        LinkedList<Character> linkedList = new LinkedList<>();
+        for (int i = 0; i < s.length(); i++) {
+            while (linkedList.contains(s.charAt(i))) {
+                linkedList.removeFirst();
+            }
+            linkedList.add(s.charAt(i));
+            result = Math.max(result, linkedList.size());
+        }
+        return result;
+    }
 }"
 5,C,c.c,c.c,"char *longestPalindrome(char *s) {
   int sz;
@@ -671,21 +686,6 @@ impl Solution {
   memcpy(news, s + where, len);
   news[len] = 0;
   return news;
-}"
-9,C,c.c,c.c,"bool isPalindrome(int x) {
-  int n, d, k = 0;
-
-  if (x < 0) return false;
-
-  n = x;
-  while (n) {
-    d = n % 10;
-    if (k > (0x7fffffff - d) / 10) return false; // overflow
-    k = k * 10 + d;
-    n = n / 10;
-  }
-
-  return (k == x);
 }"
 10,C,c.c,c.c,"bool isMatch(char *s, char *p) {
   if (*p == '\0') {
