@@ -28,7 +28,7 @@
 	<li><code>n == matrix.length</code></li>
 	<li><code>n == matrix[i].length</code></li>
 	<li><code>1 <= n <= 300</code></li>
-	<li><code>-10<sup>9</sup> <= matrix[i][j] <= -10<sup>9</sup></code></li>
+	<li><code>-10<sup>9</sup> <= matrix[i][j] <= 10<sup>9</sup></code></li>
 	<li>题目数据 <strong>保证</strong> <code>matrix</code> 中的所有行和列都按 <strong>非递减顺序</strong> 排列</li>
 	<li><code>1 <= k <= n<sup>2</sup></code></li>
 </ul>

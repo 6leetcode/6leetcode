@@ -1,6 +1,6 @@
 ### [基本计算器](https://leetcode-cn.com/problems/basic-calculator)
 
-<p>实现一个基本的计算器来计算一个简单的字符串表达式 <code>s</code> 的值。</p>
+<p>给你一个字符串表达式 <code>s</code> ，请你实现一个基本计算器来计算并返回它的值。</p>
 
 <p> </p>
 

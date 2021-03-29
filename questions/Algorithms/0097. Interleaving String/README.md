@@ -41,5 +41,8 @@
 <ul>
 	<li><code>0 &lt;= s1.length, s2.length &lt;= 100</code></li>
 	<li><code>0 &lt;= s3.length &lt;= 200</code></li>
-	<li><code>s1</code>, <code>s2</code>, and <code>s3</code> consist of lower-case English letters.</li>
+	<li><code>s1</code>, <code>s2</code>, and <code>s3</code> consist of lowercase English letters.</li>
 </ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> Could you solve it using only <code>O(s2.length)</code> additional memory space?</p>

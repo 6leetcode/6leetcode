@@ -56,11 +56,4 @@
 </ul>
 
 <p>&nbsp;</p>
-
-<p><strong>Follow up:</strong></p>
-
-<ul>
-	<li>Could you solve it <strong>in-place</strong> with <code>O(1)</code> extra space?</li>
-</ul>
-
-<p>&nbsp;</p>
+<p><strong>Follow up:</strong> Could you solve it <strong>in-place</strong> with <code>O(1)</code> extra space?</p>

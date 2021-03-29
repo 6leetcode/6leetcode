@@ -1,6 +1,6 @@
 ### [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)
 
-<p>Given a string <code>s</code> and an integer <code>k</code>, return <em>the length of the longest substring of</em> <code>s</code>&nbsp;<em>that contains at most</em> <code>k</code> <em><strong>distinct</strong> characters</em>.</p>
+<p>Given a string <code>s</code> and an integer <code>k</code>, return <em>the length of the longest substring of</em> <code>s</code> <em>that contains at most</em> <code>k</code> <em><strong>distinct</strong> characters</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

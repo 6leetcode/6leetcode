@@ -1,34 +1,42 @@
 ### [给字符串添加加粗标签](https://leetcode-cn.com/problems/add-bold-tag-in-string)
 
-<p>给一个字符串&nbsp;<strong>s</strong>&nbsp;和一个字符串列表&nbsp;<strong>dict</strong>&nbsp;，你需要将在字符串列表中出现过的 s 的子串添加加粗闭合标签&nbsp;<code>&lt;b&gt;</code>&nbsp;和&nbsp;<code>&lt;/b&gt;</code>&nbsp;。如果两个子串有重叠部分，你需要把它们一起用一个闭合标签包围起来。同理，如果两个子字符串连续被加粗，那么你也需要把它们合起来用一个加粗标签包围。</p>
+<p>给你一个字符串 <code>s</code> 和一个字符串列表 <code>dict</code> ，你需要将在字符串列表中出现过的 <code>s</code> 的子串添加加粗闭合标签 <code><b></code> 和 <code></b></code> 。</p>
 
-<p><strong>样例 1：</strong></p>
+<p>如果两个子串有重叠部分，你需要把它们一起用一个闭合标签包围起来。同理，如果两个子字符串连续被加粗，那么你也需要把它们合起来用一个加粗标签包围。</p>
 
-<pre><strong>输入：</strong>
-s = &quot;abcxyz123&quot;
-dict = [&quot;abc&quot;,&quot;123&quot;]
+<p> </p>
+
+<p><strong>示例 1：</strong></p>
+
+<pre>
+<strong>输入：</strong>
+s = "abcxyz123"
+dict = ["abc","123"]
 <strong>输出：</strong>
-&quot;&lt;b&gt;abc&lt;/b&gt;xyz&lt;b&gt;123&lt;/b&gt;&quot;
+"<b>abc</b>xyz<b>123</b>"
 </pre>
 
-<p>&nbsp;</p>
+<p><strong>示例 2：</strong></p>
 
-<p><strong>样例 2：</strong></p>
-
-<pre><strong>输入：</strong>
-s = &quot;aaabbcc&quot;
-dict = [&quot;aaa&quot;,&quot;aab&quot;,&quot;bc&quot;]
+<pre>
+<strong>输入：</strong>
+s = "aaabbcc"
+dict = ["aaa","aab","bc"]
 <strong>输出：</strong>
-&quot;&lt;b&gt;aaabbc&lt;/b&gt;c&quot;
+"<b>aaabbc</b>c"
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p><strong>注意：</strong></p>
+<p><strong>提示：</strong></p>
 
-<ol>
-	<li>给定的 dict 中不会有重复的字符串，且字符串数目不会超过 100 。</li>
-	<li>输入中的所有字符串长度都在范围 [1, 1000] 内。</li>
-</ol>
+<ul>
+	<li>给定的 <code>dict</code> 中不会有重复的字符串，且字符串数目不会超过 <code>100</code> 。</li>
+	<li>输入中的所有字符串长度都在范围 <code>[1,1000]</code> 内。</li>
+</ul>
 
-<p>&nbsp;</p>
+<p> </p>
+
+<p><strong>注：</strong>此题与「758 - 字符串中的加粗单词」相同 - <a href="https://leetcode-cn.com/problems/bold-words-in-string">https://leetcode-cn.com/problems/bold-words-in-string</a></p>
+
+<p> </p>

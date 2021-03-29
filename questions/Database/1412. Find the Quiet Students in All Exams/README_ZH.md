@@ -2,7 +2,8 @@
 
 <p>表: <code>Student</code></p>
 
-<pre>+---------------------+---------+
+<pre>
++---------------------+---------+
 | Column Name         | Type    |
 +---------------------+---------+
 | student_id          | int     |
@@ -11,11 +12,12 @@
 student_id 是该表主键.
 student_name 学生名字.</pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p>表: <code>Exam</code></p>
 
-<pre>+---------------+---------+
+<pre>
++---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
 | exam_id       | int     |
@@ -26,19 +28,20 @@ student_name 学生名字.</pre>
 学生 student_id 在测验 exam_id 中得分为 score.
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p>成绩处于中游的学生是指至少参加了一次测验,&nbsp;且得分既不是最高分也不是最低分的学生。</p>
+<p>成绩处于中游的学生是指至少参加了一次测验, 且得分既不是最高分也不是最低分的学生。</p>
 
-<p>写一个 SQL 语句，找出在所有测验中都处于中游的学生 <code>(student_id, student_name)</code>。</p>
+<p>写一个 SQL 语句，找出在 <strong>所有</strong> 测验中都处于中游的学生 <code>(student_id, student_name)</code>。</p>
 
-<p>不要返回从来没有参加过测验的学生。返回结果表按照&nbsp;<code>student_id</code>&nbsp;排序。</p>
+<p>不要返回从来没有参加过测验的学生。返回结果表按照 <code>student_id</code> 排序。</p>
 
 <p>查询结果格式如下。</p>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<pre>Student 表：
+<pre>
+Student 表：
 +-------------+---------------+
 | student_id  | student_name  |
 +-------------+---------------+
