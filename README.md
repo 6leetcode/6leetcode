@@ -1664,6 +1664,7 @@ LeetCode Solutions.
 |[1788](https://leetcode-cn.com/problems/maximize-the-beauty-of-the-garden)|Hard|||||||||||
 |[1794](https://leetcode-cn.com/problems/count-pairs-of-equal-substrings-with-minimum-difference)|Medium|||||||||||
 |[1804](https://leetcode-cn.com/problems/implement-trie-ii-prefix-tree)|Medium|||||||||||
+|[1810](https://leetcode-cn.com/problems/minimum-path-cost-in-a-hidden-grid)|Medium|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
