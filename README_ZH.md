@@ -39,9 +39,9 @@ LeetCode 题解
 |[0014](https://leetcode-cn.com/problems/longest-common-prefix)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0014.%20Longest%20Common%20Prefix/c.c)||||||||||
 |[0015](https://leetcode-cn.com/problems/3sum)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0015.%203Sum/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0015.%203Sum/cpp.cc)|||||||||
 |[0016](https://leetcode-cn.com/problems/3sum-closest)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0016.%203Sum%20Closest/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0016.%203Sum%20Closest/cpp.cc)|||||||||
-|[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|||||||||||
-|[0018](https://leetcode-cn.com/problems/4sum)|Medium|||||||||||
-|[0019](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|Medium|||||||||||
+|[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0017.%20Letter%20Combinations%20of%20a%20Phone%20Number/c.c)||||||||||
+|[0018](https://leetcode-cn.com/problems/4sum)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0018.%204Sum/c.c)||||||||||
+|[0019](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0019.%20Remove%20Nth%20Node%20From%20End%20of%20List/c.c)||||||||||
 |[0020](https://leetcode-cn.com/problems/valid-parentheses)|Easy|||||||||||
 |[0021](https://leetcode-cn.com/problems/merge-two-sorted-lists)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/cpp1.cc)|||||||||
 |[0022](https://leetcode-cn.com/problems/generate-parentheses)|Medium|||||||||||
@@ -344,7 +344,7 @@ LeetCode 题解
 |[0336](https://leetcode-cn.com/problems/palindrome-pairs)|Hard|||||||||||
 |[0337](https://leetcode-cn.com/problems/house-robber-iii)|Medium|||||||||||
 |[0338](https://leetcode-cn.com/problems/counting-bits)|Medium|||||||||||
-|[0339](https://leetcode-cn.com/problems/nested-list-weight-sum)|Easy|||||||||||
+|[0339](https://leetcode-cn.com/problems/nested-list-weight-sum)|Medium|||||||||||
 |[0340](https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters)|Medium|||||||||||
 |[0341](https://leetcode-cn.com/problems/flatten-nested-list-iterator)|Medium|||||||||||
 |[0342](https://leetcode-cn.com/problems/power-of-four)|Easy|||||||||||
@@ -2042,7 +2042,7 @@ LeetCode 题解
 |[剑指 Offer 18](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof)|Easy|||||||||||
 |[剑指 Offer 35](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof)|Medium|||||||||||
 |[剑指 Offer 40](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof)|Easy|||||||||||
-|[面试题30](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof)|Easy|||||||||||
+|[剑指 Offer 30](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof)|Easy|||||||||||
 |[剑指 Offer 41](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof)|Hard|||||||||||
 |[剑指 Offer 42](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof)|Easy|||||||||||
 |[剑指 Offer 36](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof)|Medium|||||||||||
@@ -2057,7 +2057,7 @@ LeetCode 题解
 |[剑指 Offer 32 - III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof)|Medium|||||||||||
 |[剑指 Offer 33](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof)|Medium|||||||||||
 |[剑指 Offer 50](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof)|Easy|||||||||||
-|[面试题34](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof)|Medium|||||||||||
+|[剑指 Offer 34](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof)|Medium|||||||||||
 |[剑指 Offer 51](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof)|Hard|||||||||||
 |[剑指 Offer 55 - I](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof)|Easy|||||||||||
 |[剑指 Offer 56 - I](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof)|Medium|||||||||||
@@ -2076,7 +2076,7 @@ LeetCode 题解
 |[剑指 Offer 54](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof)|Easy|||||||||||
 |[剑指 Offer 49](https://leetcode-cn.com/problems/chou-shu-lcof)|Medium|||||||||||
 |[剑指 Offer 65](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof)|Easy|||||||||||
-|[剑指 Offer 59 - I](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)|Easy|||||||||||
+|[剑指 Offer 59 - I](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)|Hard|||||||||||
 |[剑指 Offer 59 - II](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof)|Medium|||||||||||
 |[剑指 Offer 66](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof)|Medium|||||||||||
 |[剑指 Offer 60](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof)|Medium|||||||||||

@@ -37,11 +37,15 @@ int main(int argc, char const *argv[]) {
   struct ListNode *input1 = init(array, sizeof(array) / sizeof(int));
   int input2 = 2;
 
-  printf("Input:  %s %d\n", show(input1), input2);
+  sds input_show = show(input1);
+  printf("Input:  %s %d\n", input_show, input2);
+  sdsfree(input_show);
 
   struct ListNode *output = removeNthFromEnd(input1, input2);
 
-  printf("Output: %s\n", show(output));
+  sds output_show = show(output);
+  printf("Output: %s\n", output_show);
+  sdsfree(output_show);
 
   destory(input1);
 

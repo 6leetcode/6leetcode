@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -61,6 +62,7 @@ int main(int argc, char **argv) {
   printf("Input:  %s\n", input);
   char **letters = letterCombinations(input, &size);
   printf("Output: [%s", letters[0]);
+  free(letters[0]);
   for (size_t i = 1; i < size; i++) {
     printf(" %s", letters[i]);
     free(letters[i]);
