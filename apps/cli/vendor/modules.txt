@@ -43,7 +43,7 @@ github.com/mitchellh/mapstructure
 # github.com/parnurzeal/gorequest v0.2.16
 ## explicit
 github.com/parnurzeal/gorequest
-# github.com/pelletier/go-toml v1.8.1
+# github.com/pelletier/go-toml v1.9.0
 ## explicit
 github.com/pelletier/go-toml
 # github.com/pkg/errors v0.9.1
@@ -77,14 +77,14 @@ github.com/tosone/logging
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/net v0.0.0-20210326220855-61e056675ecf
+# golang.org/x/net v0.0.0-20210410081132-afb366fc7cd1
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20210326220804-49726bf1d181
+# golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
-# golang.org/x/text v0.3.5
+# golang.org/x/text v0.3.6
 ## explicit
 golang.org/x/text/transform
 golang.org/x/text/unicode/norm
@@ -102,7 +102,7 @@ gopkg.in/yaml.v2
 # gorm.io/driver/sqlite v1.1.4
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v1.21.6
+# gorm.io/gorm v1.21.7
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks

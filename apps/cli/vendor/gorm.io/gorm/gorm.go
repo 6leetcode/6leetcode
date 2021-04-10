@@ -117,7 +117,9 @@ func Open(dialector Dialector, opts ...Option) (db *DB, err error) {
 				return nil, err
 			}
 			defer func(opt Option) {
-				opt.AfterInitialize(db)
+				if errr := opt.AfterInitialize(db); errr != nil {
+					err = errr
+				}
 			}(opt)
 		}
 	}
@@ -344,7 +346,7 @@ func (db *DB) DB() (*sql.DB, error) {
 
 func (db *DB) getInstance() *DB {
 	if db.clone > 0 {
-		tx := &DB{Config: db.Config}
+		tx := &DB{Config: db.Config, Error: db.Error}
 
 		if db.clone == 1 {
 			// clone with new statement
