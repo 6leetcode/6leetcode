@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 void moveZeroes(int *nums, int numsSize) {
   int i = -1;
   int j = 0;
@@ -15,11 +16,12 @@ void moveZeroes(int *nums, int numsSize) {
     nums[m] = 0;
   }
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
-  int num[]    = {0, 1, 0, 3, 12};
+  int num[] = {0, 1, 0, 3, 12};
   int numsSize = 5;
-  int *nums    = (int *)malloc(sizeof(int) * numsSize);
+  int *nums = (int *)malloc(sizeof(int) * numsSize);
   for (int i = 0; i < numsSize; i++) {
     nums[i] = num[i];
   }

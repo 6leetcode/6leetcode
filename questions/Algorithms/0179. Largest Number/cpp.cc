@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   string largestNumber(vector<int> &nums) {
@@ -30,6 +31,7 @@ public:
     return ret;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {3, 30, 34, 5, 9};

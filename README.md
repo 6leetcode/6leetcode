@@ -75,7 +75,7 @@ LeetCode Solutions.
 |[0050](https://leetcode-cn.com/problems/powx-n)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0050.%20Pow%28x%2C%20n%29/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0050.%20Pow%28x%2C%20n%29/cpp1.cc)||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0050.%20Pow%28x%2C%20n%29/java1.java)|||||||
 |[0051](https://leetcode-cn.com/problems/n-queens)|Hard|||||||||||
 |[0052](https://leetcode-cn.com/problems/n-queens-ii)|Hard|||||||||||
-|[0053](https://leetcode-cn.com/problems/maximum-subarray)|Easy|||||||||||
+|[0053](https://leetcode-cn.com/problems/maximum-subarray)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0053.%20Maximum%20Subarray/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0053.%20Maximum%20Subarray/cpp.cc)|||||||||
 |[0054](https://leetcode-cn.com/problems/spiral-matrix)|Medium|||||||||||
 |[0055](https://leetcode-cn.com/problems/jump-game)|Medium|||||||||||
 |[0056](https://leetcode-cn.com/problems/merge-intervals)|Medium|||||||||||
@@ -288,7 +288,7 @@ LeetCode Solutions.
 |[0280](https://leetcode-cn.com/problems/wiggle-sort)|Medium|||||||||||
 |[0281](https://leetcode-cn.com/problems/zigzag-iterator)|Medium|||||||||||
 |[0282](https://leetcode-cn.com/problems/expression-add-operators)|Hard|||||||||||
-|[0283](https://leetcode-cn.com/problems/move-zeroes)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0283.%20Move%20Zeroes/c1.c)||||||||||
+|[0283](https://leetcode-cn.com/problems/move-zeroes)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0283.%20Move%20Zeroes/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0283.%20Move%20Zeroes/cpp.cc)|||||||||
 |[0284](https://leetcode-cn.com/problems/peeking-iterator)|Medium|||||||||||
 |[0285](https://leetcode-cn.com/problems/inorder-successor-in-bst)|Medium|||||||||||
 |[0286](https://leetcode-cn.com/problems/walls-and-gates)|Medium|||||||||||

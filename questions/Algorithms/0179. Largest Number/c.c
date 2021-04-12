@@ -4,6 +4,7 @@
 
 #include <array.h>
 
+// ------------------------------- solution begin -------------------------------
 int cmp(const void *x, const void *y) {
   long sx = 10, sy = 10;
   while (sx <= *(int *)x) {
@@ -30,6 +31,7 @@ char *largestNumber(int *nums, int numsSize) {
   }
   return ret;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input1[] = {3, 30, 34, 5, 9};
