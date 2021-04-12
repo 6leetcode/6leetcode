@@ -158,8 +158,8 @@ LeetCode 题解
 |[0133](https://leetcode-cn.com/problems/clone-graph)|Medium|||||||||||
 |[0134](https://leetcode-cn.com/problems/gas-station)|Medium|||||||||||
 |[0135](https://leetcode-cn.com/problems/candy)|Hard|||||||||||
-|[0136](https://leetcode-cn.com/problems/single-number)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0136.%20Single%20Number/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0136.%20Single%20Number/cpp1.cc)|||||||||
-|[0137](https://leetcode-cn.com/problems/single-number-ii)|Medium|||||||||||
+|[0136](https://leetcode-cn.com/problems/single-number)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0136.%20Single%20Number/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0136.%20Single%20Number/cpp.cc)|||||||||
+|[0137](https://leetcode-cn.com/problems/single-number-ii)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0137.%20Single%20Number%20II/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0137.%20Single%20Number%20II/cpp.cc)|||||||||
 |[0138](https://leetcode-cn.com/problems/copy-list-with-random-pointer)|Medium|||||||||||
 |[0139](https://leetcode-cn.com/problems/word-break)|Medium|||||||||||
 |[0140](https://leetcode-cn.com/problems/word-break-ii)|Hard|||||||||||
@@ -513,7 +513,7 @@ LeetCode 题解
 |[0516](https://leetcode-cn.com/problems/longest-palindromic-subsequence)|Medium|||||||||||
 |[0517](https://leetcode-cn.com/problems/super-washing-machines)|Hard|||||||||||
 |[0518](https://leetcode-cn.com/problems/coin-change-2)|Medium|||||||||||
-|[0520](https://leetcode-cn.com/problems/detect-capital)|Easy|||||||||||
+|[0520](https://leetcode-cn.com/problems/detect-capital)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0520.%20Detect%20Capital/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0520.%20Detect%20Capital/cpp.cc)|||||||||
 |[0521](https://leetcode-cn.com/problems/longest-uncommon-subsequence-i)|Easy|||||||||||
 |[0522](https://leetcode-cn.com/problems/longest-uncommon-subsequence-ii)|Medium|||||||||||
 |[0523](https://leetcode-cn.com/problems/continuous-subarray-sum)|Medium|||||||||||

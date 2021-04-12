@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int singleNumber(int *nums, int numsSize) {
   int result = 0;
   for (int i = 1; i < numsSize; i++) {
@@ -12,6 +13,7 @@ int singleNumber(int *nums, int numsSize) {
   }
   return result;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input[] = {4, 1, 2, 1, 2};
