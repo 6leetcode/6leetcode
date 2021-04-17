@@ -21,13 +21,13 @@ class Solution {
         return result;
     }
 }
-// ------------------------------- solution end ---------------------------------
+// -------------------------------solution end---------------------------------
 
 public class java3 {
     public static void main(String[] args) {
-        Solution solution = new Solution();
         String input = "qwekeek";
         System.out.println("Input:  " + input);
+        Solution solution = new Solution();
         System.out.println("Output: " + solution.lengthOfLongestSubstring(input));
     }
 }

@@ -17,27 +17,23 @@ import (
 
 // RootCmd represents the base command when called without any sub commands
 var RootCmd = &cobra.Command{
-	Short: "Leetcode tool.",
+	Short: "Leetcode tool",
 	Long:  `Leetcode tool.`,
 }
 
 const DefaultConfig = "/etc/leet/config.yml"
 
+var config string
+
 func init() {
-	var config string
 	RootCmd.PersistentFlags().StringVarP(&config, "config", "c", "./config.yml", "config file")
 
 	var allCmd = &cobra.Command{
 		Use:   "all",
-		Short: "Travel all of the leetcode problems info.",
+		Short: "Travel all of the leetcode problems info",
 		Long:  `Travel all of the leetcode problems info.`,
 		Args:  cobra.MinimumNArgs(0),
-		Run: func(_ *cobra.Command, _ []string) {
-			var err error
-			if err = initConfig(config); err != nil {
-				logging.Errorf("Init config with error: %+v", err)
-				return
-			}
+		RunE: func(_ *cobra.Command, _ []string) (err error) {
 			if err = initTable(); err != nil {
 				logging.Errorf("Init table with error: %+v", err)
 				return
@@ -54,21 +50,17 @@ func init() {
 				logging.Errorf("Init crawler with error: %+v", err)
 				return
 			}
+			return
 		},
 	}
 	RootCmd.AddCommand(allCmd) // crawler commander
 
 	var csvCmd = &cobra.Command{
 		Use:   "csv",
-		Short: "Generate portable csv file.",
+		Short: "Generate portable csv file",
 		Long:  `Generate portable csv file.`,
 		Args:  cobra.MinimumNArgs(0),
-		Run: func(_ *cobra.Command, _ []string) {
-			var err error
-			if err = initConfig(config); err != nil {
-				logging.Errorf("Init config with error: %+v", err)
-				return
-			}
+		RunE: func(_ *cobra.Command, _ []string) (err error) {
 			if err = initTable(); err != nil {
 				logging.Errorf("Init table with error: %+v", err)
 				return
@@ -77,31 +69,28 @@ func init() {
 				logging.Errorf("Init crawler with error: %+v", err)
 				return
 			}
+			return
 		},
 	}
 	RootCmd.AddCommand(csvCmd) // crawler commander
 
-	var readmeCmd = &cobra.Command{
-		Use:   "readme",
-		Short: "Generate readme.",
-		Long:  `Generate readme.`,
+	var genCmd = &cobra.Command{
+		Use:   "gen",
+		Short: "Generate README.md and Makefile",
+		Long:  `Generate README.md and Makefile.`,
 		Args:  cobra.MinimumNArgs(0),
-		Run: func(_ *cobra.Command, _ []string) {
-			var err error
-			if err = initConfig(config); err != nil {
-				logging.Error(err)
-			}
+		RunE: func(_ *cobra.Command, _ []string) (err error) {
 			if err = readme.Initialize(); err != nil {
-				logging.Errorf("Got error: %+v", err)
 				return
 			}
+			return
 		},
 	}
-	RootCmd.AddCommand(readmeCmd)
+	RootCmd.AddCommand(genCmd)
 
 	var versionCmd = &cobra.Command{
 		Use:   "version",
-		Short: "Get version.",
+		Short: "Get version",
 		Long:  `The version that build detail information.`,
 		Run: func(_ *cobra.Command, _ []string) {
 			version.Initialize()
@@ -110,6 +99,8 @@ func init() {
 	RootCmd.AddCommand(versionCmd) // version commander
 
 	RootCmd.Use = "6leetcode"
+
+	cobra.OnInitialize(initConfig)
 }
 
 func initTable() (err error) {
@@ -120,7 +111,7 @@ func initTable() (err error) {
 	return
 }
 
-func initConfig(config string) (err error) {
+func initConfig() {
 	viper.AutomaticEnv()
 	viper.SetConfigType("yaml")
 	if com.IsFile(config) {
@@ -140,6 +131,4 @@ func initConfig(config string) (err error) {
 	}
 
 	viper.SetDefault("QuestionDir", "questions")
-
-	return
 }

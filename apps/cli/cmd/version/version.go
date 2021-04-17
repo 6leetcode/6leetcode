@@ -14,13 +14,6 @@ var BuildStamp = "no provided"
 // GitHash GitHash
 var GitHash = "no provided"
 
-// Setting get the version command output msg
-func Setting(version, buildStamp, gitHash string) {
-	Version = version
-	BuildStamp = buildStamp
-	GitHash = gitHash
-}
-
 // Initialize version command entry
 func Initialize() {
 	fmt.Printf("%s %s/%s %s\n", "6leetcode", runtime.GOOS, runtime.GOARCH, runtime.Version())

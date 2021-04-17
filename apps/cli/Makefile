@@ -7,7 +7,7 @@ PREFIX    ?= /usr/local
 .PHONY: build
 build:
 	go build -v -o bin/${TARGET} -ldflags \
-	"-s -w -X main.BuildStamp=${BuildStamp} -X main.GitHash=${GitHash} -X main.Version=${Version}"
+	"-s -w -X leet/cmd/version.BuildStamp=${BuildStamp} -X leet/cmd/version.GitHash=${GitHash} -X leet/cmd/version.Version=${Version}"
 
 .PHONY: lint
 lint:

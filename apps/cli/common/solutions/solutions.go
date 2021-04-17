@@ -12,70 +12,48 @@ import (
 type token struct {
 	Language string
 	Suffix   string
-	Begin    string
-	End      string
 }
 
 var tokens = []token{
 	{
 		Language: "C",
 		Suffix:   ".c",
-		Begin:    "// ------------------------------- solution begin -------------------------------",
-		End:      "// ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "C++",
 		Suffix:   ".cc",
-		Begin:    "// ------------------------------- solution begin -------------------------------",
-		End:      "// ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "Golang",
 		Suffix:   ".go",
-		Begin:    "// ------------------------------- solution begin -------------------------------",
-		End:      "// ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "Java",
 		Suffix:   ".java",
-		Begin:    "// ------------------------------- solution begin -------------------------------",
-		End:      "// ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "JavaScript",
 		Suffix:   ".js",
-		Begin:    "// ------------------------------- solution begin -------------------------------",
-		End:      "// ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "PHP",
 		Suffix:   ".php",
-		Begin:    "// ------------------------------- solution begin -------------------------------",
-		End:      "// ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "Python",
 		Suffix:   ".py",
-		Begin:    "# ------------------------------- solution begin -------------------------------",
-		End:      "# ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "Rust",
 		Suffix:   ".rs",
-		Begin:    "// ------------------------------- solution begin -------------------------------",
-		End:      "// ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "SQL",
 		Suffix:   ".sql",
-		Begin:    "# ------------------------------- solution begin -------------------------------",
-		End:      "# ------------------------------- solution end ---------------------------------",
 	},
 	{
 		Language: "Bash",
 		Suffix:   ".sh",
-		Begin:    "# ------------------------------- solution begin -------------------------------",
-		End:      "# ------------------------------- solution end ---------------------------------",
 	},
 }
 
@@ -99,13 +77,13 @@ func QuestionItem(questionItemDir string, questionID int) (err error) {
 						scanner.Split(bufio.ScanLines)
 						for scanner.Scan() {
 							if status == 1 {
-								if scanner.Text() == t.End {
+								if strings.Contains(scanner.Text(), "solution end") {
 									status = 2
 								} else {
 									answer = append(answer, scanner.Text())
 								}
 							}
-							if scanner.Text() == t.Begin {
+							if strings.Contains(scanner.Text(), "solution begin") {
 								status = 1
 							}
 						}

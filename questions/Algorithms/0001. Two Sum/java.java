@@ -1,26 +1,26 @@
 import java.util.HashMap;
 import java.util.Map;
 
-// ------------------------------- solution begin -------------------------------
+// -------------------------------solution begin-------------------------------
 class Solution {
   public int[] twoSum(int[] nums, int target) {
     Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 
     for (int i = 0; i < nums.length; ++i) {
       if (map.containsKey(target - nums[i])) {
-        return new int[] {map.get(target - nums[i]), i};
+        return new int[] { map.get(target - nums[i]), i };
       }
       map.put(nums[i], i);
     }
-    return new int[] { -1, -1};
+    return new int[] { -1, -1 };
   }
 }
-// ------------------------------- solution end ---------------------------------
+// -------------------------------solution end---------------------------------
 
 public class java {
   public static void main(String[] args) {
     Solution solution = new Solution();
-    int[] input1 = new int[] {1, 2, 3};
+    int[] input1 = new int[] { 1, 2, 3 };
     int target = 3;
 
     System.out.printf("Input:  [%d", input1[0]);
@@ -34,4 +34,3 @@ public class java {
     System.out.printf("Output: [%d, %d]\n", result[0], result[1]);
   }
 }
- 

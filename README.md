@@ -65,7 +65,7 @@ LeetCode Solutions.
 |[0040](https://leetcode-cn.com/problems/combination-sum-ii)|Medium|||||||||||
 |[0041](https://leetcode-cn.com/problems/first-missing-positive)|Hard|||||||||||
 |[0042](https://leetcode-cn.com/problems/trapping-rain-water)|Hard|||||||||||
-|[0043](https://leetcode-cn.com/problems/multiply-strings)|Medium|||||||||||
+|[0043](https://leetcode-cn.com/problems/multiply-strings)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0043.%20Multiply%20Strings/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0043.%20Multiply%20Strings/cc.cc)||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0043.%20Multiply%20Strings/java.java)|||||||
 |[0044](https://leetcode-cn.com/problems/wildcard-matching)|Hard|||||||||||
 |[0045](https://leetcode-cn.com/problems/jump-game-ii)|Medium|||||||||||
 |[0046](https://leetcode-cn.com/problems/permutations)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0046.%20Permutations/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0046.%20Permutations/c2.cc)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0046.%20Permutations/go1/go1.go)||||||||
