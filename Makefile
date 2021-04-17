@@ -7,7 +7,7 @@ all: ${TARGETS}
 .PHONY: ${TARGETS}
 ${TARGETS}: clean
 	docker build -t ${APPNAME}:$@ -f docker/$@.Dockerfile .
-	docker run -v ${PWD}:/app ${APPNAME}:$@ make -f testing/$@.makefile run
+	docker run --rm -v ${PWD}:/app ${APPNAME}:$@ make -f testing/$@.makefile run
 
 .PHONY: clean
 clean:
@@ -17,8 +17,8 @@ clean:
 install:
 	env TARGET=${APPNAME} make -C apps/cli install
 
-.PHONY: readme
-readme:
+.PHONY: gen
+gen:
 	@${APPNAME} $@
 
 .PHONY: changelog

@@ -4,6 +4,7 @@
 
 #include <ListNode.h>
 
+// ------------------------------- solution begin -------------------------------
 static struct ListNode *removeNthFromEnd(struct ListNode *head, int n) {
   if (n == 0) {
     return NULL;
@@ -30,6 +31,7 @@ static struct ListNode *removeNthFromEnd(struct ListNode *head, int n) {
 
   return head;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int array[] = {1, 2, 3, 4, 5};

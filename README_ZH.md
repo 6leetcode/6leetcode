@@ -46,10 +46,10 @@ LeetCode 题解
 |[0021](https://leetcode-cn.com/problems/merge-two-sorted-lists)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/cc.cc)|||||||||
 |[0022](https://leetcode-cn.com/problems/generate-parentheses)|Medium||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0022.%20Generate%20Parentheses/cc.cc)|||||||||
 |[0023](https://leetcode-cn.com/problems/merge-k-sorted-lists)|Hard||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0023.%20Merge%20k%20Sorted%20Lists/cc.cc)|||||||||
-|[0024](https://leetcode-cn.com/problems/swap-nodes-in-pairs)|Medium|||||||||||
-|[0025](https://leetcode-cn.com/problems/reverse-nodes-in-k-group)|Hard|||||||||||
-|[0026](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)|Easy|||||||||||
-|[0027](https://leetcode-cn.com/problems/remove-element)|Easy|||||||||||
+|[0024](https://leetcode-cn.com/problems/swap-nodes-in-pairs)|Medium||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0024.%20Swap%20Nodes%20in%20Pairs/cc.cc)|||||||||
+|[0025](https://leetcode-cn.com/problems/reverse-nodes-in-k-group)|Hard||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0025.%20Reverse%20Nodes%20in%20k-Group/cc.cc)|||||||||
+|[0026](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)|Easy||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0026.%20Remove%20Duplicates%20from%20Sorted%20Array/cc.cc)|||||||||
+|[0027](https://leetcode-cn.com/problems/remove-element)|Easy||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0027.%20Remove%20Element/cc.cc)|||||||||
 |[0028](https://leetcode-cn.com/problems/implement-strstr)|Easy|||||||||||
 |[0029](https://leetcode-cn.com/problems/divide-two-integers)|Medium|||||||||||
 |[0030](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words)|Hard|||||||||||

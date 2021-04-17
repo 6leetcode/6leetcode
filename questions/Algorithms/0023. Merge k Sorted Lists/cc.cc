@@ -1,11 +1,11 @@
 #include <iostream>
-#include <string.h>
 #include <vector>
 
 #include <ListNode.hpp>
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   ListNode *mergeTwoLists(ListNode *a, ListNode *b) {
@@ -33,6 +33,7 @@ public:
     return ans;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char **argv) {
   int arr1[] = {1, 4, 5};
