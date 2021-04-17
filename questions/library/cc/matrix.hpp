@@ -4,7 +4,8 @@
 
 using namespace std;
 
-string matrix_show(vector<vector<int>> matrix) {
+template <typename T>
+string matrix_show(vector<vector<T>> matrix) {
   stringstream ss;
   ss << "[";
   for (int i = 0; i < matrix.size(); ++i) {

@@ -69,7 +69,7 @@ LeetCode Solutions.
 |[0044](https://leetcode-cn.com/problems/wildcard-matching)|Hard|||||||||||
 |[0045](https://leetcode-cn.com/problems/jump-game-ii)|Medium|||||||||||
 |[0046](https://leetcode-cn.com/problems/permutations)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0046.%20Permutations/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0046.%20Permutations/c2.cc)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0046.%20Permutations/go1/go1.go)||||||||
-|[0047](https://leetcode-cn.com/problems/permutations-ii)|Medium|||||||||||
+|[0047](https://leetcode-cn.com/problems/permutations-ii)|Medium||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0047.%20Permutations%20II/cc.cc)|||||||||
 |[0048](https://leetcode-cn.com/problems/rotate-image)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0048.%20Rotate%20Image/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0048.%20Rotate%20Image/cpp1.cc)|||||||||
 |[0049](https://leetcode-cn.com/problems/group-anagrams)|Medium|||||||||||
 |[0050](https://leetcode-cn.com/problems/powx-n)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0050.%20Pow%28x%2C%20n%29/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0050.%20Pow%28x%2C%20n%29/cpp1.cc)||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0050.%20Pow%28x%2C%20n%29/java1.java)|||||||
