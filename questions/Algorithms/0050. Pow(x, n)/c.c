@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 static double fast_pow(double x, int32_t n) {
   if (n == 0) { return 1.0; }
   if (n == 1) { return x; }
@@ -12,6 +13,7 @@ static double fast_pow(double x, int32_t n) {
 static double myPow(double x, int n) {
   return n < 0 ? 1 / fast_pow(x, -(int32_t)(n)) : fast_pow(x, (int32_t)n);
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   double x = 2;

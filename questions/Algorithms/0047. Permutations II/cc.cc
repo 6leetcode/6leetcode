@@ -7,6 +7,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
   vector<int> vis;
 
@@ -37,6 +38,7 @@ public:
     return ans;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {1, 2, 3, 4, 5};

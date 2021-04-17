@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   static double fast_pow(double x, int32_t n) {
@@ -14,6 +15,7 @@ public:
     return n < 0 ? 1 / fast_pow(x, -(int32_t)(n)) : fast_pow(x, (int32_t)n);
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   Solution solution;

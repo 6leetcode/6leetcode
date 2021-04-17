@@ -1,3 +1,4 @@
+// -------------------------------solution begin-------------------------------
 class Solution {
   private double fastPow(double x, long n) {
     if (n == 0) {
@@ -21,8 +22,9 @@ class Solution {
     return fastPow(x, N);
   }
 }
+// -------------------------------solution end---------------------------------
 
-public class java1 {
+public class java {
   public static void main(String[] args) {
     Solution solution = new Solution();
     double x = 2;
