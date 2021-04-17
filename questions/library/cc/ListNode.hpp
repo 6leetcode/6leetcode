@@ -1,4 +1,6 @@
 #include <iostream>
+#include <sstream>
+#include <vector>
 
 using namespace std;
 
@@ -10,23 +12,36 @@ struct ListNode {
   ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-void show(struct ListNode *node) {
+string ListNode_show(struct ListNode *node) {
+  stringstream ss;
   bool first = true;
 
   struct ListNode *p = node;
   while (p != NULL) {
     if (first) {
-      printf("%d", p->val);
+      ss << p->val;
       first = false;
     } else {
-      printf(" -> %d", p->val);
+      ss << " -> " << p->val;
     }
     p = p->next;
   }
-  printf("\n");
+  return ss.str();
 }
 
-struct ListNode *init(int *arr, int len) {
+string ListNode_vector_show(vector<ListNode *> lists) {
+  stringstream ss;
+  for (size_t i = 0; i < lists.size(); i++) {
+    if (i == 0) {
+      ss << ListNode_show(lists[i]);
+    } else {
+      ss << ", " << ListNode_show(lists[i]);
+    }
+  }
+  return ss.str();
+}
+
+struct ListNode *ListNode_init(int *arr, int len) {
   struct ListNode *result = NULL;
   struct ListNode *prev = NULL;
   struct ListNode *node = NULL;
@@ -52,7 +67,7 @@ struct ListNode *init(int *arr, int len) {
   return result;
 }
 
-void destory(struct ListNode *node) {
+void ListNode_destory(struct ListNode *node) {
   struct ListNode *del = node;
   while (node != NULL) {
     node = node->next;

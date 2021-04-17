@@ -4,7 +4,8 @@
 
 using namespace std;
 
-string vector_show(vector<int> vec) {
+template <typename T>
+string vector_show(vector<T> vec) {
   stringstream ss;
   ss << "[";
   for (auto it = vec.begin(); it != vec.end(); ++it) {

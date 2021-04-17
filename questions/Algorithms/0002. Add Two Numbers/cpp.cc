@@ -58,21 +58,16 @@ int main(int argc, char **argv) {
   int arr1[3] = {2, 4, 6};
   int arr2[3] = {5, 6, 4};
 
-  struct ListNode *l1 = init(arr1, sizeof(arr1) / sizeof(int));
-  printf("Input:  ");
-  show(l1);
-
-  struct ListNode *l2 = init(arr2, sizeof(arr2) / sizeof(int));
-  printf("Input:  ");
-  show(l2);
+  struct ListNode *l1 = ListNode_init(arr1, sizeof(arr1) / sizeof(int));
+  struct ListNode *l2 = ListNode_init(arr2, sizeof(arr2) / sizeof(int));
+  cout << "Input:  " << ListNode_show(l1) << ", " << ListNode_show(l1) << endl;
 
   Solution solution;
   struct ListNode *res = solution.addTwoNumbers(l1, l2);
-  printf("Output: ");
-  show(res);
+  cout << "Input:  " << ListNode_show(res) << endl;
 
-  destory(res);
-  destory(l2);
+  ListNode_destory(res);
+  ListNode_destory(l2);
 
   return EXIT_SUCCESS;
 }
