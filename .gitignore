@@ -42,6 +42,7 @@ $HOME/
 
 .idea/
 .vscode/
+venv/
 
 *.dSYM/
 

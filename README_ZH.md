@@ -42,7 +42,7 @@ LeetCode 题解
 |[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0017.%20Letter%20Combinations%20of%20a%20Phone%20Number/c.c)||||||||||
 |[0018](https://leetcode-cn.com/problems/4sum)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0018.%204Sum/c.c)||||||||||
 |[0019](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|Medium|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0019.%20Remove%20Nth%20Node%20From%20End%20of%20List/c.c)||||||||||
-|[0020](https://leetcode-cn.com/problems/valid-parentheses)|Easy|||||||||||
+|[0020](https://leetcode-cn.com/problems/valid-parentheses)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0020.%20Valid%20Parentheses/c.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0020.%20Valid%20Parentheses/cc.cc)||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0020.%20Valid%20Parentheses/java.java)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0020.%20Valid%20Parentheses/javascript.js)||[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0020.%20Valid%20Parentheses/python.py)||||
 |[0021](https://leetcode-cn.com/problems/merge-two-sorted-lists)|Easy|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/c1.c)|[1](https://github.com/leet/leet/blob/main/questions/Algorithms/0021.%20Merge%20Two%20Sorted%20Lists/cpp1.cc)|||||||||
 |[0022](https://leetcode-cn.com/problems/generate-parentheses)|Medium|||||||||||
 |[0023](https://leetcode-cn.com/problems/merge-k-sorted-lists)|Hard|||||||||||
