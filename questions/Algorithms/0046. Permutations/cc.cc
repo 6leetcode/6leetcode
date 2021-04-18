@@ -1,44 +1,41 @@
 #include <iostream>
 #include <vector>
 
+#include <matrix.hpp>
 #include <vector.hpp>
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
-private:
+public:
   void backtrack(vector<vector<int>> &res, vector<int> &output, int first, int len) {
+    // 所有数都填完了
     if (first == len) {
       res.emplace_back(output);
       return;
     }
     for (int i = first; i < len; ++i) {
+      // 动态维护数组
       swap(output[i], output[first]);
+      // 继续递归填下一个数
       backtrack(res, output, first + 1, len);
+      // 撤销操作
       swap(output[i], output[first]);
     }
   }
-
-public:
   vector<vector<int>> permute(vector<int> &nums) {
     vector<vector<int>> res;
     backtrack(res, nums, 0, (int)nums.size());
     return res;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
-int main() {
+int main(int argc, char const *argv[]) {
   vector<int> input = {1, 2, 3};
   cout << "Input:  " << vector_show(input) << endl;
-  cout << "Output: ";
   Solution solution;
-  vector<vector<int>> output = solution.permute(input);
-  cout << "[";
-  if (output.size() > 1) {
-    cout << vector_show(input);
-  }
-  for (auto i : output) {
-    cout << ", " << vector_show(i);
-  }
-  cout << "]" << endl;
+  cout << "Output: " << matrix_show(solution.permute(input)) << endl;
+  return EXIT_SUCCESS;
 }

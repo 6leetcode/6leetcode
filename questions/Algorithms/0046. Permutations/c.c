@@ -4,6 +4,7 @@
 #include <array.h>
 #include <matrix.h>
 
+// ------------------------------- solution begin -------------------------------
 void swap(int *a, int *b) {
   int m = *a;
   *a = *b;
@@ -49,6 +50,7 @@ int **permute(int *nums, int numsSize, int *returnSize, int **returnColumnSizes)
   perm(nums, 0, numsSize);
   return ans;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input1[] = {1};
