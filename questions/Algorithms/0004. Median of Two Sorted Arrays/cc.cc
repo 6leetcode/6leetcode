@@ -3,6 +3,8 @@
 #include <iostream>
 #include <vector>
 
+#include <cc/array.hpp>
+
 using namespace std;
 
 // ------------------------------- solution begin -------------------------------
@@ -28,15 +30,7 @@ public:
 int main(int argc, char const *argv[]) {
   vector<int> input1 = {4, 3, 2, 1};
   vector<int> input2 = {9, 8, 7, 6};
-  cout << "Input: [ ";
-  for (int i = 0; i < input1.size(); i++) {
-    cout << input1[i] << " ";
-  }
-  cout << "] [ ";
-  for (int i = 0; i < input2.size(); i++) {
-    cout << input2[i] << " ";
-  }
-  cout << "]" << endl;
+  cout << "Input:  " << array_show(input1) << ", " << array_show(input2) << endl;
   Solution solution;
   cout << "Output: " << solution.findMedianSortedArrays(input1, input2) << endl;
   return EXIT_SUCCESS;

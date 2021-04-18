@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <iostream>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -20,7 +20,7 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {3, 6, 2, 3};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
   cout << "Output: " << solution.largestPerimeter(input) << endl;
   return EXIT_SUCCESS;

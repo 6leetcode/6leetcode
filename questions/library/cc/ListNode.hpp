@@ -41,22 +41,22 @@ string ListNode_vector_show(vector<ListNode *> lists) {
   return ss.str();
 }
 
-struct ListNode *ListNode_init(int *arr, int len) {
+struct ListNode *ListNode_init(vector<int> nodes) {
   struct ListNode *result = NULL;
   struct ListNode *prev = NULL;
   struct ListNode *node = NULL;
 
   bool first = true;
 
-  for (int i = 0; i < len; i++) {
-    node = (struct ListNode *)malloc(sizeof(struct ListNode));
+  for (auto n : nodes) {
+    node = new ListNode(0);
 
     if (first) {
       result = node;
       first = false;
     }
 
-    node->val = *(arr + i);
+    node->val = n;
     node->next = NULL;
 
     if (prev != NULL) {
@@ -71,7 +71,7 @@ void ListNode_destory(struct ListNode *node) {
   struct ListNode *del = node;
   while (node != NULL) {
     node = node->next;
-    free(del);
+    delete del;
     del = node;
   }
 }

@@ -22,6 +22,7 @@ class Solution:
 
 
 # ------------------------------- solution end - --------------------------------
+
 if __name__ == "__main__":
   solution = Solution()
   input = "[]"

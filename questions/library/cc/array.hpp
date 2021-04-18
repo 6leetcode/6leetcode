@@ -4,8 +4,10 @@
 
 using namespace std;
 
+#pragma once
+
 template <typename T>
-string vector_show(vector<T> vec) {
+string array_show(vector<T> vec) {
   stringstream ss;
   ss << "[";
   for (auto it = vec.begin(); it != vec.end(); ++it) {

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -23,9 +23,9 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {0, 1, 0, 3, 12};
-  cout << "Output: " << vector_show(input) << endl;
+  cout << "Output: " << array_show(input) << endl;
   Solution solution;
   solution.moveZeroes(input);
-  cout << "Output: " << vector_show(input) << endl;
+  cout << "Output: " << array_show(input) << endl;
   return EXIT_SUCCESS;
 }

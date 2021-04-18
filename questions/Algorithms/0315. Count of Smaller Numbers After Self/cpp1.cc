@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -69,8 +69,8 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {5, 2, 6, 1};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
-  cout << "Output: " << vector_show(solution.countSmaller(input)) << endl;
+  cout << "Output: " << array_show(solution.countSmaller(input)) << endl;
   return EXIT_SUCCESS;
 }

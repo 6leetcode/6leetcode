@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -31,7 +31,7 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {7, 1, 5, 3, 6, 4};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
   cout << "Output: " << solution.maxProfit(input) << endl;
   return EXIT_SUCCESS;

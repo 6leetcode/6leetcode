@@ -8,9 +8,9 @@ template <typename T>
 string matrix_show(vector<vector<T>> matrix) {
   stringstream ss;
   ss << "[";
-  for (int i = 0; i < matrix.size(); ++i) {
+  for (size_t i = 0; i < matrix.size(); ++i) {
     ss << "[";
-    for (int j = 0; j < matrix[i].size(); ++j) {
+    for (size_t j = 0; j < matrix[i].size(); ++j) {
       if (j == 0) {
         ss << matrix[i][j];
       } else {

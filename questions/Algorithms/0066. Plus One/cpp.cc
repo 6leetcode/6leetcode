@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
 // ------------------------------- solution begin -------------------------------
 class Solution {
- public:
+public:
   vector<int> plusOne(vector<int> &digits) {
     int n = digits.size();
     int carry = 1;
@@ -24,9 +24,9 @@ class Solution {
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {9, 9};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
   vector<int> output = solution.plusOne(input);
-  cout << "Output: " << vector_show(output) << endl;
+  cout << "Output: " << array_show(output) << endl;
   return 0;
 }

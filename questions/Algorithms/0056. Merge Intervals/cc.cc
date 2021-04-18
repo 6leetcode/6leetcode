@@ -2,8 +2,8 @@
 #include <iostream>
 #include <vector>
 
-#include <matrix.hpp>
-#include <vector.hpp>
+#include <cc/array.hpp>
+#include <cc/matrix.hpp>
 
 using namespace std;
 

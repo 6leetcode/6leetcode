@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -29,9 +29,9 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {2, 0, 2, 1, 1, 0};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
   solution.sortColors(input);
-  cout << "Output: " << vector_show(input) << endl;
+  cout << "Output: " << array_show(input) << endl;
   return 0;
 }

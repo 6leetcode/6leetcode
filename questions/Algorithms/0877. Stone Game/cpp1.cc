@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -15,7 +15,7 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {1, 2, 3, 4};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
   cout << "Output: " << (solution.stoneGame(input) ? "true" : "false") << endl;
   return EXIT_SUCCESS;

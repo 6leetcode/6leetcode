@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -21,7 +21,7 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
-  cout << "Input: " << vector_show(input) << endl;
+  cout << "Input: " << array_show(input) << endl;
   Solution solution;
   cout << "Output: " << solution.maxSubArray(input) << endl;
   return EXIT_SUCCESS;

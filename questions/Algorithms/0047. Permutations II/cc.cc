@@ -2,8 +2,8 @@
 #include <iostream>
 #include <vector>
 
-#include <matrix.hpp>
-#include <vector.hpp>
+#include <cc/array.hpp>
+#include <cc/matrix.hpp>
 
 using namespace std;
 
@@ -42,7 +42,7 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {1, 2, 3, 4, 5};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
   cout << "Output: " << matrix_show(solution.permuteUnique(input)) << endl;
   return EXIT_SUCCESS;

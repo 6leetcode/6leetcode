@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <ListNode.hpp>
+#include <cc/ListNode.hpp>
 
 // ------------------------------- solution begin -------------------------------
 class Solution {
@@ -19,8 +19,8 @@ public:
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
-  int arr[] = {1, 2, 3, 4};
-  struct ListNode *input = ListNode_init(arr, sizeof(arr) / sizeof(int));
+  vector<int> arr = {1, 2, 3, 4};
+  struct ListNode *input = ListNode_init(arr);
   cout << "Input:  " << ListNode_show(input) << endl;
 
   Solution solution;

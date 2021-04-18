@@ -1,4 +1,4 @@
-CXXFLAGS += -I. -Os -g3 -Wall -fsanitize=address,signed-integer-overflow -std=c++17
+CXXFLAGS += -I.. -Os -g3 -Wall -fsanitize=address,signed-integer-overflow -std=c++17
 LDFLAGS  += -lm
 
 CXX_SRCS = $(wildcard *.cc)
@@ -6,9 +6,9 @@ CXX_OUTS = $(patsubst %.cc, %, $(CXX_SRCS))
 
 .PHONY: test
 test: $(CXX_OUTS)
-	$(foreach out, $?, ./$(out);)
+	@$(foreach out, $?, ./$(out) && rm ./$(out);)
 	@$(MAKE) clean
 
 .PHONY: clean
 clean:
-	$(RM) -rf $(CXX_OUTS) *.dSYM
+	@$(RM) -rf $(CXX_OUTS) *.dSYM

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <ListNode.hpp>
+#include <cc/ListNode.hpp>
 
 using namespace std;
 
@@ -36,13 +36,13 @@ public:
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char **argv) {
-  int arr1[] = {1, 4, 5};
-  int arr2[] = {1, 3, 4};
-  int arr3[] = {2, 6};
+  vector<int> arr1 = {1, 4, 5};
+  vector<int> arr2 = {1, 3, 4};
+  vector<int> arr3 = {2, 6};
 
-  struct ListNode *l1 = ListNode_init(arr1, sizeof(arr1) / sizeof(int));
-  struct ListNode *l2 = ListNode_init(arr2, sizeof(arr2) / sizeof(int));
-  struct ListNode *l3 = ListNode_init(arr2, sizeof(arr3) / sizeof(int));
+  struct ListNode *l1 = ListNode_init(arr1);
+  struct ListNode *l2 = ListNode_init(arr2);
+  struct ListNode *l3 = ListNode_init(arr2);
   vector<ListNode *> input = {l1, l2, l3};
   cout << "Input:  " << ListNode_vector_show(input) << endl;
 

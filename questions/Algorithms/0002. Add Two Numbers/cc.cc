@@ -1,17 +1,17 @@
 #include <iostream>
 #include <string.h>
 
-#include <ListNode.hpp>
+#include <cc/ListNode.hpp>
 
 // ------------------------------- solution begin -------------------------------
 class Solution {
 public:
+  struct ListNode *dummy = new ListNode(0);
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     int carry = 0;
-    struct ListNode dummy;
-    struct ListNode *p = l1, *prev = &dummy;
+    struct ListNode *p = l1, *prev = dummy;
 
-    dummy.next = p;
+    dummy->next = p;
     while (l1 != NULL || l2 != NULL) {
       int sum = 0;
       int last_carry = carry;
@@ -42,31 +42,30 @@ public:
     }
 
     if (carry) {
-      p = (struct ListNode *)malloc(sizeof(*p));
+      p = new ListNode(0);
       p->val = carry;
       p->next = NULL;
       prev->next = p;
     }
 
-    return dummy.next;
+    return dummy->next;
   }
 };
-
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char **argv) {
-  int arr1[3] = {2, 4, 6};
-  int arr2[3] = {5, 6, 4};
+  vector<int> arr1 = {2, 4, 6};
+  vector<int> arr2 = {5, 6, 4};
 
-  struct ListNode *l1 = ListNode_init(arr1, sizeof(arr1) / sizeof(int));
-  struct ListNode *l2 = ListNode_init(arr2, sizeof(arr2) / sizeof(int));
+  struct ListNode *l1 = ListNode_init(arr1);
+  struct ListNode *l2 = ListNode_init(arr2);
   cout << "Input:  " << ListNode_show(l1) << ", " << ListNode_show(l1) << endl;
 
   Solution solution;
   struct ListNode *res = solution.addTwoNumbers(l1, l2);
-  cout << "Input:  " << ListNode_show(res) << endl;
+  cout << "Output: " << ListNode_show(res) << endl;
 
-  ListNode_destory(res);
+  ListNode_destory(solution.dummy);
   ListNode_destory(l2);
 
   return EXIT_SUCCESS;

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -35,7 +35,7 @@ public:
 int main(int argc, char const *argv[]) {
   vector<int> input1 = {-1, 2, 1, -4};
   int input2 = 1;
-  cout << "Input:  " << vector_show(input1) << endl;
+  cout << "Input:  " << array_show(input1) << endl;
   Solution solution;
   cout << "Output: " << solution.threeSumClosest(input1, input2) << endl;
   return EXIT_SUCCESS;

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -36,6 +36,6 @@ int main(int argc, char const *argv[]) {
   int input = 3;
   cout << "Input:  " << input << endl;
   Solution solution;
-  cout << "Output: " << vector_show(solution.generateParenthesis(input)) << endl;
+  cout << "Output: " << array_show(solution.generateParenthesis(input)) << endl;
   return EXIT_SUCCESS;
 }

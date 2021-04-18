@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <ListNode.hpp>
+#include <cc/ListNode.hpp>
 
 using namespace std;
 
@@ -25,11 +25,11 @@ public:
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
-  int arr1[3] = {1, 2, 4};
-  int arr2[3] = {1, 3, 4};
+  vector<int> arr1 = {1, 2, 4};
+  vector<int> arr2 = {1, 3, 4};
 
-  struct ListNode *l1 = ListNode_init(arr1, sizeof(arr1) / sizeof(int));
-  struct ListNode *l2 = ListNode_init(arr2, sizeof(arr2) / sizeof(int));
+  struct ListNode *l1 = ListNode_init(arr1);
+  struct ListNode *l2 = ListNode_init(arr2);
   cout << "Input:  " << ListNode_show(l1) << ", " << ListNode_show(l2) << endl;
 
   Solution solution;

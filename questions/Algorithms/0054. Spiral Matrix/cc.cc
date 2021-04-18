@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 
-#include <matrix.hpp>
-#include <vector.hpp>
+#include <cc/array.hpp>
+#include <cc/matrix.hpp>
 
 using namespace std;
 
@@ -46,6 +46,6 @@ int main(int argc, char const *argv[]) {
   vector<vector<int>> input = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
   cout << "Input:  " << matrix_show(input) << endl;
   Solution solution;
-  cout << "Output: " << vector_show(solution.spiralOrder(input)) << endl;
+  cout << "Output: " << array_show(solution.spiralOrder(input)) << endl;
   return EXIT_SUCCESS;
 }

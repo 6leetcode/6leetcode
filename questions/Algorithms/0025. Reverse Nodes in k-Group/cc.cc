@@ -2,7 +2,7 @@
 #include <tuple>
 #include <vector>
 
-#include <ListNode.hpp>
+#include <cc/ListNode.hpp>
 
 // ------------------------------- solution begin -------------------------------
 class Solution {
@@ -29,8 +29,7 @@ public:
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
-  int arr[] = {1, 2, 3, 4, 5};
-  struct ListNode *input1 = ListNode_init(arr, sizeof(arr) / sizeof(int));
+  struct ListNode *input1 = ListNode_init(vector<int>{1, 2, 3, 4, 5});
   int input2 = 3;
   cout << "Input:  " << ListNode_show(input1) << ", " << input2 << endl;
 

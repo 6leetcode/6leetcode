@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -35,7 +35,7 @@ public:
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {3, 30, 34, 5, 9};
-  cout << "Input:  " << vector_show(input) << endl;
+  cout << "Input:  " << array_show(input) << endl;
   Solution solution;
   cout << "Output: " << solution.largestNumber(input) << endl;
   return EXIT_SUCCESS;

@@ -49,7 +49,6 @@ struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
 
   return dummy.next;
 }
-
 // ------------------------------- solution end ---------------------------------
 
 int main(int argc, char **argv) {

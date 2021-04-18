@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vector.hpp>
+#include <cc/array.hpp>
 
 using namespace std;
 
@@ -24,7 +24,7 @@ public:
 int main(int argc, char const *argv[]) {
   vector<int> input1 = {3, 2, 2, 3};
   int input2 = 3;
-  cout << "Input:  " << vector_show(input1) << ", " << input2 << endl;
+  cout << "Input:  " << array_show(input1) << ", " << input2 << endl;
   Solution solution;
   cout << "Output: " << solution.removeElement(input1, input2) << endl;
   return EXIT_SUCCESS;
