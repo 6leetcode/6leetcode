@@ -15,20 +15,10 @@ jobs:
         with:
           fetch-depth: 0
           lfs: true
-      - name: Setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 15
       - name: Setup golang
         uses: actions/setup-go@v2
         with:
           go-version: 1.16
-      - name: Build fontend
-        run: |
-          cd apps/web
-          npm install -g yarn
-          yarn
-          yarn build
       - name: Build server
         run: |
           cd apps/cli

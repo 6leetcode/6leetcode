@@ -13,14 +13,19 @@ options:
         - recycle
         - chicken
         - fire
+        - truck
+        - bookmark
   commit_groups:
     title_maps:
+      chicken: Problems
       sparkles: Features
       bug: Bug Fixes
       zap: Performance Improvements
       recycle: Code Refactoring
-      chicken: Problems
-      fire: Code Refactoring
+      fire: Remove files
+      truck: Rename files
+      bookmark: Release version
+    group_by: Type
   header:
     pattern: "^:(\\w*)\\:\\s(.*)$"
     pattern_maps:

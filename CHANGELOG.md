@@ -1,6 +1,6 @@
 
 <a name="v1.0.0"></a>
-## v1.0.0 (2021-04-10)
+## v1.0.0 (2021-04-18)
 
 ### Bug Fixes
 
@@ -19,17 +19,6 @@
 * Fix the pagination total
 * Fix password wrong and rate limit
 * Remove leetcode domain
-
-### Code Refactoring
-
-* Remove useless files
-* Remove useless code
-* Remove something
-* Remove server command
-* Remove Makefile useless command
-* Remove wait for it bash file
-* Remove swagger host prefix
-* Remove useless file
 
 ### Code Refactoring
 
@@ -102,4 +91,35 @@
 * Export the dev server port
 * Add emoji to automatic commit title
 * Add develop database
+
+### Problems
+
+* Add problem 47 solution with C++
+* Add problem 43 solution with C & C++ & Java
+* Add problem 26,27 solution with C++
+* Add problem 23 solution with C++
+* Add problem 20 solution with C & C++ & Java & Javascript & Python
+* Add problem 136,137,520 solution with C & C++
+* Add problem 53,283 solution with C & C++
+* Add problem 179 solution with C & C++
+* Add problem 17,18,19 solution with C
+
+### Release version
+
+* Release v1.0.0
+
+### Remove files
+
+* Remove useless files
+* Remove useless code
+* Remove something
+* Remove server command
+* Remove Makefile useless command
+* Remove wait for it bash file
+* Remove swagger host prefix
+* Remove useless file
+
+### Rename files
+
+* Rename filename
 
