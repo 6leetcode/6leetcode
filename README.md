@@ -1652,6 +1652,10 @@ LeetCode Solutions.
 |[1792](https://leetcode-cn.com/problems/maximum-average-pass-ratio)|Medium|||||||||||
 |[1793](https://leetcode-cn.com/problems/maximum-score-of-a-good-subarray)|Hard|||||||||||
 |[1772](https://leetcode-cn.com/problems/sort-features-by-popularity)|Medium|||||||||||
+|[1812](https://leetcode-cn.com/problems/determine-color-of-a-chessboard-square)|Easy|||||||||||
+|[1813](https://leetcode-cn.com/problems/sentence-similarity-iii)|Medium|||||||||||
+|[1815](https://leetcode-cn.com/problems/maximum-number-of-groups-getting-fresh-donuts)|Hard|||||||||||
+|[1814](https://leetcode-cn.com/problems/count-nice-pairs-in-an-array)|Medium|||||||||||
 |[1800](https://leetcode-cn.com/problems/maximum-ascending-subarray-sum)|Easy|||||||||||
 |[1801](https://leetcode-cn.com/problems/number-of-orders-in-the-backlog)|Medium|||||||||||
 |[1802](https://leetcode-cn.com/problems/maximum-value-at-a-given-index-in-a-bounded-array)|Medium|||||||||||
@@ -1662,8 +1666,27 @@ LeetCode Solutions.
 |[1806](https://leetcode-cn.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation)|Medium|||||||||||
 |[1808](https://leetcode-cn.com/problems/maximize-number-of-nice-divisors)|Hard|||||||||||
 |[1788](https://leetcode-cn.com/problems/maximize-the-beauty-of-the-garden)|Hard|||||||||||
+|[5717](https://leetcode-cn.com/problems/minimum-operations-to-make-the-array-increasing)|Easy|||||||||||
+|[5718](https://leetcode-cn.com/problems/queries-on-number-of-points-inside-a-circle)|Medium|||||||||||
+|[5719](https://leetcode-cn.com/problems/maximum-xor-for-each-query)|Medium|||||||||||
+|[5720](https://leetcode-cn.com/problems/minimum-number-of-operations-to-make-string-sorted)|Hard|||||||||||
 |[1794](https://leetcode-cn.com/problems/count-pairs-of-equal-substrings-with-minimum-difference)|Medium|||||||||||
+|[1816](https://leetcode-cn.com/problems/truncate-sentence)|Easy|||||||||||
+|[1817](https://leetcode-cn.com/problems/finding-the-users-active-minutes)|Medium|||||||||||
+|[1818](https://leetcode-cn.com/problems/minimum-absolute-sum-difference)|Medium|||||||||||
+|[1819](https://leetcode-cn.com/problems/number-of-different-subsequences-gcds)|Hard|||||||||||
 |[1804](https://leetcode-cn.com/problems/implement-trie-ii-prefix-tree)|Medium|||||||||||
+|[1822](https://leetcode-cn.com/problems/sign-of-the-product-of-an-array)|Easy|||||||||||
+|[1823](https://leetcode-cn.com/problems/find-the-winner-of-the-circular-game)|Medium|||||||||||
+|[1824](https://leetcode-cn.com/problems/minimum-sideway-jumps)|Medium|||||||||||
+|[1825](https://leetcode-cn.com/problems/finding-mk-average)|Hard|||||||||||
+|[1810](https://leetcode-cn.com/problems/minimum-path-cost-in-a-hidden-grid)|Medium|||||||||||
+|[5734](https://leetcode-cn.com/problems/check-if-the-sentence-is-pangram)|Easy|||||||||||
+|[5735](https://leetcode-cn.com/problems/maximum-ice-cream-bars)|Medium|||||||||||
+|[5736](https://leetcode-cn.com/problems/single-threaded-cpu)|Medium|||||||||||
+|[5737](https://leetcode-cn.com/problems/find-xor-sum-of-all-pairs-bitwise-and)|Hard|||||||||||
+|[1820](https://leetcode-cn.com/problems/maximum-number-of-accepted-invitations)|Medium|||||||||||
+|[1826](https://leetcode-cn.com/problems/faulty-sensor)|Easy|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
@@ -1679,7 +1702,9 @@ LeetCode Solutions.
 |[LCP 11](https://leetcode-cn.com/problems/qi-wang-ge-shu-tong-ji)|Easy|||||||||||
 |[LCP 12](https://leetcode-cn.com/problems/xiao-zhang-shua-ti-ji-hua)|Medium|||||||||||
 |[LCP 15](https://leetcode-cn.com/problems/you-le-yuan-de-mi-gong)|Hard|||||||||||
+|[LCP 34](https://leetcode-cn.com/problems/er-cha-shu-ran-se-UGC)|Medium|||||||||||
 |[LCP 09](https://leetcode-cn.com/problems/zui-xiao-tiao-yue-ci-shu)|Hard|||||||||||
+|[LCP 37](https://leetcode-cn.com/problems/zui-xiao-ju-xing-mian-ji)|Hard|||||||||||
 |[LCP 13](https://leetcode-cn.com/problems/xun-bao)|Hard|||||||||||
 |[LCP 19](https://leetcode-cn.com/problems/UlBDOe)|Medium|||||||||||
 |[LCP 24](https://leetcode-cn.com/problems/5TxKeK)|Hard|||||||||||
@@ -1691,6 +1716,15 @@ LeetCode Solutions.
 |[LCP 22](https://leetcode-cn.com/problems/ccw6C7)|Easy|||||||||||
 |[LCP 18](https://leetcode-cn.com/problems/2vYnGI)|Easy|||||||||||
 |[LCP 27](https://leetcode-cn.com/problems/IQvJ9i)|Hard|||||||||||
+|[LCP 28](https://leetcode-cn.com/problems/4xy4Wx)|Easy|||||||||||
+|[LCP 29](https://leetcode-cn.com/problems/SNJvJP)|Easy|||||||||||
+|[LCP 31](https://leetcode-cn.com/problems/Db3wC1)|Hard|||||||||||
+|[LCP 32](https://leetcode-cn.com/problems/t3fKg1)|Hard|||||||||||
+|[LCP 35](https://leetcode-cn.com/problems/DFPeFJ)|Hard|||||||||||
+|[LCP 33](https://leetcode-cn.com/problems/o8SXZn)|Easy|||||||||||
+|[LCP 36](https://leetcode-cn.com/problems/Up5XYM)|Hard|||||||||||
+|[LCP 38](https://leetcode-cn.com/problems/7rLGCR)|Hard|||||||||||
+|[LCP 30](https://leetcode-cn.com/problems/p0NxJO)|Medium|||||||||||
 
 </details>
 
@@ -1855,6 +1889,8 @@ LeetCode Solutions.
 |[1789](https://leetcode-cn.com/problems/primary-department-for-each-employee)|Easy|||||||||||
 |[1795](https://leetcode-cn.com/problems/rearrange-products-table)|Easy|||||||||||
 |[1809](https://leetcode-cn.com/problems/ad-free-sessions)|Easy|||||||||||
+|[1811](https://leetcode-cn.com/problems/find-interview-candidates)|Medium|||||||||||
+|[1821](https://leetcode-cn.com/problems/find-customers-with-positive-revenue-this-year)|Easy|||||||||||
 
 </details>
 
@@ -1977,7 +2013,7 @@ LeetCode Solutions.
 |[面试题 17.15](https://leetcode-cn.com/problems/longest-word-lcci)|Medium|||||||||||
 |[面试题 17.16](https://leetcode-cn.com/problems/the-masseuse-lcci)|Easy|||||||||||
 |[面试题 17.17](https://leetcode-cn.com/problems/multi-search-lcci)|Medium|||||||||||
-|[面试题 17.01](https://leetcode-cn.com/problems/add-without-plus-lcci)|Easy|||||||||||
+|[面试题 17.01](https://leetcode-cn.com/problems/add-without-plus-lcci)|Easy|[1](https://github.com/leet/leet/blob/main/questions/LCCI/%E9%9D%A2%E8%AF%95%E9%A2%98%2017.01.%20Add%20Without%20Plus/c.c)|[1](https://github.com/leet/leet/blob/main/questions/LCCI/%E9%9D%A2%E8%AF%95%E9%A2%98%2017.01.%20Add%20Without%20Plus/cpp.cc)|||||||||
 |[面试题 16.25](https://leetcode-cn.com/problems/lru-cache-lcci)|Medium|||||||||||
 |[面试题 16.26](https://leetcode-cn.com/problems/calculator-lcci)|Medium|||||||||||
 |[面试题 17.20](https://leetcode-cn.com/problems/continuous-median-lcci)|Hard|||||||||||

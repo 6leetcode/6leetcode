@@ -6,7 +6,7 @@
 
 <ul>
 	<li><code>PhoneDirectory(int maxNumbers)</code> Initializes the phone directory with the number of available slots <code>maxNumbers</code>.</li>
-	<li><code>int get()</code> Provides a number that is not assigned to anyone.</li>
+	<li><code>int get()</code> Provides a number that is not assigned to anyone. Returns <code>-1</code> if no number is available.</li>
 	<li><code>bool check(int number)</code> Returns <code>true</code> if the slot <code>number</code> is available and <code>false</code> otherwise.</li>
 	<li><code>void release(int number)</code> Recycles or releases the slot <code>number</code>.</li>
 </ul>

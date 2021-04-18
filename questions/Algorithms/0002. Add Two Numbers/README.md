@@ -1,6 +1,6 @@
 ### [Add Two Numbers](https://leetcode.com/problems/add-two-numbers)
 
-<p>You are given two <b>non-empty</b> linked lists representing two non-negative integers. The digits are stored in <b>reverse order</b>, and each of their nodes contains a single digit. Add the two numbers and return the sum&nbsp;as a linked list.</p>
+<p>You are given two <strong>non-empty</strong> linked lists representing two non-negative integers. The digits are stored in <strong>reverse order</strong>, and each of their nodes contains a single digit. Add the two numbers and return the sum&nbsp;as a linked list.</p>
 
 <p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
 

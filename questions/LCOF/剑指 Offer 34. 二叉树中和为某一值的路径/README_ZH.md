@@ -2,12 +2,13 @@
 
 <p>输入一棵二叉树和一个整数，打印出二叉树中节点值的和为输入整数的所有路径。从树的根节点开始往下一直到叶节点所经过的节点形成一条路径。</p>
 
-<p>&nbsp;</p>
+<p> </p>
 
-<p><strong>示例:</strong><br>
-给定如下二叉树，以及目标和&nbsp;<code>sum = 22</code>，</p>
+<p><strong>示例:</strong><br />
+给定如下二叉树，以及目标和 <code>target = 22</code>，</p>
 
-<pre>              <strong>5</strong>
+<pre>
+              <strong>5</strong>
              / \
             <strong>4</strong>   <strong>8</strong>
            /   / \
@@ -18,18 +19,19 @@
 
 <p>返回:</p>
 
-<pre>[
+<pre>
+[
    [5,4,11,2],
    [5,8,4,5]
 ]
 </pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>提示：</strong></p>
 
 <ol>
-	<li><code>节点总数 &lt;= 10000</code></li>
+	<li><code>节点总数 <= 10000</code></li>
 </ol>
 
-<p>注意：本题与主站 113&nbsp;题相同：<a href="https://leetcode-cn.com/problems/path-sum-ii/">https://leetcode-cn.com/problems/path-sum-ii/</a></p>
+<p>注意：本题与主站 113 题相同：<a href="https://leetcode-cn.com/problems/path-sum-ii/">https://leetcode-cn.com/problems/path-sum-ii/</a></p>

@@ -1,6 +1,6 @@
 ### [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)
 
-<p>Convert a <strong>Binary Search Tree</strong>&nbsp;to a sorted <strong>Circular Doubly-Linked List</strong>&nbsp;in place.</p>
+<p>Convert a <strong>Binary Search Tree</strong> to a sorted <strong>Circular Doubly-Linked List</strong> in place.</p>
 
 <p>You can think of the left and right pointers as synonymous to the predecessor and successor pointers in a doubly-linked list. For a circular doubly linked list, the predecessor of the first element is the last element, and the successor of the last element is the first element.</p>
 
@@ -47,8 +47,7 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
-	<li><code>Node.left.val &lt; Node.val &lt; Node.right.val</code></li>
-	<li>All values of <code>Node.val</code> are unique.</li>
-	<li><code>0 &lt;= Number of Nodes &lt;= 2000</code></li>
+	<li>All the values of the tree are <strong>unique</strong>.</li>
 </ul>

@@ -34,7 +34,7 @@ func twoSum(nums []int, target int) []int {
 func main() {
 	var input1 = []int{2, 7, 3}
 	var input2 = 9
-	var output = twoSum(input1, input2)
 	fmt.Println("Input: ", input1, input2)
+	var output = twoSum(input1, input2)
 	fmt.Println("Output:", output)
 }

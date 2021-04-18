@@ -6,7 +6,7 @@
 
 <p>For example, two players might take turns drawing from a common pool of numbers from 1 to 15 without replacement until they reach a total &gt;= 100.</p>
 
-<p>Given two integers maxChoosableInteger and&nbsp;desiredTotal, return <code>true</code> if the first player to move can force a win, otherwise return <code>false</code>.&nbsp;Assume&nbsp;both players play <strong>optimally</strong>.</p>
+<p>Given two integers <code>maxChoosableInteger</code> and <code>desiredTotal</code>, return <code>true</code> if the first player to move can force a win, otherwise, return <code>false</code>. Assume both players play <strong>optimally</strong>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -40,6 +40,6 @@ Same with other integers chosen by the first player, the second player will alwa
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;=&nbsp;maxChoosableInteger &lt;= 20</code></li>
-	<li><code>0 &lt;=&nbsp;desiredTotal &lt;= 300</code></li>
+	<li><code>1 &lt;= maxChoosableInteger &lt;= 20</code></li>
+	<li><code>0 &lt;= desiredTotal &lt;= 300</code></li>
 </ul>

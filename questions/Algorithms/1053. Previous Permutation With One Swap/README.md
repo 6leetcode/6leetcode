@@ -1,6 +1,6 @@
 ### [Previous Permutation With One Swap](https://leetcode.com/problems/previous-permutation-with-one-swap)
 
-<p>Given an array&nbsp;of positive integers <code>arr</code> (not necessarily distinct), return <em>the lexicographically largest permutation that is smaller than</em> <code>arr</code>, that can be <strong>made with exactly one swap</strong> (A <em>swap</em> exchanges the positions of two numbers <code>arr[i]</code> and <code>arr[j]</code>). If it cannot be done, then return the same array.</p>
+<p>Given an array of positive integers <code>arr</code> (not necessarily distinct), return <em>the lexicographically largest permutation that is smaller than</em> <code>arr</code>, that can be <strong>made with exactly one swap</strong> (A <em>swap</em> exchanges the positions of two numbers <code>arr[i]</code> and <code>arr[j]</code>). If it cannot be done, then return the same array.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

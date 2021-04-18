@@ -1,15 +1,10 @@
 ### [Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length)
 
-<p>Given a <b>non-empty</b> string, encode the string such that its encoded length is the shortest.</p>
+<p>Given a string <code>s</code>, encode the string such that its encoded length is the shortest.</p>
 
-<p>The encoding rule is: <code>k[encoded_string]</code>, where the <code>encoded_string</code> inside the square brackets is being repeated exactly <code>k</code> times.</p>
+<p>The encoding rule is: <code>k[encoded_string]</code>, where the <code>encoded_string</code> inside the square brackets is being repeated exactly <code>k</code> times. <code>k</code> should be a positive integer.</p>
 
-<p><b>Note:</b></p>
-
-<ol>
-	<li><code>k</code> will be a positive integer.</li>
-	<li>If an encoding process does not make the string shorter, then do not encode it. If there are several solutions, return <strong>any of them</strong>.</li>
-</ol>
+<p>If an encoding process does not make the string shorter, then do not encode it. If there are several solutions, return <strong>any of them</strong>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
