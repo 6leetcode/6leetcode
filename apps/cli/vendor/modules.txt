@@ -77,15 +77,14 @@ github.com/tosone/logging
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/net v0.0.0-20210410081132-afb366fc7cd1
+# golang.org/x/net v0.0.0-20210415231046-e915ea6b2b7d
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57
+# golang.org/x/sys v0.0.0-20210415045647-66c3f260301c
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
 # golang.org/x/text v0.3.6
-## explicit
 golang.org/x/text/transform
 golang.org/x/text/unicode/norm
 # gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f
@@ -102,7 +101,7 @@ gopkg.in/yaml.v2
 # gorm.io/driver/sqlite v1.1.4
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v1.21.7
+# gorm.io/gorm v1.21.8
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks

@@ -22,14 +22,13 @@ require (
 	github.com/stretchr/testify v1.6.1 // indirect
 	github.com/tosone/logging v1.2.1
 	github.com/unknwon/com v1.0.1
-	golang.org/x/net v0.0.0-20210410081132-afb366fc7cd1 // indirect
-	golang.org/x/sys v0.0.0-20210403161142-5e06dd20ab57 // indirect
-	golang.org/x/text v0.3.6 // indirect
+	golang.org/x/net v0.0.0-20210415231046-e915ea6b2b7d // indirect
+	golang.org/x/sys v0.0.0-20210415045647-66c3f260301c // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect
 	gorm.io/driver/sqlite v1.1.4
-	gorm.io/gorm v1.21.7
+	gorm.io/gorm v1.21.8
 	moul.io/http2curl v1.0.0 // indirect
 )
 
