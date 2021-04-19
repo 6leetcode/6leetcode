@@ -44,6 +44,7 @@ var targets = map[string]string{
 const makefileDir = "testing"
 
 const tableTitle = "|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
+const tableBashTitle = "|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
 
 const EngReadme = "# LeetCode\n\n" +
 	"LeetCode Solutions.\n\n" +
@@ -185,8 +186,11 @@ const URLPrefix = "https://github.com/leet/leet/blob/main/questions/"
 
 func entry(questions []table.Question, categoryTitle string, makefileMap map[string][]string) (str string) {
 	str += fmt.Sprintf("\n<details>\n\n  <summary>%s</summary>\n\n", categoryTitle)
-
-	str += tableTitle
+	if categoryTitle != "Shell" {
+		str += tableTitle
+	} else {
+		str += tableBashTitle
+	}
 
 	for _, question := range questions {
 		if question.CategoryTitle == categoryTitle {
@@ -212,22 +216,10 @@ func entry(questions []table.Question, categoryTitle string, makefileMap map[str
 				if !info.IsDir() {
 					var prefix = URLPrefix + categoryTitle + "/" + url.PathEscape(fmt.Sprintf("%s. %s", leetcode.QuestionID(question.QuestionFrontendID), question.Title))
 					if com.IsSliceContainsStr(suffixes, filepath.Ext(path)) {
-						if filepath.Ext(path) == ".go" {
-							var s = strings.TrimSuffix(info.Name(), ".go")
-							languageMap[filepath.Ext(path)] = append(languageMap[filepath.Ext(path)], prefix+"/"+s+"/"+info.Name())
-							var dir = filepath.Dir(path)
-							dir = strings.TrimSuffix(dir, "/go")
-							dir = strings.TrimSuffix(dir, "/go1")
-							dir = strings.TrimSuffix(dir, "/go2")
-							if !com.IsSliceContainsStr(makefileMap[filepath.Ext(path)], dir) {
-								makefileMap[filepath.Ext(path)] = append(makefileMap[filepath.Ext(path)], dir)
-							}
-						} else {
-							if !com.IsSliceContainsStr(makefileMap[filepath.Ext(path)], filepath.Dir(path)) {
-								makefileMap[filepath.Ext(path)] = append(makefileMap[filepath.Ext(path)], filepath.Dir(path))
-							}
-							languageMap[filepath.Ext(path)] = append(languageMap[filepath.Ext(path)], prefix+"/"+info.Name())
+						if !com.IsSliceContainsStr(makefileMap[filepath.Ext(path)], filepath.Dir(path)) {
+							makefileMap[filepath.Ext(path)] = append(makefileMap[filepath.Ext(path)], filepath.Dir(path))
 						}
+						languageMap[filepath.Ext(path)] = append(languageMap[filepath.Ext(path)], prefix+"/"+info.Name())
 					}
 				}
 				return nil
@@ -237,12 +229,8 @@ func entry(questions []table.Question, categoryTitle string, makefileMap map[str
 			}
 
 			for _, suffix := range suffixes {
-				for index, language := range languageMap[suffix] {
-					if index == 0 {
-						str += fmt.Sprintf("[%d](%s)", index+1, language)
-					} else {
-						str += fmt.Sprintf(" [%d](%s)", index+1, language)
-					}
+				if len(languageMap[suffix]) != 0 {
+					str += ":white_check_mark:"
 				}
 				str += "|"
 			}
