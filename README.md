@@ -23,7 +23,7 @@ LeetCode Solutions.
 
 |Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[0001](https://leetcode-cn.com/problems/two-sum)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|:white_check_mark:|||
+|[0001](https://leetcode-cn.com/problems/two-sum)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|:white_check_mark:|||
 |[0002](https://leetcode-cn.com/problems/add-two-numbers)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||
 |[0003](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)|Medium|:white_check_mark:||:white_check_mark:|:white_check_mark:|||||||
 |[0004](https://leetcode-cn.com/problems/median-of-two-sorted-arrays)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|:white_check_mark:||||
