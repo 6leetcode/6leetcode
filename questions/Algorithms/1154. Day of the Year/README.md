@@ -1,6 +1,6 @@
 ### [Day of the Year](https://leetcode.com/problems/day-of-the-year)
 
-<p>Given a string <code>date</code> representing a <a href="https://en.wikipedia.org/wiki/Gregorian_calendar" target="_blank">Gregorian&nbsp;calendar</a> date formatted as <code>YYYY-MM-DD</code>, return the day number of the year.</p>
+<p>Given a string <code>date</code> representing a <a href="https://en.wikipedia.org/wiki/Gregorian_calendar" target="_blank">Gregorian calendar</a> date formatted as <code>YYYY-MM-DD</code>, return the day number of the year.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

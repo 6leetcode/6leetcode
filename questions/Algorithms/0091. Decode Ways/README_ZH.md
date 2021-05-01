@@ -9,9 +9,16 @@
 'Z' -> 26
 </pre>
 
-<p>要 <strong>解码</strong> 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，<code>"111"</code> 可以将 <code>"1"</code> 中的每个 <code>"1"</code> 映射为 <code>"A"</code> ，从而得到 <code>"AAA"</code> ，或者可以将 <code>"11"</code> 和 <code>"1"</code>（分别为 <code>"K"</code> 和 <code>"A"</code> ）映射为 <code>"KA"</code> 。注意，<code>"06"</code> 不能映射为 <code>"F"</code> ，因为 <code>"6"</code> 和 <code>"06"</code> 不同。</p>
+<p>要 <strong>解码</strong> 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，<code>"11106"</code> 可以映射为：</p>
 
-<p>给你一个只含数字的 <strong>非空 </strong>字符串 <code>num</code> ，请计算并返回 <strong>解码</strong> 方法的 <strong>总数</strong> 。</p>
+<ul>
+	<li><code>"AAJF"</code> ，将消息分组为 <code>(1 1 10 6)</code></li>
+	<li><code>"KJF"</code> ，将消息分组为 <code>(11 10 6)</code></li>
+</ul>
+
+<p>注意，消息不能分组为  <code>(1 11 06)</code> ，因为 <code>"06"</code> 不能映射为 <code>"F"</code> ，这是由于 <code>"6"</code> 和 <code>"06"</code> 在映射中并不等价。</p>
+
+<p>给你一个只含数字的 <strong>非空 </strong>字符串 <code>s</code> ，请计算并返回 <strong>解码</strong> 方法的 <strong>总数</strong> 。</p>
 
 <p>题目数据保证答案肯定是一个 <strong>32 位</strong> 的整数。</p>
 
@@ -38,7 +45,9 @@
 <pre>
 <strong>输入：</strong>s = "0"
 <strong>输出：</strong>0
-<strong>解释：</strong>没有字符映射到以 0 开头的数字。含有 0 的有效映射是 'J' -> "10" 和 'T'-> "20" 。由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。
+<strong>解释：</strong>没有字符映射到以 0 开头的数字。
+含有 0 的有效映射是 'J' -> "10" 和 'T'-> "20" 。
+由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。
 </pre>
 
 <p><strong>示例 4：</strong></p>
@@ -46,8 +55,7 @@
 <pre>
 <strong>输入：</strong>s = "06"
 <strong>输出：</strong>0
-<strong>解释：</strong>"06" 不能映射到 "F" ，因为字符串开头的 0 无法指向一个有效的字符。 
-</pre>
+<strong>解释：</strong>"06" 不能映射到 "F" ，因为字符串含有前导 0（<code>"6"</code> 和 <code>"06"</code> 在映射中并不等价）。</pre>
 
 <p> </p>
 

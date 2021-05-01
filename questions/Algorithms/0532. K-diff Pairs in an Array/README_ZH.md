@@ -1,12 +1,11 @@
 ### [数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array)
 
-<p>给定一个整数数组和一个整数 <code><strong>k</strong></code>，你需要在数组里找到<strong>不同的 </strong>k-diff 数对，并返回不同的 <strong>k-diff 数对</strong> 的数目。</p>
+<p>给定一个整数数组和一个整数 <code><strong>k</strong></code>，你需要在数组里找到<strong> 不同的 </strong>k-diff 数对，并返回不同的 <strong>k-diff 数对</strong> 的数目。</p>
 
 <p>这里将 <strong>k-diff</strong> 数对定义为一个整数对 <code>(nums[i], nums[j])</code>，并满足下述全部条件：</p>
 
 <ul>
-	<li><code>0 <= i, j < nums.length</code></li>
-	<li><code>i != j</code></li>
+	<li><code>0 <= i < j < nums.length</code></li>
 	<li><code>|nums[i] - nums[j]| == k</code></li>
 </ul>
 

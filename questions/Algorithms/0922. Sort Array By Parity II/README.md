@@ -31,3 +31,6 @@
 	<li>Half of the integers in <code>nums</code> are even.</li>
 	<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow Up:</strong> Could you solve it in-place?</p>

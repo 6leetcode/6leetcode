@@ -298,8 +298,8 @@ LeetCode 题解
 |[0290](https://leetcode-cn.com/problems/word-pattern)|Easy|||||||||||
 |[0291](https://leetcode-cn.com/problems/word-pattern-ii)|Medium|||||||||||
 |[0292](https://leetcode-cn.com/problems/nim-game)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||
-|[0293](https://leetcode-cn.com/problems/flip-game)|Easy|||||||||||
-|[0294](https://leetcode-cn.com/problems/flip-game-ii)|Medium|||||||||||
+|[0293](https://leetcode-cn.com/problems/flip-game)|Easy||:white_check_mark:|||||||||
+|[0294](https://leetcode-cn.com/problems/flip-game-ii)|Medium||:white_check_mark:|||||||||
 |[0295](https://leetcode-cn.com/problems/find-median-from-data-stream)|Hard|||||||||||
 |[0296](https://leetcode-cn.com/problems/best-meeting-point)|Hard|||||||||||
 |[0297](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree)|Hard|||||||||||
@@ -1666,6 +1666,10 @@ LeetCode 题解
 |[1806](https://leetcode-cn.com/problems/minimum-number-of-operations-to-reinitialize-a-permutation)|Medium|||||||||||
 |[1808](https://leetcode-cn.com/problems/maximize-number-of-nice-divisors)|Hard|||||||||||
 |[1788](https://leetcode-cn.com/problems/maximize-the-beauty-of-the-garden)|Hard|||||||||||
+|[1827](https://leetcode-cn.com/problems/minimum-operations-to-make-the-array-increasing)|Easy|||||||||||
+|[1828](https://leetcode-cn.com/problems/queries-on-number-of-points-inside-a-circle)|Medium|||||||||||
+|[1829](https://leetcode-cn.com/problems/maximum-xor-for-each-query)|Medium|||||||||||
+|[1830](https://leetcode-cn.com/problems/minimum-number-of-operations-to-make-string-sorted)|Hard|||||||||||
 |[1794](https://leetcode-cn.com/problems/count-pairs-of-equal-substrings-with-minimum-difference)|Medium|||||||||||
 |[1816](https://leetcode-cn.com/problems/truncate-sentence)|Easy|||||||||||
 |[1817](https://leetcode-cn.com/problems/finding-the-users-active-minutes)|Medium|||||||||||
@@ -1677,8 +1681,18 @@ LeetCode 题解
 |[1824](https://leetcode-cn.com/problems/minimum-sideway-jumps)|Medium|||||||||||
 |[1825](https://leetcode-cn.com/problems/finding-mk-average)|Hard|||||||||||
 |[1810](https://leetcode-cn.com/problems/minimum-path-cost-in-a-hidden-grid)|Medium|||||||||||
+|[1832](https://leetcode-cn.com/problems/check-if-the-sentence-is-pangram)|Easy|||||||||||
+|[1833](https://leetcode-cn.com/problems/maximum-ice-cream-bars)|Medium|||||||||||
+|[1834](https://leetcode-cn.com/problems/single-threaded-cpu)|Medium|||||||||||
+|[1835](https://leetcode-cn.com/problems/find-xor-sum-of-all-pairs-bitwise-and)|Hard|||||||||||
+|[1837](https://leetcode-cn.com/problems/sum-of-digits-in-base-k)|Easy|||||||||||
+|[1838](https://leetcode-cn.com/problems/frequency-of-the-most-frequent-element)|Medium|||||||||||
+|[1839](https://leetcode-cn.com/problems/longest-substring-of-all-vowels-in-order)|Medium|||||||||||
+|[1840](https://leetcode-cn.com/problems/maximum-building-height)|Hard|||||||||||
 |[1820](https://leetcode-cn.com/problems/maximum-number-of-accepted-invitations)|Medium|||||||||||
 |[1826](https://leetcode-cn.com/problems/faulty-sensor)|Easy|||||||||||
+|[1836](https://leetcode-cn.com/problems/remove-duplicates-from-an-unsorted-linked-list)|Medium|||||||||||
+|[1842](https://leetcode-cn.com/problems/next-palindrome-using-same-digits)|Hard|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
@@ -1883,6 +1897,8 @@ LeetCode 题解
 |[1809](https://leetcode-cn.com/problems/ad-free-sessions)|Easy|||||||||||
 |[1811](https://leetcode-cn.com/problems/find-interview-candidates)|Medium|||||||||||
 |[1821](https://leetcode-cn.com/problems/find-customers-with-positive-revenue-this-year)|Easy|||||||||||
+|[1831](https://leetcode-cn.com/problems/maximum-transaction-each-day)|Medium|||||||||||
+|[1841](https://leetcode-cn.com/problems/league-statistics)|Medium|||||||||||
 
 </details>
 

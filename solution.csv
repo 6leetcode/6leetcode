@@ -1,4 +1,38 @@
 questionId,language,filename,data
+7,C,c.c,c.c,"int reverse(int x) {
+  int y = 0;
+  int n;
+  while (x != 0) {
+    n = x % 10;
+    if (y > INT_MAX / 10 || y < INT_MIN / 10) {
+      return 0;
+    }
+    y = y * 10 + n;
+    x /= 10;
+  }
+  return y;
+}"
+7,Rust,rust1.rs,rust1.rs,"impl Solution {
+  pub fn reverse(x: i32) -> i32 {
+    let mut ret = 0i32;
+    let mut x_clone = x;
+    while x_clone != 0 {
+      let i = x_clone % 10;
+      let x1 = ret.overflowing_mul(10);
+      if x1.1 == true {
+        return 0;
+      }
+      let x2 = x1.0.overflowing_add(i);
+      if x2.1 == true {
+        return 0;
+      }
+      ret = x2.0;
+      x_clone = x_clone / 10;
+    }
+
+    ret
+  }
+}"
 5,C,c.c,c.c,"char *longestPalindrome(char *s) {
   int sz;
   int i, j, k, l;
@@ -27,21 +61,6 @@ questionId,language,filename,data
   memcpy(news, s + where, len);
   news[len] = 0;
   return news;
-}"
-9,C,c.c,c.c,"bool isPalindrome(int x) {
-  int n, d, k = 0;
-
-  if (x < 0) return false;
-
-  n = x;
-  while (n) {
-    d = n % 10;
-    if (k > (0x7fffffff - d) / 10) return false; // overflow
-    k = k * 10 + d;
-    n = n / 10;
-  }
-
-  return (k == x);
 }"
 2,C,c.c,c.c,"struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2) {
   int carry = 0;
@@ -86,16 +105,15 @@ questionId,language,filename,data
   }
 
   return dummy.next;
-}
-"
-2,C++,cpp.cc,cpp.cc,"class Solution {
+}"
+2,C++,cc.cc,cc.cc,"class Solution {
 public:
+  struct ListNode *dummy = new ListNode(0);
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
     int carry = 0;
-    struct ListNode dummy;
-    struct ListNode *p = l1, *prev = &dummy;
+    struct ListNode *p = l1, *prev = dummy;
 
-    dummy.next = p;
+    dummy->next = p;
     while (l1 != NULL || l2 != NULL) {
       int sum = 0;
       int last_carry = carry;
@@ -126,16 +144,15 @@ public:
     }
 
     if (carry) {
-      p = (struct ListNode *)malloc(sizeof(*p));
+      p = new ListNode(0);
       p->val = carry;
       p->next = NULL;
       prev->next = p;
     }
 
-    return dummy.next;
+    return dummy->next;
   }
-};
-"
+};"
 2,Golang,golang.go,golang.go,"func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var head = &ListNode{Val: 0}
 	n1, n2, carry, current := 0, 0, 0, head
@@ -160,32 +177,32 @@ public:
 }
 "
 2,Java,java.java,java.java,"class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode a = l1;
-        ListNode b = l2;
-        ListNode resultNode = new ListNode(0);
-        ListNode finalResult = resultNode;
-        int additional = 0;
-        while (a != null || b != null) {
-            int aVal = a != null ? a.val : 0;
-            int bVal = b != null ? b.val : 0;
-            int result = additional + aVal + bVal; // 计算两数相加
-            int m = result % 10; // 两数相加的余数是下一个链表的值
-            additional = result / 10; // 求商：如果商大于0,则下一个链表的值需要加n
-            finalResult.next = new ListNode(m);
-            finalResult = finalResult.next;
-            if (a != null) {
-                a = a.next;
-            }
-            if (b != null) {
-                b = b.next;
-            }
-        }
-        if (additional > 0) {
-            finalResult.next = new ListNode(additional);
-        }
-        return resultNode.next;
+  public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    ListNode a = l1;
+    ListNode b = l2;
+    ListNode resultNode = new ListNode(0);
+    ListNode finalResult = resultNode;
+    int additional = 0;
+    while (a != null || b != null) {
+      int aVal = a != null ? a.val : 0;
+      int bVal = b != null ? b.val : 0;
+      int result = additional + aVal + bVal; // 计算两数相加
+      int m = result % 10; // 两数相加的余数是下一个链表的值
+      additional = result / 10; // 求商：如果商大于0,则下一个链表的值需要加n
+      finalResult.next = new ListNode(m);
+      finalResult = finalResult.next;
+      if (a != null) {
+        a = a.next;
+      }
+      if (b != null) {
+        b = b.next;
+      }
     }
+    if (additional > 0) {
+      finalResult.next = new ListNode(additional);
+    }
+    return resultNode.next;
+  }
 }
 "
 2,PHP,php.php,php.php,"class Solution
@@ -230,6 +247,237 @@ public:
     }
 }
 "
+8,C,c.c,c.c,"int myAtoi(char *str) {
+  char *s;
+  long n = 0;
+  int sign = 0;
+
+  while (*str == ' ' || *str == '\t') {
+    str++;
+  }
+
+  if (*str == '-') {
+    if (isdigit(*++str)) {
+      sign = 1;
+    } else {
+      return 0;
+    }
+  }
+
+  if (*str == '+') {
+    if (isdigit(*++str)) {
+      sign = 0;
+    } else {
+      return 0;
+    }
+  }
+
+  for (s = str; *s != '\0'; s++) {
+    if (isdigit(*s)) {
+      int d = *s - '0';
+      if (sign) {
+        if (-n < (INT_MIN + d) / 10) {
+          n = INT_MIN;
+          break;
+        }
+      } else {
+        if (n > (INT_MAX - d) / 10) {
+          n = INT_MAX;
+          break;
+        }
+      }
+      n = n * 10 + d;
+    } else {
+      break;
+    }
+  }
+
+  return sign ? -n : n;
+}"
+6,C,c.c,c.c,"char *convert(char *s, int numRows) {
+  int len;
+  int i, j, k = 0;
+  char *p;
+  int step, up;
+
+  if (!s || !*s || numRows == 1) return s;
+
+  len = strlen(s);
+  p = malloc((len + 1) * sizeof(char));
+  //assert(p);
+
+  step = (numRows - 1) * 2; // max span
+
+  for (i = 0; i < numRows; i++) {
+    j = i; // first letter of each row
+    up = 1;
+    while (j < len) {
+      p[k++] = s[j];
+      if (i == 0 || i == numRows - 1) {
+        j += step; // full span
+      } else if (up) {
+        j += step - i * 2; // full span - offset
+        up = 0;
+      } else {
+        j += i * 2; // offset
+        up = 1;
+      }
+    }
+  }
+  p[k] = 0;
+  return p;
+}"
+3,C,c.c,c.c,"int lengthOfLongestSubstring(char *s) {
+  int offset[128];
+  int max_len = 0;
+  int len = 0;
+
+  memset(offset, 0xff, sizeof(offset));
+  for (int i = 0; i < strlen(s); i++) {
+    if (offset[(int)*(s + i)] == -1) {
+      len++;
+    } else {
+      if (i - offset[(int)*(s + i)] > len) {
+        len++;
+      } else {
+        len = i - offset[(int)*(s + i)];
+      }
+    }
+    if (len > max_len) {
+      max_len = len;
+    }
+    offset[(int)*(s + i)] = i;
+  }
+
+  return max_len;
+}"
+3,Golang,go1.go,go1.go,"func lengthOfLongestSubstring(s string) int {
+	max := 0
+	n := len(s)
+	start := 0
+	end := 0
+	mp := make(map[string]int, 0)
+	if n < 2 {
+		return n
+	}
+	for ; end < n; end++ {
+		char := s[end : end+1]
+		v, ok := mp[char]
+		if ok {
+			start = int(math.Max(float64(start), float64(v)))
+		}
+		max = int(math.Max(float64(max), float64(end-start+1)))
+		mp[char] = end + 1
+	}
+	return max
+}
+"
+3,Golang,go2.go,go2.go,"func lengthOfLongestSubstring(s string) int {
+	n := len(s)
+	if n < 2 {
+		return n
+	}
+	max := 0
+	for i := 0; i < n; i++ {
+		mp := make(map[uint8]int)
+		mp[s[i]] = 1
+		for j := i + 1; j < n; j++ {
+			if _, ok := mp[s[j]]; !ok {
+				mp[s[j]] = 1
+			} else {
+				break
+			}
+		}
+		if max < len(mp) {
+			max = len(mp)
+		}
+	}
+	return max
+}
+"
+3,Java,java1.java,java1.java,"class Solution {
+  public int lengthOfLongestSubstring(String s) {
+    int result = 0;
+    for (int i = 0; i < s.length(); i++) {
+      for (int j = i + 1; j <= s.length(); j++) {
+        String substring = s.substring(i, j);
+        if (hasRepeat(substring)) {
+          break;
+        } else if (substring.length() > result) {
+          result = substring.length();
+        }
+      }
+    }
+    return result;
+  }
+
+  private boolean hasRepeat(String substring) {
+    Set<Character> charList = new HashSet<>();
+    for (int i = 0; i < substring.length(); i++) {
+      if (charList.contains(substring.charAt(i))) {
+        return true;
+      }
+      charList.add(substring.charAt(i));
+    }
+    return false;
+  }
+}"
+3,Java,java2.java,java2.java,"class Solution {
+  public int lengthOfLongestSubstring(String s) {
+    if (s == null || s.length() == 0) {
+      return 0;
+    }
+    int result = 0;
+    int length = 0;
+    HashMap<Character, Integer> resultMap = new HashMap<>();
+    for (int i = 0; i < s.length(); i++) {
+      if (resultMap.containsKey(s.charAt(i))) {
+        i = resultMap.get(s.charAt(i));
+        resultMap.clear();
+        length = 0;
+        continue;
+      }
+      length++;
+      resultMap.put(s.charAt(i), i);
+      result = Math.max(result, length);
+    }
+    return result;
+  }
+}"
+3,Java,java3.java,java3.java,"class Solution {
+  public int lengthOfLongestSubstring(String s) {
+    if (s == null || s.length() == 0) {
+      return 0;
+    }
+    int result = 0;
+    int start = 0;
+    int length = 0;
+    HashMap<Character, Integer> indexMap = new HashMap<>();
+    for (int i = 0; i < s.length(); i++) {
+      if (indexMap.containsKey(s.charAt(i)) && indexMap.get(s.charAt(i)) >= start) {
+        start = indexMap.get(s.charAt(i)) + 1;
+      }
+      length = i - start + 1;
+      indexMap.put(s.charAt(i), i);
+      result = Math.max(length, result);
+    }
+    return result;
+  }
+}"
+3,Java,java4.java,java4.java,"class Solution {
+  public int lengthOfLongestSubstring(String s) {
+    int result = 0;
+    LinkedList<Character> linkedList = new LinkedList<>();
+    for (int i = 0; i < s.length(); i++) {
+      while (linkedList.contains(s.charAt(i))) {
+        linkedList.removeFirst();
+      }
+      linkedList.add(s.charAt(i));
+      result = Math.max(result, linkedList.size());
+    }
+    return result;
+  }
+}"
 4,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
   return (*(signed int *)b > *(signed int *)a) ? 1 : 0;
 }
@@ -255,7 +503,7 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
   free(merge);
   return result;
 }"
-4,C++,cpp.cc,cpp.cc,"class Solution {
+4,C++,cc.cc,cc.cc,"class Solution {
 public:
   double findMedianSortedArrays(vector<int> &nums1, vector<int> &nums2) {
     double result = 0;
@@ -340,233 +588,6 @@ public:
 	return
 }
 "
-3,C,c.c,c.c,"int lengthOfLongestSubstring(char *s) {
-  int offset[128];
-  int max_len = 0;
-  int len = 0;
-
-  memset(offset, 0xff, sizeof(offset));
-  for (int i = 0; i < strlen(s); i++) {
-    if (offset[(int)*(s + i)] == -1) {
-      len++;
-    } else {
-      if (i - offset[(int)*(s + i)] > len) {
-        len++;
-      } else {
-        len = i - offset[(int)*(s + i)];
-      }
-    }
-    if (len > max_len) {
-      max_len = len;
-    }
-    offset[(int)*(s + i)] = i;
-  }
-
-  return max_len;
-}"
-3,Golang,go1.go,go1.go,"func lengthOfLongestSubstring(s string) int {
-	max := 0
-	n := len(s)
-	start := 0
-	end := 0
-	mp := make(map[string]int, 0)
-	if n < 2 {
-		return n
-	}
-	for ; end < n; end++ {
-		char := s[end : end+1]
-		v, ok := mp[char]
-		if ok {
-			start = int(math.Max(float64(start), float64(v)))
-		}
-		max = int(math.Max(float64(max), float64(end-start+1)))
-		mp[char] = end + 1
-	}
-	return max
-}
-"
-3,Golang,go2.go,go2.go,"func lengthOfLongestSubstring(s string) int {
-	n := len(s)
-	if n < 2 {
-		return n
-	}
-	max := 0
-	for i := 0; i < n; i++ {
-		mp := make(map[uint8]int)
-		mp[s[i]] = 1
-		for j := i + 1; j < n; j++ {
-			if _, ok := mp[s[j]]; !ok {
-				mp[s[j]] = 1
-			} else {
-				break
-			}
-		}
-		if max < len(mp) {
-			max = len(mp)
-		}
-	}
-	return max
-}
-"
-3,Java,java1.java,java1.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        int result = 0;
-        for (int i = 0; i < s.length(); i++) {
-            for (int j = i + 1; j <= s.length(); j++) {
-                String substring = s.substring(i, j);
-                if (hasRepeat(substring)) {
-                    break;
-                } else if (substring.length() > result) {
-                    result = substring.length();
-                }
-            }
-        }
-        return result;
-    }
-
-    private boolean hasRepeat(String substring) {
-        Set<Character> charList = new HashSet<>();
-        for (int i = 0; i < substring.length(); i++) {
-            if (charList.contains(substring.charAt(i))) {
-                return true;
-            }
-            charList.add(substring.charAt(i));
-        }
-        return false;
-    }
-}"
-3,Java,java2.java,java2.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        if (s == null || s.length() == 0) {
-            return 0;
-        }
-        int result = 0;
-        int length = 0;
-        HashMap<Character, Integer> resultMap = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (resultMap.containsKey(s.charAt(i))) {
-                i = resultMap.get(s.charAt(i));
-                resultMap.clear();
-                length = 0;
-                continue;
-            }
-            length++;
-            resultMap.put(s.charAt(i), i);
-            result = Math.max(result, length);
-        }
-        return result;
-    }
-}"
-3,Java,java3.java,java3.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        if (s == null || s.length() == 0) {
-            return 0;
-        }
-        int result = 0;
-        int start = 0;
-        int length = 0;
-        HashMap<Character, Integer> indexMap = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (indexMap.containsKey(s.charAt(i)) && indexMap.get(s.charAt(i)) >= start) {
-                start = indexMap.get(s.charAt(i)) + 1;
-            }
-            length = i - start + 1;
-            indexMap.put(s.charAt(i), i);
-            result = Math.max(length, result);
-        }
-        return result;
-    }
-}"
-3,Java,java4.java,java4.java,"class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        int result = 0;
-        LinkedList<Character> linkedList = new LinkedList<>();
-        for (int i = 0; i < s.length(); i++) {
-            while (linkedList.contains(s.charAt(i))) {
-                linkedList.removeFirst();
-            }
-            linkedList.add(s.charAt(i));
-            result = Math.max(result, linkedList.size());
-        }
-        return result;
-    }
-}"
-31,C,c1.c,c1.c,"void swap(int *a, int *b) {
-  int t = *a;
-  *a = *b, *b = t;
-}
-
-void reverse(int *nums, int left, int right) {
-  while (left < right) {
-    swap(nums + left, nums + right);
-    left++, right--;
-  }
-}
-
-void nextPermutation(int *nums, int numsSize) {
-  int i = numsSize - 2;
-  while (i >= 0 && nums[i] >= nums[i + 1]) {
-    i--;
-  }
-  if (i >= 0) {
-    int j = numsSize - 1;
-    while (j >= 0 && nums[i] >= nums[j]) {
-      j--;
-    }
-    swap(nums + i, nums + j);
-  }
-  reverse(nums, i + 1, numsSize - 1);
-}"
-31,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  void nextPermutation(vector<int> &nums) {
-    int n = nums.size();
-
-    int mx = nums.back();
-    int i;
-    for (i = n - 2; i >= 0; i--)
-      if (nums[i] < nums[i + 1])
-        break;
-
-    if (~i) {
-      int j = i + 1;
-      for (int k = j; k < n; k++)
-        if (nums[k] > nums[i] && nums[k] <= nums[j])
-          j = k;
-
-      swap(nums[i], nums[j]);
-    }
-
-    reverse(nums.begin() + i + 1, nums.end());
-  }
-};"
-48,C,c1.c,c1.c,"void rotate(int **matrix, int matrixSize, int *matrixColSize) {
-  for (int i = 0; i < matrixSize; i++) {
-    if (i < matrixSize / 2) {
-      int *temp = matrix[i];
-      matrix[i] = matrix[matrixSize - 1 - i];
-      matrix[matrixSize - 1 - i] = temp;
-    }
-  }
-  for (int i = 0; i < matrixSize; ++i) {
-    for (int j = i + 1; j < matrixColSize[i]; ++j) {
-      int temp = matrix[i][j];
-      matrix[i][j] = matrix[j][i];
-      matrix[j][i] = temp;
-    }
-  }
-}"
-48,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  void rotate(vector<vector<int>> &matrix) {
-    reverse(matrix.begin(), matrix.end());
-    for (int i = 0; i < matrix.size(); ++i) {
-      for (int j = i + 1; j < matrix[i].size(); ++j)
-        swap(matrix[i][j], matrix[j][i]);
-    }
-  }
-};
-"
 1,C,c.c,c.c,"int *twoSum(int *nums, int numsSize, int target, int *returnSize) {
   *returnSize = 2;
 
@@ -582,7 +603,7 @@ public:
   }
   return ans;
 }"
-1,C++,cpp.cc,cpp.cc,"class Solution {
+1,C++,cc.cc,cc.cc,"class Solution {
  public:
   vector<int> twoSum(vector<int> &nums, int target) {
     unordered_map<int, int> umap;
@@ -627,13 +648,24 @@ public:
 
     for (int i = 0; i < nums.length; ++i) {
       if (map.containsKey(target - nums[i])) {
-        return new int[] {map.get(target - nums[i]), i};
+        return new int[] { map.get(target - nums[i]), i };
       }
       map.put(nums[i], i);
     }
-    return new int[] { -1, -1};
+    return new int[] { -1, -1 };
   }
 }"
+1,Python,python.py,python.py,"
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        umap = dict()
+        for i in range(0, len(nums)):
+            if umap.get(target - nums[i]) is not None:
+                return [umap.get(target - nums[i]), i]
+            umap[nums[i]] = i
+        return [-1, -1]
+"
 1,Rust,rust.rs,rust.rs,"use std::collections::HashMap;
 impl Solution {
   pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
@@ -649,37 +681,6 @@ impl Solution {
     vec![]
   }
 }"
-21,C,c1.c,c1.c,"struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2) {
-  if (l1 == NULL) {
-    return l2;
-  } else if (l2 == NULL) {
-    return l1;
-  } else if (l1->val < l2->val) {
-    l1->next = mergeTwoLists(l1->next, l2);
-    return l1;
-  } else {
-    l2->next = mergeTwoLists(l1, l2->next);
-    return l2;
-  }
-}
-"
-21,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
-    if (l1 == nullptr) {
-      return l2;
-    } else if (l2 == nullptr) {
-      return l1;
-    } else if (l1->val < l2->val) {
-      l1->next = mergeTwoLists(l1->next, l2);
-      return l1;
-    } else {
-      l2->next = mergeTwoLists(l1, l2->next);
-      return l2;
-    }
-  }
-};
-"
 66,C,c.c,c.c,"int *plusOne(int *digits, int digitsSize, int *returnSize) {
   int carry = 1;
   for (int i = digitsSize - 1; i >= 0; i--) {
@@ -705,7 +706,7 @@ public:
   return ans;
 }"
 66,C++,cpp.cc,cpp.cc,"class Solution {
- public:
+public:
   vector<int> plusOne(vector<int> &digits) {
     int n = digits.size();
     int carry = 1;
@@ -751,392 +752,349 @@ public:
     digits
   }
 }"
-7,C,c.c,c.c,"int reverse(int x) {
-  int y = 0;
-  int n;
-  while (x != 0) {
-    n = x % 10;
-    if (y > INT_MAX / 10 || y < INT_MIN / 10) {
-      return 0;
+15,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
+  return *(int *)a - *(int *)b;
+}
+
+int **threeSum(int *nums, int numsSize, int *returnSize, int **returnColumnSizes) {
+  qsort(nums, numsSize, sizeof(int), cmpfunc);
+  int **ans = NULL;
+  *returnSize = 0;
+  *returnColumnSizes = NULL;
+
+  int virtual_size = 165;
+
+  ans = (int **)malloc(sizeof(int *) * virtual_size);
+  *returnColumnSizes = (int *)malloc(sizeof(int) * virtual_size);
+
+  for (uint16_t i = 0; i < numsSize; i++) {
+    if (nums[i] > 0) {
+      return ans;
     }
-    y = y * 10 + n;
-    x /= 10;
-  }
-  return y;
-}"
-7,Rust,rust1.rs,rust1.rs,"impl Solution {
-  pub fn reverse(x: i32) -> i32 {
-    let mut ret = 0i32;
-    let mut x_clone = x;
-    while x_clone != 0 {
-      let i = x_clone % 10;
-      let x1 = ret.overflowing_mul(10);
-      if x1.1 == true {
-        return 0;
-      }
-      let x2 = x1.0.overflowing_add(i);
-      if x2.1 == true {
-        return 0;
-      }
-      ret = x2.0;
-      x_clone = x_clone / 10;
+    if (i > 0 && nums[i] == nums[i - 1]) {
+      continue;
     }
-
-    ret
-  }
-}"
-6,C,c.c,c.c,"char *convert(char *s, int numRows) {
-  int len;
-  int i, j, k = 0;
-  char *p;
-  int step, up;
-
-  if (!s || !*s || numRows == 1) return s;
-
-  len = strlen(s);
-  p = malloc((len + 1) * sizeof(char));
-  //assert(p);
-
-  step = (numRows - 1) * 2; // max span
-
-  for (i = 0; i < numRows; i++) {
-    j = i; // first letter of each row
-    up = 1;
-    while (j < len) {
-      p[k++] = s[j];
-      if (i == 0 || i == numRows - 1) {
-        j += step; // full span
-      } else if (up) {
-        j += step - i * 2; // full span - offset
-        up = 0;
+    int left = i + 1;
+    int right = numsSize - 1;
+    while (left < right) {
+      int temp = nums[i] + nums[left] + nums[right];
+      if (temp > 0) {
+        right--;
+      } else if (temp < 0) {
+        left++;
       } else {
-        j += i * 2; // offset
-        up = 1;
+        if (*returnSize >= virtual_size) {
+          virtual_size *= 2;
+          ans = (int **)realloc(ans, sizeof(int *) * virtual_size);
+          *returnColumnSizes = (int *)realloc(*returnColumnSizes, sizeof(int) * virtual_size);
+        }
+        *(ans + *returnSize) = (int *)malloc(sizeof(int) * 3);
+        *(*returnColumnSizes + *returnSize) = 3;
+        ans[*returnSize][0] = nums[i];
+        ans[*returnSize][1] = nums[left];
+        ans[*returnSize][2] = nums[right];
+        while (left < right && nums[left] == nums[left + 1]) {
+          left++;
+        }
+        while (left < right && nums[right] == nums[right - 1]) {
+          right--;
+        }
+        left++;
+        right--;
+        (*returnSize)++;
       }
     }
   }
-  p[k] = 0;
-  return p;
+  ans = (int **)realloc(ans, sizeof(int *) * *returnSize);
+  *returnColumnSizes = (int *)realloc(*returnColumnSizes, sizeof(int) * *returnSize);
+  return ans;
 }"
-121,C++,cpp1.cc,cpp1.cc,"class Solution {
+15,C++,cc.cc,cc.cc,"class Solution {
 public:
-  int maxProfit(vector<int> &prices) {
-    if (prices.size() == 0) {
-      return 0;
-    }
-    int max_profit = 0;
-    int min_price = prices[0];
-    for (auto p = prices.begin(); p != prices.end(); p++) {
-      if (p == prices.begin()) {
+  vector<vector<int>> threeSum(vector<int> &nums) {
+    sort(nums.begin(), nums.end());
+    vector<vector<int>> ans;
+    for (int i = 0; i < nums.size(); i++) {
+      if (nums[i] > 0) {
+        return ans;
+      }
+      if (i > 0 and nums[i] == nums[i - 1]) {
         continue;
       }
-      if (*p <= min_price) {
-        min_price = *p;
-      } else {
-        max_profit = max_profit > *p - min_price ? max_profit : *p - min_price;
-      }
-    }
-    return max_profit;
-  }
-};"
-70,C,c1.c,c1.c,"int climbStairs(int n) {
-  int prev = 0;
-  int cur  = 1;
-  for (int i = 1; i <= n; ++i) {
-    int tmp = cur;
-    cur += prev;
-    prev = tmp;
-  }
-  return cur;
-}"
-70,C,c2.c,c2.c,"int climbStairs(int n) {
-  // with this formal `$\frac{\frac{1+\sqrt{5}^{n}}{2}-\frac{1-\sqrt{5}^{n}}{2}}{\sqrt{5}}$`
-  const double s = sqrt(5);
-  return floor((pow((1 + s) / 2, n + 1) + pow((1 - s) / 2, n + 1)) / s + 0.5);
-}"
-70,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  int climbStairs(int n) {
-    int prev = 0;
-    int cur  = 1;
-    for (int i = 1; i <= n; ++i) {
-      int tmp = cur;
-      cur += prev;
-      prev = tmp;
-    }
-    return cur;
-  }
-};"
-70,C++,cpp2.cc,cpp2.cc,"class Solution {
-public:
-  int climbStairs(int n) {
-    // with this formal `$\frac{\frac{1+\sqrt{5}^{n}}{2}-\frac{1-\sqrt{5}^{n}}{2}}{\sqrt{5}}$`
-    const double s = sqrt(5);
-    return floor((pow((1 + s) / 2, n + 1) + pow((1 - s) / 2, n + 1)) / s + 0.5);
-  }
-};"
-70,Rust,rust1.rs,rust1.rs,"impl Solution {
-  pub fn climb_stairs(n: i32) -> i32 {
-    let mut prev: i32 = 0;
-    let mut cur: i32 = 1;
-    for _i in 1..(n + 1) {
-      let tmp: i32 = cur;
-      cur += prev;
-      prev = tmp;
-    }
-    cur
-  }
-}
-"
-8,C,c.c,c.c,"int myAtoi(char *str) {
-  char *s;
-  long n = 0;
-  int sign = 0;
-
-  while (*str == ' ' || *str == '\t') {
-    str++;
-  }
-
-  if (*str == '-') {
-    if (isdigit(*++str)) {
-      sign = 1;
-    } else {
-      return 0;
-    }
-  }
-
-  if (*str == '+') {
-    if (isdigit(*++str)) {
-      sign = 0;
-    } else {
-      return 0;
-    }
-  }
-
-  for (s = str; *s != '\0'; s++) {
-    if (isdigit(*s)) {
-      int d = *s - '0';
-      if (sign) {
-        if (-n < (INT_MIN + d) / 10) {
-          n = INT_MIN;
-          break;
-        }
-      } else {
-        if (n > (INT_MAX - d) / 10) {
-          n = INT_MAX;
-          break;
+      int left = i + 1;
+      int right = nums.size() - 1;
+      while (left < right) {
+        int temp = nums[i] + nums[left] + nums[right];
+        if (temp < 0) {
+          left++;
+        } else if (temp > 0) {
+          right--;
+        } else {
+          ans.push_back({nums[i], nums[left], nums[right]});
+          while (left < right && nums[left] == nums[left + 1])
+            left++;
+          while (left < right && nums[right] == nums[right - 1])
+            right--;
+          left++;
+          right--;
         }
       }
-      n = n * 10 + d;
-    } else {
-      break;
     }
-  }
-
-  return sign ? -n : n;
-}"
-1197,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  bool parseBoolExpr(string expression) {
-    vector<char> stack;
-
-    for (char c : expression) {
-      switch (c) {
-      case 't':
-      case 'f':
-      case '(':
-      case '!':
-      case '&':
-      case '|':
-        stack.push_back(c);
-        break;
-      case ')':
-        resolve(stack);
-      }
-    }
-    return stack[0] == 't';
-  }
-
-  void resolve(vector<char> &stack) {
-    vector<char> temp;
-
-    while (stack.back() != '(') {
-      temp.push_back(stack.back());
-      stack.pop_back();
-    }
-
-    stack.pop_back();
-    char op = stack.back();
-    stack.pop_back();
-    if (op == '!')
-      stack.push_back(temp[0] == 'f' ? 't' : 'f');
-    else if (op == '&')
-      stack.push_back(find(temp.begin(), temp.end(), 'f') == temp.end() ? 't' : 'f');
-    else if (op == '|')
-      stack.push_back(find(temp.begin(), temp.end(), 't') != temp.end() ? 't' : 'f');
-  }
-};
-"
-204,C,c1.c,c1.c,"int countPrimes(int n) {
-  bool *isPrim = (bool *)malloc(sizeof(bool) * n);
-  memset(isPrim, true, n);
-  for (int i = 2; i * i < n; i++) {
-    if (isPrim[i]) {
-      for (int j = i * i; j < n; j += i)
-        isPrim[j] = false;
-    }
-  }
-  int count = 0;
-  for (int i = 2; i < n; i++)
-    if (isPrim[i]) count++;
-  free(isPrim);
-  return count;
-}"
-204,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  int countPrimes(int n) {
-    bool *isPrim = new bool[n];
-    memset(isPrim, true, n);
-    for (int i = 2; i * i < n; i++) {
-      if (isPrim[i]) {
-        for (int j = i * i; j < n; j += i)
-          isPrim[j] = false;
-      }
-    }
-    int count = 0;
-    for (int i = 2; i < n; i++)
-      if (isPrim[i]) count++;
-    delete[] isPrim;
-    return count;
+    return ans;
   }
 };"
-204,Java,java1.java,java1.java,"class Solution {
-  public int countPrimes(int n) {
-    boolean[] isPrim = new boolean[n];
-    Arrays.fill(isPrim, true);
-    for (int i = 2; i * i < n; i++)
-      if (isPrim[i])
-        for (int j = i * i; j < n; j += i)
-          isPrim[j] = false;
-
-    int count = 0;
-    for (int i = 2; i < n; i++)
-      if (isPrim[i]) count++;
-    return count;
-  }
-}"
-67,C,c.c,c.c,"char *addBinary(char *a, char *b) {
-  int len_a = strlen(a);
-  int len_b = strlen(b);
-
-  int len    = len_a > len_b ? len_a + 1 : len_b + 1;
-  int length = len;
-
-  char *res = (char *)malloc(len * (sizeof(char)));
-  memset(res, '\0', len);
-
-  int upper = 0;
-  while (len_a > 0 || len_b > 0) {
-    int an = len_a > 0 ? a[--len_a] - '0' : 0;
-    int bn = len_b > 0 ? b[--len_b] - '0' : 0;
-    if (an + bn + upper == 3) {
-      res[len - 2] = 49;
-      upper        = 1;
-    } else if (an + bn + upper == 2) {
-      res[len - 2] = 48;
-      upper        = 1;
-    } else if (an + bn + upper == 1) {
-      res[len - 2] = 49;
-      upper        = 0;
-    } else if (an + bn + upper == 0) {
-      res[len - 2] = 48;
-      upper        = 0;
-    }
-    len--;
-  }
-  if (upper == 1) {
-    res = (char *)realloc(res, (length + 1) * (sizeof(char)));
-    memmove(res + 1, res, length * sizeof(char));
-    res[0] = '1';
-  }
-  return res;
-}"
-67,C++,cpp.cc,cpp.cc,"class Solution {
+1460,C++,cpp1.cc,cpp1.cc,"class Solution {
 public:
-  string addBinary(string a, string b) {
-    int len_a = a.size();
-    int len_b = b.size();
+  int numberOfSubstrings(string s) {
+    int a, b, c, l, ans;
+    a = b = c = l = ans = 0;
 
-    int len = len_a > len_b ? len_a : len_b;
-
-    string res = """";
-
-    int upper = 0;
-    while (len_a > 0 || len_b > 0) {
-      int an = len_a > 0 ? a[--len_a] - '0' : 0;
-      int bn = len_b > 0 ? b[--len_b] - '0' : 0;
-      if (an + bn + upper == 3) {
-        res = ""1"" + res;
-        upper = 1;
-      } else if (an + bn + upper == 2) {
-        res = ""0"" + res;
-        upper = 1;
-      } else if (an + bn + upper == 1) {
-        res = ""1"" + res;
-        upper = 0;
-      } else if (an + bn + upper == 0) {
-        res = ""0"" + res;
-        upper = 0;
+    for (int r = 0; r < s.size(); r++) {
+      if (s[r] == 'a')
+        a++;
+      if (s[r] == 'b')
+        b++;
+      if (s[r] == 'c')
+        c++;
+      while (a > 1 || b > 1 || c > 1) {
+        if (s[l] == 'a' && a > 1) {
+          a--;
+          l++;
+        } else if (s[l] == 'b' && b > 1) {
+          b--;
+          l++;
+        } else if (s[l] == 'c' && c > 1) {
+          c--;
+          l++;
+        } else
+          break;
       }
-      len--;
-    }
-    if (upper == 1) {
-      res = ""1"" + res;
-    }
-    return res;
-  }
-};"
-1123,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  int calculateTime(string keyboard, string word) {
-    unordered_map<char, int> mp;
-    for (int i = 0; i < 26; i++)
-      mp[keyboard[i]] = i;
-    int ans = 0;
-    int i = 0;
-    for (char c : word) {
-      ans += abs(i - mp[c]);
-      i = mp[c];
-    }
 
+      if (a && b && c)
+        ans += l + 1;
+    }
     return ans;
   }
 };
 "
-14,C,c.c,c.c,"char *longestCommonPrefix(char **strs, int strsSize) {
-  if (strsSize == 0) {
-    return """";
+53,C,c.c,c.c,"int maxSubArray(int *nums, int numsSize) {
+  int pre = 0, maxAns = nums[0];
+  for (int i = 0; i < numsSize; i++) {
+    pre = fmax(pre + nums[i], nums[i]);
+    maxAns = fmax(maxAns, pre);
+  }
+  return maxAns;
+}"
+53,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  int maxSubArray(vector<int> &nums) {
+    int pre = 0, maxAns = nums[0];
+    for (const auto &x : nums) {
+      pre = max(pre + x, x);
+      maxAns = max(maxAns, pre);
+    }
+    return maxAns;
+  }
+};"
+19,C,c.c,c.c,"static struct ListNode *removeNthFromEnd(struct ListNode *head, int n) {
+  if (n == 0) {
+    return NULL;
   }
 
-  int i, count = 0;
-  char *result = malloc(1000);
-  while (strs[0][count] != '\0') {
-    char c = strs[0][count];
-    for (i = 1; i < strsSize; i++) {
-      if (c != strs[i][count]) {
-        break;
+  struct ListNode *p, *prev, dummy;
+  dummy.next = head;
+  p = prev = &dummy;
+  while (n-- > 0) {
+    p = p->next;
+  }
+
+  while (p->next != NULL) {
+    p = p->next;
+    prev = prev->next;
+  }
+
+  struct ListNode *tmp = prev->next;
+  prev->next = tmp->next;
+  if (tmp == head) {
+    head = tmp->next;
+  }
+  free(tmp);
+
+  return head;
+}"
+909,C,c1.c,c1.c,"bool stoneGame(int *piles, int pilesSize) {
+  return true;
+}"
+909,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  bool stoneGame(vector<int> &piles) {
+    return true;
+  }
+};"
+909,Golang,go1.go,go1.go,"func stoneGame(piles []int) bool {
+	return true
+}
+"
+909,Java,java1.java,java1.java,"class Solution {
+  public boolean stoneGame(int[] piles) {
+    return true;
+  }
+}"
+909,JavaScript,js1.js,js1.js,"/**
+ * @param {number[]} piles
+ * @return {boolean}
+ */
+var stoneGame = function (piles) {
+    return true;
+};"
+909,Python,python1.py,python1.py,"
+
+class Solution:
+  def stoneGame(self, piles: List[int]) -> bool:
+    return True
+"
+909,Rust,rust1.rs,rust1.rs,"impl Solution {
+    pub fn stone_game(_piles: Vec<i32>) -> bool {
+        true
+    }
+}"
+69,C,c.c,c.c,"int mySqrt(int x) {
+  if (x < 2) return x;
+
+  int left = (int)pow(M_E, 0.5 * log(x));
+  int right = left + 1;
+  return (long)right * right > x ? left : right;
+}"
+69,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  int mySqrt(int x) {
+    if (x < 2) return x;
+
+    int left = (int)pow(M_E, 0.5 * log(x));
+    int right = left + 1;
+    return (long)right * right > x ? left : right;
+  }
+};"
+17,C,c.c,c.c,"const char *map[] = {""abc"", ""def"", ""ghi"", ""jkl"", ""mno"", ""pqrs"", ""tuv"", ""wxyz""};
+const int len[] = {3, 3, 3, 3, 3, 4, 3, 4};
+
+void dfs(char *p, int d, char *buff, char **pp, int *n) {
+  const char *m;
+
+  if (!*p) {
+    pp[*n] = strdup(buff);
+    (*n)++;
+    return;
+  }
+
+  m = map[(*p) - '2'];
+  while (*m) {
+    buff[d] = *m;
+    dfs(p + 1, d + 1, buff, pp, n);
+    m++;
+  }
+}
+
+char **letterCombinations(char *digits, int *returnSize) {
+  char **pp;
+  char *buff;
+  char *d;
+  int n, l;
+
+  *returnSize = 0;
+
+  if (!digits || !*digits) {
+    return NULL;
+  }
+
+  n = 1;
+  d = digits;
+  while (*d) {
+    n = n * len[*d - '2'];
+    d++;
+  }
+
+  *returnSize = n;
+  l = d - digits;
+  pp = malloc(n * sizeof(char *));
+  buff = malloc(l + 1);
+  buff[l] = 0;
+
+  n = 0;
+  dfs(digits, 0, buff, pp, &n);
+  free(buff);
+  return pp;
+}"
+179,C,c.c,c.c,"int cmp(const void *x, const void *y) {
+  long sx = 10, sy = 10;
+  while (sx <= *(int *)x) {
+    sx *= 10;
+  }
+  while (sy <= *(int *)y) {
+    sy *= 10;
+  }
+  return sx * (*(int *)y) + (*(int *)x) - sy * (*(int *)x) - (*(int *)y);
+}
+
+char *largestNumber(int *nums, int numsSize) {
+  qsort(nums, numsSize, sizeof(int), cmp);
+  if (nums[0] == 0) {
+    char *ret = malloc(sizeof(char) * 2);
+    ret[0] = '0', ret[1] = '\0';
+    return ""0"";
+  }
+  char *ret = malloc(sizeof(char) * 1000);
+  char *p = ret;
+  for (int i = 0; i < numsSize; i++) {
+    sprintf(p, ""%d"", nums[i]);
+    p += strlen(p);
+  }
+  return ret;
+}"
+179,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  string largestNumber(vector<int> &nums) {
+    sort(nums.begin(), nums.end(), [](const int &x, const int &y) {
+      long sx = 10, sy = 10;
+      while (sx <= x) {
+        sx *= 10;
+      }
+      while (sy <= y) {
+        sy *= 10;
+      }
+      return sy * x + y > sx * y + x;
+    });
+    if (nums[0] == 0) {
+      return ""0"";
+    }
+    string ret;
+    for (int &x : nums) {
+      ret += to_string(x);
+    }
+    return ret;
+  }
+};"
+294,C++,cc.cc,cc.cc,"class Solution {
+private:
+  map<string, bool> memo;
+
+public:
+  bool canWin(string s) {
+    if (memo.count(s)) return memo[s];
+    for (int i = 1; i < s.size(); ++i) {
+      if (s[i] == '+' && s[i - 1] == '+') {
+        string t = s;
+        t[i] = t[i - 1] = '-';
+        if (!canWin(t)) {
+          memo[s] = true;
+          return true;
+        }
       }
     }
-
-    if (i == strsSize) {
-      result[count++] = c;
-    } else {
-      break;
-    }
+    memo[s] = false;
+    return memo[s];
   }
-  result[count++] = '\0';
-  return result;
-}"
+};"
 514,C,c1.c,c1.c,"int findRotateSteps(char *ring, char *key) {
   int n = strlen(ring), m = strlen(key);
   int pos[26][n], posSize[26];
@@ -1237,404 +1195,6 @@ var findRotateSteps = function (ring, key) {
   }
   return dp[m - 1].reduce((pre, cur) => Math.min(pre, cur), Number.MAX_SAFE_INTEGER);
 };"
-1460,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  int numberOfSubstrings(string s) {
-    int a, b, c, l, ans;
-    a = b = c = l = ans = 0;
-
-    for (int r = 0; r < s.size(); r++) {
-      if (s[r] == 'a')
-        a++;
-      if (s[r] == 'b')
-        b++;
-      if (s[r] == 'c')
-        c++;
-      while (a > 1 || b > 1 || c > 1) {
-        if (s[l] == 'a' && a > 1) {
-          a--;
-          l++;
-        } else if (s[l] == 'b' && b > 1) {
-          b--;
-          l++;
-        } else if (s[l] == 'c' && c > 1) {
-          c--;
-          l++;
-        } else
-          break;
-      }
-
-      if (a && b && c)
-        ans += l + 1;
-    }
-    return ans;
-  }
-};
-"
-12,C,c.c,c.c,"char *intToRoman(int num) {
-  char *symbol[] = {""M"", ""CM"", ""D"", ""CD"", ""C"", ""XC"", ""L"", ""XL"", ""X"", ""IX"", ""V"", ""IV"", ""I""};
-  int value[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-  char *result = (char *)malloc(30 * sizeof(char));
-  bzero(result, 30 * sizeof(char));
-  for (int i = 0; num != 0; i++) {
-    while (num >= value[i]) {
-      num -= value[i];
-      strcat(result, symbol[i]);
-    }
-  }
-  return result;
-}"
-12,Rust,rust.rs,rust.rs,"impl Solution {
-    pub fn int_to_roman(num: i32) -> String {
-        let mut number: i32 = num;
-        let mut result = String::from("""");
-        let symbol = [
-            ""M"", ""CM"", ""D"", ""CD"", ""C"", ""XC"", ""L"", ""XL"", ""X"", ""IX"", ""V"", ""IV"", ""I"",
-        ];
-        let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
-        let mut index: usize = 0;
-        while number > 0 {
-            while number >= value[index] {
-                number -= value[index];
-                result += symbol[index];
-            }
-            index += 1;
-        }
-        return result;
-    }
-}"
-16,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
-  return *(int *)a - *(int *)b;
-}
-
-int threeSumClosest(int *nums, int numsSize, int target) {
-  qsort(nums, numsSize, sizeof(int), cmpfunc);
-  int ans = nums[0] + nums[1] + nums[numsSize - 1];
-  for (int i = 0; i < numsSize; i++) {
-    int left = i + 1;
-    int right = numsSize - 1;
-    while (left < right) {
-      int temp = nums[i] + nums[left] + nums[right];
-      if (abs(target - ans) > abs(target - temp)) {
-        ans = temp;
-      }
-      if (target > temp) {
-        left++;
-      } else {
-        right--;
-      }
-    }
-  }
-  return ans;
-}"
-16,C++,cpp.cc,cpp.cc,"class Solution {
-public:
-  int threeSumClosest(vector<int> &nums, int target) {
-    sort(nums.begin(), nums.end());
-    int ans = nums[0] + nums[1] + nums[nums.size() - 1];
-    for (int i = 0; i < nums.size(); i++) {
-      int left = i + 1;
-      int right = nums.size() - 1;
-      while (left < right) {
-        int temp = nums[i] + nums[left] + nums[right];
-        if (abs(target - ans) > abs(target - temp)) {
-          ans = temp;
-        }
-        if (target - temp > 0) {
-          left++;
-        } else {
-          right--;
-        }
-      }
-    }
-    return ans;
-  }
-};"
-118,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  vector<vector<int>> generate(int numRows) {
-    vector<vector<int>> ans(numRows);
-    if (numRows == 0)
-      return ans;
-    for (int i = 0; i < numRows; ++i) {
-      ans[i].resize(i + 1);
-      ans[i][0] = 1;
-      ans[i][i] = 1;
-      if (i > 1) {
-        for (int j = 1; j <= i >> 1; ++j) {
-          ans[i][j] = ans[i - 1][j - 1] + ans[i - 1][j];
-          ans[i][i - j] = ans[i][j];
-        }
-      }
-    }
-    return ans;
-  }
-};"
-292,C,c1.c,c1.c,"bool canWinNim(int n) {
-  return n % 4 != 0;
-}"
-292,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  bool canWinNim(int n) {
-    return n % 4 != 0;
-  }
-};"
-292,Golang,go1.go,go1.go,"func canWinNim(n int) bool {
-	return n%4 == 0
-}
-"
-292,Java,java1.java,java1.java,"class Solution {
-  public boolean canWinNim(int n) {
-    return n % 4 == 0;
-  }
-}"
-292,JavaScript,js1.js,js1.js,"/**
- * @param {number} n
- * @return {boolean}
- */
-var canWinNim = function(n) {
-    return n % 4 ==0;
-};"
-292,Rust,rust1.rs,rust1.rs,"impl Solution {
-    pub fn can_win_nim(n: i32) -> bool {
-        n % 4 == 0
-    }
-}"
-15,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
-  return *(int *)a - *(int *)b;
-}
-
-int **threeSum(int *nums, int numsSize, int *returnSize, int **returnColumnSizes) {
-  qsort(nums, numsSize, sizeof(int), cmpfunc);
-  int **ans = NULL;
-  *returnSize = 0;
-  *returnColumnSizes = NULL;
-
-  int virtual_size = 165;
-
-  ans = (int **)malloc(sizeof(int *) * virtual_size);
-  *returnColumnSizes = (int *)malloc(sizeof(int) * virtual_size);
-
-  for (uint16_t i = 0; i < numsSize; i++) {
-    if (nums[i] > 0) {
-      return ans;
-    }
-    if (i > 0 && nums[i] == nums[i - 1]) {
-      continue;
-    }
-    int left = i + 1;
-    int right = numsSize - 1;
-    while (left < right) {
-      int temp = nums[i] + nums[left] + nums[right];
-      if (temp > 0) {
-        right--;
-      } else if (temp < 0) {
-        left++;
-      } else {
-        if (*returnSize >= virtual_size) {
-          virtual_size *= 2;
-          ans = (int **)realloc(ans, sizeof(int *) * virtual_size);
-          *returnColumnSizes = (int *)realloc(*returnColumnSizes, sizeof(int) * virtual_size);
-        }
-        *(ans + *returnSize) = (int *)malloc(sizeof(int) * 3);
-        *(*returnColumnSizes + *returnSize) = 3;
-        ans[*returnSize][0] = nums[i];
-        ans[*returnSize][1] = nums[left];
-        ans[*returnSize][2] = nums[right];
-        while (left < right && nums[left] == nums[left + 1]) {
-          left++;
-        }
-        while (left < right && nums[right] == nums[right - 1]) {
-          right--;
-        }
-        left++;
-        right--;
-        (*returnSize)++;
-      }
-    }
-  }
-  ans = (int **)realloc(ans, sizeof(int *) * *returnSize);
-  *returnColumnSizes = (int *)realloc(*returnColumnSizes, sizeof(int) * *returnSize);
-  return ans;
-}"
-15,C++,cpp.cc,cpp.cc,"class Solution {
-public:
-  vector<vector<int>> threeSum(vector<int> &nums) {
-    sort(nums.begin(), nums.end());
-    vector<vector<int>> ans;
-    for (int i = 0; i < nums.size(); i++) {
-      if (nums[i] > 0) {
-        return ans;
-      }
-      if (i > 0 and nums[i] == nums[i - 1]) {
-        continue;
-      }
-      int left = i + 1;
-      int right = nums.size() - 1;
-      while (left < right) {
-        int temp = nums[i] + nums[left] + nums[right];
-        if (temp < 0) {
-          left++;
-        } else if (temp > 0) {
-          right--;
-        } else {
-          ans.push_back({nums[i], nums[left], nums[right]});
-          while (left < right && nums[left] == nums[left + 1])
-            left++;
-          while (left < right && nums[right] == nums[right - 1])
-            right--;
-          left++;
-          right--;
-        }
-      }
-    }
-    return ans;
-  }
-};"
-498,C,c1.c,c1.c,"int *findDiagonalOrder(int **matrix, int matrixSize, int *matrixColSize, int *returnSize) {
-  if (matrix == NULL || *matrix == NULL || matrixSize <= 0 || *matrixColSize <= 0 || matrixColSize == NULL || returnSize == NULL) {
-    return NULL;
-  }
-
-  *returnSize = matrixSize * *matrixColSize;
-
-  int *ret = (int *)malloc(sizeof(int) * *returnSize);
-
-  if (ret == NULL) {
-    return NULL;
-  }
-
-  for (int i = 0; i < *returnSize; i++) {
-    ret[i] = 0;
-  }
-
-  int index = 0;
-  for (int idx = 0; idx < matrixSize + *matrixColSize - 1; idx++) {
-    for (int i = idx, j = 0; i >= 0; i--, j++) {
-      if (i < matrixSize && j < *matrixColSize) {
-        if (idx % 2 == 0) {
-          ret[index] = matrix[i][j];
-        } else {
-          ret[index] = matrix[j][i];
-        }
-        index++;
-      }
-    }
-  }
-
-  return ret;
-}"
-11,C,c.c,c.c,"int maxArea(int *height, int heightSize) {
-  int min = 0, max = heightSize - 1;
-  int area_max = 0;
-  while (min < max) {
-    int area = (max - min) * (height[min] < height[max] ? height[min] : height[max]);
-    area_max = area > area_max ? area : area_max;
-    if (height[min] < height[max]) {
-      min++;
-    } else {
-      max--;
-    }
-  }
-  return area_max;
-}"
-69,C,c.c,c.c,"int mySqrt(int x) {
-  if (x < 2) return x;
-
-  int left = (int)pow(M_E, 0.5 * log(x));
-  int right = left + 1;
-  return (long)right * right > x ? left : right;
-}"
-69,C++,cpp.cc,cpp.cc,"class Solution {
-public:
-  int mySqrt(int x) {
-    if (x < 2) return x;
-
-    int left = (int)pow(M_E, 0.5 * log(x));
-    int right = left + 1;
-    return (long)right * right > x ? left : right;
-  }
-};"
-10,C,c.c,c.c,"bool isMatch(char *s, char *p) {
-  if (*p == '\0') {
-    return *s == '\0';
-  }
-
-  bool first_match = (*s != '\0') && (*s == *p || *p == '.');
-
-  if (p[1] == '*') {
-    return isMatch(s, p + 2) || (first_match && isMatch(s + 1, p));
-  } else {
-    return first_match && isMatch(s + 1, p + 1);
-  }
-}"
-909,C,c1.c,c1.c,"bool stoneGame(int *piles, int pilesSize) {
-  return true;
-}"
-909,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  bool stoneGame(vector<int> &piles) {
-    return true;
-  }
-};"
-909,Golang,go1.go,go1.go,"func stoneGame(piles []int) bool {
-	return true
-}
-"
-909,Java,java1.java,java1.java,"class Solution {
-  public boolean stoneGame(int[] piles) {
-    return true;
-  }
-}"
-909,JavaScript,js1.js,js1.js,"/**
- * @param {number[]} piles
- * @return {boolean}
- */
-var stoneGame = function (piles) {
-    return true;
-};"
-909,Rust,rust1.rs,rust1.rs,"impl Solution {
-    pub fn stone_game(_piles: Vec<i32>) -> bool {
-        true
-    }
-}"
-13,C,c.c,c.c,"int roman_to_integer(char c) {
-  switch (c) {
-  case 'I':
-    return 1;
-  case 'V':
-    return 5;
-  case 'X':
-    return 10;
-  case 'L':
-    return 50;
-  case 'C':
-    return 100;
-  case 'D':
-    return 500;
-  case 'M':
-    return 1000;
-  default:
-    return 0;
-  }
-}
-
-int romanToInt(char *s) {
-  int i, result = roman_to_integer(s[0]);
-
-  for (i = 1; s[i] != '\0'; i++) {
-    int prev = roman_to_integer(s[i - 1]);
-    int curr = roman_to_integer(s[i]);
-    // if left < right such as : IV(4), XL(40), IX(9) ...
-    if (prev < curr) {
-      result = result - prev + (curr - prev);
-    } else {
-      result += curr;
-    }
-  }
-
-  return result;
-}"
 74,C++,cpp.cc,cpp.cc,"class Solution {
 public:
   bool searchMatrix(vector<vector<int>> &matrix, int target) {
@@ -1655,6 +1215,618 @@ public:
         i++;
 
     return false;
+  }
+};"
+24,C++,cc.cc,cc.cc,"class Solution {
+public:
+  ListNode *swapPairs(ListNode *head) {
+    if (head == nullptr || head->next == nullptr) {
+      return head;
+    }
+    ListNode *newHead = head->next;
+    head->next = swapPairs(newHead->next);
+    newHead->next = head;
+    return newHead;
+  }
+};"
+520,C,c.c,c.c,"bool detectCapitalUse(char *word) {
+  int i, cnt = 0;
+  int len = strlen(word);
+
+  for (i = 0; i < len; i++)
+    if (word[i] >= 'A' && word[i] <= 'Z')
+      cnt++;
+
+  if (cnt == len || cnt == 0 || cnt == 1 && *word >= 'A' && *word <= 'Z')
+    return true;
+
+  return false;
+}"
+520,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  bool detectCapitalUse(string word) {
+    int size = word.size();
+    int count_isupper = 0, count_islower = 0;
+    for (int i = 0; i < size; i++) {
+      if (islower(word[i]))
+        count_islower++;
+      else
+        count_isupper++;
+    }
+    return count_isupper == size || count_islower == size || count_isupper == 1 && isupper(word[0]);
+  }
+};"
+20,C,c.c,c.c,"char pairs(char a) {
+  if (a == '}') return '{';
+  if (a == ']') return '[';
+  if (a == ')') return '(';
+  return 0;
+}
+
+bool isValid(char *s) {
+  int n = strlen(s);
+  if (n % 2 == 1) {
+    return false;
+  }
+  int stk[n + 1], top = 0;
+  for (int i = 0; i < n; i++) {
+    char ch = pairs(s[i]);
+    if (ch) {
+      if (top == 0 || stk[top - 1] != ch) {
+        return false;
+      }
+      top--;
+    } else {
+      stk[top++] = s[i];
+    }
+  }
+  return top == 0;
+}"
+20,C++,cc.cc,cc.cc,"class Solution {
+public:
+  bool isValid(string s) {
+    int n = s.size();
+    if (n % 2 == 1) {
+      return false;
+    }
+
+    unordered_map<char, char> pairs = {
+        {')', '('},
+        {']', '['},
+        {'}', '{'}};
+    stack<char> stk;
+    for (char ch : s) {
+      if (pairs.count(ch)) {
+        if (stk.empty() || stk.top() != pairs[ch]) {
+          return false;
+        }
+        stk.pop();
+      } else {
+        stk.push(ch);
+      }
+    }
+    return stk.empty();
+  }
+};"
+20,Java,java.java,java.java,"class Solution {
+  public boolean isValid(String s) {
+    int n = s.length();
+    if (n % 2 == 1) {
+      return false;
+    }
+
+    Map<Character, Character> pairs = new HashMap<Character, Character>() {
+      {
+        put(')', '(');
+        put(']', '[');
+        put('}', '{');
+      }
+    };
+    Deque<Character> stack = new LinkedList<Character>();
+    for (int i = 0; i < n; i++) {
+      char ch = s.charAt(i);
+      if (pairs.containsKey(ch)) {
+        if (stack.isEmpty() || stack.peek() != pairs.get(ch)) {
+          return false;
+        }
+        stack.pop();
+      } else {
+        stack.push(ch);
+      }
+    }
+    return stack.isEmpty();
+  }
+}"
+20,JavaScript,javascript.js,javascript.js,"var isValid = function (s) {
+  const n = s.length;
+  if (n % 2 === 1) {
+    return false;
+  }
+  const pairs = new Map([
+    [')', '('],
+    [']', '['],
+    ['}', '{']
+  ]);
+  const stk = [];
+  s.split('').forEach(ch => {
+    if (pairs.has(ch)) {
+      if (!stk.length || stk[stk.length - 1] !== pairs.get(ch)) {
+        return false;
+      }
+      stk.pop();
+    }
+    else {
+      stk.push(ch);
+    }
+  });
+  return !stk.length;
+};"
+20,Python,python.py,python.py,"class Solution:
+  def isValid(self, s: str) -> bool:
+    if len(s) % 2 == 1:
+      return False
+
+    pairs = {
+        "")"": ""("",
+        ""]"": ""["",
+        ""}"": ""{"",
+    }
+    stack = list()
+    for ch in s:
+      if ch in pairs:
+        if not stack or stack[-1] != pairs[ch]:
+          return False
+        stack.pop()
+      else:
+        stack.append(ch)
+
+    return not stack
+
+"
+1197,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  bool parseBoolExpr(string expression) {
+    vector<char> stack;
+
+    for (char c : expression) {
+      switch (c) {
+      case 't':
+      case 'f':
+      case '(':
+      case '!':
+      case '&':
+      case '|':
+        stack.push_back(c);
+        break;
+      case ')':
+        resolve(stack);
+      }
+    }
+    return stack[0] == 't';
+  }
+
+  void resolve(vector<char> &stack) {
+    vector<char> temp;
+
+    while (stack.back() != '(') {
+      temp.push_back(stack.back());
+      stack.pop_back();
+    }
+
+    stack.pop_back();
+    char op = stack.back();
+    stack.pop_back();
+    if (op == '!')
+      stack.push_back(temp[0] == 'f' ? 't' : 'f');
+    else if (op == '&')
+      stack.push_back(find(temp.begin(), temp.end(), 'f') == temp.end() ? 't' : 'f');
+    else if (op == '|')
+      stack.push_back(find(temp.begin(), temp.end(), 't') != temp.end() ? 't' : 'f');
+  }
+};
+"
+1123,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int calculateTime(string keyboard, string word) {
+    unordered_map<char, int> mp;
+    for (int i = 0; i < 26; i++)
+      mp[keyboard[i]] = i;
+    int ans = 0;
+    int i = 0;
+    for (char c : word) {
+      ans += abs(i - mp[c]);
+      i = mp[c];
+    }
+
+    return ans;
+  }
+};
+"
+205,C,c.c,c.c,"bool isIsomorphic(char *s, char *t) {
+  char a[128] = {0};
+  char b[128] = {0};
+  while (*s) {
+    if (a[(int)(*s)] == 0 && b[(int)(*t)] == 0) {
+      a[(int)(*s)] = *t;
+      b[(int)(*t)] = *s;
+    } else if (a[(int)(*s)] == *t && b[(int)(*t)] == *s) {
+    } else {
+      return false;
+    }
+    s++;
+    t++;
+  }
+  return true;
+}"
+75,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  void sortColors(vector<int> &nums) {
+    int n = nums.size();
+    int ptr = 0;
+    for (int i = 0; i < n; ++i) {
+      if (nums[i] == 0) {
+        swap(nums[i], nums[ptr]);
+        ++ptr;
+      }
+    }
+    for (int i = ptr; i < n; ++i) {
+      if (nums[i] == 1) {
+        swap(nums[i], nums[ptr]);
+        ++ptr;
+      }
+    }
+  }
+};"
+56,C++,cc.cc,cc.cc,"class Solution {
+public:
+  vector<vector<int>> merge(vector<vector<int>> &intervals) {
+    if (intervals.size() == 0) {
+      return {};
+    }
+    sort(intervals.begin(), intervals.end());
+    vector<vector<int>> merged;
+    for (int i = 0; i < intervals.size(); ++i) {
+      int L = intervals[i][0], R = intervals[i][1];
+      if (!merged.size() || merged.back()[1] < L) {
+        merged.push_back({L, R});
+      } else {
+        merged.back()[1] = max(merged.back()[1], R);
+      }
+    }
+    return merged;
+  }
+};"
+55,C++,cc.cc,cc.cc,"class Solution {
+public:
+  bool canJump(vector<int> &nums) {
+    int n = nums.size();
+    int rightmost = 0;
+    for (int i = 0; i < n; ++i) {
+      if (i <= rightmost) {
+        rightmost = max(rightmost, i + nums[i]);
+        if (rightmost >= n - 1) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+};"
+1084,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int numKLenSubstrNoRepeats(string S, int k) {
+    unordered_map<char, int> mp;
+    int n = S.size();
+    if (n < k)
+      return 0;
+    int ans = 0;
+
+    for (int i = 0; i < k; i++)
+      mp[S[i]]++;
+
+    if (mp.size() == k)
+      ans++;
+
+    for (int i = k; i < n; i++) {
+      mp[S[i - k]]--;
+      if (!mp[S[i - k]])
+        mp.erase(S[i - k]);
+
+      mp[S[i]]++;
+
+      if (mp.size() == k)
+        ans++;
+    }
+    return ans;
+  }
+};
+"
+67,C,c.c,c.c,"char *addBinary(char *a, char *b) {
+  int len_a = strlen(a);
+  int len_b = strlen(b);
+
+  int len    = len_a > len_b ? len_a + 1 : len_b + 1;
+  int length = len;
+
+  char *res = (char *)malloc(len * (sizeof(char)));
+  memset(res, '\0', len);
+
+  int upper = 0;
+  while (len_a > 0 || len_b > 0) {
+    int an = len_a > 0 ? a[--len_a] - '0' : 0;
+    int bn = len_b > 0 ? b[--len_b] - '0' : 0;
+    if (an + bn + upper == 3) {
+      res[len - 2] = 49;
+      upper        = 1;
+    } else if (an + bn + upper == 2) {
+      res[len - 2] = 48;
+      upper        = 1;
+    } else if (an + bn + upper == 1) {
+      res[len - 2] = 49;
+      upper        = 0;
+    } else if (an + bn + upper == 0) {
+      res[len - 2] = 48;
+      upper        = 0;
+    }
+    len--;
+  }
+  if (upper == 1) {
+    res = (char *)realloc(res, (length + 1) * (sizeof(char)));
+    memmove(res + 1, res, length * sizeof(char));
+    res[0] = '1';
+  }
+  return res;
+}"
+67,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  string addBinary(string a, string b) {
+    int len_a = a.size();
+    int len_b = b.size();
+
+    int len = len_a > len_b ? len_a : len_b;
+
+    string res = """";
+
+    int upper = 0;
+    while (len_a > 0 || len_b > 0) {
+      int an = len_a > 0 ? a[--len_a] - '0' : 0;
+      int bn = len_b > 0 ? b[--len_b] - '0' : 0;
+      if (an + bn + upper == 3) {
+        res = ""1"" + res;
+        upper = 1;
+      } else if (an + bn + upper == 2) {
+        res = ""0"" + res;
+        upper = 1;
+      } else if (an + bn + upper == 1) {
+        res = ""1"" + res;
+        upper = 0;
+      } else if (an + bn + upper == 0) {
+        res = ""0"" + res;
+        upper = 0;
+      }
+      len--;
+    }
+    if (upper == 1) {
+      res = ""1"" + res;
+    }
+    return res;
+  }
+};"
+43,Java,java.java,java.java,"class Solution {
+  public String multiply(String num1, String num2) {
+    if (num1.equals(""0"") || num2.equals(""0"")) {
+      return ""0"";
+    }
+    int m = num1.length(), n = num2.length();
+    int[] ansArr = new int[m + n];
+    for (int i = m - 1; i >= 0; i--) {
+      int x = num1.charAt(i) - '0';
+      for (int j = n - 1; j >= 0; j--) {
+        int y = num2.charAt(j) - '0';
+        ansArr[i + j + 1] += x * y;
+      }
+    }
+    for (int i = m + n - 1; i > 0; i--) {
+      ansArr[i - 1] += ansArr[i] / 10;
+      ansArr[i] %= 10;
+    }
+    int index = ansArr[0] == 0 ? 1 : 0;
+    StringBuffer ans = new StringBuffer();
+    while (index < m + n) {
+      ans.append(ansArr[index]);
+      index++;
+    }
+    return ans.toString();
+  }
+}
+"
+23,C++,cc.cc,cc.cc,"class Solution {
+public:
+  ListNode *mergeTwoLists(ListNode *a, ListNode *b) {
+    if ((!a) || (!b)) return a ? a : b;
+    ListNode head, *tail = &head, *aPtr = a, *bPtr = b;
+    while (aPtr && bPtr) {
+      if (aPtr->val < bPtr->val) {
+        tail->next = aPtr;
+        aPtr = aPtr->next;
+      } else {
+        tail->next = bPtr;
+        bPtr = bPtr->next;
+      }
+      tail = tail->next;
+    }
+    tail->next = (aPtr ? aPtr : bPtr);
+    return head.next;
+  }
+
+  ListNode *mergeKLists(vector<ListNode *> &lists) {
+    ListNode *ans = nullptr;
+    for (size_t i = 0; i < lists.size(); ++i) {
+      ans = mergeTwoLists(ans, lists[i]);
+    }
+    return ans;
+  }
+};"
+70,C,c1.c,c1.c,"int climbStairs(int n) {
+  int prev = 0;
+  int cur  = 1;
+  for (int i = 1; i <= n; ++i) {
+    int tmp = cur;
+    cur += prev;
+    prev = tmp;
+  }
+  return cur;
+}"
+70,C,c2.c,c2.c,"int climbStairs(int n) {
+  // with this formal `$\frac{\frac{1+\sqrt{5}^{n}}{2}-\frac{1-\sqrt{5}^{n}}{2}}{\sqrt{5}}$`
+  const double s = sqrt(5);
+  return floor((pow((1 + s) / 2, n + 1) + pow((1 - s) / 2, n + 1)) / s + 0.5);
+}"
+70,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int climbStairs(int n) {
+    int prev = 0;
+    int cur  = 1;
+    for (int i = 1; i <= n; ++i) {
+      int tmp = cur;
+      cur += prev;
+      prev = tmp;
+    }
+    return cur;
+  }
+};"
+70,C++,cpp2.cc,cpp2.cc,"class Solution {
+public:
+  int climbStairs(int n) {
+    // with this formal `$\frac{\frac{1+\sqrt{5}^{n}}{2}-\frac{1-\sqrt{5}^{n}}{2}}{\sqrt{5}}$`
+    const double s = sqrt(5);
+    return floor((pow((1 + s) / 2, n + 1) + pow((1 - s) / 2, n + 1)) / s + 0.5);
+  }
+};"
+70,Rust,rust1.rs,rust1.rs,"impl Solution {
+  pub fn climb_stairs(n: i32) -> i32 {
+    let mut prev: i32 = 0;
+    let mut cur: i32 = 1;
+    for _i in 1..(n + 1) {
+      let tmp: i32 = cur;
+      cur += prev;
+      prev = tmp;
+    }
+    cur
+  }
+}
+"
+27,C++,cc.cc,cc.cc,"class Solution {
+public:
+  int removeElement(vector<int> &nums, int val) {
+    int i = 0;
+    for (int j = 0; j < nums.size(); j++) {
+      if (nums[j] != val) {
+        nums[i] = nums[j];
+        i++;
+      }
+    }
+    return i;
+  }
+};"
+31,C,c1.c,c1.c,"void swap(int *a, int *b) {
+  int t = *a;
+  *a = *b, *b = t;
+}
+
+void reverse(int *nums, int left, int right) {
+  while (left < right) {
+    swap(nums + left, nums + right);
+    left++, right--;
+  }
+}
+
+void nextPermutation(int *nums, int numsSize) {
+  int i = numsSize - 2;
+  while (i >= 0 && nums[i] >= nums[i + 1]) {
+    i--;
+  }
+  if (i >= 0) {
+    int j = numsSize - 1;
+    while (j >= 0 && nums[i] >= nums[j]) {
+      j--;
+    }
+    swap(nums + i, nums + j);
+  }
+  reverse(nums, i + 1, numsSize - 1);
+}"
+31,C++,cc.cc,cc.cc,"class Solution {
+public:
+  void nextPermutation(vector<int> &nums) {
+    int n = nums.size();
+
+    int mx = nums.back();
+    int i;
+    for (i = n - 2; i >= 0; i--)
+      if (nums[i] < nums[i + 1])
+        break;
+
+    if (~i) {
+      int j = i + 1;
+      for (int k = j; k < n; k++)
+        if (nums[k] > nums[i] && nums[k] <= nums[j])
+          j = k;
+
+      swap(nums[i], nums[j]);
+    }
+
+    reverse(nums.begin() + i + 1, nums.end());
+  }
+};"
+14,C,c.c,c.c,"char *longestCommonPrefix(char **strs, int strsSize) {
+  if (strsSize == 0) {
+    return """";
+  }
+
+  int i, count = 0;
+  char *result = malloc(1000);
+  while (strs[0][count] != '\0') {
+    char c = strs[0][count];
+    for (i = 1; i < strsSize; i++) {
+      if (c != strs[i][count]) {
+        break;
+      }
+    }
+
+    if (i == strsSize) {
+      result[count++] = c;
+    } else {
+      break;
+    }
+  }
+  result[count++] = '\0';
+  return result;
+}"
+283,C,c.c,c.c,"void moveZeroes(int *nums, int numsSize) {
+  int i = -1;
+  int j = 0;
+  while (j <= numsSize - 1) {
+    if (nums[j] != 0) {
+      i++;
+      nums[i] = nums[j];
+    }
+    j++;
+  }
+  for (int m = i + 1; m < numsSize; m++) {
+    nums[m] = 0;
+  }
+}"
+283,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  void moveZeroes(vector<int> &nums) {
+    int n = nums.size(), left = 0, right = 0;
+    while (right < n) {
+      if (nums[right]) {
+        swap(nums[left], nums[right]);
+        left++;
+      }
+      right++;
+    }
   }
 };"
 300,C,c1.c,c1.c,"int lengthOfLIS(int *nums, int numsSize) {
@@ -1700,51 +1872,6 @@ public:
   free(lis);
   return len;
 }"
-205,C,c.c,c.c,"bool isIsomorphic(char *s, char *t) {
-  char a[128] = {0};
-  char b[128] = {0};
-  while (*s) {
-    if (a[(int)(*s)] == 0 && b[(int)(*t)] == 0) {
-      a[(int)(*s)] = *t;
-      b[(int)(*t)] = *s;
-    } else if (a[(int)(*s)] == *t && b[(int)(*t)] == *s) {
-    } else {
-      return false;
-    }
-    s++;
-    t++;
-  }
-  return true;
-}"
-1084,C++,cpp1.cc,cpp1.cc,"class Solution {
-public:
-  int numKLenSubstrNoRepeats(string S, int k) {
-    unordered_map<char, int> mp;
-    int n = S.size();
-    if (n < k)
-      return 0;
-    int ans = 0;
-
-    for (int i = 0; i < k; i++)
-      mp[S[i]]++;
-
-    if (mp.size() == k)
-      ans++;
-
-    for (int i = k; i < n; i++) {
-      mp[S[i - k]]--;
-      if (!mp[S[i - k]])
-        mp.erase(S[i - k]);
-
-      mp[S[i]]++;
-
-      if (mp.size() == k)
-        ans++;
-    }
-    return ans;
-  }
-};
-"
 89,C,c1.c,c1.c,"int *grayCode(int n, int *returnSize) {
   *returnSize = (int)(pow(2, n));
   int *ans = (int *)malloc(sizeof(int) * (*returnSize));
@@ -1761,25 +1888,6 @@ public:
       res.push_back((i >> 1) ^ i);
     }
     return res;
-  }
-};"
-75,C++,cpp.cc,cpp.cc,"class Solution {
-public:
-  void sortColors(vector<int> &nums) {
-    int n = nums.size();
-    int ptr = 0;
-    for (int i = 0; i < n; ++i) {
-      if (nums[i] == 0) {
-        swap(nums[i], nums[ptr]);
-        ++ptr;
-      }
-    }
-    for (int i = ptr; i < n; ++i) {
-      if (nums[i] == 1) {
-        swap(nums[i], nums[ptr]);
-        ++ptr;
-      }
-    }
   }
 };"
 1434,C++,cpp1.cc,cpp1.cc,"class Solution {
@@ -1808,6 +1916,595 @@ public:
   }
 };
 "
+46,C,c.c,c.c,"void swap(int *a, int *b) {
+  int m = *a;
+  *a = *b;
+  *b = m;
+}
+
+int factorial(int num) {
+  int ans = 1;
+  if (num >= 2) {
+    for (int i = 2; i <= num; i++) {
+      ans = ans * i;
+    }
+  }
+  return ans;
+}
+
+int **ans;
+int _index = 0;
+
+void perm(int *array, int begin, int length) {
+  if (begin == length - 1) {
+    for (int i = 0; i < length; i++) {
+      ans[_index][i] = array[i];
+    }
+    _index++;
+  } else {
+    for (int i = begin; i < length; i++) {
+      swap(array + begin, array + i);
+      perm(array, begin + 1, length);
+      swap(array + begin, array + i);
+    }
+  }
+}
+
+int **permute(int *nums, int numsSize, int *returnSize, int **returnColumnSizes) {
+  *returnSize = factorial(numsSize);
+  *returnColumnSizes = (int *)malloc(sizeof(int) * *returnSize);
+  ans = (int **)malloc(sizeof(int *) * factorial(numsSize));
+  for (int i = 0; i < *returnSize; i++) {
+    (*returnColumnSizes)[i] = numsSize;
+    ans[i] = (int *)malloc(sizeof(int) * numsSize);
+  }
+  perm(nums, 0, numsSize);
+  return ans;
+}"
+46,C++,cc.cc,cc.cc,"class Solution {
+public:
+  void backtrack(vector<vector<int>> &res, vector<int> &output, int first, int len) {
+    // 所有数都填完了
+    if (first == len) {
+      res.emplace_back(output);
+      return;
+    }
+    for (int i = first; i < len; ++i) {
+      // 动态维护数组
+      swap(output[i], output[first]);
+      // 继续递归填下一个数
+      backtrack(res, output, first + 1, len);
+      // 撤销操作
+      swap(output[i], output[first]);
+    }
+  }
+  vector<vector<int>> permute(vector<int> &nums) {
+    vector<vector<int>> res;
+    backtrack(res, nums, 0, (int)nums.size());
+    return res;
+  }
+};"
+498,C,c1.c,c1.c,"int *findDiagonalOrder(int **matrix, int matrixSize, int *matrixColSize, int *returnSize) {
+  if (matrix == NULL || *matrix == NULL || matrixSize <= 0 || *matrixColSize <= 0 || matrixColSize == NULL || returnSize == NULL) {
+    return NULL;
+  }
+
+  *returnSize = matrixSize * *matrixColSize;
+
+  int *ret = (int *)malloc(sizeof(int) * *returnSize);
+
+  if (ret == NULL) {
+    return NULL;
+  }
+
+  for (int i = 0; i < *returnSize; i++) {
+    ret[i] = 0;
+  }
+
+  int index = 0;
+  for (int idx = 0; idx < matrixSize + *matrixColSize - 1; idx++) {
+    for (int i = idx, j = 0; i >= 0; i--, j++) {
+      if (i < matrixSize && j < *matrixColSize) {
+        if (idx % 2 == 0) {
+          ret[index] = matrix[i][j];
+        } else {
+          ret[index] = matrix[j][i];
+        }
+        index++;
+      }
+    }
+  }
+
+  return ret;
+}"
+16,C,c.c,c.c,"int cmpfunc(const void *a, const void *b) {
+  return *(int *)a - *(int *)b;
+}
+
+int threeSumClosest(int *nums, int numsSize, int target) {
+  qsort(nums, numsSize, sizeof(int), cmpfunc);
+  int ans = nums[0] + nums[1] + nums[numsSize - 1];
+  for (int i = 0; i < numsSize; i++) {
+    int left = i + 1;
+    int right = numsSize - 1;
+    while (left < right) {
+      int temp = nums[i] + nums[left] + nums[right];
+      if (abs(target - ans) > abs(target - temp)) {
+        ans = temp;
+      }
+      if (target > temp) {
+        left++;
+      } else {
+        right--;
+      }
+    }
+  }
+  return ans;
+}"
+16,C++,cc.cc,cc.cc,"class Solution {
+public:
+  int threeSumClosest(vector<int> &nums, int target) {
+    sort(nums.begin(), nums.end());
+    int ans = nums[0] + nums[1] + nums[nums.size() - 1];
+    for (int i = 0; i < nums.size(); i++) {
+      int left = i + 1;
+      int right = nums.size() - 1;
+      while (left < right) {
+        int temp = nums[i] + nums[left] + nums[right];
+        if (abs(target - ans) > abs(target - temp)) {
+          ans = temp;
+        }
+        if (target - temp > 0) {
+          left++;
+        } else {
+          right--;
+        }
+      }
+    }
+    return ans;
+  }
+};"
+12,C,c.c,c.c,"char *intToRoman(int num) {
+  char *symbol[] = {""M"", ""CM"", ""D"", ""CD"", ""C"", ""XC"", ""L"", ""XL"", ""X"", ""IX"", ""V"", ""IV"", ""I""};
+  int value[] = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+  char *result = (char *)malloc(30 * sizeof(char));
+  bzero(result, 30 * sizeof(char));
+  for (int i = 0; num != 0; i++) {
+    while (num >= value[i]) {
+      num -= value[i];
+      strcat(result, symbol[i]);
+    }
+  }
+  return result;
+}"
+12,Rust,rust.rs,rust.rs,"impl Solution {
+    pub fn int_to_roman(num: i32) -> String {
+        let mut number: i32 = num;
+        let mut result = String::from("""");
+        let symbol = [
+            ""M"", ""CM"", ""D"", ""CD"", ""C"", ""XC"", ""L"", ""XL"", ""X"", ""IX"", ""V"", ""IV"", ""I"",
+        ];
+        let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+        let mut index: usize = 0;
+        while number > 0 {
+            while number >= value[index] {
+                number -= value[index];
+                result += symbol[index];
+            }
+            index += 1;
+        }
+        return result;
+    }
+}"
+204,C,c1.c,c1.c,"int countPrimes(int n) {
+  bool *isPrim = (bool *)malloc(sizeof(bool) * n);
+  memset(isPrim, true, n);
+  for (int i = 2; i * i < n; i++) {
+    if (isPrim[i]) {
+      for (int j = i * i; j < n; j += i)
+        isPrim[j] = false;
+    }
+  }
+  int count = 0;
+  for (int i = 2; i < n; i++)
+    if (isPrim[i]) count++;
+  free(isPrim);
+  return count;
+}"
+204,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int countPrimes(int n) {
+    bool *isPrim = new bool[n];
+    memset(isPrim, true, n);
+    for (int i = 2; i * i < n; i++) {
+      if (isPrim[i]) {
+        for (int j = i * i; j < n; j += i)
+          isPrim[j] = false;
+      }
+    }
+    int count = 0;
+    for (int i = 2; i < n; i++)
+      if (isPrim[i]) count++;
+    delete[] isPrim;
+    return count;
+  }
+};"
+204,Java,java1.java,java1.java,"class Solution {
+  public int countPrimes(int n) {
+    boolean[] isPrim = new boolean[n];
+    Arrays.fill(isPrim, true);
+    for (int i = 2; i * i < n; i++)
+      if (isPrim[i])
+        for (int j = i * i; j < n; j += i)
+          isPrim[j] = false;
+
+    int count = 0;
+    for (int i = 2; i < n; i++)
+      if (isPrim[i]) count++;
+    return count;
+  }
+}"
+293,C++,cc.cc,cc.cc,"class Solution {
+public:
+  vector<string> generatePossibleNextMoves(string s) {
+    int n = s.size();
+    vector<string> res;
+    for (int i = 0; i < n - 1; i++) {
+      if (s[i] == '+' && s[i + 1] == '+') {
+        string tmp = s;
+        tmp[i] = '-';
+        tmp[i + 1] = '-';
+        res.push_back(tmp);
+      }
+    }
+    return res;
+  }
+};"
+18,C,c.c,c.c,"int compare(const void *a, const void *b) {
+  return *(int *)a - *(int *)b;
+}
+
+void k_sum(int *nums, int low, int high, int target, int total, int k,
+           int *stack, int len, int **results, int *count, int *col_sizes) {
+  int i;
+  if (k == 2) {
+    while (low < high) {
+      int sum = nums[low] + nums[high];
+      if (sum < target) {
+        low++;
+      } else if (sum > target) {
+        high--;
+      } else {
+        stack[len++] = nums[low];
+        stack[len++] = nums[high];
+        results[*count] = malloc(total * sizeof(int));
+        memcpy(results[*count], stack, total * sizeof(int));
+        col_sizes[*count] = total;
+        (*count)++;
+        len -= 2;
+        while (++low < high && nums[low] == nums[low - 1]) {}
+        while (--high > low && nums[high] == nums[high + 1]) {}
+      }
+    }
+  } else {
+    for (i = low; i <= high - k + 1; i++) {
+      if (i > low && nums[i] == nums[i - 1]) continue;
+      stack[len] = nums[i];
+      k_sum(nums, i + 1, high, target - nums[i], 4, k - 1, stack, len + 1, results, count, col_sizes);
+    }
+  }
+}
+
+int **fourSum(int *nums, int numsSize, int target, int *returnSize, int **returnColumnSizes) {
+  *returnSize = 0;
+  int capacity = 3;
+  int **results = malloc(capacity * sizeof(int *));
+  *returnColumnSizes = malloc(capacity * sizeof(int));
+
+  if (numsSize >= 4) {
+    qsort(nums, numsSize, sizeof(*nums), compare);
+    int *stack = malloc(4 * sizeof(int));
+    k_sum(nums, 0, numsSize - 1, target, 4, 4, stack, 0, results, returnSize, *returnColumnSizes);
+    free(stack);
+  }
+  return results;
+}"
+48,C,c.c,c.c,"void rotate(int **matrix, int matrixSize, int *matrixColSize) {
+  for (int i = 0; i < matrixSize; i++) {
+    if (i < matrixSize / 2) {
+      int *temp = matrix[i];
+      matrix[i] = matrix[matrixSize - 1 - i];
+      matrix[matrixSize - 1 - i] = temp;
+    }
+  }
+  for (int i = 0; i < matrixSize; ++i) {
+    for (int j = i + 1; j < matrixColSize[i]; ++j) {
+      int temp = matrix[i][j];
+      matrix[i][j] = matrix[j][i];
+      matrix[j][i] = temp;
+    }
+  }
+}"
+48,C++,cc.cc,cc.cc,"class Solution {
+public:
+  void rotate(vector<vector<int>> &matrix) {
+    reverse(matrix.begin(), matrix.end());
+    for (int i = 0; i < matrix.size(); ++i) {
+      for (int j = i + 1; j < matrix[i].size(); ++j)
+        swap(matrix[i][j], matrix[j][i]);
+    }
+  }
+};"
+13,C,c.c,c.c,"int roman_to_integer(char c) {
+  switch (c) {
+  case 'I':
+    return 1;
+  case 'V':
+    return 5;
+  case 'X':
+    return 10;
+  case 'L':
+    return 50;
+  case 'C':
+    return 100;
+  case 'D':
+    return 500;
+  case 'M':
+    return 1000;
+  default:
+    return 0;
+  }
+}
+
+int romanToInt(char *s) {
+  int i, result = roman_to_integer(s[0]);
+
+  for (i = 1; s[i] != '\0'; i++) {
+    int prev = roman_to_integer(s[i - 1]);
+    int curr = roman_to_integer(s[i]);
+    // if left < right such as : IV(4), XL(40), IX(9) ...
+    if (prev < curr) {
+      result = result - prev + (curr - prev);
+    } else {
+      result += curr;
+    }
+  }
+
+  return result;
+}"
+121,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  int maxProfit(vector<int> &prices) {
+    if (prices.size() == 0) {
+      return 0;
+    }
+    int max_profit = 0;
+    int min_price = prices[0];
+    for (auto p = prices.begin(); p != prices.end(); p++) {
+      if (p == prices.begin()) {
+        continue;
+      }
+      if (*p <= min_price) {
+        min_price = *p;
+      } else {
+        max_profit = max_profit > *p - min_price ? max_profit : *p - min_price;
+      }
+    }
+    return max_profit;
+  }
+};"
+121,Python,python1.py,python1.py,"
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        if not prices:
+            return 0
+        max_profit = 0
+        min_price = prices[0]
+        for p in prices[1:]:
+            if p <= min_price:
+                min_price = p
+            else:
+                max_profit = max(max_profit, p - min_price)
+        return max_profit
+"
+21,C,c.c,c.c,"struct ListNode *mergeTwoLists(struct ListNode *l1, struct ListNode *l2) {
+  if (l1 == NULL) {
+    return l2;
+  } else if (l2 == NULL) {
+    return l1;
+  } else if (l1->val < l2->val) {
+    l1->next = mergeTwoLists(l1->next, l2);
+    return l1;
+  } else {
+    l2->next = mergeTwoLists(l1, l2->next);
+    return l2;
+  }
+}
+"
+21,C++,cc.cc,cc.cc,"class Solution {
+public:
+  ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
+    if (l1 == nullptr) {
+      return l2;
+    } else if (l2 == nullptr) {
+      return l1;
+    } else if (l1->val < l2->val) {
+      l1->next = mergeTwoLists(l1->next, l2);
+      return l1;
+    } else {
+      l2->next = mergeTwoLists(l1, l2->next);
+      return l2;
+    }
+  }
+};
+"
+54,C++,cc.cc,cc.cc,"class Solution {
+public:
+  vector<int> spiralOrder(vector<vector<int>> &matrix) {
+    if (matrix.size() == 0 || matrix[0].size() == 0) {
+      return {};
+    }
+
+    int rows = matrix.size(), columns = matrix[0].size();
+    vector<int> order;
+    int left = 0, right = columns - 1, top = 0, bottom = rows - 1;
+    while (left <= right && top <= bottom) {
+      for (int column = left; column <= right; column++) {
+        order.push_back(matrix[top][column]);
+      }
+      for (int row = top + 1; row <= bottom; row++) {
+        order.push_back(matrix[row][right]);
+      }
+      if (left < right && top < bottom) {
+        for (int column = right - 1; column > left; column--) {
+          order.push_back(matrix[bottom][column]);
+        }
+        for (int row = bottom; row > top; row--) {
+          order.push_back(matrix[row][left]);
+        }
+      }
+      left++;
+      right--;
+      top++;
+      bottom--;
+    }
+    return order;
+  }
+};"
+25,C++,cc.cc,cc.cc,"class Solution {
+public:
+  ListNode *reverseKGroup(ListNode *head, int k) {
+    if (head == NULL) return head;
+    ListNode *tail = head;
+    while (k--) {
+      if (tail == NULL) return head;
+      tail = tail->next;
+    }
+    ListNode *cur = head, *pre = NULL, *next = NULL;
+    while (cur != tail) //注意： reverse[head, tail)
+    {
+      next = cur->next;
+      cur->next = pre;
+      pre = cur;
+      cur = next;
+    }
+    head->next = reverseKGroup(tail, k);
+    return pre;
+  }
+};"
+11,C,c.c,c.c,"int maxArea(int *height, int heightSize) {
+  int min = 0, max = heightSize - 1;
+  int area_max = 0;
+  while (min < max) {
+    int area = (max - min) * (height[min] < height[max] ? height[min] : height[max]);
+    area_max = area > area_max ? area : area_max;
+    if (height[min] < height[max]) {
+      min++;
+    } else {
+      max--;
+    }
+  }
+  return area_max;
+}"
+118,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  vector<vector<int>> generate(int numRows) {
+    vector<vector<int>> ans(numRows);
+    if (numRows == 0)
+      return ans;
+    for (int i = 0; i < numRows; ++i) {
+      ans[i].resize(i + 1);
+      ans[i][0] = 1;
+      ans[i][i] = 1;
+      if (i > 1) {
+        for (int j = 1; j <= i >> 1; ++j) {
+          ans[i][j] = ans[i - 1][j - 1] + ans[i - 1][j];
+          ans[i][i - j] = ans[i][j];
+        }
+      }
+    }
+    return ans;
+  }
+};"
+9,C,c.c,c.c,"bool isPalindrome(int x) {
+  int n, d, k = 0;
+
+  if (x < 0) return false;
+
+  n = x;
+  while (n) {
+    d = n % 10;
+    if (k > (0x7fffffff - d) / 10) return false; // overflow
+    k = k * 10 + d;
+    n = n / 10;
+  }
+
+  return (k == x);
+}"
+292,C,c1.c,c1.c,"bool canWinNim(int n) {
+  return n % 4 != 0;
+}"
+292,C++,cpp1.cc,cpp1.cc,"class Solution {
+public:
+  bool canWinNim(int n) {
+    return n % 4 != 0;
+  }
+};"
+292,Golang,go1.go,go1.go,"func canWinNim(n int) bool {
+	return n%4 == 0
+}
+"
+292,Java,java1.java,java1.java,"class Solution {
+  public boolean canWinNim(int n) {
+    return n % 4 == 0;
+  }
+}"
+292,JavaScript,js1.js,js1.js,"/**
+ * @param {number} n
+ * @return {boolean}
+ */
+var canWinNim = function(n) {
+    return n % 4 ==0;
+};"
+292,Python,python1.py,python1.py,"
+
+class Solution:
+  def canWinNim(self, n: int) -> bool:
+    return n % 4 == 0
+"
+292,Rust,rust1.rs,rust1.rs,"impl Solution {
+    pub fn can_win_nim(n: i32) -> bool {
+        n % 4 == 0
+    }
+}"
+58,C++,cc.cc,cc.cc,"class Solution {
+public:
+  int lengthOfLastWord(string s) {
+    size_t foundNot = s.find_last_not_of("" "");
+    if (foundNot == string::npos) {
+      return 0;
+    } else {
+      if (foundNot != (s.size() - 1)) {
+        s.erase(s.begin() + foundNot + 1, s.end());
+      }
+      return s.size() - s.find_last_of("" "") - 1;
+    }
+  }
+};"
+10,C,c.c,c.c,"bool isMatch(char *s, char *p) {
+  if (*p == '\0') {
+    return *s == '\0';
+  }
+
+  bool first_match = (*s != '\0') && (*s == *p || *p == '.');
+
+  if (p[1] == '*') {
+    return isMatch(s, p + 2) || (first_match && isMatch(s + 1, p));
+  } else {
+    return first_match && isMatch(s + 1, p + 1);
+  }
+}"
 1014,C++,cpp1.cc,cpp1.cc,"class Solution {
 public:
   vector<vector<int>> kClosest(vector<vector<int>> &points, int K) {
@@ -1820,5 +2517,124 @@ public:
 
   static bool f(vector<int> p1, vector<int> p2) {
     return p1[0] * p1[0] + p1[1] * p1[1] < p2[0] * p2[0] + p2[1] * p2[1];
+  }
+};"
+47,C++,cc.cc,cc.cc,"class Solution {
+  vector<int> vis;
+
+public:
+  void backtrack(vector<int> &nums, vector<vector<int>> &ans, int idx, vector<int> &perm) {
+    if (idx == nums.size()) {
+      ans.emplace_back(perm);
+      return;
+    }
+    for (int i = 0; i < (int)nums.size(); ++i) {
+      if (vis[i] || (i > 0 && nums[i] == nums[i - 1] && !vis[i - 1])) {
+        continue;
+      }
+      perm.emplace_back(nums[i]);
+      vis[i] = 1;
+      backtrack(nums, ans, idx + 1, perm);
+      vis[i] = 0;
+      perm.pop_back();
+    }
+  }
+
+  vector<vector<int>> permuteUnique(vector<int> &nums) {
+    vector<vector<int>> ans;
+    vector<int> perm;
+    vis.resize(nums.size());
+    sort(nums.begin(), nums.end());
+    backtrack(nums, ans, 0, perm);
+    return ans;
+  }
+};"
+136,C,c.c,c.c,"int singleNumber(int *nums, int numsSize) {
+  int result = 0;
+  for (int i = 1; i < numsSize; i++) {
+    if (i != 0) {
+      result ^= *(nums + i);
+    } else {
+      result = *nums;
+    }
+  }
+  return result;
+}"
+26,C++,cc.cc,cc.cc,"class Solution {
+public:
+  int removeDuplicates(vector<int> &nums) {
+    if (nums.size() == 0) return 0;
+    int i = 0;
+    for (int j = 1; j < nums.size(); j++) {
+      if (nums[j] != nums[i]) {
+        i++;
+        nums[i] = nums[j];
+      }
+    }
+    return i + 1;
+  }
+};"
+50,C,c.c,c.c,"static double fast_pow(double x, int32_t n) {
+  if (n == 0) { return 1.0; }
+  if (n == 1) { return x; }
+  double t = fast_pow(x, n / 2);
+  return n & 1 ? t * t * x : t * t;
+}
+
+static double myPow(double x, int n) {
+  return n < 0 ? 1 / fast_pow(x, -(int32_t)(n)) : fast_pow(x, (int32_t)n);
+}"
+50,C++,cc.cc,cc.cc,"class Solution {
+public:
+  static double fast_pow(double x, int32_t n) {
+    if (n == 0) { return 1.0; }
+    if (n == 1) { return x; }
+    double t = fast_pow(x, n / 2);
+    return n & 1 ? t * t * x : t * t;
+  }
+  double myPow(double x, int n) {
+    return n < 0 ? 1 / fast_pow(x, -(int32_t)(n)) : fast_pow(x, (int32_t)n);
+  }
+};"
+50,Java,java.java,java.java,"class Solution {
+  private double fastPow(double x, long n) {
+    if (n == 0) {
+      return 1.0;
+    }
+    double half = fastPow(x, n / 2);
+    if (n % 2 == 0) {
+      return half * half;
+    } else {
+      return half * half * x;
+    }
+  }
+
+  public double myPow(double x, int n) {
+    long N = n;
+    if (N < 0) {
+      x = 1 / x;
+      N = -N;
+    }
+
+    return fastPow(x, N);
+  }
+}"
+137,C,c.c,c.c,"int singleNumber(int *nums, int numsSize) {
+  int ones = 0, twos = 0;
+  for (int i = 0; i < numsSize; i++) {
+    ones = ones ^ nums[i] & ~twos;
+    twos = twos ^ nums[i] & ~ones;
+  }
+  return ones;
+}"
+137,C++,cpp.cc,cpp.cc,"class Solution {
+public:
+  int singleNumber(vector<int> &nums) {
+    int ones = 0, twos = 0;
+    for (int num : nums) {
+      ones = ones ^ num & ~twos;
+      twos = twos ^ num & ~ones;
+    }
+    return ones;
   }
 };"
