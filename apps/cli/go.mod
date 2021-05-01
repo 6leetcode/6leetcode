@@ -28,7 +28,7 @@ require (
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect
 	gorm.io/driver/sqlite v1.1.4
-	gorm.io/gorm v1.21.8
+	gorm.io/gorm v1.21.9
 	moul.io/http2curl v1.0.0 // indirect
 )
 
