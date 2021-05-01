@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	// init cobra commander
 	if err := cmd.RootCmd.Execute(); err != nil {
 		logging.Panic(err.Error())
 	}

@@ -1,9 +1,9 @@
 import axios from "axios";
-import { Empty, Layout, Card } from "antd";
 import Highlight from "react-highlight";
+import { Empty, Layout, Card } from "antd";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CardTabListType } from "antd/lib/card";
-import { useEffect, useState } from "react";
 
 interface ISolution {
   questionId: number;
@@ -33,12 +33,12 @@ export default function Solutions({ localServer }: any) {
   const [active, setActive] = useState("");
 
   useEffect(() => {
-    axios.get(localServer + "/solutions/" + id)
+    axios.get(localServer + "/solutions/" + id + ".json")
       .then(response => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
         } else {
-          setSolutions(response.data.solutions);
+          setSolutions(response.data);
         }
       });
   }, [id, localServer]);
@@ -80,7 +80,7 @@ export default function Solutions({ localServer }: any) {
             return (
               solution.language !== active ? "" :
                 <Highlight key={solution.filename} className={solution.language.toLowerCase()}>
-                  {atob(solution.data)}
+                  {atob(solution.data).trim()}
                 </Highlight>
             );
           })

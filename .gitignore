@@ -49,4 +49,5 @@ venv/
 /config.yml
 *.db-journal
 
-apps/cli/bin
+apps/cli/bin/
+apps/web/public/db/

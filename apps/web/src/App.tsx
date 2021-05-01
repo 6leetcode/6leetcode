@@ -7,7 +7,7 @@ import Header from "./Header";
 import Solutions from "./Solutions";
 import Questions from "./Questions";
 
-const localServer = process.env.NODE_ENV === "development" ? "http://127.0.0.1:4000/api" : "/api";
+const localServer = process.env.NODE_ENV === "development" ? "/db" : "/db";
 
 export default function App() {
   return (

@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom';
 import { Layout, List, Typography, Pagination } from "antd";
 import { LockOutlined, UnlockOutlined } from '@ant-design/icons';
 
-const pageSize = 100;
+const pageSize = 50;
 
 interface IQuestion {
   title: string;
@@ -29,14 +29,46 @@ export default function Questions({ localServer }: any) {
   let { category } = useParams();
 
   useEffect(() => {
-    let offset = ((currentPage - 1) * pageSize).toString();
-    axios.get(localServer + "/questions?limit=" + pageSize.toString() + "&offset=" + offset + "&category=" + category)
+    axios.get(localServer + "/index.json")
+      .then(response => {
+        let findNum = function (str: String): number {
+          for (let item of response.data) {
+            if (item["category_title"] === str) {
+              return item["num"];
+            }
+          }
+          return 0;
+        }
+        let allNum = function (): number {
+          let res: number = 0;
+          for (let item of response.data) {
+            res += item["num"];
+          }
+          return res;
+        }
+        if (response.status !== 200) {
+          console.error("request questions list with error:", response.status);
+        } else {
+          if (category === "All" || category === "" || category === undefined) {
+            setTotalQuestions(allNum());
+          } else {
+            setTotalQuestions(findNum(category));
+          }
+        }
+      });
+  }, [localServer, category]);
+
+  useEffect(() => {
+    let param = category;
+    if (param === "" || param === undefined) {
+      param = "All";
+    }
+    axios.get(localServer + "/questions/" + param + "/" + currentPage + ".json")
       .then(response => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
         } else {
-          setQuestions(response.data.questions);
-          setTotalQuestions(response.data.total);
+          setQuestions(response.data);
         }
       });
   }, [category, currentPage, localServer]);

@@ -4,7 +4,7 @@ import "gorm.io/gorm"
 
 // Solution ..
 type Solution struct {
-	gorm.Model
+	gorm.Model `json:"-"`
 	QuestionID int    `json:"questionId"`
 	Language   string `json:"language"`
 	Filename   string `json:"filename"`
@@ -34,5 +34,11 @@ func (s *Solution) Create() (err error) {
 // FindAll find solution by id
 func (s *Solution) FindAll() (solutions []Solution, err error) {
 	err = engine.Find(&solutions).Error
+	return
+}
+
+// Find find solution by id
+func (s *Solution) Find(id int) (solutions []Solution, err error) {
+	err = engine.Model(new(Solution)).Where(Solution{QuestionID: id}).Find(&solutions).Error
 	return
 }

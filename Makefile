@@ -24,3 +24,10 @@ gen:
 .PHONY: changelog
 changelog:
 	@git-chglog -o CHANGELOG.md
+
+.PHONY: deploy
+deploy:
+	@$(RM) -r docs
+	leet json
+	cd apps/web && npm run build
+	mv apps/web/build docs

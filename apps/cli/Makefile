@@ -3,11 +3,12 @@ GitHash    = $(shell git rev-parse HEAD)
 Version    = $(shell git describe --abbrev=0 --tags --always)
 TARGET    ?= leet
 PREFIX    ?= /usr/local
+PKG        = leet/cmd/version
 
 .PHONY: build
 build:
 	go build -v -o bin/${TARGET} -ldflags \
-	"-s -w -X leet/cmd/version.BuildStamp=${BuildStamp} -X leet/cmd/version.GitHash=${GitHash} -X leet/cmd/version.Version=${Version}"
+	"-s -w -X ${PKG}.BuildStamp=${BuildStamp} -X ${PKG}.GitHash=${GitHash} -X ${PKG}.Version=${Version}"
 
 .PHONY: lint
 lint:

@@ -1899,6 +1899,7 @@ LeetCode 题解
 |[1821](https://leetcode-cn.com/problems/find-customers-with-positive-revenue-this-year)|Easy|||||||||||
 |[1831](https://leetcode-cn.com/problems/maximum-transaction-each-day)|Medium|||||||||||
 |[1841](https://leetcode-cn.com/problems/league-statistics)|Medium|||||||||||
+|[1843](https://leetcode-cn.com/problems/suspicious-bank-accounts)|Medium|||||||||||
 
 </details>
 

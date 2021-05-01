@@ -9,7 +9,7 @@ import (
 	"github.com/unknwon/com"
 
 	"leet/cmd/crawler"
-	"leet/cmd/csvgen"
+	"leet/cmd/jsongen"
 	"leet/cmd/readme"
 	"leet/cmd/version"
 	"leet/common/table"
@@ -46,7 +46,7 @@ func init() {
 				logging.Errorf("Got error: %+v", err)
 				return
 			}
-			if err = csvgen.Initialize(); err != nil {
+			if err = jsongen.Initialize(); err != nil {
 				logging.Errorf("Init crawler with error: %+v", err)
 				return
 			}
@@ -55,24 +55,24 @@ func init() {
 	}
 	RootCmd.AddCommand(allCmd) // crawler commander
 
-	var csvCmd = &cobra.Command{
-		Use:   "csv",
-		Short: "Generate portable csv file",
-		Long:  `Generate portable csv file.`,
+	var jsonCmd = &cobra.Command{
+		Use:   "json",
+		Short: "Generate portable json file",
+		Long:  `Generate portable json file.`,
 		Args:  cobra.MinimumNArgs(0),
 		RunE: func(_ *cobra.Command, _ []string) (err error) {
 			if err = initTable(); err != nil {
 				logging.Errorf("Init table with error: %+v", err)
 				return
 			}
-			if err = csvgen.Initialize(); err != nil {
+			if err = jsongen.Initialize(); err != nil {
 				logging.Errorf("Init crawler with error: %+v", err)
 				return
 			}
 			return
 		},
 	}
-	RootCmd.AddCommand(csvCmd) // crawler commander
+	RootCmd.AddCommand(jsonCmd) // crawler commander
 
 	var genCmd = &cobra.Command{
 		Use:   "gen",
@@ -129,6 +129,10 @@ func initConfig() {
 	if os.Getenv("Password") != "" {
 		viper.Set("Password", os.Getenv("Password"))
 	}
+	if os.Getenv("Public") != "" {
+		viper.Set("Public", os.Getenv("Public"))
+	}
 
 	viper.SetDefault("QuestionDir", "questions")
+	viper.SetDefault("Public", "apps/web/public/db")
 }

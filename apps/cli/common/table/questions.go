@@ -48,7 +48,30 @@ func (q *Question) Create() (err error) {
 	return
 }
 
+// FindAll find the whole questions
 func (q *Question) FindAll() (questions []Question, err error) {
 	err = engine.Find(&questions).Error
+	return
+}
+
+// Find find questions
+func (q *Question) Find(category string) (questions []Question, err error) {
+	err = engine.Model(&Question{}).Where(Question{CategoryTitle: category}).Find(&questions).Error
+	return
+}
+
+// Categories ..
+func (q *Question) Categories() (categories []string, err error) {
+	err = engine.Model(&Question{}).Distinct().Pluck("category_title", &categories).Error
+	return
+}
+
+type Result struct {
+	CategoryTitle string `json:"category_title"`
+	Num           int    `json:"num"`
+}
+
+func (q *Question) Raw() (results []Result, err error) {
+	err = engine.Raw("select category_title, count(category_title) as num from questions GROUP by category_title").Scan(&results).Error
 	return
 }
