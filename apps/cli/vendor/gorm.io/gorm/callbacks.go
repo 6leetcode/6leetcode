@@ -32,6 +32,7 @@ type callbacks struct {
 
 type processor struct {
 	db        *DB
+	Clauses   []string
 	fns       []func(*DB)
 	callbacks []*callback
 }
@@ -72,18 +73,24 @@ func (cs *callbacks) Raw() *processor {
 }
 
 func (p *processor) Execute(db *DB) {
-	var (
-		curTime = time.Now()
-		stmt    = db.Statement
-	)
-
 	// call scopes
-	for len(stmt.scopes) > 0 {
-		scopes := stmt.scopes
-		stmt.scopes = nil
+	for len(db.Statement.scopes) > 0 {
+		scopes := db.Statement.scopes
+		db.Statement.scopes = nil
 		for _, scope := range scopes {
 			db = scope(db)
 		}
+	}
+
+	var (
+		curTime           = time.Now()
+		stmt              = db.Statement
+		resetBuildClauses bool
+	)
+
+	if len(stmt.BuildClauses) == 0 {
+		stmt.BuildClauses = p.Clauses
+		resetBuildClauses = true
 	}
 
 	// assign model values
@@ -130,6 +137,10 @@ func (p *processor) Execute(db *DB) {
 	if !stmt.DB.DryRun {
 		stmt.SQL.Reset()
 		stmt.Vars = nil
+	}
+
+	if resetBuildClauses {
+		stmt.BuildClauses = nil
 	}
 }
 
