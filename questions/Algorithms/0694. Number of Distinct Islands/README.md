@@ -1,38 +1,32 @@
 ### [Number of Distinct Islands](https://leetcode.com/problems/number-of-distinct-islands)
 
-<p>Given a non-empty 2D array <code>grid</code> of 0's and 1's, an <b>island</b> is a group of <code>1</code>'s (representing land) connected 4-directionally (horizontal or vertical.)  You may assume all four edges of the grid are surrounded by water.</p>
+<p>You are given an <code>m x n</code> binary matrix <code>grid</code>. An island is a group of <code>1</code>&#39;s (representing land) connected <strong>4-directionally</strong> (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.</p>
 
-<p>Count the number of <b>distinct</b> islands.  An island is considered to be the same as another if and only if one island can be translated (and not rotated or reflected) to equal the other.</p>
+<p>An island is considered to be the same as another if and only if one island can be translated (and not rotated or reflected) to equal the other.</p>
 
-<p><b>Example 1:</b><br />
+<p>Return <em>the number of <b>distinct</b> islands</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/05/01/distinctisland1-1-grid.jpg" style="width: 413px; height: 334px;" />
 <pre>
-11000
-11000
-00011
-00011
+<strong>Input:</strong> grid = [[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]
+<strong>Output:</strong> 1
 </pre>
-Given the above grid map, return <code>1</code>.
-</p>
 
-<p><b>Example 2:</b><br />
-<pre>11011
-10000
-00001
-11011</pre>
-Given the above grid map, return <code>3</code>.<br /><br />
-Notice that:
+<p><strong>Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/05/01/distinctisland1-2-grid.jpg" style="width: 413px; height: 334px;" />
 <pre>
-11
-1
+<strong>Input:</strong> grid = [[1,1,0,1,1],[1,0,0,0,0],[0,0,0,0,1],[1,1,0,1,1]]
+<strong>Output:</strong> 3
 </pre>
-and
-<pre>
- 1
-11
-</pre>
-are considered different island shapes, because we do not consider reflection / rotation.
-</p>
 
-<p><b>Note:</b>
-The length of each dimension in the given <code>grid</code> does not exceed 50.
-</p>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>m == grid.length</code></li>
+	<li><code>n == grid[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 50</code></li>
+	<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
+</ul>
