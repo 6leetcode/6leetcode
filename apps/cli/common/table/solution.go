@@ -1,6 +1,10 @@
 package table
 
-import "gorm.io/gorm"
+import (
+	"fmt"
+
+	"gorm.io/gorm"
+)
 
 // Solution ..
 type Solution struct {
@@ -40,5 +44,16 @@ func (s *Solution) FindAll() (solutions []Solution, err error) {
 // Find find solution by id
 func (s *Solution) Find(id int) (solutions []Solution, err error) {
 	err = engine.Model(new(Solution)).Where(Solution{QuestionID: id}).Find(&solutions).Error
+	return
+}
+
+type SolutionResult struct {
+	Language string `json:"language"`
+	Num      int    `json:"num"`
+}
+
+// Count ..
+func (s *Solution) Count(id int) (results []SolutionResult, err error) {
+	err = engine.Raw(fmt.Sprintf("select language, count(question_id) as num from solutions where question_id = %d group by language", id)).Scan(&results).Error
 	return
 }

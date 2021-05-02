@@ -82,6 +82,11 @@ func solutions() (err error) {
 
 const paging = 50
 
+type Question struct {
+	table.Question
+	Solutions map[string]int `json:"solutions"`
+}
+
 func questions(typ string) (err error) {
 	var questions []table.Question
 
@@ -103,15 +108,26 @@ func questions(typ string) (err error) {
 		}
 	}
 
-	var gotQuestions []table.Question
+	var gotQuestions = []Question{}
+	var s *table.Solution
 
 	for index, question := range questions {
-		gotQuestions = append(gotQuestions, question)
+		var q = Question{Solutions: make(map[string]int)}
+		q.Question = question
+		var results []table.SolutionResult
+		if results, err = s.Count(q.QuestionID); err != nil {
+			return
+		}
+		for _, r := range results {
+			q.Solutions[r.Language] = r.Num
+		}
+		gotQuestions = append(gotQuestions, q)
+
 		if index != 0 && (index+1)%paging == 0 {
 			if err = writeFile(fmt.Sprintf("%s/%d.json", dir, (index+1)/paging), gotQuestions); err != nil {
 				return
 			}
-			gotQuestions = []table.Question{}
+			gotQuestions = []Question{}
 		}
 	}
 

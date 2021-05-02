@@ -43,8 +43,8 @@ var targets = map[string]string{
 
 const makefileDir = "testing"
 
-const tableTitle = "|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
-const tableBashTitle = "|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
+const tableTitle = "|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
+const tableBashTitle = "|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
 
 const EngReadme = "# LeetCode\n\n" +
 	"LeetCode Solutions.\n\n" +

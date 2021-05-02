@@ -19,11 +19,10 @@ export default function CodeBox({ solution }: any) {
       }}>
         {copied ? <CheckOutlined className="copyButton" /> : <CopyOutlined className="copyButton" />}
       </CopyToClipboard>
-      <SyntaxHighlighter language={solution.language === "C++" ? "cpp" : solution.language.toLowerCase()}
+      <SyntaxHighlighter language={solution.language.toLowerCase()}
         style={a11yDark} showLineNumbers>
         {atob(solution.data).trim()}
       </SyntaxHighlighter>
     </div>
   );
-
 };

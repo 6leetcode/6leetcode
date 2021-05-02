@@ -21,7 +21,7 @@ LeetCode Solutions.
 
   <summary>Algorithms</summary>
 
-|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0001](https://leetcode-cn.com/problems/two-sum)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|:white_check_mark:|||
 |[0002](https://leetcode-cn.com/problems/add-two-numbers)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||
@@ -1746,7 +1746,7 @@ LeetCode Solutions.
 
   <summary>Database</summary>
 
-|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0175](https://leetcode-cn.com/problems/combine-two-tables)|Easy|||||||||:white_check_mark:||
 |[0176](https://leetcode-cn.com/problems/second-highest-salary)|Easy|||||||||||
@@ -1915,7 +1915,7 @@ LeetCode Solutions.
 
   <summary>Shell</summary>
 
-|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0192](https://leetcode-cn.com/problems/word-frequency)|Medium||||||||||:white_check_mark:|
 |[0193](https://leetcode-cn.com/problems/valid-phone-numbers)|Easy||||||||||:white_check_mark:|
@@ -1928,7 +1928,7 @@ LeetCode Solutions.
 
   <summary>Concurrency</summary>
 
-|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[1117](https://leetcode-cn.com/problems/building-h2o)|Medium|||||||||||
 |[1115](https://leetcode-cn.com/problems/print-foobar-alternately)|Medium|||||||||||
@@ -1946,7 +1946,7 @@ LeetCode Solutions.
 
   <summary>LCCI</summary>
 
-|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[面试题 01.01](https://leetcode-cn.com/problems/is-unique-lcci)|Easy|||||||||||
 |[面试题 01.02](https://leetcode-cn.com/problems/check-permutation-lcci)|Easy|||||||||||
@@ -2064,7 +2064,7 @@ LeetCode Solutions.
 
   <summary>LCOF</summary>
 
-|Index|Difficulty|C|C++|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[剑指 Offer 09](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof)|Easy|||||||||||
 |[剑指 Offer 10- I](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof)|Easy|||||||||||

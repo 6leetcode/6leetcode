@@ -20,7 +20,7 @@ var tokens = []token{
 		Suffix:   ".c",
 	},
 	{
-		Language: "C++",
+		Language: "CPP",
 		Suffix:   ".cc",
 	},
 	{
