@@ -1,8 +1,8 @@
 import { useState } from "react";
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { CopyOutlined, CheckOutlined } from '@ant-design/icons';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import './index.scss';
 
@@ -20,7 +20,7 @@ export default function CodeBox({ solution }: any) {
         {copied ? <CheckOutlined className="copyButton" /> : <CopyOutlined className="copyButton" />}
       </CopyToClipboard>
       <SyntaxHighlighter language={solution.language.toLowerCase() === "golang" ? "go" : solution.language.toLowerCase()}
-        style={dark} showLineNumbers>
+        style={a11yDark} showLineNumbers>
         {atob(solution.data).trim()}
       </SyntaxHighlighter>
     </div>

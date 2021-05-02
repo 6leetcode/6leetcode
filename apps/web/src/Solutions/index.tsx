@@ -1,18 +1,13 @@
 import _ from 'lodash';
 import axios from "axios";
-import { Empty, Layout, Card } from "antd";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { CardTabListType } from "antd/lib/card";
+import { Empty, Layout, Card, Col, Row } from "antd";
 
 import CodeBox from '../CodeBox';
-
-interface ISolution {
-  questionId: number;
-  data: string;
-  language: string;
-  filename: string;
-}
+import { IQuestion, ISolution } from '../types';
 
 const LanguagesDefinition = [
   { "language": "C", "suffix": ".c" },
@@ -33,6 +28,16 @@ export default function Solutions({ localServer }: any) {
   const [solutions, setSolutions] = useState<ISolution[]>([]);
   const [tabList, setTabList] = useState<CardTabListType[]>([]);
   const [active, setActive] = useState("");
+  const { i18n } = useTranslation();
+
+  const [question, setQuestion] = useState<IQuestion>({ content: "", translated_content: "" } as IQuestion);
+
+  useEffect(() => {
+    let item = window.localStorage.getItem(id);
+    if (item !== null) {
+      setQuestion(JSON.parse(item) as IQuestion);
+    }
+  }, [id])
 
   useEffect(() => {
     axios.get(localServer + "/solutions/" + id + ".json")
@@ -68,22 +73,39 @@ export default function Solutions({ localServer }: any) {
 
   return (
     <Layout.Content className="content">
-      <Card
-        tabList={tabList}
-        defaultActiveTabKey={active}
-        activeTabKey={active}
-        onTabChange={key => {
-          setActive(key);
-        }}
-      >
-        {
-          solutions.length === 0 ? <Empty /> : solutions.map(solution => {
-            return (
-              solution.language !== active ? "" : <CodeBox solution={solution} key={solution.filename} />
-            );
-          })
-        }
-      </Card>
+      <Row>
+        <Col span={9}>
+          <Card title={
+            i18n.language === "en-US" ?
+              (question.question_frontend_id + ". " + question.title) :
+              (question.question_frontend_id + ". " + question.translated_title)
+          } style={{ marginRight: '10px' }}>
+            {
+              i18n.language === "en-US" ?
+                <div dangerouslySetInnerHTML={{ __html: Buffer.from(question.content, "base64").toString("utf-8") }} /> :
+                <div dangerouslySetInnerHTML={{ __html: Buffer.from(question.translated_content, "base64").toString("utf-8") }} />
+            }
+          </Card>
+        </Col>
+        <Col span={15}>
+          <Card
+            tabList={tabList}
+            defaultActiveTabKey={active}
+            activeTabKey={active}
+            onTabChange={key => {
+              setActive(key);
+            }}
+          >
+            {
+              solutions.length === 0 ? <Empty /> : solutions.map(solution => {
+                return (
+                  solution.language !== active ? "" : <CodeBox solution={solution} key={solution.filename} />
+                );
+              })
+            }
+          </Card>
+        </Col>
+      </Row>
     </Layout.Content >
   );
 }

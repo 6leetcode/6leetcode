@@ -15,6 +15,16 @@ export default function Header() {
   let location = useLocation();
 
   useEffect(() => {
+    let langText = "";
+    for (let i in languages) {
+      if (languages[i].name === i18n.language) {
+        langText = languages[i].text;
+      }
+    }
+    setLanguage(langText);
+  }, [i18n.language])
+
+  useEffect(() => {
     let pathname = location.pathname;
     if (pathname === "/") {
       setMenuKey("All");
@@ -47,11 +57,7 @@ export default function Header() {
               <Menu onClick={(info) => {
                 let key = info.key.toString();
                 i18n.changeLanguage(key);
-                for (let lang of languages) {
-                  if (lang.name === key) {
-                    setLanguage(lang.text);
-                  }
-                }
+                localStorage.setItem("i18n__language", key);
               }}>
                 {
                   languages.map(lang => {

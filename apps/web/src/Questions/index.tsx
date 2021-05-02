@@ -5,19 +5,9 @@ import { Link, useParams } from 'react-router-dom';
 import { Layout, List, Typography, Pagination } from "antd";
 import { LockOutlined, UnlockOutlined } from '@ant-design/icons';
 
-const pageSize = 50;
+import { IQuestion } from '../types';
 
-interface IQuestion {
-  title: string;
-  translated_title: string;
-  question_id: number;
-  question_frontend_id: string;
-  difficulty: string;
-  paid_only: boolean;
-  title_slug: string;
-  category_title: string;
-  acRate: string;
-}
+const pageSize = 50;
 
 export default function Questions({ localServer }: any) {
   const [currentPage, setCurrentPage] = useState(1);
@@ -69,6 +59,9 @@ export default function Questions({ localServer }: any) {
           console.error("request questions list with error:", response.status);
         } else {
           setQuestions(response.data);
+          for (let question of response.data) {
+            window.localStorage.setItem(question.question_id, JSON.stringify(question));
+          }
         }
       });
   }, [category, currentPage, localServer]);

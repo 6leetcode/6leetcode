@@ -1680,6 +1680,10 @@ LeetCode Solutions.
 |[1823](https://leetcode-cn.com/problems/find-the-winner-of-the-circular-game)|Medium|||||||||||
 |[1824](https://leetcode-cn.com/problems/minimum-sideway-jumps)|Medium|||||||||||
 |[1825](https://leetcode-cn.com/problems/finding-mk-average)|Hard|||||||||||
+|[5730](https://leetcode-cn.com/problems/replace-all-digits-with-characters)|Easy|||||||||||
+|[5731](https://leetcode-cn.com/problems/seat-reservation-manager)|Medium|||||||||||
+|[5732](https://leetcode-cn.com/problems/maximum-element-after-decreasing-and-rearranging)|Medium|||||||||||
+|[5733](https://leetcode-cn.com/problems/closest-room)|Hard|||||||||||
 |[1810](https://leetcode-cn.com/problems/minimum-path-cost-in-a-hidden-grid)|Medium|||||||||||
 |[1832](https://leetcode-cn.com/problems/check-if-the-sentence-is-pangram)|Easy|||||||||||
 |[1833](https://leetcode-cn.com/problems/maximum-ice-cream-bars)|Medium|||||||||||
@@ -1690,6 +1694,10 @@ LeetCode Solutions.
 |[1839](https://leetcode-cn.com/problems/longest-substring-of-all-vowels-in-order)|Medium|||||||||||
 |[1840](https://leetcode-cn.com/problems/maximum-building-height)|Hard|||||||||||
 |[1820](https://leetcode-cn.com/problems/maximum-number-of-accepted-invitations)|Medium|||||||||||
+|[5746](https://leetcode-cn.com/problems/minimum-distance-to-the-target-element)|Easy|||||||||||
+|[5747](https://leetcode-cn.com/problems/splitting-a-string-into-descending-consecutive-values)|Medium|||||||||||
+|[5748](https://leetcode-cn.com/problems/minimum-interval-to-include-each-query)|Hard|||||||||||
+|[5749](https://leetcode-cn.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number)|Medium|||||||||||
 |[1826](https://leetcode-cn.com/problems/faulty-sensor)|Easy|||||||||||
 |[1836](https://leetcode-cn.com/problems/remove-duplicates-from-an-unsorted-linked-list)|Medium|||||||||||
 |[1842](https://leetcode-cn.com/problems/next-palindrome-using-same-digits)|Hard|||||||||||

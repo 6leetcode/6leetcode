@@ -40,7 +40,7 @@ export const languages = [
 i18n.use(initReactI18next)
   .init({
     resources,
-    lng: Object.keys(resources)[0],
+    lng: localStorage.getItem("i18n__language") || Object.keys(resources)[0],
     keySeparator: false,
     interpolation: {
       escapeValue: false,

@@ -24,7 +24,7 @@ var tokens = []token{
 		Suffix:   ".cc",
 	},
 	{
-		Language: "Golang",
+		Language: "Go",
 		Suffix:   ".go",
 	},
 	{
