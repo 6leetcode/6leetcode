@@ -1,5 +1,5 @@
 APPNAME = leet
-TARGETS = bash c cc golang java javascript php python rust
+TARGETS = bash c cc go java javascript php python rust
 
 .PHONY: all
 all: ${TARGETS}
