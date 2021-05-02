@@ -1,9 +1,11 @@
+import _ from 'lodash';
 import axios from "axios";
-import Highlight from "react-highlight";
 import { Empty, Layout, Card } from "antd";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CardTabListType } from "antd/lib/card";
+
+import CodeBox from '../CodeBox';
 
 interface ISolution {
   questionId: number;
@@ -55,7 +57,7 @@ export default function Solutions({ localServer }: any) {
         }
       }
     }
-    setTabList(tabList);
+    setTabList(_.uniqBy(tabList, 'key'));
   }, [solutions]);
 
   useEffect(() => {
@@ -67,7 +69,6 @@ export default function Solutions({ localServer }: any) {
   return (
     <Layout.Content className="content">
       <Card
-        style={{ width: '100%' }}
         tabList={tabList}
         defaultActiveTabKey={active}
         activeTabKey={active}
@@ -78,10 +79,7 @@ export default function Solutions({ localServer }: any) {
         {
           solutions.length === 0 ? <Empty /> : solutions.map(solution => {
             return (
-              solution.language !== active ? "" :
-                <Highlight key={solution.filename} className={solution.language.toLowerCase()}>
-                  {atob(solution.data).trim()}
-                </Highlight>
+              solution.language !== active ? "" : <CodeBox solution={solution} key={solution.filename} />
             );
           })
         }
