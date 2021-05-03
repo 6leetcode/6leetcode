@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useParams } from 'react-router-dom';
 import { Layout, List, Typography, Pagination } from "antd";
-import { LockOutlined, UnlockOutlined } from '@ant-design/icons';
+import { LockOutlined, UnlockOutlined, CheckOutlined } from '@ant-design/icons';
 
-import { IQuestion } from '../types';
+import { IQuestion, LanguagesDefinition } from '../types';
 
 const pageSize = 50;
 
@@ -74,6 +74,15 @@ export default function Questions({ localServer }: any) {
             <div className="questionHeader">
               <div><Typography.Text strong>{t("title.Question")}</Typography.Text></div>
               <div className="description">
+                {
+                  LanguagesDefinition.map((lang) => {
+                    return (
+                      <div className="paid_only">
+                        {lang.language}
+                      </div>
+                    );
+                  })
+                }
                 <div className="paid_only"><Typography.Text strong>{t("title.Pay")}</Typography.Text></div>
                 <div className="difficult"><Typography.Text strong>{t("title.Difficulty")}</Typography.Text></div>
                 <div className="ace"><Typography.Text strong>{t("title.AcRate")}</Typography.Text></div>
@@ -82,7 +91,9 @@ export default function Questions({ localServer }: any) {
           }
           dataSource={questions}
           renderItem={(item) => (
-            <Link to={`/solutions/${item.question_frontend_id}`}>
+            <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
+              // window.localStorage.setItem("language_show", "");
+            }}>
               <List.Item>
                 <div className="questionItem">
                   <div>
@@ -92,6 +103,27 @@ export default function Questions({ localServer }: any) {
                     {i18n.language === "en-US" ? item.title : item.translated_title === "" ? item.title : item.translated_title}
                   </div>
                   <div className="description">
+                    {
+                      LanguagesDefinition.map((lang) => {
+                        for (let i in item.solutions) {
+                          if (i === lang.language) {
+                            return (
+                              <div className="solution_icon" key={i}>
+                                <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
+                                  console.log(i);
+                                  window.localStorage.setItem("language_show", i);
+                                }}>
+                                  <CheckOutlined style={{ color: 'green' }} />
+                                </Link>
+                              </div>
+                            );
+                          }
+                        }
+                        return (
+                          <div className="solution_icon"></div>
+                        );
+                      })
+                    }
                     <div className="paid_only">{item.paid_only ? <LockOutlined style={{ color: "#cca766" }} /> : <UnlockOutlined style={{ color: "#009975" }} />}</div>
                     <div className="difficult">
                       <span className={item.difficulty.toLowerCase()}>

@@ -7,20 +7,7 @@ import { CardTabListType } from "antd/lib/card";
 import { Empty, Layout, Card, Col, Row } from "antd";
 
 import CodeBox from '../CodeBox';
-import { IQuestion, ISolution } from '../types';
-
-const LanguagesDefinition = [
-  { "language": "C", "suffix": ".c" },
-  { "language": "C++", "suffix": ".cc" },
-  { "language": "Go", "suffix": ".go" },
-  { "language": "Java", "suffix": ".java" },
-  { "language": "JavaScript", "suffix": ".js" },
-  { "language": "PHP", "suffix": ".php" },
-  { "language": "Python", "suffix": ".py" },
-  { "language": "Rust", "suffix": ".rs" },
-  { "language": "SQL", "suffix": ".sql" },
-  { "language": "Bash", "suffix": ".sh" },
-];
+import { IQuestion, ISolution, LanguagesDefinition } from '../types';
 
 export default function Solutions({ localServer }: any) {
   let { id } = useParams();
@@ -67,7 +54,23 @@ export default function Solutions({ localServer }: any) {
 
   useEffect(() => {
     if (tabList.length >= 1) {
-      setActive(tabList[0].key);
+      let lang = window.localStorage.getItem("language_show");
+      if (lang !== "" && lang !== null) {
+        let find = false;
+        for (let tab of tabList) {
+          if (tab.key === lang) {
+            find = true;
+            break;
+          }
+        }
+        if (find) {
+          setActive(lang);
+        } else {
+          setActive(tabList[0].key);
+        }
+      } else {
+        setActive(tabList[0].key);
+      }
     }
   }, [tabList]);
 
@@ -90,9 +93,11 @@ export default function Solutions({ localServer }: any) {
         <Col span={15}>
           <Card
             tabList={tabList}
-            defaultActiveTabKey={active}
-            activeTabKey={active}
+            defaultActiveTabKey={active || ""}
+            activeTabKey={active || ""}
             onTabChange={key => {
+              console.log(key);
+
               setActive(key);
             }}
           >

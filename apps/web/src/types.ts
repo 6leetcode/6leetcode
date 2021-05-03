@@ -10,6 +10,7 @@ export interface IQuestion {
   acRate: string;
   translated_content: string;
   content: string;
+  solutions: Map<string, number>;
 }
 
 export interface ISolution {
@@ -18,3 +19,16 @@ export interface ISolution {
   language: string;
   filename: string;
 };
+
+export const LanguagesDefinition = [
+  { "language": "C", "suffix": ".c" },
+  { "language": "CPP", "suffix": ".cc" },
+  { "language": "Go", "suffix": ".go" },
+  { "language": "Java", "suffix": ".java" },
+  { "language": "JavaScript", "suffix": ".js" },
+  { "language": "PHP", "suffix": ".php" },
+  { "language": "Python", "suffix": ".py" },
+  { "language": "Rust", "suffix": ".rs" },
+  { "language": "SQL", "suffix": ".sql" },
+  { "language": "Bash", "suffix": ".sh" },
+];

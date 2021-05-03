@@ -23,6 +23,6 @@ export default function App() {
           6leetcode ©2020 Created by <a rel="noopener noreferrer" target="_blank" href="https://github.com/tosone">Tosone</a>
         </Layout.Footer>
       </HashRouter>
-    </Layout >
+    </Layout>
   );
 }

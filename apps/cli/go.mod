@@ -22,8 +22,8 @@ require (
 	github.com/stretchr/testify v1.6.1 // indirect
 	github.com/tosone/logging v1.2.1
 	github.com/unknwon/com v1.0.1
-	golang.org/x/net v0.0.0-20210428140749-89ef3d95e781 // indirect
-	golang.org/x/sys v0.0.0-20210426230700-d19ff857e887 // indirect
+	golang.org/x/net v0.0.0-20210502030024-e5908800b52b // indirect
+	golang.org/x/sys v0.0.0-20210502180810-71e4cd670f79 // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect

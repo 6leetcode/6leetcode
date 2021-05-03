@@ -11,7 +11,7 @@ export default function CodeBox({ solution }: any) {
 
   return (
     <div className="codebox">
-      <CopyToClipboard text={atob(solution.data).trim()} onCopy={() => {
+      <CopyToClipboard text={Buffer.from(solution.data, "base64").toString("utf-8").trim()} onCopy={() => {
         setCopied(true);
         setTimeout(() => {
           setCopied(false);
@@ -21,7 +21,7 @@ export default function CodeBox({ solution }: any) {
       </CopyToClipboard>
       <SyntaxHighlighter language={solution.language.toLowerCase()}
         style={a11yDark} showLineNumbers>
-        {atob(solution.data).trim()}
+        {Buffer.from(solution.data, "base64").toString("utf-8").trim()}
       </SyntaxHighlighter>
     </div>
   );
