@@ -17,10 +17,6 @@ clean:
 install:
 	env TARGET=${APPNAME} make -C apps/cli install
 
-.PHONY: gen
-gen:
-	@${APPNAME} $@
-
 .PHONY: changelog
 changelog:
 	@git-chglog -o CHANGELOG.md
@@ -28,6 +24,6 @@ changelog:
 .PHONY: deploy
 deploy:
 	@$(RM) -r docs
-	leet json
+	leet gen
 	cd apps/web && npm run build
 	mv apps/web/build docs

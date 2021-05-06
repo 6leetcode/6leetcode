@@ -37,7 +37,7 @@ LeetCode Solutions.
 |[0012](https://leetcode-cn.com/problems/integer-to-roman)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||:white_check_mark:|||
 |[0013](https://leetcode-cn.com/problems/roman-to-integer)|Easy|:white_check_mark:|:white_check_mark:|||||||||
 |[0014](https://leetcode-cn.com/problems/longest-common-prefix)|Easy|:white_check_mark:||||||||||
-|[0015](https://leetcode-cn.com/problems/3sum)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
+|[0015](https://leetcode-cn.com/problems/3sum)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||||||
 |[0016](https://leetcode-cn.com/problems/3sum-closest)|Medium|:white_check_mark:|:white_check_mark:|||||||||
 |[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|:white_check_mark:||||||||||
 |[0018](https://leetcode-cn.com/problems/4sum)|Medium|:white_check_mark:||||||||||

@@ -11,6 +11,7 @@ import (
 	"leet/cmd/crawler"
 	"leet/cmd/jsongen"
 	"leet/cmd/readme"
+	"leet/cmd/solutiongen"
 	"leet/cmd/version"
 	"leet/common/table"
 )
@@ -55,32 +56,24 @@ func init() {
 	}
 	RootCmd.AddCommand(allCmd) // crawler commander
 
-	var jsonCmd = &cobra.Command{
-		Use:   "json",
-		Short: "Generate portable json file",
-		Long:  `Generate portable json file.`,
+	var genCmd = &cobra.Command{
+		Use:   "gen",
+		Short: "Generate README.md, Makefile and solution",
+		Long:  `Generate README.md, Makefile and solution`,
 		Args:  cobra.MinimumNArgs(0),
 		RunE: func(_ *cobra.Command, _ []string) (err error) {
 			if err = initTable(); err != nil {
 				logging.Errorf("Init table with error: %+v", err)
 				return
 			}
-			if err = jsongen.Initialize(); err != nil {
-				logging.Errorf("Init crawler with error: %+v", err)
+			if err = readme.Initialize(); err != nil {
 				return
 			}
-			return
-		},
-	}
-	RootCmd.AddCommand(jsonCmd) // crawler commander
-
-	var genCmd = &cobra.Command{
-		Use:   "gen",
-		Short: "Generate README.md and Makefile",
-		Long:  `Generate README.md and Makefile.`,
-		Args:  cobra.MinimumNArgs(0),
-		RunE: func(_ *cobra.Command, _ []string) (err error) {
-			if err = readme.Initialize(); err != nil {
+			if err = solutiongen.Initialize(); err != nil {
+				return
+			}
+			if err = jsongen.Initialize(); err != nil {
+				logging.Errorf("Init crawler with error: %+v", err)
 				return
 			}
 			return
