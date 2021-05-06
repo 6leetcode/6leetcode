@@ -42,10 +42,17 @@ export default function Solutions({ localServer }: any) {
     for (let lang of LanguagesDefinition) {
       for (let solution of solutions) {
         if (lang.language === solution.language) {
-          tabList.push({
-            key: solution.language,
-            tab: solution.language,
-          });
+          if (lang.language === "CPP") {
+            tabList.push({
+              key: solution.language,
+              tab: "C++",
+            });
+          } else {
+            tabList.push({
+              key: solution.language,
+              tab: solution.language,
+            });
+          }
         }
       }
     }
@@ -96,8 +103,6 @@ export default function Solutions({ localServer }: any) {
             defaultActiveTabKey={active || ""}
             activeTabKey={active || ""}
             onTabChange={key => {
-              console.log(key);
-
               setActive(key);
             }}
           >
