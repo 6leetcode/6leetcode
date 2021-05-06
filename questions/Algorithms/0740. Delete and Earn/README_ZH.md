@@ -2,7 +2,7 @@
 
 <p>给你一个整数数组 <code>nums</code> ，你可以对它进行一些操作。</p>
 
-<p>每次操作中，选择任意一个 <code>nums[i]</code> ，删除它并获得 <code>nums[i]</code> 的点数。之后，你必须删除<strong>每个</strong>等于 <code>nums[i] - 1</code> 或 <code>nums[i] + 1</code> 的元素。</p>
+<p>每次操作中，选择任意一个 <code>nums[i]</code> ，删除它并获得 <code>nums[i]</code> 的点数。之后，你必须删除 <strong>所有 </strong>等于 <code>nums[i] - 1</code> 和 <code>nums[i] + 1</code> 的元素。</p>
 
 <p>开始你拥有 <code>0</code> 个点数。返回你能通过这些操作获得的最大点数。</p>
 

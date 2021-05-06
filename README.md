@@ -37,7 +37,7 @@ LeetCode Solutions.
 |[0012](https://leetcode-cn.com/problems/integer-to-roman)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||:white_check_mark:|||
 |[0013](https://leetcode-cn.com/problems/roman-to-integer)|Easy|:white_check_mark:|:white_check_mark:|||||||||
 |[0014](https://leetcode-cn.com/problems/longest-common-prefix)|Easy|:white_check_mark:||||||||||
-|[0015](https://leetcode-cn.com/problems/3sum)|Medium|:white_check_mark:|:white_check_mark:|||||||||
+|[0015](https://leetcode-cn.com/problems/3sum)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
 |[0016](https://leetcode-cn.com/problems/3sum-closest)|Medium|:white_check_mark:|:white_check_mark:|||||||||
 |[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|:white_check_mark:||||||||||
 |[0018](https://leetcode-cn.com/problems/4sum)|Medium|:white_check_mark:||||||||||
@@ -1680,10 +1680,10 @@ LeetCode Solutions.
 |[1823](https://leetcode-cn.com/problems/find-the-winner-of-the-circular-game)|Medium|||||||||||
 |[1824](https://leetcode-cn.com/problems/minimum-sideway-jumps)|Medium|||||||||||
 |[1825](https://leetcode-cn.com/problems/finding-mk-average)|Hard|||||||||||
-|[5730](https://leetcode-cn.com/problems/replace-all-digits-with-characters)|Easy|||||||||||
-|[5731](https://leetcode-cn.com/problems/seat-reservation-manager)|Medium|||||||||||
-|[5732](https://leetcode-cn.com/problems/maximum-element-after-decreasing-and-rearranging)|Medium|||||||||||
-|[5733](https://leetcode-cn.com/problems/closest-room)|Hard|||||||||||
+|[1844](https://leetcode-cn.com/problems/replace-all-digits-with-characters)|Easy|||||||||||
+|[1845](https://leetcode-cn.com/problems/seat-reservation-manager)|Medium|||||||||||
+|[1846](https://leetcode-cn.com/problems/maximum-element-after-decreasing-and-rearranging)|Medium|||||||||||
+|[1847](https://leetcode-cn.com/problems/closest-room)|Hard|||||||||||
 |[1810](https://leetcode-cn.com/problems/minimum-path-cost-in-a-hidden-grid)|Medium|||||||||||
 |[1832](https://leetcode-cn.com/problems/check-if-the-sentence-is-pangram)|Easy|||||||||||
 |[1833](https://leetcode-cn.com/problems/maximum-ice-cream-bars)|Medium|||||||||||
@@ -1694,13 +1694,14 @@ LeetCode Solutions.
 |[1839](https://leetcode-cn.com/problems/longest-substring-of-all-vowels-in-order)|Medium|||||||||||
 |[1840](https://leetcode-cn.com/problems/maximum-building-height)|Hard|||||||||||
 |[1820](https://leetcode-cn.com/problems/maximum-number-of-accepted-invitations)|Medium|||||||||||
-|[5746](https://leetcode-cn.com/problems/minimum-distance-to-the-target-element)|Easy|||||||||||
-|[5747](https://leetcode-cn.com/problems/splitting-a-string-into-descending-consecutive-values)|Medium|||||||||||
-|[5748](https://leetcode-cn.com/problems/minimum-interval-to-include-each-query)|Hard|||||||||||
-|[5749](https://leetcode-cn.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number)|Medium|||||||||||
+|[1848](https://leetcode-cn.com/problems/minimum-distance-to-the-target-element)|Easy|||||||||||
+|[1849](https://leetcode-cn.com/problems/splitting-a-string-into-descending-consecutive-values)|Medium|||||||||||
+|[1851](https://leetcode-cn.com/problems/minimum-interval-to-include-each-query)|Hard|||||||||||
+|[1850](https://leetcode-cn.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number)|Medium|||||||||||
 |[1826](https://leetcode-cn.com/problems/faulty-sensor)|Easy|||||||||||
 |[1836](https://leetcode-cn.com/problems/remove-duplicates-from-an-unsorted-linked-list)|Medium|||||||||||
 |[1842](https://leetcode-cn.com/problems/next-palindrome-using-same-digits)|Hard|||||||||||
+|[1852](https://leetcode-cn.com/problems/distinct-numbers-in-each-subarray)|Medium|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||

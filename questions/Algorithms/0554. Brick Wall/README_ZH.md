@@ -1,6 +1,6 @@
 ### [砖墙](https://leetcode-cn.com/problems/brick-wall)
 
-<p>你的面前有一堵矩形的、由 <code>n</code> 行砖块组成的砖墙。这些砖块高度相同（也就是一个单位高）但是宽度不同。每一行砖块的宽度之和应该相等。</p>
+<p>你的面前有一堵矩形的、由 <code>n</code> 行砖块组成的砖墙。这些砖块高度相同（也就是一个单位高）但是宽度不同。每一行砖块的宽度之和相等。</p>
 
 <p>你现在要画一条 <strong>自顶向下 </strong>的、穿过 <strong>最少 </strong>砖块的垂线。如果你画的线只是从砖块的边缘经过，就不算穿过这块砖。<strong>你不能沿着墙的两个垂直边缘之一画线，这样显然是没有穿过一块砖的。</strong></p>
 
@@ -30,6 +30,6 @@
 	<li><code>1 <= n <= 10<sup>4</sup></code></li>
 	<li><code>1 <= wall[i].length <= 10<sup>4</sup></code></li>
 	<li><code>1 <= sum(wall[i].length) <= 2 * 10<sup>4</sup></code></li>
-	<li>对于每一行 <code>i</code> ，<code>sum(wall[i])</code> 应当是相同的</li>
+	<li>对于每一行 <code>i</code> ，<code>sum(wall[i])</code> 是相同的</li>
 	<li><code>1 <= wall[i][j] <= 2<sup>31</sup> - 1</code></li>
 </ul>

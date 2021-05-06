@@ -1,6 +1,6 @@
 ### [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)
 
-<p>Given the <code>root</code> node of a binary search tree, return <em>the sum of values of all nodes with a value in the range <code>[low, high]</code></em>.</p>
+<p>Given the <code>root</code> node of a binary search tree and two integers <code>low</code> and <code>high</code>, return <em>the sum of values of all nodes with a value in the <strong>inclusive</strong> range </em><code>[low, high]</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -8,6 +8,7 @@
 <pre>
 <strong>Input:</strong> root = [10,5,15,3,7,null,18], low = 7, high = 15
 <strong>Output:</strong> 32
+<strong>Explanation:</strong> Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -15,6 +16,7 @@
 <pre>
 <strong>Input:</strong> root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10
 <strong>Output:</strong> 23
+<strong>Explanation:</strong> Nodes 6, 7, and 10 are in the range [6, 10]. 6 + 7 + 10 = 23.
 </pre>
 
 <p>&nbsp;</p>
