@@ -32,8 +32,8 @@ var tokens = []token{
 		Suffix:   ".java",
 	},
 	{
-		Language: "JavaScript",
-		Suffix:   ".js",
+		Language: "TypeScript",
+		Suffix:   ".ts",
 	},
 	{
 		Language: "PHP",

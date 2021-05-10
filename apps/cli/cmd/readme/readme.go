@@ -15,14 +15,14 @@ import (
 	"leet/common/table"
 )
 
-var suffixes = []string{".c", ".cc", ".go", ".java", ".js", ".php", ".py", ".rs", ".sql", ".sh"}
+var suffixes = []string{".c", ".cc", ".go", ".java", ".ts", ".php", ".py", ".rs", ".sql", ".sh"}
 var makefiles = map[string]string{
 	".sh":   "bash.makefile",
 	".c":    "c.makefile",
 	".cc":   "cc.makefile",
 	".go":   "go.makefile",
 	".java": "java.makefile",
-	".js":   "javascript.makefile",
+	".ts":   "typescript.makefile",
 	".php":  "php.makefile",
 	".py":   "python.makefile",
 	".rs":   "rust.makefile",
@@ -34,7 +34,7 @@ var targets = map[string]string{
 	".cc":   "cc",
 	".go":   "go",
 	".java": "java",
-	".js":   "javascript",
+	".ts":   "typescript",
 	".php":  "php",
 	".py":   "python",
 	".rs":   "rust",
@@ -43,8 +43,8 @@ var targets = map[string]string{
 
 const makefileDir = "testing"
 
-const tableTitle = "|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
-const tableBashTitle = "|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
+const tableTitle = "|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
+const tableBashTitle = "|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|\n|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n"
 
 const EngReadme = "# LeetCode\n\n" +
 	"LeetCode Solutions.\n\n" +

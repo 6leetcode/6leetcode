@@ -78,7 +78,7 @@ export default function Questions({ localServer }: any) {
                   LanguagesDefinition.map((lang) => {
                     return (
                       <div className="paid_only">
-                        {lang.language}
+                        {lang.language === "CPP" ? "C++" : lang.language}
                       </div>
                     );
                   })
@@ -91,50 +91,45 @@ export default function Questions({ localServer }: any) {
           }
           dataSource={questions}
           renderItem={(item) => (
-            <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
-              // window.localStorage.setItem("language_show", "");
-            }}>
-              <List.Item>
-                <div className="questionItem">
-                  <div>
-                    <span>
-                      {item.question_frontend_id}.&nbsp;
-                    </span>
-                    {i18n.language === "en-US" ? item.title : item.translated_title === "" ? item.title : item.translated_title}
-                  </div>
-                  <div className="description">
-                    {
-                      LanguagesDefinition.map((lang) => {
-                        for (let i in item.solutions) {
-                          if (i === lang.language) {
-                            return (
-                              <div className="solution_icon" key={i}>
-                                <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
-                                  console.log(i);
-                                  window.localStorage.setItem("language_show", i);
-                                }}>
-                                  <CheckOutlined style={{ color: 'green' }} />
-                                </Link>
-                              </div>
-                            );
-                          }
+            <List.Item>
+              <div className="questionItem">
+                <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => { }}>
+                  <span>
+                    {item.question_frontend_id}.&nbsp;
+                  </span>
+                  {i18n.language === "en-US" ? item.title : item.translated_title === "" ? item.title : item.translated_title}
+                </Link>
+                <div className="description">
+                  {
+                    LanguagesDefinition.map((lang) => {
+                      for (let i in item.solutions) {
+                        if (i === lang.language) {
+                          return (
+                            <div className="solution_icon" key={i}>
+                              <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
+                                window.localStorage.setItem("language_show", i);
+                              }}>
+                                <CheckOutlined style={{ color: 'green' }} />
+                              </Link>
+                            </div>
+                          );
                         }
-                        return (
-                          <div className="solution_icon"></div>
-                        );
-                      })
-                    }
-                    <div className="paid_only">{item.paid_only ? <LockOutlined style={{ color: "#cca766" }} /> : <UnlockOutlined style={{ color: "#009975" }} />}</div>
-                    <div className="difficult">
-                      <span className={item.difficulty.toLowerCase()}>
-                        {t(`difficulty.${item.difficulty}`)}
-                      </span>
-                    </div>
-                    <div className="ace">{item.acRate}</div>
+                      }
+                      return (
+                        <div className="solution_icon"></div>
+                      );
+                    })
+                  }
+                  <div className="paid_only">{item.paid_only ? <LockOutlined style={{ color: "#cca766" }} /> : <UnlockOutlined style={{ color: "#009975" }} />}</div>
+                  <div className="difficult">
+                    <span className={item.difficulty.toLowerCase()}>
+                      {t(`difficulty.${item.difficulty}`)}
+                    </span>
                   </div>
+                  <div className="ace">{item.acRate}</div>
                 </div>
-              </List.Item>
-            </Link>
+              </div>
+            </List.Item>
           )}
         />
         <div className="pagination">

@@ -21,7 +21,7 @@ LeetCode 题解
 
   <summary>Algorithms</summary>
 
-|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0001](https://leetcode-cn.com/problems/two-sum)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|:white_check_mark:|||
 |[0002](https://leetcode-cn.com/problems/add-two-numbers)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||
@@ -34,15 +34,15 @@ LeetCode 题解
 |[0009](https://leetcode-cn.com/problems/palindrome-number)|Easy|:white_check_mark:||||||||||
 |[0010](https://leetcode-cn.com/problems/regular-expression-matching)|Hard|:white_check_mark:||||||||||
 |[0011](https://leetcode-cn.com/problems/container-with-most-water)|Medium|:white_check_mark:||:white_check_mark:||||||||
-|[0012](https://leetcode-cn.com/problems/integer-to-roman)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|||:white_check_mark:|||
+|[0012](https://leetcode-cn.com/problems/integer-to-roman)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|||||:white_check_mark:|||
 |[0013](https://leetcode-cn.com/problems/roman-to-integer)|Easy|:white_check_mark:|:white_check_mark:|||||||||
 |[0014](https://leetcode-cn.com/problems/longest-common-prefix)|Easy|:white_check_mark:||||||||||
-|[0015](https://leetcode-cn.com/problems/3sum)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||||||
+|[0015](https://leetcode-cn.com/problems/3sum)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
 |[0016](https://leetcode-cn.com/problems/3sum-closest)|Medium|:white_check_mark:|:white_check_mark:|||||||||
 |[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|:white_check_mark:||||||||||
 |[0018](https://leetcode-cn.com/problems/4sum)|Medium|:white_check_mark:||||||||||
 |[0019](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|Medium|:white_check_mark:||||||||||
-|[0020](https://leetcode-cn.com/problems/valid-parentheses)|Easy|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||:white_check_mark:||||
+|[0020](https://leetcode-cn.com/problems/valid-parentheses)|Easy|:white_check_mark:|:white_check_mark:||:white_check_mark:|||:white_check_mark:||||
 |[0021](https://leetcode-cn.com/problems/merge-two-sorted-lists)|Easy|:white_check_mark:|:white_check_mark:|||||||||
 |[0022](https://leetcode-cn.com/problems/generate-parentheses)|Medium||:white_check_mark:|||||||||
 |[0023](https://leetcode-cn.com/problems/merge-k-sorted-lists)|Hard||:white_check_mark:|||||||||
@@ -116,7 +116,7 @@ LeetCode 题解
 |[0091](https://leetcode-cn.com/problems/decode-ways)|Medium||:white_check_mark:|||||||||
 |[0092](https://leetcode-cn.com/problems/reverse-linked-list-ii)|Medium||:white_check_mark:|||||||||
 |[0093](https://leetcode-cn.com/problems/restore-ip-addresses)|Medium||:white_check_mark:|||||||||
-|[0094](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)|Medium||:white_check_mark:|||||||||
+|[0094](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)|Easy||:white_check_mark:|||||||||
 |[0095](https://leetcode-cn.com/problems/unique-binary-search-trees-ii)|Medium|||||||||||
 |[0096](https://leetcode-cn.com/problems/unique-binary-search-trees)|Medium|||||||||||
 |[0097](https://leetcode-cn.com/problems/interleaving-string)|Medium|||||||||||
@@ -167,7 +167,7 @@ LeetCode 题解
 |[0142](https://leetcode-cn.com/problems/linked-list-cycle-ii)|Medium|||||||||||
 |[0143](https://leetcode-cn.com/problems/reorder-list)|Medium|||||||||||
 |[0144](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)|Medium|||||||||||
-|[0145](https://leetcode-cn.com/problems/binary-tree-postorder-traversal)|Medium|||||||||||
+|[0145](https://leetcode-cn.com/problems/binary-tree-postorder-traversal)|Easy|||||||||||
 |[0146](https://leetcode-cn.com/problems/lru-cache)|Medium|||||||||||
 |[0147](https://leetcode-cn.com/problems/insertion-sort-list)|Medium|||||||||||
 |[0148](https://leetcode-cn.com/problems/sort-list)|Medium|||||||||||
@@ -264,7 +264,7 @@ LeetCode 题解
 |[0255](https://leetcode-cn.com/problems/verify-preorder-sequence-in-binary-search-tree)|Medium|||||||||||
 |[0256](https://leetcode-cn.com/problems/paint-house)|Medium|||||||||||
 |[0257](https://leetcode-cn.com/problems/binary-tree-paths)|Easy|||||||||||
-|[0258](https://leetcode-cn.com/problems/add-digits)|Easy|||||||||||
+|[0258](https://leetcode-cn.com/problems/add-digits)|Easy|||||:white_check_mark:||||||
 |[0259](https://leetcode-cn.com/problems/3sum-smaller)|Medium|||||||||||
 |[0260](https://leetcode-cn.com/problems/single-number-iii)|Medium|||||||||||
 |[0261](https://leetcode-cn.com/problems/graph-valid-tree)|Medium|||||||||||
@@ -297,7 +297,7 @@ LeetCode 题解
 |[0289](https://leetcode-cn.com/problems/game-of-life)|Medium|||||||||||
 |[0290](https://leetcode-cn.com/problems/word-pattern)|Easy|||||||||||
 |[0291](https://leetcode-cn.com/problems/word-pattern-ii)|Medium|||||||||||
-|[0292](https://leetcode-cn.com/problems/nim-game)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||
+|[0292](https://leetcode-cn.com/problems/nim-game)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|:white_check_mark:|||
 |[0293](https://leetcode-cn.com/problems/flip-game)|Easy||:white_check_mark:|||||||||
 |[0294](https://leetcode-cn.com/problems/flip-game-ii)|Medium||:white_check_mark:|||||||||
 |[0295](https://leetcode-cn.com/problems/find-median-from-data-stream)|Hard|||||||||||
@@ -324,7 +324,7 @@ LeetCode 题解
 |[0316](https://leetcode-cn.com/problems/remove-duplicate-letters)|Medium|||||||||||
 |[0317](https://leetcode-cn.com/problems/shortest-distance-from-all-buildings)|Hard|||||||||||
 |[0318](https://leetcode-cn.com/problems/maximum-product-of-word-lengths)|Medium|||||||||||
-|[0319](https://leetcode-cn.com/problems/bulb-switcher)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||:white_check_mark:|:white_check_mark:|||
+|[0319](https://leetcode-cn.com/problems/bulb-switcher)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||||:white_check_mark:|:white_check_mark:|||
 |[0320](https://leetcode-cn.com/problems/generalized-abbreviation)|Medium|||||||||||
 |[0321](https://leetcode-cn.com/problems/create-maximum-number)|Hard|||||||||||
 |[0322](https://leetcode-cn.com/problems/coin-change)|Medium|||||||||||
@@ -457,7 +457,7 @@ LeetCode 题解
 |[0455](https://leetcode-cn.com/problems/assign-cookies)|Easy|||||||||||
 |[0456](https://leetcode-cn.com/problems/132-pattern)|Medium|||||||||||
 |[0457](https://leetcode-cn.com/problems/circular-array-loop)|Medium|||||||||||
-|[0458](https://leetcode-cn.com/problems/poor-pigs)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||
+|[0458](https://leetcode-cn.com/problems/poor-pigs)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|:white_check_mark:|||
 |[0459](https://leetcode-cn.com/problems/repeated-substring-pattern)|Easy|||||||||||
 |[0460](https://leetcode-cn.com/problems/lfu-cache)|Hard|||||||||||
 |[0461](https://leetcode-cn.com/problems/hamming-distance)|Easy|||||||||||
@@ -508,7 +508,7 @@ LeetCode 题解
 |[0510](https://leetcode-cn.com/problems/inorder-successor-in-bst-ii)|Medium|||||||||||
 |[1059](https://leetcode-cn.com/problems/all-paths-from-source-lead-to-destination)|Medium|||||||||||
 |[0513](https://leetcode-cn.com/problems/find-bottom-left-tree-value)|Medium|||||||||||
-|[0514](https://leetcode-cn.com/problems/freedom-trail)|Hard|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:||||||
+|[0514](https://leetcode-cn.com/problems/freedom-trail)|Hard|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||||
 |[0515](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row)|Medium|||||||||||
 |[0516](https://leetcode-cn.com/problems/longest-palindromic-subsequence)|Medium|||||||||||
 |[0517](https://leetcode-cn.com/problems/super-washing-machines)|Hard|||||||||||
@@ -848,7 +848,7 @@ LeetCode 题解
 |[0874](https://leetcode-cn.com/problems/walking-robot-simulation)|Easy|||||||||||
 |[0875](https://leetcode-cn.com/problems/koko-eating-bananas)|Medium|||||||||||
 |[0876](https://leetcode-cn.com/problems/middle-of-the-linked-list)|Easy|||||||||||
-|[0877](https://leetcode-cn.com/problems/stone-game)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:|:white_check_mark:|||
+|[0877](https://leetcode-cn.com/problems/stone-game)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|:white_check_mark:|||
 |[0878](https://leetcode-cn.com/problems/nth-magical-number)|Hard|||||||||||
 |[0879](https://leetcode-cn.com/problems/profitable-schemes)|Hard|||||||||||
 |[0528](https://leetcode-cn.com/problems/random-pick-with-weight)|Medium|||||||||||
@@ -952,7 +952,7 @@ LeetCode 题解
 |[0973](https://leetcode-cn.com/problems/k-closest-points-to-origin)|Medium||:white_check_mark:|||||||||
 |[0974](https://leetcode-cn.com/problems/subarray-sums-divisible-by-k)|Medium|||||||||||
 |[0975](https://leetcode-cn.com/problems/odd-even-jump)|Hard|||||||||||
-|[0976](https://leetcode-cn.com/problems/largest-perimeter-triangle)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:||:white_check_mark:||||||
+|[0976](https://leetcode-cn.com/problems/largest-perimeter-triangle)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
 |[0977](https://leetcode-cn.com/problems/squares-of-a-sorted-array)|Easy|||||||||||
 |[0978](https://leetcode-cn.com/problems/longest-turbulent-subarray)|Medium|||||||||||
 |[0979](https://leetcode-cn.com/problems/distribute-coins-in-binary-tree)|Medium|||||||||||
@@ -1747,7 +1747,7 @@ LeetCode 题解
 
   <summary>Database</summary>
 
-|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0175](https://leetcode-cn.com/problems/combine-two-tables)|Easy|||||||||:white_check_mark:||
 |[0176](https://leetcode-cn.com/problems/second-highest-salary)|Easy|||||||||||
@@ -1916,7 +1916,7 @@ LeetCode 题解
 
   <summary>Shell</summary>
 
-|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0192](https://leetcode-cn.com/problems/word-frequency)|Medium||||||||||:white_check_mark:|
 |[0193](https://leetcode-cn.com/problems/valid-phone-numbers)|Easy||||||||||:white_check_mark:|
@@ -1929,7 +1929,7 @@ LeetCode 题解
 
   <summary>Concurrency</summary>
 
-|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[1117](https://leetcode-cn.com/problems/building-h2o)|Medium|||||||||||
 |[1115](https://leetcode-cn.com/problems/print-foobar-alternately)|Medium|||||||||||
@@ -1947,7 +1947,7 @@ LeetCode 题解
 
   <summary>LCCI</summary>
 
-|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[面试题 01.01](https://leetcode-cn.com/problems/is-unique-lcci)|Easy|||||||||||
 |[面试题 01.02](https://leetcode-cn.com/problems/check-permutation-lcci)|Easy|||||||||||
@@ -2065,7 +2065,7 @@ LeetCode 题解
 
   <summary>LCOF</summary>
 
-|Index|Difficulty|C|CPP|Go|Java|JS|PHP|Python|Rust|SQL|Bash|
+|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[剑指 Offer 09](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof)|Easy|||||||||||
 |[剑指 Offer 10- I](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof)|Easy|||||||||||

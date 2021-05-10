@@ -4,12 +4,12 @@ RustFiles       := $(wildcard *.rs)
 GoFiles         := $(wildcard *.go)
 PythonFiles     := $(wildcard *.py)
 PHPFiles        := $(wildcard *.php)
-JavascriptFiles := $(wildcard *.js)
+TypescriptFiles := $(wildcard *.ts)
 JavaFiles       := $(wildcard *.java)
 BashFiles       := $(wildcard *.sh)
 
 .PHONY: all
-all: c cc rust go python php javascript java bash
+all: c cc rust go python php typescript java bash
 
 .PHONY: c
 c: $(CFiles)
@@ -70,14 +70,14 @@ $(PythonFiles):
 	@python3 $@
 	@echo
 
-.PHONY: javascript
-javascript: $(JavascriptFiles)
+.PHONY: typescript
+typescript: $(TypescriptFiles)
 
-.PHONY: $(JavascriptFiles)
-$(JavascriptFiles):
+.PHONY: $(TypescriptFiles)
+$(TypescriptFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
-	@node $@
+	@ts-node $@
 	@echo
 
 .PHONY: java
