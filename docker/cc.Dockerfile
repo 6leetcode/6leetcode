@@ -1,4 +1,4 @@
-FROM gcc:10
+FROM gcc:11
 
 WORKDIR /app
 

@@ -1,6 +1,6 @@
 # github.com/elazarl/goproxy v0.0.0-20200315184450-1f3cb6622dad
 ## explicit
-# github.com/fatih/color v1.10.0
+# github.com/fatih/color v1.11.0
 ## explicit
 github.com/fatih/color
 # github.com/fsnotify/fsnotify v1.4.9
@@ -43,7 +43,7 @@ github.com/mitchellh/mapstructure
 # github.com/parnurzeal/gorequest v0.2.16
 ## explicit
 github.com/parnurzeal/gorequest
-# github.com/pelletier/go-toml v1.9.0
+# github.com/pelletier/go-toml v1.9.1
 ## explicit
 github.com/pelletier/go-toml
 # github.com/pkg/errors v0.9.1
@@ -77,10 +77,10 @@ github.com/tosone/logging
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/net v0.0.0-20210505214959-0714010a04ed
+# golang.org/x/net v0.0.0-20210510120150-4163338589ed
 ## explicit
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20210503173754-0981d6026fa6
+# golang.org/x/sys v0.0.0-20210514084401-e8d321eab015
 ## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix

@@ -5,19 +5,19 @@
     "main.js.map": "/static/js/main.daf5b566.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6f7a5c32.js",
     "runtime-main.js.map": "/static/js/runtime-main.6f7a5c32.js.map",
-    "static/css/2.1b37bd98.chunk.css": "/static/css/2.1b37bd98.chunk.css",
-    "static/js/2.e78e7d76.chunk.js": "/static/js/2.e78e7d76.chunk.js",
-    "static/js/2.e78e7d76.chunk.js.map": "/static/js/2.e78e7d76.chunk.js.map",
+    "static/css/2.2b4e7770.chunk.css": "/static/css/2.2b4e7770.chunk.css",
+    "static/js/2.1db8bdf6.chunk.js": "/static/js/2.1db8bdf6.chunk.js",
+    "static/js/2.1db8bdf6.chunk.js.map": "/static/js/2.1db8bdf6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.1b37bd98.chunk.css.map": "/static/css/2.1b37bd98.chunk.css.map",
+    "static/css/2.2b4e7770.chunk.css.map": "/static/css/2.2b4e7770.chunk.css.map",
     "static/css/main.8ddc792e.chunk.css.map": "/static/css/main.8ddc792e.chunk.css.map",
-    "static/js/2.e78e7d76.chunk.js.LICENSE.txt": "/static/js/2.e78e7d76.chunk.js.LICENSE.txt",
+    "static/js/2.1db8bdf6.chunk.js.LICENSE.txt": "/static/js/2.1db8bdf6.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/leetcode.ad6bd815.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6f7a5c32.js",
-    "static/css/2.1b37bd98.chunk.css",
-    "static/js/2.e78e7d76.chunk.js",
+    "static/css/2.2b4e7770.chunk.css",
+    "static/js/2.1db8bdf6.chunk.js",
     "static/css/main.8ddc792e.chunk.css",
     "static/js/main.daf5b566.chunk.js"
   ]
