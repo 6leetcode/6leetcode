@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useParams } from 'react-router-dom';
 import { Layout, List, Typography, Pagination } from "antd";
-import { LockOutlined, UnlockOutlined, CheckOutlined } from '@ant-design/icons';
+import { CheckOutlined, MinusOutlined } from '@ant-design/icons';
 
 import { IQuestion, LanguagesDefinition } from '../types';
 
@@ -83,7 +83,6 @@ export default function Questions({ localServer }: any) {
                     );
                   })
                 }
-                <div className="paid_only"><Typography.Text strong>{t("title.Pay")}</Typography.Text></div>
                 <div className="difficult"><Typography.Text strong>{t("title.Difficulty")}</Typography.Text></div>
                 <div className="ace"><Typography.Text strong>{t("title.AcRate")}</Typography.Text></div>
               </div>
@@ -103,24 +102,48 @@ export default function Questions({ localServer }: any) {
                   {
                     LanguagesDefinition.map((lang) => {
                       for (let i in item.solutions) {
-                        if (i === lang.language) {
+                        if ((item.category_title === "Algorithms" ||
+                          item.category_title === "Concurrency" ||
+                          item.category_title === "LCCI" ||
+                          item.category_title === "LCOF")
+                          && (lang.language === "SQL" || lang.language === "Bash")) {
                           return (
                             <div className="solution_icon" key={i}>
-                              <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
-                                window.localStorage.setItem("language_show", i);
-                              }}>
-                                <CheckOutlined style={{ color: 'green' }} />
-                              </Link>
+                              <MinusOutlined style={{ color: 'grey' }} />
                             </div>
                           );
-                        }
+                        } else if ((item.category_title === "Bash") && (lang.language === "C" ||
+                          lang.language === "CPP" ||
+                          lang.language === "Go" ||
+                          lang.language === "Java" ||
+                          lang.language === "TypeScript" ||
+                          lang.language === "PHP" ||
+                          lang.language === "Python" ||
+                          lang.language === "Rust"
+                        )) {
+                          return (
+                            <div className="solution_icon" key={i}>
+                              <MinusOutlined style={{ color: 'grey' }} />
+                            </div>
+                          )
+                        } else
+                          if (i === lang.language) {
+                            return (
+                              <div className="solution_icon" key={i}>
+                                <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
+                                  window.localStorage.setItem("language_show", i);
+                                }}>
+                                  <CheckOutlined style={{ color: 'green' }} />
+                                </Link>
+                              </div>
+                            );
+                          }
                       }
                       return (
                         <div className="solution_icon"></div>
                       );
                     })
                   }
-                  <div className="paid_only">{item.paid_only ? <LockOutlined style={{ color: "#cca766" }} /> : <UnlockOutlined style={{ color: "#009975" }} />}</div>
                   <div className="difficult">
                     <span className={item.difficulty.toLowerCase()}>
                       {t(`difficulty.${item.difficulty}`)}

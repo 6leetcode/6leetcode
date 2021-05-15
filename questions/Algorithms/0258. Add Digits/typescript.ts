@@ -7,3 +7,5 @@ function addDigits(num: number): number {
 let input = 28;
 console.log(`Input:  ${input}`);
 console.log(`Output: ${addDigits(input)}`);
+
+export { }

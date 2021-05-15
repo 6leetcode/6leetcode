@@ -13,7 +13,7 @@ $content-width: 1500px;
       justify-content: space-between;
 
       .menuItem {
-        width: 120px;
+        min-width: 100px;
         text-align: center;
       }
 
@@ -47,10 +47,6 @@ $content-width: 1500px;
   padding: 20px 0px;
   width: $content-width;
   margin: 0 auto;
-}
-
-.questionItem {
-  cursor: pointer;
 }
 
 .questionItem,

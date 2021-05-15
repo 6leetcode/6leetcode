@@ -19,7 +19,6 @@ class Solution {
 
 public class java {
   public static void main(String[] args) {
-    Solution solution = new Solution();
     int[] input1 = new int[] { 1, 2, 3 };
     int target = 3;
 
@@ -29,6 +28,7 @@ public class java {
     }
     System.out.printf("] %d\n", target);
 
+    Solution solution = new Solution();
     int[] result = solution.twoSum(input1, target);
 
     System.out.printf("Output: [%d, %d]\n", result[0], result[1]);
