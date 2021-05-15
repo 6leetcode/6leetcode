@@ -25,7 +25,7 @@ export const LanguagesDefinition = [
   { "language": "CPP", "suffix": ".cc" },
   { "language": "Go", "suffix": ".go" },
   { "language": "Java", "suffix": ".java" },
-  { "language": "JavaScript", "suffix": ".js" },
+  { "language": "TypeScript", "suffix": ".ts" },
   { "language": "PHP", "suffix": ".php" },
   { "language": "Python", "suffix": ".py" },
   { "language": "Rust", "suffix": ".rs" },
