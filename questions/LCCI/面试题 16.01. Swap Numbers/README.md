@@ -13,4 +13,5 @@
 
 <ul>
 	<li><code>numbers.length == 2</code></li>
+	<li><code>-2147483647 &lt;= numbers[i] &lt;=&nbsp;2147483647</code></li>
 </ul>

@@ -1,15 +1,15 @@
 ### [Split BST](https://leetcode.com/problems/split-bst)
 
-<p>Given a Binary Search Tree (BST) with root node <code>root</code>, and a target value <code>V</code>, split the tree into two subtrees&nbsp;where one subtree has nodes that are all smaller or equal to the target value, while the other subtree has all nodes that are greater than the target value.&nbsp; It&#39;s not necessarily the case that the tree contains a node with value <code>V</code>.</p>
+<p>Given a Binary Search Tree (BST) with root node <code>root</code>, and a target value <code>target</code>, split the tree into two subtrees where one subtree has nodes that are all smaller or equal to the target value, while the other subtree has all nodes that are greater than the target value. It&#39;s not necessarily the case that the tree contains a node with value <code>target</code>.</p>
 
-<p>Additionally, most of the structure of the original tree should remain.&nbsp; Formally, for any child C with parent P in the original tree, if they are both in the same subtree after the split, then node C should still have the parent P.</p>
+<p>Additionally, most of the structure of the original tree should remain. Formally, for any child c with parent p in the original tree, if they are both in the same subtree after the split, then node c should still have the parent p.</p>
 
-<p>You should output the root TreeNode of&nbsp;both subtrees after splitting, in any order.</p>
+<p>You should output the root TreeNode of both subtrees after splitting, in any order.</p>
 
 <p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> root = [4,2,6,1,3,5,7], V = 2
+<strong>Input:</strong> root = [4,2,6,1,3,5,7], target = 2
 <strong>Output:</strong> [[2,1],[4,3,6,null,null,5,7]]
 <strong>Explanation:</strong>
 Note that root, output[0], and output[1] are TreeNode objects, not arrays.

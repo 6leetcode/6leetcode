@@ -1,8 +1,8 @@
 ### [Move Sub-Tree of N-Ary Tree](https://leetcode.com/problems/move-sub-tree-of-n-ary-tree)
 
-<p>Given the <code>root</code> of an&nbsp;<a href="https://leetcode.com/articles/introduction-to-n-ary-trees/">N-ary tree</a>&nbsp;of unique values, and two nodes of the tree&nbsp;<code>p</code> and <code>q</code>.</p>
+<p>Given the <code>root</code> of an <a href="https://leetcode.com/articles/introduction-to-n-ary-trees/">N-ary tree</a> of unique values, and two nodes of the tree <code>p</code> and <code>q</code>.</p>
 
-<p>You should move&nbsp;the subtree of the node&nbsp;<code>p</code>&nbsp;to become a direct child of node <code>q</code>. If <code>p</code>&nbsp;is already a direct child of <code>q</code>, don&#39;t change anything. Node <code>p</code> <strong>must be</strong> the last child in the children list of node <code>q</code>.</p>
+<p>You should move the subtree of the node <code>p</code> to become a direct child of node <code>q</code>. If <code>p</code> is already a direct child of <code>q</code>, don&#39;t change anything. Node <code>p</code> <strong>must be</strong> the last child in the children list of node <code>q</code>.</p>
 
 <p>Return <em>the root of the tree</em> after adjusting it.</p>
 
@@ -13,14 +13,14 @@
 <ol>
 	<li>Node <code>q</code> is in the sub-tree of node <code>p</code>.</li>
 	<li>Node <code>p</code> is in the sub-tree of node <code>q</code>.</li>
-	<li>Neither node <code>p</code> is&nbsp;in the sub-tree of node <code>q</code> nor node <code>q</code> is in the sub-tree of node <code>p</code>.</li>
+	<li>Neither node <code>p</code> is in the sub-tree of node <code>q</code> nor node <code>q</code> is in the sub-tree of node <code>p</code>.</li>
 </ol>
 
-<p>In cases 2 and 3, you just need to move <code><span>p</span></code>&nbsp;(with its sub-tree) to be a child of <code>q</code>, but in case 1 the tree may be disconnected, thus you need to reconnect the tree again. <strong>Please read the examples carefully before solving this problem.</strong></p>
+<p>In cases 2 and 3, you just need to move <code><span>p</span></code> (with its sub-tree) to be a child of <code>q</code>, but in case 1 the tree may be disconnected, thus you need to reconnect the tree again. <strong>Please read the examples carefully before solving this problem.</strong></p>
 
 <p>&nbsp;</p>
 
-<p><em>Nary-Tree input serialization&nbsp;is represented in their level order traversal, each group of children is separated by the null value (See examples).</em></p>
+<p><em>Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).</em></p>
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2019/11/08/sample_4_964.png" style="width: 296px; height: 241px;" /></p>
 
@@ -75,8 +75,8 @@ As node p was the root of the tree, node q replaces it and becomes the root of t
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The total number of nodes is between <code>[2,&nbsp;1000]</code>.</li>
-	<li>Each&nbsp;node has a <strong>unique</strong> value.</li>
+	<li>The total number of nodes is between <code>[2, 1000]</code>.</li>
+	<li>Each node has a <strong>unique</strong> value.</li>
 	<li><code>p != null</code></li>
 	<li><code>q != null</code></li>
 	<li><code>p</code> and <code>q</code> are two different nodes (i.e. <code>p != q</code>).</li>

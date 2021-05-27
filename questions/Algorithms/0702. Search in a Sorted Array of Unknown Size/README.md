@@ -4,6 +4,8 @@
 
 <p>You may assume all integers in the array are less than&nbsp;<code>10000</code>, and if you access the array out of bounds, <code>ArrayReader.get</code> will return <code>2147483647</code>.</p>
 
+<p>You must&nbsp;write an algorithm with&nbsp;<code>O(log n)</code>&nbsp;runtime complexity.</p>
+
 <p>&nbsp;</p>
 
 <p><strong>Example 1:</strong></p>

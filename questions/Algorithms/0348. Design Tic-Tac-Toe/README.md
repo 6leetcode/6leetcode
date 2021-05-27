@@ -73,7 +73,7 @@ ticTacToe.move(2, 1, 1); // return 1&nbsp;(player 1 wins)
 <ul>
 	<li><code>2 &lt;= n &lt;= 100</code></li>
 	<li>player is <code>1</code> or <code>2</code>.</li>
-	<li><code>1 &lt;= row, col &lt;= n</code></li>
+	<li><code>0 &lt;= row, col &lt;&nbsp;n</code></li>
 	<li><code>(row, col)</code>&nbsp;are <strong>unique</strong> for each different call to <code>move</code>.</li>
 	<li>At most <code>n<sup>2</sup></code> calls will be made to <code>move</code>.</li>
 </ul>

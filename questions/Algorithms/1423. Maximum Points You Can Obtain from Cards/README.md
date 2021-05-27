@@ -1,6 +1,6 @@
 ### [Maximum Points You Can Obtain from Cards](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards)
 
-<p>There are several cards&nbsp;<strong>arranged in a row</strong>, and each card has an associated number of points&nbsp;The points are given in the integer array&nbsp;<code>cardPoints</code>.</p>
+<p>There are several cards <strong>arranged in a row</strong>, and each card has an associated number of points. The points are given in the integer array <code>cardPoints</code>.</p>
 
 <p>In one step, you can take one card from the beginning or from the end of the row. You have to take exactly <code>k</code> cards.</p>
 
@@ -52,7 +52,7 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= cardPoints.length &lt;= 10^5</code></li>
-	<li><code>1 &lt;= cardPoints[i] &lt;= 10^4</code></li>
+	<li><code>1 &lt;= cardPoints.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= cardPoints[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>1 &lt;= k &lt;= cardPoints.length</code></li>
 </ul>

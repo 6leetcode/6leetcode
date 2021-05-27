@@ -4,14 +4,14 @@
 
 <p>A <em>confusing number</em> is a number that when rotated 180 degrees becomes a <strong>different</strong> number with each digit valid.(Note that the rotated number can be greater than the original number.)</p>
 
-<p>Given a positive integer <code>N</code>, return the number of confusing numbers between <code>1</code> and <code>N</code>&nbsp;inclusive.</p>
+<p>Given a positive integer <code>n</code>, return the number of confusing numbers between <code>1</code> and <code>n</code>&nbsp;inclusive.</p>
 
 <p>&nbsp;</p>
 
 <p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>Input: </strong><span id="example-input-1-1">20</span>
+<strong>Input: </strong>n = <span id="example-input-1-1">20</span>
 <strong>Output: </strong><span id="example-output-1">6</span>
 <strong>Explanation: </strong>
 The confusing numbers are [6,9,10,16,18,19].
@@ -26,7 +26,7 @@ The confusing numbers are [6,9,10,16,18,19].
 <p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>Input: </strong><span id="example-input-2-1">100</span>
+<strong>Input: </strong>n = <span id="example-input-2-1">100</span>
 <strong>Output: </strong><span id="example-output-2">19</span>
 <strong>Explanation: </strong>
 The confusing numbers are [6,9,10,16,18,19,60,61,66,68,80,81,86,89,90,91,98,99,100].
@@ -37,5 +37,5 @@ The confusing numbers are [6,9,10,16,18,19,60,61,66,68,80,81,86,89,90,91,98,99,1
 <p><strong>Note:</strong></p>
 
 <ol>
-	<li><code>1 &lt;= N &lt;= 10^9</code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>
 </ol>

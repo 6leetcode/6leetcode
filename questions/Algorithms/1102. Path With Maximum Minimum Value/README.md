@@ -1,6 +1,6 @@
 ### [Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value)
 
-<p>Given a&nbsp;matrix of integers <code>A</code>&nbsp;with&nbsp;<font face="monospace">R</font>&nbsp;rows and <font face="monospace">C</font>&nbsp;columns, find&nbsp;the <strong>maximum</strong>&nbsp;score&nbsp;of a path starting at&nbsp;<code>[0,0]</code>&nbsp;and ending at <code>[R-1,C-1]</code>.</p>
+<p>Given a&nbsp;matrix of integers <code>grid</code>&nbsp;with&nbsp;<code>m</code>&nbsp;rows and <code>n</code>&nbsp;columns, find&nbsp;the <strong>maximum</strong>&nbsp;score&nbsp;of a path starting at&nbsp;<code>[0,0]</code>&nbsp;and ending at <code>[m-1,n-1]</code>.</p>
 
 <p>The <em>score</em> of a path is the <strong>minimum</strong> value in that path.&nbsp; For example, the value of the path 8 &rarr;&nbsp; 4 &rarr;&nbsp; 5 &rarr;&nbsp; 9 is 4.</p>
 
@@ -40,6 +40,6 @@ The path with the maximum score is highlighted in yellow.
 <p><strong>Note:</strong></p>
 
 <ol>
-	<li><code>1 &lt;= R, C&nbsp;&lt;= 100</code></li>
-	<li><code>0 &lt;= A[i][j] &lt;= 10^9</code></li>
+	<li><code>1 &lt;= m, n&nbsp;&lt;= 100</code></li>
+	<li><code>0 &lt;= grid[i][j] &lt;= 10<sup>9</sup></code></li>
 </ol>

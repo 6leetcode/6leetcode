@@ -23,10 +23,7 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= nums.length &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>5</sup> &lt;= k &lt;= 10<sup>5</sup></code></li>
+	<li><code>-10<sup>9</sup>&nbsp;&lt;= k &lt;= 10<sup>9</sup></code></li>
 </ul>
-
-<p>&nbsp;</p>
-<p><strong>Follow Up:</strong> Can you do it in <code>O(n)</code> time?</p>

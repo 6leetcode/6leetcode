@@ -4,6 +4,8 @@
 
 <p>A <strong>word</strong> is defined as a sequence of non-space characters. The <strong>words</strong> in <code>s</code> will be separated by a single space.</p>
 
+<p>Your code must solve the problem&nbsp;<strong>in-place,</strong> i.e. without allocating extra space.</p>
+
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 <pre><strong>Input:</strong> s = ["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"]
@@ -22,6 +24,3 @@
 	<li><code>s</code> does not contain leading or trailing spaces.</li>
 	<li>All the words in <code>s</code> are guaranteed to be separated by a single space.</li>
 </ul>
-
-<p>&nbsp;</p>
-<strong>Follow up:</strong> Could you do it <strong>in-place</strong> without allocating extra space?

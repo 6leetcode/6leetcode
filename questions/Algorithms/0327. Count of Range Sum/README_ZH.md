@@ -25,11 +25,8 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= nums.length <= 10<sup>4</sup></code></li>
+	<li><code>1 <= nums.length <= 10<sup>5</sup></code></li>
 	<li><code>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1</code></li>
-	<li><code>-3 * 10<sup>4</sup> <= lower <= upper <= 3 * 10<sup>4</sup></code></li>
+	<li><code>-10<sup>5</sup> <= lower <= upper <= 10<sup>5</sup></code></li>
+	<li>题目数据保证答案是一个 <strong>32 位</strong> 的整数</li>
 </ul>
-
-<p> </p>
-
-<p><strong>提示：</strong>最直观的算法复杂度是 <code>O(n<sup>2</sup>)</code> ，请在此基础上优化你的算法。</p>
