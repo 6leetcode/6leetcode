@@ -4,6 +4,8 @@
 
 <p>假设 <code>nums</code> 只有 <strong>一个重复的整数</strong> ，找出 <strong>这个重复的数</strong> 。</p>
 
+<p>你设计的解决方案必须不修改数组 <code>nums</code> 且只用常量级 <code>O(1)</code> 的额外空间。</p>
+
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
@@ -39,7 +41,7 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>2 <= n <= 3 * 10<sup>4</sup></code></li>
+	<li><code>2 <= n <= 10<sup>5</sup></code></li>
 	<li><code>nums.length == n + 1</code></li>
 	<li><code>1 <= nums[i] <= n</code></li>
 	<li><code>nums</code> 中 <strong>只有一个整数</strong> 出现 <strong>两次或多次</strong> ，其余整数均只出现 <strong>一次</strong></li>
@@ -51,7 +53,5 @@
 
 <ul>
 	<li>如何证明 <code>nums</code> 中至少存在一个重复的数字?</li>
-	<li>你可以在不修改数组 <code>nums</code> 的情况下解决这个问题吗？</li>
-	<li>你可以只用常量级 <code>O(1)</code> 的额外空间解决这个问题吗？</li>
-	<li>你可以设计一个时间复杂度小于 <code>O(n<sup>2</sup>)</code> 的解决方案吗？</li>
+	<li>你可以设计一个线性级时间复杂度 <code>O(n)</code> 的解决方案吗？</li>
 </ul>

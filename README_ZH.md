@@ -492,7 +492,7 @@ LeetCode 题解
 |[0492](https://leetcode-cn.com/problems/construct-the-rectangle)|Easy|||||||||||
 |[0493](https://leetcode-cn.com/problems/reverse-pairs)|Hard|:white_check_mark:||||||||||
 |[0494](https://leetcode-cn.com/problems/target-sum)|Medium|||||||||||
-|[0495](https://leetcode-cn.com/problems/teemo-attacking)|Medium|||||||||||
+|[0495](https://leetcode-cn.com/problems/teemo-attacking)|Easy|||||||||||
 |[0496](https://leetcode-cn.com/problems/next-greater-element-i)|Easy|||||||||||
 |[0498](https://leetcode-cn.com/problems/diagonal-traverse)|Medium|:white_check_mark:||||||||||
 |[0499](https://leetcode-cn.com/problems/the-maze-iii)|Hard|||||||||||
@@ -706,7 +706,7 @@ LeetCode 题解
 |[0756](https://leetcode-cn.com/problems/pyramid-transition-matrix)|Medium|||||||||||
 |[0426](https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list)|Medium|||||||||||
 |[0757](https://leetcode-cn.com/problems/set-intersection-size-at-least-two)|Hard|||||||||||
-|[0758](https://leetcode-cn.com/problems/bold-words-in-string)|Easy|||||||||||
+|[0758](https://leetcode-cn.com/problems/bold-words-in-string)|Medium|||||||||||
 |[0759](https://leetcode-cn.com/problems/employee-free-time)|Hard|||||||||||
 |[0760](https://leetcode-cn.com/problems/find-anagram-mappings)|Easy|||||||||||
 |[0761](https://leetcode-cn.com/problems/special-binary-string)|Hard|||||||||||
@@ -1708,6 +1708,10 @@ LeetCode 题解
 |[1855](https://leetcode-cn.com/problems/maximum-distance-between-a-pair-of-values)|Medium|||||||||||
 |[1856](https://leetcode-cn.com/problems/maximum-subarray-min-product)|Medium|||||||||||
 |[1857](https://leetcode-cn.com/problems/largest-color-value-in-a-directed-graph)|Hard|||||||||||
+|[1876](https://leetcode-cn.com/problems/substrings-of-size-three-with-distinct-characters)|Easy|||||||||||
+|[1877](https://leetcode-cn.com/problems/minimize-maximum-pair-sum-in-array)|Medium|||||||||||
+|[1879](https://leetcode-cn.com/problems/minimum-xor-sum-of-two-arrays)|Hard|||||||||||
+|[1878](https://leetcode-cn.com/problems/get-biggest-three-rhombus-sums-in-a-grid)|Medium|||||||||||
 |[1863](https://leetcode-cn.com/problems/sum-of-all-subset-xor-totals)|Easy|||||||||||
 |[1864](https://leetcode-cn.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating)|Medium|||||||||||
 |[1865](https://leetcode-cn.com/problems/finding-pairs-with-a-certain-sum)|Medium|||||||||||
@@ -1719,6 +1723,10 @@ LeetCode 题解
 |[1872](https://leetcode-cn.com/problems/stone-game-viii)|Hard|||||||||||
 |[1852](https://leetcode-cn.com/problems/distinct-numbers-in-each-subarray)|Medium|||||||||||
 |[1858](https://leetcode-cn.com/problems/longest-word-with-all-prefixes)|Medium|||||||||||
+|[1880](https://leetcode-cn.com/problems/check-if-word-equals-summation-of-two-words)|Easy|||||||||||
+|[1881](https://leetcode-cn.com/problems/maximum-value-after-insertion)|Medium|||||||||||
+|[1882](https://leetcode-cn.com/problems/process-tasks-using-servers)|Medium|||||||||||
+|[1883](https://leetcode-cn.com/problems/minimum-skips-to-arrive-at-meeting-on-time)|Hard|||||||||||
 |[1868](https://leetcode-cn.com/problems/product-of-two-run-length-encoded-arrays)|Medium|||||||||||
 |[1874](https://leetcode-cn.com/problems/minimize-product-sum-of-two-arrays)|Medium|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
@@ -1931,6 +1939,7 @@ LeetCode 题解
 |[1853](https://leetcode-cn.com/problems/convert-date-format)|Easy|||||||||||
 |[1867](https://leetcode-cn.com/problems/orders-with-maximum-quantity-above-average)|Medium|||||||||||
 |[1873](https://leetcode-cn.com/problems/calculate-special-bonus)|Easy|||||||||||
+|[1875](https://leetcode-cn.com/problems/group-employees-of-the-same-salary)|Medium|||||||||||
 
 </details>
 
