@@ -38,6 +38,3 @@
 	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 9</code></li>
 	<li><code>1 &lt;= k &lt;= m + n</code></li>
 </ul>
-
-<p>&nbsp;</p>
-<p><strong>Follow up:</strong> Try to optimize your time and space complexity.</p>

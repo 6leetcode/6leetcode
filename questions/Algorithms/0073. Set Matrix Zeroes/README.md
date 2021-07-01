@@ -1,14 +1,8 @@
 ### [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)
 
-<p>Given an&nbsp;<code><em>m</em> x <em>n</em></code> matrix. If an element is <strong>0</strong>, set its entire row and column to <strong>0</strong>. Do it <a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank"><strong>in-place</strong></a>.</p>
+<p>Given an <code>m x n</code> integer matrix <code>matrix</code>, if an element is <code>0</code>, set its entire row and column to <code>0</code>&#39;s, and return <em>the matrix</em>.</p>
 
-<p><strong>Follow up:</strong></p>
-
-<ul>
-	<li>A straight forward solution using O(<em>m</em><em>n</em>) space is probably a bad idea.</li>
-	<li>A simple improvement uses O(<em>m</em> + <em>n</em>) space, but still not the best solution.</li>
-	<li>Could you devise a constant space solution?</li>
-</ul>
+<p>You must do it <a href="https://en.wikipedia.org/wiki/In-place_algorithm" target="_blank">in place</a>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -33,4 +27,13 @@
 	<li><code>n == matrix[0].length</code></li>
 	<li><code>1 &lt;= m, n &lt;= 200</code></li>
 	<li><code>-2<sup>31</sup> &lt;= matrix[i][j] &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong></p>
+
+<ul>
+	<li>A straight forward solution using <code><em>O(mn)</em></code> space is probably a bad idea.</li>
+	<li>A simple improvement uses <code>O(m + n)</code> space, but still not the best solution.</li>
+	<li>Could you devise a constant space solution?</li>
 </ul>

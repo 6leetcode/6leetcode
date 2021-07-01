@@ -121,7 +121,7 @@ LeetCode 题解
 |[0096](https://leetcode-cn.com/problems/unique-binary-search-trees)|Medium|||||||||||
 |[0097](https://leetcode-cn.com/problems/interleaving-string)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||||||
 |[0098](https://leetcode-cn.com/problems/validate-binary-search-tree)|Medium|||||||||||
-|[0099](https://leetcode-cn.com/problems/recover-binary-search-tree)|Hard|||||||||||
+|[0099](https://leetcode-cn.com/problems/recover-binary-search-tree)|Medium|||||||||||
 |[0100](https://leetcode-cn.com/problems/same-tree)|Easy|:white_check_mark:|:white_check_mark:|||||||||
 |[0101](https://leetcode-cn.com/problems/symmetric-tree)|Easy|:white_check_mark:|:white_check_mark:|||||||||
 |[0102](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)|Medium|||||||||||
@@ -622,7 +622,7 @@ LeetCode 题解
 |[0662](https://leetcode-cn.com/problems/maximum-width-of-binary-tree)|Medium|||||||||||
 |[0663](https://leetcode-cn.com/problems/equal-tree-partition)|Medium|||||||||||
 |[0664](https://leetcode-cn.com/problems/strange-printer)|Hard|||||||||||
-|[0665](https://leetcode-cn.com/problems/non-decreasing-array)|Easy|||||||||||
+|[0665](https://leetcode-cn.com/problems/non-decreasing-array)|Medium|||||||||||
 |[0666](https://leetcode-cn.com/problems/path-sum-iv)|Medium|||||||||||
 |[0667](https://leetcode-cn.com/problems/beautiful-arrangement-ii)|Medium|||||||||||
 |[0668](https://leetcode-cn.com/problems/kth-smallest-number-in-multiplication-table)|Hard|||||||||||
@@ -765,7 +765,7 @@ LeetCode 题解
 |[0705](https://leetcode-cn.com/problems/design-hashset)|Easy|||||||||||
 |[0706](https://leetcode-cn.com/problems/design-hashmap)|Easy|||||||||||
 |[0800](https://leetcode-cn.com/problems/similar-rgb-color)|Easy|||||||||||
-|[0801](https://leetcode-cn.com/problems/minimum-swaps-to-make-sequences-increasing)|Medium|||||||||||
+|[0801](https://leetcode-cn.com/problems/minimum-swaps-to-make-sequences-increasing)|Hard|||||||||||
 |[0802](https://leetcode-cn.com/problems/find-eventual-safe-states)|Medium|||||||||||
 |[0803](https://leetcode-cn.com/problems/bricks-falling-when-hit)|Hard|||||||||||
 |[0804](https://leetcode-cn.com/problems/unique-morse-code-words)|Easy|||||||||||
@@ -1194,6 +1194,8 @@ LeetCode 题解
 |[1201](https://leetcode-cn.com/problems/ugly-number-iii)|Medium|||||||||||
 |[1202](https://leetcode-cn.com/problems/smallest-string-with-swaps)|Medium|||||||||||
 |[1203](https://leetcode-cn.com/problems/sort-items-by-groups-respecting-dependencies)|Hard|||||||||||
+|[1895](https://leetcode-cn.com/problems/largest-magic-square)|Medium|||||||||||
+|[1916](https://leetcode-cn.com/problems/count-ways-to-build-rooms-in-an-ant-colony)|Hard|||||||||||
 |[1207](https://leetcode-cn.com/problems/unique-number-of-occurrences)|Easy|||||||||||
 |[1209](https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string-ii)|Medium|||||||||||
 |[1208](https://leetcode-cn.com/problems/get-equal-substrings-within-budget)|Medium|||||||||||
@@ -1208,7 +1210,7 @@ LeetCode 题解
 |[1206](https://leetcode-cn.com/problems/design-skiplist)|Hard|||||||||||
 |[1221](https://leetcode-cn.com/problems/split-a-string-in-balanced-strings)|Easy|||||||||||
 |[1222](https://leetcode-cn.com/problems/queens-that-can-attack-the-king)|Medium|||||||||||
-|[1223](https://leetcode-cn.com/problems/dice-roll-simulation)|Medium|||||||||||
+|[1223](https://leetcode-cn.com/problems/dice-roll-simulation)|Hard|||||||||||
 |[1224](https://leetcode-cn.com/problems/maximum-equal-frequency)|Hard|||||||||||
 |[1427](https://leetcode-cn.com/problems/perform-string-shifts)|Easy|||||||||||
 |[1232](https://leetcode-cn.com/problems/check-if-it-is-a-straight-line)|Easy|||||||||||
@@ -1649,7 +1651,7 @@ LeetCode 题解
 |[1786](https://leetcode-cn.com/problems/number-of-restricted-paths-from-first-to-last-node)|Medium|||||||||||
 |[1787](https://leetcode-cn.com/problems/make-the-xor-of-all-segments-equal-to-zero)|Hard|||||||||||
 |[1790](https://leetcode-cn.com/problems/check-if-one-string-swap-can-make-strings-equal)|Easy|||||||||||
-|[1791](https://leetcode-cn.com/problems/find-center-of-star-graph)|Medium|||||||||||
+|[1791](https://leetcode-cn.com/problems/find-center-of-star-graph)|Easy|||||||||||
 |[1792](https://leetcode-cn.com/problems/maximum-average-pass-ratio)|Medium|||||||||||
 |[1793](https://leetcode-cn.com/problems/maximum-score-of-a-good-subarray)|Hard|||||||||||
 |[1772](https://leetcode-cn.com/problems/sort-features-by-popularity)|Medium|||||||||||
@@ -1722,13 +1724,41 @@ LeetCode 题解
 |[1871](https://leetcode-cn.com/problems/jump-game-vii)|Medium|||||||||||
 |[1872](https://leetcode-cn.com/problems/stone-game-viii)|Hard|||||||||||
 |[1852](https://leetcode-cn.com/problems/distinct-numbers-in-each-subarray)|Medium|||||||||||
+|[1893](https://leetcode-cn.com/problems/check-if-all-the-integers-in-a-range-are-covered)|Easy|||||||||||
+|[1894](https://leetcode-cn.com/problems/find-the-student-that-will-replace-the-chalk)|Medium|||||||||||
+|[1896](https://leetcode-cn.com/problems/minimum-cost-to-change-the-final-value-of-expression)|Hard|||||||||||
 |[1858](https://leetcode-cn.com/problems/longest-word-with-all-prefixes)|Medium|||||||||||
 |[1880](https://leetcode-cn.com/problems/check-if-word-equals-summation-of-two-words)|Easy|||||||||||
 |[1881](https://leetcode-cn.com/problems/maximum-value-after-insertion)|Medium|||||||||||
 |[1882](https://leetcode-cn.com/problems/process-tasks-using-servers)|Medium|||||||||||
 |[1883](https://leetcode-cn.com/problems/minimum-skips-to-arrive-at-meeting-on-time)|Hard|||||||||||
+|[1886](https://leetcode-cn.com/problems/determine-whether-matrix-can-be-obtained-by-rotation)|Easy|||||||||||
+|[1887](https://leetcode-cn.com/problems/reduction-operations-to-make-the-array-elements-equal)|Medium|||||||||||
+|[1888](https://leetcode-cn.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating)|Medium|||||||||||
+|[1889](https://leetcode-cn.com/problems/minimum-space-wasted-from-packaging)|Hard|||||||||||
 |[1868](https://leetcode-cn.com/problems/product-of-two-run-length-encoded-arrays)|Medium|||||||||||
+|[1909](https://leetcode-cn.com/problems/remove-one-element-to-make-the-array-strictly-increasing)|Easy|||||||||||
+|[1910](https://leetcode-cn.com/problems/remove-all-occurrences-of-a-substring)|Medium|||||||||||
+|[1911](https://leetcode-cn.com/problems/maximum-alternating-subsequence-sum)|Medium|||||||||||
+|[1912](https://leetcode-cn.com/problems/design-movie-rental-system)|Hard|||||||||||
+|[1897](https://leetcode-cn.com/problems/redistribute-characters-to-make-all-strings-equal)|Easy|||||||||||
+|[1899](https://leetcode-cn.com/problems/merge-triplets-to-form-target-triplet)|Medium|||||||||||
+|[1898](https://leetcode-cn.com/problems/maximum-number-of-removable-characters)|Medium|||||||||||
+|[1900](https://leetcode-cn.com/problems/the-earliest-and-latest-rounds-where-players-compete)|Hard|||||||||||
 |[1874](https://leetcode-cn.com/problems/minimize-product-sum-of-two-arrays)|Medium|||||||||||
+|[1884](https://leetcode-cn.com/problems/egg-drop-with-2-eggs-and-n-floors)|Medium|||||||||||
+|[1903](https://leetcode-cn.com/problems/largest-odd-number-in-string)|Easy|||||||||||
+|[1904](https://leetcode-cn.com/problems/the-number-of-full-rounds-you-have-played)|Medium|||||||||||
+|[1906](https://leetcode-cn.com/problems/minimum-absolute-difference-queries)|Medium|||||||||||
+|[1905](https://leetcode-cn.com/problems/count-sub-islands)|Medium|||||||||||
+|[1885](https://leetcode-cn.com/problems/count-pairs-in-two-arrays)|Medium|||||||||||
+|[1913](https://leetcode-cn.com/problems/maximum-product-difference-between-two-pairs)|Easy|||||||||||
+|[1914](https://leetcode-cn.com/problems/cyclically-rotating-a-grid)|Medium|||||||||||
+|[1915](https://leetcode-cn.com/problems/number-of-wonderful-substrings)|Medium|||||||||||
+|[1891](https://leetcode-cn.com/problems/cutting-ribbons)|Medium|||||||||||
+|[1901](https://leetcode-cn.com/problems/find-a-peak-element-ii)|Medium|||||||||||
+|[1902](https://leetcode-cn.com/problems/depth-of-bst-given-insertion-order)|Medium|||||||||||
+|[1908](https://leetcode-cn.com/problems/game-of-nim)|Medium|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
@@ -1767,6 +1797,9 @@ LeetCode 题解
 |[LCP 36](https://leetcode-cn.com/problems/Up5XYM)|Hard|||||||||||
 |[LCP 38](https://leetcode-cn.com/problems/7rLGCR)|Hard|||||||||||
 |[LCP 30](https://leetcode-cn.com/problems/p0NxJO)|Medium|||||||||||
+|[LCS 01](https://leetcode-cn.com/problems/Ju9Xwi)|Easy|||||||||||
+|[LCS 02](https://leetcode-cn.com/problems/WqXACV)|Easy|||||||||||
+|[LCS 03](https://leetcode-cn.com/problems/YesdPw)|Medium|||||||||||
 
 </details>
 
@@ -1853,7 +1886,7 @@ LeetCode 题解
 |[1179](https://leetcode-cn.com/problems/reformat-department-table)|Easy|||||||||||
 |[1193](https://leetcode-cn.com/problems/monthly-transactions-i)|Medium|||||||||||
 |[1194](https://leetcode-cn.com/problems/tournament-winners)|Hard|||||||||||
-|[1204](https://leetcode-cn.com/problems/last-person-to-fit-in-the-elevator)|Medium|||||||||||
+|[1204](https://leetcode-cn.com/problems/last-person-to-fit-in-the-bus)|Medium|||||||||||
 |[1205](https://leetcode-cn.com/problems/monthly-transactions-ii)|Medium|||||||||||
 |[1211](https://leetcode-cn.com/problems/queries-quality-and-percentage)|Easy|||||||||||
 |[1212](https://leetcode-cn.com/problems/team-scores-in-football-tournament)|Medium|||||||||||
@@ -1940,6 +1973,10 @@ LeetCode 题解
 |[1867](https://leetcode-cn.com/problems/orders-with-maximum-quantity-above-average)|Medium|||||||||||
 |[1873](https://leetcode-cn.com/problems/calculate-special-bonus)|Easy|||||||||||
 |[1875](https://leetcode-cn.com/problems/group-employees-of-the-same-salary)|Medium|||||||||||
+|[1890](https://leetcode-cn.com/problems/the-latest-login-in-2020)|Easy|||||||||||
+|[1892](https://leetcode-cn.com/problems/page-recommendations-ii)|Hard|||||||||||
+|[1907](https://leetcode-cn.com/problems/count-salary-categories)|Medium|||||||||||
+|[1917](https://leetcode-cn.com/problems/leetcodify-friends-recommendations)|Hard|||||||||||
 
 </details>
 

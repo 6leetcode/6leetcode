@@ -41,7 +41,7 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>2 <= n <= 10<sup>5</sup></code></li>
+	<li><code>1 <= n <= 10<sup>5</sup></code></li>
 	<li><code>nums.length == n + 1</code></li>
 	<li><code>1 <= nums[i] <= n</code></li>
 	<li><code>nums</code> 中 <strong>只有一个整数</strong> 出现 <strong>两次或多次</strong> ，其余整数均只出现 <strong>一次</strong></li>

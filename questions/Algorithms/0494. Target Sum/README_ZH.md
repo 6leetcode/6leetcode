@@ -40,5 +40,5 @@
 	<li><code>1 <= nums.length <= 20</code></li>
 	<li><code>0 <= nums[i] <= 1000</code></li>
 	<li><code>0 <= sum(nums[i]) <= 1000</code></li>
-	<li><code>-1000 <= target <= 100</code></li>
+	<li><code>-1000 <= target <= 1000</code></li>
 </ul>
