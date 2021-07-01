@@ -42,7 +42,7 @@
 
 <p> </p>
 
-<p><strong>解释：</strong></p>
+<p><strong>提示：</strong></p>
 
 <ul>
 	<li><code>0 <= turnedOn <= 10</code></li>

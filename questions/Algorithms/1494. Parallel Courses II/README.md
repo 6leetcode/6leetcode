@@ -1,8 +1,8 @@
 ### [Parallel Courses II](https://leetcode.com/problems/parallel-courses-ii)
 
-<p>You are given an integer <code>n</code>, which indicates that there are <code>n</code> courses labeled from <code>1</code> to <code>n</code>. You are also given an array <code>relations</code> where <code>relations[i] = [prevCourse, nextCourse]</code>, representing a prerequisite relationship between course <code>prevCourse</code> and course <code>nextCourse</code>: course <code>prevCourse</code> has to be taken before course <code>nextCourse</code>. Also, you are given the integer <code>k</code>.</p>
+<p>You are given an integer <code>n</code>, which indicates that there are <code>n</code> courses labeled from <code>1</code> to <code>n</code>. You are also given an array <code>relations</code> where <code>relations[i] = [prevCourse<sub>i</sub>, nextCourse<sub>i</sub>]</code>, representing a prerequisite relationship between course <code>prevCourse<sub>i</sub></code> and course <code>nextCourse<sub>i</sub></code>: course <code>prevCourse<sub>i</sub></code> has to be taken before course <code>nextCourse<sub>i</sub></code>. Also, you are given the integer <code>k</code>.</p>
 
-<p>In one semester, you can take <strong>at most</strong> <code>k</code> courses as long as you have taken all the prerequisites in the <strong>previous</strong>&nbsp;semester for the courses you are taking.</p>
+<p>In one semester, you can take <strong>at most</strong> <code>k</code> courses as long as you have taken all the prerequisites in the <strong>previous</strong> semester for the courses you are taking.</p>
 
 <p>Return <em>the <strong>minimum</strong> number of semesters needed to take all courses</em>. The testcases will be generated such that it is possible to take every course.</p>
 
@@ -49,8 +49,8 @@ In the fourth semester, you can take course 5.
 	<li><code>1 &lt;= k &lt;= n</code></li>
 	<li><code>0 &lt;= relations.length &lt;= n * (n-1) / 2</code></li>
 	<li><code>relations[i].length == 2</code></li>
-	<li><code>1 &lt;= prevCourse, nextCourse &lt;= n</code></li>
-	<li><code>prevCourse != nextCourse</code></li>
-	<li>All the pairs <code>[prevCourse, nextCourse]</code> are <strong>unique</strong>.</li>
+	<li><code>1 &lt;= prevCourse<sub>i</sub>, nextCourse<sub>i</sub> &lt;= n</code></li>
+	<li><code>prevCourse<sub>i</sub> != nextCourse<sub>i</sub></code></li>
+	<li>All the pairs <code>[prevCourse<sub>i</sub>, nextCourse<sub>i</sub>]</code> are <strong>unique</strong>.</li>
 	<li>The given graph is a directed acyclic graph.</li>
 </ul>
