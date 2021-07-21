@@ -173,7 +173,12 @@ func (expr NamedExpr) Build(builder Builder) {
 	}
 
 	if inName {
-		builder.AddVar(builder, namedMap[string(name)])
+		if nv, ok := namedMap[string(name)]; ok {
+			builder.AddVar(builder, nv)
+		} else {
+			builder.WriteByte('@')
+			builder.WriteString(string(name))
+		}
 	}
 }
 
@@ -233,11 +238,24 @@ type Eq struct {
 func (eq Eq) Build(builder Builder) {
 	builder.WriteQuoted(eq.Column)
 
-	if eqNil(eq.Value) {
-		builder.WriteString(" IS NULL")
-	} else {
-		builder.WriteString(" = ")
-		builder.AddVar(builder, eq.Value)
+	switch eq.Value.(type) {
+	case []string, []int, []int32, []int64, []uint, []uint32, []uint64, []interface{}:
+		builder.WriteString(" IN (")
+		rv := reflect.ValueOf(eq.Value)
+		for i := 0; i < rv.Len(); i++ {
+			if i > 0 {
+				builder.WriteByte(',')
+			}
+			builder.AddVar(builder, rv.Index(i).Interface())
+		}
+		builder.WriteByte(')')
+	default:
+		if eqNil(eq.Value) {
+			builder.WriteString(" IS NULL")
+		} else {
+			builder.WriteString(" = ")
+			builder.AddVar(builder, eq.Value)
+		}
 	}
 }
 
@@ -251,11 +269,24 @@ type Neq Eq
 func (neq Neq) Build(builder Builder) {
 	builder.WriteQuoted(neq.Column)
 
-	if eqNil(neq.Value) {
-		builder.WriteString(" IS NOT NULL")
-	} else {
-		builder.WriteString(" <> ")
-		builder.AddVar(builder, neq.Value)
+	switch neq.Value.(type) {
+	case []string, []int, []int32, []int64, []uint, []uint32, []uint64, []interface{}:
+		builder.WriteString(" NOT IN (")
+		rv := reflect.ValueOf(neq.Value)
+		for i := 0; i < rv.Len(); i++ {
+			if i > 0 {
+				builder.WriteByte(',')
+			}
+			builder.AddVar(builder, rv.Index(i).Interface())
+		}
+		builder.WriteByte(')')
+	default:
+		if eqNil(neq.Value) {
+			builder.WriteString(" IS NOT NULL")
+		} else {
+			builder.WriteString(" <> ")
+			builder.AddVar(builder, neq.Value)
+		}
 	}
 }
 

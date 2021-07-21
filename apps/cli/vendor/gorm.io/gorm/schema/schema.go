@@ -45,9 +45,9 @@ type Schema struct {
 
 func (schema Schema) String() string {
 	if schema.ModelType.Name() == "" {
-		return fmt.Sprintf("%v(%v)", schema.Name, schema.Table)
+		return fmt.Sprintf("%s(%s)", schema.Name, schema.Table)
 	}
-	return fmt.Sprintf("%v.%v", schema.ModelType.PkgPath(), schema.ModelType.Name())
+	return fmt.Sprintf("%s.%s", schema.ModelType.PkgPath(), schema.ModelType.Name())
 }
 
 func (schema Schema) MakeSlice() reflect.Value {
@@ -86,7 +86,7 @@ func Parse(dest interface{}, cacheStore *sync.Map, namer Namer) (*Schema, error)
 		if modelType.PkgPath() == "" {
 			return nil, fmt.Errorf("%w: %+v", ErrUnsupportedDataType, dest)
 		}
-		return nil, fmt.Errorf("%w: %v.%v", ErrUnsupportedDataType, modelType.PkgPath(), modelType.Name())
+		return nil, fmt.Errorf("%w: %s.%s", ErrUnsupportedDataType, modelType.PkgPath(), modelType.Name())
 	}
 
 	if v, ok := cacheStore.Load(modelType); ok {
@@ -228,7 +228,7 @@ func Parse(dest interface{}, cacheStore *sync.Map, namer Namer) (*Schema, error)
 			case "func(*gorm.DB) error": // TODO hack
 				reflect.Indirect(reflect.ValueOf(schema)).FieldByName(name).SetBool(true)
 			default:
-				logger.Default.Warn(context.Background(), "Model %v don't match %vInterface, should be %v(*gorm.DB)", schema, name, name)
+				logger.Default.Warn(context.Background(), "Model %v don't match %vInterface, should be `%v(*gorm.DB) error`. Please see https://gorm.io/docs/hooks.html", schema, name, name)
 			}
 		}
 	}
@@ -275,7 +275,7 @@ func getOrParse(dest interface{}, cacheStore *sync.Map, namer Namer) (*Schema, e
 		if modelType.PkgPath() == "" {
 			return nil, fmt.Errorf("%w: %+v", ErrUnsupportedDataType, dest)
 		}
-		return nil, fmt.Errorf("%w: %v.%v", ErrUnsupportedDataType, modelType.PkgPath(), modelType.Name())
+		return nil, fmt.Errorf("%w: %s.%s", ErrUnsupportedDataType, modelType.PkgPath(), modelType.Name())
 	}
 
 	if v, ok := cacheStore.Load(modelType); ok {
