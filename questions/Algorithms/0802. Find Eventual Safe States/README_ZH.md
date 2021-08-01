@@ -34,7 +34,7 @@
 <ul>
 	<li><code>n == graph.length</code></li>
 	<li><code>1 <= n <= 10<sup>4</sup></code></li>
-	<li><code>0 <= graph[i].legnth <= n</code></li>
+	<li><code>0 <= graph[i].length <= n</code></li>
 	<li><code>graph[i]</code> 按严格递增顺序排列。</li>
 	<li>图中可能包含自环。</li>
 	<li>图中边的数目在范围 <code>[1, 4 * 10<sup>4</sup>]</code> 内。</li>

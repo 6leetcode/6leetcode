@@ -40,7 +40,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 <pre>
 <strong>Input:</strong> nums = [0,0,1,1,1,1,2,3,3]
-<strong>Output:</strong> 7, nums = [0,0,1,1,2,3,3,_,_,_]
+<strong>Output:</strong> 7, nums = [0,0,1,1,2,3,3,_,_]
 <strong>Explanation:</strong> Your function should return k = 7, with the first seven elements of nums being 0, 0, 1, 1, 2, 3 and 3 respectively.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 </pre>

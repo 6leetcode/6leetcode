@@ -540,7 +540,7 @@ LeetCode 题解
 |[0545](https://leetcode-cn.com/problems/boundary-of-binary-tree)|Medium|||||||||||
 |[0546](https://leetcode-cn.com/problems/remove-boxes)|Hard|||||||||||
 |[0547](https://leetcode-cn.com/problems/number-of-provinces)|Medium|||||||||||
-|[0548](https://leetcode-cn.com/problems/split-array-with-equal-sum)|Medium|||||||||||
+|[0548](https://leetcode-cn.com/problems/split-array-with-equal-sum)|Hard|||||||||||
 |[0549](https://leetcode-cn.com/problems/binary-tree-longest-consecutive-sequence-ii)|Medium|||||||||||
 |[1730](https://leetcode-cn.com/problems/shortest-path-to-get-food)|Medium|||||||||||
 |[0551](https://leetcode-cn.com/problems/student-attendance-record-i)|Easy|||||||||||
@@ -750,7 +750,7 @@ LeetCode 题解
 |[0785](https://leetcode-cn.com/problems/is-graph-bipartite)|Medium|||||||||||
 |[0786](https://leetcode-cn.com/problems/k-th-smallest-prime-fraction)|Hard|||||||||||
 |[0787](https://leetcode-cn.com/problems/cheapest-flights-within-k-stops)|Medium|||||||||||
-|[0788](https://leetcode-cn.com/problems/rotated-digits)|Easy|||||||||||
+|[0788](https://leetcode-cn.com/problems/rotated-digits)|Medium|||||||||||
 |[0789](https://leetcode-cn.com/problems/escape-the-ghosts)|Medium|||||||||||
 |[0790](https://leetcode-cn.com/problems/domino-and-tromino-tiling)|Medium|||||||||||
 |[0791](https://leetcode-cn.com/problems/custom-sort-string)|Medium|||||||||||
@@ -868,7 +868,7 @@ LeetCode 题解
 |[0890](https://leetcode-cn.com/problems/find-and-replace-pattern)|Medium|||||||||||
 |[0891](https://leetcode-cn.com/problems/sum-of-subsequence-widths)|Hard|||||||||||
 |[0892](https://leetcode-cn.com/problems/surface-area-of-3d-shapes)|Easy|||||||||||
-|[0893](https://leetcode-cn.com/problems/groups-of-special-equivalent-strings)|Easy|||||||||||
+|[0893](https://leetcode-cn.com/problems/groups-of-special-equivalent-strings)|Medium|||||||||||
 |[0894](https://leetcode-cn.com/problems/all-possible-full-binary-trees)|Medium|||||||||||
 |[0895](https://leetcode-cn.com/problems/maximum-frequency-stack)|Hard|||||||||||
 |[0896](https://leetcode-cn.com/problems/monotonic-array)|Easy|||||||||||
@@ -1162,6 +1162,7 @@ LeetCode 题解
 |[1156](https://leetcode-cn.com/problems/swap-for-longest-repeated-character-substring)|Medium|||||||||||
 |[1157](https://leetcode-cn.com/problems/online-majority-element-in-subarray)|Hard|||||||||||
 |[1155](https://leetcode-cn.com/problems/number-of-dice-rolls-with-target-sum)|Medium|||||||||||
+|[1935](https://leetcode-cn.com/problems/maximum-number-of-words-you-can-type)|Easy|||||||||||
 |[1171](https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list)|Medium|||||||||||
 |[1172](https://leetcode-cn.com/problems/dinner-plate-stacks)|Hard|||||||||||
 |[1236](https://leetcode-cn.com/problems/web-crawler)|Medium|||||||||||
@@ -1190,6 +1191,7 @@ LeetCode 题解
 |[1191](https://leetcode-cn.com/problems/k-concatenation-maximum-sum)|Medium|||||||||||
 |[1192](https://leetcode-cn.com/problems/critical-connections-in-a-network)|Hard|||||||||||
 |[1405](https://leetcode-cn.com/problems/longest-happy-string)|Medium|||||||||||
+|[1944](https://leetcode-cn.com/problems/number-of-visible-people-in-a-queue)|Hard|||||||||||
 |[1200](https://leetcode-cn.com/problems/minimum-absolute-difference)|Easy|||||||||||
 |[1201](https://leetcode-cn.com/problems/ugly-number-iii)|Medium|||||||||||
 |[1202](https://leetcode-cn.com/problems/smallest-string-with-swaps)|Medium|||||||||||
@@ -1752,13 +1754,40 @@ LeetCode 题解
 |[1906](https://leetcode-cn.com/problems/minimum-absolute-difference-queries)|Medium|||||||||||
 |[1905](https://leetcode-cn.com/problems/count-sub-islands)|Medium|||||||||||
 |[1885](https://leetcode-cn.com/problems/count-pairs-in-two-arrays)|Medium|||||||||||
+|[1925](https://leetcode-cn.com/problems/count-square-sum-triples)|Easy|||||||||||
+|[1926](https://leetcode-cn.com/problems/nearest-exit-from-entrance-in-maze)|Medium|||||||||||
+|[1927](https://leetcode-cn.com/problems/sum-game)|Medium|||||||||||
+|[1928](https://leetcode-cn.com/problems/minimum-cost-to-reach-destination-in-time)|Hard|||||||||||
 |[1913](https://leetcode-cn.com/problems/maximum-product-difference-between-two-pairs)|Easy|||||||||||
 |[1914](https://leetcode-cn.com/problems/cyclically-rotating-a-grid)|Medium|||||||||||
 |[1915](https://leetcode-cn.com/problems/number-of-wonderful-substrings)|Medium|||||||||||
 |[1891](https://leetcode-cn.com/problems/cutting-ribbons)|Medium|||||||||||
 |[1901](https://leetcode-cn.com/problems/find-a-peak-element-ii)|Medium|||||||||||
+|[1920](https://leetcode-cn.com/problems/build-array-from-permutation)|Easy|||||||||||
+|[1921](https://leetcode-cn.com/problems/eliminate-maximum-number-of-monsters)|Medium|||||||||||
+|[1922](https://leetcode-cn.com/problems/count-good-numbers)|Medium|||||||||||
+|[1923](https://leetcode-cn.com/problems/longest-common-subpath)|Hard|||||||||||
 |[1902](https://leetcode-cn.com/problems/depth-of-bst-given-insertion-order)|Medium|||||||||||
+|[1941](https://leetcode-cn.com/problems/check-if-all-characters-have-equal-number-of-occurrences)|Easy|||||||||||
+|[1942](https://leetcode-cn.com/problems/the-number-of-the-smallest-unoccupied-chair)|Medium|||||||||||
+|[1943](https://leetcode-cn.com/problems/describe-the-painting)|Medium|||||||||||
+|[1929](https://leetcode-cn.com/problems/concatenation-of-array)|Easy|||||||||||
+|[1930](https://leetcode-cn.com/problems/unique-length-3-palindromic-subsequences)|Medium|||||||||||
+|[1932](https://leetcode-cn.com/problems/merge-bsts-to-create-single-bst)|Hard|||||||||||
+|[1931](https://leetcode-cn.com/problems/painting-a-grid-with-three-different-colors)|Hard|||||||||||
 |[1908](https://leetcode-cn.com/problems/game-of-nim)|Medium|||||||||||
+|[1936](https://leetcode-cn.com/problems/add-minimum-number-of-rungs)|Medium|||||||||||
+|[1937](https://leetcode-cn.com/problems/maximum-number-of-points-with-cost)|Medium|||||||||||
+|[1938](https://leetcode-cn.com/problems/maximum-genetic-difference-query)|Hard|||||||||||
+|[1918](https://leetcode-cn.com/problems/kth-smallest-subarray-sum)|Medium|||||||||||
+|[1933](https://leetcode-cn.com/problems/check-if-string-is-decomposable-into-value-equal-substrings)|Easy|||||||||||
+|[1940](https://leetcode-cn.com/problems/longest-common-subsequence-between-sorted-arrays)|Medium|||||||||||
+|[1950](https://leetcode-cn.com/problems/maximum-of-minimum-values-in-all-subarrays)|Medium|||||||||||
+|[1924](https://leetcode-cn.com/problems/erect-the-fence-ii)|Hard|||||||||||
+|[1945](https://leetcode-cn.com/problems/sum-of-digits-of-string-after-convert)|Easy|||||||||||
+|[1946](https://leetcode-cn.com/problems/largest-number-after-mutating-substring)|Medium|||||||||||
+|[1947](https://leetcode-cn.com/problems/maximum-compatibility-score-sum)|Medium|||||||||||
+|[1948](https://leetcode-cn.com/problems/delete-duplicate-folders-in-system)|Hard|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
@@ -1977,6 +2006,10 @@ LeetCode 题解
 |[1892](https://leetcode-cn.com/problems/page-recommendations-ii)|Hard|||||||||||
 |[1907](https://leetcode-cn.com/problems/count-salary-categories)|Medium|||||||||||
 |[1917](https://leetcode-cn.com/problems/leetcodify-friends-recommendations)|Hard|||||||||||
+|[1919](https://leetcode-cn.com/problems/leetcodify-similar-friends)|Hard|||||||||||
+|[1934](https://leetcode-cn.com/problems/confirmation-rate)|Medium|||||||||||
+|[1939](https://leetcode-cn.com/problems/users-that-actively-request-confirmation-messages)|Easy|||||||||||
+|[1949](https://leetcode-cn.com/problems/strong-friendship)|Medium|||||||||||
 
 </details>
 
@@ -2137,7 +2170,7 @@ LeetCode 题解
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[剑指 Offer 09](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof)|Easy|||||||||||
 |[剑指 Offer 10- I](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof)|Easy|||||||||||
-|[剑指 Offer 03](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof)|Easy|||||||||||
+|[面试题3](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof)|Easy|||||||||||
 |[剑指 Offer 04](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof)|Medium|||||||||||
 |[剑指 Offer 10- II](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof)|Easy|||||||||||
 |[剑指 Offer 11](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof)|Easy|||||||||||

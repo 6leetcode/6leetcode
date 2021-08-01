@@ -1,6 +1,6 @@
 ### [Find Majority Element](https://leetcode.com/problems/find-majority-element-lcci)
 
-<p>A majority element is an element that makes up more than half of the items in an array. Given a positive integers array, find the majority element. If there is no majority element, return -1. Do this in O(N) time and O(1) space.</p>
+<p>A majority element is an element that makes up more than half of the items in an array. Given a&nbsp;integers array, find the majority element. If there is no majority element, return -1. Do this in O(N) time and O(1) space.</p>
 
 <p><strong>Example 1: </strong></p>
 

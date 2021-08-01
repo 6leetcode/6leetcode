@@ -1,26 +1,36 @@
 ### [二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable)
 
-<p>给定一个二维矩阵，计算其子矩形范围内元素的总和，该子矩阵的左上角为 <code>(row1, col1)</code> ，右下角为 <code>(row2, col2)</code> 。</p>
+<p><big><small>给定一个二维矩阵 <code>matrix</code>，</small></big>以下类型的多个请求：</p>
 
-<p><img alt="Range Sum Query 2D" src="https://assets.leetcode-cn.com/aliyun-lc-upload/images/304.png" style="width: 130px;" /><br />
-<small>上图子矩阵左上角 (row1, col1) = <strong>(2, 1)</strong> ，右下角(row2, col2) = <strong>(4, 3)，</strong>该子矩形内元素的总和为 8。</small></p>
+<ul>
+	<li><big><small>计算其子矩形范围内元素的总和，该子矩阵的左上角为 <code>(row1, col1)</code> ，右下角为 <code>(row2, col2)</code> 。</small></big></li>
+</ul>
+
+<p>实现 <code>NumMatrix</code> 类：</p>
+
+<ul>
+	<li><code>NumMatrix(int[][] matrix)</code> 给定整数矩阵 <code>matrix</code> 进行初始化</li>
+	<li><code>int sumRegion(int row1, int col1, int row2, int col2)</code> 返回<big><small>左上角</small></big><big><small> <code>(row1, col1)</code> 、右下角 <code>(row2, col2)</code></small></big> 的子矩阵的元素总和。</li>
+</ul>
 
 <p> </p>
 
-<p><strong>示例：</strong></p>
+<p><strong>示例 1：</strong></p>
+
+<p><img src="https://pic.leetcode-cn.com/1626332422-wUpUHT-image.png" style="width: 200px;" /></p>
 
 <pre>
-给定 matrix = [
-  [3, 0, 1, 4, 2],
-  [5, 6, 3, 2, 1],
-  [1, 2, 0, 1, 5],
-  [4, 1, 0, 1, 7],
-  [1, 0, 3, 0, 5]
-]
+<strong>输入:</strong> 
+["NumMatrix","sumRegion","sumRegion","sumRegion"]
+[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[1,1,2,2],[1,2,2,4]]
+<strong>输出:</strong> 
+[null, 8, 11, 12]
 
-sumRegion(2, 1, 4, 3) -> 8
-sumRegion(1, 1, 2, 2) -> 11
-sumRegion(1, 2, 2, 4) -> 12
+<strong>解释:</strong>
+NumMatrix numMatrix = new NumMatrix([[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]]);
+numMatrix.sumRegion(2, 1, 4, 3); // return 8 (红色矩形框的元素总和)
+numMatrix.sumRegion(1, 1, 2, 2); // return 11 (绿色矩形框的元素总和)
+numMatrix.sumRegion(1, 2, 2, 4); // return 12 (蓝色矩形框的元素总和)
 </pre>
 
 <p> </p>
@@ -28,7 +38,11 @@ sumRegion(1, 2, 2, 4) -> 12
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li>你可以假设矩阵不可变。</li>
-	<li>会多次调用 <code>sumRegion</code><em> </em>方法<em>。</em></li>
-	<li>你可以假设 <code>row1 ≤ row2</code> 且 <code>col1 ≤ col2</code> 。</li>
+	<li><code>m == matrix.length</code></li>
+	<li><code>n == matrix[i].length</code></li>
+	<li><code>1 <= m, n <= 200</code><meta charset="UTF-8" /></li>
+	<li><code>-10<sup>5</sup> <= matrix[i][j] <= 10<sup>5</sup></code></li>
+	<li><code>0 <= row1 <= row2 < m</code></li>
+	<li><code>0 <= col1 <= col2 < n</code></li>
+	<li><meta charset="UTF-8" />最多调用 <code>10<sup>4</sup></code> 次 <code>sumRegion</code> 方法</li>
 </ul>

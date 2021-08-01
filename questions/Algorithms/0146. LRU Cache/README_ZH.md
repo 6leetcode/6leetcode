@@ -48,7 +48,7 @@ lRUCache.get(4);    // 返回 4
 
 <ul>
 	<li><code>1 <= capacity <= 3000</code></li>
-	<li><code>0 <= key <= 3000</code></li>
-	<li><code>0 <= value <= 10<sup>4</sup></code></li>
-	<li>最多调用 <code>3 * 10<sup>4</sup></code> 次 <code>get</code> 和 <code>put</code></li>
+	<li><code>0 <= key <= 10000</code></li>
+	<li><code>0 <= value <= 10<sup>5</sup></code></li>
+	<li>最多调用 <code>2 * 10<sup>5</sup></code> 次 <code>get</code> 和 <code>put</code></li>
 </ul>

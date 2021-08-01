@@ -1,8 +1,8 @@
 ### [First Missing Positive](https://leetcode.com/problems/first-missing-positive)
 
-<p>Given an unsorted integer array <code>nums</code>, find the smallest missing positive integer.</p>
+<p>Given an unsorted integer array <code>nums</code>, return the smallest missing positive integer.</p>
 
-<p>You must implement&nbsp;an algorithm that runs in <code>O(n)</code> time and uses constant extra space.</p>
+<p>You must implement an algorithm that runs in <code>O(n)</code> time and uses constant extra space.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

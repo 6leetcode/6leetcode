@@ -1,7 +1,8 @@
 ### [Divide Array in Sets of K Consecutive Numbers](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers)
 
-<p>Given an array of integers <code>nums</code> and a positive integer <code>k</code>, find whether it&#39;s possible to divide this array into sets of <code>k</code> consecutive numbers<br />
-Return <code>True</code> if it is possible.<strong> </strong>Otherwise, return <code>False</code>.</p>
+<p>Given an array of integers <code>nums</code> and a positive integer <code>k</code>, find whether it is possible to divide this array into sets of <code>k</code> consecutive numbers.</p>
+
+<p>Return <code>true</code> <em>if it is possible</em>.<strong> </strong>Otherwise, return <code>false</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

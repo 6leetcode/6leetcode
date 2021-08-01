@@ -1,28 +1,31 @@
 ### [重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof)
 
-<p>输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。</p>
+<p>输入某二叉树的前序遍历和中序遍历的结果，请构建该二叉树并返回其根节点。</p>
 
-<p>&nbsp;</p>
+<p>假设输入的前序遍历和中序遍历的结果中都不含重复的数字。</p>
 
-<p>例如，给出</p>
+<p> </p>
 
-<pre>前序遍历 preorder =&nbsp;[3,9,20,15,7]
-中序遍历 inorder = [9,3,15,20,7]</pre>
+<p><strong>示例 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/tree.jpg" />
+<pre>
+<strong>Input:</strong> preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+<strong>Output:</strong> [3,9,20,null,null,15,7]
+</pre>
 
-<p>返回如下的二叉树：</p>
+<p><strong>示例 2:</strong></p>
 
-<pre>    3
-   / \
-  9  20
-    /  \
-   15   7</pre>
+<pre>
+<strong>Input:</strong> preorder = [-1], inorder = [-1]
+<strong>Output:</strong> [-1]
+</pre>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>限制：</strong></p>
 
-<p><code>0 &lt;= 节点个数 &lt;= 5000</code></p>
+<p><code>0 <= 节点个数 <= 5000</code></p>
 
-<p>&nbsp;</p>
+<p> </p>
 
 <p><strong>注意</strong>：本题与主站 105 题重复：<a href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/</a></p>

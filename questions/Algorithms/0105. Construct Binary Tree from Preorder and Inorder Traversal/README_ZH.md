@@ -1,19 +1,33 @@
 ### [从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)
 
-<p>根据一棵树的前序遍历与中序遍历构造二叉树。</p>
+<p>给定一棵树的前序遍历 <code>preorder</code> 与中序遍历  <code>inorder</code>。请构造二叉树并返回其根节点。</p>
 
-<p><strong>注意:</strong><br>
-你可以假设树中没有重复的元素。</p>
+<p> </p>
 
-<p>例如，给出</p>
+<p><strong>示例 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/tree.jpg" />
+<pre>
+<strong>Input:</strong> preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+<strong>Output:</strong> [3,9,20,null,null,15,7]
+</pre>
 
-<pre>前序遍历 preorder =&nbsp;[3,9,20,15,7]
-中序遍历 inorder = [9,3,15,20,7]</pre>
+<p><strong>示例 2:</strong></p>
 
-<p>返回如下的二叉树：</p>
+<pre>
+<strong>Input:</strong> preorder = [-1], inorder = [-1]
+<strong>Output:</strong> [-1]
+</pre>
 
-<pre>    3
-   / \
-  9  20
-    /  \
-   15   7</pre>
+<p> </p>
+
+<p><strong>提示:</strong></p>
+
+<ul>
+	<li><code>1 <= preorder.length <= 3000</code></li>
+	<li><code>inorder.length == preorder.length</code></li>
+	<li><code>-3000 <= preorder[i], inorder[i] <= 3000</code></li>
+	<li><code>preorder</code> 和 <code>inorder</code> 均无重复元素</li>
+	<li><code>inorder</code> 均出现在 <code>preorder</code></li>
+	<li><code>preorder</code> 保证为二叉树的前序遍历序列</li>
+	<li><code>inorder</code> 保证为二叉树的中序遍历序列</li>
+</ul>
