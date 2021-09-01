@@ -1,10 +1,10 @@
 ### [Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals)
 
-<p>Given a list of <code>intervals</code>, remove all intervals that are covered by another interval in the list.</p>
+<p>Given an array <code>intervals</code> where <code>intervals[i] = [l<sub>i</sub>, r<sub>i</sub>]</code> represent the interval <code>[l<sub>i</sub>, r<sub>i</sub>)</code>, remove all intervals that are covered by another interval in the list.</p>
 
-<p>Interval <code>[a,b)</code> is covered by&nbsp;interval <code>[c,d)</code> if and only if <code>c &lt;= a</code> and <code>b &lt;= d</code>.</p>
+<p>The interval <code>[a, b)</code> is covered by the interval <code>[c, d)</code> if and only if <code>c &lt;= a</code> and <code>b &lt;= d</code>.</p>
 
-<p>After doing so, return <em>the number of remaining intervals</em>.</p>
+<p>Return <em>the number of remaining intervals</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -49,6 +49,6 @@
 <ul>
 	<li><code>1 &lt;= intervals.length &lt;= 1000</code></li>
 	<li><code>intervals[i].length == 2</code></li>
-	<li><code>0 &lt;= intervals[i][0] &lt;&nbsp;intervals[i][1] &lt;= 10^5</code></li>
-	<li>All the intervals are <strong>unique</strong>.</li>
+	<li><code>0 &lt;= l<sub>i</sub> &lt;= r<sub>i</sub> &lt;= 10<sup>5</sup></code></li>
+	<li>All the given intervals are <strong>unique</strong>.</li>
 </ul>

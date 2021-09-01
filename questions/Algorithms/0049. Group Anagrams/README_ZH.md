@@ -1,10 +1,10 @@
 ### [字母异位词分组](https://leetcode-cn.com/problems/group-anagrams)
 
-<p>给定一个字符串数组，将字母异位词组合在一起。可以按任意顺序返回结果列表。</p>
+<p>给你一个字符串数组，请你将 <strong>字母异位词</strong> 组合在一起。可以按任意顺序返回结果列表。</p>
 
-<p>字母异位词指字母相同，但排列不同的字符串。</p>
+<p><strong>字母异位词</strong> 是由重新排列源单词的字母得到的一个新单词，所有源单词中的字母都恰好只用一次。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1:</strong></p>
 
@@ -25,12 +25,12 @@
 <strong>输入:</strong> strs = <code>["a"]</code>
 <strong>输出: </strong>[["a"]]</pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= strs.length <= 10<sup>4</sup></code></li>
-	<li><code>0 <= strs[i].length <= 100</code></li>
-	<li><code>strs[i]</code> 仅包含小写字母</li>
+	<li><code>1 &lt;= strs.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= strs[i].length &lt;= 100</code></li>
+	<li><code>strs[i]</code>&nbsp;仅包含小写字母</li>
 </ul>

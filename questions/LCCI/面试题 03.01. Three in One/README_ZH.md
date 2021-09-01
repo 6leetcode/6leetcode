@@ -8,8 +8,9 @@
 
 <p><strong>示例1:</strong></p>
 
-<pre><strong> 输入</strong>：
-[&quot;TripleInOne&quot;, &quot;push&quot;, &quot;push&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;isEmpty&quot;]
+<pre>
+<strong> 输入</strong>：
+["TripleInOne", "push", "push", "pop", "pop", "pop", "isEmpty"]
 [[1], [0, 1], [0, 2], [0], [0], [0], [0]]
 <strong> 输出</strong>：
 [null, null, null, 1, -1, -1, true]
@@ -18,9 +19,18 @@
 
 <p><strong>示例2:</strong></p>
 
-<pre><strong> 输入</strong>：
-[&quot;TripleInOne&quot;, &quot;push&quot;, &quot;push&quot;, &quot;push&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;pop&quot;, &quot;peek&quot;]
+<pre>
+<strong> 输入</strong>：
+["TripleInOne", "push", "push", "push", "pop", "pop", "pop", "peek"]
 [[2], [0, 1], [0, 2], [0, 3], [0], [0], [0], [0]]
 <strong> 输出</strong>：
 [null, null, null, null, 2, 1, -1, -1]
 </pre>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>0 &lt;= stackNum &lt;= 2</code></li>
+</ul>

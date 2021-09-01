@@ -1,19 +1,29 @@
 ### [二叉树的所有路径](https://leetcode-cn.com/problems/binary-tree-paths)
 
-<p>给定一个二叉树，返回所有从根节点到叶子节点的路径。</p>
+<p>给你一个二叉树的根节点 <code>root</code> ，按 <strong>任意顺序</strong> ，返回所有从根节点到叶子节点的路径。</p>
 
-<p><strong>说明:</strong>&nbsp;叶子节点是指没有子节点的节点。</p>
+<p><strong>叶子节点</strong> 是指没有子节点的节点。</p>
+&nbsp;
 
-<p><strong>示例:</strong></p>
+<p><strong>示例 1：</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/12/paths-tree.jpg" style="width: 207px; height: 293px;" />
+<pre>
+<strong>输入：</strong>root = [1,2,3,null,5]
+<strong>输出：</strong>["1-&gt;2-&gt;5","1-&gt;3"]
+</pre>
 
-<pre><strong>输入:</strong>
+<p><strong>示例 2：</strong></p>
 
-   1
- /   \
-2     3
- \
-  5
+<pre>
+<strong>输入：</strong>root = [1]
+<strong>输出：</strong>["1"]
+</pre>
 
-<strong>输出:</strong> [&quot;1-&gt;2-&gt;5&quot;, &quot;1-&gt;3&quot;]
+<p>&nbsp;</p>
 
-<strong>解释:</strong> 所有根节点到叶子节点的路径为: 1-&gt;2-&gt;5, 1-&gt;3</pre>
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li>树中节点的数目在范围 <code>[1, 100]</code> 内</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
