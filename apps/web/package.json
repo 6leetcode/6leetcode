@@ -31,7 +31,7 @@
     "@types/react-highlight": "^0.12.3",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-syntax-highlighter": "^13.5.2",
-    "typescript": "^4.3.2"
+    "typescript": "^4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
