@@ -31,5 +31,5 @@
 <ul>
 	<li><code>n == pairs.length</code></li>
 	<li><code>1 &lt;= n &lt;= 1000</code></li>
-	<li><code>-1000 &lt;= left<sub>i</sub> &lt; right<sub>i</sub> &lt; 1000</code></li>
+	<li><code>-1000 &lt;= left<sub>i</sub> &lt; right<sub>i</sub> &lt;= 1000</code></li>
 </ul>

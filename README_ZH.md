@@ -194,7 +194,7 @@ LeetCode 题解
 |[0169](https://leetcode-cn.com/problems/majority-element)|Easy|:white_check_mark:|:white_check_mark:||||||:white_check_mark:|||
 |[0170](https://leetcode-cn.com/problems/two-sum-iii-data-structure-design)|Easy|||||||||||
 |[0171](https://leetcode-cn.com/problems/excel-sheet-column-number)|Easy|||||||||||
-|[0172](https://leetcode-cn.com/problems/factorial-trailing-zeroes)|Easy|||||||||||
+|[0172](https://leetcode-cn.com/problems/factorial-trailing-zeroes)|Medium|||||||||||
 |[0173](https://leetcode-cn.com/problems/binary-search-tree-iterator)|Medium|||||||||||
 |[0174](https://leetcode-cn.com/problems/dungeon-game)|Hard|||||||||||
 |[0179](https://leetcode-cn.com/problems/largest-number)|Medium|:white_check_mark:|:white_check_mark:|||||||||
@@ -210,7 +210,7 @@ LeetCode 题解
 |[0201](https://leetcode-cn.com/problems/bitwise-and-of-numbers-range)|Medium|||||||||||
 |[0202](https://leetcode-cn.com/problems/happy-number)|Easy|||||||||||
 |[0203](https://leetcode-cn.com/problems/remove-linked-list-elements)|Easy|||||||||||
-|[0204](https://leetcode-cn.com/problems/count-primes)|Easy|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||||
+|[0204](https://leetcode-cn.com/problems/count-primes)|Medium|:white_check_mark:|:white_check_mark:||:white_check_mark:|||||||
 |[0205](https://leetcode-cn.com/problems/isomorphic-strings)|Easy|:white_check_mark:||||||||||
 |[0206](https://leetcode-cn.com/problems/reverse-linked-list)|Easy|||||||||||
 |[0207](https://leetcode-cn.com/problems/course-schedule)|Medium|||||||||||
@@ -846,7 +846,7 @@ LeetCode 题解
 |[0470](https://leetcode-cn.com/problems/implement-rand10-using-rand7)|Medium|||||||||||
 |[0872](https://leetcode-cn.com/problems/leaf-similar-trees)|Easy|||||||||||
 |[0873](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence)|Medium|||||||||||
-|[0874](https://leetcode-cn.com/problems/walking-robot-simulation)|Easy|||||||||||
+|[0874](https://leetcode-cn.com/problems/walking-robot-simulation)|Medium|||||||||||
 |[0875](https://leetcode-cn.com/problems/koko-eating-bananas)|Medium|||||||||||
 |[0876](https://leetcode-cn.com/problems/middle-of-the-linked-list)|Easy|||||||||||
 |[0877](https://leetcode-cn.com/problems/stone-game)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|||:white_check_mark:|:white_check_mark:|||
@@ -1451,7 +1451,7 @@ LeetCode 题解
 |[1556](https://leetcode-cn.com/problems/thousand-separator)|Easy|||||||||||
 |[1557](https://leetcode-cn.com/problems/minimum-number-of-vertices-to-reach-all-nodes)|Medium|||||||||||
 |[1558](https://leetcode-cn.com/problems/minimum-numbers-of-function-calls-to-make-target-array)|Medium|||||||||||
-|[1559](https://leetcode-cn.com/problems/detect-cycles-in-2d-grid)|Hard|||||||||||
+|[1559](https://leetcode-cn.com/problems/detect-cycles-in-2d-grid)|Medium|||||||||||
 |[1522](https://leetcode-cn.com/problems/diameter-of-n-ary-tree)|Medium|||||||||||
 |[1544](https://leetcode-cn.com/problems/make-the-string-great)|Easy|||||||||||
 |[1545](https://leetcode-cn.com/problems/find-kth-bit-in-nth-binary-string)|Medium|||||||||||
@@ -1710,6 +1710,7 @@ LeetCode 题解
 |[1849](https://leetcode-cn.com/problems/splitting-a-string-into-descending-consecutive-values)|Medium|||||||||||
 |[1851](https://leetcode-cn.com/problems/minimum-interval-to-include-each-query)|Hard|||||||||||
 |[1850](https://leetcode-cn.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number)|Medium|||||||||||
+|[1989](https://leetcode-cn.com/problems/maximum-number-of-people-that-can-be-caught-in-tag)|Medium|||||||||||
 |[1826](https://leetcode-cn.com/problems/faulty-sensor)|Easy|||||||||||
 |[1836](https://leetcode-cn.com/problems/remove-duplicates-from-an-unsorted-linked-list)|Medium|||||||||||
 |[1854](https://leetcode-cn.com/problems/maximum-population-year)|Easy|||||||||||
@@ -1789,6 +1790,7 @@ LeetCode 题解
 |[1950](https://leetcode-cn.com/problems/maximum-of-minimum-values-in-all-subarrays)|Medium|||||||||||
 |[1956](https://leetcode-cn.com/problems/minimum-time-for-k-virus-variants-to-spread)|Hard|||||||||||
 |[1924](https://leetcode-cn.com/problems/erect-the-fence-ii)|Hard|||||||||||
+|[2021](https://leetcode-cn.com/problems/brightest-position-on-street)|Medium|||||||||||
 |[1945](https://leetcode-cn.com/problems/sum-of-digits-of-string-after-convert)|Easy|||||||||||
 |[1946](https://leetcode-cn.com/problems/largest-number-after-mutating-substring)|Medium|||||||||||
 |[1947](https://leetcode-cn.com/problems/maximum-compatibility-score-sum)|Medium|||||||||||
@@ -1810,6 +1812,10 @@ LeetCode 题解
 |[1967](https://leetcode-cn.com/problems/number-of-strings-that-appear-as-substrings-in-word)|Easy|||||||||||
 |[1969](https://leetcode-cn.com/problems/minimum-non-zero-product-of-the-array-elements)|Medium|||||||||||
 |[1970](https://leetcode-cn.com/problems/last-day-where-you-can-still-cross)|Hard|||||||||||
+|[1991](https://leetcode-cn.com/problems/find-the-middle-index-in-array)|Easy|||||||||||
+|[1992](https://leetcode-cn.com/problems/find-all-groups-of-farmland)|Medium|||||||||||
+|[1993](https://leetcode-cn.com/problems/operations-on-tree)|Medium|||||||||||
+|[1994](https://leetcode-cn.com/problems/the-number-of-good-subsets)|Hard|||||||||||
 |[1979](https://leetcode-cn.com/problems/find-greatest-common-divisor-of-array)|Easy|||||||||||
 |[1980](https://leetcode-cn.com/problems/find-unique-binary-string)|Medium|||||||||||
 |[1981](https://leetcode-cn.com/problems/minimize-the-difference-between-target-and-chosen-elements)|Medium|||||||||||
@@ -1819,8 +1825,31 @@ LeetCode 题解
 |[1985](https://leetcode-cn.com/problems/find-the-kth-largest-integer-in-the-array)|Medium|||||||||||
 |[1986](https://leetcode-cn.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks)|Medium|||||||||||
 |[1987](https://leetcode-cn.com/problems/number-of-unique-good-subsequences)|Hard|||||||||||
+|[2006](https://leetcode-cn.com/problems/count-number-of-pairs-with-absolute-difference-k)|Easy|||||||||||
+|[2007](https://leetcode-cn.com/problems/find-original-array-from-doubled-array)|Medium|||||||||||
+|[2008](https://leetcode-cn.com/problems/maximum-earnings-from-taxi)|Medium|||||||||||
+|[2009](https://leetcode-cn.com/problems/minimum-number-of-operations-to-make-array-continuous)|Hard|||||||||||
 |[1971](https://leetcode-cn.com/problems/find-if-path-exists-in-graph)|Easy|||||||||||
+|[1995](https://leetcode-cn.com/problems/count-special-quadruplets)|Easy|||||||||||
+|[1996](https://leetcode-cn.com/problems/the-number-of-weak-characters-in-the-game)|Medium|||||||||||
+|[1997](https://leetcode-cn.com/problems/first-day-where-you-have-been-in-all-the-rooms)|Medium|||||||||||
+|[1998](https://leetcode-cn.com/problems/gcd-sort-of-an-array)|Hard|||||||||||
 |[1973](https://leetcode-cn.com/problems/count-nodes-equal-to-sum-of-descendants)|Medium|||||||||||
+|[2000](https://leetcode-cn.com/problems/reverse-prefix-of-word)|Easy|||||||||||
+|[2001](https://leetcode-cn.com/problems/number-of-pairs-of-interchangeable-rectangles)|Medium|||||||||||
+|[2002](https://leetcode-cn.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences)|Medium|||||||||||
+|[2003](https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree)|Hard|||||||||||
+|[2011](https://leetcode-cn.com/problems/final-value-of-variable-after-performing-operations)|Easy|||||||||||
+|[2012](https://leetcode-cn.com/problems/sum-of-beauty-in-the-array)|Medium|||||||||||
+|[2013](https://leetcode-cn.com/problems/detect-squares)|Medium|||||||||||
+|[2014](https://leetcode-cn.com/problems/longest-subsequence-repeated-k-times)|Hard|||||||||||
+|[1999](https://leetcode-cn.com/problems/smallest-greater-multiple-made-of-two-digits)|Medium|||||||||||
+|[2015](https://leetcode-cn.com/problems/average-height-of-buildings-in-each-segment)|Medium|||||||||||
+|[2016](https://leetcode-cn.com/problems/maximum-difference-between-increasing-elements)|Easy|||||||||||
+|[2017](https://leetcode-cn.com/problems/grid-game)|Medium|||||||||||
+|[2018](https://leetcode-cn.com/problems/check-if-word-can-be-placed-in-crossword)|Medium|||||||||||
+|[2019](https://leetcode-cn.com/problems/the-score-of-students-solving-math-expression)|Hard|||||||||||
+|[2005](https://leetcode-cn.com/problems/subtree-removal-game-with-fibonacci-tree)|Hard|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
@@ -1862,6 +1891,17 @@ LeetCode 题解
 |[LCS 01](https://leetcode-cn.com/problems/Ju9Xwi)|Easy|||||||||||
 |[LCS 02](https://leetcode-cn.com/problems/WqXACV)|Easy|||||||||||
 |[LCS 03](https://leetcode-cn.com/problems/YesdPw)|Medium|||||||||||
+|[LCP 49](https://leetcode-cn.com/problems/K8GULz)|Hard|||||||||||
+|[LCP 47](https://leetcode-cn.com/problems/oPs9Bm)|Hard|||||||||||
+|[LCP 44](https://leetcode-cn.com/problems/sZ59z6)|Easy|||||||||||
+|[LCP 43](https://leetcode-cn.com/problems/Y1VbOX)|Hard|||||||||||
+|[LCP 40](https://leetcode-cn.com/problems/uOAnQW)|Easy|||||||||||
+|[LCP 39](https://leetcode-cn.com/problems/0jQkd0)|Easy|||||||||||
+|[LCP 41](https://leetcode-cn.com/problems/fHi6rV)|Medium|||||||||||
+|[LCP 42](https://leetcode-cn.com/problems/vFjcfV)|Hard|||||||||||
+|[LCP 46](https://leetcode-cn.com/problems/05ZEDJ)|Medium|||||||||||
+|[LCP 48](https://leetcode-cn.com/problems/fsa7oZ)|Hard|||||||||||
+|[LCP 45](https://leetcode-cn.com/problems/kplEvH)|Medium|||||||||||
 
 </details>
 
@@ -1872,7 +1912,7 @@ LeetCode 题解
 |Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |[0175](https://leetcode-cn.com/problems/combine-two-tables)|Easy|||||||||:white_check_mark:||
-|[0176](https://leetcode-cn.com/problems/second-highest-salary)|Easy|||||||||||
+|[0176](https://leetcode-cn.com/problems/second-highest-salary)|Medium|||||||||||
 |[0177](https://leetcode-cn.com/problems/nth-highest-salary)|Medium|||||||||||
 |[0178](https://leetcode-cn.com/problems/rank-scores)|Medium|||||||||||
 |[0180](https://leetcode-cn.com/problems/consecutive-numbers)|Medium|||||||||||
@@ -2048,6 +2088,10 @@ LeetCode 题解
 |[1972](https://leetcode-cn.com/problems/first-and-last-call-on-the-same-day)|Hard|||||||||||
 |[1978](https://leetcode-cn.com/problems/employees-whose-manager-left-the-company)|Easy|||||||||||
 |[1988](https://leetcode-cn.com/problems/find-cutoff-score-for-each-school)|Medium|||||||||||
+|[1990](https://leetcode-cn.com/problems/count-the-number-of-experiments)|Easy|||||||||||
+|[2004](https://leetcode-cn.com/problems/the-number-of-seniors-and-juniors-to-join-the-company)|Hard|||||||||||
+|[2010](https://leetcode-cn.com/problems/the-number-of-seniors-and-juniors-to-join-the-company-ii)|Hard|||||||||||
+|[2020](https://leetcode-cn.com/problems/number-of-accounts-that-did-not-stream)|Medium|||||||||||
 
 </details>
 

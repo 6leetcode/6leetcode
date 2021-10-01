@@ -20,7 +20,7 @@
 
 <pre>
 <strong>输入:</strong> head = [1,2]
-<strong>输出:</strong> fasle
+<strong>输出:</strong> false
 </pre>
 
 <p>&nbsp;</p>
