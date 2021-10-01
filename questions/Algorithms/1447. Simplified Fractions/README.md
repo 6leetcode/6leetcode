@@ -1,6 +1,6 @@
 ### [Simplified Fractions](https://leetcode.com/problems/simplified-fractions)
 
-<p>Given an integer <code>n</code>, return a list of all <strong>simplified</strong> fractions between 0 and 1 (exclusive) such that the denominator is less-than-or-equal-to <code>n</code>. The fractions can be in <strong>any</strong> order.</p>
+<p>Given an integer <code>n</code>, return a list of all <strong>simplified</strong> fractions between <code>0</code> and <code>1</code> (exclusive) such that the denominator is less-than-or-equal-to <code>n</code>. The fractions can be in <strong>any</strong> order.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
