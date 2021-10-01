@@ -11,7 +11,10 @@
 | LastName    | varchar |
 +-------------+---------+
 PersonId is the primary key column for this table.
+This table contains information about the ID of some persons and their first and last names.
 </pre>
+
+<p>&nbsp;</p>
 
 <p>Table: <code>Address</code></p>
 
@@ -25,12 +28,44 @@ PersonId is the primary key column for this table.
 | State       | varchar |
 +-------------+---------+
 AddressId is the primary key column for this table.
+Each row of this table containts information about the city and state of one person with ID = PersonId.
 </pre>
 
 <p>&nbsp;</p>
 
-<p>Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:</p>
+<p>Write an SQL query to report the first name, last name, city, and state of each person in the <code>Person</code> table. If the address of a <code>PersonId</code> is not present in the <code>Address</code> table, report <code>null</code> instead.</p>
+
+<p>Return the result table in <strong>any order</strong>.</p>
+
+<p>The query result format is in the following example.</p>
+
+<p>&nbsp;</p>
+<p><strong>Example 1:</strong></p>
 
 <pre>
-FirstName, LastName, City, State
+<strong>Input:</strong> 
+Person table:
++----------+----------+-----------+
+| PersonId | LastName | FirstName |
++----------+----------+-----------+
+| 1        | Wang     | Allen     |
+| 2        | Alice    | Bob       |
++----------+----------+-----------+
+Address table:
++-----------+----------+---------------+------------+
+| AddressId | PersonId | City          | State      |
++-----------+----------+---------------+------------+
+| 1         | 2        | New York City | New York   |
+| 2         | 3        | Leetcode      | California |
++-----------+----------+---------------+------------+
+<strong>Output:</strong> 
++-----------+----------+---------------+----------+
+| FirstName | LastName | City          | State    |
++-----------+----------+---------------+----------+
+| Allen     | Wang     | Null          | Null     |
+| Bob       | Alice    | New York City | New York |
++-----------+----------+---------------+----------+
+<strong>Explanation:</strong> 
+There is no address in the address table for the PersonId = 1 so we return null in their city and state.
+AddressId = 1 contains information about the address of PersonId = 2.
 </pre>
