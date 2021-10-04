@@ -2,13 +2,18 @@
 
 <p>在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。 s 只包含小写字母。</p>
 
-<p><strong>示例:</strong></p>
+<p><strong>示例 1:</strong></p>
 
-<pre>s = &quot;abaccdeff&quot;
-返回 &quot;b&quot;
+<pre>
+输入：s = "abaccdeff"
+输出：'b'
+</pre>
 
-s = &quot;&quot; 
-返回 &quot; &quot;
+<p><strong>示例 2:</strong></p>
+
+<pre>
+输入：s = "" 
+输出：' '
 </pre>
 
 <p>&nbsp;</p>

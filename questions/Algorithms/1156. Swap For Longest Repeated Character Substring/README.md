@@ -1,6 +1,8 @@
 ### [Swap For Longest Repeated Character Substring](https://leetcode.com/problems/swap-for-longest-repeated-character-substring)
 
-<p>Given a string <code>text</code>, we are allowed to swap two of the characters in the string. Find the length of the longest substring with repeated characters.</p>
+<p>You are given a string <code>text</code>. You can swap two of the characters in the <code>text</code>.</p>
+
+<p>Return <em>the length of the longest substring with repeated characters</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -45,6 +47,6 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= text.length &lt;= 20000</code></li>
+	<li><code>1 &lt;= text.length &lt;= 2 * 10<sup>4</sup></code></li>
 	<li><code>text</code> consist of lowercase English characters only.</li>
 </ul>
