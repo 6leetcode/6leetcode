@@ -1,8 +1,10 @@
 ### [Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)
 
-<p>You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly&nbsp;once. Find this single element that appears only once.</p>
+<p>You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.</p>
 
-<p><b>Follow up:</b> Your solution should run in O(log n) time and O(1) space.</p>
+<p>Return <em>the single element that appears only once</em>.</p>
+
+<p>Your solution must run in <code>O(log n)</code> time and <code>O(1)</code> space.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -16,6 +18,6 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 10^5</code></li>
-	<li><code>0 &lt;= nums[i]&nbsp;&lt;= 10^5</code></li>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>

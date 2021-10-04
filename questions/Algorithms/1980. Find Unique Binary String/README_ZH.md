@@ -36,4 +36,5 @@
 	<li><code>1 &lt;= n &lt;= 16</code></li>
 	<li><code>nums[i].length == n</code></li>
 	<li><code>nums[i] </code>为 <code>'0'</code> 或 <code>'1'</code></li>
+	<li><code>nums</code> 中的所有字符串 <strong>互不相同</strong></li>
 </ul>

@@ -32,9 +32,9 @@
 	<li><code>1 &lt;= n &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= edges.length &lt;= 2 * 10<sup>5</sup></code></li>
 	<li><code>edges[i].length == 2</code></li>
-	<li><code>1 &lt;= u<sub>i</sub>, v<sub>i</sub> &lt;= n - 1</code></li>
+	<li><code>0 &lt;= u<sub>i</sub>, v<sub>i</sub> &lt;= n - 1</code></li>
 	<li><code>u<sub>i</sub> != v<sub>i</sub></code></li>
-	<li><code>1 &lt;= start, end &lt;= n - 1</code></li>
+	<li><code>0 &lt;= start, end &lt;= n - 1</code></li>
 	<li>There are no duplicate edges.</li>
 	<li>There are no self edges.</li>
 </ul>
