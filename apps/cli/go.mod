@@ -18,7 +18,7 @@ require (
 	golang.org/x/net v0.0.0-20210716203947-853a461950ff // indirect
 	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
-	gorm.io/driver/sqlite v1.1.4
+	gorm.io/driver/sqlite v1.1.5
 	gorm.io/gorm v1.21.15
 	moul.io/http2curl v1.0.0 // indirect
 )
