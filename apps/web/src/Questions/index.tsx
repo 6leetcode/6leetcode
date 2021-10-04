@@ -20,7 +20,7 @@ export default function Questions({ localServer }: any) {
 
   useEffect(() => {
     axios.get(localServer + "/index.json")
-      .then(response => {
+      .then((response: any) => {
         let findNum = function (str: String): number {
           for (let item of response.data) {
             if (item["category_title"] === str) {
@@ -54,7 +54,7 @@ export default function Questions({ localServer }: any) {
       param = "All";
     }
     axios.get(localServer + "/questions/" + param + "/" + currentPage + ".json")
-      .then(response => {
+      .then((response: any) => {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
         } else {
