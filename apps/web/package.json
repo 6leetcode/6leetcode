@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^4.16.13",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "dayjs": "^1.10.6",
     "history": "^5.0.1",
     "i18next": "^21.2.0",
@@ -25,7 +25,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^13.2.1",
     "@types/lodash": "^4.14.172",
-    "@types/react": "^17.0.19",
+    "@types/react": "^17.0.26",
     "@types/react-copy-to-clipboard": "^5.0.1",
     "@types/react-dom": "^17.0.9",
     "@types/react-highlight": "^0.12.3",
