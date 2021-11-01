@@ -27,7 +27,7 @@ id is the primary key for this table.
 <strong>Input:</strong> 
 Logs table:
 +----+-----+
-| Id | Num |
+| id | num |
 +----+-----+
 | 1  | 1   |
 | 2  | 1   |

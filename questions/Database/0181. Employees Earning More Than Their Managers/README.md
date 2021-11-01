@@ -6,12 +6,12 @@
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
-| Id          | int     |
-| Name        | varchar |
-| Salary      | int     |
-| ManagerId   | int     |
+| id          | int     |
+| name        | varchar |
+| salary      | int     |
+| managerId   | int     |
 +-------------+---------+
-Id is the primary key column for this table.
+id is the primary key column for this table.
 Each row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.
 </pre>
 
@@ -30,7 +30,7 @@ Each row of this table indicates the ID of an employee, their name, salary, and 
 <strong>Input:</strong> 
 Employee table:
 +----+-------+--------+-----------+
-| Id | Name  | Salary | ManagerId |
+| id | name  | salary | managerId |
 +----+-------+--------+-----------+
 | 1  | Joe   | 70000  | 3         |
 | 2  | Henry | 80000  | 4         |

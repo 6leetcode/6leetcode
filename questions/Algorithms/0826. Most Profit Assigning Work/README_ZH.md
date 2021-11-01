@@ -12,18 +12,27 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例：</strong></p>
+<p><strong>示例 1：</strong></p>
 
-<pre><strong>输入: </strong>difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]
+<pre>
+<strong>输入: </strong>difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]
 <strong>输出: </strong>100 
 <strong>解释: </strong>工人被分配的工作难度是 [4,4,6,6] ，分别获得 [20,20,30,30] 的收益。</pre>
+
+<p><strong>示例 2:</strong></p>
+
+<pre>
+<strong>输入:</strong> difficulty = [85,47,57], profit = [24,66,99], worker = [40,25,25]
+<strong>输出:</strong> 0</pre>
 
 <p>&nbsp;</p>
 
 <p><strong>提示:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= difficulty.length = profit.length &lt;= 10000</code></li>
-	<li><code>1 &lt;= worker.length &lt;= 10000</code></li>
-	<li><code>difficulty[i], profit[i], worker[i]</code>&nbsp; 的范围是&nbsp;<code>[1, 10^5]</code></li>
+	<li><code>n == difficulty.length</code></li>
+	<li><code>n == profit.length</code></li>
+	<li><code>m == worker.length</code></li>
+	<li><code>1 &lt;= n, m &lt;= 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= difficulty[i], profit[i], worker[i] &lt;= 10<sup>5</sup></code></li>
 </ul>

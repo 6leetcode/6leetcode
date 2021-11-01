@@ -6,11 +6,11 @@
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
-| Id            | int     |
-| RecordDate    | date    |
-| Temperature   | int     |
+| id            | int     |
+| recordDate    | date    |
+| temperature   | int     |
 +---------------+---------+
-Id is the primary key for this table.
+id is the primary key for this table.
 This table contains information about the temperature on a certain day.
 </pre>
 
@@ -29,7 +29,7 @@ This table contains information about the temperature on a certain day.
 <strong>Input:</strong> 
 Weather table:
 +----+------------+-------------+
-| Id | RecordDate | Temperature |
+| id | recordDate | temperature |
 +----+------------+-------------+
 | 1  | 2015-01-01 | 10          |
 | 2  | 2015-01-02 | 25          |

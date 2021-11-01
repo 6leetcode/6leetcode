@@ -4,11 +4,9 @@
 
 <p>Return <em>the smallest subtree</em> such that it contains <strong>all the deepest nodes</strong> in the original tree.</p>
 
-<p>A node is called <strong>the&nbsp;deepest</strong> if it has the largest depth possible among&nbsp;any node in the entire tree.</p>
+<p>A node is called <strong>the deepest</strong> if it has the largest depth possible among any node in the entire tree.</p>
 
-<p>The <strong>subtree</strong> of a node is tree consisting of that node, plus the set of all descendants of that node.</p>
-
-<p><strong>Note:</strong> This question is the same as 1123: <a href="https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/" target="_blank">https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/</a></p>
+<p>The <strong>subtree</strong> of a node is a tree consisting of that node, plus the set of all descendants of that node.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -43,5 +41,8 @@ Notice that nodes 5, 3 and 2 contain the deepest nodes in the tree but node 2 is
 <ul>
 	<li>The number of nodes in the tree will be in the range <code>[1, 500]</code>.</li>
 	<li><code>0 &lt;= Node.val &lt;= 500</code></li>
-	<li>The values of the nodes in the tree&nbsp;are <strong>unique</strong>.</li>
+	<li>The values of the nodes in the tree are <strong>unique</strong>.</li>
 </ul>
+
+<p>&nbsp;</p>
+<p><strong>Note:</strong> This question is the same as 1123: <a href="https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/" target="_blank">https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/</a></p>
