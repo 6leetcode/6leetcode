@@ -6,16 +6,16 @@
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
-| Id          | int     |
-| Email       | varchar |
+| id          | int     |
+| email       | varchar |
 +-------------+---------+
-Id is the primary key column for this table.
+id is the primary key column for this table.
 Each row of this table contains an email. The emails will not contain uppercase letters.
 </pre>
 
 <p>&nbsp;</p>
 
-<p>Write an SQL query to <strong>delete</strong> all the duplicate emails, keeping only one unique email with the smallest <code>Id</code>.</p>
+<p>Write an SQL query to <strong>delete</strong> all the duplicate emails, keeping only one unique email with the smallest <code>id</code>.</p>
 
 <p>Return the result table in <strong>any order</strong>.</p>
 
@@ -28,7 +28,7 @@ Each row of this table contains an email. The emails will not contain uppercase 
 <strong>Input:</strong> 
 Person table:
 +----+------------------+
-| Id | Email            |
+| id | email            |
 +----+------------------+
 | 1  | john@example.com |
 | 2  | bob@example.com  |
@@ -36,7 +36,7 @@ Person table:
 +----+------------------+
 <strong>Output:</strong> 
 +----+------------------+
-| Id | Email            |
+| id | email            |
 +----+------------------+
 | 1  | john@example.com |
 | 2  | bob@example.com  |

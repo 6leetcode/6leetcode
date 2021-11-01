@@ -6,10 +6,10 @@
 +-------------+------+
 | Column Name | Type |
 +-------------+------+
-| Id          | int  |
-| Salary      | int  |
+| id          | int  |
+| salary      | int  |
 +-------------+------+
-Id is the primary key column for this table.
+id is the primary key column for this table.
 Each row of this table contains information about the salary of an employee.
 </pre>
 
@@ -26,7 +26,7 @@ Each row of this table contains information about the salary of an employee.
 <strong>Input:</strong> 
 Employee table:
 +----+--------+
-| Id | Salary |
+| id | salary |
 +----+--------+
 | 1  | 100    |
 | 2  | 200    |
@@ -47,7 +47,7 @@ n = 2
 <strong>Input:</strong> 
 Employee table:
 +----+--------+
-| Id | Salary |
+| id | salary |
 +----+--------+
 | 1  | 100    |
 +----+--------+
@@ -56,6 +56,6 @@ n = 2
 +------------------------+
 | getNthHighestSalary(2) |
 +------------------------+
-| Null                   |
+| null                   |
 +------------------------+
 </pre>

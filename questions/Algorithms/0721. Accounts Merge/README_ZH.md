@@ -34,7 +34,7 @@
 <ul>
 	<li><code>1 &lt;= accounts.length &lt;= 1000</code></li>
 	<li><code>2 &lt;= accounts[i].length &lt;= 10</code></li>
-	<li><code>1 &lt;= accounts[i][j] &lt;= 30</code></li>
+	<li><code>1 &lt;= accounts[i][j].length &lt;= 30</code></li>
 	<li><code>accounts[i][0]</code> 由英文字母组成</li>
 	<li><code>accounts[i][j] (for j &gt; 0)</code> 是有效的邮箱地址</li>
 </ul>

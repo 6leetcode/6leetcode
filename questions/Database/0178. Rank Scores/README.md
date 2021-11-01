@@ -6,10 +6,10 @@
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
-| Id          | int     |
-| Score       | decimal |
+| id          | int     |
+| score       | decimal |
 +-------------+---------+
-Id is the primary key for this table.
+id is the primary key for this table.
 Each row of this table contains the score of a game. Score is a floating point value with two decimal places.
 </pre>
 
@@ -34,7 +34,7 @@ Each row of this table contains the score of a game. Score is a floating point v
 <strong>Input:</strong> 
 Scores table:
 +----+-------+
-| Id | Score |
+| id | score |
 +----+-------+
 | 1  | 3.50  |
 | 2  | 3.65  |
@@ -45,7 +45,7 @@ Scores table:
 +----+-------+
 <strong>Output:</strong> 
 +-------+------+
-| Score | Rank |
+| score | rank |
 +-------+------+
 | 4.00  | 1    |
 | 4.00  | 1    |

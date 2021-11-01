@@ -40,6 +40,6 @@ Flip nums[5],nums[6],nums[7]: nums becomes [1,1,1,1,1,1,1,1]
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= k &lt;= nums.length</code></li>
 </ul>

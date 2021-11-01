@@ -6,13 +6,13 @@
 +--------------+---------+
 | Column Name  | Type    |
 +--------------+---------+
-| Id           | int     |
-| Name         | varchar |
-| Salary       | int     |
-| DepartmentId | int     |
+| id           | int     |
+| name         | varchar |
+| salary       | int     |
+| departmentId | int     |
 +--------------+---------+
-Id is the primary key column for this table.
-DepartmentId is a foreign key of the ID from the <code>Department </code>table.
+id is the primary key column for this table.
+departmentId is a foreign key of the ID from the <code>Department </code>table.
 Each row of this table indicates the ID, name, and salary of an employee. It also contains the ID of their department.
 </pre>
 
@@ -24,10 +24,10 @@ Each row of this table indicates the ID, name, and salary of an employee. It als
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
-| Id          | int     |
-| Name        | varchar |
+| id          | int     |
+| name        | varchar |
 +-------------+---------+
-Id is the primary key column for this table.
+id is the primary key column for this table.
 Each row of this table indicates the ID of a department and its name.
 </pre>
 
@@ -48,7 +48,7 @@ Each row of this table indicates the ID of a department and its name.
 <strong>Input:</strong> 
 Employee table:
 +----+-------+--------+--------------+
-| Id | Name  | Salary | DepartmentId |
+| id | name  | salary | departmentId |
 +----+-------+--------+--------------+
 | 1  | Joe   | 85000  | 1            |
 | 2  | Henry | 80000  | 2            |
@@ -60,7 +60,7 @@ Employee table:
 +----+-------+--------+--------------+
 Department table:
 +----+-------+
-| Id | Name  |
+| id | name  |
 +----+-------+
 | 1  | IT    |
 | 2  | Sales |

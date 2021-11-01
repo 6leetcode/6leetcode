@@ -1,17 +1,18 @@
 ### [窥探迭代器](https://leetcode-cn.com/problems/peeking-iterator)
 
-<p>请你设计一个迭代器，除了支持 <code>hasNext</code> 和 <code>next</code> 操作外，还支持 <code>peek</code> 操作。</p>
+<p>请你在设计一个迭代器，在集成现有迭代器拥有的&nbsp;<code>hasNext</code> 和 <code>next</code> 操作的基础上，还额外支持 <code>peek</code> 操作。</p>
 
 <p>实现 <code>PeekingIterator</code> 类：</p>
 
 <div class="original__bRMd">
-<div>
 <ul>
-	<li><code>PeekingIterator(int[] nums)</code> 使用指定整数数组 <code>nums</code> 初始化迭代器。</li>
+	<li><code>PeekingIterator(Iterator&lt;int&gt; nums)</code> 使用指定整数迭代器&nbsp;<code>nums</code> 初始化迭代器。</li>
 	<li><code>int next()</code> 返回数组中的下一个元素，并将指针移动到下个元素处。</li>
 	<li><code>bool hasNext()</code> 如果数组中存在下一个元素，返回 <code>true</code> ；否则，返回 <code>false</code> 。</li>
 	<li><code>int peek()</code> 返回数组中的下一个元素，但 <strong>不</strong> 移动指针。</li>
 </ul>
+
+<p><strong>注意：</strong>每种语言可能有不同的构造函数和<code>迭代器</code>，但均支持 <code>int next()</code> 和 <code>boolean hasNext()</code> 函数。</p>
 
 <p>&nbsp;</p>
 
@@ -43,7 +44,6 @@ peekingIterator.hasNext(); // 返回 False
 	<li>对 <code>next</code> 和 <code>peek</code> 的调用均有效</li>
 	<li><code>next</code>、<code>hasNext</code> 和 <code>peek </code>最多调用&nbsp; <code>1000</code> 次</li>
 </ul>
-</div>
 </div>
 
 <p>&nbsp;</p>
