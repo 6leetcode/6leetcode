@@ -7,7 +7,6 @@ import (
 
 	"github.com/jinzhu/inflection"
 	"gorm.io/gorm/clause"
-	"gorm.io/gorm/utils"
 )
 
 // RelationshipType relationship type
@@ -78,6 +77,8 @@ func (schema *Schema) parseRelation(field *Field) *Relationship {
 		schema.buildPolymorphicRelation(relation, field, polymorphic)
 	} else if many2many := field.TagSettings["MANY2MANY"]; many2many != "" {
 		schema.buildMany2ManyRelation(relation, field, many2many)
+	} else if belongsTo := field.TagSettings["BELONGSTO"]; belongsTo != "" {
+		schema.guessRelation(relation, field, guessBelongs)
 	} else {
 		switch field.IndirectFieldType.Kind() {
 		case reflect.Struct:
@@ -405,14 +406,11 @@ func (schema *Schema) guessRelation(relation *Relationship, field *Field, cgl gu
 
 	if len(relation.foreignKeys) > 0 {
 		for _, foreignKey := range relation.foreignKeys {
-			ff := foreignSchema.LookUpField(foreignKey)
-			pf := primarySchema.LookUpField(foreignKey)
-			isKeySame := utils.ExistsIn(foreignKey, &relation.primaryKeys)
-			if ff == nil || (pf != nil && ff != nil && schema == primarySchema && primarySchema != foreignSchema && !isKeySame && field.IndirectFieldType.Kind() == reflect.Struct) {
+			if f := foreignSchema.LookUpField(foreignKey); f != nil {
+				foreignFields = append(foreignFields, f)
+			} else {
 				reguessOrErr()
 				return
-			} else {
-				foreignFields = append(foreignFields, ff)
 			}
 		}
 	} else {
@@ -521,7 +519,7 @@ func (rel *Relationship) ParseConstraint() *Constraint {
 
 	if rel.Type == BelongsTo {
 		for _, r := range rel.FieldSchema.Relationships.Relations {
-			if r.FieldSchema == rel.Schema && len(rel.References) == len(r.References) {
+			if r != rel && r.FieldSchema == rel.Schema && len(rel.References) == len(r.References) {
 				matched := true
 				for idx, ref := range r.References {
 					if !(rel.References[idx].PrimaryKey == ref.PrimaryKey && rel.References[idx].ForeignKey == ref.ForeignKey &&
