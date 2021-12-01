@@ -1,6 +1,6 @@
 ### [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree)
 
-<p>Given the <code>root</code> of a binary tree, construct a string consists of parenthesis and integers from a binary tree with the preorder traversing way, and return it.</p>
+<p>Given the <code>root</code> of a binary tree, construct a string consisting of parenthesis and integers from a binary tree with the preorder traversal way, and return it.</p>
 
 <p>Omit all the empty parenthesis pairs that do not affect the one-to-one mapping relationship between the string and the original binary tree.</p>
 
@@ -10,7 +10,7 @@
 <pre>
 <strong>Input:</strong> root = [1,2,3,4]
 <strong>Output:</strong> &quot;1(2(4))(3)&quot;
-<strong>Explanation:</strong> Originallay it needs to be &quot;1(2(4)())(3()())&quot;, but you need to omit all the unnecessary empty parenthesis pairs. And it will be &quot;1(2(4))(3)&quot;
+<strong>Explanation:</strong> Originally, it needs to be &quot;1(2(4)())(3()())&quot;, but you need to omit all the unnecessary empty parenthesis pairs. And it will be &quot;1(2(4))(3)&quot;
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -18,7 +18,7 @@
 <pre>
 <strong>Input:</strong> root = [1,2,3,null,4]
 <strong>Output:</strong> &quot;1(2()(4))(3)&quot;
-Explanation: Almost the same as the first example, except we cannot omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
+<strong>Explanation:</strong> Almost the same as the first example, except we cannot omit the first parenthesis pair to break the one-to-one mapping relationship between the input and the output.
 </pre>
 
 <p>&nbsp;</p>

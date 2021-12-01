@@ -8,32 +8,37 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>28
-<strong>输出：</strong>True
+<pre>
+<strong>输入：</strong>num = 28
+<strong>输出：</strong>true
 <strong>解释：</strong>28 = 1 + 2 + 4 + 7 + 14
 1, 2, 4, 7, 和 14 是 28 的所有正因子。</pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>num = 6
+<pre>
+<strong>输入：</strong>num = 6
 <strong>输出：</strong>true
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>num = 496
+<pre>
+<strong>输入：</strong>num = 496
 <strong>输出：</strong>true
 </pre>
 
 <p><strong>示例 4：</strong></p>
 
-<pre><strong>输入：</strong>num = 8128
+<pre>
+<strong>输入：</strong>num = 8128
 <strong>输出：</strong>true
 </pre>
 
 <p><strong>示例 5：</strong></p>
 
-<pre><strong>输入：</strong>num = 2
+<pre>
+<strong>输入：</strong>num = 2
 <strong>输出：</strong>false
 </pre>
 

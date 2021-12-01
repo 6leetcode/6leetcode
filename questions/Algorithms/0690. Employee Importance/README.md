@@ -1,6 +1,6 @@
 ### [Employee Importance](https://leetcode.com/problems/employee-importance)
 
-<p>You have a data structure of employee information, which includes the employee&#39;s unique ID, their importance value, and their direct subordinates&#39; IDs.</p>
+<p>You have a data structure of employee information, including the employee&#39;s unique ID, importance value, and direct subordinates&#39; IDs.</p>
 
 <p>You are given an array of employees <code>employees</code> where:</p>
 
@@ -10,7 +10,7 @@
 	<li><code>employees[i].subordinates</code> is a list of the IDs of the direct subordinates of the <code>i<sup>th</sup></code> employee.</li>
 </ul>
 
-<p>Given an integer <code>id</code> that represents the ID of an employee, return <em>the <strong>total</strong> importance value of this employee and all their direct subordinates</em>.</p>
+<p>Given an integer <code>id</code> that represents an employee&#39;s ID, return <em>the <strong>total</strong> importance value of this employee and all their direct and indirect subordinates</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>

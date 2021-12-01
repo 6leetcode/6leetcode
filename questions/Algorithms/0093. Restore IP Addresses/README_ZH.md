@@ -1,10 +1,12 @@
 ### [复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses)
 
-<p>给定一个只包含数字的字符串 <code>s</code> ，用以表示一个 IP 地址，返回所有可能从 <code>s</code> 获得的 <strong>有效 IP 地址 </strong>。你可以按 <strong>任何</strong> 顺序返回答案。</p>
-
 <p><strong>有效 IP 地址</strong> 正好由四个整数（每个整数位于 <code>0</code> 到 <code>255</code> 之间组成，且不能含有前导 <code>0</code>），整数之间用 <code>'.'</code> 分隔。</p>
 
-<p>例如："0.1.2.201" 和 "192.168.1.1" 是 <strong>有效</strong> IP 地址，但是 "0.011.255.245"、"192.168.1.312" 和 "192.168@1.1" 是 <strong>无效</strong> IP 地址。</p>
+<ul>
+	<li>例如："0.1.2.201" 和 "192.168.1.1" 是 <strong>有效</strong> IP 地址，但是 "0.011.255.245"、"192.168.1.312" 和 "192.168@1.1" 是 <strong>无效</strong> IP 地址。</li>
+</ul>
+
+<p>给定一个只包含数字的字符串 <code>s</code> ，用以表示一个 IP 地址，返回所有可能的<strong>有效 IP 地址</strong>，这些地址可以通过在 <code>s</code> 中插入&nbsp;<code>'.'</code> 来形成。你不能重新排序或删除 <code>s</code> 中的任何数字。你可以按 <strong>任何</strong> 顺序返回答案。</p>
 
 <p>&nbsp;</p>
 
@@ -48,6 +50,6 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>0 &lt;= s.length &lt;= 3000</code></li>
+	<li><code>0 &lt;= s.length &lt;= 20</code></li>
 	<li><code>s</code> 仅由数字组成</li>
 </ul>

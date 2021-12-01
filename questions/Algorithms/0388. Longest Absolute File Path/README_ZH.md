@@ -1,6 +1,6 @@
 ### [文件的最长绝对路径](https://leetcode-cn.com/problems/longest-absolute-file-path)
 
-<p>假设文件系统如下图所示：</p>
+<p>假设有一个同时存储文件和目录的文件系统。下图展示了文件系统的一个示例：</p>
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2020/08/28/mdir.jpg" style="width: 681px; height: 322px;" /></p>
 
@@ -22,9 +22,9 @@ dir
 
 <p>文件系统中的每个文件和文件夹都有一个唯一的 <strong>绝对路径</strong> ，即必须打开才能到达文件/目录所在位置的目录顺序，所有路径用 <code>'/'</code> 连接。上面例子中，指向 <code>file2.ext</code> 的绝对路径是 <code>"dir/subdir2/subsubdir2/file2.ext"</code> 。每个目录名由字母、数字和/或空格组成，每个文件名遵循 <code>name.extension</code> 的格式，其中名称和扩展名由字母、数字和/或空格组成。</p>
 
-<p>给定一个以上述格式表示文件系统的字符串 <code>input</code> ，返回文件系统中 <strong>指向文件的最长绝对路径</strong> 的长度。 如果系统中没有文件，返回 <code>0</code>。</p>
+<p>给定一个以上述格式表示文件系统的字符串 <code>input</code> ，返回文件系统中 <strong>指向文件的最长绝对路径</strong> 的长度。 如果系统中没有文件，返回&nbsp;<code>0</code>。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/08/28/dir1.jpg" style="width: 401px; height: 202px;" />
@@ -32,7 +32,6 @@ dir
 <strong>输入：</strong>input = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
 <strong>输出：</strong>20
 <strong>解释：</strong>只有一个文件，绝对路径为 "dir/subdir2/file.ext" ，路径长度 20
-路径 "dir/subdir1" 不含任何文件
 </pre>
 
 <p><strong>示例 2：</strong></p>
@@ -61,11 +60,11 @@ dir
 因为根目录中任何东西的绝对路径只是名称本身，所以答案是 "longfile.txt" ，路径长度为 12
 </pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= input.length <= 10<sup>4</sup></code></li>
-	<li><code>input</code> 可能包含小写或大写的英文字母，一个换行符 <code>'\n'</code>，一个指表符 <code>'\t'</code>，一个点 <code>'.'</code>，一个空格 <code>' '</code>，和数字。</li>
+	<li><code>1 &lt;= input.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>input</code> 可能包含小写或大写的英文字母，一个换行符 <code>'\n'</code>，一个制表符 <code>'\t'</code>，一个点 <code>'.'</code>，一个空格 <code>' '</code>，和数字。</li>
 </ul>
