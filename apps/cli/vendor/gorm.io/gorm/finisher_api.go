@@ -101,7 +101,7 @@ func (db *DB) Save(value interface{}) (tx *DB) {
 
 		if tx.Error == nil && tx.RowsAffected == 0 && !tx.DryRun && !selectedUpdate {
 			result := reflect.New(tx.Statement.Schema.ModelType).Interface()
-			if err := tx.Session(&Session{}).First(result).Error; errors.Is(err, ErrRecordNotFound) {
+			if err := tx.Session(&Session{}).Take(result).Error; errors.Is(err, ErrRecordNotFound) {
 				return tx.Create(value)
 			}
 		}
@@ -285,44 +285,44 @@ func (db *DB) FirstOrCreate(dest interface{}, conds ...interface{}) (tx *DB) {
 	queryTx := db.Limit(1).Order(clause.OrderByColumn{
 		Column: clause.Column{Table: clause.CurrentTable, Name: clause.PrimaryKey},
 	})
-
-	if tx = queryTx.Find(dest, conds...); queryTx.RowsAffected == 0 {
-		if c, ok := tx.Statement.Clauses["WHERE"]; ok {
-			if where, ok := c.Expression.(clause.Where); ok {
-				tx.assignInterfacesToValue(where.Exprs)
-			}
-		}
-
-		// initialize with attrs, conds
-		if len(tx.Statement.attrs) > 0 {
-			tx.assignInterfacesToValue(tx.Statement.attrs...)
-		}
-
-		// initialize with attrs, conds
-		if len(tx.Statement.assigns) > 0 {
-			tx.assignInterfacesToValue(tx.Statement.assigns...)
-		}
-
-		return tx.Create(dest)
-	} else if len(db.Statement.assigns) > 0 {
-		exprs := tx.Statement.BuildCondition(db.Statement.assigns[0], db.Statement.assigns[1:]...)
-		assigns := map[string]interface{}{}
-		for _, expr := range exprs {
-			if eq, ok := expr.(clause.Eq); ok {
-				switch column := eq.Column.(type) {
-				case string:
-					assigns[column] = eq.Value
-				case clause.Column:
-					assigns[column.Name] = eq.Value
-				default:
+	if tx = queryTx.Find(dest, conds...); tx.Error == nil {
+		if tx.RowsAffected == 0 {
+			if c, ok := tx.Statement.Clauses["WHERE"]; ok {
+				if where, ok := c.Expression.(clause.Where); ok {
+					tx.assignInterfacesToValue(where.Exprs)
 				}
 			}
+
+			// initialize with attrs, conds
+			if len(tx.Statement.attrs) > 0 {
+				tx.assignInterfacesToValue(tx.Statement.attrs...)
+			}
+
+			// initialize with attrs, conds
+			if len(tx.Statement.assigns) > 0 {
+				tx.assignInterfacesToValue(tx.Statement.assigns...)
+			}
+
+			return tx.Create(dest)
+		} else if len(db.Statement.assigns) > 0 {
+			exprs := tx.Statement.BuildCondition(db.Statement.assigns[0], db.Statement.assigns[1:]...)
+			assigns := map[string]interface{}{}
+			for _, expr := range exprs {
+				if eq, ok := expr.(clause.Eq); ok {
+					switch column := eq.Column.(type) {
+					case string:
+						assigns[column] = eq.Value
+					case clause.Column:
+						assigns[column.Name] = eq.Value
+					default:
+					}
+				}
+			}
+
+			return tx.Model(dest).Updates(assigns)
 		}
-
-		return tx.Model(dest).Updates(assigns)
 	}
-
-	return db
+	return tx
 }
 
 // Update update attributes with callbacks, refer: https://gorm.io/docs/update.html#Update-Changed-Fields
@@ -399,7 +399,7 @@ func (db *DB) Count(count *int64) (tx *DB) {
 
 				if tx.Statement.Distinct {
 					expr = clause.Expr{SQL: "COUNT(DISTINCT(?))", Vars: []interface{}{clause.Column{Name: dbName}}}
-				} else {
+				} else if dbName != "*" {
 					expr = clause.Expr{SQL: "COUNT(?)", Vars: []interface{}{clause.Column{Name: dbName}}}
 				}
 			}
@@ -483,8 +483,6 @@ func (db *DB) Pluck(column string, dest interface{}) (tx *DB) {
 				column = f.DBName
 			}
 		}
-	} else if tx.Statement.Table == "" {
-		tx.AddError(ErrModelValueRequired)
 	}
 
 	if len(tx.Statement.Selects) != 1 {
@@ -506,9 +504,14 @@ func (db *DB) ScanRows(rows *sql.Rows, dest interface{}) error {
 	tx.Statement.Dest = dest
 	tx.Statement.ReflectValue = reflect.ValueOf(dest)
 	for tx.Statement.ReflectValue.Kind() == reflect.Ptr {
-		tx.Statement.ReflectValue = tx.Statement.ReflectValue.Elem()
+		elem := tx.Statement.ReflectValue.Elem()
+		if !elem.IsValid() {
+			elem = reflect.New(tx.Statement.ReflectValue.Type().Elem())
+			tx.Statement.ReflectValue.Set(elem)
+		}
+		tx.Statement.ReflectValue = elem
 	}
-	Scan(rows, tx, true)
+	Scan(rows, tx, ScanInitialized)
 	return tx.Error
 }
 

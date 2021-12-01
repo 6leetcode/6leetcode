@@ -43,7 +43,7 @@ func (m Migrator) RunWithValue(value interface{}, fc func(*gorm.Statement) error
 
 	if table, ok := value.(string); ok {
 		stmt.Table = table
-	} else if err := stmt.Parse(value); err != nil {
+	} else if err := stmt.ParseWithSpecialTableName(value, stmt.Table); err != nil {
 		return err
 	}
 
@@ -153,6 +153,10 @@ func (m Migrator) AutoMigrate(values ...interface{}) error {
 	}
 
 	return nil
+}
+
+func (m Migrator) GetTables() (tableList []string, err error) {
+	return tableList, m.DB.Raw("SELECT TABLE_NAME FROM information_schema.tables where TABLE_SCHEMA=?", m.CurrentDatabase()).Scan(&tableList).Error
 }
 
 func (m Migrator) CreateTable(values ...interface{}) error {

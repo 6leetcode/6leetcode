@@ -17,8 +17,8 @@ require (
 	github.com/unknwon/com v1.0.1
 	golang.org/x/net v0.0.0-20210716203947-853a461950ff // indirect
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
-	gorm.io/driver/sqlite v1.1.5
-	gorm.io/gorm v1.21.15
+	gorm.io/driver/sqlite v1.2.6
+	gorm.io/gorm v1.22.3
 	moul.io/http2curl v1.0.0 // indirect
 )
 

@@ -91,10 +91,10 @@ gopkg.in/ini.v1
 gopkg.in/natefinch/lumberjack.v2
 # gopkg.in/yaml.v2 v2.4.0
 gopkg.in/yaml.v2
-# gorm.io/driver/sqlite v1.1.5
+# gorm.io/driver/sqlite v1.2.6
 ## explicit
 gorm.io/driver/sqlite
-# gorm.io/gorm v1.21.15
+# gorm.io/gorm v1.22.3
 ## explicit
 gorm.io/gorm
 gorm.io/gorm/callbacks

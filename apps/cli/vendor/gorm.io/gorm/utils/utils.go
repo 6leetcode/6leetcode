@@ -72,6 +72,15 @@ func ToStringKey(values ...interface{}) string {
 	return strings.Join(results, "_")
 }
 
+func Contains(elems []string, elem string) bool {
+	for _, e := range elems {
+		if elem == e {
+			return true
+		}
+	}
+	return false
+}
+
 func AssertEqual(src, dst interface{}) bool {
 	if !reflect.DeepEqual(src, dst) {
 		if valuer, ok := src.(driver.Valuer); ok {
@@ -113,16 +122,4 @@ func ToString(value interface{}) string {
 		return strconv.FormatUint(v, 10)
 	}
 	return ""
-}
-
-func ExistsIn(a string, list *[]string) bool {
-	if list == nil {
-		return false
-	}
-	for _, b := range *list {
-		if b == a {
-			return true
-		}
-	}
-	return false
 }
