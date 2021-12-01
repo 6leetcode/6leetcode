@@ -1,8 +1,12 @@
 ### [有序数组中的单一元素](https://leetcode-cn.com/problems/single-element-in-a-sorted-array)
 
-<p>给定一个只包含整数的有序数组，每个元素都会出现两次，唯有一个数只会出现一次，找出这个数。</p>
+<p>给你一个仅由整数组成的有序数组，其中每个元素都会出现两次，唯有一个数只会出现一次。</p>
 
-<p> </p>
+<p>请你找出并返回只出现一次的那个数。</p>
+
+<p>你设计的解决方案必须满足 <code>O(log n)</code> 时间复杂度和 <code>O(1)</code> 空间复杂度。</p>
+
+<p>&nbsp;</p>
 
 <p><strong>示例 1:</strong></p>
 
@@ -18,17 +22,13 @@
 <strong>输出:</strong> 10
 </pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><meta charset="UTF-8" /></p>
 
 <p><strong>提示:</strong></p>
 
 <ul>
-	<li><code>1 <= nums.length <= 10<sup>5</sup></code></li>
-	<li><code>0 <= nums[i] <= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= nums[i]&nbsp;&lt;= 10<sup>5</sup></code></li>
 </ul>
-
-<p> </p>
-
-<p><strong>进阶:</strong> 采用的方案可以在 <code>O(log n)</code> 时间复杂度和 <code>O(1)</code> 空间复杂度中运行吗？</p>

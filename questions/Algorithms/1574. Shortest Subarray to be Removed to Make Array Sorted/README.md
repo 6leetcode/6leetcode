@@ -1,10 +1,10 @@
 ### [Shortest Subarray to be Removed to Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted)
 
-<p>Given an integer array&nbsp;<code>arr</code>, remove a&nbsp;subarray (can be empty) from&nbsp;<code>arr</code>&nbsp;such that the remaining elements in <code>arr</code>&nbsp;are <strong>non-decreasing</strong>.</p>
+<p>Given an integer array <code>arr</code>, remove a subarray (can be empty) from <code>arr</code> such that the remaining elements in <code>arr</code> are <strong>non-decreasing</strong>.</p>
 
-<p>A subarray is a contiguous&nbsp;subsequence of the array.</p>
+<p>Return <em>the length of the shortest subarray to remove</em>.</p>
 
-<p>Return&nbsp;<em>the length of the shortest subarray to remove</em>.</p>
+<p>A <strong>subarray</strong> is a contiguous subsequence of the array.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -42,6 +42,6 @@ Another correct solution is to remove the subarray [3,10,4].</pre>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= arr.length &lt;= 10^5</code></li>
-	<li><code>0 &lt;= arr[i] &lt;= 10^9</code></li>
+	<li><code>1 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= arr[i] &lt;= 10<sup>9</sup></code></li>
 </ul>

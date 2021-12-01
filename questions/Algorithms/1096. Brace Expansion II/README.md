@@ -1,8 +1,8 @@
 ### [Brace Expansion II](https://leetcode.com/problems/brace-expansion-ii)
 
-<p>Under the grammar given below, strings can represent a set of lowercase words. Let&#39;s use <code>R(expr)</code> to denote the set of words the expression represents.</p>
+<p>Under the grammar given below, strings can represent a set of lowercase words. Let&nbsp;<code>R(expr)</code>&nbsp;denote the set of words the expression represents.</p>
 
-<p>Grammar can best be understood through simple examples:</p>
+<p>The grammar can best be understood through simple examples:</p>
 
 <ul>
 	<li>Single letters represent a singleton set containing that word.
@@ -14,7 +14,7 @@
 	<li>When we take a comma-delimited list of two or more expressions, we take the union of possibilities.
 	<ul>
 		<li><code>R(&quot;{a,b,c}&quot;) = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}</code></li>
-		<li><code>R(&quot;{{a,b},{b,c}}&quot;) = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;} (notice the final set only contains each word at most once)</code></li>
+		<li><code>R(&quot;{{a,b},{b,c}}&quot;) = {&quot;a&quot;,&quot;b&quot;,&quot;c&quot;}</code> (notice the final set only contains each word at most once)</li>
 	</ul>
 	</li>
 	<li>When we concatenate two expressions, we take the set of possible concatenations between two words where the first word comes from the first expression and the second word comes from the second expression.

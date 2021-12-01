@@ -1,6 +1,6 @@
 ### [第 N 位数字](https://leetcode-cn.com/problems/nth-digit)
 
-<p>给你一个整数 <code>n</code> ，请你在无限的整数序列&nbsp;<code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]</code> 中找出并返回第&nbsp;<code>n</code><em> </em>位数字。</p>
+<p>给你一个整数 <code>n</code> ，请你在无限的整数序列&nbsp;<code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]</code> 中找出并返回第&nbsp;<code>n</code><em> </em>位上的数字。</p>
 
 <p>&nbsp;</p>
 
@@ -25,4 +25,5 @@
 
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
+	<li>第 <code>n</code> 位上的数字是按计数单位（digit）从前往后数的第 <code>n</code> 个数，参见 <strong>示例 2</strong> 。</li>
 </ul>

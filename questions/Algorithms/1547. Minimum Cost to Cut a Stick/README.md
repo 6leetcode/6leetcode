@@ -2,13 +2,13 @@
 
 <p>Given a wooden stick of length <code>n</code> units. The stick is labelled from <code>0</code> to <code>n</code>. For example, a stick of length <strong>6</strong> is labelled as follows:</p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/07/21/statement.jpg" style="width: 521px; height: 111px;" />
-<p>Given an integer array <code>cuts</code>&nbsp;where <code>cuts[i]</code>&nbsp;denotes a position you should perform a cut at.</p>
+<p>Given an integer array <code>cuts</code> where <code>cuts[i]</code> denotes a position you should perform a cut at.</p>
 
 <p>You should perform the cuts in order, you can change the order of the cuts as you wish.</p>
 
 <p>The cost of one cut is the length of the stick to be cut, the total cost is the sum of costs of all cuts. When you cut a stick, it will be split into two smaller sticks (i.e. the sum of their lengths is the length of the stick before the cut). Please refer to the first example for a better explanation.</p>
 
-<p>Return <em>the minimum total cost</em> of the&nbsp;cuts.</p>
+<p>Return <em>the minimum total cost</em> of the cuts.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -34,8 +34,8 @@ There are much ordering with total cost &lt;= 25, for example, the order [4, 6, 
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>2 &lt;= n &lt;= 10^6</code></li>
+	<li><code>2 &lt;= n &lt;= 10<sup>6</sup></code></li>
 	<li><code>1 &lt;= cuts.length &lt;= min(n - 1, 100)</code></li>
 	<li><code>1 &lt;= cuts[i] &lt;= n - 1</code></li>
-	<li>All the integers in <code>cuts</code>&nbsp;array are <strong>distinct</strong>.</li>
+	<li>All the integers in <code>cuts</code> array are <strong>distinct</strong>.</li>
 </ul>
