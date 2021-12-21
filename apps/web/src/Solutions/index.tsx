@@ -20,9 +20,11 @@ export default function Solutions({ localServer }: any) {
   const [question, setQuestion] = useState<IQuestion>({ content: "", translated_content: "" } as IQuestion);
 
   useEffect(() => {
-    let item = window.localStorage.getItem(id);
-    if (item !== null) {
-      setQuestion(JSON.parse(item) as IQuestion);
+    if (id !== null) {
+      let item = window.localStorage.getItem("" + id);
+      if (item !== null) {
+        setQuestion(JSON.parse(item) as IQuestion);
+      }
     }
   }, [id])
 
