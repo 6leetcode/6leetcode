@@ -33,20 +33,6 @@
 <strong>Explanation:</strong> The ghost can reach the target at the same time as you.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> ghosts = [[5,0],[-10,-2],[0,-5],[-2,-2],[-7,1]], target = [7,7]
-<strong>Output:</strong> false
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> ghosts = [[-1,0],[0,1],[-1,0],[0,1],[-1,0]], target = [0,0]
-<strong>Output:</strong> true
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

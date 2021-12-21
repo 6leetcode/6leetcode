@@ -1,6 +1,7 @@
 ### [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits)
 
-Given an array <code>nums</code> of integers, return how many of them contain an <strong>even number</strong> of digits.
+<p>Given an array <code>nums</code> of integers, return how many of them contain an <strong>even number</strong> of digits.</p>
+
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
@@ -30,5 +31,5 @@ Only 1771 contains an even number of digits.
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 500</code></li>
-	<li><code>1 &lt;= nums[i] &lt;= 10^5</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>

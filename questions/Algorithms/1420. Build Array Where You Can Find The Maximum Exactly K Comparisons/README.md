@@ -1,6 +1,6 @@
 ### [Build Array Where You Can Find The Maximum Exactly K Comparisons](https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons)
 
-<p>Given three integers <code>n</code>, <code>m</code> and <code>k</code>. Consider the following algorithm to find the maximum element of an array of positive integers:</p>
+<p>You are given three integers <code>n</code>, <code>m</code> and <code>k</code>. Consider the following algorithm to find the maximum element of an array of positive integers:</p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/04/02/e.png" style="width: 424px; height: 372px;" />
 <p>You should build the array arr which has the following properties:</p>
 
@@ -10,7 +10,7 @@
 	<li>After applying the mentioned algorithm to <code>arr</code>, the value <code>search_cost</code> is equal to <code>k</code>.</li>
 </ul>
 
-<p>Return <em>the number of ways</em> to build the array <code>arr</code> under the mentioned conditions.&nbsp;As the answer may grow large, the answer&nbsp;<strong>must be</strong>&nbsp;computed modulo&nbsp;<code>10^9 + 7</code>.</p>
+<p>Return <em>the number of ways</em> to build the array <code>arr</code> under the mentioned conditions. As the answer may grow large, the answer <strong>must be</strong> computed modulo <code>10<sup>9</sup> + 7</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -35,21 +35,6 @@
 <strong>Input:</strong> n = 9, m = 1, k = 1
 <strong>Output:</strong> 1
 <strong>Explanation:</strong> The only possible array is [1, 1, 1, 1, 1, 1, 1, 1, 1]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 50, m = 100, k = 25
-<strong>Output:</strong> 34549172
-<strong>Explanation:</strong> Don&#39;t forget to compute the answer modulo 1000000007
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 37, m = 17, k = 7
-<strong>Output:</strong> 418930126
 </pre>
 
 <p>&nbsp;</p>

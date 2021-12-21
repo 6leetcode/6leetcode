@@ -1,6 +1,6 @@
 ### [Thousand Separator](https://leetcode.com/problems/thousand-separator)
 
-<p>Given an&nbsp;integer <code>n</code>, add a dot (&quot;.&quot;)&nbsp;as the thousands separator and return it in&nbsp;string format.</p>
+<p>Given an integer <code>n</code>, add a dot (&quot;.&quot;) as the thousands separator and return it in string format.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -35,5 +35,5 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>0 &lt;= n &lt; 2^31</code></li>
+	<li><code>0 &lt;= n &lt; 2<sup>31</sup></code></li>
 </ul>

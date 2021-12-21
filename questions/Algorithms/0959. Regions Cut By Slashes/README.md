@@ -22,34 +22,18 @@
 </pre>
 
 <p><strong>Example 3:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/3.png" style="width: 200px; height: 198px;" />
-<pre>
-<strong>Input:</strong> grid = [&quot;\\/&quot;,&quot;/\\&quot;]
-<strong>Output:</strong> 4
-<strong>Explanation: </strong>(Recall that because \ characters are escaped, &quot;\\/&quot; refers to \/, and &quot;/\\&quot; refers to /\.)
-</pre>
-
-<p><strong>Example 4:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/4.png" style="width: 200px; height: 200px;" />
 <pre>
 <strong>Input:</strong> grid = [&quot;/\\&quot;,&quot;\\/&quot;]
 <strong>Output:</strong> 5
-<strong>Explanation: </strong>(Recall that because \ characters are escaped, &quot;\\/&quot; refers to \/, and &quot;/\\&quot; refers to /\.)
-</pre>
-
-<p><strong>Example 5:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/5.png" style="width: 200px; height: 200px;" />
-<pre>
-<strong>Input:</strong> grid = [&quot;//&quot;,&quot;/ &quot;]
-<strong>Output:</strong> 3
+<strong>Explanation: </strong>Recall that because \ characters are escaped, &quot;\\/&quot; refers to \/, and &quot;/\\&quot; refers to /\.
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>n == grid.length</code></li>
-	<li><code>n == grid[i].length</code></li>
+	<li><code>n == grid.length == grid[i].length</code></li>
 	<li><code>1 &lt;= n &lt;= 30</code></li>
 	<li><code>grid[i][j]</code> is either <code>&#39;/&#39;</code>, <code>&#39;\&#39;</code>, or <code>&#39; &#39;</code>.</li>
 </ul>

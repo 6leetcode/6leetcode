@@ -30,20 +30,6 @@
 <strong>Output:</strong> &quot;f&quot;
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;g&quot;
-<strong>Output:</strong> &quot;j&quot;
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;j&quot;
-<strong>Output:</strong> &quot;c&quot;
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

@@ -31,20 +31,6 @@
 <strong>Output:</strong> 4
 </pre>
 
-<p><strong>Example 4:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/02/21/e4.png" style="width: 555px; height: 239px;" />
-<pre>
-<strong>Input:</strong> tree = [1,2,3,4,5,6,7,8,9,10], target = 5
-<strong>Output:</strong> 5
-</pre>
-
-<p><strong>Example 5:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/02/21/e5.png" style="width: 427px; height: 345px;" />
-<pre>
-<strong>Input:</strong> tree = [1,2,null,3], target = 2
-<strong>Output:</strong> 2
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

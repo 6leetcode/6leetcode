@@ -1,17 +1,17 @@
 ### [在 D 天内送达包裹的能力](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days)
 
-<p>传送带上的包裹必须在 D 天内从一个港口运送到另一个港口。</p>
+<p>传送带上的包裹必须在 <code>days</code> 天内从一个港口运送到另一个港口。</p>
 
-<p>传送带上的第 <code>i</code> 个包裹的重量为 <code>weights[i]</code>。每一天，我们都会按给出重量的顺序往传送带上装载包裹。我们装载的重量不会超过船的最大运载重量。</p>
+<p>传送带上的第 <code>i</code>&nbsp;个包裹的重量为&nbsp;<code>weights[i]</code>。每一天，我们都会按给出重量（<code>weights</code>）的顺序往传送带上装载包裹。我们装载的重量不会超过船的最大运载重量。</p>
 
-<p>返回能在 <code>D</code> 天内将传送带上的所有包裹送达的船的最低运载能力。</p>
+<p>返回能在 <code>days</code> 天内将传送带上的所有包裹送达的船的最低运载能力。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
 <pre>
-<strong>输入：</strong>weights = [1,2,3,4,5,6,7,8,9,10], D = 5
+<strong>输入：</strong>weights = [1,2,3,4,5,6,7,8,9,10], days = 5
 <strong>输出：</strong>15
 <strong>解释：</strong>
 船舶最低载重 15 就能够在 5 天内送达所有包裹，如下所示：
@@ -27,7 +27,7 @@
 <p><strong>示例 2：</strong></p>
 
 <pre>
-<strong>输入：</strong>weights = [3,2,2,4,1,4], D = 3
+<strong>输入：</strong>weights = [3,2,2,4,1,4], days = 3
 <strong>输出：</strong>6
 <strong>解释：</strong>
 船舶最低载重 6 就能够在 3 天内送达所有包裹，如下所示：
@@ -48,11 +48,11 @@
 第 4 天：1, 1
 </pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= D <= weights.length <= 5 * 10<sup>4</sup></code></li>
-	<li><code>1 <= weights[i] <= 500</code></li>
+	<li><code>1 &lt;= days &lt;= weights.length &lt;= 5 * 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= weights[i] &lt;= 500</code></li>
 </ul>

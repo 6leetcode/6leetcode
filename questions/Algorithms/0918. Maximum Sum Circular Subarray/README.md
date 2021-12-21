@@ -12,7 +12,7 @@
 <pre>
 <strong>Input:</strong> nums = [1,-2,3,-2]
 <strong>Output:</strong> 3
-<strong>Explanation:</strong> Subarray [3] has maximum sum 3
+<strong>Explanation:</strong> Subarray [3] has maximum sum 3.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -20,31 +20,15 @@
 <pre>
 <strong>Input:</strong> nums = [5,-3,5]
 <strong>Output:</strong> 10
-<strong>Explanation:</strong> Subarray [5,5] has maximum sum 5 + 5 = 10
+<strong>Explanation:</strong> Subarray [5,5] has maximum sum 5 + 5 = 10.
 </pre>
 
 <p><strong>Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [3,-1,2,-1]
-<strong>Output:</strong> 4
-<strong>Explanation:</strong> Subarray [2,-1,3] has maximum sum 2 + (-1) + 3 = 4
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [3,-2,2,-3]
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> Subarray [3] and [3,-2,2] both have maximum sum 3
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [-2,-3,-1]
-<strong>Output:</strong> -1
-<strong>Explanation:</strong> Subarray [-1] has maximum sum -1
+<strong>Input:</strong> nums = [-3,-2,-3]
+<strong>Output:</strong> -2
+<strong>Explanation:</strong> Subarray [-2] has maximum sum -2.
 </pre>
 
 <p>&nbsp;</p>

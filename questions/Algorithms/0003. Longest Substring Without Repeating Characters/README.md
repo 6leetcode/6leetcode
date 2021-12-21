@@ -1,6 +1,6 @@
 ### [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
 
-<p>Given a string <code>s</code>, find the length of the <b>longest substring</b> without repeating characters.</p>
+<p>Given a string <code>s</code>, find the length of the <strong>longest substring</strong> without repeating characters.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -26,13 +26,6 @@
 <strong>Output:</strong> 3
 <strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.
 Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;&quot;
-<strong>Output:</strong> 0
 </pre>
 
 <p>&nbsp;</p>

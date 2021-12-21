@@ -36,20 +36,6 @@
 <strong>Output:</strong> -1
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 3, trust = [[1,2],[2,3]]
-<strong>Output:</strong> -1
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
-<strong>Output:</strong> 3
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

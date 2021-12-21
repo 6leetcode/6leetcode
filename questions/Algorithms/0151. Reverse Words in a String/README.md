@@ -32,20 +32,6 @@
 <strong>Explanation:</strong> You need to reduce multiple spaces between two words to a single space in the reversed string.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;  Bob    Loves  Alice   &quot;
-<strong>Output:</strong> &quot;Alice Loves Bob&quot;
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;Alice does not even like bob&quot;
-<strong>Output:</strong> &quot;bob like even not does Alice&quot;
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

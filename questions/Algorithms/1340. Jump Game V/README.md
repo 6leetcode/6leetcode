@@ -40,25 +40,11 @@ Similarly You cannot jump from index 3 to index 2 or index 1.
 <strong>Explanation:</strong> Start at index 0. You can visit all the indicies. 
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> arr = [7,1,7,1,7,1], d = 2
-<strong>Output:</strong> 2
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> arr = [66], d = 1
-<strong>Output:</strong> 1
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= arr.length &lt;= 1000</code></li>
-	<li><code>1 &lt;= arr[i] &lt;= 10^5</code></li>
+	<li><code>1 &lt;= arr[i] &lt;= 10<sup>5</sup></code></li>
 	<li><code>1 &lt;= d &lt;= arr.length</code></li>
 </ul>

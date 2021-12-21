@@ -42,23 +42,6 @@ Since x = 3 is found first, the value of x is 3.
 The second (add x y) evaluates as 3+2 = 5.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> expression = &quot;(let x 2 (add (let x 3 (let x 4 x)) x))&quot;
-<strong>Output:</strong> 6
-<strong>Explanation:</strong> Even though (let x 4 x) has a deeper scope, it is outside the context
-of the final x in the add-expression.  That final x will equal 2.
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> expression = &quot;(let a1 3 b2 (add a1 1) b2)&quot;
-<strong>Output:</strong> 4
-<strong>Explanation:</strong> Variable names can contain digits after the first character.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

@@ -31,20 +31,6 @@
 <strong>Explanation:</strong> &quot;you&quot; is not a prefix of any word in the sentence.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> sentence = &quot;i use triple pillow&quot;, searchWord = &quot;pill&quot;
-<strong>Output:</strong> 4
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> sentence = &quot;hello from the other side&quot;, searchWord = &quot;they&quot;
-<strong>Output:</strong> -1
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

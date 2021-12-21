@@ -6,7 +6,7 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/09/01/node1.jpg" style="width: 450px; height: 322px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/01/node1.jpg" style="width: 300px; height: 215px;" />
 <pre>
 <strong>Input:</strong> head = [4,5,1,9], node = 5
 <strong>Output:</strong> [4,1,9]
@@ -14,32 +14,11 @@
 </pre>
 
 <p><strong>Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/09/01/node2.jpg" style="width: 450px; height: 354px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/01/node2.jpg" style="width: 300px; height: 236px;" />
 <pre>
 <strong>Input:</strong> head = [4,5,1,9], node = 1
 <strong>Output:</strong> [4,5,9]
 <strong>Explanation: </strong>You are given the third node with value 1, the linked list should become 4 -&gt; 5 -&gt; 9 after calling your function.
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> head = [1,2,3,4], node = 3
-<strong>Output:</strong> [1,2,4]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> head = [0,1], node = 0
-<strong>Output:</strong> [1]
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> head = [-3,5,-99], node = -3
-<strong>Output:</strong> [5,-99]
 </pre>
 
 <p>&nbsp;</p>

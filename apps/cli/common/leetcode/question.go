@@ -3,6 +3,7 @@ package leetcode
 import (
 	"encoding/json"
 	"fmt"
+	"math/rand"
 	"os"
 	"strconv"
 	"time"
@@ -46,6 +47,11 @@ func (i *Instance) Question(titleSlug string) (err error) {
 		Send(query).EndBytes(); len(errs) != 0 {
 		err = errs[len(errs)-1]
 		return
+	}
+
+	{
+		var n = rand.Intn(5)
+		time.Sleep(time.Second * time.Duration(n))
 	}
 
 	if response.Request.Response != nil {

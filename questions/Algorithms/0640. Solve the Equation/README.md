@@ -6,21 +6,26 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<pre><strong>Input:</strong> equation = "x+5-3+x=6+x-2"
-<strong>Output:</strong> "x=2"
-</pre><p><strong>Example 2:</strong></p>
-<pre><strong>Input:</strong> equation = "x=x"
-<strong>Output:</strong> "Infinite solutions"
-</pre><p><strong>Example 3:</strong></p>
-<pre><strong>Input:</strong> equation = "2x=x"
-<strong>Output:</strong> "x=0"
-</pre><p><strong>Example 4:</strong></p>
-<pre><strong>Input:</strong> equation = "2x+3x-6x=x+2"
-<strong>Output:</strong> "x=-1"
-</pre><p><strong>Example 5:</strong></p>
-<pre><strong>Input:</strong> equation = "x=x+2"
-<strong>Output:</strong> "No solution"
+
+<pre>
+<strong>Input:</strong> equation = &quot;x+5-3+x=6+x-2&quot;
+<strong>Output:</strong> &quot;x=2&quot;
 </pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> equation = &quot;x=x&quot;
+<strong>Output:</strong> &quot;Infinite solutions&quot;
+</pre>
+
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> equation = &quot;2x=x&quot;
+<strong>Output:</strong> &quot;x=0&quot;
+</pre>
+
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

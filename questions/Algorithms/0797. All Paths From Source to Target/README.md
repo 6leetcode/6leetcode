@@ -20,27 +20,6 @@
 <strong>Output:</strong> [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> graph = [[1],[]]
-<strong>Output:</strong> [[0,1]]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> graph = [[1,2,3],[2],[3],[]]
-<strong>Output:</strong> [[0,1,2,3],[0,2,3],[0,3]]
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> graph = [[1,3],[2],[3],[]]
-<strong>Output:</strong> [[0,1,2,3],[0,3]]
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

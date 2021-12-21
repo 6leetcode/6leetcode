@@ -22,27 +22,6 @@ There is no way to assign the variables to satisfy both equations.
 <strong>Explanation:</strong> We could assign a = 1 and b = 1 to satisfy both equations.
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> equations = [&quot;a==b&quot;,&quot;b==c&quot;,&quot;a==c&quot;]
-<strong>Output:</strong> true
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> equations = [&quot;a==b&quot;,&quot;b!=c&quot;,&quot;c==a&quot;]
-<strong>Output:</strong> false
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> equations = [&quot;c==c&quot;,&quot;b==d&quot;,&quot;x!=z&quot;]
-<strong>Output:</strong> true
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

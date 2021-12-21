@@ -1,13 +1,13 @@
 ### [Airplane Seat Assignment Probability](https://leetcode.com/problems/airplane-seat-assignment-probability)
 
-<p><code data-stringify-type="code">n</code>&nbsp;passengers board an airplane with exactly&nbsp;<code data-stringify-type="code">n</code>&nbsp;seats. The first passenger has lost the ticket and picks a seat randomly. But after that, the rest of passengers will:</p>
+<p><code>n</code> passengers board an airplane with exactly <code>n</code> seats. The first passenger has lost the ticket and picks a seat randomly. But after that, the rest of the passengers will:</p>
 
 <ul>
-	<li>Take their own seat if it is still available,&nbsp;</li>
-	<li>Pick other seats randomly when they find their seat occupied&nbsp;</li>
+	<li>Take their own seat if it is still available, and</li>
+	<li>Pick other seats randomly when they find their seat occupied</li>
 </ul>
 
-<p>What is the probability that the n-th person can get his own seat?</p>
+<p>Return <em>the probability that the </em><code>n<sup>th</sup></code><em> person gets his own seat</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -29,5 +29,5 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= n &lt;= 10^5</code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 </ul>

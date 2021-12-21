@@ -40,24 +40,6 @@ There are no other valid combinations.
 Using 4 different numbers in the range [1,9], the smallest sum we can get is 1+2+3+4 = 10 and since 10 &gt; 1, there are no valid combination.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> k = 3, n = 2
-<strong>Output:</strong> []
-<strong>Explanation:</strong> There are no valid combinations.
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> k = 9, n = 45
-<strong>Output:</strong> [[1,2,3,4,5,6,7,8,9]]
-<strong>Explanation:</strong>
-1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45
-There are no other valid combinations.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

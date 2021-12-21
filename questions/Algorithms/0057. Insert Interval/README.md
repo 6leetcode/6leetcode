@@ -19,27 +19,7 @@
 <pre>
 <strong>Input:</strong> intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
 <strong>Output:</strong> [[1,2],[3,10],[12,16]]
-<strong>Explanation:</strong> Because the new interval <code>[4,8]</code> overlaps with <code>[3,5],[6,7],[8,10]</code>.</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> intervals = [], newInterval = [5,7]
-<strong>Output:</strong> [[5,7]]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> intervals = [[1,5]], newInterval = [2,3]
-<strong>Output:</strong> [[1,5]]
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> intervals = [[1,5]], newInterval = [2,7]
-<strong>Output:</strong> [[1,7]]
+<strong>Explanation:</strong> Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 </pre>
 
 <p>&nbsp;</p>

@@ -2,10 +2,10 @@
 
 <p>在两条独立的水平线上按给定的顺序写下 <code>nums1</code> 和 <code>nums2</code> 中的整数。</p>
 
-<p>现在，可以绘制一些连接两个数字 <code>nums1[i]</code> 和 <code>nums2[j]</code> 的直线，这些直线需要同时满足满足：</p>
+<p>现在，可以绘制一些连接两个数字 <code>nums1[i]</code>&nbsp;和 <code>nums2[j]</code>&nbsp;的直线，这些直线需要同时满足满足：</p>
 
 <ul>
-	<li> <code>nums1[i] == nums2[j]</code></li>
+	<li>&nbsp;<code>nums1[i] == nums2[j]</code></li>
 	<li>且绘制的直线不与任何其他连线（非水平线）相交。</li>
 </ul>
 
@@ -13,11 +13,10 @@
 
 <p>以这种方法绘制线条，并返回可以绘制的最大连线数。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
-<strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/04/28/142.png" style="height: 72px; width: 100px;" /></strong>
-
+<img alt="" src="https://assets.leetcode.com/uploads/2019/04/26/142.png" style="width: 400px; height: 286px;" />
 <pre>
 <strong>输入：</strong>nums1 = <span id="example-input-1-1">[1,4,2]</span>, nums2 = <span id="example-input-1-2">[1,2,4]</span>
 <strong>输出：</strong><span id="example-output-1">2</span>
@@ -40,16 +39,15 @@
 <strong>输入：</strong>nums1 = <span id="example-input-3-1">[1,3,7,1,7,5]</span>, nums2 = <span id="example-input-3-2">[1,9,2,5,1]</span>
 <strong>输出：</strong><span id="example-output-3">2</span></pre>
 
-<p> </p>
+<p>&nbsp;</p>
 </div>
 </div>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= nums1.length <= 500</code></li>
-	<li><code>1 <= nums2.length <= 500</code></li>
-	<li><code><font face="monospace">1 <= nums1[i], nums2[i] <= 2000</font></code></li>
+	<li><code>1 &lt;= nums1.length, nums2.length &lt;= 500</code></li>
+	<li><code>1 &lt;= nums1[i], nums2[j] &lt;= 2000</code></li>
 </ul>
 
-<p> </p>
+<p>&nbsp;</p>

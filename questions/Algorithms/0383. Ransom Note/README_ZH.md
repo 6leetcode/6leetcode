@@ -1,10 +1,8 @@
 ### [赎金信](https://leetcode-cn.com/problems/ransom-note)
 
-<p>为了不在赎金信中暴露字迹，从杂志上搜索各个需要的字母，组成单词来表达意思。</p>
+<p>给你两个字符串：<code>ransomNote</code> 和 <code>magazine</code> ，判断 <code>ransomNote</code> 能不能由 <code>magazine</code> 里面的字符构成。</p>
 
-<p>给你一个赎金信 (<code>ransomNote</code>) 字符串和一个杂志(<code>magazine</code>)字符串，判断 <code>ransomNote</code> 能不能由 <code>magazines</code> 里面的字符构成。</p>
-
-<p>如果可以构成，返回 <code>true</code> ；否则返回 <code>false</code> 。</p>
+<p>如果可以，返回 <code>true</code> ；否则返回 <code>false</code> 。</p>
 
 <p><code>magazine</code> 中的每个字符只能在 <code>ransomNote</code> 中使用一次。</p>
 

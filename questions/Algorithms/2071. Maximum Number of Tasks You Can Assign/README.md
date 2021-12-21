@@ -41,6 +41,7 @@ We can assign the magical pills and tasks as follows:
 - Give the magical pill to worker 0 and worker 1.
 - Assign worker 0 to task 0 (0 + 10 &gt;= 10)
 - Assign worker 1 to task 1 (10 + 10 &gt;= 15)
+The last pill is not given because it will not make any worker strong enough for the last task.
 </pre>
 
 <p><strong>Example 4:</strong></p>

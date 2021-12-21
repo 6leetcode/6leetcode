@@ -31,27 +31,6 @@ Opening Only the second tap will water the whole garden [0,5]
 <strong>Explanation:</strong> Even if you activate all the four taps you cannot water the whole garden.
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 7, ranges = [1,2,1,0,2,1,0,1]
-<strong>Output:</strong> 3
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 8, ranges = [4,0,0,0,0,0,0,0,4]
-<strong>Output:</strong> 2
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 8, ranges = [4,0,0,0,4,0,0,0,4]
-<strong>Output:</strong> 1
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

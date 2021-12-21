@@ -4,38 +4,17 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/09/21/sum_tree_1.jpg" style="width: 562px; height: 322px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/21/sum_tree_1.jpg" style="width: 400px; height: 229px;" />
 <pre>
 <strong>Input:</strong> root = [5,3,6,2,4,null,7], k = 9
 <strong>Output:</strong> true
 </pre>
 
 <p><strong>Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/09/21/sum_tree_2.jpg" style="width: 562px; height: 322px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/21/sum_tree_2.jpg" style="width: 400px; height: 229px;" />
 <pre>
 <strong>Input:</strong> root = [5,3,6,2,4,null,7], k = 28
 <strong>Output:</strong> false
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [2,1,3], k = 4
-<strong>Output:</strong> true
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [2,1,3], k = 1
-<strong>Output:</strong> false
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [2,1,3], k = 3
-<strong>Output:</strong> true
 </pre>
 
 <p>&nbsp;</p>

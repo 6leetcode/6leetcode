@@ -47,24 +47,6 @@
 - [off, on, on] by pressing button 4
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 1, presses = 0
-<strong>Output:</strong> 1
-<strong>Explanation:</strong> Status can only be [on] since you cannot press any of the buttons.
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 1, presses = 2
-<strong>Output:</strong> 2
-<strong>Explanation:</strong> Status can be:
-- [off] by pressing button 1 then button 1 again
-- [on] by pressing button 1 then button 2
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

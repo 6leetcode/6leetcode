@@ -1,7 +1,7 @@
 CFiles          := $(wildcard *.c)
 CCFiles         := $(wildcard *.cc)
 RustFiles       := $(wildcard *.rs)
-GoFiles         := $(wildcard *.go)
+GolangFiles     := $(wildcard *.go)
 PythonFiles     := $(wildcard *.py)
 PHPFiles        := $(wildcard *.php)
 TypescriptFiles := $(wildcard *.ts)
@@ -50,11 +50,11 @@ $(RustFiles):
 	@$(RM) -rf `echo $@ | cut -d. -f1`.test
 	@echo
 
-.PHONY: go
-go: $(GoFiles)
+.PHONY: golang
+golang: $(GolangFiles)
 
-.PHONY: $(GoFiles)
-$(GoFiles):
+.PHONY: $(GolangFiles)
+$(GolangFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
 	@go run $@

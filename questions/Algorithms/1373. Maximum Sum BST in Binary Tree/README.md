@@ -39,20 +39,6 @@
 <strong>Explanation:</strong> All values are negatives. Return an empty BST.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [2,1,3]
-<strong>Output:</strong> 6
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [5,4,8,3,null,6,3]
-<strong>Output:</strong> 7
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

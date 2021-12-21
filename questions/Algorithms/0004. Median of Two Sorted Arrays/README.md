@@ -21,27 +21,6 @@
 <strong>Explanation:</strong> merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums1 = [0,0], nums2 = [0,0]
-<strong>Output:</strong> 0.00000
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums1 = [], nums2 = [1]
-<strong>Output:</strong> 1.00000
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums1 = [2], nums2 = []
-<strong>Output:</strong> 2.00000
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

@@ -8,27 +8,31 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>name = &quot;alex&quot;, typed = &quot;aaleex&quot;
+<pre>
+<strong>输入：</strong>name = "alex", typed = "aaleex"
 <strong>输出：</strong>true
-<strong>解释：</strong>&#39;alex&#39; 中的 &#39;a&#39; 和 &#39;e&#39; 被长按。
+<strong>解释：</strong>'alex' 中的 'a' 和 'e' 被长按。
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>name = &quot;saeed&quot;, typed = &quot;ssaaedd&quot;
+<pre>
+<strong>输入：</strong>name = "saeed", typed = "ssaaedd"
 <strong>输出：</strong>false
-<strong>解释：</strong>&#39;e&#39; 一定需要被键入两次，但在 typed 的输出中不是这样。
+<strong>解释：</strong>'e' 一定需要被键入两次，但在 typed 的输出中不是这样。
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>name = &quot;leelee&quot;, typed = &quot;lleeelee&quot;
+<pre>
+<strong>输入：</strong>name = "leelee", typed = "lleeelee"
 <strong>输出：</strong>true
 </pre>
 
 <p><strong>示例 4：</strong></p>
 
-<pre><strong>输入：</strong>name = &quot;laiden&quot;, typed = &quot;laiden&quot;
+<pre>
+<strong>输入：</strong>name = "laiden", typed = "laiden"
 <strong>输出：</strong>true
 <strong>解释：</strong>长按名字中的字符并不是必要的。
 </pre>
@@ -37,11 +41,11 @@
 
 <p><strong>提示：</strong></p>
 
-<ol>
+<ul>
 	<li><code>name.length &lt;= 1000</code></li>
 	<li><code>typed.length &lt;= 1000</code></li>
 	<li><code>name</code> 和&nbsp;<code>typed</code>&nbsp;的字符都是小写字母。</li>
-</ol>
+</ul>
 
 <p>&nbsp;</p>
 

@@ -24,24 +24,6 @@
 <p><strong>Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> num = &quot;105&quot;, target = 5
-<strong>Output:</strong> [&quot;1*0+5&quot;,&quot;10-5&quot;]
-<strong>Explanation:</strong> Both &quot;1*0+5&quot; and &quot;10-5&quot; evaluate to 5.
-Note that &quot;1-05&quot; is not a valid expression because the 5 has a leading zero.
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> num = &quot;00&quot;, target = 0
-<strong>Output:</strong> [&quot;0*0&quot;,&quot;0+0&quot;,&quot;0-0&quot;]
-<strong>Explanation:</strong> &quot;0*0&quot;, &quot;0+0&quot;, and &quot;0-0&quot; all evaluate to 0.
-Note that &quot;00&quot; is not a valid expression because the 0 has a leading zero.
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
 <strong>Input:</strong> num = &quot;3456237490&quot;, target = 9191
 <strong>Output:</strong> []
 <strong>Explanation:</strong> There are no expressions that can be created from &quot;3456237490&quot; to evaluate to 9191.

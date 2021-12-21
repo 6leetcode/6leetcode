@@ -28,27 +28,6 @@ Window position                Max
 <strong>Output:</strong> [1]
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [1,-1], k = 1
-<strong>Output:</strong> [1,-1]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [9,11], k = 2
-<strong>Output:</strong> [11]
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [4,-2], k = 2
-<strong>Output:</strong> [4]
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

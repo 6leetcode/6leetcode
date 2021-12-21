@@ -29,20 +29,6 @@
 <strong>Output:</strong> false
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> root1 = [0,null,1], root2 = []
-<strong>Output:</strong> false
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> root1 = [0,null,1], root2 = [0,1]
-<strong>Output:</strong> true
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

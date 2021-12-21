@@ -21,27 +21,6 @@
 <strong>Explanation:</strong> The substring &quot;eeeee&quot; is of length 5 with the character &#39;e&#39; only.
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;triplepillooooow&quot;
-<strong>Output:</strong> 5
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;hooraaaaaaaaaaay&quot;
-<strong>Output:</strong> 11
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;tourist&quot;
-<strong>Output:</strong> 1
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

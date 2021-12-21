@@ -18,7 +18,7 @@ jobs:
           - "bash"
           - "c"
           - "cc"
-          - "go"
+          - "golang"
           - "java"
           - "typescript"
           - "php"

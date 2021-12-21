@@ -30,23 +30,10 @@ M             1000</pre>
 <pre>
 <strong>Input:</strong> s = &quot;III&quot;
 <strong>Output:</strong> 3
+<strong>Explanation:</strong> III = 3.
 </pre>
 
 <p><strong>Example 2:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;IV&quot;
-<strong>Output:</strong> 4
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;IX&quot;
-<strong>Output:</strong> 9
-</pre>
-
-<p><strong>Example 4:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;LVIII&quot;
@@ -54,7 +41,7 @@ M             1000</pre>
 <strong>Explanation:</strong> L = 50, V= 5, III = 3.
 </pre>
 
-<p><strong>Example 5:</strong></p>
+<p><strong>Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;MCMXCIV&quot;

@@ -10,21 +10,26 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<pre><strong>Input:</strong> s = "25525511135"
-<strong>Output:</strong> ["255.255.11.135","255.255.111.35"]
-</pre><p><strong>Example 2:</strong></p>
-<pre><strong>Input:</strong> s = "0000"
-<strong>Output:</strong> ["0.0.0.0"]
-</pre><p><strong>Example 3:</strong></p>
-<pre><strong>Input:</strong> s = "1111"
-<strong>Output:</strong> ["1.1.1.1"]
-</pre><p><strong>Example 4:</strong></p>
-<pre><strong>Input:</strong> s = "010010"
-<strong>Output:</strong> ["0.10.0.10","0.100.1.0"]
-</pre><p><strong>Example 5:</strong></p>
-<pre><strong>Input:</strong> s = "101023"
-<strong>Output:</strong> ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
+
+<pre>
+<strong>Input:</strong> s = &quot;25525511135&quot;
+<strong>Output:</strong> [&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]
 </pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;0000&quot;
+<strong>Output:</strong> [&quot;0.0.0.0&quot;]
+</pre>
+
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;101023&quot;
+<strong>Output:</strong> [&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]
+</pre>
+
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

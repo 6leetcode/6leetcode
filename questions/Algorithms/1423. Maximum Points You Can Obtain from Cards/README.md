@@ -33,21 +33,6 @@
 <strong>Explanation:</strong> You have to take all the cards. Your score is the sum of points of all cards.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> cardPoints = [1,1000,1], k = 1
-<strong>Output:</strong> 1
-<strong>Explanation:</strong> You cannot take the card in the middle. Your best score is 1. 
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> cardPoints = [1,79,80,1,1,1,200,1], k = 3
-<strong>Output:</strong> 202
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

@@ -37,20 +37,6 @@ Although we have two 1s in the input, we should only return the number of <stron
 <strong>Explanation:</strong> There is one 0-diff pair in the array, (1, 1).
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [1,2,4,4,3,3,0,9,2,3], k = 3
-<strong>Output:</strong> 2
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [-1,-2,-3], k = 1
-<strong>Output:</strong> 2
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

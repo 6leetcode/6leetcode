@@ -29,20 +29,6 @@
 <strong>Output:</strong> 0
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> coins = [1], amount = 1
-<strong>Output:</strong> 1
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> coins = [1], amount = 2
-<strong>Output:</strong> 2
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

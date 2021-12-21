@@ -8,30 +8,10 @@
 <pre>
 <strong>Input:</strong> nums = [3,10,5,25,2,8]
 <strong>Output:</strong> 28
-<strong>Explanation:</strong> The maximum result is 5 XOR 25 = 28.</pre>
+<strong>Explanation:</strong> The maximum result is 5 XOR 25 = 28.
+</pre>
 
 <p><strong>Example 2:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [0]
-<strong>Output:</strong> 0
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [2,4]
-<strong>Output:</strong> 6
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [8,10,2]
-<strong>Output:</strong> 10
-</pre>
-
-<p><strong>Example 5:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [14,70,53,83,49,91,36,80,92,51,66,70]

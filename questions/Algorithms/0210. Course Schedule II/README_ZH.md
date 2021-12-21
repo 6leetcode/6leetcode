@@ -42,17 +42,5 @@
 	<li><code>prerequisites[i].length == 2</code></li>
 	<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub> &lt; numCourses</code></li>
 	<li><code>a<sub>i</sub> != b<sub>i</sub></code></li>
-	<li>所有<code>[a<sub>i</sub>, b<sub>i</sub>]</code> 匹配 <strong>互不相同</strong></li>
-</ul>
-
-<p>&nbsp;</p>
-
-<p><strong>拓展：</strong></p>
-
-<ul>
-	<li>这个问题相当于查找一个循环是否存在于有向图中。如果存在循环，则不存在拓扑排序，因此不可能选取所有课程进行学习。</li>
-	<li><a href="https://www.coursera.org/specializations/algorithms" target="_blank">通过 DFS 进行拓扑排序</a> - 一个关于Coursera的精彩视频教程（21分钟），介绍拓扑排序的基本概念。</li>
-	<li>
-	<p>拓扑排序也可以通过&nbsp;<a href="https://baike.baidu.com/item/%E5%AE%BD%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2/5224802?fr=aladdin&amp;fromid=2148012&amp;fromtitle=%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2" target="_blank">BFS</a>&nbsp;完成。</p>
-	</li>
+	<li>所有<code>[a<sub>i</sub>, b<sub>i</sub>]</code> <strong>互不相同</strong></li>
 </ul>

@@ -39,20 +39,6 @@
 <strong>Explanation:</strong> This is neither a IPv4 address nor a IPv6 address.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> queryIP = &quot;2001:0db8:85a3:0:0:8A2E:0370:7334:&quot;
-<strong>Output:</strong> &quot;Neither&quot;
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> queryIP = &quot;1e1.4.5.6&quot;
-<strong>Output:</strong> &quot;Neither&quot;
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

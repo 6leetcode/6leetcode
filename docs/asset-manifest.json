@@ -1,24 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7915af9.chunk.css",
-    "main.js": "/static/js/main.ff894765.chunk.js",
-    "main.js.map": "/static/js/main.ff894765.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6f7a5c32.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6f7a5c32.js.map",
-    "static/css/2.195d3b94.chunk.css": "/static/css/2.195d3b94.chunk.css",
-    "static/js/2.7741268a.chunk.js": "/static/js/2.7741268a.chunk.js",
-    "static/js/2.7741268a.chunk.js.map": "/static/js/2.7741268a.chunk.js.map",
+    "main.css": "/static/css/main.e4297c33.css",
+    "main.js": "/static/js/main.3ce0dfea.js",
+    "static/media/leetcode.png": "/static/media/leetcode.ad6bd81538ac11bfecc2.png",
     "index.html": "/index.html",
-    "static/css/2.195d3b94.chunk.css.map": "/static/css/2.195d3b94.chunk.css.map",
-    "static/css/main.d7915af9.chunk.css.map": "/static/css/main.d7915af9.chunk.css.map",
-    "static/js/2.7741268a.chunk.js.LICENSE.txt": "/static/js/2.7741268a.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/leetcode.ad6bd815.png"
+    "main.e4297c33.css.map": "/static/css/main.e4297c33.css.map",
+    "main.3ce0dfea.js.map": "/static/js/main.3ce0dfea.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f7a5c32.js",
-    "static/css/2.195d3b94.chunk.css",
-    "static/js/2.7741268a.chunk.js",
-    "static/css/main.d7915af9.chunk.css",
-    "static/js/main.ff894765.chunk.js"
+    "static/css/main.e4297c33.css",
+    "static/js/main.3ce0dfea.js"
   ]
 }

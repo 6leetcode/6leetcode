@@ -6,7 +6,7 @@
 	<li><code>answer[i] == "FizzBuzz"</code> 如果 <code>i</code> 同时是 <code>3</code> 和 <code>5</code> 的倍数。</li>
 	<li><code>answer[i] == "Fizz"</code> 如果 <code>i</code> 是 <code>3</code> 的倍数。</li>
 	<li><code>answer[i] == "Buzz"</code> 如果 <code>i</code> 是 <code>5</code> 的倍数。</li>
-	<li><code>answer[i] == i</code> 如果上述条件全不满足。</li>
+	<li><code>answer[i] == i</code> （以字符串形式）如果上述条件全不满足。</li>
 </ul>
 
 <p>&nbsp;</p>

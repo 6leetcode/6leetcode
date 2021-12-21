@@ -3,10 +3,8 @@
 <p>Given the <code>root</code> of a binary tree, return <em>an array of the largest value in each row</em> of the tree <strong>(0-indexed)</strong>.</p>
 
 <p>&nbsp;</p>
-
-<p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/08/21/largest_e1.jpg" style="width: 450px; height: 258px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/08/21/largest_e1.jpg" style="width: 300px; height: 172px;" />
 <pre>
 <strong>Input:</strong> root = [1,3,2,5,3,null,9]
 <strong>Output:</strong> [1,3,9]
@@ -17,27 +15,6 @@
 <pre>
 <strong>Input:</strong> root = [1,2,3]
 <strong>Output:</strong> [1,3]
-</pre>
-
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [1]
-<strong>Output:</strong> [1]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [1,null,2]
-<strong>Output:</strong> [1,2]
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = []
-<strong>Output:</strong> []
 </pre>
 
 <p>&nbsp;</p>
