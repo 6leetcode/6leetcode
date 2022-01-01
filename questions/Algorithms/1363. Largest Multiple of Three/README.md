@@ -26,13 +26,6 @@
 <strong>Output:</strong> &quot;&quot;
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> digits = [0,0,0,0,0,0]
-<strong>Output:</strong> &quot;0&quot;
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

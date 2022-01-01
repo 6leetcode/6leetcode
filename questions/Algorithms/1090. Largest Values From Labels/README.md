@@ -38,14 +38,6 @@
 <strong>Explanation:</strong> The subset chosen is the first and fourth items.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> values = [9,8,8,7,6], labels = [0,0,0,1,1], numWanted = 3, useLimit = 2
-<strong>Output:</strong> 24
-<strong>Explanation:</strong> The subset chosen is the first, second, and fourth items.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

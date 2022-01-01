@@ -27,24 +27,10 @@ Only the first number is divisible by 5, so answer[0] is true.
 <strong>Output:</strong> [false,false,false]
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [0,1,1,1,1,1]
-<strong>Output:</strong> [true,false,false,false,true,false]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [1,1,1,0,1]
-<strong>Output:</strong> [false,false,false,false,false]
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>nums[i]</code>&nbsp;is&nbsp;<code>0</code>&nbsp;or&nbsp;<code>1</code>.</li>
+	<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>
 </ul>

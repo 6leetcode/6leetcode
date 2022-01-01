@@ -28,13 +28,6 @@
 <strong>Output:</strong> [2,3]
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> aliceSizes = [1,2,5], bobSizes = [2,4]
-<strong>Output:</strong> [5,4]
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

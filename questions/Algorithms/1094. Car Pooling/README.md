@@ -21,20 +21,6 @@
 <strong>Output:</strong> true
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> trips = [[2,1,5],[3,5,7]], capacity = 3
-<strong>Output:</strong> true
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> trips = [[3,2,7],[3,7,9],[8,3,9]], capacity = 11
-<strong>Output:</strong> true
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

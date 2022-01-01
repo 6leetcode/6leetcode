@@ -25,20 +25,6 @@
 <strong>Explanation</strong>: The robot moves left twice. It ends up two &quot;moves&quot; to the left of the origin. We return false because it is not at the origin at the end of its moves.
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> moves = &quot;RRDD&quot;
-<strong>Output:</strong> false
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> moves = &quot;LDRRLRUULR&quot;
-<strong>Output:</strong> false
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

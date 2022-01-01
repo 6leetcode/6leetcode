@@ -1921,6 +1921,10 @@ LeetCode Solutions.
 |[2095](https://leetcode-cn.com/problems/delete-the-middle-node-of-a-linked-list)|Medium|||||||||||
 |[2096](https://leetcode-cn.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another)|Medium|||||||||||
 |[2077](https://leetcode-cn.com/problems/paths-in-maze-that-lead-to-same-room)|Medium|||||||||||
+|[2114](https://leetcode-cn.com/problems/maximum-number-of-words-found-in-sentences)|Easy|||||||||||
+|[2115](https://leetcode-cn.com/problems/find-all-possible-recipes-from-given-supplies)|Medium|||||||||||
+|[2116](https://leetcode-cn.com/problems/check-if-a-parentheses-string-can-be-valid)|Medium|||||||||||
+|[2117](https://leetcode-cn.com/problems/abbreviating-the-product-of-a-range)|Hard|||||||||||
 |[2083](https://leetcode-cn.com/problems/substrings-that-begin-and-end-with-the-same-letter)|Medium|||||||||||
 |[2103](https://leetcode-cn.com/problems/rings-and-rods)|Easy|||||||||||
 |[2104](https://leetcode-cn.com/problems/sum-of-subarray-ranges)|Medium|||||||||||
@@ -1931,8 +1935,14 @@ LeetCode Solutions.
 |[2109](https://leetcode-cn.com/problems/adding-spaces-to-a-string)|Medium|||||||||||
 |[2110](https://leetcode-cn.com/problems/number-of-smooth-descent-periods-of-a-stock)|Medium|||||||||||
 |[2111](https://leetcode-cn.com/problems/minimum-operations-to-make-the-array-k-increasing)|Hard|||||||||||
+|[2119](https://leetcode-cn.com/problems/a-number-after-a-double-reversal)|Easy|||||||||||
+|[2120](https://leetcode-cn.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid)|Medium|||||||||||
+|[2121](https://leetcode-cn.com/problems/intervals-between-identical-elements)|Medium|||||||||||
+|[2122](https://leetcode-cn.com/problems/recover-the-original-array)|Hard|||||||||||
 |[2098](https://leetcode-cn.com/problems/subsequence-of-size-k-with-the-largest-even-sum)|Medium|||||||||||
 |[2107](https://leetcode-cn.com/problems/number-of-unique-flavors-after-sharing-k-candies)|Medium|||||||||||
+|[2113](https://leetcode-cn.com/problems/elements-in-array-after-removing-and-replacing-elements)|Medium|||||||||||
+|[2123](https://leetcode-cn.com/problems/minimum-operations-to-remove-adjacent-ones-in-matrix)|Hard|||||||||||
 |[LCP 02](https://leetcode-cn.com/problems/deep-dark-fraction)|Easy|||||||||||
 |[LCP 04](https://leetcode-cn.com/problems/broken-board-dominoes)|Hard|||||||||||
 |[LCP 05](https://leetcode-cn.com/problems/coin-bonus)|Hard|||||||||||
@@ -2183,6 +2193,7 @@ LeetCode Solutions.
 |[2082](https://leetcode-cn.com/problems/the-number-of-rich-customers)|Easy|||||||||||
 |[2084](https://leetcode-cn.com/problems/drop-type-1-orders-for-customers-with-type-0-orders)|Medium|||||||||||
 |[2112](https://leetcode-cn.com/problems/the-airport-with-the-most-traffic)|Medium|||||||||||
+|[2118](https://leetcode-cn.com/problems/build-the-equation)|Hard|||||||||||
 
 </details>
 

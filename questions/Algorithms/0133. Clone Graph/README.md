@@ -25,7 +25,7 @@ class Node {
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2019/11/04/133_clone_graph_question.png" style="width: 500px; height: 550px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2019/11/04/133_clone_graph_question.png" style="width: 454px; height: 500px;" />
 <pre>
 <strong>Input:</strong> adjList = [[2,4],[1,3],[2,4],[1,3]]
 <strong>Output:</strong> [[2,4],[1,3],[2,4],[1,3]]
@@ -50,13 +50,6 @@ class Node {
 <strong>Input:</strong> adjList = []
 <strong>Output:</strong> []
 <strong>Explanation:</strong> This an empty graph, it does not have any nodes.
-</pre>
-
-<p><strong>Example 4:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/01/07/graph-1.png" style="width: 272px; height: 133px;" />
-<pre>
-<strong>Input:</strong> adjList = [[2],[1]]
-<strong>Output:</strong> [[2],[1]]
 </pre>
 
 <p>&nbsp;</p>

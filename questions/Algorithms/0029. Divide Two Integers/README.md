@@ -25,20 +25,6 @@
 <strong>Explanation:</strong> 7/-3 = -2.33333.. which is truncated to -2.
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> dividend = 0, divisor = 1
-<strong>Output:</strong> 0
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> dividend = 1, divisor = 1
-<strong>Output:</strong> 1
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

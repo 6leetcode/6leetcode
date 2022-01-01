@@ -1,6 +1,6 @@
 ### [Number of Atoms](https://leetcode.com/problems/number-of-atoms)
 
-<p>Given a string <code>formula</code> representing a chemical formula,&nbsp;return <em>the count of each atom</em>.</p>
+<p>Given a string <code>formula</code> representing a chemical formula, return <em>the count of each atom</em>.</p>
 
 <p>The atomic element always starts with an uppercase character, then zero or more lowercase letters, representing the name.</p>
 
@@ -23,6 +23,8 @@
 </ul>
 
 <p>Return the count of all elements as a string in the following form: the first name (in sorted order), followed by its count (if that count is more than <code>1</code>), followed by the second name (in sorted order), followed by its count (if that count is more than <code>1</code>), and so on.</p>
+
+<p>The test cases are generated so that all the values in the output fit in a <strong>32-bit</strong> integer.</p>
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
@@ -49,19 +51,11 @@
 <strong>Explanation:</strong> The count of elements are {&#39;K&#39;: 4, &#39;N&#39;: 2, &#39;O&#39;: 14, &#39;S&#39;: 4}.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> formula = &quot;Be32&quot;
-<strong>Output:</strong> &quot;Be32&quot;
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= formula.length&nbsp;&lt;= 1000</code></li>
+	<li><code>1 &lt;= formula.length &lt;= 1000</code></li>
 	<li><code>formula</code> consists of English letters, digits, <code>&#39;(&#39;</code>, and <code>&#39;)&#39;</code>.</li>
 	<li><code>formula</code> is always valid.</li>
-	<li>All the values in the output will fit in a 32-bit integer.</li>
 </ul>

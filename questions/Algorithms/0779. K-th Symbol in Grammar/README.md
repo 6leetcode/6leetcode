@@ -22,7 +22,7 @@
 <pre>
 <strong>Input:</strong> n = 2, k = 1
 <strong>Output:</strong> 0
-<strong>Explanation:</strong>
+<strong>Explanation:</strong> 
 row 1: 0
 row 2: <u>0</u>1
 </pre>
@@ -32,20 +32,9 @@ row 2: <u>0</u>1
 <pre>
 <strong>Input:</strong> n = 2, k = 2
 <strong>Output:</strong> 1
-<strong>Explanation:</strong>
+<strong>Explanation:</strong> 
 row 1: 0
 row 2: 0<u>1</u>
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 3, k = 1
-<strong>Output:</strong> 0
-<strong>Explanation:</strong>
-row 1: 0
-row 2: 01
-row 3: <u>0</u>110
 </pre>
 
 <p>&nbsp;</p>

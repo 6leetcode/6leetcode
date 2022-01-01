@@ -2,7 +2,7 @@
 
 <p>给你一个字符串 <code>s</code> ，考虑其所有 <strong>重复子串</strong> ：即，<code>s</code> 的连续子串，在 <code>s</code> 中出现 2 次或更多次。这些出现之间可能存在重叠。</p>
 
-<p>返回 <strong>任意一个</strong> 可能具有最长长度的重复子串。如果 <code>s</code> 不含重复子串，那么答案为 <code>""</code> 。</p>
+<p>返回 <strong>任意一个</strong> 具有最长长度的重复子串。如果 <code>s</code> 不含重复子串，那么答案为 <code>""</code> 。</p>
 
 <p>&nbsp;</p>
 

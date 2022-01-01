@@ -38,13 +38,6 @@ After move 4: [[1,2,0],[4,5,3]]
 After move 5: [[1,2,3],[4,5,0]]
 </pre>
 
-<p><strong>Example 4:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/06/29/slide4-grid.jpg" style="width: 244px; height: 165px;" />
-<pre>
-<strong>Input:</strong> board = [[3,2,4],[1,5,0]]
-<strong>Output:</strong> 14
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

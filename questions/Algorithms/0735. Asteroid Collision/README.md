@@ -12,7 +12,7 @@
 <pre>
 <strong>Input:</strong> asteroids = [5,10,-5]
 <strong>Output:</strong> [5,10]
-<b>Explanation:</b> The 10 and -5 collide resulting in 10. The 5 and 10 never collide.
+<strong>Explanation:</strong> The 10 and -5 collide resulting in 10. The 5 and 10 never collide.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -20,7 +20,7 @@
 <pre>
 <strong>Input:</strong> asteroids = [8,-8]
 <strong>Output:</strong> []
-<b>Explanation:</b> The 8 and -8 collide exploding each other.
+<strong>Explanation:</strong> The 8 and -8 collide exploding each other.
 </pre>
 
 <p><strong>Example 3:</strong></p>
@@ -28,15 +28,7 @@
 <pre>
 <strong>Input:</strong> asteroids = [10,2,-5]
 <strong>Output:</strong> [10]
-<b>Explanation:</b> The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> asteroids = [-2,-1,1,2]
-<strong>Output:</strong> [-2,-1,1,2]
-<b>Explanation:</b> The -2 and -1 are moving left, while the 1 and 2 are moving right. Asteroids moving the same direction never meet, so no asteroids will meet each other.
+<strong>Explanation:</strong> The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
 </pre>
 
 <p>&nbsp;</p>

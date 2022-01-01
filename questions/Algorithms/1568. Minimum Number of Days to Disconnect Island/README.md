@@ -1,6 +1,6 @@
 ### [Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island)
 
-<p>You are given an <code>m x n</code> binary grid <code>grid</code> consisting where <code>1</code> represents land and <code>0</code> represents water. An <strong>island</strong> is a maximal <strong>4-directionally</strong> (horizontal or vertical) connected group of <code>1</code>&#39;s.</p>
+<p>You are given an <code>m x n</code> binary grid <code>grid</code> where <code>1</code> represents land and <code>0</code> represents water. An <strong>island</strong> is a maximal <strong>4-directionally</strong> (horizontal or vertical) connected group of <code>1</code>&#39;s.</p>
 
 <p>The grid is said to be <strong>connected</strong> if we have <strong>exactly one island</strong>, otherwise is said <strong>disconnected</strong>.</p>
 
@@ -10,16 +10,17 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/08/13/1926_island.png" style="width: 498px; height: 139px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2021/12/24/land1.jpg" style="width: 500px; height: 169px;" />
 <pre>
 <strong>Input:</strong> grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]
+
 <strong>Output:</strong> 2
 <strong>Explanation:</strong> We need at least 2 days to get a disconnected grid.
 Change land grid[1][1] and grid[0][2] to water and get 2 disconnected island.
 </pre>
 
 <p><strong>Example 2:</strong></p>
-
+<img alt="" src="https://assets.leetcode.com/uploads/2021/12/24/land2.jpg" style="width: 404px; height: 85px;" />
 <pre>
 <strong>Input:</strong> grid = [[1,1]]
 <strong>Output:</strong> 2

@@ -21,7 +21,7 @@
 <pre>
 <strong>Input:</strong> board = [&quot;O  &quot;,&quot;   &quot;,&quot;   &quot;]
 <strong>Output:</strong> false
-Explanation: The first player always plays &quot;X&quot;.
+<strong>Explanation:</strong> The first player always plays &quot;X&quot;.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -29,17 +29,10 @@ Explanation: The first player always plays &quot;X&quot;.
 <pre>
 <strong>Input:</strong> board = [&quot;XOX&quot;,&quot; X &quot;,&quot;   &quot;]
 <strong>Output:</strong> false
-Explanation: Players take turns making moves.
+<strong>Explanation:</strong> Players take turns making moves.
 </pre>
 
 <p><strong>Example 3:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/05/15/tictactoe3-grid.jpg" style="width: 253px; height: 253px;" />
-<pre>
-<strong>Input:</strong> board = [&quot;XXX&quot;,&quot;   &quot;,&quot;OOO&quot;]
-<strong>Output:</strong> false
-</pre>
-
-<p><strong>Example 4:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/05/15/tictactoe4-grid.jpg" style="width: 253px; height: 253px;" />
 <pre>
 <strong>Input:</strong> board = [&quot;XOX&quot;,&quot;O O&quot;,&quot;XOX&quot;]

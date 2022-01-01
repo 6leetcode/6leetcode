@@ -1,8 +1,8 @@
 ### [单词拆分](https://leetcode-cn.com/problems/word-break)
 
-<p>给你一个字符串 <code>s</code> 和一个字符串列表 <code>wordDict</code> 作为字典，判定&nbsp;<code>s</code> 是否可以由空格拆分为一个或多个在字典中出现的单词。</p>
+<p>给你一个字符串 <code>s</code> 和一个字符串列表 <code>wordDict</code> 作为字典。请你判断是否可以利用字典中出现的单词拼接出 <code>s</code> 。</p>
 
-<p><strong>说明：</strong>拆分时可以重复使用字典中的单词。</p>
+<p><strong>注意：</strong>不要求字典中出现的单词全部都使用，并且字典中的单词可以重复使用。</p>
 
 <p>&nbsp;</p>
 
@@ -11,7 +11,7 @@
 <pre>
 <strong>输入:</strong> s = "leetcode", wordDict = ["leet", "code"]
 <strong>输出:</strong> true
-<strong>解释:</strong> 返回 true 因为 "leetcode" 可以被拆分成 "leet code"。
+<strong>解释:</strong> 返回 true 因为 "leetcode" 可以由 "leet" 和 "code" 拼接成。
 </pre>
 
 <p><strong>示例 2：</strong></p>
@@ -19,8 +19,8 @@
 <pre>
 <strong>输入:</strong> s = "applepenapple", wordDict = ["apple", "pen"]
 <strong>输出:</strong> true
-<strong>解释:</strong> 返回 true 因为 <code>"</code>applepenapple<code>"</code> 可以被拆分成 <code>"</code>apple pen apple<code>"</code>。
-&nbsp;    注意你可以重复使用字典中的单词。
+<strong>解释:</strong> 返回 true 因为 <code>"</code>applepenapple<code>"</code> 可以由 <code>"</code>apple" "pen" "apple<code>" 拼接成</code>。
+&nbsp;    注意，你可以重复使用字典中的单词。
 </pre>
 
 <p><strong>示例 3：</strong></p>
