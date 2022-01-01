@@ -10,7 +10,7 @@
 <pre>
 <strong>Input:</strong> matrix = [[3,7,8],[9,11,13],[15,16,17]]
 <strong>Output:</strong> [15]
-<strong>Explanation:</strong> 15 is the only lucky number since it is the minimum in its row and the maximum in its column
+<strong>Explanation:</strong> 15 is the only lucky number since it is the minimum in its row and the maximum in its column.
 </pre>
 
 <p><strong>Example 2:</strong></p>
@@ -27,14 +27,6 @@
 <strong>Input:</strong> matrix = [[7,8],[1,2]]
 <strong>Output:</strong> [7]
 <strong>Explanation:</strong> 7 is the only lucky number since it is the minimum in its row and the maximum in its column.
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> matrix = [[3,6],[7,1],[5,2],[4,8]]
-<strong>Output:</strong> []
-<strong>Explanation:</strong> There is no lucky number.
 </pre>
 
 <p>&nbsp;</p>

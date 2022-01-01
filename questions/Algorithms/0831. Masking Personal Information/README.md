@@ -75,31 +75,21 @@ There are 10 digits, so the local number is 10 digits and the country code is 0 
 Thus, the resulting masked number is &quot;***-***-7890&quot;.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;86-(10)12345678&quot;
-<strong>Output:</strong> &quot;+**-***-***-5678&quot;
-<strong>Explanation:</strong> s is a phone number.
-There are 12 digits, so the local number is 10 digits and the country code is 2 digits.
-Thus, the resulting masked number is &quot;+**-***-***-7890&quot;.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>s</code> is either a <strong>valid</strong>&nbsp;email or a phone number.</li>
+	<li><code>s</code> is either a <strong>valid</strong> email or a phone number.</li>
 	<li>If <code>s</code> is an email:
 	<ul>
 		<li><code>8 &lt;= s.length &lt;= 40</code></li>
-		<li><code>s</code>&nbsp;consists of uppercase and lowercase English letters and exactly one <code>&#39;@&#39;</code>&nbsp;symbol and&nbsp;<code>&#39;.&#39;</code>&nbsp;symbol.</li>
+		<li><code>s</code> consists of uppercase and lowercase English letters and exactly one <code>&#39;@&#39;</code> symbol and <code>&#39;.&#39;</code> symbol.</li>
 	</ul>
 	</li>
 	<li>If <code>s</code> is a phone number:
 	<ul>
 		<li><code>10 &lt;= s.length &lt;= 20</code></li>
-		<li><code>s</code>&nbsp;consists of digits, spaces, and the symbols&nbsp;<code>&#39;(&#39;</code>,&nbsp;<code>&#39;)&#39;</code>,&nbsp;<code>&#39;-&#39;</code>, and&nbsp;<code>&#39;+&#39;</code>.</li>
+		<li><code>s</code> consists of digits, spaces, and the symbols <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;-&#39;</code>, and <code>&#39;+&#39;</code>.</li>
 	</ul>
 	</li>
 </ul>

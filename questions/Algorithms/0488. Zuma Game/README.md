@@ -52,18 +52,6 @@ There are still balls remaining on the board, and you are out of balls to insert
 2 balls from your hand were needed to clear the board.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> board = &quot;RBYYBBRRB&quot;, hand = &quot;YRBGB&quot;
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> To make the board empty:
-- Insert &#39;Y&#39; so the board becomes RBYY<u>Y</u>BBRRB. RB<u>YYY</u>BBRRB -&gt; R<u>BBB</u>RRB -&gt; <u>RRR</u>B -&gt; B.
-- Insert &#39;B&#39; so the board becomes B<u>B</u>.
-- Insert &#39;B&#39; so the board becomes BB<u>B</u>. <u>BBB</u> -&gt; empty.
-3 balls from your hand were needed to clear the board.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

@@ -12,15 +12,16 @@
 <pre>
 <strong>Input:</strong> arr = [1,2,3,10,4,2,3,5]
 <strong>Output:</strong> 3
-<strong>Explanation: </strong>The shortest subarray we can remove is [10,4,2] of length 3. The remaining elements after that will be [1,2,3,3,5] which are sorted.
-Another correct solution is to remove the subarray [3,10,4].</pre>
+<strong>Explanation:</strong> The shortest subarray we can remove is [10,4,2] of length 3. The remaining elements after that will be [1,2,3,3,5] which are sorted.
+Another correct solution is to remove the subarray [3,10,4].
+</pre>
 
 <p><strong>Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> arr = [5,4,3,2,1]
 <strong>Output:</strong> 4
-<strong>Explanation: </strong>Since the array is strictly decreasing, we can only keep a single element. Therefore we need to remove a subarray of length 4, either [5,4,3,2] or [4,3,2,1].
+<strong>Explanation:</strong> Since the array is strictly decreasing, we can only keep a single element. Therefore we need to remove a subarray of length 4, either [5,4,3,2] or [4,3,2,1].
 </pre>
 
 <p><strong>Example 3:</strong></p>
@@ -28,14 +29,7 @@ Another correct solution is to remove the subarray [3,10,4].</pre>
 <pre>
 <strong>Input:</strong> arr = [1,2,3]
 <strong>Output:</strong> 0
-<strong>Explanation: </strong>The array is already non-decreasing. We do not need to remove any elements.
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> arr = [1]
-<strong>Output:</strong> 0
+<strong>Explanation:</strong> The array is already non-decreasing. We do not need to remove any elements.
 </pre>
 
 <p>&nbsp;</p>

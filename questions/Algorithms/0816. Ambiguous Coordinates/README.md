@@ -35,14 +35,6 @@
 <strong>Output:</strong> [&quot;(0, 0.011)&quot;,&quot;(0.001, 1)&quot;]
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> s = &quot;(100)&quot;
-<strong>Output:</strong> [&quot;(10, 0)&quot;]
-<strong>Explanation:</strong> 1.0 is not allowed.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

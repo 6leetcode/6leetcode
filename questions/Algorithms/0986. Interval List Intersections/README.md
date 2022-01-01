@@ -23,20 +23,6 @@
 <strong>Output:</strong> []
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> firstList = [], secondList = [[4,8],[10,12]]
-<strong>Output:</strong> []
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> firstList = [[1,7]], secondList = [[3,10]]
-<strong>Output:</strong> [[3,7]]
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

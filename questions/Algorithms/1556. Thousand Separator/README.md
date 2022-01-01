@@ -17,23 +17,9 @@
 <strong>Output:</strong> &quot;1.234&quot;
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 123456789
-<strong>Output:</strong> &quot;123.456.789&quot;
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> n = 0
-<strong>Output:</strong> &quot;0&quot;
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>0 &lt;= n &lt; 2<sup>31</sup></code></li>
+	<li><code>0 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>

@@ -34,14 +34,6 @@
 <strong>Explanation:</strong> Use double, decrement and double {3 -&gt; 6 -&gt; 5 -&gt; 10}.
 </pre>
 
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> startValue = 1024, target = 1
-<strong>Output:</strong> 1023
-<strong>Explanation:</strong> Use decrement operations 1023 times.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

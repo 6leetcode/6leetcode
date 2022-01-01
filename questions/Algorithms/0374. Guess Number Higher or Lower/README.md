@@ -18,18 +18,26 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<pre><strong>Input:</strong> n = 10, pick = 6
+
+<pre>
+<strong>Input:</strong> n = 10, pick = 6
 <strong>Output:</strong> 6
-</pre><p><strong>Example 2:</strong></p>
-<pre><strong>Input:</strong> n = 1, pick = 1
-<strong>Output:</strong> 1
-</pre><p><strong>Example 3:</strong></p>
-<pre><strong>Input:</strong> n = 2, pick = 1
-<strong>Output:</strong> 1
-</pre><p><strong>Example 4:</strong></p>
-<pre><strong>Input:</strong> n = 2, pick = 2
-<strong>Output:</strong> 2
 </pre>
+
+<p><strong>Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 1, pick = 1
+<strong>Output:</strong> 1
+</pre>
+
+<p><strong>Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 2, pick = 1
+<strong>Output:</strong> 1
+</pre>
+
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 

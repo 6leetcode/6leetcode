@@ -12,7 +12,7 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2019/05/02/tree.png" style="width: 550px; height: 375px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2019/05/02/tree.png" style="width: 400px; height: 273px;" />
 <pre>
 <strong>Input:</strong> root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
 <strong>Output:</strong> [30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]
@@ -25,20 +25,6 @@
 <strong>Output:</strong> [1,null,1]
 </pre>
 
-<p><strong>Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [1,0,2]
-<strong>Output:</strong> [3,3,2]
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
-<strong>Input:</strong> root = [3,2,4,1]
-<strong>Output:</strong> [7,9,4,10]
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
@@ -46,7 +32,6 @@
 	<li>The number of nodes in the tree is in the range <code>[1, 100]</code>.</li>
 	<li><code>0 &lt;= Node.val &lt;= 100</code></li>
 	<li>All the values in the tree are <strong>unique</strong>.</li>
-	<li><code>root</code> is guaranteed to be a valid binary search tree.</li>
 </ul>
 
 <p>&nbsp;</p>

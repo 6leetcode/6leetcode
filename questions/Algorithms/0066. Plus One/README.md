@@ -28,16 +28,6 @@ Thus, the result should be [4,3,2,2].
 <p><strong>Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> digits = [0]
-<strong>Output:</strong> [1]
-<strong>Explanation:</strong> The array represents the integer 0.
-Incrementing by one gives 0 + 1 = 1.
-Thus, the result should be [1].
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre>
 <strong>Input:</strong> digits = [9]
 <strong>Output:</strong> [1,0]
 <strong>Explanation:</strong> The array represents the integer 9.
