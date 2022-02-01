@@ -8,7 +8,7 @@
 <pre>
 <strong>Input:</strong> nums = [4,3,2,3,5,2,1], k = 4
 <strong>Output:</strong> true
-<strong>Explanation:</strong> It&#39;s possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3) with equal sums.
+<strong>Explanation:</strong> It is possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3) with equal sums.
 </pre>
 
 <p><strong>Example 2:</strong></p>

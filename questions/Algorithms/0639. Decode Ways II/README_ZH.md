@@ -1,13 +1,12 @@
 ### [解码方法 II](https://leetcode-cn.com/problems/decode-ways-ii)
 
-<p>一条包含字母&nbsp;<code>A-Z</code> 的消息通过以下的方式进行了编码：</p>
+<p>一条包含字母&nbsp;<code>A-Z</code> 的消息通过以下的方式进行了 <strong>编码</strong> ：</p>
 
 <pre>
-'A' -&gt; 1
-'B' -&gt; 2
+'A' -&gt; "1"
+'B' -&gt; "2"
 ...
-'Z' -&gt; 26
-</pre>
+'Z' -&gt; "26"</pre>
 
 <p>要 <strong>解码</strong> 一条已编码的消息，所有的数字都必须分组，然后按原来的编码方案反向映射回字母（可能存在多种方式）。例如，<code>"11106"</code> 可以映射为：</p>
 
@@ -22,7 +21,7 @@
 
 <p>给你一个字符串 <code>s</code> ，由数字和 <code>'*'</code> 字符组成，返回 <strong>解码</strong> 该字符串的方法 <strong>数目</strong> 。</p>
 
-<p>由于答案数目可能非常大，返回对 <code>10<sup>9</sup> + 7</code> <strong>取余</strong> 的结果。</p>
+<p>由于答案数目可能非常大，返回&nbsp;<code>10<sup>9</sup> + 7</code>&nbsp;的&nbsp;<b>模</b>&nbsp;。</p>
 
 <p>&nbsp;</p>
 

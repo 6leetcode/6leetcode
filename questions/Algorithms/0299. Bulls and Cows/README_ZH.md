@@ -38,20 +38,6 @@
 "01<em><strong>1</strong></em>1"        "011<em><strong>1</strong></em>"
 注意，两个不匹配的 1 中，只有一个会算作奶牛（数字猜对位置不对）。通过重新排列非公牛数字，其中仅有一个 1 可以成为公牛数字。</pre>
 
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>secret = "1", guess = "0"
-<strong>输出：</strong>"0A0B"
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>secret = "1", guess = "1"
-<strong>输出：</strong>"1A0B"
-</pre>
-
 <p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>

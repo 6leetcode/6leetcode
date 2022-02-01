@@ -1,8 +1,8 @@
 ### [全排列](https://leetcode-cn.com/problems/permutations)
 
-<p>给定一个不含重复数字的数组 <code>nums</code> ，返回其 <strong>所有可能的全排列</strong> 。你可以 <strong>按任意顺序</strong> 返回答案。</p>
+<p>给定一个不含重复数字的数组 <code>nums</code> ，返回其 <em>所有可能的全排列</em> 。你可以 <strong>按任意顺序</strong> 返回答案。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
@@ -25,12 +25,12 @@
 <strong>输出：</strong>[[1]]
 </pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= nums.length <= 6</code></li>
-	<li><code>-10 <= nums[i] <= 10</code></li>
+	<li><code>1 &lt;= nums.length &lt;= 6</code></li>
+	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
 	<li><code>nums</code> 中的所有整数 <strong>互不相同</strong></li>
 </ul>

@@ -55,7 +55,7 @@
 <ul>
 	<li><code>1 &lt;= s.length&nbsp;&lt;= 20</code></li>
 	<li><code>1 &lt;= p.length&nbsp;&lt;= 30</code></li>
-	<li><code>s</code>&nbsp;可能为空，且只包含从&nbsp;<code>a-z</code>&nbsp;的小写字母。</li>
-	<li><code>p</code>&nbsp;可能为空，且只包含从&nbsp;<code>a-z</code>&nbsp;的小写字母，以及字符&nbsp;<code>.</code>&nbsp;和&nbsp;<code>*</code>。</li>
+	<li><code>s</code> 只含小写英文字母。</li>
+	<li><code>p</code>&nbsp;只含小写英文字母，以及字符&nbsp;<code>.</code>&nbsp;和&nbsp;<code>*</code>。</li>
 	<li>保证每次出现字符&nbsp;<code>*</code> 时，前面都匹配到有效的字符</li>
 </ul>

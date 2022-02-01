@@ -24,7 +24,7 @@
 
 <pre>
 <strong>输入：</strong>s = &quot;a&quot;
-<strong>输出：</strong>[[&quot;a&quot;]<span style="font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;</span></pre>
+<strong>输出：</strong>[[&quot;a&quot;]]</pre>
 
 <p>&nbsp;</p>
 

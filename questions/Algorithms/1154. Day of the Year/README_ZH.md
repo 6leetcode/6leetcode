@@ -1,8 +1,6 @@
 ### [一年中的第几天](https://leetcode-cn.com/problems/day-of-the-year)
 
-<p>给你一个字符串&nbsp;<code>date</code> ，按 <code>YYYY-MM-DD</code> 格式表示一个 <a href="https://baike.baidu.com/item/公元/17855" target="_blank">现行公元纪年法</a> 日期。请你计算并返回该日期是当年的第几天。</p>
-
-<p>通常情况下，我们认为 1 月 1 日是每年的第 1 天，1 月 2 日是每年的第 2 天，依此类推。每个月的天数与现行公元纪年法（格里高利历）一致。</p>
+<p>给你一个字符串&nbsp;<code>date</code> ，按 <code>YYYY-MM-DD</code> 格式表示一个 <a href="https://baike.baidu.com/item/公元/17855" target="_blank">现行公元纪年法</a> 日期。返回该日期是当年的第几天。</p>
 
 <p>&nbsp;</p>
 
@@ -11,7 +9,7 @@
 <pre>
 <strong>输入：</strong>date = "2019-01-09"
 <strong>输出：</strong>9
-</pre>
+<strong>解释：</strong>给定日期是2019年的第九天。</pre>
 
 <p><strong>示例 2：</strong></p>
 
@@ -19,19 +17,6 @@
 <strong>输入：</strong>date = "2019-02-10"
 <strong>输出：</strong>41
 </pre>
-
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>date = "2003-03-01"
-<strong>输出：</strong>60
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>date = "2004-03-01"
-<strong>输出：</strong>61</pre>
 
 <p>&nbsp;</p>
 

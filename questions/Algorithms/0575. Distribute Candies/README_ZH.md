@@ -4,7 +4,7 @@
 
 <p>医生建议 Alice 要少摄入糖分，只吃掉她所有糖的 <code>n / 2</code> 即可（<code>n</code> 是一个偶数）。Alice 非常喜欢这些糖，她想要在遵循医生建议的情况下，尽可能吃到最多不同种类的糖。</p>
 
-<p>给你一个长度为 <code>n</code> 的整数数组 <code>candyType</code> ，返回： Alice 在仅吃掉 <code>n / 2</code> 枚糖的情况下，可以吃到糖的最多种类数。</p>
+<p>给你一个长度为 <code>n</code> 的整数数组 <code>candyType</code> ，返回： Alice <em>在仅吃掉 <code>n / 2</code> 枚糖的情况下，可以吃到糖的 <strong>最多</strong> 种类数</em>。</p>
 
 <p>&nbsp;</p>
 

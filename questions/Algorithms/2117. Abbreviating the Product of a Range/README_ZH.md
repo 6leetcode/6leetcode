@@ -11,7 +11,7 @@
 		<li>比方说，<code>1000</code>&nbsp;中有 <code>3</code> 个后缀 0&nbsp;，<code>546</code>&nbsp;中没有后缀 0 。</li>
 	</ul>
 	</li>
-	<li>将乘积中剩余数字记为&nbsp;<code>d</code>&nbsp;。如果&nbsp;<code>d &gt; 10</code>&nbsp;，那么将乘积表示为&nbsp;<code>&lt;pre&gt;...&lt;suf&gt;</code>&nbsp;的形式，其中&nbsp;<code>&lt;pre&gt;</code>&nbsp;表示乘积最 <strong>开始</strong>&nbsp;的 <code>5</code>&nbsp;个数位，<code>&lt;suf&gt;</code>&nbsp;表示删除后缀 0 <strong>之后</strong>&nbsp;结尾的 <code>5</code>&nbsp;个数位。如果&nbsp;<code>d &lt;= 10</code>&nbsp;，我们不对它做修改。
+	<li>将乘积中剩余数字的位数记为&nbsp;<code>d</code>&nbsp;。如果&nbsp;<code>d &gt; 10</code>&nbsp;，那么将乘积表示为&nbsp;<code>&lt;pre&gt;...&lt;suf&gt;</code>&nbsp;的形式，其中&nbsp;<code>&lt;pre&gt;</code>&nbsp;表示乘积最 <strong>开始</strong>&nbsp;的 <code>5</code>&nbsp;个数位，<code>&lt;suf&gt;</code>&nbsp;表示删除后缀 0 <strong>之后</strong>&nbsp;结尾的 <code>5</code>&nbsp;个数位。如果&nbsp;<code>d &lt;= 10</code>&nbsp;，我们不对它做修改。
 	<ul>
 		<li>比方说，我们将&nbsp;<code>1234567654321</code>&nbsp;表示为&nbsp;<code>12345...54321</code>&nbsp;，但是&nbsp;<code>1234567</code>&nbsp;仍然表示为&nbsp;<code>1234567</code>&nbsp;。</li>
 	</ul>

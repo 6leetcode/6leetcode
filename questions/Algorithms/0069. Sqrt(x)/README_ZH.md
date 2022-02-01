@@ -1,4 +1,4 @@
-### [Sqrt(x)](https://leetcode-cn.com/problems/sqrtx)
+### [x 的平方根 ](https://leetcode-cn.com/problems/sqrtx)
 
 <p>给你一个非负整数 <code>x</code> ，计算并返回&nbsp;<code>x</code>&nbsp;的 <strong>算术平方根</strong> 。</p>
 

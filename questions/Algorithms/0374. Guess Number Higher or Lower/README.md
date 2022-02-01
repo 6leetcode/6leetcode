@@ -6,12 +6,12 @@
 
 <p>Every time you guess wrong, I will tell you whether the number I picked is higher or lower than your guess.</p>
 
-<p>You call a pre-defined API <code>int guess(int num)</code>, which returns 3 possible results:</p>
+<p>You call a pre-defined API <code>int guess(int num)</code>, which returns three possible results:</p>
 
 <ul>
-	<li><code>-1</code>: The number I picked is lower than your guess (i.e. <code>pick &lt; num</code>).</li>
-	<li><code>1</code>: The number I picked is higher than your guess (i.e. <code>pick &gt; num</code>).</li>
-	<li><code>0</code>: The number I picked is equal to your guess (i.e. <code>pick == num</code>).</li>
+	<li><code>-1</code>: Your guess is higher than the number I picked (i.e. <code>num &gt; pick</code>).</li>
+	<li><code>1</code>: Your guess is lower than the number I picked (i.e. <code>num &lt; pick</code>).</li>
+	<li><code>0</code>: your guess is equal to the number I picked (i.e. <code>num == pick</code>).</li>
 </ul>
 
 <p>Return <em>the number that I picked</em>.</p>

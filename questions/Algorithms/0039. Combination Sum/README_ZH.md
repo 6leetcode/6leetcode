@@ -1,6 +1,6 @@
 ### [组合总和](https://leetcode-cn.com/problems/combination-sum)
 
-<p>给你一个 <strong>无重复元素</strong> 的整数数组&nbsp;<code>candidates</code> 和一个目标整数&nbsp;<code>target</code>&nbsp;，找出&nbsp;<code>candidates</code>&nbsp;中可以使数字和为目标数&nbsp;<code>target</code> 的 <strong>所有不同组合</strong> ，并以列表形式返回。你可以按 <strong>任意顺序</strong> 返回这些组合。</p>
+<p>给你一个 <strong>无重复元素</strong> 的整数数组&nbsp;<code>candidates</code> 和一个目标整数&nbsp;<code>target</code>&nbsp;，找出&nbsp;<code>candidates</code>&nbsp;中可以使数字和为目标数&nbsp;<code>target</code> 的 <em>所有&nbsp;</em><strong>不同组合</strong> ，并以列表形式返回。你可以按 <strong>任意顺序</strong> 返回这些组合。</p>
 
 <p><code>candidates</code> 中的 <strong>同一个</strong> 数字可以 <strong>无限制重复被选取</strong> 。如果至少一个数字的被选数量不同，则两种组合是不同的。&nbsp;</p>
 
@@ -29,20 +29,6 @@
 <pre>
 <strong>输入: </strong>candidates = <code>[2], </code>target = 1
 <strong>输出: </strong>[]
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入: </strong>candidates = <code>[1], </code>target = <code>1</code>
-<strong>输出: </strong>[[1]]
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre>
-<strong>输入: </strong>candidates = <code>[1], </code>target = <code>2</code>
-<strong>输出: </strong>[[1,1]]
 </pre>
 
 <p>&nbsp;</p>

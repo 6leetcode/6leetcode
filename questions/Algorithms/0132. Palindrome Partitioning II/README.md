@@ -32,5 +32,5 @@
 
 <ul>
 	<li><code>1 &lt;= s.length &lt;= 2000</code></li>
-	<li><code>s</code> consists of lower-case English letters only.</li>
+	<li><code>s</code> consists of lowercase English letters only.</li>
 </ul>

@@ -25,5 +25,4 @@
 
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
-	<li>第 <code>n</code> 位上的数字是按计数单位（digit）从前往后数的第 <code>n</code> 个数，参见 <strong>示例 2</strong> 。</li>
 </ul>

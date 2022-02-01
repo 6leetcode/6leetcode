@@ -5,9 +5,9 @@
 <p>如果下述任意一个条件为真，那么用户 <code>x</code> 将不会向用户 <code>y</code>（<code>x != y</code>）发送好友请求：</p>
 
 <ul>
-	<li><code>age[y] &lt;= 0.5 * age[x] + 7</code></li>
-	<li><code>age[y] &gt; age[x]</code></li>
-	<li><code>age[y] &gt; 100 &amp;&amp; age[x] &lt; 100</code></li>
+	<li><code>ages[y] &lt;= 0.5 * ages[x] + 7</code></li>
+	<li><code>ages[y] &gt; ages[x]</code></li>
+	<li><code>ages[y] &gt; 100 &amp;&amp; ages[x] &lt; 100</code></li>
 </ul>
 
 <p>否则，<code>x</code> 将会向 <code>y</code> 发送一条好友请求。</p>

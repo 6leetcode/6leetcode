@@ -5,8 +5,8 @@
 <p>Implement the <code>Solution</code> class:</p>
 
 <ul>
-	<li><code>Solution(ListNode head)</code> Initializes the object with the integer array nums.</li>
-	<li><code>int getRandom()</code> Chooses a node randomly from the list and returns its value. All the nodes of the list should be equally likely to be choosen.</li>
+	<li><code>Solution(ListNode head)</code> Initializes the object with the head of the singly-linked list <code>head</code>.</li>
+	<li><code>int getRandom()</code> Chooses a node randomly from the list and returns its value. All the nodes of the list should be equally likely to be chosen.</li>
 </ul>
 
 <p>&nbsp;</p>

@@ -1,6 +1,6 @@
 ### [Ransom Note](https://leetcode.com/problems/ransom-note)
 
-<p>Given two stings <code>ransomNote</code> and <code>magazine</code>, return <code>true</code> if <code>ransomNote</code> can be constructed from <code>magazine</code> and <code>false</code> otherwise.</p>
+<p>Given two strings <code>ransomNote</code> and <code>magazine</code>, return <code>true</code><em> if </em><code>ransomNote</code><em> can be constructed from </em><code>magazine</code><em> and </em><code>false</code><em> otherwise</em>.</p>
 
 <p>Each letter in <code>magazine</code> can only be used once in <code>ransomNote</code>.</p>
 

@@ -47,8 +47,8 @@ The second (add x y) evaluates as 3+2 = 5.
 
 <ul>
 	<li><code>1 &lt;= expression.length &lt;= 2000</code></li>
-	<li>There are no leading or trailing spaces in <code>exprssion</code>.</li>
-	<li>All tokens are separated by a single space in <code>expressoin</code>.</li>
+	<li>There are no leading or trailing spaces in <code>expression</code>.</li>
+	<li>All tokens are separated by a single space in <code>expression</code>.</li>
 	<li>The answer and all intermediate calculations of that answer are guaranteed to fit in a <strong>32-bit</strong> integer.</li>
 	<li>The expression is guaranteed to be legal and evaluate to an integer.</li>
 </ul>
