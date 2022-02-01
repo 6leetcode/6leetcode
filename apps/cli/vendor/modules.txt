@@ -57,7 +57,7 @@ github.com/pelletier/go-toml
 github.com/pkg/errors
 # github.com/smartystreets/goconvey v1.6.4
 ## explicit
-# github.com/spf13/afero v1.7.1
+# github.com/spf13/afero v1.8.0
 ## explicit; go 1.13
 github.com/spf13/afero
 github.com/spf13/afero/mem
@@ -90,10 +90,10 @@ github.com/tosone/logging
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/net v0.0.0-20211216030914-fe4d6282115f
+# golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd
 ## explicit; go 1.17
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20211216021012-1d35b9e2eb4e
+# golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27
 ## explicit; go 1.17
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
@@ -103,7 +103,7 @@ golang.org/x/text/transform
 golang.org/x/text/unicode/norm
 # gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f
 ## explicit
-# gopkg.in/ini.v1 v1.66.2
+# gopkg.in/ini.v1 v1.66.3
 ## explicit
 gopkg.in/ini.v1
 # gopkg.in/natefinch/lumberjack.v2 v2.0.0
@@ -115,7 +115,7 @@ gopkg.in/yaml.v2
 # gorm.io/driver/sqlite v1.2.6
 ## explicit; go 1.14
 gorm.io/driver/sqlite
-# gorm.io/gorm v1.22.4
+# gorm.io/gorm v1.22.5
 ## explicit; go 1.14
 gorm.io/gorm
 gorm.io/gorm/callbacks
