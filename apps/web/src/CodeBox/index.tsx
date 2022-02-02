@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { Base64 } from 'js-base64';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { CopyOutlined, CheckOutlined } from '@ant-design/icons';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import './index.scss';
@@ -11,7 +12,7 @@ export default function CodeBox({ solution }: any) {
 
   return (
     <div className="codebox">
-      <CopyToClipboard text={Buffer.from(solution.data, "base64").toString("utf-8").trim()} onCopy={() => {
+      <CopyToClipboard text={Base64.decode(solution.data).trim()} onCopy={() => {
         setCopied(true);
         setTimeout(() => {
           setCopied(false);
@@ -21,7 +22,7 @@ export default function CodeBox({ solution }: any) {
       </CopyToClipboard>
       <SyntaxHighlighter language={solution.language.toLowerCase()}
         style={a11yDark} showLineNumbers>
-        {Buffer.from(solution.data, "base64").toString("utf-8").trim()}
+        {Base64.decode(solution.data).trim()}
       </SyntaxHighlighter>
     </div>
   );

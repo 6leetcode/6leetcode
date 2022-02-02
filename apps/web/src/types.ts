@@ -11,6 +11,8 @@ export interface IQuestion {
   translated_content: string;
   content: string;
   solutions: Map<string, number>;
+
+  solutions_list: Array<string>;
 }
 
 export interface ISolution {

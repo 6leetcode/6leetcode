@@ -1,4 +1,4 @@
-$content-width: 1500px;
+$content-width: 1100px;
 
 .header {
   background-color: #fff;
@@ -15,6 +15,9 @@ $content-width: 1500px;
       .menuItem {
         min-width: 100px;
         text-align: center;
+        font-size: 1rem;
+        padding: 0px 20px;
+        margin: 0px 5px;
       }
 
       .language {
@@ -47,6 +50,10 @@ $content-width: 1500px;
   padding: 20px 0px;
   width: $content-width;
   margin: 0 auto;
+}
+
+.ant-tabs-large > .ant-tabs-nav .ant-tabs-tab {
+  font-size: 14px;
 }
 
 .questionItem,

@@ -1,11 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { Link, useParams } from 'react-router-dom';
 import { Layout, List, Typography, Pagination } from "antd";
-import { CheckOutlined, MinusOutlined } from '@ant-design/icons';
 
-import { IQuestion, LanguagesDefinition } from '../types';
+import { IQuestion } from '../types';
 
 const pageSize = 50;
 
@@ -13,8 +11,6 @@ export default function Questions({ localServer }: any) {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [questions, setQuestions] = useState<IQuestion[]>([]);
-
-  const { t, i18n } = useTranslation();
 
   let { category } = useParams();
 
@@ -58,7 +54,14 @@ export default function Questions({ localServer }: any) {
         if (response.status !== 200) {
           console.error("request questions list with error:", response.status);
         } else {
-          setQuestions(response.data);
+          let questions = response.data as IQuestion[];
+          for (let item in questions) {
+            questions[item]["solutions_list"] = [];
+            for (let i in questions[item].solutions) {
+              questions[item]["solutions_list"].push(i);
+            }
+          }
+          setQuestions(response.data as IQuestion[]);
           for (let question of response.data) {
             window.localStorage.setItem(question.question_id, JSON.stringify(question));
           }
@@ -72,81 +75,54 @@ export default function Questions({ localServer }: any) {
         <List
           header={
             <div className="questionHeader">
-              <div><Typography.Text strong>{t("title.Question")}</Typography.Text></div>
+              <div><Typography.Text strong>Question</Typography.Text></div>
               <div className="description">
-                {
-                  LanguagesDefinition.map((lang) => {
-                    return (
-                      <div className="paid_only">
-                        {lang.language === "CPP" ? "C++" : lang.language}
-                      </div>
-                    );
-                  })
-                }
-                <div className="difficult"><Typography.Text strong>{t("title.Difficulty")}</Typography.Text></div>
-                <div className="ace"><Typography.Text strong>{t("title.AcRate")}</Typography.Text></div>
+                <div className="paid_only" >
+                  <Typography.Text strong>Solutions</Typography.Text>
+                </div>
+                <div className="difficult"><Typography.Text strong>Difficulty</Typography.Text></div>
+                <div className="ace"><Typography.Text strong>Ac Rate</Typography.Text></div>
               </div>
             </div>
           }
           dataSource={questions}
-          renderItem={(item) => (
-            <List.Item>
-              <div className="questionItem">
+          renderItem={item => (
+            <List.Item key={item.question_frontend_id}>
+              <div className="questionItem" key={item.question_frontend_id}>
                 <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => { }}>
                   <span>
                     {item.question_frontend_id}.&nbsp;
                   </span>
-                  {i18n.language === "en-US" ? item.title : item.translated_title === "" ? item.title : item.translated_title}
+                  {item.title}
                 </Link>
-                <div className="description">
+                <div className="description" >
                   {
-                    LanguagesDefinition.map((lang) => {
-                      for (let i in item.solutions) {
-                        if ((item.category_title === "Algorithms" ||
-                          item.category_title === "Concurrency" ||
-                          item.category_title === "LCCI" ||
-                          item.category_title === "LCOF")
-                          && (lang.language === "SQL" || lang.language === "Bash")) {
-                          return (
-                            <div className="solution_icon" key={i}>
-                              <MinusOutlined style={{ color: 'grey' }} />
-                            </div>
-                          );
-                        } else if ((item.category_title === "Bash") && (lang.language === "C" ||
-                          lang.language === "CPP" ||
-                          lang.language === "Go" ||
-                          lang.language === "Java" ||
-                          lang.language === "TypeScript" ||
-                          lang.language === "PHP" ||
-                          lang.language === "Python" ||
-                          lang.language === "Rust"
-                        )) {
-                          return (
-                            <div className="solution_icon" key={i}>
-                              <MinusOutlined style={{ color: 'grey' }} />
-                            </div>
-                          )
-                        } else
-                          if (i === lang.language) {
-                            return (
-                              <div className="solution_icon" key={i}>
-                                <Link to={`/solutions/${item.question_frontend_id}`} onClick={() => {
-                                  window.localStorage.setItem("language_show", i);
-                                }}>
-                                  <CheckOutlined style={{ color: 'green' }} />
-                                </Link>
-                              </div>
-                            );
-                          }
+                    item.solutions_list.map(solution => {
+                      let suffix;
+                      if (item.solutions_list[item.solutions_list.length - 1] !== solution) {
+                        suffix = (
+                          <span>
+                            / &nbsp;
+                          </span>
+                        );
                       }
                       return (
-                        <div className="solution_icon"></div>
+                        <span key={item.question_frontend_id + "-" + solution}>
+                          <Link key={item.question_frontend_id + "-" + solution}
+                            to={`/solutions/${item.question_frontend_id}`} onClick={() => {
+                              window.localStorage.setItem("language_show", solution);
+                            }}>
+                            <span >
+                              {solution === "CPP" ? "C++" : solution}
+                            </span>
+                          </Link> {suffix}
+                        </span>
                       );
                     })
                   }
                   <div className="difficult">
                     <span className={item.difficulty.toLowerCase()}>
-                      {t(`difficulty.${item.difficulty}`)}
+                      {item.difficulty}
                     </span>
                   </div>
                   <div className="ace">{item.acRate}</div>

@@ -1,28 +1,11 @@
+import { Layout, Menu } from 'antd';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { DownOutlined } from '@ant-design/icons';
 import { Link, useLocation } from 'react-router-dom';
-import { Layout, Menu, Dropdown, Button } from 'antd';
-
-import { languages } from "../i18n";
 
 export default function Header() {
-  const [language, setLanguage] = useState("中文");
   const [menuKey, setMenuKey] = useState("All");
 
-  const { i18n } = useTranslation();
-
   let location = useLocation();
-
-  useEffect(() => {
-    let langText = "";
-    for (let i in languages) {
-      if (languages[i].name === i18n.language) {
-        langText = languages[i].text;
-      }
-    }
-    setLanguage(langText);
-  }, [i18n.language])
 
   useEffect(() => {
     let pathname = location.pathname;
@@ -52,29 +35,6 @@ export default function Header() {
             <Menu.Item key="Database" className="menuItem"><Link to="/categories/Database">Database</Link></Menu.Item>
             <Menu.Item key="Shell" className="menuItem"><Link to="/categories/Shell">Shell</Link></Menu.Item>
           </Menu>
-          <div className="language">
-            <Dropdown overlay={
-              <Menu onClick={(info) => {
-                let key = info.key.toString();
-                i18n.changeLanguage(key);
-                localStorage.setItem("i18n__language", key);
-              }}>
-                {
-                  languages.map(lang => {
-                    return (
-                      <Menu.Item key={lang.name}>
-                        {lang.text}
-                      </Menu.Item>
-                    );
-                  })
-                }
-              </Menu>
-            }>
-              <Button>
-                {language} <DownOutlined />
-              </Button>
-            </Dropdown>
-          </div>
         </div>
       </div>
     </Layout.Header>
