@@ -8,8 +8,8 @@ require (
 	github.com/spf13/viper v1.10.1
 	github.com/tosone/logging v1.2.1
 	github.com/unknwon/com v1.0.1
-	gorm.io/driver/sqlite v1.2.6
-	gorm.io/gorm v1.22.5
+	gorm.io/driver/sqlite v1.3.1
+	gorm.io/gorm v1.23.1
 )
 
 require (
