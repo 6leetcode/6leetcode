@@ -3,8 +3,8 @@
 # github.com/fatih/color v1.13.0
 ## explicit; go 1.13
 github.com/fatih/color
-# github.com/fsnotify/fsnotify v1.5.1
-## explicit; go 1.13
+# github.com/fsnotify/fsnotify v1.5.4
+## explicit; go 1.16
 github.com/fsnotify/fsnotify
 # github.com/hashicorp/hcl v1.0.0
 ## explicit
@@ -27,9 +27,7 @@ github.com/jinzhu/inflection
 # github.com/jinzhu/now v1.1.4
 ## explicit; go 1.12
 github.com/jinzhu/now
-# github.com/kr/text v0.2.0
-## explicit
-# github.com/magiconair/properties v1.8.5
+# github.com/magiconair/properties v1.8.6
 ## explicit; go 1.13
 github.com/magiconair/properties
 # github.com/mattn/go-colorable v0.1.12
@@ -41,7 +39,7 @@ github.com/mattn/go-isatty
 # github.com/mattn/go-sqlite3 v2.0.3+incompatible
 ## explicit
 github.com/mattn/go-sqlite3
-# github.com/mitchellh/mapstructure v1.4.3
+# github.com/mitchellh/mapstructure v1.5.0
 ## explicit; go 1.14
 github.com/mitchellh/mapstructure
 # github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e
@@ -49,20 +47,26 @@ github.com/mitchellh/mapstructure
 # github.com/parnurzeal/gorequest v0.2.16
 ## explicit
 github.com/parnurzeal/gorequest
-# github.com/pelletier/go-toml v1.9.4
+# github.com/pelletier/go-toml v1.9.5
 ## explicit; go 1.12
 github.com/pelletier/go-toml
+# github.com/pelletier/go-toml/v2 v2.0.1
+## explicit; go 1.16
+github.com/pelletier/go-toml/v2
+github.com/pelletier/go-toml/v2/internal/ast
+github.com/pelletier/go-toml/v2/internal/danger
+github.com/pelletier/go-toml/v2/internal/tracker
 # github.com/pkg/errors v0.9.1
 ## explicit
 github.com/pkg/errors
 # github.com/smartystreets/goconvey v1.6.4
 ## explicit
-# github.com/spf13/afero v1.8.0
+# github.com/spf13/afero v1.8.2
 ## explicit; go 1.13
 github.com/spf13/afero
 github.com/spf13/afero/mem
-# github.com/spf13/cast v1.4.1
-## explicit
+# github.com/spf13/cast v1.5.0
+## explicit; go 1.18
 github.com/spf13/cast
 # github.com/spf13/cobra v1.3.0
 ## explicit; go 1.15
@@ -73,16 +77,19 @@ github.com/spf13/jwalterweatherman
 # github.com/spf13/pflag v1.0.5
 ## explicit; go 1.12
 github.com/spf13/pflag
-# github.com/spf13/viper v1.10.1
+# github.com/spf13/viper v1.12.0
 ## explicit; go 1.17
 github.com/spf13/viper
 github.com/spf13/viper/internal/encoding
+github.com/spf13/viper/internal/encoding/dotenv
 github.com/spf13/viper/internal/encoding/hcl
+github.com/spf13/viper/internal/encoding/ini
+github.com/spf13/viper/internal/encoding/javaproperties
 github.com/spf13/viper/internal/encoding/json
 github.com/spf13/viper/internal/encoding/toml
 github.com/spf13/viper/internal/encoding/yaml
-# github.com/subosito/gotenv v1.2.0
-## explicit
+# github.com/subosito/gotenv v1.3.0
+## explicit; go 1.18
 github.com/subosito/gotenv
 # github.com/tosone/logging v1.2.1
 ## explicit; go 1.15
@@ -90,10 +97,10 @@ github.com/tosone/logging
 # github.com/unknwon/com v1.0.1
 ## explicit
 github.com/unknwon/com
-# golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd
+# golang.org/x/net v0.0.0-20220520000938-2e3eb7b945c2
 ## explicit; go 1.17
 golang.org/x/net/publicsuffix
-# golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27
+# golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a
 ## explicit; go 1.17
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
@@ -103,7 +110,7 @@ golang.org/x/text/transform
 golang.org/x/text/unicode/norm
 # gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f
 ## explicit
-# gopkg.in/ini.v1 v1.66.3
+# gopkg.in/ini.v1 v1.66.4
 ## explicit
 gopkg.in/ini.v1
 # gopkg.in/natefinch/lumberjack.v2 v2.0.0
@@ -112,6 +119,9 @@ gopkg.in/natefinch/lumberjack.v2
 # gopkg.in/yaml.v2 v2.4.0
 ## explicit; go 1.15
 gopkg.in/yaml.v2
+# gopkg.in/yaml.v3 v3.0.0
+## explicit
+gopkg.in/yaml.v3
 # gorm.io/driver/sqlite v1.2.6
 ## explicit; go 1.14
 gorm.io/driver/sqlite
