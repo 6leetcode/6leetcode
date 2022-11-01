@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/parnurzeal/gorequest v0.2.16
-	github.com/spf13/cobra v1.3.0
+	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.10.1
 	github.com/tosone/logging v1.2.1
 	github.com/unknwon/com v1.0.1
@@ -17,7 +17,7 @@ require (
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.4 // indirect
 	github.com/kr/text v0.2.0 // indirect
