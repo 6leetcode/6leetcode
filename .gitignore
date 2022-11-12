@@ -51,3 +51,4 @@ venv/
 
 apps/cli/bin/
 apps/web/public/db/
+apps/cli/vendor/

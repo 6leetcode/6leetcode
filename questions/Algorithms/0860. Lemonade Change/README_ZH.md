@@ -34,19 +34,6 @@
 由于不是每位顾客都得到了正确的找零，所以答案是 false。
 </pre>
 
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>bills = [5,5,10]
-<strong>输出：</strong>true
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>bills = [10,10]
-<strong>输出：</strong>false</pre>
-
 <p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>

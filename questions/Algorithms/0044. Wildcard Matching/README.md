@@ -10,7 +10,7 @@
 <p>The matching should cover the <strong>entire</strong> input string (not partial).</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a&quot;
@@ -18,7 +18,7 @@
 <strong>Explanation:</strong> &quot;a&quot; does not match the entire string &quot;aa&quot;.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;aa&quot;, p = &quot;*&quot;
@@ -26,7 +26,7 @@
 <strong>Explanation:</strong>&nbsp;&#39;*&#39; matches any sequence.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;cb&quot;, p = &quot;?a&quot;

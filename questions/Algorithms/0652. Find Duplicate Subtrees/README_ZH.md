@@ -1,10 +1,10 @@
 ### [寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees)
 
-<p>给定一棵二叉树 <code>root</code>，返回所有<strong>重复的子树</strong>。</p>
+<p>给你一棵二叉树的根节点 <code>root</code> ，返回所有 <strong>重复的子树 </strong>。</p>
 
-<p>对于同一类的重复子树，你只需要返回其中任意<strong>一棵</strong>的根结点即可。</p>
+<p>对于同一类的重复子树，你只需要返回其中任意 <strong>一棵 </strong>的根结点即可。</p>
 
-<p>如果两棵树具有<strong>相同的结构</strong>和<strong>相同的结点值</strong>，则它们是<strong>重复</strong>的。</p>
+<p>如果两棵树具有<strong> 相同的结构</strong> 和 <strong>相同的结点值 </strong>，则认为二者是 <strong>重复 </strong>的。</p>
 
 <p>&nbsp;</p>
 
@@ -37,6 +37,6 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li>树中的结点数在<code>[1,10^4]</code>范围内。</li>
+	<li>树中的结点数在 <code>[1, 5000]</code> 范围内。</li>
 	<li><code>-200 &lt;= Node.val &lt;= 200</code></li>
 </ul>

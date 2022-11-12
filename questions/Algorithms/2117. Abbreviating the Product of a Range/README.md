@@ -26,7 +26,7 @@
 <p>Return <em>a string denoting the <strong>abbreviated product</strong> of all integers in the <strong>inclusive</strong> range</em> <code>[left, right]</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> left = 1, right = 4
@@ -37,7 +37,7 @@ Since the number of digits is 2, which is less than 10, we do not have to abbrev
 Thus, the final representation is &quot;24e0&quot;.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> left = 2, right = 11
@@ -48,7 +48,7 @@ The number of digits after removing the trailing zeros is 6, so we do not abbrev
 Hence, the abbreviated product is &quot;399168e2&quot;.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> left = 371, right = 375

@@ -5,7 +5,7 @@
 <p>Return <em>the minimum size of the set so that <strong>at least</strong> half of the integers of the array are removed</em>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> arr = [3,3,3,3,5,5,5,2,2,7]
@@ -15,7 +15,7 @@ Possible sets of size 2 are {3,5},{3,2},{5,2}.
 Choosing set {2,7} is not possible as it will make the new array [3,3,3,3,5,5,5] which has a size greater than half of the size of the old array.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> arr = [7,7,7,7,7,7]
@@ -27,7 +27,7 @@ Choosing set {2,7} is not possible as it will make the new array [3,3,3,3,5,5,5]
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>2 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>arr.length</code> is even.</li>
 	<li><code>1 &lt;= arr[i] &lt;= 10<sup>5</sup></code></li>
 </ul>

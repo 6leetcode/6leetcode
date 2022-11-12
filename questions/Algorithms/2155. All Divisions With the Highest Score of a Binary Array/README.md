@@ -13,7 +13,7 @@
 <p>Return <em><strong>all distinct indices</strong> that have the <strong>highest</strong> possible <strong>division score</strong></em>. You may return the answer in <strong>any order</strong>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [0,0,1,0]
@@ -27,7 +27,7 @@
 Indices 2 and 4 both have the highest possible division score 3.
 Note the answer [4,2] would also be accepted.</pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [0,0,0]
@@ -40,7 +40,7 @@ Note the answer [4,2] would also be accepted.</pre>
 Only index 3 has the highest possible division score 3.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [1,1]

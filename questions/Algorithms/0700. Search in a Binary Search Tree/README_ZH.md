@@ -15,7 +15,7 @@
 <b>输出：</b>[2,1,3]
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong>示例 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/01/12/tree2.jpg" style="height: 179px; width: 250px;" />
 <pre>
 <b>输入：</b>root = [4,2,7,1,3], val = 5

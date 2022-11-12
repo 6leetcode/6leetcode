@@ -15,7 +15,7 @@ cae
 <p>Return <em>the number of columns that you will delete</em>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> strs = [&quot;cba&quot;,&quot;daf&quot;,&quot;ghi&quot;]
@@ -27,7 +27,7 @@ cae
 Columns 0 and 2 are sorted, but column 1 is not, so you only need to delete 1 column.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> strs = [&quot;a&quot;,&quot;b&quot;]
@@ -38,7 +38,7 @@ Columns 0 and 2 are sorted, but column 1 is not, so you only need to delete 1 co
 Column 0 is the only column and is sorted, so you will not delete any columns.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> strs = [&quot;zyx&quot;,&quot;wvu&quot;,&quot;tsr&quot;]

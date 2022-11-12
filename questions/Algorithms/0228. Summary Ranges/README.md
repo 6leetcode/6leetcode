@@ -2,6 +2,8 @@
 
 <p>You are given a <strong>sorted unique</strong> integer array <code>nums</code>.</p>
 
+<p>A <strong>range</strong> <code>[a,b]</code> is the set of all integers from <code>a</code> to <code>b</code> (inclusive).</p>
+
 <p>Return <em>the <strong>smallest sorted</strong> list of ranges that <strong>cover all the numbers in the array exactly</strong></em>. That is, each element of <code>nums</code> is covered by exactly one of the ranges, and there is no integer <code>x</code> such that <code>x</code> is in one of the ranges but not in <code>nums</code>.</p>
 
 <p>Each range <code>[a,b]</code> in the list should be output as:</p>
@@ -12,7 +14,7 @@
 </ul>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [0,1,2,4,5,7]
@@ -23,7 +25,7 @@
 [7,7] --&gt; &quot;7&quot;
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [0,2,3,4,6,8,9]

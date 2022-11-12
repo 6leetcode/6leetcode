@@ -7,7 +7,7 @@
 <p>Given the two integers <code>numBottles</code> and <code>numExchange</code>, return <em>the <strong>maximum</strong> number of water bottles you can drink</em>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/07/01/sample_1_1875.png" style="width: 500px; height: 245px;" />
 <pre>
 <strong>Input:</strong> numBottles = 9, numExchange = 3
@@ -16,7 +16,7 @@
 Number of water bottles you can drink: 9 + 3 + 1 = 13.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/07/01/sample_2_1875.png" style="width: 500px; height: 183px;" />
 <pre>
 <strong>Input:</strong> numBottles = 15, numExchange = 4

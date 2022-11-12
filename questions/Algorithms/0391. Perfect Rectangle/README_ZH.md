@@ -6,7 +6,7 @@
 &nbsp;
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg" style="width: 300px; height: 294px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/27/perectrec1-plane.jpg" style="height: 294px; width: 300px;" />
 <pre>
 <strong>输入：</strong>rectangles = [[1,1,3,3],[3,1,4,2],[3,2,4,4],[1,3,2,4],[2,3,3,4]]
 <strong>输出：</strong>true
@@ -14,21 +14,14 @@
 </pre>
 
 <p><strong>示例 2：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/27/perfectrec2-plane.jpg" style="width: 300px; height: 294px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/27/perfectrec2-plane.jpg" style="height: 294px; width: 300px;" />
 <pre>
 <strong>输入：</strong>rectangles = [[1,1,2,3],[1,3,2,4],[3,1,4,2],[3,2,4,4]]
 <strong>输出：</strong>false
 <strong>解释：</strong>两个矩形之间有间隔，无法覆盖成一个矩形。</pre>
 
 <p><strong>示例 3：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/27/perfectrec3-plane.jpg" style="width: 300px; height: 294px;" />
-<pre>
-<strong>输入：</strong>rectangles = [[1,1,3,3],[3,1,4,2],[1,3,2,4],[3,2,4,4]]
-<strong>输出：</strong>false
-<strong>解释：</strong>图形顶端留有空缺，无法覆盖成一个矩形。</pre>
-
-<p><strong>示例 4：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/03/27/perfecrrec4-plane.jpg" style="width: 300px; height: 294px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/27/perfecrrec4-plane.jpg" style="height: 294px; width: 300px;" />
 <pre>
 <strong>输入：</strong>rectangles = [[1,1,3,3],[3,1,4,2],[1,3,2,4],[2,2,4,4]]
 <strong>输出：</strong>false

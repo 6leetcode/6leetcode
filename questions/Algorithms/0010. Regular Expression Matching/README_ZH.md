@@ -13,7 +13,7 @@
 <p><strong>示例 1：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "aa" p = "a"
+<strong>输入：</strong>s = "aa", p = "a"
 <strong>输出：</strong>false
 <strong>解释：</strong>"a" 无法匹配 "aa" 整个字符串。
 </pre>
@@ -21,7 +21,7 @@
 <p><strong>示例 2:</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "aa" p = "a*"
+<strong>输入：</strong>s = "aa", p = "a*"
 <strong>输出：</strong>true
 <strong>解释：</strong>因为 '*' 代表可以匹配零个或多个前面的那一个元素, 在这里前面的元素就是 'a'。因此，字符串 "aa" 可被视为 'a' 重复了一次。
 </pre>
@@ -29,24 +29,10 @@
 <p><strong>示例&nbsp;3：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "ab" p = ".*"
+<strong>输入：</strong>s = "ab", p = ".*"
 <strong>输出：</strong>true
 <strong>解释：</strong>".*" 表示可匹配零个或多个（'*'）任意字符（'.'）。
 </pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>s = "aab" p = "c*a*b"
-<strong>输出：</strong>true
-<strong>解释：</strong>因为 '*' 表示零个或多个，这里 'c' 为 0 个, 'a' 被重复一次。因此可以匹配字符串 "aab"。
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre>
-<strong>输入：</strong>s = "mississippi" p = "mis*is*p*."
-<strong>输出：</strong>false</pre>
 
 <p>&nbsp;</p>
 
@@ -55,7 +41,7 @@
 <ul>
 	<li><code>1 &lt;= s.length&nbsp;&lt;= 20</code></li>
 	<li><code>1 &lt;= p.length&nbsp;&lt;= 30</code></li>
-	<li><code>s</code> 只含小写英文字母。</li>
-	<li><code>p</code>&nbsp;只含小写英文字母，以及字符&nbsp;<code>.</code>&nbsp;和&nbsp;<code>*</code>。</li>
+	<li><code>s</code>&nbsp;只包含从&nbsp;<code>a-z</code>&nbsp;的小写字母。</li>
+	<li><code>p</code>&nbsp;只包含从&nbsp;<code>a-z</code>&nbsp;的小写字母，以及字符&nbsp;<code>.</code>&nbsp;和&nbsp;<code>*</code>。</li>
 	<li>保证每次出现字符&nbsp;<code>*</code> 时，前面都匹配到有效的字符</li>
 </ul>

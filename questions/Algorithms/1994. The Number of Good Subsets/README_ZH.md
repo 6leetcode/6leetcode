@@ -1,6 +1,6 @@
 ### [好子集的数目](https://leetcode-cn.com/problems/the-number-of-good-subsets)
 
-<p>给你一个整数数组&nbsp;<code>nums</code>&nbsp;。如果&nbsp;<code>nums</code>&nbsp;的一个子集中，所有元素的乘积可以用若干个 <strong>互不相同的质数</strong>&nbsp;相乘得到，那么我们称它为&nbsp;<strong>好子集</strong>&nbsp;。</p>
+<p>给你一个整数数组&nbsp;<code>nums</code>&nbsp;。如果&nbsp;<code>nums</code>&nbsp;的一个子集中，所有元素的乘积可以表示为一个或多个 <strong>互不相同的质数</strong> 的乘积，那么我们称它为&nbsp;<strong>好子集</strong>&nbsp;。</p>
 
 <ul>
 	<li>比方说，如果&nbsp;<code>nums = [1, 2, 3, 4]</code>&nbsp;：
@@ -20,7 +20,8 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><b>输入：</b>nums = [1,2,3,4]
+<pre>
+<b>输入：</b>nums = [1,2,3,4]
 <b>输出：</b>6
 <b>解释：</b>好子集为：
 - [1,2]：乘积为 2 ，可以表示为质数 2 的乘积。
@@ -33,7 +34,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><b>输入：</b>nums = [4,2,3,15]
+<pre>
+<b>输入：</b>nums = [4,2,3,15]
 <b>输出：</b>5
 <b>解释：</b>好子集为：
 - [2]：乘积为 2 ，可以表示为质数 2 的乘积。

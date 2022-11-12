@@ -5,7 +5,7 @@ Words are returned as a list of strings, complete with&nbsp;spaces when is neces
 Each word would be put on only one column and that in one column there will be only one word.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;HOW ARE YOU&quot;
@@ -16,7 +16,7 @@ Each word would be put on only one column and that in one column there will be o
 &nbsp;&quot;WEU&quot;
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;TO BE OR NOT TO BE&quot;
@@ -27,7 +27,7 @@ Each word would be put on only one column and that in one column there will be o
 &quot;   T&quot;
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;CONTEST IS COMING&quot;

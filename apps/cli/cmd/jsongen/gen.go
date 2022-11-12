@@ -3,7 +3,6 @@ package jsongen
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"os"
 
 	"github.com/spf13/viper"
@@ -145,7 +144,7 @@ func writeFile(filename string, content interface{}) (err error) {
 	if data, err = json.Marshal(content); err != nil {
 		return
 	}
-	if err = ioutil.WriteFile(filename, data, 0644); err != nil {
+	if err = os.WriteFile(filename, data, 0644); err != nil {
 		return
 	}
 	return

@@ -13,7 +13,7 @@
 <p>Tests are generated such that the answer will not exceed <code>10<sup>7</sup></code> and <code>hour</code> will have <strong>at most two digits after the decimal point</strong>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> dist = [1,3,2], hour = 6
@@ -25,7 +25,7 @@
 - You will arrive at exactly the 6 hour mark.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> dist = [1,3,2], hour = 2.7
@@ -37,7 +37,7 @@
 - You will arrive at the 2.66667 hour mark.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> dist = [1,3,2], hour = 1.9

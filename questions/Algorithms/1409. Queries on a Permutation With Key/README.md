@@ -10,7 +10,7 @@
 <p>Return an array containing the result for the given <code>queries</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> queries = [3,1,2,1], m = 5
@@ -23,14 +23,14 @@ For i=3: queries[i]=1, P=[2,1,3,4,5], position of 1 in P is <strong>1</strong>, 
 Therefore, the array containing the result is [2,1,2,1].  
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> queries = [4,1,2,2], m = 4
 <strong>Output:</strong> [3,1,2,0]
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> queries = [7,5,5,8,3], m = 8

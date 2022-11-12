@@ -1,10 +1,14 @@
 ### [图片平滑器](https://leetcode-cn.com/problems/image-smoother)
 
-<p><strong>图像平滑器</strong> 是大小为&nbsp;<code>3 x 3</code>&nbsp;的过滤器，可以计算是周围的8个单元和它本身的值求平均灰度(即蓝色平滑器中9个单元的平均值)来应用于图像的每个单元。如果一个单元的一个或多个周围的单元不存在，我们不考虑它的平均值(即红色平滑器中的四个单元的平均值)。</p>
+<p><strong>图像平滑器</strong> 是大小为&nbsp;<code>3 x 3</code> 的过滤器，用于对图像的每个单元格平滑处理，平滑处理后单元格的值为该单元格的平均灰度。</p>
+
+<p>每个单元格的<strong>&nbsp; 平均灰度</strong> 定义为：该单元格自身及其周围的 8 个单元格的平均值，结果需向下取整。（即，需要计算蓝色平滑器中 9 个单元格的平均值）。</p>
+
+<p>如果一个单元格周围存在单元格缺失的情况，则计算平均灰度时不考虑缺失的单元格（即，需要计算红色平滑器中 4 个单元格的平均值）。</p>
 
 <p><img src="https://assets.leetcode.com/uploads/2021/05/03/smoother-grid.jpg" style="height: 493px; width: 493px;" /></p>
 
-<p>给定一个代表图像灰度的 <code>m x n</code> 整数矩阵 <code>img</code> ，<em>返回对图像的每个单元格平滑处理后的图像</em>&nbsp;。</p>
+<p>给你一个表示图像灰度的 <code>m x n</code> 整数矩阵 <code>img</code> ，返回对图像的每个单元格平滑处理后的图像&nbsp;。</p>
 
 <p>&nbsp;</p>
 

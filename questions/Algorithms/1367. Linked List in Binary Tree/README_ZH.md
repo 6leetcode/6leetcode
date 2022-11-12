@@ -1,4 +1,4 @@
-### [二叉树中的列表](https://leetcode-cn.com/problems/linked-list-in-binary-tree)
+### [二叉树中的链表](https://leetcode-cn.com/problems/linked-list-in-binary-tree)
 
 <p>给你一棵以&nbsp;<code>root</code>&nbsp;为根的二叉树和一个&nbsp;<code>head</code>&nbsp;为第一个节点的链表。</p>
 

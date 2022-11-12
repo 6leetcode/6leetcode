@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/confirmation-rate)
+### [确认率](https://leetcode-cn.com/problems/confirmation-rate)
 

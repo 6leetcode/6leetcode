@@ -18,7 +18,7 @@
 
 <pre>
 <strong>输入：</strong>num = 7
-<strong>输出：</strong>true
+<strong>输出：</strong>false
 </pre>
 
 <p>&nbsp;</p>

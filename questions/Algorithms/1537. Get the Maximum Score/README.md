@@ -15,7 +15,7 @@
 <p>Return <em>the maximum score you can obtain of all possible <strong>valid paths</strong></em>. Since the answer may be too large, return it modulo <code>10<sup>9</sup> + 7</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/07/16/sample_1_1893.png" style="width: 500px; height: 151px;" />
 <pre>
 <strong>Input:</strong> nums1 = [2,4,5,8,10], nums2 = [4,6,8,9]
@@ -26,7 +26,7 @@
 The maximum is obtained with the path in green <strong>[2,4,6,8,10]</strong>.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums1 = [1,3,5,7,9], nums2 = [3,5,100]
@@ -34,7 +34,7 @@ The maximum is obtained with the path in green <strong>[2,4,6,8,10]</strong>.
 <strong>Explanation:</strong> Maximum sum is obtained with the path <strong>[1,3,5,100]</strong>.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums1 = [1,2,3,4,5], nums2 = [6,7,8,9,10]

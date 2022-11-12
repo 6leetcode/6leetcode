@@ -30,16 +30,10 @@
 <pre>
 <strong>输入：</strong>board = ["XOX"," X ","   "]
 <strong>输出：</strong>false
-<strong>解释：</strong>玩家应该轮流放字符。</pre>
-
-<p><strong>示例 3：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/05/15/tictactoe3-grid.jpg" style="width: 253px; height: 253px;" />
-<pre>
-<strong>输入：</strong>board = ["XXX","   ","OOO"]
-<strong>输出：</strong>false
+<strong>解释：</strong>玩家应该轮流放字符。
 </pre>
 
-<p><strong>Example 4:</strong></p>
+<p><strong>示例 3:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/05/15/tictactoe4-grid.jpg" style="width: 253px; height: 253px;" />
 <pre>
 <strong>输入：</strong>board = ["XOX","O O","XOX"]

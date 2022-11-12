@@ -22,26 +22,7 @@
 <strong>解释：</strong>合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
 </pre>
 
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>nums1 = [0,0], nums2 = [0,0]
-<strong>输出：</strong>0.00000
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>nums1 = [], nums2 = [1]
-<strong>输出：</strong>1.00000
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre>
-<strong>输入：</strong>nums1 = [2], nums2 = []
-<strong>输出：</strong>2.00000
-</pre>
+<p>&nbsp;</p>
 
 <p>&nbsp;</p>
 

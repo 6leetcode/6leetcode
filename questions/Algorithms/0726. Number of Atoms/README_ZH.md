@@ -24,7 +24,7 @@
 
 <p>返回所有原子的数量，格式为：第一个（按字典序）原子的名字，跟着它的数量（如果数量大于 1），然后是第二个原子的名字（按字典序），跟着它的数量（如果数量大于 1），以此类推。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
@@ -50,20 +50,12 @@
 <strong>解释：</strong>原子的数量是 {'K': 4, 'N': 2, 'O': 14, 'S': 4}。
 </pre>
 
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>formula = "Be32"
-<strong>输出：</strong>"Be32"
-</pre>
-
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= formula.length <= 1000</code></li>
+	<li><code>1 &lt;= formula.length&nbsp;&lt;= 1000</code></li>
 	<li><code>formula</code> 由英文字母、数字、<code>'('</code> 和 <code>')'</code> 组成</li>
 	<li><code>formula</code> 总是有效的化学式</li>
-	<li>输出的所有值总是在 32-bit 整数范围内</li>
 </ul>

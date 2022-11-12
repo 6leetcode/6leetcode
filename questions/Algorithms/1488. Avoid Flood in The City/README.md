@@ -1,6 +1,6 @@
 ### [Avoid Flood in The City](https://leetcode.com/problems/avoid-flood-in-the-city)
 
-<p>Your country has an infinite number of lakes. Initially, all the lakes are empty, but when it rains over the <code>nth</code> lake, the <code>nth</code> lake becomes full of water. If it rains over a lake which is <strong>full of water</strong>, there will be a <strong>flood</strong>. Your goal is to avoid the flood in any lake.</p>
+<p>Your country has an infinite number of lakes. Initially, all the lakes are empty, but when it rains over the <code>nth</code> lake, the <code>nth</code> lake becomes full of water. If it rains over a lake that is <strong>full of water</strong>, there will be a <strong>flood</strong>. Your goal is to avoid floods in any lake.</p>
 
 <p>Given an integer array <code>rains</code> where:</p>
 
@@ -19,10 +19,10 @@
 
 <p>If there are multiple valid answers return <strong>any</strong> of them. If it is impossible to avoid flood return <strong>an empty array</strong>.</p>
 
-<p>Notice that if you chose to dry a full lake, it becomes empty, but if you chose to dry an empty lake, nothing changes. (see example 4)</p>
+<p>Notice that if you chose to dry a full lake, it becomes empty, but if you chose to dry an empty lake, nothing changes.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> rains = [1,2,3,4]
@@ -34,7 +34,7 @@ After the fourth day full lakes are [1,2,3,4]
 There&#39;s no day to dry any lake and there is no flood in any lake.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> rains = [1,2,0,0,2,1]
@@ -48,7 +48,7 @@ After the sixth day, full lakes are [1,2].
 It is easy that this scenario is flood-free. [-1,-1,1,2,-1,-1] is another acceptable scenario.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> rains = [1,2,0,1,2]
