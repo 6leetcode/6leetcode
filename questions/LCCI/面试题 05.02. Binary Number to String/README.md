@@ -19,6 +19,7 @@
 
 <p><strong>Note: </strong></p>
 
-<ol>
+<ul>
 	<li>This two charaters &quot;0.&quot; should be counted into 32 characters.</li>
-</ol>
+	<li>The number of decimal places for <code>num</code> is at most 6 digits</li>
+</ul>

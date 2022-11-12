@@ -5,7 +5,7 @@
 <p><em>Merge all the linked-lists into one sorted linked-list and return it.</em></p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> lists = [[1,4,5],[1,3,4],[2,6]]
@@ -20,14 +20,14 @@ merging them into one sorted list:
 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> lists = []
 <strong>Output:</strong> []
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> lists = [[]]
@@ -39,9 +39,9 @@ merging them into one sorted list:
 
 <ul>
 	<li><code>k == lists.length</code></li>
-	<li><code>0 &lt;= k &lt;= 10^4</code></li>
+	<li><code>0 &lt;= k &lt;= 10<sup>4</sup></code></li>
 	<li><code>0 &lt;= lists[i].length &lt;= 500</code></li>
-	<li><code>-10^4 &lt;= lists[i][j] &lt;= 10^4</code></li>
+	<li><code>-10<sup>4</sup> &lt;= lists[i][j] &lt;= 10<sup>4</sup></code></li>
 	<li><code>lists[i]</code> is sorted in <strong>ascending order</strong>.</li>
-	<li>The sum of <code>lists[i].length</code> won&#39;t exceed <code>10^4</code>.</li>
+	<li>The sum of <code>lists[i].length</code> will not exceed <code>10<sup>4</sup></code>.</li>
 </ul>

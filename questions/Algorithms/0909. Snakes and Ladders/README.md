@@ -26,7 +26,7 @@
 <p>Return <em>the least number of moves required to reach the square </em><code>n<sup>2</sup></code><em>. If it is not possible to reach the square, return </em><code>-1</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2018/09/23/snakes.png" style="width: 500px; height: 394px;" />
 <pre>
 <strong>Input:</strong> board = [[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]
@@ -40,7 +40,7 @@ You then decide to move to square 36, ending the game.
 This is the lowest possible number of moves to reach the last square, so return 4.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> board = [[-1,-1],[-1,3]]

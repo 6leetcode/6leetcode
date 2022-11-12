@@ -3,7 +3,7 @@
 <p>Given an array of positive integers <code>arr</code> (not necessarily distinct), return <em>the lexicographically largest permutation that is smaller than</em> <code>arr</code>, that can be <strong>made with exactly one swap</strong> (A <em>swap</em> exchanges the positions of two numbers <code>arr[i]</code> and <code>arr[j]</code>). If it cannot be done, then return the same array.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> arr = [3,2,1]
@@ -11,7 +11,7 @@
 <strong>Explanation:</strong> Swapping 2 and 1.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> arr = [1,1,5]
@@ -19,7 +19,7 @@
 <strong>Explanation:</strong> This is already the smallest permutation.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> arr = [1,9,4,6,7]

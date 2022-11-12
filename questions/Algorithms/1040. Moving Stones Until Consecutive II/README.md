@@ -18,7 +18,7 @@
 </ul>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> stones = [7,4,9]
@@ -27,7 +27,7 @@
 Or, we can move 9 -&gt; 5, 4 -&gt; 6 for two moves to finish the game.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> stones = [6,5,4,3,10]

@@ -10,7 +10,7 @@
 <p>The matching should cover the <strong>entire</strong> input string (not partial).</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a&quot;
@@ -18,7 +18,7 @@
 <strong>Explanation:</strong> &quot;a&quot; does not match the entire string &quot;aa&quot;.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;aa&quot;, p = &quot;a*&quot;
@@ -26,7 +26,7 @@
 <strong>Explanation:</strong> &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;. Therefore, by repeating &#39;a&#39; once, it becomes &quot;aa&quot;.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;ab&quot;, p = &quot;.*&quot;

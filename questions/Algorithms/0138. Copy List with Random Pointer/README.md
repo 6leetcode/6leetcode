@@ -18,21 +18,21 @@
 <p>Your code will <strong>only</strong> be given the <code>head</code> of the original linked list.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2019/12/18/e1.png" style="width: 700px; height: 142px;" />
 <pre>
 <strong>Input:</strong> head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
 <strong>Output:</strong> [[7,null],[13,0],[11,4],[10,2],[1,0]]
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2019/12/18/e2.png" style="width: 700px; height: 114px;" />
 <pre>
 <strong>Input:</strong> head = [[1,1],[2,1]]
 <strong>Output:</strong> [[1,1],[2,1]]
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/12/18/e3.png" style="width: 700px; height: 122px;" /></strong></p>
 

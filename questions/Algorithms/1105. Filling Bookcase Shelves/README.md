@@ -15,7 +15,7 @@
 <p>Return <em>the minimum possible height that the total bookshelf can be after placing shelves in this manner</em>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2019/06/24/shelves.png" style="height: 500px; width: 337px;" />
 <pre>
 <strong>Input:</strong> books = [[1,1],[2,3],[2,3],[1,1],[1,1],[1,1],[1,2]], shelf_width = 4
@@ -25,7 +25,7 @@ The sum of the heights of the 3 shelves is 1 + 3 + 2 = 6.
 Notice that book number 2 does not have to be on the first shelf.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> books = [[1,3],[2,4],[3,2]], shelfWidth = 6

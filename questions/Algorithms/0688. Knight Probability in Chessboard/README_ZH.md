@@ -1,4 +1,4 @@
-### [“马”在棋盘上的概率](https://leetcode-cn.com/problems/knight-probability-in-chessboard)
+### [骑士在棋盘上的概率](https://leetcode-cn.com/problems/knight-probability-in-chessboard)
 
 <p>在一个&nbsp;<code>n x n</code>&nbsp;的国际象棋棋盘上，一个骑士从单元格 <code>(row, column)</code>&nbsp;开始，并尝试进行 <code>k</code> 次移动。行和列是 <strong>从 0 开始</strong> 的，所以左上单元格是 <code>(0,0)</code> ，右下单元格是 <code>(n - 1, n - 1)</code> 。</p>
 

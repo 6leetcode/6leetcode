@@ -1,6 +1,10 @@
 ### [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water)
 
-<p>给你 <code>n</code> 个非负整数 <code>a<sub>1</sub>，a<sub>2，</sub>...，a</code><sub><code>n</code>，</sub>每个数代表坐标中的一个点&nbsp;<code>(i,&nbsp;a<sub>i</sub>)</code> 。在坐标内画 <code>n</code> 条垂直线，垂直线 <code>i</code>&nbsp;的两个端点分别为&nbsp;<code>(i,&nbsp;a<sub>i</sub>)</code> 和 <code>(i, 0)</code> 。找出其中的两条线，使得它们与&nbsp;<code>x</code>&nbsp;轴共同构成的容器可以容纳最多的水。</p>
+<p>给定一个长度为 <code>n</code> 的整数数组&nbsp;<code>height</code>&nbsp;。有&nbsp;<code>n</code>&nbsp;条垂线，第 <code>i</code> 条线的两个端点是&nbsp;<code>(i, 0)</code>&nbsp;和&nbsp;<code>(i, height[i])</code>&nbsp;。</p>
+
+<p>找出其中的两条线，使得它们与&nbsp;<code>x</code>&nbsp;轴共同构成的容器可以容纳最多的水。</p>
+
+<p>返回容器可以储存的最大水量。</p>
 
 <p><strong>说明：</strong>你不能倾斜容器。</p>
 
@@ -8,7 +12,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg" style="height: 287px; width: 600px;" /></p>
+<p><img alt="" src="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg" /></p>
 
 <pre>
 <strong>输入：</strong>[1,8,6,2,5,4,8,3,7]
@@ -20,20 +24,6 @@
 <pre>
 <strong>输入：</strong>height = [1,1]
 <strong>输出：</strong>1
-</pre>
-
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>height = [4,3,2,1,4]
-<strong>输出：</strong>16
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>height = [1,2,1]
-<strong>输出：</strong>2
 </pre>
 
 <p>&nbsp;</p>

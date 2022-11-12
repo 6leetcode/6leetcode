@@ -32,13 +32,6 @@
 <strong>解释：</strong>你可以交换 s[0] = 'a' 和 s[1] = 'a' 生成 "aa"，此时 s 和 goal 相等。
 </pre>
 
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>s = "aaaaaaabc", goal = "aaaaaaacb"
-<strong>输出：</strong>true
-</pre>
-
 <p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>

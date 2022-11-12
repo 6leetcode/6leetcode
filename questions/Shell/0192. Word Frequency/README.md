@@ -1,6 +1,6 @@
 ### [Word Frequency](https://leetcode.com/problems/word-frequency)
 
-<p>Write a bash script to calculate the frequency of each word in a text file <code>words.txt</code>.</p>
+<p>Write a bash script to calculate the <span data-keyword="frequency-textfile">frequency</span> of each word in a text file <code>words.txt</code>.</p>
 
 <p>For simplicity sake, you may assume:</p>
 
@@ -10,7 +10,7 @@
 	<li>Words are separated by one or more whitespace characters.</li>
 </ul>
 
-<p><strong>Example:</strong></p>
+<p><strong class="example">Example:</strong></p>
 
 <p>Assume that <code>words.txt</code> has the following content:</p>
 

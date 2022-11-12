@@ -5,7 +5,7 @@
 <p>From each cell, you can either move in four directions: left, right, up, or down. You <strong>may not</strong> move <strong>diagonally</strong> or move <strong>outside the boundary</strong> (i.e., wrap-around is not allowed).</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/01/05/grid1.jpg" style="width: 242px; height: 242px;" />
 <pre>
 <strong>Input:</strong> matrix = [[9,9,4],[6,6,8],[2,1,1]]
@@ -13,7 +13,7 @@
 <strong>Explanation:</strong> The longest increasing path is <code>[1, 2, 6, 9]</code>.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/01/27/tmp-grid.jpg" style="width: 253px; height: 253px;" />
 <pre>
 <strong>Input:</strong> matrix = [[3,4,5],[3,2,6],[2,2,1]]
@@ -21,7 +21,7 @@
 <strong>Explanation: </strong>The longest increasing path is <code>[3, 4, 5, 6]</code>. Moving diagonally is not allowed.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> matrix = [[1]]

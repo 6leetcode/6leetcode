@@ -22,31 +22,11 @@
 <strong>解释：</strong>'e' 一定需要被键入两次，但在 typed 的输出中不是这样。
 </pre>
 
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>name = "leelee", typed = "lleeelee"
-<strong>输出：</strong>true
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>name = "laiden", typed = "laiden"
-<strong>输出：</strong>true
-<strong>解释：</strong>长按名字中的字符并不是必要的。
-</pre>
-
 <p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>name.length &lt;= 1000</code></li>
-	<li><code>typed.length &lt;= 1000</code></li>
-	<li><code>name</code> 和&nbsp;<code>typed</code>&nbsp;的字符都是小写字母。</li>
+	<li><code>1 &lt;= name.length, typed.length &lt;= 1000</code></li>
+	<li><code>name</code> 和&nbsp;<code>typed</code>&nbsp;的字符都是小写字母</li>
 </ul>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>

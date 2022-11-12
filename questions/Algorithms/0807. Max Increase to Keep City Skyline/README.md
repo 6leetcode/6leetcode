@@ -9,7 +9,7 @@
 <p>Return <em>the <strong>maximum total sum</strong> that the height of the buildings can be increased by <strong>without</strong> changing the city&#39;s <strong>skyline</strong> from any cardinal direction</em>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/06/21/807-ex1.png" style="width: 700px; height: 603px;" />
 <pre>
 <strong>Input:</strong> grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]
@@ -23,7 +23,7 @@ gridNew = [ [8, 4, 8, 7],
             [3, 3, 3, 3] ]
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> grid = [[0,0,0],[0,0,0],[0,0,0]]

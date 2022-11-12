@@ -7,7 +7,7 @@
 <p>Given two integer arrays <code>gas</code> and <code>cost</code>, return <em>the starting gas station&#39;s index if you can travel around the circuit once in the clockwise direction, otherwise return</em> <code>-1</code>. If there exists a solution, it is <strong>guaranteed</strong> to be <strong>unique</strong></p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> gas = [1,2,3,4,5], cost = [3,4,5,1,2]
@@ -22,7 +22,7 @@ Travel to station 3. The cost is 5. Your gas is just enough to travel back to st
 Therefore, return 3 as the starting index.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> gas = [2,3,4], cost = [3,4,3]
@@ -40,8 +40,7 @@ Therefore, you can&#39;t travel around the circuit once no matter where you star
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>gas.length == n</code></li>
-	<li><code>cost.length == n</code></li>
+	<li><code>n == gas.length == cost.length</code></li>
 	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= gas[i], cost[i] &lt;= 10<sup>4</sup></code></li>
 </ul>

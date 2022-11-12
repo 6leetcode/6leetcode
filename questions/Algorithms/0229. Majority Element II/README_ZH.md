@@ -1,15 +1,13 @@
-### [求众数 II](https://leetcode-cn.com/problems/majority-element-ii)
+### [多数元素 II](https://leetcode-cn.com/problems/majority-element-ii)
 
 <p>给定一个大小为&nbsp;<em>n&nbsp;</em>的整数数组，找出其中所有出现超过&nbsp;<code>⌊ n/3 ⌋</code>&nbsp;次的元素。</p>
-
-<p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
 <p><strong>示例&nbsp;1：</strong></p>
 
 <pre>
-<strong>输入：</strong>[3,2,3]
+<strong>输入：</strong>nums = [3,2,3]
 <strong>输出：</strong>[3]</pre>
 
 <p><strong>示例 2：</strong></p>
@@ -22,7 +20,7 @@
 <p><strong>示例 3：</strong></p>
 
 <pre>
-<strong>输入：</strong>[1,1,1,3,3,2,2,2]
+<strong>输入：</strong>nums = [1,2]
 <strong>输出：</strong>[1,2]</pre>
 
 <p>&nbsp;</p>

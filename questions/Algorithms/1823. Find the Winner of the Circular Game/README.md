@@ -15,7 +15,7 @@
 <p>Given the number of friends, <code>n</code>, and an integer <code>k</code>, return <em>the winner of the game</em>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/03/25/ic234-q2-ex11.png" style="width: 500px; height: 345px;" />
 <pre>
 <strong>Input:</strong> n = 5, k = 2
@@ -31,7 +31,7 @@
 8) Count 2 friends clockwise, which are friends 3 and 5.
 9) Friend 5 leaves the circle. Only friend 3 is left, so they are the winner.</pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> n = 6, k = 5
@@ -45,3 +45,8 @@
 <ul>
 	<li><code>1 &lt;= k &lt;= n &lt;= 500</code></li>
 </ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong></p>
+
+<p>Could you solve this problem in linear time with constant space?</p>

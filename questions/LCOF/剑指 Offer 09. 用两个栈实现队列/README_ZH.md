@@ -6,16 +6,18 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>
-[&quot;CQueue&quot;,&quot;appendTail&quot;,&quot;deleteHead&quot;,&quot;deleteHead&quot;]
-[[],[3],[],[]]
-<strong>输出：</strong>[null,null,3,-1]
+<pre>
+<strong>输入：</strong>
+["CQueue","appendTail","deleteHead","deleteHead","deleteHead"]
+[[],[3],[],[],[]]
+<strong>输出：</strong>[null,null,3,-1,-1]
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>
-[&quot;CQueue&quot;,&quot;deleteHead&quot;,&quot;appendTail&quot;,&quot;appendTail&quot;,&quot;deleteHead&quot;,&quot;deleteHead&quot;]
+<pre>
+<strong>输入：</strong>
+["CQueue","deleteHead","appendTail","appendTail","deleteHead","deleteHead"]
 [[],[],[5],[2],[],[]]
 <strong>输出：</strong>[null,-1,null,null,5,2]
 </pre>
@@ -24,5 +26,5 @@
 
 <ul>
 	<li><code>1 &lt;= values &lt;= 10000</code></li>
-	<li><code>最多会对&nbsp;appendTail、deleteHead 进行&nbsp;10000&nbsp;次调用</code></li>
+	<li>最多会对<code>&nbsp;appendTail、deleteHead </code>进行<code>&nbsp;10000</code>&nbsp;次调用</li>
 </ul>

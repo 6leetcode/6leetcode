@@ -4,7 +4,7 @@
 
 <p>Given an array of integer coordinates <code>queens</code> that represents the positions of the Black Queens, and a pair of coordinates <code>king</code> that represent the position of the White King, return the coordinates of all the queens (in any order) that can attack the King.</p>
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2019/10/01/untitled-diagram.jpg" style="width: 321px; height: 321px;" /></p>
 
@@ -20,7 +20,7 @@ The queen at [4,0] can&#39;t attack the king cause it&#39;s blocked by the queen
 The queen at [2,4] can&#39;t attack the king cause it&#39;s not in the same row/column/diagnal as the king.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/10/01/untitled-diagram-1.jpg" style="width: 321px; height: 321px;" /></strong></p>
 
@@ -29,7 +29,7 @@ The queen at [2,4] can&#39;t attack the king cause it&#39;s not in the same row/
 <strong>Output:</strong> [[2,2],[3,4],[4,4]]
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/10/01/untitled-diagram-2.jpg" style="width: 321px; height: 321px;" /></strong></p>
 

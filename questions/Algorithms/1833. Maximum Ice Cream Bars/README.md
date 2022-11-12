@@ -9,7 +9,7 @@
 <p><strong>Note:</strong> The boy can buy the ice cream bars in any order.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> costs = [1,3,2,4,1], coins = 7
@@ -17,7 +17,7 @@
 <strong>Explanation: </strong>The boy can buy ice cream bars at indices 0,1,2,4 for a total price of 1 + 3 + 2 + 1 = 7.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> costs = [10,6,8,7,7,8], coins = 5
@@ -25,7 +25,7 @@
 <strong>Explanation: </strong>The boy cannot afford any of the ice cream bars.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> costs = [1,6,3,1,2,5], coins = 20

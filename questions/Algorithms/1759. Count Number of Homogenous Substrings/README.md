@@ -7,7 +7,7 @@
 <p>A <strong>substring</strong> is a contiguous sequence of characters within a string.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;abbcccaa&quot;
@@ -22,14 +22,14 @@
 &quot;ccc&quot; appears 1 time.
 3 + 1 + 2 + 1 + 3 + 2 + 1 = 13.</pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;xy&quot;
 <strong>Output:</strong> 2
 <strong>Explanation:</strong> The homogenous substrings are &quot;x&quot; and &quot;y&quot;.</pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> s = &quot;zzzzz&quot;

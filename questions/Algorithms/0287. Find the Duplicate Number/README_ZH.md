@@ -1,12 +1,12 @@
 ### [寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number)
 
-<p>给定一个包含 <code>n + 1</code> 个整数的数组 <code>nums</code> ，其数字都在 <code>1</code> 到 <code>n</code><em> </em>之间（包括 <code>1</code> 和 <code>n</code>），可知至少存在一个重复的整数。</p>
+<p>给定一个包含&nbsp;<code>n + 1</code> 个整数的数组&nbsp;<code>nums</code> ，其数字都在&nbsp;<code>[1, n]</code>&nbsp;范围内（包括 <code>1</code> 和 <code>n</code>），可知至少存在一个重复的整数。</p>
 
-<p>假设 <code>nums</code> 只有 <strong>一个重复的整数</strong> ，找出 <strong>这个重复的数</strong> 。</p>
+<p>假设 <code>nums</code> 只有 <strong>一个重复的整数</strong> ，返回&nbsp;<strong>这个重复的数</strong> 。</p>
 
-<p>你设计的解决方案必须不修改数组 <code>nums</code> 且只用常量级 <code>O(1)</code> 的额外空间。</p>
+<p>你设计的解决方案必须 <strong>不修改</strong> 数组 <code>nums</code> 且只用常量级 <code>O(1)</code> 的额外空间。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
@@ -22,32 +22,18 @@
 <strong>输出：</strong>3
 </pre>
 
-<p><strong>示例 3：</strong></p>
-
-<pre>
-<strong>输入：</strong>nums = [1,1]
-<strong>输出：</strong>1
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>nums = [1,1,2]
-<strong>输出：</strong>1
-</pre>
-
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= n <= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>nums.length == n + 1</code></li>
-	<li><code>1 <= nums[i] <= n</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= n</code></li>
 	<li><code>nums</code> 中 <strong>只有一个整数</strong> 出现 <strong>两次或多次</strong> ，其余整数均只出现 <strong>一次</strong></li>
 </ul>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><b>进阶：</b></p>
 

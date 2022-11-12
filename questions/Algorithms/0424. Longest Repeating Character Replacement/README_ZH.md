@@ -1,8 +1,8 @@
 ### [替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement)
 
-<p>给定一个字符串 <code>s</code> 和一个整数 <code>k</code> 。您可以选择字符串中的任意字符，并将其更改为任何其他大写英文字符。该操作最多可执行 <code>k</code> 次。</p>
+<p>给你一个字符串 <code>s</code> 和一个整数 <code>k</code> 。你可以选择字符串中的任一字符，并将其更改为任何其他大写英文字符。该操作最多可执行 <code>k</code> 次。</p>
 
-<p>在执行上述操作后，返回 <em>包含相同字母的最长子字符串的长度</em> 。</p>
+<p>在执行上述操作后，返回包含相同字母的最长子字符串的长度。</p>
 
 <p>&nbsp;</p>
 
@@ -30,6 +30,6 @@
 
 <ul>
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>s</code>&nbsp;由小写英文字母组成</li>
+	<li><code>s</code> 仅由大写英文字母组成</li>
 	<li><code>0 &lt;= k &lt;= s.length</code></li>
 </ul>

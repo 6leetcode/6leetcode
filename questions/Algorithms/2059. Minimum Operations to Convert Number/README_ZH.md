@@ -20,17 +20,8 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>nums = [1,3], start = 6, goal = 4
-<strong>输出：</strong>2
-<strong>解释：</strong>
-可以按 6 → 7 → 4 的转化路径进行，只需执行下述 2 次运算：
-- 6 ^ 1 = 7
-- 7 ^ 3 = 4
-</pre>
-
-<p><strong>示例 2：</strong></p>
-
-<pre><strong>输入：</strong>nums = [2,4,12], start = 2, goal = 12
+<pre>
+<strong>输入：</strong>nums = [2,4,12], start = 2, goal = 12
 <strong>输出：</strong>2
 <strong>解释：</strong>
 可以按 2 → 14 → 12 的转化路径进行，只需执行下述 2 次运算：
@@ -38,9 +29,10 @@
 - 14 - 2 = 12
 </pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>nums = [3,5,7], start = 0, goal = -4
+<pre>
+<strong>输入：</strong>nums = [3,5,7], start = 0, goal = -4
 <strong>输出：</strong>2
 <strong>解释：</strong>
 可以按 0 → 3 → -4 的转化路径进行，只需执行下述 2 次运算：
@@ -49,23 +41,13 @@
 注意，最后一步运算使 x 超过范围 0 &lt;= x &lt;= 1000 ，但该运算仍然可以生效。
 </pre>
 
-<p><strong>示例 4：</strong></p>
+<p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>nums = [2,8,16], start = 0, goal = 1
+<pre>
+<strong>输入：</strong>nums = [2,8,16], start = 0, goal = 1
 <strong>输出：</strong>-1
 <strong>解释：</strong>
 无法将 0 转化为 1</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre><strong>输入：</strong>nums = [1], start = 0, goal = 3
-<strong>输出：</strong>3
-<strong>解释：</strong>
-可以按 0 → 1 → 2 → 3 的转化路径进行，只需执行下述 3 次运算：
-- 0 + 1 = 1 
-- 1 + 1 = 2
-- 2 + 1 = 3
-</pre>
 
 <p>&nbsp;</p>
 

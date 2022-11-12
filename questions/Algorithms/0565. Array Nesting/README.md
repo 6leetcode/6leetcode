@@ -13,7 +13,7 @@
 <p>Return <em>the longest length of a set</em> <code>s[k]</code>.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [5,4,0,3,1,6,2]
@@ -24,7 +24,7 @@ One of the longest sets s[k]:
 s[0] = {nums[0], nums[5], nums[6], nums[2]} = {5, 6, 2, 0}
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> nums = [0,1,2]

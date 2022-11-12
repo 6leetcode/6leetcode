@@ -1,6 +1,6 @@
 Debug: false
 Username: tosone@qq.com # leetcode username
-Password: yourpassword # leetcode password
+Password: password # leetcode password
 QuestionDir: questions
 Database: 6leetcode.db
 Public: apps/web/public/db

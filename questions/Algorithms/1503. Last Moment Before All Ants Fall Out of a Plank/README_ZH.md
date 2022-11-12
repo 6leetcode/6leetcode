@@ -14,9 +14,10 @@
 
 <p>&nbsp;</p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/06/17/ants.jpg" style="height: 610px; width: 450px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/06/17/ants.jpg" style="height: 610px; width: 450px;" /></p>
 
-<pre><strong>输入：</strong>n = 4, left = [4,3], right = [0,1]
+<pre>
+<strong>输入：</strong>n = 4, left = [4,3], right = [0,1]
 <strong>输出：</strong>4
 <strong>解释：</strong>如上图所示：
 -下标 0 处的蚂蚁命名为 A 并向右移动。
@@ -27,33 +28,22 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/06/17/ants2.jpg" style="height: 101px; width: 639px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/06/17/ants2.jpg" style="height: 101px; width: 639px;" /></p>
 
-<pre><strong>输入：</strong>n = 7, left = [], right = [0,1,2,3,4,5,6,7]
+<pre>
+<strong>输入：</strong>n = 7, left = [], right = [0,1,2,3,4,5,6,7]
 <strong>输出：</strong>7
 <strong>解释：</strong>所有蚂蚁都向右移动，下标为 0 的蚂蚁需要 7 秒才能从木板上掉落。
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2020/06/17/ants3.jpg" style="height: 100px; width: 639px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2020/06/17/ants3.jpg" style="height: 100px; width: 639px;" /></p>
 
-<pre><strong>输入：</strong>n = 7, left = [0,1,2,3,4,5,6,7], right = []
+<pre>
+<strong>输入：</strong>n = 7, left = [0,1,2,3,4,5,6,7], right = []
 <strong>输出：</strong>7
 <strong>解释：</strong>所有蚂蚁都向左移动，下标为 7 的蚂蚁需要 7 秒才能从木板上掉落。
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre><strong>输入：</strong>n = 9, left = [5], right = [4]
-<strong>输出：</strong>5
-<strong>解释：</strong>t = 1 秒时，两只蚂蚁将回到初始位置，但移动方向与之前相反。
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre><strong>输入：</strong>n = 6, left = [6], right = [0]
-<strong>输出：</strong>6
 </pre>
 
 <p>&nbsp;</p>

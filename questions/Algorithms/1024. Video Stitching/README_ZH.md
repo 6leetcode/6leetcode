@@ -44,15 +44,6 @@
 选取片段 [0,4], [4,7] 和 [6,9] 。
 </pre>
 
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>clips = [[0,4],[2,8]], time = 5
-<strong>输出：</strong>2
-<strong>解释：</strong>
-注意，你可能录制超过比赛结束时间的视频。
-</pre>
-
 <p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>

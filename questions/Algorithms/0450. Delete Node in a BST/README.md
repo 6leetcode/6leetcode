@@ -1,6 +1,6 @@
 ### [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst)
 
-<p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.</p>
+<p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return <em>the <strong>root node reference</strong> (possibly updated) of the BST</em>.</p>
 
 <p>Basically, the deletion can be divided into two stages:</p>
 
@@ -10,7 +10,7 @@
 </ol>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg" style="width: 800px; height: 214px;" />
 <pre>
 <strong>Input:</strong> root = [5,3,6,2,4,null,7], key = 3
@@ -21,7 +21,7 @@ Please notice that another valid answer is [5,2,6,null,4,null,7] and it&#39;s al
 <img alt="" src="https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg" style="width: 350px; height: 255px;" />
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> root = [5,3,6,2,4,null,7], key = 0
@@ -29,7 +29,7 @@ Please notice that another valid answer is [5,2,6,null,4,null,7] and it&#39;s al
 <strong>Explanation:</strong> The tree does not contain a node with value = 0.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> root = [], key = 0

@@ -9,7 +9,7 @@
 <p><strong>Note:</strong> In all test cases, all words were chosen randomly from the <code>1000</code> most common US English words, and <code>target</code> was chosen as a concatenation of two random words.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> stickers = [&quot;with&quot;,&quot;example&quot;,&quot;science&quot;], target = &quot;thehat&quot;
@@ -20,7 +20,7 @@ After cutting and rearrange the letters of those stickers, we can form the targe
 Also, this is the minimum number of stickers necessary to form the target string.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> stickers = [&quot;notice&quot;,&quot;possible&quot;], target = &quot;basicbasic&quot;
@@ -36,6 +36,6 @@ We cannot form the target &quot;basicbasic&quot; from cutting letters from the g
 	<li><code>n == stickers.length</code></li>
 	<li><code>1 &lt;= n &lt;= 50</code></li>
 	<li><code>1 &lt;= stickers[i].length &lt;= 10</code></li>
-	<li><code>1 &lt;= target &lt;= 15</code></li>
+	<li><code>1 &lt;= target.length &lt;= 15</code></li>
 	<li><code>stickers[i]</code> and <code>target</code> consist of lowercase English letters.</li>
 </ul>

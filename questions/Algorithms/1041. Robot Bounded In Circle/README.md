@@ -22,7 +22,7 @@
 <p>Return <code>true</code> if and only if there exists a circle in the plane such that the robot never leaves the circle.</p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre>
 <strong>Input:</strong> instructions = &quot;GGLLGG&quot;
@@ -38,7 +38,7 @@ Repeating the instructions, the robot goes into the cycle: (0, 0) --&gt; (0, 1) 
 Based on that, we return true.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre>
 <strong>Input:</strong> instructions = &quot;GG&quot;
@@ -50,7 +50,7 @@ Repeating the instructions, keeps advancing in the north direction and does not 
 Based on that, we return false.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
 <strong>Input:</strong> instructions = &quot;GL&quot;
