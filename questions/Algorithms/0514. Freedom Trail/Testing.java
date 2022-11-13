@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 // ------------------------------- solution begin -------------------------------
 class Solution {
@@ -30,7 +29,10 @@ class Solution {
     }
     return Arrays.stream(dp[m - 1]).min().getAsInt();
   }
+}
+// ------------------------------- solution end ---------------------------------
 
+class Testing {
   public static void main(String[] args) {
     Solution solution = new Solution();
     String input1 = "godding";
@@ -39,4 +41,3 @@ class Solution {
     System.out.printf("Output: %d\n", solution.findRotateSteps(input1, input2));
   }
 }
-// ------------------------------- solution end ---------------------------------

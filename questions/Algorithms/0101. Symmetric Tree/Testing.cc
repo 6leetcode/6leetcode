@@ -9,6 +9,7 @@ struct TreeNode {
   TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   bool isMirror(struct TreeNode *root2, struct TreeNode *root1) {
@@ -20,19 +21,20 @@ public:
     return isMirror(root, root);
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   TreeNode node1 = {1};
   TreeNode node2 = {2};
   TreeNode node3 = {2};
 
-  node1.left  = &node2;
+  node1.left = &node2;
   node1.right = &node3;
 
   node2.right = NULL;
-  node2.left  = NULL;
+  node2.left = NULL;
 
-  node3.left  = NULL;
+  node3.left = NULL;
   node3.right = NULL;
 
   cout << "Input:  [" << node1.val << ", " << node2.val << ", " << node3.val << "]" << endl;

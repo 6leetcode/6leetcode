@@ -35,7 +35,11 @@ class Solution {
     }
     return resultNode.next;
   }
+}
 
+// -------------------------------solution end---------------------------------
+
+class Testing {
   public static void main(String[] args) {
     ListNode input1_0 = new ListNode(2);
     ListNode input1_1 = new ListNode(4);
@@ -77,5 +81,3 @@ class Solution {
     System.out.println(")");
   }
 }
-
-// -------------------------------solution end---------------------------------

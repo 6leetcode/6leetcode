@@ -8,6 +8,8 @@ TypescriptFiles := $(wildcard *.ts)
 JavaFiles       := $(wildcard *.java)
 BashFiles       := $(wildcard *.sh)
 
+# export MAKEFLAGS="--no-print-directory"
+
 .PHONY: all
 all: c cc rust go python php typescript java bash
 

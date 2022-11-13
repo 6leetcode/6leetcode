@@ -20,6 +20,10 @@ class Solution {
     }
     return result;
   }
+}
+// -------------------------------solution end---------------------------------
+
+class Testing {
   public static void main(String[] args) {
     String input = "qwekeek";
     System.out.println("Input:  " + input);
@@ -27,4 +31,3 @@ class Solution {
     System.out.println("Output: " + solution.lengthOfLongestSubstring(input));
   }
 }
-// -------------------------------solution end---------------------------------

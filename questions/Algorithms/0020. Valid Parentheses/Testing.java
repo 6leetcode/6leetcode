@@ -32,7 +32,7 @@ class Solution {
 }
 // -------------------------------solution end---------------------------------
 
-public class main {
+class Testing {
   public static void main(String[] args) {
     Solution solution = new Solution();
     String input = "()[]{}";

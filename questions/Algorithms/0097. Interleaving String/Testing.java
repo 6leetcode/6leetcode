@@ -27,7 +27,7 @@ class Solution {
 }
 // -------------------------------solution end---------------------------------
 
-public class java {
+class Testing {
   public static void main(String[] args) {
     String input1 = "aabcc";
     String input2 = "dbbca";

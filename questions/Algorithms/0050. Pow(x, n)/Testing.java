@@ -21,8 +21,11 @@ class Solution {
 
     return fastPow(x, N);
   }
+}
+// -------------------------------solution end---------------------------------
 
- public static void main(String[] args) {
+class Testing {
+  public static void main(String[] args) {
     Solution solution = new Solution();
     double x = 2;
     int n = -8;
@@ -31,4 +34,3 @@ class Solution {
     System.out.printf("Output: %f\n", result);
   }
 }
-// -------------------------------solution end---------------------------------

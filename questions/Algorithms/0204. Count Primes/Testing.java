@@ -18,7 +18,7 @@ class Solution {
 }
 // ------------------------------- solution end ---------------------------------
 
-public class main {
+class Testing {
   public static void main(String[] args) {
     int input = 10;
     System.out.printf("Input:  %d\n", input);

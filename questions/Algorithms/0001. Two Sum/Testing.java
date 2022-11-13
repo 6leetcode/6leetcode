@@ -14,6 +14,18 @@ class Solution {
     }
     return new int[] { -1, -1 };
   }
+}
+// -------------------------------solution end---------------------------------
+
+class Testing {
+  public static void main(String[] args) {
+    int[] input1 = new int[] { 1, 2, 3 };
+    int input2 = 3;
+    System.out.printf("Input:  %s, %d\n", ArrayShowInteger(input1), input2);
+
+    Solution solution = new Solution();
+    System.out.printf("Output: %s\n", ArrayShowInteger(solution.twoSum(input1, input2)));
+  }
 
   public static String ArrayShowInteger(int[] arr) {
     String res = "[";
@@ -27,14 +39,4 @@ class Solution {
     res += "]";
     return res;
   }
-
-  public static void main(String[] args) {
-    int[] input1 = new int[] { 1, 2, 3 };
-    int input2 = 3;
-    System.out.printf("Input:  %s, %d\n", ArrayShowInteger(input1), input2);
-
-    Solution solution = new Solution();
-    System.out.printf("Output: %s\n", ArrayShowInteger(solution.twoSum(input1, input2)));
-  }
 }
-// -------------------------------solution end---------------------------------

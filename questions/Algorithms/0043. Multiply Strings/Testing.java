@@ -25,7 +25,11 @@ class Solution {
     }
     return ans.toString();
   }
+}
 
+// ------------------------------- solution end---------------------------------
+
+class Testing {
   public static void main(String[] args) {
     String input1 = "2333";
     String input2 = "3334";
@@ -34,5 +38,3 @@ class Solution {
     System.out.printf("Output: %s%n", solution.multiply(input1, input2));
   }
 }
-
-// ------------------------------- solution end---------------------------------

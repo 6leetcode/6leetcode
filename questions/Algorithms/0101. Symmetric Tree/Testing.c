@@ -8,6 +8,7 @@ struct TreeNode {
   struct TreeNode *right;
 };
 
+// ------------------------------- solution begin -------------------------------
 bool isMirror(struct TreeNode *root2, struct TreeNode *root1) {
   if (root1 == NULL && root2 == NULL) return true;
   if (root1 == NULL || root2 == NULL) return false;
@@ -17,19 +18,20 @@ bool isMirror(struct TreeNode *root2, struct TreeNode *root1) {
 bool isSymmetric(struct TreeNode *root) {
   return isMirror(root, root);
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   struct TreeNode node1 = {1};
   struct TreeNode node2 = {2};
   struct TreeNode node3 = {2};
 
-  node1.left  = &node2;
+  node1.left = &node2;
   node1.right = &node3;
 
   node2.right = NULL;
-  node2.left  = NULL;
+  node2.left = NULL;
 
-  node3.left  = NULL;
+  node3.left = NULL;
   node3.right = NULL;
 
   printf("Input:  [%d, %d, %d]\n", node1.val, node2.val, node3.val);
