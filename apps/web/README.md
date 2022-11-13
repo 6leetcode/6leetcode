@@ -1,13 +1,13 @@
 # LeetCode Frontend
 
-### Development
+## Development
 
 ``` bash
 go get -u -v github.com/go-bindata/go-bindata/...
 npm start
 ```
 
-#### Release
+## Release
 
 ``` bash
 go get -u -v github.com/go-bindata/go-bindata/...
