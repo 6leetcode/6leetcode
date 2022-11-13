@@ -59,6 +59,9 @@ var tokens = []token{
 
 // Initialize ..
 func QuestionItem(questionItemDir string, questionID int) (err error) {
+	if err = new(table.Solution).DeleteAll(questionID); err != nil {
+		return
+	}
 	if err = filepath.Walk(questionItemDir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err

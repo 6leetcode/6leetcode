@@ -35,6 +35,11 @@ func (s *Solution) Create() (err error) {
 	return
 }
 
+// DeleteAll ...
+func (s *Solution) DeleteAll(questionID int) (err error) {
+	return engine.Unscoped().Where(Solution{QuestionID: questionID}).Delete(Solution{}).Error
+}
+
 // FindAll find solution by id
 func (s *Solution) FindAll() (solutions []Solution, err error) {
 	err = engine.Find(&solutions).Error

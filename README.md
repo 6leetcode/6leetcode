@@ -40,7 +40,7 @@ LeetCode Solutions.
 |[0015](https://leetcode-cn.com/problems/3sum)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:||||||||
 |[0016](https://leetcode-cn.com/problems/3sum-closest)|Medium|:white_check_mark:|:white_check_mark:|||||||||
 |[0017](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)|Medium|:white_check_mark:||||||||||
-|[0018](https://leetcode-cn.com/problems/4sum)|Medium|:white_check_mark:||||||||||
+|[0018](https://leetcode-cn.com/problems/4sum)|Medium|:white_check_mark:|:white_check_mark:|||||||||
 |[0019](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)|Medium|:white_check_mark:||||||||||
 |[0020](https://leetcode-cn.com/problems/valid-parentheses)|Easy|:white_check_mark:|:white_check_mark:||:white_check_mark:|||:white_check_mark:||||
 |[0021](https://leetcode-cn.com/problems/merge-two-sorted-lists)|Easy|:white_check_mark:|:white_check_mark:|||||||||
@@ -60,7 +60,7 @@ LeetCode Solutions.
 |[0035](https://leetcode-cn.com/problems/search-insert-position)|Easy|||||||||||
 |[0036](https://leetcode-cn.com/problems/valid-sudoku)|Medium|:white_check_mark:||||||||||
 |[0037](https://leetcode-cn.com/problems/sudoku-solver)|Hard|:white_check_mark:|:white_check_mark:||||||:white_check_mark:|||
-|[0038](https://leetcode-cn.com/problems/count-and-say)|Medium|||||||||||
+|[0038](https://leetcode-cn.com/problems/count-and-say)|Medium||:white_check_mark:|||||||||
 |[0039](https://leetcode-cn.com/problems/combination-sum)|Medium|||||||||||
 |[0040](https://leetcode-cn.com/problems/combination-sum-ii)|Medium|||||||||||
 |[0041](https://leetcode-cn.com/problems/first-missing-positive)|Hard|||||||||||
@@ -2252,6 +2252,10 @@ LeetCode Solutions.
 |[2463](https://leetcode-cn.com/problems/minimum-total-distance-traveled)|Hard|||||||||||
 |[2408](https://leetcode-cn.com/problems/design-sql)|Medium|||||||||||
 |[2417](https://leetcode-cn.com/problems/closest-fair-integer)|Medium|||||||||||
+|[6237](https://leetcode-cn.com/problems/number-of-distinct-averages)|Easy|||||||||||
+|[6238](https://leetcode-cn.com/problems/count-ways-to-build-good-strings)|Medium|||||||||||
+|[6239](https://leetcode-cn.com/problems/split-message-based-on-limit)|Hard|||||||||||
+|[6240](https://leetcode-cn.com/problems/most-profitable-path-in-a-tree)|Medium|||||||||||
 |[2422](https://leetcode-cn.com/problems/merge-operations-to-turn-array-into-a-palindrome)|Medium|||||||||||
 |[2431](https://leetcode-cn.com/problems/maximize-total-tastiness-of-purchased-fruits)|Medium|||||||||||
 |[2436](https://leetcode-cn.com/problems/minimum-split-into-subarrays-with-gcd-greater-than-one)|Medium|||||||||||
