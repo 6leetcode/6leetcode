@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
           lfs: true
       - name: Lint code
-        uses: golangci/golangci-lint-action@v2
+        uses: golangci/golangci-lint-action@v3
         with:
           version: latest
           working-directory: apps/cli
@@ -60,20 +60,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          check-latest: true
-      - name: Get npm cache directory
-        id: npm-cache-dir
-        run: |
-          echo "::set-output name=dir::$(npm config get cache)"
-      - uses: actions/cache@v3
-        id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
-        with:
-          path: ${{ steps.npm-cache-dir.outputs.dir }}
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          cache: "yarn"
+          cache-dependency-path: "apps/web/yarn.lock"
       - name: Build frontend
         run: |
           cd apps/web
-          npm install
-          npm run build
+          yarn install --frozen-lockfile
+          yarn run build
