@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.915164c5.css",
+    "main.js": "/static/js/main.9e61366f.js",
+    "static/media/leetcode.png": "/static/media/leetcode.ad6bd81538ac11bfecc2.png",
+    "index.html": "/index.html",
+    "main.915164c5.css.map": "/static/css/main.915164c5.css.map",
+    "main.9e61366f.js.map": "/static/js/main.9e61366f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.915164c5.css",
+    "static/js/main.9e61366f.js"
+  ]
+}
