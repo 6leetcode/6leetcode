@@ -18,7 +18,7 @@ export default function CodeBox({ solution }: any) {
           setCopied(false);
         }, 500);
       }}>
-        {copied ? <CheckOutlined className="copyButton" /> : <CopyOutlined className="copyButton" />}
+        {copied ? <CheckOutlined className="copyButton" style={{ color: "green" }} /> : <CopyOutlined className="copyButton" />}
       </CopyToClipboard>
       <SyntaxHighlighter language={solution.language.toLowerCase()}
         style={a11yDark} showLineNumbers>

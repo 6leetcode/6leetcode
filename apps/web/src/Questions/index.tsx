@@ -70,7 +70,7 @@ export default function Questions({ localServer }: any) {
   }, [category, currentPage, localServer]);
 
   return (
-    <Layout.Content className="content">
+    <Layout.Content className="questions-content">
       <div className="site-layout-content">
         <List
           header={

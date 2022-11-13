@@ -46,10 +46,48 @@ $content-width: 1100px;
   cursor: pointer;
 }
 
-.content {
+.questions-content {
   padding: 20px 0px;
   width: $content-width;
   margin: 0 auto;
+}
+
+.content {
+  padding: 20px 0px;
+}
+
+.content-description {
+  p {
+    margin-bottom: 1rem;
+  }
+  img {
+    max-width: 100%;
+    height: auto!important;
+  }
+  pre {
+    background-color: rgba(0,10,32,.03);
+    border-radius: 0.5rem;
+    color: rgba(38,38,38,.75);
+    font-family: Menlo,sans-serif;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    white-space: pre-wrap;
+  }
+  code {
+    background-color: rgba(0,10,32,.03);
+    border-color: rgba(0,0,0,.05);
+    border-radius: 5px;
+    border-width: 1px;
+    color: rgba(38,38,38,.75);
+    font-family: Menlo,sans-serif;
+    font-size: .75rem;
+    line-height: 1rem;
+    padding: 0.125rem;
+    white-space: pre-wrap;
+  }
 }
 
 .ant-tabs-large > .ant-tabs-nav .ant-tabs-tab {

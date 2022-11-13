@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CardTabListType } from "antd/lib/card";
 import { Empty, Layout, Card } from "antd";
+import { Col, Row } from 'antd';
 
 import CodeBox from '../CodeBox';
 import { IQuestion, ISolution, LanguagesDefinition } from '../types';
@@ -84,31 +85,39 @@ export default function Solutions({ localServer }: any) {
 
   return (
     <Layout.Content className="content">
-      <Card title={
-        (question.question_frontend_id + ". " + question.title)
-      } style={{ marginRight: '0px' }}>
-        {
-          <div dangerouslySetInnerHTML={{
-            __html: Base64.decode(question.content)
-          }} />
-        }
-      </Card>
-      <Card
-        tabList={tabList}
-        defaultActiveTabKey={active || ""}
-        activeTabKey={active || ""}
-        onTabChange={key => {
-          setActive(key);
-        }}
-      >
-        {
-          solutions.length === 0 ? <Empty /> : solutions.map(solution => {
-            return (
-              solution.language !== active ? "" : <CodeBox solution={solution} key={solution.filename} />
-            );
-          })
-        }
-      </Card>
+      <Row gutter={[16, 16]}>
+        <Col span={8}>
+          <Card title={
+            (question.question_frontend_id + ". " + question.title)
+          }>
+            {
+              <div className="content-description" dangerouslySetInnerHTML={{
+                __html: Base64.decode(question.content)
+              }} />
+            }
+          </Card>
+        </Col>
+        <Col span={16}>
+          <Card
+            title="Solutions"
+            bordered={true}
+            tabList={tabList}
+            defaultActiveTabKey={active || ""}
+            activeTabKey={active || ""}
+            onTabChange={key => {
+              setActive(key);
+            }}
+          >
+            {
+              solutions.length === 0 ? <Empty /> : solutions.map(solution => {
+                return (
+                  solution.language !== active ? "" : <CodeBox solution={solution} key={solution.filename} />
+                );
+              })
+            }
+          </Card>
+        </Col>
+      </Row>
     </Layout.Content >
   );
 }
