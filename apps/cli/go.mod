@@ -9,7 +9,7 @@ require (
 	github.com/tosone/logging v1.2.1
 	github.com/unknwon/com v1.0.1
 	gorm.io/driver/sqlite v1.4.3
-	gorm.io/gorm v1.24.1
+	gorm.io/gorm v1.24.2
 )
 
 require (
