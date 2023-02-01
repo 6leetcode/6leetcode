@@ -8,7 +8,7 @@ require (
 	github.com/spf13/viper v1.14.0
 	github.com/tosone/logging v1.2.1
 	github.com/unknwon/com v1.0.1
-	gorm.io/driver/sqlite v1.4.3
+	gorm.io/driver/sqlite v1.4.4
 	gorm.io/gorm v1.24.1
 )
 
