@@ -3,8 +3,11 @@
 `apps/web` 的重构版预览：**无框架、无 antd、无构建步骤**，纯 HTML / CSS / JS，
 采用「报纸版式」设计（参考 `testtrending/ai-newspaper` 与 `trending`）。
 
-- **左栏**：顶部分类切换，下方题目列表（**滚动加载**，每页 50 题）。
+- **左栏**：**分类下拉** + **搜索框**（题号 / 标题 / slug），下方题目列表（**滚动加载**，每页 50 题）。
 - **右栏**：题面（中/英切换）+ 题解（语言切换、复制代码、极简语法高亮）。
+
+英文正文使用 [Fontsource 的 Nunito](https://fontsource.org/fonts/nunito/use?tab=web)（CDN），
+中文与代码回落到等宽字体栈（`ui-monospace, …, monospace`）。
 
 ## 运行
 
@@ -37,5 +40,5 @@ web1/
   serve.command
 ```
 
-> 说明：设计参考里用的 Maple Mono NF CN 字体约 22MB，这里未打包，改用系统等宽字体栈
-> （`ui-monospace, SFMono-Regular, Menlo, …`）。需要完全还原可自行把字体放进 `assets/fonts/` 并 `@import`。
+> 说明：设计参考里用的 Maple Mono NF CN 字体约 22MB，这里未打包，中文与代码改用系统等宽字体。
+> 英文则由 Nunito（Fontsource CDN）渲染；需要离线自托管可把字体放进 `assets/fonts/` 并改用本地 `@font-face`。

@@ -19,6 +19,7 @@
 
   /* ── 工具 ───────────────────────────────────────────────────────────── */
   const $ = (id) => document.getElementById(id);
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const esc = (s) => String(s == null ? '' : s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -38,7 +39,7 @@
     cpp: 'auto bool break case catch char class const constexpr continue default delete do double else enum explicit export extern false float for friend goto if inline int long namespace new nullptr operator private protected public return short signed sizeof static struct switch template this throw true try typedef typename union unsigned using virtual void volatile while',
     go: 'break case chan const continue default defer else fallthrough for func go goto if import interface map package range return select struct switch type var nil true false string int int8 int16 int32 int64 uint byte rune float32 float64 bool make len cap append copy delete panic recover',
     java: 'abstract assert boolean break byte case catch char class const continue default do double else enum extends final finally float for goto if implements import instanceof int interface long native new package private protected public return short static strictfp super switch synchronized this throw throws transient try void volatile while true false null var',
-    typescript: 'abstract any as async await boolean break case catch class const continue declare default delete do else enum export extends false finally for from function if implements import in instanceof interface let new null number private protected public return static string super switch this throw true try type typeof undefined var void while yield readOnly',
+    typescript: 'abstract any as async await boolean break case catch class const continue declare default delete do else enum export extends false finally for from function if implements import in instanceof interface let new null number private protected public return static string super switch this throw true try type typeof undefined var void while yield readonly',
     python: 'and as assert async await break class continue def del elif else except False finally for from global if import in is lambda None nonlocal not or pass raise return True try while with yield self print range len',
     rust: 'as async await break const continue crate dyn else enum extern false fn for if impl in let loop match mod move mut pub ref return self Self static struct super trait true type unsafe use where while String Vec Option Some None Ok Err',
   };
@@ -46,7 +47,7 @@
   function hl(code, lang) {
     const kw = new Set((KEYWORDS[lang] || '').split(/\s+/).filter(Boolean));
     const lineTok = lang === 'python' ? '#' : '//';
-    const block = lang === 'python' ? null : true;
+    const block = lang !== 'python';
     const out = [];
     const tok = (cls, s) => `<span class="t-${cls}">${esc(s)}</span>`;
     const isId = (c) => /[A-Za-z0-9_$]/.test(c);
@@ -57,16 +58,12 @@
       if (block && code.startsWith('/*', i)) {
         const end = code.indexOf('*/', i + 2);
         const e = end === -1 ? n : end + 2;
-        out.push(tok('cm', code.slice(i, e)));
-        i = e;
-        continue;
+        out.push(tok('cm', code.slice(i, e))); i = e; continue;
       }
       if (code.startsWith(lineTok, i)) {
         const end = code.indexOf('\n', i);
         const e = end === -1 ? n : end;
-        out.push(tok('cm', code.slice(i, e)));
-        i = e;
-        continue;
+        out.push(tok('cm', code.slice(i, e))); i = e; continue;
       }
       if (c === '"' || c === "'" || c === '`') {
         let j = i + 1;
@@ -76,27 +73,20 @@
           if (code[j] === '\n' && c !== '`') break;
           j++;
         }
-        out.push(tok('st', code.slice(i, j)));
-        i = j;
-        continue;
+        out.push(tok('st', code.slice(i, j))); i = j; continue;
       }
       if (/[0-9]/.test(c)) {
         let j = i;
         while (j < n && /[0-9a-fA-FxX._]/.test(code[j])) j++;
-        out.push(tok('nu', code.slice(i, j)));
-        i = j;
-        continue;
+        out.push(tok('nu', code.slice(i, j))); i = j; continue;
       }
       if (/[A-Za-z_$]/.test(c)) {
         let j = i;
         while (j < n && isId(code[j])) j++;
         const w = code.slice(i, j);
-        out.push(kw.has(w) ? tok('kw', w) : esc(w));
-        i = j;
-        continue;
+        out.push(kw.has(w) ? tok('kw', w) : esc(w)); i = j; continue;
       }
-      out.push(esc(c));
-      i++;
+      out.push(esc(c)); i++;
     }
     return out.join('');
   }
@@ -127,6 +117,7 @@
     done: false,
     cats: [],
     byId: new Map(),
+    query: '',
     selected: null,
     question: null,
     solutions: [],
@@ -135,24 +126,34 @@
   };
 
   const els = {
-    catBar: $('catBar'), timeline: $('timeline'), sentinel: $('sentinel'),
-    listHint: $('listHint'), listEmpty: $('listEmpty'),
-    reader: $('reader'), readerTitle: $('readerTitle'), descToggle: $('descToggle'),
-    barMeta: $('barMeta'),
+    catBtn: $('catBtn'), catName: $('catName'), catCount: $('catCount'), catMenu: $('catMenu'),
+    search: $('searchInput'), searchClear: $('searchClear'),
+    timeline: $('timeline'), sentinel: $('sentinel'), listHint: $('listHint'), listEmpty: $('listEmpty'),
+    reader: $('reader'), readerTitle: $('readerTitle'), descToggle: $('descToggle'), barMeta: $('barMeta'),
   };
 
-  /* ── 分类 ───────────────────────────────────────────────────────────── */
-  function renderCats() {
+  /* ── 分类下拉 ───────────────────────────────────────────────────────── */
+  const catTotal = (key) => (key === 'All' ? state.allTotal : (state.cats.find((c) => c.key === key) || {}).count || 0);
+  const catLabel = (key) => (key === 'All' ? '全部' : key);
+
+  function updateCatFace() {
+    els.catName.textContent = catLabel(state.cat);
+    els.catCount.textContent = catTotal(state.cat);
+  }
+  function renderCatMenu() {
     const items = [{ key: 'All', label: '全部', count: state.allTotal }, ...state.cats];
-    els.catBar.innerHTML = items.map((c) => `
-      <button class="cat-btn" data-key="${esc(c.key)}" aria-pressed="${c.key === state.cat}">
-        ${esc(c.label)}<span class="n">${c.count}</span>
-      </button>`).join('');
+    els.catMenu.innerHTML = items.map((c) => `
+      <li role="option" data-key="${esc(c.key)}" aria-selected="${c.key === state.cat}">
+        <span class="cl">${esc(c.label)}</span><span class="cn">${c.count}</span>
+      </li>`).join('');
+    updateCatFace();
+  }
+  function openCatMenu(open) {
+    els.catMenu.classList.toggle('open', open);
+    els.catBtn.setAttribute('aria-expanded', String(open));
   }
 
-  const catTotal = (key) => (key === 'All' ? state.allTotal : (state.cats.find((c) => c.key === key) || {}).count || 0);
-
-  /* ── 题目列表（滚动加载）────────────────────────────────────────────── */
+  /* ── 题目列表 ───────────────────────────────────────────────────────── */
   function rowHtml(q) {
     const langs = LANG_ORDER.filter((k) => q.solutions && q.solutions[k]);
     const dots = langs.length
@@ -168,12 +169,46 @@
       </button>`;
   }
 
-  function appendQuestions(list) {
-    const html = list.map(rowHtml).join('');
-    els.sentinel.insertAdjacentHTML('beforebegin', html);
-    list.forEach((q) => state.byId.set(q.question_id, q));
-    state.loaded += list.length;
-    els.listHint.textContent = `${state.loaded} / ${state.total}`;
+  function matches(q, s) {
+    return String(q.question_frontend_id).toLowerCase().includes(s)
+      || String(q.question_id).includes(s)
+      || (q.title || '').toLowerCase().includes(s)
+      || (q.translated_title || '').toLowerCase().includes(s)
+      || (q.title_slug || '').toLowerCase().includes(s);
+  }
+
+  function hint(matchesCount) {
+    if (state.query) {
+      els.listHint.textContent = `${matchesCount} 项${state.done ? '' : ' · 搜索中'}`;
+    } else {
+      els.listHint.textContent = `${state.loaded} / ${state.total}`;
+    }
+  }
+
+  // 无搜索词：增量追加；有搜索词：整表按过滤重建
+  function appendRows(list) {
+    if (state.query) { renderFiltered(); return; }
+    els.sentinel.insertAdjacentHTML('beforebegin', list.map(rowHtml).join(''));
+    hint();
+  }
+
+  function rebuild(list) {
+    els.timeline.innerHTML = list.join('');
+    els.timeline.appendChild(els.sentinel);
+    hint();
+  }
+
+  function renderAll() {
+    rebuild([...state.byId.values()].map(rowHtml));
+  }
+
+  function renderFiltered() {
+    const s = state.query.trim().toLowerCase();
+    const rows = [];
+    for (const q of state.byId.values()) if (matches(q, s)) rows.push(rowHtml(q));
+    els.listHint.textContent = `${rows.length} 项${state.done ? '' : ' · 搜索中'}`;
+    els.timeline.innerHTML = rows.length ? rows.join('') : `<div class="list-empty">没有匹配「${esc(state.query.trim())}」的题目</div>`;
+    els.timeline.appendChild(els.sentinel);
   }
 
   async function loadMore() {
@@ -186,7 +221,9 @@
       const list = await r.json();
       if (!Array.isArray(list) || list.length === 0) { state.done = true; return; }
       state.page = next;
-      appendQuestions(list);
+      state.loaded += list.length;
+      list.forEach((q) => state.byId.set(q.question_id, q));
+      appendRows(list);
       if (list.length < 50) state.done = true;
     } catch {
       state.done = true;
@@ -212,26 +249,58 @@
   io.observe(els.sentinel);
 
   async function selectCategory(key) {
-    if (state.cat === key) return;
+    if (state.cat === key) { openCatMenu(false); return; }
     state.cat = key;
     state.total = catTotal(key);
-    renderCats();
+    renderCatMenu();
     resetList();
     els.timeline.scrollTop = 0;
     await loadMore();
+    if (state.query) { renderFiltered(); pumpSearch(); }
     document.body.classList.remove('drawer');
+  }
+
+  /* ── 搜索 ───────────────────────────────────────────────────────────── */
+  let searchPump = false;
+  async function pumpSearch() {
+    if (searchPump || !state.query) return;
+    searchPump = true;
+    try {
+      while (state.query && !state.done) {
+        if (state.loading) { await sleep(60); continue; }
+        const before = state.loaded;
+        await loadMore();
+        if (state.loaded === before && !state.done) await sleep(60);
+      }
+    } finally { searchPump = false; }
+  }
+
+  let searchTimer = null;
+  function onSearch() {
+    const val = els.search.value;
+    els.searchClear.hidden = !val.trim();
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      const q = val.trim().toLowerCase();
+      const changed = q !== state.query;
+      state.query = q;
+      if (!changed) return;
+      if (q) { renderFiltered(); pumpSearch(); }
+      else { renderAll(); }
+    }, 140);
   }
 
   /* ── 题解阅读 ───────────────────────────────────────────────────────── */
   function renderEmpty(title, msg) {
     els.reader.innerHTML = `<div class="empty"><b>${esc(title)}</b><span>${esc(msg)}</span></div>`;
+    els.readerTitle.textContent = '';
+    els.descToggle.innerHTML = '';
   }
 
   function descHtml(q) {
     const zh = b64utf8(q.translated_content);
     const en = b64utf8(q.content);
-    if (state.descLang === 'en') return en || zh;
-    return zh || en;
+    return state.descLang === 'en' ? (en || zh) : (zh || en);
   }
 
   function renderHead(q) {
@@ -273,12 +342,11 @@
       </div>`;
   }
 
-  function renderReader() {
+  function paintReader() {
     const q = state.question;
     if (!q) return;
     els.readerTitle.innerHTML = `<b>${esc(q.question_frontend_id)}.</b> ${esc(q.translated_title || q.title)}`;
-    const hasEn = !!b64utf8(q.content);
-    els.descToggle.innerHTML = hasEn
+    els.descToggle.innerHTML = b64utf8(q.content)
       ? `<span class="sorts"><span class="lbl">题面</span>
           <button data-desc="zh" aria-pressed="${state.descLang === 'zh'}">中文</button>
           <button data-desc="en" aria-pressed="${state.descLang === 'en'}">EN</button></span>`
@@ -305,24 +373,40 @@
     state.question = q;
     localStorage.setItem('leet_last', String(q.question_id));
     els.timeline.querySelectorAll('.q-row').forEach((el) => el.setAttribute('aria-current', String(el.dataset.id === String(q.question_id))));
-    renderReader();
+    paintReader();
     document.body.classList.remove('drawer');
     try {
       const r = await fetch(`${DATA}/solutions/${q.question_id}.json`, { cache: 'no-cache' });
       state.solutions = r.ok ? await r.json() : [];
-    } catch {
-      state.solutions = [];
-    }
-    if (state.question !== q) return; // 已切换
+    } catch { state.solutions = []; }
+    if (state.question !== q) return;
     const langs = state.solutions.map((s) => s.language);
     if (!langs.includes(state.lang)) state.lang = langs[0] || '';
-    renderReader();
+    paintReader();
   }
 
   /* ── 事件 ───────────────────────────────────────────────────────────── */
-  els.catBar.addEventListener('click', (e) => {
-    const btn = e.target.closest('.cat-btn');
-    if (btn) selectCategory(btn.dataset.key);
+  els.catBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openCatMenu(!els.catMenu.classList.contains('open'));
+  });
+  els.catMenu.addEventListener('click', (e) => {
+    const li = e.target.closest('li[data-key]');
+    if (!li) return;
+    openCatMenu(false);
+    selectCategory(li.dataset.key);
+  });
+  document.addEventListener('click', () => openCatMenu(false));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') openCatMenu(false); });
+
+  els.search.addEventListener('input', onSearch);
+  els.searchClear.addEventListener('click', () => {
+    els.search.value = '';
+    els.searchClear.hidden = true;
+    clearTimeout(searchTimer);
+    state.query = '';
+    renderAll();
+    els.search.focus();
   });
 
   els.timeline.addEventListener('click', (e) => {
@@ -354,8 +438,7 @@
     if (d) {
       state.descLang = d.dataset.desc;
       localStorage.setItem('leet_desc', state.descLang);
-      const q = state.question;
-      if (q) { els.reader.innerHTML = renderHead(q) + renderSolutions(); const x = $('desc'); if (x) x.innerHTML = descHtml(q); els.descToggle.querySelectorAll('button[data-desc]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.desc === state.descLang))); }
+      paintReader();
     }
   });
 
@@ -381,7 +464,7 @@
     state.allTotal = index.reduce((s, c) => s + c.num, 0);
     state.total = state.allTotal;
     els.barMeta.innerHTML = `共 <b>${state.allTotal}</b> 题 · ${state.cats.length} 个分类`;
-    renderCats();
+    renderCatMenu();
     els.timeline.appendChild(els.sentinel);
     els.listEmpty.remove();
     await loadMore();

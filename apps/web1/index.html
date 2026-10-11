@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>6leetcode · LeetCode 题解</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/nunito@latest/400.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/nunito@latest/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/nunito@latest/700.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/nunito@latest/800.css">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body class="index">
@@ -19,7 +24,23 @@
     <aside class="list-col" id="listCol">
       <div class="drawer-head"><span>题目目录</span><button id="drawerClose" aria-label="关闭目录">×</button></div>
 
-      <nav class="cat-bar" id="catBar" aria-label="题目分类"></nav>
+      <div class="side-head">
+        <label class="side-label" id="catLabel">分类 / CATEGORY</label>
+        <div class="cat-select">
+          <button class="cat-btn" id="catBtn" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="catLabel">
+            <span class="cm-name" id="catName">正在读取…</span>
+            <span class="cm-count" id="catCount">—</span>
+            <span class="caret" aria-hidden="true">▾</span>
+          </button>
+          <ul class="cat-menu" id="catMenu" role="listbox" aria-label="选择分类"></ul>
+        </div>
+
+        <label class="side-label search-label" for="searchInput">搜索 / SEARCH</label>
+        <div class="search">
+          <input type="search" id="searchInput" placeholder="题号 / 标题 / slug…" autocomplete="off" spellcheck="false">
+          <button class="clear" id="searchClear" aria-label="清空搜索" hidden>×</button>
+        </div>
+      </div>
 
       <div class="list-head">
         <span>题目 / PROBLEM</span>
