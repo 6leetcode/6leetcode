@@ -1,6 +1,6 @@
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 
 // -------------------------------solution begin-------------------------------
@@ -58,7 +58,7 @@ class Testing {
   static String treeShow(TreeNode root) {
     if (root == null) return "[]";
     List<String> parts = new ArrayList<>();
-    Deque<TreeNode> queue = new ArrayDeque<>();
+    Deque<TreeNode> queue = new LinkedList<>();
     queue.add(root);
     while (!queue.isEmpty()) {
       TreeNode node = queue.poll();
