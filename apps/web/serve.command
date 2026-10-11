@@ -3,4 +3,5 @@
 cd "$(dirname "$0")" || exit 1
 PORT=8138
 sleep 1 && open "http://localhost:$PORT/" &
-exec python3 serve.py "$PORT"
+echo "http://localhost:$PORT/  ·  Ctrl-C 停止"
+exec python3 -m http.server "$PORT"

@@ -183,16 +183,19 @@ body.index { padding: 0; height: 100vh; overflow: hidden; display: flex; flex-di
 
 /* 题头 */
 .q-head { padding: 0 0 14px; border-bottom: 3px double var(--rule); margin-bottom: 18px; }
-.q-head h1 { font-size: 26px; font-weight: 800; line-height: 1.3; margin: 0 0 6px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-.q-head h1 .idx { font-family: var(--sans); font-size: 13px; color: var(--accent); font-weight: 800; }
-.q-head h1 .en { color: var(--ink-faint); font-size: 15px; font-weight: 500; }
-.q-meta { display: flex; flex-wrap: wrap; gap: 8px 16px; font-family: var(--sans); font-size: 11px; color: var(--ink-light); }
+/* 标题：行内排版，基线自然对齐；编号靠 margin 控制间距 */
+.q-head h1 { margin: 0 0 9px; font-size: 25px; font-weight: 800; line-height: 1.3; letter-spacing: .01em; }
+.q-head h1 .idx { font-size: 13px; font-weight: 800; color: var(--accent); margin-right: 12px; }
+.q-head h1 .en { font-size: 15px; font-weight: 500; color: var(--ink-faint); margin-left: 12px; }
+/* 元信息：统一垂直居中，去掉链接下划线 */
+.q-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; font-size: 11.5px; line-height: 1.2; color: var(--ink-light); }
 .q-meta b { color: var(--ink); font-weight: 700; }
-.q-meta .badge { font-weight: 700; padding: 1px 6px; border: 1px solid currentColor; }
+.q-meta .badge { font-weight: 700; padding: 2px 7px; border: 1px solid currentColor; line-height: 1.3; }
 .q-meta .badge.easy { color: var(--diff-easy); }
 .q-meta .badge.medium { color: var(--diff-medium); }
 .q-meta .badge.hard { color: var(--diff-hard); }
-.q-meta a { color: var(--accent); }
+.q-meta a { color: var(--accent); border-bottom: 0; }
+.q-meta a:hover { border-bottom: 1px solid currentColor; }
 
 /* 题面（LeetCode HTML） */
 .desc { font-size: 14px; color: var(--ink-soft); }

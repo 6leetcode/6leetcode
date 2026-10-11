@@ -130,24 +130,18 @@
     reader: $('reader'), readerTitle: $('readerTitle'), barMeta: $('barMeta'),
   };
 
-  /* ── 路由：URL slash 定位（便于分享）────────────────────────────────── */
-  // 以脚本自身地址推断站点根目录，兼容部署在子路径的情况。
-  const SCRIPT_SRC = document.currentScript && document.currentScript.src;
-  const BASE = SCRIPT_SRC ? new URL('../', SCRIPT_SRC).pathname : '/';
-
+  /* ── 路由：URL hash 定位（便于分享）────────────────────────────────── */
   function routeFromLocation() {
-    if (!location.pathname.startsWith(BASE)) return '';
-    let r = location.pathname.slice(BASE.length).replace(/^\/+|\/+$/g, '');
-    if (r === 'index.html') r = '';
-    try { return decodeURIComponent(r); } catch { return r; }
+    const h = location.hash.replace(/^#\/?/, '');
+    try { return decodeURIComponent(h); } catch { return h; }
   }
   const INITIAL_ROUTE = routeFromLocation();
 
   function setRoute(slug, mode) {
     if (mode === 'none') return;
-    const url = BASE + (slug ? encodeURIComponent(slug) : '') + location.search;
-    if (location.pathname + location.search === url) return;
-    history[mode === 'replace' ? 'replaceState' : 'pushState'](null, '', url);
+    const hash = slug ? '#/' + encodeURIComponent(slug) : '';
+    if (location.hash === hash) return;
+    history[mode === 'replace' ? 'replaceState' : 'pushState'](null, '', location.pathname + location.search + hash);
   }
 
   /* ── 分类下拉 ───────────────────────────────────────────────────────── */
@@ -320,8 +314,7 @@
     const url = `https://leetcode.cn/problems/${esc(q.title_slug)}/`;
     return `
       <header class="q-head">
-        <h1><span class="idx">${esc(q.question_frontend_id)}</span>${esc(zh ? q.translated_title : q.title)}
-          ${zh ? `<span class="en">${esc(q.title)}</span>` : ''}</h1>
+        <h1><span class="idx">${esc(q.question_frontend_id)}</span><span class="zh">${esc(zh ? q.translated_title : q.title)}</span>${zh ? `<span class="en">${esc(q.title)}</span>` : ''}</h1>
         <div class="q-meta">
           <span class="badge ${diffClass(q.difficulty)}">${esc(q.difficulty)}</span>
           <span>通过率 <b>${esc(q.acRate || '—')}</b></span>
@@ -464,10 +457,14 @@
   $('drawerClose').addEventListener('click', () => document.body.classList.remove('drawer'));
   $('backdrop').addEventListener('click', () => document.body.classList.remove('drawer'));
 
-  window.addEventListener('popstate', async () => {
-    const q = await findQuestion(routeFromLocation());
+  async function applyRoute() {
+    const slug = routeFromLocation();
+    if (!slug || (state.question && state.question.title_slug === slug)) return;
+    const q = await findQuestion(slug);
     if (q) selectQuestion(q, 'none');
-  });
+  }
+  window.addEventListener('popstate', applyRoute);
+  window.addEventListener('hashchange', applyRoute);
 
   /* ── 启动 ───────────────────────────────────────────────────────────── */
   (async function boot() {
@@ -487,7 +484,7 @@
     els.timeline.appendChild(els.sentinel);
     els.listEmpty.remove();
     await loadMore();
-    // 无选中时默认展示第一题（两数之和）；带 slash 的分享链接则定位到对应题目。
+    // 无选中时默认展示第一题（两数之和）；带 hash 的分享链接则定位到对应题目。
     const target = (INITIAL_ROUTE && (await findQuestion(INITIAL_ROUTE))) || state.byId.values().next().value;
     if (target) selectQuestion(target, 'none');
   })();
