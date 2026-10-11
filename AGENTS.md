@@ -6,8 +6,9 @@ Guidance for AI coding agents working in the **6leetcode** repository.
 
 1. **`apps/cli`** — the `leet` CLI, written in TypeScript with the **Bun standard
    library only** (`bun:sqlite`, `Bun.YAML`, `fetch`, `util.parseArgs`, `Bun.write`)
-   and **no third-party dependencies**. It crawls `leetcode.cn`, stores problems in
-   SQLite, writes per-problem `README`/`Makefile`, and exports JSON for the web app.
+   and **no runtime dependencies** (only `@types/bun` as a devDependency, for editor
+   types). It crawls `leetcode.cn`, stores problems in SQLite, writes per-problem
+   `README`/`Makefile`, and exports JSON for the web app.
 2. **`apps/web`** — React 18 + TypeScript + Ant Design (Create React App) frontend
    that reads the exported JSON from `apps/web/public/db`.
 3. **`questions/`** — the solution corpus. One directory per problem with runnable

@@ -9,5 +9,8 @@
   "scripts": {
     "leet": "bun run src/index.ts",
     "build": "bun build --compile --minify --outfile bin/leet src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2"
   }
 }

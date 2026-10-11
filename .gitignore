@@ -46,6 +46,8 @@ venv/
 
 *.dSYM/
 
+node_modules/
+
 /config.yml
 *.db-journal
 
