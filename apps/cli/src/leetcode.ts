@@ -1,6 +1,6 @@
 import { logging } from "./log";
 import type { DB } from "./db";
-import { hasContent, saveContent, upsertSummary, getBySlug } from "./db";
+import { hasContent, saveContent, upsertSummary, getBySlug, EXCLUDED_CATEGORIES } from "./db";
 
 export const HostLeetcode = "https://leetcode.cn";
 
@@ -125,6 +125,7 @@ export async function allQuestions(db: DB): Promise<void> {
   }
 
   for (const q of list) {
+    if (EXCLUDED_CATEGORIES.includes(q.categoryTitle)) continue;
     const qid = Number.parseInt(q.questionId, 10);
     if (Number.isNaN(qid)) {
       logging.error(`invalid question id: ${q.questionId}`);

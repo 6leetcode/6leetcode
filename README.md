@@ -4298,37 +4298,6 @@ LeetCode Solutions.
 
 <details>
 
-  <summary>Shell</summary>
-
-|Index|Difficulty|C|C++|Go|Java|TypeScript|Python|Rust|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[0192](https://leetcode.cn/problems/word-frequency)|Medium||||||||
-|[0193](https://leetcode.cn/problems/valid-phone-numbers)|Easy||||||||
-|[0194](https://leetcode.cn/problems/transpose-file)|Medium||||||||
-|[0195](https://leetcode.cn/problems/tenth-line)|Easy||||||||
-
-</details>
-
-<details>
-
-  <summary>Concurrency</summary>
-
-|Index|Difficulty|C|C++|Go|Java|TypeScript|Python|Rust|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[1117](https://leetcode.cn/problems/building-h2o)|Medium||||||||
-|[1115](https://leetcode.cn/problems/print-foobar-alternately)|Medium||||||||
-|[1114](https://leetcode.cn/problems/print-in-order)|Easy||||||||
-|[1188](https://leetcode.cn/problems/design-bounded-blocking-queue)|Medium||||||||
-|[1116](https://leetcode.cn/problems/print-zero-even-odd)|Medium||||||||
-|[1195](https://leetcode.cn/problems/fizz-buzz-multithreaded)|Medium||||||||
-|[1226](https://leetcode.cn/problems/the-dining-philosophers)|Medium||||||||
-|[1242](https://leetcode.cn/problems/web-crawler-multithreaded)|Medium||||||||
-|[1279](https://leetcode.cn/problems/traffic-light-controlled-intersection)|Easy||||||||
-
-</details>
-
-<details>
-
   <summary>JavaScript</summary>
 
 |Index|Difficulty|C|C++|Go|Java|TypeScript|Python|Rust|
@@ -4400,30 +4369,6 @@ LeetCode Solutions.
 |[2821](https://leetcode.cn/problems/delay-the-resolution-of-each-promise)|Medium||||||||
 |[2823](https://leetcode.cn/problems/deep-object-filter)|Medium||||||||
 |[2822](https://leetcode.cn/problems/inversion-of-object)|Easy||||||||
-
-</details>
-
-<details>
-
-  <summary>pandas</summary>
-
-|Index|Difficulty|C|C++|Go|Java|TypeScript|Python|Rust|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|[2877](https://leetcode.cn/problems/create-a-dataframe-from-list)|Easy||||||||
-|[2891](https://leetcode.cn/problems/method-chaining)|Easy||||||||
-|[2888](https://leetcode.cn/problems/reshape-data-concatenate)|Easy||||||||
-|[2879](https://leetcode.cn/problems/display-the-first-three-rows)|Easy||||||||
-|[2881](https://leetcode.cn/problems/create-a-new-column)|Easy||||||||
-|[2884](https://leetcode.cn/problems/modify-columns)|Easy||||||||
-|[2885](https://leetcode.cn/problems/rename-columns)|Easy||||||||
-|[2886](https://leetcode.cn/problems/change-data-type)|Easy||||||||
-|[2887](https://leetcode.cn/problems/fill-missing-data)|Easy||||||||
-|[2882](https://leetcode.cn/problems/drop-duplicate-rows)|Easy||||||||
-|[2889](https://leetcode.cn/problems/reshape-data-pivot)|Easy||||||||
-|[2890](https://leetcode.cn/problems/reshape-data-melt)|Easy||||||||
-|[2880](https://leetcode.cn/problems/select-data)|Easy||||||||
-|[2883](https://leetcode.cn/problems/drop-missing-data)|Easy||||||||
-|[2878](https://leetcode.cn/problems/get-the-size-of-a-dataframe)|Easy||||||||
 
 </details>
 

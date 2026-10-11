@@ -1,7 +1,7 @@
 import { parseArgs } from "node:util";
 import { loadConfig } from "./config";
 import type { DB } from "./db";
-import { allQuestionsOrdered, openDb, totalQuestions } from "./db";
+import { allQuestionsOrdered, openDb, pruneExcludedCategories, totalQuestions } from "./db";
 import { allQuestions, ensureQuestionContent, getBySlug, runPool } from "./leetcode";
 import { logging } from "./log";
 import { questionDir, generateReadme, writeQuestionFiles } from "./readme";
@@ -42,6 +42,7 @@ async function crawl(db: DB, config: ReturnType<typeof loadConfig>): Promise<voi
 }
 
 async function runAll(db: DB, config: ReturnType<typeof loadConfig>): Promise<void> {
+  pruneExcludedCategories(db);
   await crawl(db, config);
   ensureQuestions(db);
   generateReadme(db, config);
@@ -49,6 +50,7 @@ async function runAll(db: DB, config: ReturnType<typeof loadConfig>): Promise<vo
 }
 
 function runGen(db: DB, config: ReturnType<typeof loadConfig>): void {
+  pruneExcludedCategories(db);
   ensureQuestions(db);
   generateReadme(db, config);
   for (const q of allQuestionsOrdered(db)) {

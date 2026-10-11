@@ -199,3 +199,16 @@ export function insertSolution(db: DB, questionId: number, language: string, fil
     [questionId, language, filename, data],
   );
 }
+
+/** Categories that are intentionally not crawled or published. */
+export const EXCLUDED_CATEGORIES = ["Concurrency", "Shell", "pandas"];
+
+/** Remove questions (and their solutions) that belong to excluded categories. */
+export function pruneExcludedCategories(db: DB): number {
+  if (EXCLUDED_CATEGORIES.length === 0) return 0;
+  const marks = EXCLUDED_CATEGORIES.map((_, i) => `?${i + 1}`).join(", ");
+  const before = totalQuestions(db);
+  db.run(`DELETE FROM solutions WHERE question_id IN (SELECT question_id FROM questions WHERE category_title IN (${marks}))`, EXCLUDED_CATEGORIES);
+  db.run(`DELETE FROM questions WHERE category_title IN (${marks})`, EXCLUDED_CATEGORIES);
+  return before - totalQuestions(db);
+}
