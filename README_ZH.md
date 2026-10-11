@@ -4109,7 +4109,7 @@ LeetCode 题解
 |[面试题 16.16](https://leetcode.cn/problems/sub-sort-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.17](https://leetcode.cn/problems/contiguous-sequence-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.18](https://leetcode.cn/problems/pattern-matching-lcci)|Medium||||||||
-|[面试题 16.19](https://leetcode.cn/problems/pond-sizes-lcci)|Medium||||||||
+|[面试题 16.19](https://leetcode.cn/problems/pond-sizes-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 01.05](https://leetcode.cn/problems/one-away-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 02.02](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 02.04](https://leetcode.cn/problems/partition-list-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
@@ -4130,7 +4130,7 @@ LeetCode 题解
 |[面试题 17.17](https://leetcode.cn/problems/multi-search-lcci)|Medium||||||||
 |[面试题 17.01](https://leetcode.cn/problems/add-without-plus-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.25](https://leetcode.cn/problems/lru-cache-lcci)|Medium||||||||
-|[面试题 16.26](https://leetcode.cn/problems/calculator-lcci)|Medium||||||||
+|[面试题 16.26](https://leetcode.cn/problems/calculator-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 17.20](https://leetcode.cn/problems/continuous-median-lcci)|Hard||||||||
 |[面试题 17.21](https://leetcode.cn/problems/volume-of-histogram-lcci)|Hard||||||||
 |[面试题 17.22](https://leetcode.cn/problems/word-transformer-lcci)|Medium||||||||
@@ -4145,13 +4145,13 @@ LeetCode 题解
 |[面试题 17.11](https://leetcode.cn/problems/find-closest-lcci)|Medium||||||||
 |[面试题 10.02](https://leetcode.cn/problems/group-anagrams-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 10.10](https://leetcode.cn/problems/rank-from-stream-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 16.24](https://leetcode.cn/problems/pairs-with-sum-lcci)|Medium||||||||
+|[面试题 16.24](https://leetcode.cn/problems/pairs-with-sum-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 17.18](https://leetcode.cn/problems/shortest-supersequence-lcci)|Medium||||||||
 |[面试题 17.19](https://leetcode.cn/problems/missing-two-lcci)|Hard||||||||
 |[面试题 17.23](https://leetcode.cn/problems/max-black-square-lcci)|Medium||||||||
 |[面试题 17.24](https://leetcode.cn/problems/max-submatrix-lcci)|Hard||||||||
-|[面试题 16.20](https://leetcode.cn/problems/t9-lcci)|Medium||||||||
-|[面试题 16.21](https://leetcode.cn/problems/sum-swap-lcci)|Medium||||||||
+|[面试题 16.20](https://leetcode.cn/problems/t9-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 16.21](https://leetcode.cn/problems/sum-swap-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 17.25](https://leetcode.cn/problems/word-rectangle-lcci)|Hard||||||||
 |[面试题 16.22](https://leetcode.cn/problems/langtons-ant-lcci)|Medium||||||||
 |[面试题 17.26](https://leetcode.cn/problems/sparse-similarity-lcci)|Hard||||||||
