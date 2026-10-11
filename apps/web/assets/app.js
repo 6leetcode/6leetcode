@@ -23,6 +23,8 @@
 
   /* body/code fields are plain UTF-8 text now (no base64) */
   const toText = (v) => (typeof v === 'string' ? v : '');
+  /* 代码首尾可能带标记附近产生的空行，展示时去掉 */
+  const codeOf = (s) => toText(s.data).trim();
   const diffClass = (d) => String(d || '').toLowerCase();
 
   /* ── 代码高亮（极简 tokenizer）───────────────────────────────────────── */
@@ -336,7 +338,7 @@
       <div class="tabs" role="tablist">${tabs}</div>
       <div class="code-wrap">
         <div class="code-head"><span class="fn">${esc(cur.filename)}</span><button class="copy" id="copyBtn">复制</button></div>
-        <pre class="code"><code>${hl(toText(cur.data), meta.hl)}</code></pre>
+        <pre class="code"><code>${hl(codeOf(cur), meta.hl)}</code></pre>
       </div>`;
   }
 
@@ -356,7 +358,7 @@
     if (!cur) return;
     const meta = LANGS[cur.language] || { hl: '' };
     wrap.querySelector('.fn').textContent = cur.filename;
-    wrap.querySelector('pre.code code').innerHTML = hl(toText(cur.data), meta.hl);
+    wrap.querySelector('pre.code code').innerHTML = hl(codeOf(cur), meta.hl);
     els.reader.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.lang === state.lang)));
   }
 
@@ -433,7 +435,7 @@
     if (copy) {
       const cur = state.solutions.find((s) => s.language === state.lang) || state.solutions[0];
       if (!cur) return;
-      navigator.clipboard.writeText(toText(cur.data)).then(() => {
+      navigator.clipboard.writeText(codeOf(cur)).then(() => {
         copy.textContent = '已复制';
         copy.classList.add('done');
         setTimeout(() => { copy.textContent = '复制'; copy.classList.remove('done'); }, 1400);
