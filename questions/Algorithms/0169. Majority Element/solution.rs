@@ -1,5 +1,6 @@
 struct Solution {}
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
     pub fn majority_element(nums: Vec<i32>) -> i32 {
         let mut arr = nums;
@@ -7,6 +8,7 @@ impl Solution {
         return arr[arr.len() / 2];
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 fn main() {
     let input = vec![1i32, 5, 10, 2, 15];

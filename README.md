@@ -6,7 +6,7 @@ LeetCode Solutions.
 
 - Each problem is organized according to the title number.
 - Each problem folder has a description file which one named `readme.md`.
-- Each language has a single solution file named `solution.<ext>` (for example `solution.c`, `solution.cc`, `solution.go`, `solution.java`, `solution.ts`, `solution.py`, `solution.rs`).
+- Each language has one or more solution files. A single solution is named `solution.<ext>`; when a language has several, they are named `solution1.<ext>`, `solution2.<ext>`, ... ranked by algorithm optimization (a smaller index is more optimized).
 - Each problem solution must contain a `main` function that contains all the test cases that can be thought of, making it easy to run offline. The solution function is written separately as a separate function.
 
 ## How to test problem's solution offline

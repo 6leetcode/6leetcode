@@ -110,9 +110,9 @@ English.
 
 ### Adding / editing a solution
 
-- Each language has a single solution file named `solution.<ext>`
-  (`solution.c`, `solution.cc`, `solution.go`, `solution.java`, `solution.py`,
-  `solution.rs`, `solution.ts`).
+- Each language has one or more solution files: a single solution is
+  `solution.<ext>`; multiple solutions are `solution1.<ext>`, `solution2.<ext>`, ...
+  ranked by optimization (a smaller index is more optimized).
 - For Java the entry point lives in a `class Main` (the Makefile runs `java Main`).
 - Each solution file must be runnable standalone (`main`/entry point with test cases).
 - Wrap the solution body in the begin/end markers so the crawler can extract it:

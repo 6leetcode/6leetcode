@@ -6,7 +6,7 @@ LeetCode 题解
 
 - 每个题目按照题目序号编排。
 - 每个题目文件夹下有相关的题目说明，文件名为 `readme.md`。
-- 每种语言只有一个题解文件，统一命名为 `solution.<ext>`（例如 `solution.c`、`solution.cc`、`solution.go`、`solution.java`、`solution.ts`、`solution.py`、`solution.rs`）。
+- 每种语言的题解文件统一命名为 `solution.<ext>`；同一语言有多个题解时按算法优化程度编号为 `solution1.<ext>`、`solution2.<ext>` ……，序号越小越优。
 - 每个题目里边都要含有 `main` 函数，含有可以想到的所有测试案例，方便线下运行。题解函数，单独写成一个独立的函数。
 
 ## 本地测试

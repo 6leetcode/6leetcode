@@ -2,19 +2,14 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   bool isPowerOfTwo(int n) {
-    int cnt = 0; //num of bits 1
-    for (; n > 0; n >>= 1) {
-      if (n & 1) {
-        cnt++;
-        if (cnt > 1) return false;
-      }
-    }
-    return cnt == 1;
+    return n <= 0 ? false : (n & (n - 1)) == 0;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 16;

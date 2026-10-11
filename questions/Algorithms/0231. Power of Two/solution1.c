@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 bool isPowerOfTwo(int n) {
   int cnt = 0; //num of bits 1
   for (; n > 0; n >>= 1) {
@@ -12,6 +13,7 @@ bool isPowerOfTwo(int n) {
   }
   return cnt == 1;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input1 = 16;

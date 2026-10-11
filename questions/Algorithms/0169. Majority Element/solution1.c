@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int cmpfunc(const void *a, const void *b) {
   return (*(signed int *)b > *(signed int *)a) ? 1 : 0;
 }
@@ -9,6 +10,7 @@ int majorityElement(int *nums, int numsSize) {
   qsort(nums, numsSize, sizeof(int), cmpfunc);
   return nums[numsSize / 2];
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input[] = {-1, -1, 2147483647};
