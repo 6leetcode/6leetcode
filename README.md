@@ -4108,7 +4108,7 @@ LeetCode Solutions.
 |[面试题 16.15](https://leetcode.cn/problems/master-mind-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.16](https://leetcode.cn/problems/sub-sort-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.17](https://leetcode.cn/problems/contiguous-sequence-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 16.18](https://leetcode.cn/problems/pattern-matching-lcci)|Medium||||||||
+|[面试题 16.18](https://leetcode.cn/problems/pattern-matching-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.19](https://leetcode.cn/problems/pond-sizes-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 01.05](https://leetcode.cn/problems/one-away-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 02.02](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
@@ -4129,7 +4129,7 @@ LeetCode Solutions.
 |[面试题 17.16](https://leetcode.cn/problems/the-masseuse-lcci)|Easy||||||||
 |[面试题 17.17](https://leetcode.cn/problems/multi-search-lcci)|Medium||||||||
 |[面试题 17.01](https://leetcode.cn/problems/add-without-plus-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 16.25](https://leetcode.cn/problems/lru-cache-lcci)|Medium||||||||
+|[面试题 16.25](https://leetcode.cn/problems/lru-cache-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.26](https://leetcode.cn/problems/calculator-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 17.20](https://leetcode.cn/problems/continuous-median-lcci)|Hard||||||||
 |[面试题 17.21](https://leetcode.cn/problems/volume-of-histogram-lcci)|Hard||||||||
@@ -4153,7 +4153,7 @@ LeetCode Solutions.
 |[面试题 16.20](https://leetcode.cn/problems/t9-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.21](https://leetcode.cn/problems/sum-swap-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 17.25](https://leetcode.cn/problems/word-rectangle-lcci)|Hard||||||||
-|[面试题 16.22](https://leetcode.cn/problems/langtons-ant-lcci)|Medium||||||||
+|[面试题 16.22](https://leetcode.cn/problems/langtons-ant-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 17.26](https://leetcode.cn/problems/sparse-similarity-lcci)|Hard||||||||
 
 </details>
