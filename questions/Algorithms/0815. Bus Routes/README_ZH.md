@@ -1,4 +1,4 @@
-### [公交路线](https://leetcode-cn.com/problems/bus-routes)
+### [公交路线](https://leetcode.cn/problems/bus-routes)
 
 <p>给你一个数组 <code>routes</code> ，表示一系列公交线路，其中每个 <code>routes[i]</code> 表示一条公交线路，第 <code>i</code> 辆公交车将会在上面循环行驶。</p>
 

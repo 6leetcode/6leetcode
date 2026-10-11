@@ -1,4 +1,4 @@
-### [力扣泡泡龙](https://leetcode-cn.com/problems/WInSav)
+### [力扣泡泡龙](https://leetcode.cn/problems/WInSav)
 
 欢迎各位勇者来到力扣城，本次试炼主题为「力扣泡泡龙」。
 
@@ -18,7 +18,7 @@
 > 输出：`11`
 >
 > 解释：勇者的最佳方案如图所示
->![image.png](https://pic.leetcode-cn.com/1648180809-XSWPLu-image.png){:height="100px"}
+>![image.png](https://pic.leetcode.cn/1648180809-XSWPLu-image.png){:height="100px"}
 
 
 
@@ -28,7 +28,7 @@
 > 输出：`9`
 >
 > 解释：勇者击破 6 节点，此时「层和」最大为 3+5+1 = 9
->![image.png](https://pic.leetcode-cn.com/1648180769-TLpYop-image.png){:height="200px"}
+>![image.png](https://pic.leetcode.cn/1648180769-TLpYop-image.png){:height="200px"}
 
 
 

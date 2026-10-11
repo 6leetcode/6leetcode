@@ -1,4 +1,4 @@
-### [网络空闲的时刻](https://leetcode-cn.com/problems/the-time-when-the-network-becomes-idle)
+### [网络空闲的时刻](https://leetcode.cn/problems/the-time-when-the-network-becomes-idle)
 
 <p>给你一个有 <code>n</code>&nbsp;个服务器的计算机网络，服务器编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;。同时给你一个二维整数数组&nbsp;<code>edges</code>&nbsp;，其中&nbsp;<code>edges[i] = [u<sub>i</sub>, v<sub>i</sub>]</code>&nbsp;表示服务器&nbsp;<code>u<sub>i</sub></code> 和&nbsp;<code>v<sub>i</sub></code><sub>&nbsp;</sub>之间有一条信息线路，在&nbsp;<strong>一秒</strong>&nbsp;内它们之间可以传输&nbsp;<strong>任意</strong>&nbsp;数目的信息。再给你一个长度为 <code>n</code>&nbsp;且下标从&nbsp;<strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>patience</code>&nbsp;。</p>
 

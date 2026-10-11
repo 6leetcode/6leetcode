@@ -1,4 +1,4 @@
-### [相同的树](https://leetcode-cn.com/problems/same-tree)
+### [相同的树](https://leetcode.cn/problems/same-tree)
 
 <p>给你两棵二叉树的根节点 <code>p</code> 和 <code>q</code> ，编写一个函数来检验这两棵树是否相同。</p>
 

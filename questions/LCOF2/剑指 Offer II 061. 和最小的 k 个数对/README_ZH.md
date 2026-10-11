@@ -1,4 +1,4 @@
-### [和最小的 k 个数对](https://leetcode-cn.com/problems/qn8gGX)
+### [和最小的 k 个数对](https://leetcode.cn/problems/qn8gGX)
 
 <p>给定两个以升序排列的整数数组 <code>nums1</code> 和<strong> </strong><code>nums2</code><strong>&nbsp;</strong>,&nbsp;以及一个整数 <code>k</code><strong>&nbsp;</strong>。</p>
 
@@ -47,4 +47,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 373&nbsp;题相同：<a href="https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/">https://leetcode-cn.com/problems/find-k-pairs-with-smallest-sums/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 373&nbsp;题相同：<a href="https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/">https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/</a></p>

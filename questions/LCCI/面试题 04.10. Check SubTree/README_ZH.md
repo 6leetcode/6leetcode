@@ -1,4 +1,4 @@
-### [检查子树](https://leetcode-cn.com/problems/check-subtree-lcci)
+### [检查子树](https://leetcode.cn/problems/check-subtree-lcci)
 
 <p>检查子树。你有两棵非常大的二叉树：T1，有几万个节点；T2，有几万个节点。设计一个算法，判断 T2 是否为 T1 的子树。</p>
 
@@ -6,14 +6,14 @@
 
 <p><strong>注意：</strong>此题相对书上原题略有改动。</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>示例 1：</strong></p>
 
 <pre>
 <strong> 输入</strong>：t1 = [1, 2, 3], t2 = [2]
 <strong> 输出</strong>：true
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>示例 2：</strong></p>
 
 <pre>
 <strong> 输入</strong>：t1 = [1, null, 2, 4], t2 = [3, 2]
@@ -23,5 +23,5 @@
 <p><strong>提示：</strong></p>
 
 <ol>
-	<li>树的节点数目范围为[0, 20000]。</li>
+	<li>树的节点数目范围为 <code>[0, 20000]</code>。</li>
 </ol>

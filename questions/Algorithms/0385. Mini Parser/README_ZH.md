@@ -1,4 +1,4 @@
-### [迷你语法分析器](https://leetcode-cn.com/problems/mini-parser)
+### [迷你语法分析器](https://leetcode.cn/problems/mini-parser)
 
 <p>给定一个字符串 s 表示一个整数嵌套列表，实现一个解析它的语法分析器并返回解析的结果&nbsp;<code>NestedInteger</code> 。</p>
 

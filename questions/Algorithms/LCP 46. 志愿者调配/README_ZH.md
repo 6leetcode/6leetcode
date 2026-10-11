@@ -1,4 +1,4 @@
-### [志愿者调配](https://leetcode-cn.com/problems/05ZEDJ)
+### [志愿者调配](https://leetcode.cn/problems/05ZEDJ)
 
 「力扣挑战赛」有 `n` 个比赛场馆（场馆编号从 `0` 开始），场馆之间的通道分布情况记录于二维数组 `edges` 中，`edges[i]= [x, y]` 表示第 `i` 条通道连接场馆 `x` 和场馆 `y`(即两个场馆相邻)。初始每个场馆中都有一定人数的志愿者（不同场馆人数可能不同），后续 `m` 天每天均会根据赛事热度进行志愿者人数调配。调配方案分为如下三种：
 1. 将编号为 `idx` 的场馆内的志愿者人数减半；
@@ -16,14 +16,14 @@
 
 
 **示例 1：**
->![image.png](https://pic.leetcode-cn.com/1630061228-gnZsOz-image.png)
+>![image.png](https://pic.leetcode.cn/1630061228-gnZsOz-image.png)
 > 输入：
 >`finalCnt = [1,16], totalNum = 21, edges = [[0,1],[1,2]], plans = [[2,1],[1,0],[3,0]]`
 >
 > 输出：`[5,7,9]`
 >
 > 解释：
-> ![image.png](https://pic.leetcode-cn.com/1630061300-WuVkeF-image.png){:height=200}
+> ![image.png](https://pic.leetcode.cn/1630061300-WuVkeF-image.png){:height=200}
 
 
 **示例 2 ：**

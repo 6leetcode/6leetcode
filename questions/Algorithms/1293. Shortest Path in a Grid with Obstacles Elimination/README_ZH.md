@@ -1,4 +1,4 @@
-### [网格中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-a-grid-with-obstacles-elimination)
+### [网格中的最短路径](https://leetcode.cn/problems/shortest-path-in-a-grid-with-obstacles-elimination)
 
 <p>给你一个&nbsp;<code>m * n</code>&nbsp;的网格，其中每个单元格不是&nbsp;<code>0</code>（空）就是&nbsp;<code>1</code>（障碍物）。每一步，您都可以在空白单元格中上、下、左、右移动。</p>
 
@@ -8,7 +8,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img src="https://assets.leetcode.com/uploads/2021/09/30/short1-grid.jpg" /></p>
+<p><img src="https://pic.leetcode.cn/1700710956-kcxqcC-img_v3_025f_d55a658c-8f40-464b-800f-22ccd27cc9fg.jpg" style="width: 243px; height: 404px;" /></p>
 
 <pre>
 <strong>输入：</strong> grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1
@@ -20,7 +20,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img src="https://assets.leetcode.com/uploads/2021/09/30/short2-grid.jpg" /></p>
+<p><img src="https://pic.leetcode.cn/1700710701-uPqkZe-img_v3_025f_0edd50fb-8a70-4a42-add0-f602caaad35g.jpg" style="width: 243px; height: 244px;" /></p>
 
 <pre>
 <strong>输入：</strong>grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1

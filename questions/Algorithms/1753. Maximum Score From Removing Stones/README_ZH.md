@@ -1,4 +1,4 @@
-### [移除石子的最大得分](https://leetcode-cn.com/problems/maximum-score-from-removing-stones)
+### [移除石子的最大得分](https://leetcode.cn/problems/maximum-score-from-removing-stones)
 
 <p>你正在玩一个单人游戏，面前放置着大小分别为 <code>a</code>​​​​​​、<code>b</code> 和 <code>c</code>​​​​​​ 的 <strong>三堆</strong> 石子。</p>
 

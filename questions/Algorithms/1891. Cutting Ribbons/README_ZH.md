@@ -1,2 +1,2 @@
-### [割绳子](https://leetcode-cn.com/problems/cutting-ribbons)
+### [割绳子](https://leetcode.cn/problems/cutting-ribbons)
 

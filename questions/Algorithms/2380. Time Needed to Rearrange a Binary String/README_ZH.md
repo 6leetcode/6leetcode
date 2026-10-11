@@ -1,6 +1,8 @@
-### [二进制字符串重新安排顺序需要的时间](https://leetcode-cn.com/problems/time-needed-to-rearrange-a-binary-string)
+### [二进制字符串重新安排顺序需要的时间](https://leetcode.cn/problems/time-needed-to-rearrange-a-binary-string)
 
-<p>给你一个二进制字符串&nbsp;<code>s</code>&nbsp;。在一秒之中，<strong>所有</strong>&nbsp;子字符串&nbsp;<code>"01"</code> <strong>同时</strong>&nbsp;被替换成&nbsp;<code>"10"</code>&nbsp;。这个过程持续进行到没有&nbsp;<code>"01"</code>&nbsp;存在。</p>
+<p>给你一个二进制字符串&nbsp;<code>s</code>&nbsp;。</p>
+
+<p>在一秒之中，<strong>所有</strong>&nbsp;子字符串&nbsp;<code>"01"</code> <strong>同时</strong>&nbsp;被替换成&nbsp;<code>"10"</code>&nbsp;。这个过程持续进行到没有&nbsp;<code>"01"</code>&nbsp;存在。</p>
 
 <p>请你返回完成这个过程所需要的秒数。</p>
 

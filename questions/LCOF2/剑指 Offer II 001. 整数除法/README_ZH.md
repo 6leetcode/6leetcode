@@ -1,4 +1,4 @@
-### [整数除法](https://leetcode-cn.com/problems/xoh6Oh)
+### [整数除法](https://leetcode.cn/problems/xoh6Oh)
 
 <p>给定两个整数 <code>a</code> 和 <code>b</code> ，求它们的除法的商 <code>a/b</code> ，要求不得使用乘号 <code>&#39;*&#39;</code>、除号 <code>&#39;/&#39;</code> 以及求余符号 <code>&#39;%&#39;</code>&nbsp;。</p>
 
@@ -51,6 +51,6 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 29&nbsp;题相同：<a href="https://leetcode-cn.com/problems/divide-two-integers/">https://leetcode-cn.com/problems/divide-two-integers/</a></p>
+<p>注意：本题与主站 29&nbsp;题相同：<a href="https://leetcode.cn/problems/divide-two-integers/">https://leetcode.cn/problems/divide-two-integers/</a></p>
 
 <p>&nbsp;</p>

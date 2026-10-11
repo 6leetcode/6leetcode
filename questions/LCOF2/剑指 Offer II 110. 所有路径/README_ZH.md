@@ -1,4 +1,4 @@
-### [所有路径](https://leetcode-cn.com/problems/bP4bmD)
+### [所有路径](https://leetcode.cn/problems/bP4bmD)
 
 <p>给定一个有&nbsp;<code>n</code>&nbsp;个节点的有向无环图，用二维数组&nbsp;<code>graph</code>&nbsp;表示，请找到所有从&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n-1</code>&nbsp;的路径并输出（不要求按顺序）。</p>
 
@@ -60,4 +60,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 797&nbsp;题相同：<a href="https://leetcode-cn.com/problems/all-paths-from-source-to-target/">https://leetcode-cn.com/problems/all-paths-from-source-to-target/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 797&nbsp;题相同：<a href="https://leetcode.cn/problems/all-paths-from-source-to-target/">https://leetcode.cn/problems/all-paths-from-source-to-target/</a></p>

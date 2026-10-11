@@ -1,4 +1,4 @@
-### [最小栈](https://leetcode-cn.com/problems/min-stack)
+### [最小栈](https://leetcode.cn/problems/min-stack)
 
 <p>设计一个支持 <code>push</code> ，<code>pop</code> ，<code>top</code> 操作，并能在常数时间内检索到最小元素的栈。</p>
 
@@ -6,7 +6,7 @@
 
 <ul>
 	<li><code>MinStack()</code> 初始化堆栈对象。</li>
-	<li><code>void push(int val)</code> 将元素val推入堆栈。</li>
+	<li><code>void push(int value)</code> 将元素 <code>value</code> 推入堆栈。</li>
 	<li><code>void pop()</code> 删除堆栈顶部的元素。</li>
 	<li><code>int top()</code> 获取堆栈顶部的元素。</li>
 	<li><code>int getMin()</code> 获取堆栈中的最小元素。</li>

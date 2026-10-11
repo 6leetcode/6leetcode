@@ -1,4 +1,4 @@
-### [Bigram 分词](https://leetcode-cn.com/problems/occurrences-after-bigram)
+### [Bigram 分词](https://leetcode.cn/problems/occurrences-after-bigram)
 
 <p>给出第一个词&nbsp;<code>first</code> 和第二个词&nbsp;<code>second</code>，考虑在某些文本&nbsp;<code>text</code>&nbsp;中可能以 <code>"first second third"</code> 形式出现的情况，其中&nbsp;<code>second</code>&nbsp;紧随&nbsp;<code>first</code>&nbsp;出现，<code>third</code>&nbsp;紧随&nbsp;<code>second</code>&nbsp;出现。</p>
 
@@ -30,4 +30,5 @@
 	<li><code>text</code> 中的所有单词之间都由 <strong>单个空格字符</strong> 分隔</li>
 	<li><code>1 &lt;= first.length, second.length &lt;= 10</code></li>
 	<li><code>first</code> 和&nbsp;<code>second</code>&nbsp;由小写英文字母组成</li>
+	<li><code>text</code>&nbsp;不包含任何前缀或尾随空格。</li>
 </ul>

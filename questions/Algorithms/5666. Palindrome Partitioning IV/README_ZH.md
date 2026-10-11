@@ -1,4 +1,4 @@
-### [回文串分割 IV](https://leetcode-cn.com/problems/palindrome-partitioning-iv)
+### [回文串分割 IV](https://leetcode.cn/problems/palindrome-partitioning-iv)
 
 <p>给你一个字符串 <code>s</code> ，如果可以将它分割成三个 <strong>非空</strong> 回文子字符串，那么返回 <code>true</code> ，否则返回 <code>false</code> 。</p>
 

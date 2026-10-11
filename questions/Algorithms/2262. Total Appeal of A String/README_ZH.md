@@ -1,4 +1,4 @@
-### [字符串的总引力](https://leetcode-cn.com/problems/total-appeal-of-a-string)
+### [字符串的总引力](https://leetcode.cn/problems/total-appeal-of-a-string)
 
 <p>字符串的 <strong>引力</strong> 定义为：字符串中 <strong>不同</strong> 字符的数量。</p>
 

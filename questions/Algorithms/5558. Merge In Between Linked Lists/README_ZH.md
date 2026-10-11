@@ -1,4 +1,4 @@
-### [合并两个链表](https://leetcode-cn.com/problems/merge-in-between-linked-lists)
+### [合并两个链表](https://leetcode.cn/problems/merge-in-between-linked-lists)
 
 <p>给你两个链表 <code>list1</code> 和 <code>list2</code> ，它们包含的元素分别为 <code>n</code> 个和 <code>m</code> 个。</p>
 

@@ -1,4 +1,4 @@
-### [单字符重复子串的最大长度](https://leetcode-cn.com/problems/swap-for-longest-repeated-character-substring)
+### [单字符重复子串的最大长度](https://leetcode.cn/problems/swap-for-longest-repeated-character-substring)
 
 <p>如果字符串中的所有字符都相同，那么这个字符串是单字符重复的字符串。</p>
 

@@ -1,4 +1,4 @@
-### [好子集的数目](https://leetcode-cn.com/problems/the-number-of-good-subsets)
+### [好子集的数目](https://leetcode.cn/problems/the-number-of-good-subsets)
 
 <p>给你一个整数数组&nbsp;<code>nums</code>&nbsp;。如果&nbsp;<code>nums</code>&nbsp;的一个子集中，所有元素的乘积可以表示为一个或多个 <strong>互不相同的质数</strong> 的乘积，那么我们称它为&nbsp;<strong>好子集</strong>&nbsp;。</p>
 

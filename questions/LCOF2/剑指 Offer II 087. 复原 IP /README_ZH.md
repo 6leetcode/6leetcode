@@ -1,4 +1,4 @@
-### [复原 IP ](https://leetcode-cn.com/problems/0on3uN)
+### [复原 IP ](https://leetcode.cn/problems/0on3uN)
 
 <p>给定一个只包含数字的字符串 <code>s</code> ，用以表示一个 IP 地址，返回所有可能从&nbsp;<code>s</code> 获得的 <strong>有效 IP 地址 </strong>。你可以按任何顺序返回答案。</p>
 
@@ -54,4 +54,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 93&nbsp;题相同：<a href="https://leetcode-cn.com/problems/restore-ip-addresses/">https://leetcode-cn.com/problems/restore-ip-addresses/</a>&nbsp;</p>
+<p><meta charset="UTF-8" />注意：本题与主站 93&nbsp;题相同：<a href="https://leetcode.cn/problems/restore-ip-addresses/">https://leetcode.cn/problems/restore-ip-addresses/</a>&nbsp;</p>

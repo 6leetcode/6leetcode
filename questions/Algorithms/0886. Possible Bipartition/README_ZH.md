@@ -1,4 +1,4 @@
-### [可能的二分法](https://leetcode-cn.com/problems/possible-bipartition)
+### [可能的二分法](https://leetcode.cn/problems/possible-bipartition)
 
 <p>给定一组&nbsp;<code>n</code>&nbsp;人（编号为&nbsp;<code>1, 2, ..., n</code>），&nbsp;我们想把每个人分进<strong>任意</strong>大小的两组。每个人都可能不喜欢其他人，那么他们不应该属于同一组。</p>
 

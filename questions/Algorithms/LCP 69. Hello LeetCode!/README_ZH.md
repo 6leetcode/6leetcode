@@ -1,4 +1,4 @@
-### [Hello LeetCode!](https://leetcode-cn.com/problems/rMeRt2)
+### [Hello LeetCode!](https://leetcode.cn/problems/rMeRt2)
 
 力扣嘉年华同样准备了纪念品展位，参观者只需要集齐 `helloleetcode` 的 `13` 张字母卡片即可获得力扣纪念章。
 

@@ -1,4 +1,4 @@
-### [n 的第 k 个因子](https://leetcode-cn.com/problems/the-kth-factor-of-n)
+### [n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n)
 
 <p>给你两个正整数&nbsp;<code>n</code> 和&nbsp;<code>k</code>&nbsp;。</p>
 

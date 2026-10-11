@@ -1,4 +1,4 @@
-### [数组的最小偏移量](https://leetcode-cn.com/problems/minimize-deviation-in-array)
+### [数组的最小偏移量](https://leetcode.cn/problems/minimize-deviation-in-array)
 
 <p>给你一个由 <code>n</code> 个正整数组成的数组 <code>nums</code> 。</p>
 

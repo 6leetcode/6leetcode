@@ -1,4 +1,4 @@
-### [极大极小游戏](https://leetcode-cn.com/problems/min-max-game)
+### [极大极小游戏](https://leetcode.cn/problems/min-max-game)
 
 <p>给你一个下标从 <strong>0</strong> 开始的整数数组 <code>nums</code> ，其长度是 <code>2</code> 的幂。</p>
 

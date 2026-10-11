@@ -1,4 +1,4 @@
-### [摘水果](https://leetcode-cn.com/problems/maximum-fruits-harvested-after-at-most-k-steps)
+### [摘水果](https://leetcode.cn/problems/maximum-fruits-harvested-after-at-most-k-steps)
 
 <p>在一个无限的 x 坐标轴上，有许多水果分布在其中某些位置。给你一个二维整数数组 <code>fruits</code> ，其中 <code>fruits[i] = [position<sub>i</sub>, amount<sub>i</sub>]</code> 表示共有 <code>amount<sub>i</sub></code> 个水果放置在 <code>position<sub>i</sub></code> 上。<code>fruits</code> 已经按 <code>position<sub>i</sub></code> <strong>升序排列</strong> ，每个 <code>position<sub>i</sub></code> <strong>互不相同</strong> 。</p>
 

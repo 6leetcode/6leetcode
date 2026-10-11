@@ -1,4 +1,4 @@
-### [统计二叉树中好节点的数目](https://leetcode-cn.com/problems/count-good-nodes-in-binary-tree)
+### [统计二叉树中好节点的数目](https://leetcode.cn/problems/count-good-nodes-in-binary-tree)
 
 <p>给你一棵根为&nbsp;<code>root</code>&nbsp;的二叉树，请你返回二叉树中好节点的数目。</p>
 
@@ -8,7 +8,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/05/16/test_sample_1.png" style="height: 156px; width: 263px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/05/16/test_sample_1.png" style="height: 156px; width: 263px;"></strong></p>
 
 <pre><strong>输入：</strong>root = [3,1,4,3,null,1,5]
 <strong>输出：</strong>4
@@ -20,7 +20,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/05/16/test_sample_2.png" style="height: 161px; width: 157px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/05/16/test_sample_2.png" style="height: 161px; width: 157px;"></strong></p>
 
 <pre><strong>输入：</strong>root = [3,3,null,4,2]
 <strong>输出：</strong>3

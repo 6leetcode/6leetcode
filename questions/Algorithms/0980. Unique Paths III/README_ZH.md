@@ -1,4 +1,4 @@
-### [不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii)
+### [不同路径 III](https://leetcode.cn/problems/unique-paths-iii)
 
 <p>在二维网格 <code>grid</code> 上，有 4 种类型的方格：</p>
 

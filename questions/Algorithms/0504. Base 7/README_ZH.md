@@ -1,4 +1,4 @@
-### [七进制数](https://leetcode-cn.com/problems/base-7)
+### [七进制数](https://leetcode.cn/problems/base-7)
 
 <p>给定一个整数 <code>num</code>，将其转化为 <strong>7 进制</strong>，并以字符串形式输出。</p>
 

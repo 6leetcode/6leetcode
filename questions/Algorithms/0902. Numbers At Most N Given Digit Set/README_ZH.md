@@ -1,4 +1,4 @@
-### [最大为 N 的数字组合](https://leetcode-cn.com/problems/numbers-at-most-n-given-digit-set)
+### [最大为 N 的数字组合](https://leetcode.cn/problems/numbers-at-most-n-given-digit-set)
 
 <p>给定一个按&nbsp;<strong>非递减顺序</strong>&nbsp;排列的数字数组<meta charset="UTF-8" />&nbsp;<code>digits</code>&nbsp;。你可以用任意次数&nbsp;<code>digits[i]</code>&nbsp;来写的数字。例如，如果<meta charset="UTF-8" />&nbsp;<code>digits = ['1','3','5']</code>，我们可以写数字，如<meta charset="UTF-8" />&nbsp;<code>'13'</code>,&nbsp;<code>'551'</code>, 和&nbsp;<code>'1351315'</code>。</p>
 

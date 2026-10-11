@@ -1,4 +1,4 @@
-### [最大波动的子字符串](https://leetcode-cn.com/problems/substring-with-largest-variance)
+### [最大波动的子字符串](https://leetcode.cn/problems/substring-with-largest-variance)
 
 <p>字符串的 <strong>波动</strong>&nbsp;定义为子字符串中出现次数 <strong>最多</strong>&nbsp;的字符次数与出现次数 <strong>最少</strong>&nbsp;的字符次数之差。</p>
 

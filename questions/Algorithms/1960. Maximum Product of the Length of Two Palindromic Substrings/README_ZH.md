@@ -1,4 +1,4 @@
-### [两个回文子字符串长度的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings)
+### [两个回文子字符串长度的最大乘积](https://leetcode.cn/problems/maximum-product-of-the-length-of-two-palindromic-substrings)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的字符串&nbsp;<code>s</code>&nbsp;，你需要找到两个 <strong>不重叠</strong><strong>的回文&nbsp;</strong>子字符串，它们的长度都必须为 <strong>奇数</strong>&nbsp;，使得它们长度的乘积最大。</p>
 

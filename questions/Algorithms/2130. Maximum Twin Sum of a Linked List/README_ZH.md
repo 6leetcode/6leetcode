@@ -1,4 +1,4 @@
-### [链表最大孪生和](https://leetcode-cn.com/problems/maximum-twin-sum-of-a-linked-list)
+### [链表最大孪生和](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list)
 
 <p>在一个大小为&nbsp;<code>n</code>&nbsp;且 <code>n</code>&nbsp;为&nbsp;<strong>偶数</strong> 的链表中，对于&nbsp;<code>0 &lt;= i &lt;= (n / 2) - 1</code>&nbsp;的 <code>i</code>&nbsp;，第&nbsp;<code>i</code>&nbsp;个节点（下标从 <strong>0</strong>&nbsp;开始）的孪生节点为第&nbsp;<code>(n-1-i)</code>&nbsp;个节点 。</p>
 

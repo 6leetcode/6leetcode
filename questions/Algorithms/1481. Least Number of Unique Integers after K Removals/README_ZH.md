@@ -1,4 +1,4 @@
-### [不同整数的最少数目](https://leetcode-cn.com/problems/least-number-of-unique-integers-after-k-removals)
+### [不同整数的最少数目](https://leetcode.cn/problems/least-number-of-unique-integers-after-k-removals)
 
 <p>给你一个整数数组 <code>arr</code> 和一个整数 <code>k</code> 。现需要从数组中恰好移除 <code>k</code> 个元素，请找出移除后数组中不同整数的最少数目。</p>
 

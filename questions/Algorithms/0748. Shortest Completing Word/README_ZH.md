@@ -1,4 +1,4 @@
-### [最短补全词](https://leetcode-cn.com/problems/shortest-completing-word)
+### [最短补全词](https://leetcode.cn/problems/shortest-completing-word)
 
 <p>给你一个字符串 <code>licensePlate</code> 和一个字符串数组 <code>words</code> ，请你找出&nbsp;<code>words</code> 中的 <strong>最短补全词</strong> 。</p>
 

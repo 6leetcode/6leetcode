@@ -1,4 +1,4 @@
-### [6 和 9 组成的最大数字](https://leetcode-cn.com/problems/maximum-69-number)
+### [6 和 9 组成的最大数字](https://leetcode.cn/problems/maximum-69-number)
 
 <p>给你一个仅由数字 6 和 9 组成的正整数&nbsp;<code>num</code>。</p>
 

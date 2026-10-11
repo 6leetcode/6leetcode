@@ -1,4 +1,4 @@
-### [切披萨的方案数](https://leetcode-cn.com/problems/number-of-ways-of-cutting-a-pizza)
+### [切披萨的方案数](https://leetcode.cn/problems/number-of-ways-of-cutting-a-pizza)
 
 <p>给你一个&nbsp;<code>rows x cols</code>&nbsp;大小的矩形披萨和一个整数 <code>k</code>&nbsp;，矩形包含两种字符：&nbsp;<code>&#39;A&#39;</code> （表示苹果）和&nbsp;<code>&#39;.&#39;</code>&nbsp;（表示空白格子）。你需要切披萨 <code>k-1</code> 次，得到&nbsp;<code>k</code>&nbsp;块披萨并送给别人。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/05/10/ways_to_cut_apple_1.png" style="height: 378px; width: 500px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/05/10/ways_to_cut_apple_1.png" style="height: 378px; width: 500px;"></strong></p>
 
 <pre><strong>输入：</strong>pizza = [&quot;A..&quot;,&quot;AAA&quot;,&quot;...&quot;], k = 3
 <strong>输出：</strong>3 

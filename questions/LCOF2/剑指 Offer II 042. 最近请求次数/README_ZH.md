@@ -1,4 +1,4 @@
-### [最近请求次数](https://leetcode-cn.com/problems/H8086Q)
+### [最近请求次数](https://leetcode.cn/problems/H8086Q)
 
 <p>写一个&nbsp;<code>RecentCounter</code>&nbsp;类来计算特定时间范围内最近的请求。</p>
 
@@ -42,4 +42,4 @@ recentCounter.ping(3002);  // requests = [1, <strong>100</strong>, <strong>3001<
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 933&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/number-of-recent-calls/">https://leetcode-cn.com/problems/number-of-recent-calls/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 933&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/number-of-recent-calls/">https://leetcode.cn/problems/number-of-recent-calls/</a></p>

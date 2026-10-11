@@ -1,4 +1,4 @@
-### [找到最高海拔](https://leetcode-cn.com/problems/find-the-highest-altitude)
+### [找到最高海拔](https://leetcode.cn/problems/find-the-highest-altitude)
 
 <p>有一个自行车手打算进行一场公路骑行，这条路线总共由 <code>n + 1</code> 个不同海拔的点组成。自行车手从海拔为 <code>0</code> 的点 <code>0</code> 开始骑行。</p>
 

@@ -1,4 +1,4 @@
-### [无人机方阵](https://leetcode-cn.com/problems/0jQkd0)
+### [无人机方阵](https://leetcode.cn/problems/0jQkd0)
 
 在 「力扣挑战赛」 开幕式的压轴节目 「无人机方阵」中，每一架无人机展示一种灯光颜色。 无人机方阵通过两种操作进行颜色图案变换：
 - 调整无人机的位置布局
@@ -23,7 +23,7 @@
 将 `[1,0]` 处的无人机移动至 `[1,1]` 处；
 将 `[1,1]` 处的无人机移动至 `[1,0]` 处，其灯光颜色切换为颜色编号为 `6` 的灯光；
 因此从`source` 到 `target` 所需要的最少灯光切换次数为 1。
->![8819ccdd664e91c78cde3bba3c701986.gif](https://pic.leetcode-cn.com/1628823765-uCDaux-8819ccdd664e91c78cde3bba3c701986.gif){:height=300px}
+>![8819ccdd664e91c78cde3bba3c701986.gif](https://pic.leetcode.cn/1628823765-uCDaux-8819ccdd664e91c78cde3bba3c701986.gif){:height=300px}
 
 
 

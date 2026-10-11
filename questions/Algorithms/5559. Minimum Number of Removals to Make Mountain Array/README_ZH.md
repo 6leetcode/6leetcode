@@ -1,4 +1,4 @@
-### [得到山形数组的最少删除次数](https://leetcode-cn.com/problems/minimum-number-of-removals-to-make-mountain-array)
+### [得到山形数组的最少删除次数](https://leetcode.cn/problems/minimum-number-of-removals-to-make-mountain-array)
 
 <p>我们定义 <code>arr</code> 是 <b>山形数组</b> 当且仅当它满足：</p>
 

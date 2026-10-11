@@ -1,4 +1,4 @@
-### [含特定字母的最小子序列](https://leetcode-cn.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter)
+### [含特定字母的最小子序列](https://leetcode.cn/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter)
 
 <p>给你一个字符串 <code>s</code> ，一个整数 <code>k</code> ，一个字母 <code>letter</code> 以及另一个整数 <code>repetition</code> 。</p>
 

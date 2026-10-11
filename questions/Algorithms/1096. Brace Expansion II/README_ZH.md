@@ -1,4 +1,4 @@
-### [花括号展开 II](https://leetcode-cn.com/problems/brace-expansion-ii)
+### [花括号展开 II](https://leetcode.cn/problems/brace-expansion-ii)
 
 <p>如果你熟悉 Shell 编程，那么一定了解过花括号展开，它可以用来生成任意字符串。</p>
 

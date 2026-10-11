@@ -1,4 +1,4 @@
-### [适龄的朋友](https://leetcode-cn.com/problems/friends-of-appropriate-ages)
+### [适龄的朋友](https://leetcode.cn/problems/friends-of-appropriate-ages)
 
 <p>在社交媒体网站上有 <code>n</code> 个用户。给你一个整数数组 <code>ages</code> ，其中 <code>ages[i]</code> 是第 <code>i</code> 个用户的年龄。</p>
 

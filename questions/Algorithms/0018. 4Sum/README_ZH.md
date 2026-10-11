@@ -1,4 +1,4 @@
-### [四数之和](https://leetcode-cn.com/problems/4sum)
+### [四数之和](https://leetcode.cn/problems/4sum)
 
 <p>给你一个由 <code>n</code> 个整数组成的数组&nbsp;<code>nums</code> ，和一个目标值 <code>target</code> 。请你找出并返回满足下述全部条件且<strong>不重复</strong>的四元组&nbsp;<code>[nums[a], nums[b], nums[c], nums[d]]</code>&nbsp;（若两个四元组元素一一对应，则认为两个四元组重复）：</p>
 

@@ -1,4 +1,4 @@
-### [下标对中的最大距离](https://leetcode-cn.com/problems/maximum-distance-between-a-pair-of-values)
+### [下标对中的最大距离](https://leetcode.cn/problems/maximum-distance-between-a-pair-of-values)
 
 <p>给你两个 <strong>非递增</strong> 的整数数组 <code>nums1</code>​​​​​​ 和 <code>nums2</code>​​​​​​ ，数组下标均 <strong>从 0 开始</strong> 计数。</p>
 

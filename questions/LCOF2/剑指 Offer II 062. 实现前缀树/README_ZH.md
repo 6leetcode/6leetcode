@@ -1,4 +1,4 @@
-### [实现前缀树](https://leetcode-cn.com/problems/QC3q1f)
+### [实现前缀树](https://leetcode.cn/problems/QC3q1f)
 
 <p><strong><a href="https://baike.baidu.com/item/字典树/9825209?fr=aladdin" target="_blank">Trie</a></strong>（发音类似 &quot;try&quot;）或者说 <strong>前缀树</strong> 是一种树形数据结构，用于高效地存储和检索字符串数据集中的键。这一数据结构有相当多的应用情景，例如自动补完和拼写检查。</p>
 
@@ -46,4 +46,4 @@ trie.search(&quot;app&quot;);     // 返回 True
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 208 题相同：<a href="https://leetcode-cn.com/problems/implement-trie-prefix-tree/">https://leetcode-cn.com/problems/implement-trie-prefix-tree/</a>&nbsp;</p>
+<p><meta charset="UTF-8" />注意：本题与主站 208 题相同：<a href="https://leetcode.cn/problems/implement-trie-prefix-tree/">https://leetcode.cn/problems/implement-trie-prefix-tree/</a>&nbsp;</p>

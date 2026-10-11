@@ -1,4 +1,4 @@
-### [二叉树剪枝](https://leetcode-cn.com/problems/binary-tree-pruning)
+### [二叉树剪枝](https://leetcode.cn/problems/binary-tree-pruning)
 
 <p>给你二叉树的根结点&nbsp;<code>root</code>&nbsp;，此外树的每个结点的值要么是 <code>0</code> ，要么是 <code>1</code> 。</p>
 

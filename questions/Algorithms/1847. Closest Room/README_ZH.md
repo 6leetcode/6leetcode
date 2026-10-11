@@ -1,4 +1,4 @@
-### [最近的房间](https://leetcode-cn.com/problems/closest-room)
+### [最近的房间](https://leetcode.cn/problems/closest-room)
 
 <p>一个酒店里有 <code>n</code> 个房间，这些房间用二维整数数组 <code>rooms</code> 表示，其中 <code>rooms[i] = [roomId<sub>i</sub>, size<sub>i</sub>]</code> 表示有一个房间号为 <code>roomId<sub>i</sub></code> 的房间且它的面积为 <code>size<sub>i</sub></code> 。每一个房间号 <code>roomId<sub>i</sub></code> 保证是 <strong>独一无二</strong> 的。</p>
 

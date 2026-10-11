@@ -1,4 +1,4 @@
-### [仅含 1 的子串数](https://leetcode-cn.com/problems/number-of-substrings-with-only-1s)
+### [仅含 1 的子串数](https://leetcode.cn/problems/number-of-substrings-with-only-1s)
 
 <p>给你一个二进制字符串 <code>s</code>（仅由 &#39;0&#39; 和 &#39;1&#39; 组成的字符串）。</p>
 

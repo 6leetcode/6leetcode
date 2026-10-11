@@ -1,4 +1,4 @@
-### [随机翻转矩阵](https://leetcode-cn.com/problems/random-flip-matrix)
+### [随机翻转矩阵](https://leetcode.cn/problems/random-flip-matrix)
 
 <p>给你一个 <code>m x n</code> 的二元矩阵 <code>matrix</code> ，且所有值被初始化为 <code>0</code> 。请你设计一个算法，随机选取一个满足&nbsp;<code>matrix[i][j] == 0</code> 的下标&nbsp;<code>(i, j)</code> ，并将它的值变为 <code>1</code> 。所有满足 <code>matrix[i][j] == 0</code> 的下标 <code>(i, j)</code> 被选取的概率应当均等。</p>
 

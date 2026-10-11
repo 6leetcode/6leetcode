@@ -1,4 +1,4 @@
-### [只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii)
+### [只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii)
 
 <p>给你一个整数数组&nbsp;<code>nums</code>，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。你可以按 <strong>任意顺序</strong> 返回答案。</p>
 

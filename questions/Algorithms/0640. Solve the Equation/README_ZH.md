@@ -1,4 +1,4 @@
-### [求解方程](https://leetcode-cn.com/problems/solve-the-equation)
+### [求解方程](https://leetcode.cn/problems/solve-the-equation)
 
 <p>求解一个给定的方程，将<code>x</code>以字符串 <code>"x=#value"</code>&nbsp;的形式返回。该方程仅包含 <code>'+'</code> ， <code>'-'</code> 操作，变量&nbsp;<code>x</code>&nbsp;和其对应系数。</p>
 

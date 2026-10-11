@@ -1,4 +1,4 @@
-### [删除系统中的重复文件夹](https://leetcode-cn.com/problems/delete-duplicate-folders-in-system)
+### [删除系统中的重复文件夹](https://leetcode.cn/problems/delete-duplicate-folders-in-system)
 
 <p>由于一个漏洞，文件系统中存在许多重复文件夹。给你一个二维数组 <code>paths</code>，其中 <code>paths[i]</code> 是一个表示文件系统中第 <code>i</code> 个文件夹的绝对路径的数组。</p>
 

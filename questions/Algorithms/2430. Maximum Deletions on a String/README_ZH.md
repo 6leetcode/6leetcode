@@ -1,4 +1,4 @@
-### [对字母串可执行的最大删除数](https://leetcode-cn.com/problems/maximum-deletions-on-a-string)
+### [对字母串可执行的最大删除数](https://leetcode.cn/problems/maximum-deletions-on-a-string)
 
 <p>给你一个仅由小写英文字母组成的字符串 <code>s</code> 。在一步操作中，你可以：</p>
 

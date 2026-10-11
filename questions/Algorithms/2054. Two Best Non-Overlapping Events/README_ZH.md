@@ -1,4 +1,4 @@
-### [两个最好的不重叠活动](https://leetcode-cn.com/problems/two-best-non-overlapping-events)
+### [两个最好的不重叠活动](https://leetcode.cn/problems/two-best-non-overlapping-events)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的二维整数数组&nbsp;<code>events</code>&nbsp;，其中&nbsp;<code>events[i] = [startTime<sub>i</sub>, endTime<sub>i</sub>, value<sub>i</sub>]</code>&nbsp;。第&nbsp;<code>i</code>&nbsp;个活动开始于&nbsp;<code>startTime<sub>i</sub></code>&nbsp;，结束于&nbsp;<code>endTime<sub>i</sub></code>&nbsp;，如果你参加这个活动，那么你可以得到价值&nbsp;<code>value<sub>i</sub></code>&nbsp;。你 <strong>最多</strong>&nbsp;可以参加&nbsp;<strong>两个时间不重叠</strong>&nbsp;活动，使得它们的价值之和 <strong>最大</strong>&nbsp;。</p>
 
@@ -10,27 +10,30 @@
 
 <p><strong>示例 1:</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2021/09/21/picture5.png" style="width: 400px; height: 75px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2026/01/03/untitled-diagramdrawio.png" style="width: 400px; height: 86px;" /></p>
 
-<pre><b>输入：</b>events = [[1,3,2],[4,5,2],[2,4,3]]
+<pre>
+<b>输入：</b>events = [[1,3,2],[4,5,2],[2,4,3]]
 <b>输出：</b>4
 <strong>解释：</strong>选择绿色的活动 0 和 1 ，价值之和为 2 + 2 = 4 。
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="Example 1 Diagram" src="https://assets.leetcode.com/uploads/2021/09/21/picture1.png" style="width: 400px; height: 77px;"></p>
+<p><img alt="Example 1 Diagram" src="https://assets.leetcode.com/uploads/2026/01/03/2054b.png" style="width: 400px; height: 86px;" /></p>
 
-<pre><b>输入：</b>events = [[1,3,2],[4,5,2],[1,5,5]]
+<pre>
+<b>输入：</b>events = [[1,3,2],[4,5,2],[1,5,5]]
 <b>输出：</b>5
 <strong>解释：</strong>选择活动 2 ，价值和为 5 。
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2021/09/21/picture3.png" style="width: 400px; height: 66px;"></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2026/01/03/2054c.png" style="width: 400px; height: 74px;" /></p>
 
-<pre><b>输入：</b>events = [[1,5,3],[1,5,1],[6,6,5]]
+<pre>
+<b>输入：</b>events = [[1,5,3],[1,5,1],[6,6,5]]
 <b>输出：</b>8
 <strong>解释：</strong>选择活动 0 和 2 ，价值之和为 3 + 5 = 8 。</pre>
 

@@ -1,2 +1,2 @@
-### [最近时刻](https://leetcode-cn.com/problems/next-closest-time)
+### [最近时刻](https://leetcode.cn/problems/next-closest-time)
 

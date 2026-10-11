@@ -1,4 +1,4 @@
-### [避免重复字母的最小删除成本](https://leetcode-cn.com/problems/minimum-deletion-cost-to-avoid-repeating-letters)
+### [避免重复字母的最小删除成本](https://leetcode.cn/problems/minimum-deletion-cost-to-avoid-repeating-letters)
 
 <p>给你一个字符串 <code>s</code> 和一个整数数组 <code>cost</code> ，其中 <code>cost[i]</code> 是从 <code>s</code> 中删除字符 <code>i</code> 的代价。</p>
 

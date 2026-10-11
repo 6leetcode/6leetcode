@@ -1,4 +1,4 @@
-### [最大得分的路径数目](https://leetcode-cn.com/problems/number-of-paths-with-max-score)
+### [最大得分的路径数目](https://leetcode.cn/problems/number-of-paths-with-max-score)
 
 <p>给你一个正方形字符数组&nbsp;<code>board</code>&nbsp;，你从数组最右下方的字符&nbsp;<code>&#39;S&#39;</code>&nbsp;出发。</p>
 

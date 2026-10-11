@@ -1,4 +1,4 @@
-### [按公因数计算最大组件大小](https://leetcode-cn.com/problems/largest-component-size-by-common-factor)
+### [按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor)
 
 <p>给定一个由不同正整数的组成的非空数组&nbsp;<code>nums</code> ，考虑下面的图：</p>
 

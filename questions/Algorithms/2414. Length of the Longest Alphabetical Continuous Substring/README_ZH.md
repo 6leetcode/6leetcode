@@ -1,4 +1,4 @@
-### [最长的字母序连续子字符串的长度](https://leetcode-cn.com/problems/length-of-the-longest-alphabetical-continuous-substring)
+### [最长的字母序连续子字符串的长度](https://leetcode.cn/problems/length-of-the-longest-alphabetical-continuous-substring)
 
 <p><strong>字母序连续字符串</strong> 是由字母表中连续字母组成的字符串。换句话说，字符串 <code>"abcdefghijklmnopqrstuvwxyz"</code> 的任意子字符串都是 <strong>字母序连续字符串</strong> 。</p>
 

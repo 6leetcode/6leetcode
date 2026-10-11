@@ -1,4 +1,4 @@
-### [含有重复元素集合的组合](https://leetcode-cn.com/problems/4sjJUc)
+### [含有重复元素集合的组合](https://leetcode.cn/problems/4sjJUc)
 
 <p>给定一个可能有重复数字的整数数组&nbsp;<code>candidates</code>&nbsp;和一个目标数&nbsp;<code>target</code>&nbsp;，找出&nbsp;<code>candidates</code>&nbsp;中所有可以使数字和为&nbsp;<code>target</code>&nbsp;的组合。</p>
 
@@ -40,4 +40,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 40&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/combination-sum-ii/">https://leetcode-cn.com/problems/combination-sum-ii/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 40&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/combination-sum-ii/">https://leetcode.cn/problems/combination-sum-ii/</a></p>

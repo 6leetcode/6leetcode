@@ -1,4 +1,4 @@
-### [统计一致字符串的数目](https://leetcode-cn.com/problems/count-the-number-of-consistent-strings)
+### [统计一致字符串的数目](https://leetcode.cn/problems/count-the-number-of-consistent-strings)
 
 <p>给你一个由不同字符组成的字符串 <code>allowed</code> 和一个字符串数组 <code>words</code> 。如果一个字符串的每一个字符都在 <code>allowed</code> 中，就称这个字符串是 <strong>一致 </strong>字符串。</p>
 

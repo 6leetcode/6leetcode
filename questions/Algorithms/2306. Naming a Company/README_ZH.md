@@ -1,4 +1,4 @@
-### [公司命名](https://leetcode-cn.com/problems/naming-a-company)
+### [公司命名](https://leetcode.cn/problems/naming-a-company)
 
 <p>给你一个字符串数组 <code>ideas</code> 表示在公司命名过程中使用的名字列表。公司命名流程如下：</p>
 

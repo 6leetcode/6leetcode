@@ -1,4 +1,4 @@
-### [重新格式化字符串](https://leetcode-cn.com/problems/reformat-the-string)
+### [重新格式化字符串](https://leetcode.cn/problems/reformat-the-string)
 
 <p>给你一个混合了数字和字母的字符串 <code>s</code>，其中的字母均为小写英文字母。</p>
 

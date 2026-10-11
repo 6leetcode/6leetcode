@@ -1,4 +1,4 @@
-### [收集足够苹果的最小花园周长](https://leetcode-cn.com/problems/minimum-garden-perimeter-to-collect-enough-apples)
+### [收集足够苹果的最小花园周长](https://leetcode.cn/problems/minimum-garden-perimeter-to-collect-enough-apples)
 
 <p>给你一个用无限二维网格表示的花园，<strong>每一个</strong>&nbsp;整数坐标处都有一棵苹果树。整数坐标&nbsp;<code>(i, j)</code>&nbsp;处的苹果树有 <code>|i| + |j|</code>&nbsp;个苹果。</p>
 
@@ -16,7 +16,7 @@
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://pic.leetcode-cn.com/1627790803-qcBKFw-image.png" style="width: 442px; height: 449px;" />
+<img alt="" src="https://pic.leetcode.cn/1627790803-qcBKFw-image.png" style="width: 442px; height: 449px;" />
 <pre>
 <b>输入：</b>neededApples = 1
 <b>输出：</b>8

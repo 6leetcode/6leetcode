@@ -1,4 +1,4 @@
-### [猫和老鼠](https://leetcode-cn.com/problems/cat-and-mouse)
+### [猫和老鼠](https://leetcode.cn/problems/cat-and-mouse)
 
 <p>两位玩家分别扮演猫和老鼠，在一张 <strong>无向</strong> 图上进行游戏，两人轮流行动。</p>
 
@@ -27,14 +27,14 @@
 </ul>
 &nbsp;
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/11/17/cat1.jpg" style="width: 300px; height: 300px;" />
 <pre>
 <strong>输入：</strong>graph = [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]
 <strong>输出：</strong>0
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/11/17/cat2.jpg" style="width: 200px; height: 200px;" />
 <pre>
 <strong>输入：</strong>graph = [[1,3],[0],[3],[0,2]]
@@ -51,5 +51,5 @@
 	<li><code>0 &lt;= graph[i][j] &lt; graph.length</code></li>
 	<li><code>graph[i][j] != i</code></li>
 	<li><code>graph[i]</code> 互不相同</li>
-	<li>猫和老鼠在游戏中总是移动</li>
+	<li>猫和老鼠在游戏中总是可以移动</li>
 </ul>

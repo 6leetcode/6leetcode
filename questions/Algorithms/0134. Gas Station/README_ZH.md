@@ -1,10 +1,10 @@
-### [加油站](https://leetcode-cn.com/problems/gas-station)
+### [加油站](https://leetcode.cn/problems/gas-station)
 
 <p>在一条环路上有 <code>n</code>&nbsp;个加油站，其中第 <code>i</code>&nbsp;个加油站有汽油&nbsp;<code>gas[i]</code><em>&nbsp;</em>升。</p>
 
 <p>你有一辆油箱容量无限的的汽车，从第<em> </em><code>i</code><em> </em>个加油站开往第<em> </em><code>i+1</code><em>&nbsp;</em>个加油站需要消耗汽油&nbsp;<code>cost[i]</code><em>&nbsp;</em>升。你从其中的一个加油站出发，开始时油箱为空。</p>
 
-<p>给定两个整数数组 <code>gas</code> 和 <code>cost</code> ，如果你可以绕环路行驶一周，则返回出发时加油站的编号，否则返回 <code>-1</code> 。如果存在解，则 <strong>保证</strong> 它是 <strong>唯一</strong> 的。</p>
+<p>给定两个整数数组 <code>gas</code> 和 <code>cost</code> ，如果你可以按顺序绕环路行驶一周，则返回出发时加油站的编号，否则返回 <code>-1</code> 。如果存在解，则 <strong>保证</strong> 它是 <strong>唯一</strong> 的。</p>
 
 <p>&nbsp;</p>
 
@@ -40,8 +40,8 @@
 <p><strong>提示:</strong></p>
 
 <ul>
-	<li><code>gas.length == n</code></li>
-	<li><code>cost.length == n</code></li>
+	<li><code>n == gas.length == cost.length</code></li>
 	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= gas[i], cost[i] &lt;= 10<sup>4</sup></code></li>
+	<li>输入保证答案唯一。</li>
 </ul>

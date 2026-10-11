@@ -1,4 +1,4 @@
-### [统计构造好字符串的方案数](https://leetcode-cn.com/problems/count-ways-to-build-good-strings)
+### [统计构造好字符串的方案数](https://leetcode.cn/problems/count-ways-to-build-good-strings)
 
 <p>给你整数&nbsp;<code>zero</code>&nbsp;，<code>one</code>&nbsp;，<code>low</code>&nbsp;和&nbsp;<code>high</code>&nbsp;，我们从空字符串开始构造一个字符串，每一步执行下面操作中的一种：</p>
 

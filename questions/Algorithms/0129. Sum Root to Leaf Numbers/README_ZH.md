@@ -1,4 +1,4 @@
-### [求根节点到叶节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers)
+### [求根节点到叶节点数字之和](https://leetcode.cn/problems/sum-root-to-leaf-numbers)
 
 给你一个二叉树的根节点 <code>root</code> ，树中每个节点都存放有一个 <code>0</code> 到 <code>9</code> 之间的数字。
 <div class="original__bRMd">

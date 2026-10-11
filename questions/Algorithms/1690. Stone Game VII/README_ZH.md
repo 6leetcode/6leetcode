@@ -1,4 +1,4 @@
-### [石子游戏 VII](https://leetcode-cn.com/problems/stone-game-vii)
+### [石子游戏 VII](https://leetcode.cn/problems/stone-game-vii)
 
 <p>石子游戏中，爱丽丝和鲍勃轮流进行自己的回合，<strong>爱丽丝先开始</strong> 。</p>
 

@@ -1,4 +1,4 @@
-### [统计放置房子的方式数](https://leetcode-cn.com/problems/count-number-of-ways-to-place-houses)
+### [统计放置房子的方式数](https://leetcode.cn/problems/count-number-of-ways-to-place-houses)
 
 <p>一条街道上共有 <code>n * 2</code> 个 <strong>地块</strong> ，街道的两侧各有 <code>n</code> 个地块。每一边的地块都按从 <code>1</code> 到 <code>n</code> 编号。每个地块上都可以放置一所房子。</p>
 

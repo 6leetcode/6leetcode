@@ -1,4 +1,4 @@
-### [堆叠长方体的最大高度](https://leetcode-cn.com/problems/maximum-height-by-stacking-cuboids)
+### [堆叠长方体的最大高度](https://leetcode.cn/problems/maximum-height-by-stacking-cuboids)
 
 <p>给你 <code>n</code> 个长方体 <code>cuboids</code> ，其中第 <code>i</code> 个长方体的长宽高表示为 <code>cuboids[i] = [width<sub>i</sub>, length<sub>i</sub>, height<sub>i</sub>]</code>（<strong>下标从 0 开始</strong>）。请你从 <code>cuboids</code> 选出一个 <strong>子集</strong> ，并将它们堆叠起来。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/12/12/image.jpg" style="width: 420px; height: 299px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/12/12/image.jpg" style="width: 420px; height: 299px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>cuboids = [[50,45,20],[95,37,53],[45,23,12]]

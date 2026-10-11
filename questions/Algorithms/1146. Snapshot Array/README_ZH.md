@@ -1,4 +1,4 @@
-### [快照数组](https://leetcode-cn.com/problems/snapshot-array)
+### [快照数组](https://leetcode.cn/problems/snapshot-array)
 
 <p>实现支持下列接口的「快照数组」-&nbsp;SnapshotArray：</p>
 

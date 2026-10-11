@@ -1,4 +1,4 @@
-### [变位词组](https://leetcode-cn.com/problems/sfvd7V)
+### [变位词组](https://leetcode.cn/problems/sfvd7V)
 
 <p>给定一个字符串数组 <code>strs</code> ，将&nbsp;<strong>变位词&nbsp;</strong>组合在一起。 可以按任意顺序返回结果列表。</p>
 
@@ -37,4 +37,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 49&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/group-anagrams/">https://leetcode-cn.com/problems/group-anagrams/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 49&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/group-anagrams/">https://leetcode.cn/problems/group-anagrams/</a></p>

@@ -1,4 +1,4 @@
-### [子数组异或查询](https://leetcode-cn.com/problems/xor-queries-of-a-subarray)
+### [子数组异或查询](https://leetcode.cn/problems/xor-queries-of-a-subarray)
 
 <p>有一个正整数数组 <code>arr</code>，现给你一个对应的查询数组 <code>queries</code>，其中 <code>queries[i] = [L<sub>i, </sub>R<sub>i</sub>]</code>。</p>
 

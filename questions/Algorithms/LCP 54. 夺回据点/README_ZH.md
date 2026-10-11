@@ -1,4 +1,4 @@
-### [夺回据点](https://leetcode-cn.com/problems/s5kipK)
+### [夺回据点](https://leetcode.cn/problems/s5kipK)
 
 欢迎各位勇者来到力扣城，本次试炼主题为「夺回据点」。
 
@@ -31,7 +31,7 @@
 >第三次夺回据点 `2`，剩余魔物据点 `5`；
 >第四次夺回据点 `5`，无剩余魔物据点；
 >因此最少需要消耗资源为 `6`，可占领所有据点。
-![image.png](https://pic.leetcode-cn.com/1648706944-KJstUN-image.png){:height=170px}
+![image.png](https://pic.leetcode.cn/1648706944-KJstUN-image.png){:height=170px}
 
 
 **示例 2：**
@@ -47,7 +47,7 @@
 >第二次夺回据点 `2`，剩余魔物据点 `0`；
 >第三次夺回据点 `0`，无剩余魔物据点；
 >因此最少需要消耗资源为 `2`，可占领所有据点。
-![image.png](https://pic.leetcode-cn.com/1648707186-LJRwzU-image.png){:height=60px}
+![image.png](https://pic.leetcode.cn/1648707186-LJRwzU-image.png){:height=60px}
 
 
 **提示：**

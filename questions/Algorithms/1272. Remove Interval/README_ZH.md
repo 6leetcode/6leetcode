@@ -1,2 +1,2 @@
-### [删除区间](https://leetcode-cn.com/problems/remove-interval)
+### [删除区间](https://leetcode.cn/problems/remove-interval)
 

@@ -1,4 +1,4 @@
-### [下一个排列](https://leetcode-cn.com/problems/next-permutation)
+### [下一个排列](https://leetcode.cn/problems/next-permutation)
 
 <p>整数数组的一个 <strong>排列</strong>&nbsp; 就是将其所有成员以序列或线性顺序排列。</p>
 

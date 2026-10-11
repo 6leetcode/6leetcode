@@ -1,4 +1,4 @@
-### [二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable)
+### [二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable)
 
 <p><big><small>给定一个二维矩阵 <code>matrix</code>，</small></big>以下类型的多个请求：</p>
 
@@ -17,7 +17,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img src="https://pic.leetcode-cn.com/1626332422-wUpUHT-image.png" style="width: 200px;" /></p>
+<p><img src="https://pic.leetcode.cn/1626332422-wUpUHT-image.png" style="width: 200px;" /></p>
 
 <pre>
 <strong>输入:</strong> 

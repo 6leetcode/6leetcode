@@ -1,4 +1,4 @@
-### [最后一块石头的重量](https://leetcode-cn.com/problems/last-stone-weight)
+### [最后一块石头的重量](https://leetcode.cn/problems/last-stone-weight)
 
 <p>有一堆石头，每块石头的重量都是正整数。</p>
 

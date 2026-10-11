@@ -1,4 +1,4 @@
-### [环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii)
+### [环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii)
 
 <p>给定一个链表的头节点 &nbsp;<code>head</code>&nbsp;，返回链表开始入环的第一个节点。&nbsp;<em>如果链表无环，则返回&nbsp;<code>null</code>。</em></p>
 
@@ -23,7 +23,7 @@
 
 <p><strong>示例&nbsp;2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png" /></p>
 
 <pre>
 <strong>输入：</strong>head = [1,2], pos = 0
@@ -33,7 +33,7 @@
 
 <p><strong>示例 3：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png" /></p>
 
 <pre>
 <strong>输入：</strong>head = [1], pos = -1

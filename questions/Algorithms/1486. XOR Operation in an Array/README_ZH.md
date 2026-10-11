@@ -1,4 +1,4 @@
-### [数组异或操作](https://leetcode-cn.com/problems/xor-operation-in-an-array)
+### [数组异或操作](https://leetcode.cn/problems/xor-operation-in-an-array)
 
 <p>给你两个整数，<code>n</code> 和 <code>start</code> 。</p>
 

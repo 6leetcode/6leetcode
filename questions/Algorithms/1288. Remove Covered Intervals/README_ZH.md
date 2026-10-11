@@ -1,4 +1,4 @@
-### [删除被覆盖区间](https://leetcode-cn.com/problems/remove-covered-intervals)
+### [删除被覆盖区间](https://leetcode.cn/problems/remove-covered-intervals)
 
 <p>给你一个区间列表，请你删除列表中被其他区间所覆盖的区间。</p>
 

@@ -1,4 +1,4 @@
-### [数组相对排序](https://leetcode-cn.com/problems/0H97ZC)
+### [数组相对排序](https://leetcode.cn/problems/0H97ZC)
 
 <p>给定两个数组，<code>arr1</code> 和&nbsp;<code>arr2</code>，</p>
 
@@ -31,4 +31,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 1122&nbsp;题相同：<a href="https://leetcode-cn.com/problems/relative-sort-array/">https://leetcode-cn.com/problems/relative-sort-array/</a>&nbsp;</p>
+<p><meta charset="UTF-8" />注意：本题与主站 1122&nbsp;题相同：<a href="https://leetcode.cn/problems/relative-sort-array/">https://leetcode.cn/problems/relative-sort-array/</a>&nbsp;</p>

@@ -1,2 +1,2 @@
-### [粉刷房子 II](https://leetcode-cn.com/problems/paint-house-ii)
+### [粉刷房子 II](https://leetcode.cn/problems/paint-house-ii)
 

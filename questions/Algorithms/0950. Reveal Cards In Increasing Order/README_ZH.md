@@ -1,4 +1,4 @@
-### [按递增顺序显示卡牌](https://leetcode-cn.com/problems/reveal-cards-in-increasing-order)
+### [按递增顺序显示卡牌](https://leetcode.cn/problems/reveal-cards-in-increasing-order)
 
 <p>牌组中的每张卡牌都对应有一个唯一的整数。你可以按你想要的顺序对这套卡片进行排序。</p>
 

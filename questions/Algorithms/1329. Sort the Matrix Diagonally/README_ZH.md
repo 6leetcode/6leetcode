@@ -1,4 +1,4 @@
-### [将矩阵按对角线排序](https://leetcode-cn.com/problems/sort-the-matrix-diagonally)
+### [将矩阵按对角线排序](https://leetcode.cn/problems/sort-the-matrix-diagonally)
 
 <p><strong>矩阵对角线</strong> 是一条从矩阵最上面行或者最左侧列中的某个元素开始的对角线，沿右下方向一直到矩阵末尾的元素。例如，矩阵 <code>mat</code> 有 <code>6</code> 行 <code>3</code> 列，从 <code>mat[2][0]</code> 开始的 <strong>矩阵对角线</strong> 将会经过 <code>mat[2][0]</code>、<code>mat[3][1]</code> 和 <code>mat[4][2]</code> 。</p>
 
@@ -8,7 +8,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/25/1482_example_1_2.png" style="height: 198px; width: 500px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/25/1482_example_1_2.png" style="height: 198px; width: 500px;" /></p>
 
 <pre>
 <strong>输入：</strong>mat = [[3,3,1,1],[2,2,1,2],[1,1,1,2]]

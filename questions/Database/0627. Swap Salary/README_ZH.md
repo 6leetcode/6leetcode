@@ -1,4 +1,4 @@
-### [变更性别](https://leetcode-cn.com/problems/swap-salary)
+### [变更性别](https://leetcode.cn/problems/swap-salary)
 
 <div class="original__bRMd">
 <div>

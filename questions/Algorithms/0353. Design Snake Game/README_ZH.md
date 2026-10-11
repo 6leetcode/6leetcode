@@ -1,2 +1,2 @@
-### [贪吃蛇](https://leetcode-cn.com/problems/design-snake-game)
+### [贪吃蛇](https://leetcode.cn/problems/design-snake-game)
 

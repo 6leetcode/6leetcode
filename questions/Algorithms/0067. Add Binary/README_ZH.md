@@ -1,4 +1,4 @@
-### [二进制求和](https://leetcode-cn.com/problems/add-binary)
+### [二进制求和](https://leetcode.cn/problems/add-binary)
 
 <p>给你两个二进制字符串 <code>a</code> 和 <code>b</code> ，以二进制字符串的形式返回它们的和。</p>
 

@@ -1,4 +1,4 @@
-### [旋转函数](https://leetcode-cn.com/problems/rotate-function)
+### [旋转函数](https://leetcode.cn/problems/rotate-function)
 
 <p>给定一个长度为 <code>n</code> 的整数数组&nbsp;<code>nums</code>&nbsp;。</p>
 

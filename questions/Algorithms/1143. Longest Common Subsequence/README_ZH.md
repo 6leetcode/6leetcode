@@ -1,4 +1,4 @@
-### [最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence)
+### [最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence)
 
 <p>给定两个字符串 <code>text1</code> 和 <code>text2</code>，返回这两个字符串的最长 <strong>公共子序列</strong> 的长度。如果不存在 <strong>公共子序列</strong> ，返回 <code>0</code> 。</p>
 

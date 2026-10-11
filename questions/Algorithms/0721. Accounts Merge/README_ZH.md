@@ -1,4 +1,4 @@
-### [账户合并](https://leetcode-cn.com/problems/accounts-merge)
+### [账户合并](https://leetcode.cn/problems/accounts-merge)
 
 <p>给定一个列表 <code>accounts</code>，每个元素 <code>accounts[i]</code>&nbsp;是一个字符串列表，其中第一个元素 <code>accounts[i][0]</code>&nbsp;是&nbsp;<em>名称 (name)</em>，其余元素是 <em><strong>emails</strong> </em>表示该账户的邮箱地址。</p>
 

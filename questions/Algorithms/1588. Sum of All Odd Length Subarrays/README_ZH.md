@@ -1,4 +1,4 @@
-### [所有奇数长度子数组的和](https://leetcode-cn.com/problems/sum-of-all-odd-length-subarrays)
+### [所有奇数长度子数组的和](https://leetcode.cn/problems/sum-of-all-odd-length-subarrays)
 
 <p>给你一个正整数数组&nbsp;<code>arr</code>&nbsp;，请你计算所有可能的奇数长度子数组的和。</p>
 

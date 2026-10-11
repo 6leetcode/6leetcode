@@ -1,4 +1,4 @@
-### [数组中和为 0 的三个数](https://leetcode-cn.com/problems/1fGaJU)
+### [数组中和为 0 的三个数](https://leetcode.cn/problems/1fGaJU)
 
 <p>给你一个整数数组 <code>nums</code> ，判断是否存在三元组 <code>[nums[i], nums[j], nums[k]]</code> 满足 <code>i != j</code>、<code>i != k</code> 且 <code>j != k</code> ，同时还满足 <code>nums[i] + nums[j] + nums[k] == 0</code> 。请</p>
 

@@ -1,4 +1,4 @@
-### [重新排列字符串](https://leetcode-cn.com/problems/shuffle-string)
+### [重新排列字符串](https://leetcode.cn/problems/shuffle-string)
 
 <p>给你一个字符串 <code>s</code> 和一个 <strong>长度相同</strong> 的整数数组 <code>indices</code> 。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/26/q1.jpg" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/26/q1.jpg" /></p>
 
 <pre>
 <strong>输入：</strong>s = "codeleet", <code>indices</code> = [4,5,6,7,0,2,1,3]

@@ -1,4 +1,4 @@
-### [数字序列中某一位的数字](https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof)
+### [数字序列中某一位的数字](https://leetcode.cn/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof)
 
 <p>数字以0123456789101112131415&hellip;的格式序列化到一个字符序列中。在这个序列中，第5位（从下标0开始计数）是5，第13位是1，第19位是4，等等。</p>
 
@@ -25,4 +25,4 @@
 	<li><code>0 &lt;= n &lt;&nbsp;2^31</code></li>
 </ul>
 
-<p>注意：本题与主站 400 题相同：<a href="https://leetcode-cn.com/problems/nth-digit/">https://leetcode-cn.com/problems/nth-digit/</a></p>
+<p>注意：本题与主站 400 题相同：<a href="https://leetcode.cn/problems/nth-digit/">https://leetcode.cn/problems/nth-digit/</a></p>

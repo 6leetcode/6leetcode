@@ -1,4 +1,4 @@
-### [矩阵中的最长递增路径](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix)
+### [矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix)
 
 <p>给定一个 <code>m x n</code> 整数矩阵 <code>matrix</code> ，找出其中 <strong>最长递增路径</strong> 的长度。</p>
 

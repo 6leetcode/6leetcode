@@ -1,4 +1,4 @@
-### [数组串联](https://leetcode-cn.com/problems/concatenation-of-array)
+### [数组串联](https://leetcode.cn/problems/concatenation-of-array)
 
 <p>给你一个长度为 <code>n</code> 的整数数组 <code>nums</code> 。请你构建一个长度为 <code>2n</code> 的答案数组 <code>ans</code> ，数组下标<strong> 从 0 开始计数 </strong>，对于所有 <code>0 <= i < n</code> 的 <code>i</code> ，满足下述所有要求：</p>
 

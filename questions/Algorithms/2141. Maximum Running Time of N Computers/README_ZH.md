@@ -1,4 +1,4 @@
-### [同时运行 N 台电脑的最长时间](https://leetcode-cn.com/problems/maximum-running-time-of-n-computers)
+### [同时运行 N 台电脑的最长时间](https://leetcode.cn/problems/maximum-running-time-of-n-computers)
 
 <p>你有&nbsp;<code>n</code>&nbsp;台电脑。给你整数&nbsp;<code>n</code>&nbsp;和一个下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>batteries</code>&nbsp;，其中第&nbsp;<code>i</code>&nbsp;个电池可以让一台电脑 <strong>运行&nbsp;</strong><code>batteries[i]</code>&nbsp;分钟。你想使用这些电池让&nbsp;<strong>全部</strong>&nbsp;<code>n</code>&nbsp;台电脑 <b>同时</b>&nbsp;运行。</p>
 

@@ -1,4 +1,4 @@
-### [两整数相加](https://leetcode-cn.com/problems/add-two-integers)
+### [两整数相加](https://leetcode.cn/problems/add-two-integers)
 
 给你两个整数&nbsp;<code>num1</code> 和 <code>num2</code>，返回这两个整数的和。
 <p>&nbsp;</p>

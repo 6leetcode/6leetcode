@@ -1,4 +1,4 @@
-### [煎饼排序](https://leetcode-cn.com/problems/pancake-sorting)
+### [煎饼排序](https://leetcode.cn/problems/pancake-sorting)
 
 <p>给你一个整数数组 <code>arr</code> ，请使用 <strong>煎饼翻转</strong><em> </em>完成对数组的排序。</p>
 

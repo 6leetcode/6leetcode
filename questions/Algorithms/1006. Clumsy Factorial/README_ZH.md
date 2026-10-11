@@ -1,4 +1,4 @@
-### [笨阶乘](https://leetcode-cn.com/problems/clumsy-factorial)
+### [笨阶乘](https://leetcode.cn/problems/clumsy-factorial)
 
 <p>通常，正整数 <code>n</code> 的阶乘是所有小于或等于 <code>n</code> 的正整数的乘积。例如，<code>factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1</code>。</p>
 

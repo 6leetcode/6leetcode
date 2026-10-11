@@ -1,4 +1,4 @@
-### [最少侧跳次数](https://leetcode-cn.com/problems/minimum-sideway-jumps)
+### [最少侧跳次数](https://leetcode.cn/problems/minimum-sideway-jumps)
 
 <p>给你一个长度为 <code>n</code> 的 <strong>3 跑道道路</strong> ，它总共包含 <code>n + 1</code> 个 <strong>点</strong> ，编号为 <code>0</code> 到 <code>n</code> 。一只青蛙从 <code>0</code> 号点第二条跑道 <strong>出发</strong> ，它想要跳到点 <code>n</code> 处。然而道路上可能有一些障碍。</p>
 

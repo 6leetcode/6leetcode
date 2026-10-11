@@ -1,4 +1,4 @@
-### [将字符串拆分为若干长度为 k 的组](https://leetcode-cn.com/problems/divide-a-string-into-groups-of-size-k)
+### [将字符串拆分为若干长度为 k 的组](https://leetcode.cn/problems/divide-a-string-into-groups-of-size-k)
 
 <p>字符串 <code>s</code> 可以按下述步骤划分为若干长度为 <code>k</code> 的组：</p>
 
@@ -15,7 +15,8 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>s = "abcdefghi", k = 3, fill = "x"
+<pre>
+<strong>输入：</strong>s = "abcdefghi", k = 3, fill = 'x'
 <strong>输出：</strong>["abc","def","ghi"]
 <strong>解释：</strong>
 前 3 个字符是 "abc" ，形成第一组。
@@ -27,7 +28,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>s = "abcdefghij", k = 3, fill = "x"
+<pre>
+<strong>输入：</strong>s = "abcdefghij", k = 3, fill = 'x'
 <strong>输出：</strong>["abc","def","ghi","jxx"]
 <strong>解释：</strong>
 与前一个例子类似，形成前三组 "abc"、"def" 和 "ghi" 。

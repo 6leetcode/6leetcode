@@ -12,7 +12,7 @@
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/08/12/bb.png" style="width: 121px; height: 101px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2026/02/23/1569_ex0.png" style="width: 160px; height: 160px;" />
 <pre>
 <strong>Input:</strong> nums = [2,1,3]
 <strong>Output:</strong> 1
@@ -20,7 +20,7 @@
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/08/12/ex1.png" style="width: 241px; height: 161px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2026/02/23/1569_ex.png" style="width: 270px; height: 270px;" />
 <pre>
 <strong>Input:</strong> nums = [3,4,5,1,2]
 <strong>Output:</strong> 5
@@ -33,7 +33,7 @@
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/08/12/ex4.png" style="width: 121px; height: 161px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2026/02/23/1569_ex2.png" style="width: 205px; height: 205px;" />
 <pre>
 <strong>Input:</strong> nums = [1,2,3]
 <strong>Output:</strong> 0

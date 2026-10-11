@@ -1,4 +1,4 @@
-### [最大子矩阵](https://leetcode-cn.com/problems/max-submatrix-lcci)
+### [最大子矩阵](https://leetcode.cn/problems/max-submatrix-lcci)
 
 <p>给定一个正整数、负整数和 0 组成的 N &times; M&nbsp;矩阵，编写代码找出元素总和最大的子矩阵。</p>
 

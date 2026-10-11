@@ -1,6 +1,6 @@
 ### [Check If It Is a Straight Line](https://leetcode.com/problems/check-if-it-is-a-straight-line)
 
-<p>You are given an array&nbsp;<code>coordinates</code>, <code>coordinates[i] = [x, y]</code>, where <code>[x, y]</code> represents the coordinate of a point. Check if these points&nbsp;make a straight line in the XY plane.</p>
+<p>You are given an integer array&nbsp;<code>coordinates</code>, <code>coordinates[i] = [x, y]</code>, where <code>[x, y]</code> represents the coordinate of a point. Check if these points&nbsp;make a straight line in the XY plane.</p>
 
 <p>&nbsp;</p>
 

@@ -1,4 +1,4 @@
-### [H2O 生成](https://leetcode-cn.com/problems/building-h2o)
+### [H2O 生成](https://leetcode.cn/problems/building-h2o)
 
 <p>现在有两种线程，氧 <code>oxygen</code> 和氢 <code>hydrogen</code>，你的目标是组织这两种线程来产生水分子。</p>
 

@@ -1,4 +1,4 @@
-### [消除游戏](https://leetcode-cn.com/problems/elimination-game)
+### [消除游戏](https://leetcode.cn/problems/elimination-game)
 
 <p>列表 <code>arr</code> 由在范围 <code>[1, n]</code> 中的所有整数组成，并按严格递增排序。请你对 <code>arr</code> 应用下述算法：</p>
 

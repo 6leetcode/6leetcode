@@ -1,4 +1,4 @@
-### [将数组拆分成斐波那契序列](https://leetcode-cn.com/problems/split-array-into-fibonacci-sequence)
+### [将数组拆分成斐波那契序列](https://leetcode.cn/problems/split-array-into-fibonacci-sequence)
 
 <p>给定一个数字字符串 <code>num</code>，比如 <code>"123456579"</code>，我们可以将它分成「斐波那契式」的序列 <code>[123, 456, 579]</code>。</p>
 
@@ -21,7 +21,7 @@
 <pre>
 <strong>输入：</strong>num = "1101111"
 <strong>输出：</strong>[11,0,11,11]
-<strong>解释：</strong>输出[110,1,111]也可以。</pre>
+<strong>解释：</strong>输出 [110,1,111] 也可以。</pre>
 
 <p><strong>示例 2：</strong></p>
 

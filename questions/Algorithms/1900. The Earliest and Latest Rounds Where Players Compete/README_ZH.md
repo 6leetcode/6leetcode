@@ -1,4 +1,4 @@
-### [最佳运动员的比拼回合](https://leetcode-cn.com/problems/the-earliest-and-latest-rounds-where-players-compete)
+### [最佳运动员的比拼回合](https://leetcode.cn/problems/the-earliest-and-latest-rounds-where-players-compete)
 
 <p><code>n</code> 名运动员参与一场锦标赛，所有运动员站成一排，并根据 <strong>最开始的</strong> 站位从 <code>1</code> 到 <code>n</code> 编号（运动员 <code>1</code> 是这一排中的第一个运动员，运动员 <code>2</code> 是第二个运动员，依此类推）。</p>
 

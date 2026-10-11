@@ -1,4 +1,4 @@
-### [与数组中元素的最大异或值](https://leetcode-cn.com/problems/maximum-xor-with-an-element-from-array)
+### [与数组中元素的最大异或值](https://leetcode.cn/problems/maximum-xor-with-an-element-from-array)
 
 <p>给你一个由非负整数组成的数组 <code>nums</code> 。另有一个查询数组 <code>queries</code> ，其中 <code>queries[i] = [x<sub>i</sub>, m<sub>i</sub>]</code> 。</p>
 

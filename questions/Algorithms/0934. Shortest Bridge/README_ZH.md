@@ -1,4 +1,4 @@
-### [最短的桥](https://leetcode-cn.com/problems/shortest-bridge)
+### [最短的桥](https://leetcode.cn/problems/shortest-bridge)
 
 <p>给你一个大小为 <code>n x n</code> 的二元矩阵 <code>grid</code> ，其中 <code>1</code> 表示陆地，<code>0</code> 表示水域。</p>
 

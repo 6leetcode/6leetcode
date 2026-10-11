@@ -1,4 +1,4 @@
-### [合法重新排列数对](https://leetcode-cn.com/problems/valid-arrangement-of-pairs)
+### [合法重新排列数对](https://leetcode.cn/problems/valid-arrangement-of-pairs)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的二维整数数组&nbsp;<code>pairs</code>&nbsp;，其中&nbsp;<code>pairs[i] = [start<sub>i</sub>, end<sub>i</sub>]</code>&nbsp;。如果 <code>pairs</code>&nbsp;的一个重新排列，满足对每一个下标 <code>i</code> （&nbsp;<code>1 &lt;= i &lt; pairs.length</code>&nbsp;）都有&nbsp;<code>end<sub>i-1</sub> == start<sub>i</sub></code><sub> </sub>，那么我们就认为这个重新排列是&nbsp;<code>pairs</code> 的一个 <strong>合法重新排列</strong> 。</p>
 

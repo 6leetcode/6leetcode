@@ -4,7 +4,7 @@
 
 <p>The monsters walk toward the city at a <strong>constant</strong> speed. The speed of each monster is given to you in an integer array <code>speed</code> of size <code>n</code>, where <code>speed[i]</code> is the speed of the <code>i<sup>th</sup></code> monster in kilometers per minute.</p>
 
-<p>You have a weapon that, once fully charged, can eliminate a <strong>single</strong> monster. However, the weapon takes <strong>one minute</strong> to charge.The weapon is fully charged at the very start.</p>
+<p>You have a weapon that, once fully charged, can eliminate a <strong>single</strong> monster. However, the weapon takes <strong>one minute</strong> to charge. The weapon is fully charged at the very start.</p>
 
 <p>You lose when any monster reaches your city. If a monster reaches the city at the exact moment the weapon is fully charged, it counts as a <strong>loss</strong>, and the game ends before you can use your weapon.</p>
 
@@ -19,7 +19,7 @@
 <strong>Explanation:</strong>
 In the beginning, the distances of the monsters are [1,3,4]. You eliminate the first monster.
 After a minute, the distances of the monsters are [X,2,3]. You eliminate the second monster.
-After a minute, the distances of the monsters are [X,X,2]. You eliminate the thrid monster.
+After a minute, the distances of the monsters are [X,X,2]. You eliminate the third monster.
 All 3 monsters can be eliminated.</pre>
 
 <p><strong class="example">Example 2:</strong></p>

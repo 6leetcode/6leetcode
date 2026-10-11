@@ -1,4 +1,4 @@
-### [扰乱字符串](https://leetcode-cn.com/problems/scramble-string)
+### [扰乱字符串](https://leetcode.cn/problems/scramble-string)
 
 使用下面描述的算法可以扰乱字符串 <code>s</code> 得到字符串 <code>t</code> ：
 <ol>

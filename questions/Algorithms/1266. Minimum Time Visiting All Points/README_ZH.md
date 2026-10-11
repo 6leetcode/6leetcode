@@ -1,4 +1,4 @@
-### [访问所有点的最小时间](https://leetcode-cn.com/problems/minimum-time-visiting-all-points)
+### [访问所有点的最小时间](https://leetcode.cn/problems/minimum-time-visiting-all-points)
 
 <p>平面上有 <code>n</code> 个点，点的位置用整数坐标表示 <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> 。请你计算访问所有这些点需要的 <strong>最小时间</strong>（以秒为单位）。</p>
 
@@ -20,7 +20,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/24/1626_example_1.png" style="height: 428px; width: 500px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/11/24/1626_example_1.png" style="height: 428px; width: 500px;" /></p>
 
 <pre>
 <strong>输入：</strong>points = [[1,1],[3,4],[-1,0]]

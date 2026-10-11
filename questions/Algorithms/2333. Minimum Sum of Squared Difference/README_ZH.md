@@ -1,4 +1,4 @@
-### [最小差值平方和](https://leetcode-cn.com/problems/minimum-sum-of-squared-difference)
+### [最小差值平方和](https://leetcode.cn/problems/minimum-sum-of-squared-difference)
 
 <p>给你两个下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>nums1</code> 和&nbsp;<code>nums2</code>&nbsp;，长度为&nbsp;<code>n</code>&nbsp;。</p>
 

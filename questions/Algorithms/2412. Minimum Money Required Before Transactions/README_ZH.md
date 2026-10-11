@@ -1,4 +1,4 @@
-### [完成所有交易的初始最少钱数](https://leetcode-cn.com/problems/minimum-money-required-before-transactions)
+### [完成所有交易的初始最少钱数](https://leetcode.cn/problems/minimum-money-required-before-transactions)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的二维整数数组&nbsp;<code><font face="monospace">transactions</font></code>，其中<code>transactions[i] = [cost<sub>i</sub>, cashback<sub>i</sub>]</code>&nbsp;。</p>
 

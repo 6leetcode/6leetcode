@@ -1,4 +1,4 @@
-### [字符流](https://leetcode-cn.com/problems/stream-of-characters)
+### [字符流](https://leetcode.cn/problems/stream-of-characters)
 
 <p>设计一个算法：接收一个字符流，并检查这些字符的后缀是否是字符串数组 <code>words</code> 中的一个字符串。</p>
 

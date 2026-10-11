@@ -1,4 +1,4 @@
-### [单词之和](https://leetcode-cn.com/problems/z1R5dt)
+### [单词之和](https://leetcode.cn/problems/z1R5dt)
 
 <p>实现一个 <code>MapSum</code> 类，支持两个方法，<code>insert</code>&nbsp;和&nbsp;<code>sum</code>：</p>
 
@@ -40,4 +40,4 @@ mapSum.sum(&quot;ap&quot;);           // return 5 (<u>ap</u>ple + <u>ap</u>p = 3
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 677&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/map-sum-pairs/">https://leetcode-cn.com/problems/map-sum-pairs/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 677&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/map-sum-pairs/">https://leetcode.cn/problems/map-sum-pairs/</a></p>

@@ -1,4 +1,4 @@
-### [玩筹码](https://leetcode-cn.com/problems/minimum-cost-to-move-chips-to-the-same-position)
+### [玩筹码](https://leetcode.cn/problems/minimum-cost-to-move-chips-to-the-same-position)
 
 <p>有&nbsp;<code>n</code>&nbsp;个筹码。第 <code>i</code> 个筹码的位置是<meta charset="UTF-8" />&nbsp;<code>position[i]</code>&nbsp;。</p>
 
@@ -49,6 +49,6 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 &lt;= chips.length &lt;= 100</code></li>
-	<li><code>1 &lt;= chips[i] &lt;= 10^9</code></li>
+	<li><code>1 &lt;= position.length &lt;= 100</code></li>
+	<li><code>1 &lt;= position[i] &lt;= 10^9</code></li>
 </ul>

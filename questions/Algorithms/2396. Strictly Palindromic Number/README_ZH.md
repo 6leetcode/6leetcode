@@ -1,4 +1,4 @@
-### [严格回文的数字](https://leetcode-cn.com/problems/strictly-palindromic-number)
+### [严格回文的数字](https://leetcode.cn/problems/strictly-palindromic-number)
 
 <p>如果一个整数 <code>n</code>&nbsp;在 <code>b</code>&nbsp;进制下（<code>b</code>&nbsp;为 <code>2</code>&nbsp;到 <code>n - 2</code>&nbsp;之间的所有整数）对应的字符串&nbsp;<strong>全部</strong>&nbsp;都是 <strong>回文的</strong>&nbsp;，那么我们称这个数&nbsp;<code>n</code>&nbsp;是 <strong>严格回文</strong>&nbsp;的。</p>
 

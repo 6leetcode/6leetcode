@@ -1,4 +1,4 @@
-### [完成所有工作的最短时间](https://leetcode-cn.com/problems/find-minimum-time-to-finish-all-jobs)
+### [完成所有工作的最短时间](https://leetcode.cn/problems/find-minimum-time-to-finish-all-jobs)
 
 <p>给你一个整数数组 <code>jobs</code> ，其中 <code>jobs[i]</code> 是完成第 <code>i</code> 项工作要花费的时间。</p>
 

@@ -1,4 +1,4 @@
-### [N 天后的牢房](https://leetcode-cn.com/problems/prison-cells-after-n-days)
+### [N 天后的牢房](https://leetcode.cn/problems/prison-cells-after-n-days)
 
 <p>监狱中 <code>8</code> 间牢房排成一排，每间牢房可能被占用或空置。</p>
 

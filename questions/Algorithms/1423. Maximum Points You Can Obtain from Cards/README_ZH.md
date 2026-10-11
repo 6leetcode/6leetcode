@@ -1,4 +1,4 @@
-### [可获得的最大点数](https://leetcode-cn.com/problems/maximum-points-you-can-obtain-from-cards)
+### [可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards)
 
 <p>几张卡牌<strong> 排成一行</strong>，每张卡牌都有一个对应的点数。点数由整数数组 <code>cardPoints</code> 给出。</p>
 

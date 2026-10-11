@@ -1,4 +1,4 @@
-### [快乐数](https://leetcode-cn.com/problems/happy-number)
+### [快乐数](https://leetcode.cn/problems/happy-number)
 
 <p>编写一个算法来判断一个数 <code>n</code> 是不是快乐数。</p>
 

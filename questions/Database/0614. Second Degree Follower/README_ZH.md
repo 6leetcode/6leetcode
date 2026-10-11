@@ -1,2 +1,2 @@
-### [二级关注者](https://leetcode-cn.com/problems/second-degree-follower)
+### [二级关注者](https://leetcode.cn/problems/second-degree-follower)
 

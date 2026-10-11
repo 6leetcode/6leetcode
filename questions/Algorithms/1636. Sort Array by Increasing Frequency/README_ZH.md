@@ -1,4 +1,4 @@
-### [按照频率将数组升序排序](https://leetcode-cn.com/problems/sort-array-by-increasing-frequency)
+### [按照频率将数组升序排序](https://leetcode.cn/problems/sort-array-by-increasing-frequency)
 
 <p>给你一个整数数组 <code>nums</code> ，请你将数组按照每个值的频率 <strong>升序</strong> 排序。如果有多个值的频率相同，请你按照数值本身将它们 <strong>降序</strong> 排序。 </p>
 

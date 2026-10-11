@@ -1,4 +1,4 @@
-### [矩阵置零](https://leetcode-cn.com/problems/set-matrix-zeroes)
+### [矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes)
 
 <p>给定一个&nbsp;<code><em>m</em> x <em>n</em></code> 的矩阵，如果一个元素为 <strong>0 </strong>，则将其所在行和列的所有元素都设为 <strong>0</strong> 。请使用 <strong><a href="http://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95" target="_blank">原地</a></strong> 算法<strong>。</strong></p>
 

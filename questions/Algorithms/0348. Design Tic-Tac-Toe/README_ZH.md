@@ -1,2 +1,2 @@
-### [设计井字棋](https://leetcode-cn.com/problems/design-tic-tac-toe)
+### [设计井字棋](https://leetcode.cn/problems/design-tic-tac-toe)
 

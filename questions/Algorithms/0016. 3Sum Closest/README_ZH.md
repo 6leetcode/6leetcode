@@ -1,10 +1,12 @@
-### [最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest)
+### [最接近的三数之和](https://leetcode.cn/problems/3sum-closest)
 
-<p>给你一个长度为 <code>n</code> 的整数数组&nbsp;<code>nums</code><em>&nbsp;</em>和 一个目标值&nbsp;<code>target</code>。请你从 <code>nums</code><em> </em>中选出三个整数，使它们的和与&nbsp;<code>target</code>&nbsp;最接近。</p>
+<p>给定一个长度为 <code>n</code> 的整数数组&nbsp;<code>nums</code><em>&nbsp;</em>和 一个整数&nbsp;<code>target</code>。</p>
+
+<p>请你从 <code>nums</code><em> </em>中选出三个在 <strong>不同下标位置</strong> 的整数，使它们的和与&nbsp;<code>target</code>&nbsp;<strong>最接近</strong>。</p>
 
 <p>返回这三个数的和。</p>
 
-<p>假定每组输入只存在恰好一个解。</p>
+<p>假定每组输入只存在 <strong>恰好</strong> 一个解。</p>
 
 <p>&nbsp;</p>
 
@@ -13,7 +15,7 @@
 <pre>
 <strong>输入：</strong>nums = [-1,2,1,-4], target = 1
 <strong>输出：</strong>2
-<strong>解释：</strong>与 target 最接近的和是 2 (-1 + 2 + 1 = 2) 。
+<strong>解释：</strong>与 target 最接近的和是 2 (-1 + 2 + 1 = 2)。
 </pre>
 
 <p><strong>示例 2：</strong></p>
@@ -21,7 +23,7 @@
 <pre>
 <strong>输入：</strong>nums = [0,0,0], target = 1
 <strong>输出：</strong>0
-</pre>
+<strong>解释：</strong>与 target 最接近的和是 0（0 + 0 + 0 = 0）。</pre>
 
 <p>&nbsp;</p>
 

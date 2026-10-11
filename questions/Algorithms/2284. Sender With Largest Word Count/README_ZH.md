@@ -1,4 +1,4 @@
-### [最多单词数的发件人](https://leetcode-cn.com/problems/sender-with-largest-word-count)
+### [最多单词数的发件人](https://leetcode.cn/problems/sender-with-largest-word-count)
 
 <p>给你一个聊天记录，共包含 <code>n</code>&nbsp;条信息。给你两个字符串数组&nbsp;<code>messages</code> 和&nbsp;<code>senders</code>&nbsp;，其中&nbsp;<code>messages[i]</code>&nbsp;是&nbsp;<code>senders[i]</code>&nbsp;发出的一条&nbsp;<strong>信息</strong>&nbsp;。</p>
 

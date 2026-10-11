@@ -1,4 +1,4 @@
-### [最多能完成排序的块](https://leetcode-cn.com/problems/max-chunks-to-make-sorted)
+### [最多能完成排序的块](https://leetcode.cn/problems/max-chunks-to-make-sorted)
 
 <p>给定一个长度为 <code>n</code> 的整数数组 <code>arr</code> ，它表示在 <code>[0, n - 1]</code> 范围内的整数的排列。</p>
 

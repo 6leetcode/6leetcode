@@ -1,4 +1,4 @@
-### [最长等差数列](https://leetcode-cn.com/problems/longest-arithmetic-sequence)
+### [最长等差数列](https://leetcode.cn/problems/longest-arithmetic-sequence)
 
 <p>给定一个整数数组&nbsp;<code>A</code>，返回 <code>A</code>&nbsp;中最长等差子序列的<strong>长度</strong>。</p>
 

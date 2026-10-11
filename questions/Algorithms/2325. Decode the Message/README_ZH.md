@@ -1,4 +1,4 @@
-### [解密消息](https://leetcode-cn.com/problems/decode-the-message)
+### [解密消息](https://leetcode.cn/problems/decode-the-message)
 
 <p>给你字符串 <code>key</code> 和 <code>message</code> ，分别表示一个加密密钥和一段加密消息。解密 <code>message</code> 的步骤如下：</p>
 

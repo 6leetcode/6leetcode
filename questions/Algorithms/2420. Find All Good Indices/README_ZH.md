@@ -1,4 +1,4 @@
-### [找到所有好下标](https://leetcode-cn.com/problems/find-all-good-indices)
+### [找到所有好下标](https://leetcode.cn/problems/find-all-good-indices)
 
 <p>给你一个大小为 <code>n</code>&nbsp;下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>nums</code>&nbsp;和一个正整数&nbsp;<code>k</code>&nbsp;。</p>
 

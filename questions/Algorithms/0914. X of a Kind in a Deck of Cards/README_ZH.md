@@ -1,4 +1,4 @@
-### [卡牌分组](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards)
+### [卡牌分组](https://leetcode.cn/problems/x-of-a-kind-in-a-deck-of-cards)
 
 <p>给定一副牌，每张牌上都写着一个整数。</p>
 

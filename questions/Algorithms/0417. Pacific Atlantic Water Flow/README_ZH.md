@@ -1,4 +1,4 @@
-### [太平洋大西洋水流问题](https://leetcode-cn.com/problems/pacific-atlantic-water-flow)
+### [太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow)
 
 <p>有一个 <code>m × n</code> 的矩形岛屿，与 <strong>太平洋</strong> 和 <strong>大西洋</strong> 相邻。&nbsp;<strong>“太平洋”&nbsp;</strong>处于大陆的左边界和上边界，而 <strong>“大西洋”</strong> 处于大陆的右边界和下边界。</p>
 

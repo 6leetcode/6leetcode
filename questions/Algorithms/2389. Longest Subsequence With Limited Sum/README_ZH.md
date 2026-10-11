@@ -1,4 +1,4 @@
-### [和有限的最长子序列](https://leetcode-cn.com/problems/longest-subsequence-with-limited-sum)
+### [和有限的最长子序列](https://leetcode.cn/problems/longest-subsequence-with-limited-sum)
 
 <p>给你一个长度为 <code>n</code>&nbsp;的整数数组 <code>nums</code> ，和一个长度为 <code>m</code> 的整数数组 <code>queries</code> 。</p>
 

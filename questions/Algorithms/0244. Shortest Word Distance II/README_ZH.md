@@ -1,2 +1,2 @@
-### [最短单词距离 II](https://leetcode-cn.com/problems/shortest-word-distance-ii)
+### [最短单词距离 II](https://leetcode.cn/problems/shortest-word-distance-ii)
 

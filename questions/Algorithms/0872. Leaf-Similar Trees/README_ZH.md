@@ -1,4 +1,4 @@
-### [叶子相似的树](https://leetcode-cn.com/problems/leaf-similar-trees)
+### [叶子相似的树](https://leetcode.cn/problems/leaf-similar-trees)
 
 <p>请考虑一棵二叉树上所有的叶子，这些叶子的值按从左到右的顺序排列形成一个&nbsp;<strong>叶值序列 </strong>。</p>
 

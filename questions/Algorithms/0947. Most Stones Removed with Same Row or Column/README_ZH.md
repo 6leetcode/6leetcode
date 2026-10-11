@@ -1,4 +1,4 @@
-### [移除最多的同行或同列石头](https://leetcode-cn.com/problems/most-stones-removed-with-same-row-or-column)
+### [移除最多的同行或同列石头](https://leetcode.cn/problems/most-stones-removed-with-same-row-or-column)
 
 <p><code>n</code> 块石头放置在二维平面中的一些整数坐标点上。每个坐标点上最多只能有一块石头。</p>
 

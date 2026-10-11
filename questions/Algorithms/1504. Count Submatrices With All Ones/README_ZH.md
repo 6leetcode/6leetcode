@@ -1,4 +1,4 @@
-### [统计全 1 子矩形](https://leetcode-cn.com/problems/count-submatrices-with-all-ones)
+### [统计全 1 子矩形](https://leetcode.cn/problems/count-submatrices-with-all-ones)
 
 <p>给你一个&nbsp;<code>m x n</code>&nbsp;的二进制矩阵&nbsp;<code>mat</code>&nbsp;，请你返回有多少个&nbsp;<strong>子矩形</strong>&nbsp;的元素全部都是 1 。</p>
 

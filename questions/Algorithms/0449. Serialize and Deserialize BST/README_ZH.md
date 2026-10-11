@@ -1,4 +1,4 @@
-### [序列化和反序列化二叉搜索树](https://leetcode-cn.com/problems/serialize-and-deserialize-bst)
+### [序列化和反序列化二叉搜索树](https://leetcode.cn/problems/serialize-and-deserialize-bst)
 
 <p>序列化是将数据结构或对象转换为一系列位的过程，以便它可以存储在文件或内存缓冲区中，或通过网络连接链路传输，以便稍后在同一个或另一个计算机环境中重建。</p>
 

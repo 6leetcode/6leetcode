@@ -1,4 +1,4 @@
-### [二倍数对数组](https://leetcode-cn.com/problems/array-of-doubled-pairs)
+### [二倍数对数组](https://leetcode.cn/problems/array-of-doubled-pairs)
 
 <p>给定一个长度为偶数的整数数组 <code>arr</code>，只有对 <code>arr</code> 进行重组后可以满足 “对于每个 <code>0 &lt;=&nbsp;i &lt; len(arr) / 2</code>，都有 <code>arr[2 * i + 1] = 2 * arr[2 * i]</code>”&nbsp;时，返回 <code>true</code>；否则，返回 <code>false</code>。</p>
 

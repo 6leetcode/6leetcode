@@ -1,2 +1,2 @@
-### [等差数列中缺失的数字](https://leetcode-cn.com/problems/missing-number-in-arithmetic-progression)
+### [等差数列中缺失的数字](https://leetcode.cn/problems/missing-number-in-arithmetic-progression)
 

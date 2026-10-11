@@ -1,4 +1,4 @@
-### [划分数字的方案数](https://leetcode-cn.com/problems/number-of-ways-to-separate-numbers)
+### [划分数字的方案数](https://leetcode.cn/problems/number-of-ways-to-separate-numbers)
 
 <p>你写下了若干 <strong>正整数</strong>&nbsp;，并将它们连接成了一个字符串&nbsp;<code>num</code>&nbsp;。但是你忘记给这些数字之间加逗号了。你只记得这一列数字是 <strong>非递减</strong>&nbsp;的且&nbsp;<strong>没有</strong> 任何数字有前导 0 。</p>
 

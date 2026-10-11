@@ -1,4 +1,4 @@
-### [找出前缀异或的原始数组](https://leetcode-cn.com/problems/find-the-original-array-of-prefix-xor)
+### [找出前缀异或的原始数组](https://leetcode.cn/problems/find-the-original-array-of-prefix-xor)
 
 <p>给你一个长度为 <code>n</code> 的 <strong>整数</strong> 数组 <code>pref</code> 。找出并返回满足下述条件且长度为 <code>n</code> 的数组<em> </em><code>arr</code> ：</p>
 

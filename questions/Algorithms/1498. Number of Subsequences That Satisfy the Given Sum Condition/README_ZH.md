@@ -1,4 +1,4 @@
-### [满足条件的子序列数目](https://leetcode-cn.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition)
+### [满足条件的子序列数目](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition)
 
 <p>给你一个整数数组 <code>nums</code> 和一个整数 <code>target</code> 。</p>
 

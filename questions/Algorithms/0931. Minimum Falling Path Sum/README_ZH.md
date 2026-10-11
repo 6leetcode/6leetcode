@@ -1,4 +1,4 @@
-### [下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum)
+### [下降路径最小和](https://leetcode.cn/problems/minimum-falling-path-sum)
 
 <p>给你一个 <code>n x n</code> 的<strong> 方形 </strong>整数数组&nbsp;<code>matrix</code> ，请你找出并返回通过 <code>matrix</code> 的<strong>下降路径</strong><em> </em>的<strong> </strong><strong>最小和</strong> 。</p>
 
@@ -8,7 +8,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2021/11/03/failing1-grid.jpg" style="height: 500px; width: 499px;" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1729566253-aneDag-image.png" style="height: 500px; width: 499px;" /></p>
 
 <pre>
 <strong>输入：</strong>matrix = [[2,1,3],[6,5,4],[7,8,9]]
@@ -18,7 +18,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2021/11/03/failing2-grid.jpg" style="height: 365px; width: 164px;" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1729566282-dtXwRd-image.png" style="height: 365px; width: 164px;" /></p>
 
 <pre>
 <strong>输入：</strong>matrix = [[-19,57],[-40,-5]]

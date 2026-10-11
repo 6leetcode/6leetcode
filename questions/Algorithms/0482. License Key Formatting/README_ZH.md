@@ -1,4 +1,4 @@
-### [密钥格式化](https://leetcode-cn.com/problems/license-key-formatting)
+### [密钥格式化](https://leetcode.cn/problems/license-key-formatting)
 
 <p>给定一个许可密钥字符串 <code>s</code>，仅由字母、数字字符和破折号组成。字符串由 <code>n</code> 个破折号分成 <code>n + 1</code> 组。你也会得到一个整数 <code>k</code> 。</p>
 

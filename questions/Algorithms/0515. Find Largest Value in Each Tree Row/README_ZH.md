@@ -1,4 +1,4 @@
-### [在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row)
+### [在每个树行中找最大值](https://leetcode.cn/problems/find-largest-value-in-each-tree-row)
 
 <p>给定一棵二叉树的根节点&nbsp;<code>root</code> ，请找出该二叉树中每一层的最大值。</p>
 

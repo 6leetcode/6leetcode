@@ -1,4 +1,4 @@
-### [验证外星语词典](https://leetcode-cn.com/problems/verifying-an-alien-dictionary)
+### [验证外星语词典](https://leetcode.cn/problems/verifying-an-alien-dictionary)
 
 <p>某种外星语也使用英文小写字母，但可能顺序 <code>order</code> 不同。字母表的顺序（<code>order</code>）是一些小写字母的排列。</p>
 

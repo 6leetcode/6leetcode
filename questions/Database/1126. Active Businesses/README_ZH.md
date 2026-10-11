@@ -1,2 +1,2 @@
-### [查询活跃业务](https://leetcode-cn.com/problems/active-businesses)
+### [查询活跃业务](https://leetcode.cn/problems/active-businesses)
 

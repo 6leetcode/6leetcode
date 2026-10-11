@@ -1,4 +1,4 @@
-### [分割回文子字符串](https://leetcode-cn.com/problems/M99OJA)
+### [分割回文子字符串](https://leetcode.cn/problems/M99OJA)
 
 <p>给定一个字符串 <code>s</code> ，请将 <code>s</code> 分割成一些子串，使每个子串都是 <strong>回文串</strong> ，返回 s 所有可能的分割方案。</p>
 
@@ -37,4 +37,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 131&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/palindrome-partitioning/">https://leetcode-cn.com/problems/palindrome-partitioning/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 131&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/palindrome-partitioning/">https://leetcode.cn/problems/palindrome-partitioning/</a></p>

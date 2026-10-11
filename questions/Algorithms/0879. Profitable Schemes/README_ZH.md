@@ -1,4 +1,4 @@
-### [盈利计划](https://leetcode-cn.com/problems/profitable-schemes)
+### [盈利计划](https://leetcode.cn/problems/profitable-schemes)
 
 <p>集团里有 <code>n</code> 名员工，他们可以完成各种各样的工作创造利润。</p>
 

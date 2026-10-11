@@ -1,4 +1,4 @@
-### [设计地铁系统](https://leetcode-cn.com/problems/design-underground-system)
+### [设计地铁系统](https://leetcode.cn/problems/design-underground-system)
 
 <p>地铁系统跟踪不同车站之间的乘客出行时间，并使用这一数据来计算从一站到另一站的平均时间。</p>
 
@@ -85,8 +85,8 @@ undergroundSystem.getAverageTime("Leyton", "Paradise"); // 返回 6.66667 ，(5 
 
 <ul>
 	<li><code>1 &lt;= id, t &lt;= 10<sup>6</sup></code></li>
-	<li><code>1 &lt;= stationName.length, startStation.length, endStation.length &lt;= 10</code> 次</li>
+	<li><code>1 &lt;= stationName.length, startStation.length, endStation.length &lt;= 10</code></li>
 	<li>所有字符串由大小写英文字母与数字组成</li>
-	<li>总共最多调用 <code>checkIn</code>、<code>checkOut</code> 和 <code>getAverageTime</code> 方法 <code>2 * 10<sup>4 </sup></code></li>
+	<li>总共最多调用 <code>checkIn</code>、<code>checkOut</code> 和 <code>getAverageTime</code> 方法 <code>2 * 10<sup>4</sup></code>&nbsp;次</li>
 	<li>与标准答案误差在 <code>10<sup>-5</sup></code> 以内的结果都被视为正确结果</li>
 </ul>

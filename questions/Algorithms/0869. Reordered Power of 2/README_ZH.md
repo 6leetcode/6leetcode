@@ -1,4 +1,4 @@
-### [重新排序得到 2 的幂](https://leetcode-cn.com/problems/reordered-power-of-2)
+### [重新排序得到 2 的幂](https://leetcode.cn/problems/reordered-power-of-2)
 
 <p>给定正整数&nbsp;<code>n</code>&nbsp;，我们按任何顺序（包括原始顺序）将数字重新排序，注意其前导数字不能为零。</p>
 

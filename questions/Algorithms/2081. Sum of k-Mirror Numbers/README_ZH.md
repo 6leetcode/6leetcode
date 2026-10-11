@@ -1,4 +1,4 @@
-### [k 镜像数字的和](https://leetcode-cn.com/problems/sum-of-k-mirror-numbers)
+### [k 镜像数字的和](https://leetcode.cn/problems/sum-of-k-mirror-numbers)
 
 <p>一个 <strong>k 镜像数字</strong>&nbsp;指的是一个在十进制和 k 进制下从前往后读和从后往前读都一样的&nbsp;<strong>没有前导 0</strong>&nbsp;的&nbsp;<strong>正</strong>&nbsp;整数。</p>
 

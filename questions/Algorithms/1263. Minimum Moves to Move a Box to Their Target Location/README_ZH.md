@@ -1,4 +1,4 @@
-### [推箱子](https://leetcode-cn.com/problems/minimum-moves-to-move-a-box-to-their-target-location)
+### [推箱子](https://leetcode.cn/problems/minimum-moves-to-move-a-box-to-their-target-location)
 
 <p>「推箱子」是一款风靡全球的益智小游戏，玩家需要将箱子推到仓库中的目标位置。</p>
 
@@ -21,7 +21,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/16/sample_1_1620.png" style="height: 335px; width: 500px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/11/16/sample_1_1620.png" style="height: 335px; width: 500px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>grid = [["#","#","#","#","#","#"],

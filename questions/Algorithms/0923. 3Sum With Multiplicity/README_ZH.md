@@ -1,4 +1,4 @@
-### [三数之和的多种可能](https://leetcode-cn.com/problems/3sum-with-multiplicity)
+### [三数之和的多种可能](https://leetcode.cn/problems/3sum-with-multiplicity)
 
 <p>给定一个整数数组<meta charset="UTF-8" />&nbsp;<code>arr</code>&nbsp;，以及一个整数&nbsp;<code>target</code>&nbsp;作为目标值，返回满足 <code>i &lt; j &lt; k</code> 且<meta charset="UTF-8" />&nbsp;<code>arr[i] + arr[j] + arr[k] == target</code>&nbsp;的元组&nbsp;<code>i, j, k</code>&nbsp;的数量。</p>
 

@@ -1,4 +1,4 @@
-### [隔离病毒](https://leetcode-cn.com/problems/contain-virus)
+### [隔离病毒](https://leetcode.cn/problems/contain-virus)
 
 <p>病毒扩散得很快，现在你的任务是尽可能地通过安装防火墙来隔离病毒。</p>
 

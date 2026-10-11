@@ -1,4 +1,4 @@
-### [石子游戏](https://leetcode-cn.com/problems/stone-game)
+### [石子游戏](https://leetcode.cn/problems/stone-game)
 
 <p>Alice 和 Bob 用几堆石子在做游戏。一共有偶数堆石子，<strong>排成一行</strong>；每堆都有 <strong>正</strong> 整数颗石子，数目为 <code>piles[i]</code>&nbsp;。</p>
 

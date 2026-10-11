@@ -1,4 +1,4 @@
-### [数组的度](https://leetcode-cn.com/problems/degree-of-an-array)
+### [数组的度](https://leetcode.cn/problems/degree-of-an-array)
 
 <p>给定一个非空且只包含非负数的整数数组&nbsp;<code>nums</code>，数组的 <strong>度</strong> 的定义是指数组里任一元素出现频数的最大值。</p>
 

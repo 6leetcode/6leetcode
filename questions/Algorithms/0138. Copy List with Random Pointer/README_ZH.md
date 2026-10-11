@@ -1,4 +1,4 @@
-### [复制带随机指针的链表](https://leetcode-cn.com/problems/copy-list-with-random-pointer)
+### [随机链表的复制](https://leetcode.cn/problems/copy-list-with-random-pointer)
 
 <p>给你一个长度为 <code>n</code> 的链表，每个节点包含一个额外增加的随机指针 <code>random</code> ，该指针可以指向链表中的任何节点或空节点。</p>
 
@@ -19,27 +19,27 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/09/e1.png" style="height: 142px; width: 700px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/09/e1.png" style="height: 142px; width: 700px;" /></p>
 
 <pre>
 <strong>输入：</strong>head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
 <strong>输出：</strong>[[7,null],[13,0],[11,4],[10,2],[1,0]]
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/09/e2.png" style="height: 114px; width: 700px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/09/e2.png" style="height: 114px; width: 700px;" /></p>
 
 <pre>
 <strong>输入：</strong>head = [[1,1],[2,1]]
 <strong>输出：</strong>[[1,1],[2,1]]
 </pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong class="example">示例 3：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/09/e3.png" style="height: 122px; width: 700px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/09/e3.png" style="height: 122px; width: 700px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>head = [[3,null],[3,0],[3,null]]
@@ -55,3 +55,5 @@
 	<li><code>-10<sup>4</sup>&nbsp;&lt;= Node.val &lt;= 10<sup>4</sup></code></li>
 	<li><code>Node.random</code>&nbsp;为&nbsp;<code>null</code> 或指向链表中的节点。</li>
 </ul>
+
+<p>&nbsp;</p>

@@ -1,4 +1,4 @@
-### [赢得比赛需要的最少训练时长](https://leetcode-cn.com/problems/minimum-hours-of-training-to-win-a-competition)
+### [赢得比赛需要的最少训练时长](https://leetcode.cn/problems/minimum-hours-of-training-to-win-a-competition)
 
 <p>你正在参加一场比赛，给你两个 <strong>正</strong> 整数 <code>initialEnergy</code> 和 <code>initialExperience</code> 分别表示你的初始精力和初始经验。</p>
 

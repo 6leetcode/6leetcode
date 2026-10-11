@@ -1,4 +1,4 @@
-### [按权重随机选择](https://leetcode-cn.com/problems/random-pick-with-weight)
+### [按权重随机选择](https://leetcode.cn/problems/random-pick-with-weight)
 
 <p>给你一个 <strong>下标从 0 开始</strong> 的正整数数组&nbsp;<code>w</code> ，其中&nbsp;<code>w[i]</code> 代表第 <code>i</code> 个下标的权重。</p>
 

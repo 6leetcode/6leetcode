@@ -1,4 +1,4 @@
-### [反转字符串中的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string)
+### [反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string)
 
 <p>给你一个字符串 <code>s</code> ，请你反转字符串中 <strong>单词</strong> 的顺序。</p>
 
@@ -13,8 +13,8 @@
 <p><strong>示例 1：</strong></p>
 
 <pre>
-<strong>输入：</strong>s = "<code>the sky is blue</code>"
-<strong>输出：</strong>"<code>blue is sky the</code>"
+<strong>输入：</strong>s = "the sky is blue"
+<strong>输出：</strong>"blue is sky the"
 </pre>
 
 <p><strong>示例 2：</strong></p>

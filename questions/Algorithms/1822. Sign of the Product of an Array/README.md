@@ -1,6 +1,6 @@
 ### [Sign of the Product of an Array](https://leetcode.com/problems/sign-of-the-product-of-an-array)
 
-<p>There is a function <code>signFunc(x)</code> that returns:</p>
+<p>Implement a function <code>signFunc(x)</code> that returns:</p>
 
 <ul>
 	<li><code>1</code> if <code>x</code> is positive.</li>

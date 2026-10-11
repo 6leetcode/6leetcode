@@ -1,4 +1,4 @@
-### [到达终点](https://leetcode-cn.com/problems/reaching-points)
+### [到达终点](https://leetcode.cn/problems/reaching-points)
 
 <p>给定四个整数&nbsp;<code>sx</code>&nbsp;,&nbsp;<code>sy</code>&nbsp;，<code>tx</code>&nbsp;和&nbsp;<code>ty</code>，如果通过一系列的<strong>转换</strong>可以从起点&nbsp;<code>(sx, sy)</code>&nbsp;到达终点&nbsp;<code>(tx, ty)</code>，则返回 <code>true</code>，否则返回&nbsp;<code>false</code>。</p>
 

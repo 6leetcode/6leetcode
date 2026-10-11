@@ -1,2 +1,2 @@
-### [基本计算器 III](https://leetcode-cn.com/problems/basic-calculator-iii)
+### [基本计算器 III](https://leetcode.cn/problems/basic-calculator-iii)
 

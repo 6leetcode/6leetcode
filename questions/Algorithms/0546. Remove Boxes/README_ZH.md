@@ -1,4 +1,4 @@
-### [移除盒子](https://leetcode-cn.com/problems/remove-boxes)
+### [移除盒子](https://leetcode.cn/problems/remove-boxes)
 
 <p>给出一些不同颜色的盒子<meta charset="UTF-8" />&nbsp;<code>boxes</code>&nbsp;，盒子的颜色由不同的正数表示。</p>
 

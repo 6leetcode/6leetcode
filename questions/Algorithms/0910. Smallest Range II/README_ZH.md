@@ -1,4 +1,4 @@
-### [最小差值 II](https://leetcode-cn.com/problems/smallest-range-ii)
+### [最小差值 II](https://leetcode.cn/problems/smallest-range-ii)
 
 <p>给你一个整数数组 <code>nums</code>，和一个整数&nbsp;<code>k</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [值和下标之差都在给定的范围内](https://leetcode-cn.com/problems/7WqeDu)
+### [值和下标之差都在给定的范围内](https://leetcode.cn/problems/7WqeDu)
 
 <p>给你一个整数数组 <code>nums</code> 和两个整数&nbsp;<code>k</code> 和 <code>t</code> 。请你判断是否存在 <b>两个不同下标</b> <code>i</code> 和 <code>j</code>，使得&nbsp;<code>abs(nums[i] - nums[j]) &lt;= t</code> ，同时又满足 <code>abs(i - j) &lt;= k</code><em> </em>。</p>
 
@@ -37,4 +37,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 220&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/contains-duplicate-iii/">https://leetcode-cn.com/problems/contains-duplicate-iii/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 220&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/contains-duplicate-iii/">https://leetcode.cn/problems/contains-duplicate-iii/</a></p>

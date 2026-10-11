@@ -1,4 +1,4 @@
-### [和为奇数的子数组数目](https://leetcode-cn.com/problems/number-of-sub-arrays-with-odd-sum)
+### [和为奇数的子数组数目](https://leetcode.cn/problems/number-of-sub-arrays-with-odd-sum)
 
 <p>给你一个整数数组&nbsp;<code>arr</code>&nbsp;。请你返回和为 <strong>奇数</strong>&nbsp;的子数组数目。</p>
 

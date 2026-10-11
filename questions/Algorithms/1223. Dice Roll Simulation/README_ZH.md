@@ -1,4 +1,4 @@
-### [掷骰子模拟](https://leetcode-cn.com/problems/dice-roll-simulation)
+### [掷骰子模拟](https://leetcode.cn/problems/dice-roll-simulation)
 
 <p>有一个骰子模拟器会每次投掷的时候生成一个 1 到 6 的随机数。</p>
 

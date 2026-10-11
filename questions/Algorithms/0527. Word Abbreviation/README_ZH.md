@@ -1,2 +1,2 @@
-### [单词缩写](https://leetcode-cn.com/problems/word-abbreviation)
+### [单词缩写](https://leetcode.cn/problems/word-abbreviation)
 

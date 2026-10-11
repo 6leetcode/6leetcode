@@ -1,4 +1,4 @@
-### [复杂链表的复制](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof)
+### [复杂链表的复制](https://leetcode.cn/problems/fu-za-lian-biao-de-fu-zhi-lcof)
 
 <p>请实现 <code>copyRandomList</code> 函数，复制一个复杂链表。在复杂链表中，每个节点除了有一个 <code>next</code> 指针指向下一个节点，还有一个 <code>random</code> 指针指向链表中的任意节点或者 <code>null</code>。</p>
 
@@ -47,6 +47,6 @@
 
 <p>&nbsp;</p>
 
-<p><strong>注意：</strong>本题与主站 138 题相同：<a href="https://leetcode-cn.com/problems/copy-list-with-random-pointer/">https://leetcode-cn.com/problems/copy-list-with-random-pointer/</a></p>
+<p><strong>注意：</strong>本题与主站 138 题相同：<a href="https://leetcode.cn/problems/copy-list-with-random-pointer/">https://leetcode.cn/problems/copy-list-with-random-pointer/</a></p>
 
 <p>&nbsp;</p>

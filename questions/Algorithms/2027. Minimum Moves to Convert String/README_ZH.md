@@ -1,4 +1,4 @@
-### [转换字符串的最少操作次数](https://leetcode-cn.com/problems/minimum-moves-to-convert-string)
+### [转换字符串的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-convert-string)
 
 <p>给你一个字符串 <code>s</code> ，由 <code>n</code> 个字符组成，每个字符不是 <code>'X'</code> 就是 <code>'O'</code> 。</p>
 

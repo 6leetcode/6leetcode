@@ -1,4 +1,4 @@
-### [可以输入的最大单词数](https://leetcode-cn.com/problems/maximum-number-of-words-you-can-type)
+### [可以输入的最大单词数](https://leetcode.cn/problems/maximum-number-of-words-you-can-type)
 
 <p>键盘出现了一些故障，有些字母键无法正常工作。而键盘上所有其他键都能够正常工作。</p>
 

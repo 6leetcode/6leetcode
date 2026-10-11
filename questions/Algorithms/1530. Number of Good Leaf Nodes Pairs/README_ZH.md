@@ -1,4 +1,4 @@
-### [好叶子节点对的数量](https://leetcode-cn.com/problems/number-of-good-leaf-nodes-pairs)
+### [好叶子节点对的数量](https://leetcode.cn/problems/number-of-good-leaf-nodes-pairs)
 
 <p>给你二叉树的根节点 <code>root</code> 和一个整数 <code>distance</code> 。</p>
 
@@ -12,7 +12,7 @@
 
 <p>&nbsp;</p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/26/e1.jpg" style="height: 321px; width: 321px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/26/e1.jpg" style="height: 321px; width: 321px;"></p>
 
 <pre><strong>输入：</strong>root = [1,2,3,null,4], distance = 3
 <strong>输出：</strong>1
@@ -21,7 +21,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/26/e2.jpg" style="height: 321px; width: 441px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/26/e2.jpg" style="height: 321px; width: 441px;"></p>
 
 <pre><strong>输入：</strong>root = [1,2,3,4,5,6,7], distance = 3
 <strong>输出：</strong>2

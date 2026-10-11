@@ -1,4 +1,4 @@
-### [等差数列划分](https://leetcode-cn.com/problems/arithmetic-slices)
+### [等差数列划分](https://leetcode.cn/problems/arithmetic-slices)
 
 <p>如果一个数列 <strong>至少有三个元素</strong> ，并且任意两个相邻元素之差相同，则称该数列为等差数列。</p>
 

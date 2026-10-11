@@ -1,4 +1,4 @@
-### [字符串中最多数目的子字符串](https://leetcode-cn.com/problems/maximize-number-of-subsequences-in-a-string)
+### [字符串中最多数目的子序列](https://leetcode.cn/problems/maximize-number-of-subsequences-in-a-string)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的字符串&nbsp;<code>text</code>&nbsp;和另一个下标从 <strong>0</strong>&nbsp;开始且长度为 <code>2</code>&nbsp;的字符串&nbsp;<code>pattern</code>&nbsp;，两者都只包含小写英文字母。</p>
 

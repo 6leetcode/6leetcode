@@ -1,4 +1,4 @@
-### [滑动窗口中位数](https://leetcode-cn.com/problems/sliding-window-median)
+### [滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median)
 
 <p>中位数是有序序列最中间的那个数。如果序列的长度是偶数，则没有最中间的数；此时中位数是最中间的两个数的平均数。</p>
 

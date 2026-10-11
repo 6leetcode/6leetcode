@@ -1,4 +1,4 @@
-### [二叉树的右侧视图](https://leetcode-cn.com/problems/WNC0Lk)
+### [二叉树的右侧视图](https://leetcode.cn/problems/WNC0Lk)
 
 <p>给定一个二叉树的 <strong>根节点</strong> <code>root</code>，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。</p>
 
@@ -38,4 +38,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 199&nbsp;题相同：<a href="https://leetcode-cn.com/problems/binary-tree-right-side-view/">https://leetcode-cn.com/problems/binary-tree-right-side-view/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 199&nbsp;题相同：<a href="https://leetcode.cn/problems/binary-tree-right-side-view/">https://leetcode.cn/problems/binary-tree-right-side-view/</a></p>

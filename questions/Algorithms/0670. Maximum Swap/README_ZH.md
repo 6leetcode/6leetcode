@@ -1,4 +1,4 @@
-### [最大交换](https://leetcode-cn.com/problems/maximum-swap)
+### [最大交换](https://leetcode.cn/problems/maximum-swap)
 
 <p>给定一个非负整数，你<strong>至多</strong>可以交换一次数字中的任意两位。返回你能得到的最大值。</p>
 

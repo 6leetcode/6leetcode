@@ -1,2 +1,2 @@
-### [近义词句子](https://leetcode-cn.com/problems/synonymous-sentences)
+### [近义词句子](https://leetcode.cn/problems/synonymous-sentences)
 

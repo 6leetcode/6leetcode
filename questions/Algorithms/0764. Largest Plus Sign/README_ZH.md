@@ -1,4 +1,4 @@
-### [最大加号标志](https://leetcode-cn.com/problems/largest-plus-sign)
+### [最大加号标志](https://leetcode.cn/problems/largest-plus-sign)
 
 <p>在一个 <code>n x n</code> 的矩阵&nbsp;<code>grid</code>&nbsp;中，除了在数组&nbsp;<code>mines</code>&nbsp;中给出的元素为&nbsp;<code>0</code>，其他每个元素都为&nbsp;<code>1</code>。<code>mines[i] = [x<sub>i</sub>, y<sub>i</sub>]</code>表示&nbsp;<code>grid[x<sub>i</sub>][y<sub>i</sub>] == 0</code></p>
 

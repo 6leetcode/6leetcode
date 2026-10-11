@@ -1,2 +1,2 @@
-### [市场分析 II](https://leetcode-cn.com/problems/market-analysis-ii)
+### [市场分析 II](https://leetcode.cn/problems/market-analysis-ii)
 

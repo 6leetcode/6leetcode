@@ -1,2 +1,2 @@
-### [不相交的握手](https://leetcode-cn.com/problems/handshakes-that-dont-cross)
+### [不相交的握手](https://leetcode.cn/problems/handshakes-that-dont-cross)
 

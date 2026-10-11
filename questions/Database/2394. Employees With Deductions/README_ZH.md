@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/employees-with-deductions)
+### [开除员工](https://leetcode.cn/problems/employees-with-deductions)
 

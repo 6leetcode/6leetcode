@@ -1,4 +1,4 @@
-### [序列化二叉树](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof)
+### [序列化二叉树](https://leetcode.cn/problems/xu-lie-hua-er-cha-shu-lcof)
 
 <p>请实现两个函数，分别用来序列化和反序列化二叉树。</p>
 
@@ -17,4 +17,4 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 297 题相同：<a href="https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/">https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/</a></p>
+<p>注意：本题与主站 297 题相同：<a href="https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/">https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/</a></p>

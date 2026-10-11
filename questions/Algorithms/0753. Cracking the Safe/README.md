@@ -39,7 +39,7 @@
 - &quot;01&quot; is typed in starting from the 1<sup>st</sup> digit.
 - &quot;10&quot; is typed in starting from the 3<sup>rd</sup> digit.
 - &quot;11&quot; is typed in starting from the 2<sup>nd</sup> digit.
-Thus &quot;01100&quot; will unlock the safe. &quot;01100&quot;, &quot;10011&quot;, and &quot;11001&quot; would also unlock the safe.
+Thus &quot;01100&quot; will unlock the safe. &quot;10011&quot;, and &quot;11001&quot; would also unlock the safe.
 </pre>
 
 <p>&nbsp;</p>

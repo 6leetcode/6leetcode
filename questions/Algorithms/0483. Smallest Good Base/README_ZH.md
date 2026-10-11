@@ -1,4 +1,4 @@
-### [最小好进制](https://leetcode-cn.com/problems/smallest-good-base)
+### [最小好进制](https://leetcode.cn/problems/smallest-good-base)
 
 <p>以字符串的形式给出 <code>n</code>&nbsp;, 以字符串的形式返回<em> <code>n</code> 的最小 <strong>好进制</strong> </em>&nbsp;。</p>
 

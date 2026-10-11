@@ -1,4 +1,4 @@
-### [验证IP地址](https://leetcode-cn.com/problems/validate-ip-address)
+### [验证IP地址](https://leetcode.cn/problems/validate-ip-address)
 
 <p>给定一个字符串&nbsp;<code>queryIP</code>。如果是有效的 IPv4 地址，返回 <code>"IPv4"</code> ；如果是有效的 IPv6 地址，返回 <code>"IPv6"</code> ；如果不是上述类型的 IP 地址，返回 <code>"Neither"</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [网络信号最好的坐标](https://leetcode-cn.com/problems/coordinate-with-maximum-network-quality)
+### [网络信号最好的坐标](https://leetcode.cn/problems/coordinate-with-maximum-network-quality)
 
 <p>给你一个数组 <code>towers</code>&nbsp;和一个整数 <code>radius</code> 。</p>
 
@@ -25,8 +25,8 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/10/17/untitled-diagram.png" style="width: 176px; height: 176px;" />
+<p><strong class="example">示例 1：</strong></p>
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/10/17/untitled-diagram.png" style="width: 176px; height: 176px;" />
 <pre>
 <b>输入：</b>towers = [[1,2,5],[2,1,7],[3,1,9]], radius = 2
 <b>输出：</b>[2,1]
@@ -37,14 +37,14 @@
 - 塔 (3, 1) 强度参数为 9 ，在该点强度为 ⌊9 / (1 + sqrt(1)⌋ = ⌊4.5⌋ = 4
 没有别的坐标有更大的信号强度。</pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <b>输入：</b>towers = [[23,11,21]], radius = 9
 <b>输出：</b>[23,11]
 <strong>解释：</strong>由于仅存在一座信号塔，所以塔的位置信号强度最大。</pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong class="example">示例 3：</strong></p>
 
 <pre>
 <b>输入：</b>towers = [[1,2,13],[2,1,7],[0,1,9]], radius = 2

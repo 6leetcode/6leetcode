@@ -1,4 +1,4 @@
-### [为高尔夫比赛砍树](https://leetcode-cn.com/problems/cut-off-trees-for-golf-event)
+### [为高尔夫比赛砍树](https://leetcode.cn/problems/cut-off-trees-for-golf-event)
 
 <p>你被请来给一个要举办高尔夫比赛的树林砍树。树林由一个 <code>m x n</code> 的矩阵表示， 在这个矩阵中：</p>
 

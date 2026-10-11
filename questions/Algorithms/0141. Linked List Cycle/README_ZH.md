@@ -1,4 +1,4 @@
-### [环形链表](https://leetcode-cn.com/problems/linked-list-cycle)
+### [环形链表](https://leetcode.cn/problems/linked-list-cycle)
 
 <p>给你一个链表的头节点 <code>head</code> ，判断链表中是否有环。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png" /></p>
 
 <pre>
 <strong>输入：</strong>head = [3,2,0,-4], pos = 1
@@ -20,7 +20,7 @@
 
 <p><strong>示例&nbsp;2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png" /></p>
 
 <pre>
 <strong>输入：</strong>head = [1,2], pos = 0
@@ -30,7 +30,7 @@
 
 <p><strong>示例 3：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png" /></p>
 
 <pre>
 <strong>输入：</strong>head = [1], pos = -1

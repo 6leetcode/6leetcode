@@ -1,4 +1,4 @@
-### [比较含退格的字符串](https://leetcode-cn.com/problems/backspace-string-compare)
+### [比较含退格的字符串](https://leetcode.cn/problems/backspace-string-compare)
 
 <p>给定 <code>s</code> 和 <code>t</code> 两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回 <code>true</code> 。<code>#</code> 代表退格字符。</p>
 

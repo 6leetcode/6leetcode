@@ -1,4 +1,4 @@
-### [你能穿过矩阵的最后一天](https://leetcode-cn.com/problems/last-day-where-you-can-still-cross)
+### [你能穿过矩阵的最后一天](https://leetcode.cn/problems/last-day-where-you-can-still-cross)
 
 <p>给你一个下标从 <strong>1</strong>&nbsp;开始的二进制矩阵，其中&nbsp;<code>0</code>&nbsp;表示陆地，<code>1</code>&nbsp;表示水域。同时给你&nbsp;<code>row</code> 和&nbsp;<code>col</code>&nbsp;分别表示矩阵中行和列的数目。</p>
 

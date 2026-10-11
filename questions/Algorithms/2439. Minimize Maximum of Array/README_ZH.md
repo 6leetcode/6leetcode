@@ -1,4 +1,4 @@
-### [最小化数组中的最大值](https://leetcode-cn.com/problems/minimize-maximum-of-array)
+### [最小化数组中的最大值](https://leetcode.cn/problems/minimize-maximum-of-array)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的数组&nbsp;<code>nums</code>&nbsp;，它含有&nbsp;<code>n</code>&nbsp;个非负整数。</p>
 

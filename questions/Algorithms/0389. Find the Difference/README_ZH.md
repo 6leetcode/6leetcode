@@ -1,4 +1,4 @@
-### [找不同](https://leetcode-cn.com/problems/find-the-difference)
+### [找不同](https://leetcode.cn/problems/find-the-difference)
 
 <p>给定两个字符串 <code>s</code> 和 <code>t</code>&nbsp;，它们只包含小写字母。</p>
 

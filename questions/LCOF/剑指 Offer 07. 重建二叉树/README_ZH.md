@@ -1,4 +1,4 @@
-### [重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof)
+### [重建二叉树](https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof)
 
 <p>输入某二叉树的前序遍历和中序遍历的结果，请构建该二叉树并返回其根节点。</p>
 
@@ -28,4 +28,4 @@
 
 <p> </p>
 
-<p><strong>注意</strong>：本题与主站 105 题重复：<a href="https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/</a></p>
+<p><strong>注意</strong>：本题与主站 105 题重复：<a href="https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/">https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/</a></p>

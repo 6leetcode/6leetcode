@@ -1,4 +1,4 @@
-### [字符串相乘](https://leetcode-cn.com/problems/multiply-strings)
+### [字符串相乘](https://leetcode.cn/problems/multiply-strings)
 
 <p>给定两个以字符串形式表示的非负整数&nbsp;<code>num1</code>&nbsp;和&nbsp;<code>num2</code>，返回&nbsp;<code>num1</code>&nbsp;和&nbsp;<code>num2</code>&nbsp;的乘积，它们的乘积也表示为字符串形式。</p>
 

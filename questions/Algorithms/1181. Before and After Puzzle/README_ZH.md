@@ -1,2 +1,2 @@
-### [前后拼接](https://leetcode-cn.com/problems/before-and-after-puzzle)
+### [前后拼接](https://leetcode.cn/problems/before-and-after-puzzle)
 

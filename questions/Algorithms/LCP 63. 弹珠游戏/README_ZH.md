@@ -1,4 +1,4 @@
-### [弹珠游戏](https://leetcode-cn.com/problems/EXvqDp)
+### [弹珠游戏](https://leetcode.cn/problems/EXvqDp)
 
 欢迎各位来到「力扣嘉年华」，接下来将为各位介绍在活动中广受好评的弹珠游戏。
 
@@ -22,7 +22,7 @@
 > 
 > 解释：
 > 在 `[2,1]` 处打入弹珠，弹珠前进 1 步后遇到转向器，前进方向顺时针旋转 90 度，再前进 1 步进入洞中。
-![b054955158a99167b8d51da0e22a54da.gif](https://pic.leetcode-cn.com/1630392649-BoQncz-b054955158a99167b8d51da0e22a54da.gif){:width="300px"}
+![b054955158a99167b8d51da0e22a54da.gif](https://pic.leetcode.cn/1630392649-BoQncz-b054955158a99167b8d51da0e22a54da.gif){:width="300px"}
 
 **示例 2：**
 > 输入：
@@ -36,7 +36,7 @@
 > 在 `[1,0]` 处打入弹珠，弹珠前进 2 步，遇到转向器后前进方向顺时针旋转 90 度，再前进 1 步进入洞中。
 > 在 `[2,4]` 处打入弹珠，弹珠前进 2 步后进入洞中。
 > 在 `[3,2]` 处打入弹珠，弹珠前进 1 步后进入洞中。
-![b44e9963239ae368badf3d00b7563087.gif](https://pic.leetcode-cn.com/1630392625-rckbdy-b44e9963239ae368badf3d00b7563087.gif){:width="350px"}
+![b44e9963239ae368badf3d00b7563087.gif](https://pic.leetcode.cn/1630392625-rckbdy-b44e9963239ae368badf3d00b7563087.gif){:width="350px"}
 
 
 **示例 3：**

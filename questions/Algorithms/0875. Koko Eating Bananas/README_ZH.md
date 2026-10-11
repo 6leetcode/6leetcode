@@ -1,4 +1,4 @@
-### [爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas)
+### [爱吃香蕉的珂珂](https://leetcode.cn/problems/koko-eating-bananas)
 
 <p>珂珂喜欢吃香蕉。这里有 <code>n</code> 堆香蕉，第 <code>i</code> 堆中有&nbsp;<code>piles[i]</code>&nbsp;根香蕉。警卫已经离开了，将在 <code>h</code> 小时后回来。</p>
 

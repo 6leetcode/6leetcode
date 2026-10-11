@@ -1,6 +1,6 @@
-### [多数元素 II](https://leetcode-cn.com/problems/majority-element-ii)
+### [多数元素 II](https://leetcode.cn/problems/majority-element-ii)
 
-<p>给定一个大小为&nbsp;<em>n&nbsp;</em>的整数数组，找出其中所有出现超过&nbsp;<code>⌊ n/3 ⌋</code>&nbsp;次的元素。</p>
+<p>给定一个大小为&nbsp;<em>n&nbsp;</em>的整数数组，找出其中所有出现超过&nbsp;<code>⌊n / 3⌋</code>&nbsp;次的元素。</p>
 
 <p>&nbsp;</p>
 

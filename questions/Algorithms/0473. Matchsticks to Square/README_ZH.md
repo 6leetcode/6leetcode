@@ -1,4 +1,4 @@
-### [火柴拼正方形](https://leetcode-cn.com/problems/matchsticks-to-square)
+### [火柴拼正方形](https://leetcode.cn/problems/matchsticks-to-square)
 
 <p>你将得到一个整数数组 <code>matchsticks</code> ，其中 <code>matchsticks[i]</code> 是第 <code>i</code>&nbsp;个火柴棒的长度。你要用 <strong>所有的火柴棍</strong>&nbsp;拼成一个正方形。你 <strong>不能折断</strong> 任何一根火柴棒，但你可以把它们连在一起，而且每根火柴棒必须 <strong>使用一次</strong> 。</p>
 

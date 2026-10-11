@@ -1,4 +1,4 @@
-### [水果成篮](https://leetcode-cn.com/problems/fruit-into-baskets)
+### [水果成篮](https://leetcode.cn/problems/fruit-into-baskets)
 
 <p>你正在探访一家农场，农场从左到右种植了一排果树。这些树用一个整数数组 <code>fruits</code> 表示，其中 <code>fruits[i]</code> 是第 <code>i</code> 棵树上的水果 <strong>种类</strong> 。</p>
 

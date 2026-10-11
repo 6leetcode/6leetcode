@@ -1,4 +1,4 @@
-### [设计有序流](https://leetcode-cn.com/problems/design-an-ordered-stream)
+### [设计有序流](https://leetcode.cn/problems/design-an-ordered-stream)
 
 <p>有 <code>n</code> 个 <code>(id, value)</code> 对，其中 <code>id</code> 是 <code>1</code> 到 <code>n</code> 之间的一个整数，<code>value</code> 是一个字符串。不存在 <code>id</code> 相同的两个 <code>(id, value)</code> 对。</p>
 
@@ -22,7 +22,7 @@
 
 <p><strong>示例：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/11/15/q1.gif" style="width: 682px; height: 240px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/11/15/q1.gif" style="width: 682px; height: 240px;" /></strong></p>
 
 <pre>
 <strong>输入</strong>

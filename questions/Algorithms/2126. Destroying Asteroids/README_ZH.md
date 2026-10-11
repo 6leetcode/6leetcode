@@ -1,4 +1,4 @@
-### [摧毁小行星](https://leetcode-cn.com/problems/destroying-asteroids)
+### [摧毁小行星](https://leetcode.cn/problems/destroying-asteroids)
 
 <p>给你一个整数&nbsp;<code>mass</code>&nbsp;，它表示一颗行星的初始质量。再给你一个整数数组&nbsp;<code>asteroids</code>&nbsp;，其中&nbsp;<code>asteroids[i]</code>&nbsp;是第&nbsp;<code>i</code>&nbsp;颗小行星的质量。</p>
 

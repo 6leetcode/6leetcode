@@ -1,4 +1,4 @@
-### [相邻字符不同的最长路径](https://leetcode-cn.com/problems/longest-path-with-different-adjacent-characters)
+### [相邻字符不同的最长路径](https://leetcode.cn/problems/longest-path-with-different-adjacent-characters)
 
 <p>给你一棵 <strong>树</strong>（即一个连通、无向、无环图），根节点是节点 <code>0</code> ，这棵树由编号从 <code>0</code> 到 <code>n - 1</code> 的 <code>n</code> 个节点组成。用下标从 <strong>0</strong> 开始、长度为 <code>n</code> 的数组 <code>parent</code> 来表示这棵树，其中 <code>parent[i]</code> 是节点 <code>i</code> 的父节点，由于节点 <code>0</code> 是根节点，所以 <code>parent[0] == -1</code> 。</p>
 

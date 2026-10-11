@@ -1,4 +1,4 @@
-### [餐盘栈](https://leetcode-cn.com/problems/dinner-plate-stacks)
+### [餐盘栈](https://leetcode.cn/problems/dinner-plate-stacks)
 
 <p>我们把无限数量 &infin; 的栈排成一行，按从左到右的次序从 0 开始编号。每个栈的的最大容量&nbsp;<code>capacity</code> 都相同。</p>
 

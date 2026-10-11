@@ -1,4 +1,4 @@
-### [丑数](https://leetcode-cn.com/problems/chou-shu-lcof)
+### [丑数](https://leetcode.cn/problems/chou-shu-lcof)
 
 <p>我们把只包含质因子 2、3 和 5 的数称作丑数（Ugly Number）。求按从小到大的顺序的第 n 个丑数。</p>
 
@@ -17,4 +17,4 @@
 	<li><code>n</code>&nbsp;<strong>不超过</strong>1690。</li>
 </ol>
 
-<p>注意：本题与主站 264 题相同：<a href="https://leetcode-cn.com/problems/ugly-number-ii/">https://leetcode-cn.com/problems/ugly-number-ii/</a></p>
+<p>注意：本题与主站 264 题相同：<a href="https://leetcode.cn/problems/ugly-number-ii/">https://leetcode.cn/problems/ugly-number-ii/</a></p>

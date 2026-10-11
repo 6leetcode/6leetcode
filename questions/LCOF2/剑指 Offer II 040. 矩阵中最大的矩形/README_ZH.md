@@ -1,4 +1,4 @@
-### [矩阵中最大的矩形](https://leetcode-cn.com/problems/PLYXKQ)
+### [矩阵中最大的矩形](https://leetcode.cn/problems/PLYXKQ)
 
 <p>给定一个由&nbsp;<code>0</code> 和 <code>1</code>&nbsp;组成的矩阵 <code>matrix</code>&nbsp;，找出只包含 <code>1</code> 的最大矩形，并返回其面积。</p>
 
@@ -57,4 +57,4 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 85 题相同（输入参数格式不同）：&nbsp;<a href="https://leetcode-cn.com/problems/maximal-rectangle/">https://leetcode-cn.com/problems/maximal-rectangle/</a></p>
+<p>注意：本题与主站 85 题相同（输入参数格式不同）：&nbsp;<a href="https://leetcode.cn/problems/maximal-rectangle/">https://leetcode.cn/problems/maximal-rectangle/</a></p>

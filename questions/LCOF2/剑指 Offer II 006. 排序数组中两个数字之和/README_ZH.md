@@ -1,4 +1,4 @@
-### [排序数组中两个数字之和](https://leetcode-cn.com/problems/kLl5u1)
+### [排序数组中两个数字之和](https://leetcode.cn/problems/kLl5u1)
 
 <p>给定一个已按照<strong><em> </em>升序排列&nbsp; </strong>的整数数组&nbsp;<code>numbers</code> ，请你从数组中找出两个数满足相加之和等于目标数&nbsp;<code>target</code> 。</p>
 
@@ -44,4 +44,4 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 167 题相似（下标起点不同）：<a href="https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/">https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/</a></p>
+<p>注意：本题与主站 167 题相似（下标起点不同）：<a href="https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/">https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/</a></p>

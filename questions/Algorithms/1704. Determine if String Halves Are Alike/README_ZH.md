@@ -1,4 +1,4 @@
-### [判断字符串的两半是否相似](https://leetcode-cn.com/problems/determine-if-string-halves-are-alike)
+### [判断字符串的两半是否相似](https://leetcode.cn/problems/determine-if-string-halves-are-alike)
 
 <p>给你一个偶数长度的字符串 <code>s</code> 。将其拆分成长度相同的两半，前一半为 <code>a</code> ，后一半为 <code>b</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [路径交叉](https://leetcode-cn.com/problems/self-crossing)
+### [路径交叉](https://leetcode.cn/problems/self-crossing)
 
 <p>给你一个整数数组 <code>distance</code><em> </em>。</p>
 

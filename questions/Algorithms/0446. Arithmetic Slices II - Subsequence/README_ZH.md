@@ -1,4 +1,4 @@
-### [等差数列划分 II - 子序列](https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence)
+### [等差数列划分 II - 子序列](https://leetcode.cn/problems/arithmetic-slices-ii-subsequence)
 
 <p>给你一个整数数组 <code>nums</code> ，返回 <code>nums</code> 中所有 <strong>等差子序列</strong> 的数目。</p>
 

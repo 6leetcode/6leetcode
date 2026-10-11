@@ -1,2 +1,2 @@
-### [二叉搜索树迭代器 II](https://leetcode-cn.com/problems/binary-search-tree-iterator-ii)
+### [二叉搜索树迭代器 II](https://leetcode.cn/problems/binary-search-tree-iterator-ii)
 

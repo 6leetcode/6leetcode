@@ -1,4 +1,4 @@
-### [合并零之间的节点](https://leetcode-cn.com/problems/merge-nodes-in-between-zeros)
+### [合并零之间的节点](https://leetcode.cn/problems/merge-nodes-in-between-zeros)
 
 <p>给你一个链表的头节点 <code>head</code> ，该链表包含由 <code>0</code> 分隔开的一连串整数。链表的 <strong>开端</strong> 和 <strong>末尾</strong> 的节点都满足 <code>Node.val == 0</code> 。</p>
 

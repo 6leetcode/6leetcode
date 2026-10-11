@@ -1,4 +1,4 @@
-### [判断路径是否相交](https://leetcode-cn.com/problems/path-crossing)
+### [判断路径是否相交](https://leetcode.cn/problems/path-crossing)
 
 <p>给你一个字符串 <code>path</code>，其中 <code>path[i]</code> 的值可以是 <code>'N'</code>、<code>'S'</code>、<code>'E'</code> 或者 <code>'W'</code>，分别表示向北、向南、向东、向西移动一个单位。</p>
 
@@ -8,18 +8,18 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/06/28/screen-shot-2020-06-10-at-123929-pm.png" style="height: 358px; width: 400px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/06/28/screen-shot-2020-06-10-at-123929-pm.png" style="height: 358px; width: 400px;" /></p>
 
 <pre>
 <strong>输入：</strong>path = "NES"
 <strong>输出：</strong>false 
 <strong>解释：</strong>该路径没有在任何位置相交。</pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/06/28/screen-shot-2020-06-10-at-123843-pm.png" style="height: 339px; width: 400px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/06/28/screen-shot-2020-06-10-at-123843-pm.png" style="height: 339px; width: 400px;" /></p>
 
 <pre>
 <strong>输入：</strong>path = "NESWW"

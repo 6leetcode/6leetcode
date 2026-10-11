@@ -1,4 +1,4 @@
-### [发 LeetCoin](https://leetcode-cn.com/problems/coin-bonus)
+### [发 LeetCoin](https://leetcode.cn/problems/coin-bonus)
 
 <p>力扣决定给一个刷题团队发<code>LeetCoin</code>作为奖励。同时，为了监控给大家发了多少<code>LeetCoin</code>，力扣有时候也会进行查询。</p>
 
@@ -52,7 +52,7 @@
 第二次查询时，每个成员得到的LeetCoin的数量分别为（按编号顺序）：500, 50, 50, 0, 50, 15.
 </pre>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/09/09/coin_example_1.jpg" style="height: 344px; width: 300px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/09/09/coin_example_1.jpg" style="height: 344px; width: 300px;"></p>
 
 <p>&nbsp;</p>
 

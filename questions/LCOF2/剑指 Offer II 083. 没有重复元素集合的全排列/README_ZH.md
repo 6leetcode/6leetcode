@@ -1,4 +1,4 @@
-### [没有重复元素集合的全排列](https://leetcode-cn.com/problems/VvJkup)
+### [没有重复元素集合的全排列](https://leetcode.cn/problems/VvJkup)
 
 <p>给定一个不含重复数字的整数数组 <code>nums</code> ，返回其 <strong>所有可能的全排列</strong> 。可以 <strong>按任意顺序</strong> 返回答案。</p>
 
@@ -37,4 +37,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 46&nbsp;题相同：<a href="https://leetcode-cn.com/problems/permutations/">https://leetcode-cn.com/problems/permutations/</a>&nbsp;</p>
+<p><meta charset="UTF-8" />注意：本题与主站 46&nbsp;题相同：<a href="https://leetcode.cn/problems/permutations/">https://leetcode.cn/problems/permutations/</a>&nbsp;</p>

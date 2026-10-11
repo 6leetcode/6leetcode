@@ -1,4 +1,4 @@
-### [超级丑数](https://leetcode-cn.com/problems/super-ugly-number)
+### [超级丑数](https://leetcode.cn/problems/super-ugly-number)
 
 <p><strong>超级丑数</strong> 是一个正整数，并满足其所有质因数都出现在质数数组 <code>primes</code> 中。</p>
 

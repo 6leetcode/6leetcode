@@ -1,4 +1,4 @@
-### [重排链表](https://leetcode-cn.com/problems/reorder-list)
+### [重排链表](https://leetcode.cn/problems/reorder-list)
 
 <p>给定一个单链表 <code>L</code><em> </em>的头节点 <code>head</code> ，单链表 <code>L</code> 表示为：</p>
 
@@ -17,7 +17,7 @@ L<sub>0</sub> → L<sub>n</sub> → L<sub>1</sub> → L<sub>n - 1</sub> → L<su
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1626420311-PkUiGI-image.png" style="width: 240px; " /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1626420311-PkUiGI-image.png" style="width: 240px; " /></p>
 
 <pre>
 <strong>输入：</strong>head = [1,2,3,4]
@@ -25,7 +25,7 @@ L<sub>0</sub> → L<sub>n</sub> → L<sub>1</sub> → L<sub>n - 1</sub> → L<su
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1626420320-YUiulT-image.png" style="width: 320px; " /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1626420320-YUiulT-image.png" style="width: 320px; " /></p>
 
 <pre>
 <strong>输入：</strong>head = [1,2,3,4,5]

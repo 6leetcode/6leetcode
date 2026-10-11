@@ -1,4 +1,4 @@
-### [只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard)
+### [两个键的键盘](https://leetcode.cn/problems/2-keys-keyboard)
 
 <p>最初记事本上只有一个字符 <code>'A'</code> 。你每次可以对这个记事本进行两种操作：</p>
 

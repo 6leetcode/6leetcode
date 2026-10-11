@@ -1,4 +1,4 @@
-### [统计区间中的整数数目](https://leetcode-cn.com/problems/count-integers-in-intervals)
+### [统计区间中的整数数目](https://leetcode.cn/problems/count-integers-in-intervals)
 
 <p>给你区间的 <strong>空</strong> 集，请你设计并实现满足要求的数据结构：</p>
 

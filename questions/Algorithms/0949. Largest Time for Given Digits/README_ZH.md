@@ -1,4 +1,4 @@
-### [给定数字能组成的最大时间](https://leetcode-cn.com/problems/largest-time-for-given-digits)
+### [给定数字能组成的最大时间](https://leetcode.cn/problems/largest-time-for-given-digits)
 
 <p>给定一个由 4 位数字组成的数组，返回可以设置的符合 24 小时制的最大时间。</p>
 

@@ -1,4 +1,4 @@
-### [好数对的数目](https://leetcode-cn.com/problems/number-of-good-pairs)
+### [好数对的数目](https://leetcode.cn/problems/number-of-good-pairs)
 
 <p>给你一个整数数组 <code>nums</code> 。</p>
 

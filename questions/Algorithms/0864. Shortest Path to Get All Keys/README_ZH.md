@@ -1,10 +1,10 @@
-### [获取所有钥匙的最短路径](https://leetcode-cn.com/problems/shortest-path-to-get-all-keys)
+### [获取所有钥匙的最短路径](https://leetcode.cn/problems/shortest-path-to-get-all-keys)
 
 <p>给定一个二维网格&nbsp;<code>grid</code>&nbsp;，其中：</p>
 
 <ul>
 	<li><font color="#c7254e"><font face="Menlo, Monaco, Consolas, Courier New, monospace"><span style="font-size:12.6px"><span style="background-color:#f9f2f4">'.'</span></span></font></font> 代表一个空房间</li>
-	<li><font color="#c7254e"><font face="Menlo, Monaco, Consolas, Courier New, monospace"><span style="font-size:12.6px"><span style="background-color:#f9f2f4">'#'</span></span></font></font> 代表一堵</li>
+	<li><font color="#c7254e"><font face="Menlo, Monaco, Consolas, Courier New, monospace"><span style="font-size:12.6px"><span style="background-color:#f9f2f4">'#'</span></span></font></font> 代表一堵墙</li>
 	<li><font color="#c7254e"><font face="Menlo, Monaco, Consolas, Courier New, monospace"><span style="font-size:12.6px"><span style="background-color:#f9f2f4">'@'</span></span></font></font>&nbsp;是起点</li>
 	<li>小写字母代表钥匙</li>
 	<li>大写字母代表锁</li>
@@ -23,7 +23,7 @@
 <p><img src="https://assets.leetcode.com/uploads/2021/07/23/lc-keys2.jpg" /></p>
 
 <pre>
-<strong>输入：</strong>grid = ["@.a.#","###.#","b.A.B"]
+<strong>输入：</strong>grid = ["@.a..","###.#","b.A.B"]
 <strong>输出：</strong>8
 <strong>解释：</strong>目标是获得所有钥匙，而不是打开所有锁。
 </pre>

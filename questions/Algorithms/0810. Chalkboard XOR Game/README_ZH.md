@@ -1,4 +1,4 @@
-### [黑板异或游戏](https://leetcode-cn.com/problems/chalkboard-xor-game)
+### [黑板异或游戏](https://leetcode.cn/problems/chalkboard-xor-game)
 
 <p>黑板上写着一个非负整数数组 <code>nums[i]</code> 。</p>
 

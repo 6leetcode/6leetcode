@@ -1,4 +1,4 @@
-### [相等的有理数](https://leetcode-cn.com/problems/equal-rational-numbers)
+### [相等的有理数](https://leetcode.cn/problems/equal-rational-numbers)
 
 <p>给定两个字符串&nbsp;<code>s</code>&nbsp;和&nbsp;<code>t</code>&nbsp;，每个字符串代表一个非负有理数，只有当它们表示相同的数字时才返回 <code>true</code>&nbsp;。字符串中可以使用括号来表示有理数的重复部分。</p>
 

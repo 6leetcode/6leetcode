@@ -1,4 +1,4 @@
-### [最小差](https://leetcode-cn.com/problems/smallest-difference-lcci)
+### [最小差](https://leetcode.cn/problems/smallest-difference-lcci)
 
 <p>给定两个整数数组<code>a</code>和<code>b</code>，计算具有最小差绝对值的一对数值（每个数组中取一个值），并返回该对数值的差</p>
 

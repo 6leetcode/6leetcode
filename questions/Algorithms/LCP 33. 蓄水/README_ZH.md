@@ -1,4 +1,4 @@
-### [蓄水](https://leetcode-cn.com/problems/o8SXZn)
+### [蓄水](https://leetcode.cn/problems/o8SXZn)
 
 给定 N 个无限容量且初始均空的水缸，每个水缸配有一个水桶用来打水，第 `i` 个水缸配备的水桶容量记作 `bucket[i]`。小扣有以下两种操作：
 -  升级水桶：选择任意一个水桶，使其容量增加为 `bucket[i]+1`
@@ -16,7 +16,7 @@
 >解释：
 >第 1 次操作升级 bucket[0]；
 >第 2 ~ 4 次操作均选择蓄水，即可完成蓄水要求。
-![vat1.gif](https://pic.leetcode-cn.com/1616122992-RkDxoL-vat1.gif)
+![vat1.gif](https://pic.leetcode.cn/1616122992-RkDxoL-vat1.gif)
 
 
 

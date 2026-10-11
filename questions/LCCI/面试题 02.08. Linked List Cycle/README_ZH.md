@@ -1,4 +1,4 @@
-### [环路检测](https://leetcode-cn.com/problems/linked-list-cycle-lcci)
+### [环路检测](https://leetcode.cn/problems/linked-list-cycle-lcci)
 
 <p>给定一个链表，如果它是有环链表，实现一个算法返回环路的<code>开头节点</code>。若环不存在，请返回 <code>null</code>。</p>
 
@@ -8,7 +8,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png" style="height: 97px; width: 300px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist.png" style="height: 97px; width: 300px;" /></p>
 
 <pre>
 <strong>输入：</strong>head = [3,2,0,-4], pos = 1
@@ -18,7 +18,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png" style="height: 74px; width: 141px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png" style="height: 74px; width: 141px;" /></p>
 
 <pre>
 <strong>输入：</strong>head = [1,2], pos = 0
@@ -28,7 +28,7 @@
 
 <p><strong>示例 3：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png" style="height: 45px; width: 45px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png" style="height: 45px; width: 45px;" /></p>
 
 <pre>
 <strong>输入：</strong>head = [1], pos = -1

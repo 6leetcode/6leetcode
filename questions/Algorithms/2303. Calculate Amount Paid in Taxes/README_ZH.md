@@ -1,4 +1,4 @@
-### [计算应缴税款总额](https://leetcode-cn.com/problems/calculate-amount-paid-in-taxes)
+### [计算应缴税款总额](https://leetcode.cn/problems/calculate-amount-paid-in-taxes)
 
 <p>给你一个下标从 <strong>0</strong> 开始的二维整数数组 <code>brackets</code> ，其中 <code>brackets[i] = [upper<sub>i</sub>, percent<sub>i</sub>]</code> ，表示第 <code>i</code> 个税级的上限是 <code>upper<sub>i</sub></code> ，征收的税率为 <code>percent<sub>i</sub></code> 。税级按上限 <strong>从低到高排序</strong>（在满足 <code>0 &lt; i &lt; brackets.length</code> 的前提下，<code>upper<sub>i-1</sub> &lt; upper<sub>i</sub></code>）。</p>
 

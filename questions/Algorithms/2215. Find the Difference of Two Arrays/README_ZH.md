@@ -1,4 +1,4 @@
-### [找出两数组的不同](https://leetcode-cn.com/problems/find-the-difference-of-two-arrays)
+### [找出两数组的不同](https://leetcode.cn/problems/find-the-difference-of-two-arrays)
 
 <p>给你两个下标从 <code>0</code> 开始的整数数组 <code>nums1</code> 和 <code>nums2</code> ，请你返回一个长度为 <code>2</code> 的列表 <code>answer</code> ，其中：</p>
 
@@ -18,7 +18,7 @@
 <strong>输出：</strong>[[1,3],[4,6]]
 <strong>解释：
 </strong>对于 nums1 ，nums1[1] = 2 出现在 nums2 中下标 0 处，然而 nums1[0] = 1 和 nums1[2] = 3 没有出现在 nums2 中。因此，answer[0] = [1,3]。
-对于 nums2 ，nums2[0] = 2 出现在 nums1 中下标 1 处，然而 nums2[1] = 4 和 nums2[2] = 6 没有出现在 nums2 中。因此，answer[1] = [4,6]。</pre>
+对于 nums2 ，nums2[0] = 2 出现在 nums1 中下标 1 处，然而 nums2[1] = 4 和 nums2[2] = 6 没有出现在 nums1 中。因此，answer[1] = [4,6]。</pre>
 
 <p><strong>示例 2：</strong></p>
 

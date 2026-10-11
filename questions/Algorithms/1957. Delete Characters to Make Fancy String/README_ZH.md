@@ -1,4 +1,4 @@
-### [删除字符使字符串变好](https://leetcode-cn.com/problems/delete-characters-to-make-fancy-string)
+### [删除字符使字符串变好](https://leetcode.cn/problems/delete-characters-to-make-fancy-string)
 
 <p>一个字符串如果没有 <strong>三个连续</strong>&nbsp;相同字符，那么它就是一个 <strong>好字符串</strong>&nbsp;。</p>
 

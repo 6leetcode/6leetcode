@@ -1,4 +1,4 @@
-### [具有给定数值的最小字符串](https://leetcode-cn.com/problems/smallest-string-with-a-given-numeric-value)
+### [具有给定数值的最小字符串](https://leetcode.cn/problems/smallest-string-with-a-given-numeric-value)
 
 <p><strong>小写字符 </strong>的 <strong>数值</strong> 是它在字母表中的位置（从 <code>1</code> 开始），因此 <code>a</code> 的数值为 <code>1</code> ，<code>b</code> 的数值为 <code>2</code> ，<code>c</code> 的数值为 <code>3</code> ，以此类推。</p>
 

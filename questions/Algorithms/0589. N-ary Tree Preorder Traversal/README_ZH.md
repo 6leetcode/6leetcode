@@ -1,4 +1,4 @@
-### [N 叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal)
+### [N 叉树的前序遍历](https://leetcode.cn/problems/n-ary-tree-preorder-traversal)
 
 <p>给定一个 n&nbsp;叉树的根节点 <meta charset="UTF-8" />&nbsp;<code>root</code>&nbsp;，返回 <em>其节点值的<strong> 前序遍历</strong></em> 。</p>
 

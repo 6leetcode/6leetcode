@@ -1,4 +1,4 @@
-### [数组中的最长山脉](https://leetcode-cn.com/problems/longest-mountain-in-array)
+### [数组中的最长山脉](https://leetcode.cn/problems/longest-mountain-in-array)
 
 <p>把符合下列属性的数组 <code>arr</code> 称为 <strong>山脉数组</strong> ：</p>
 

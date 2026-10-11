@@ -1,4 +1,4 @@
-### [找出数组排序后的目标下标](https://leetcode-cn.com/problems/find-target-indices-after-sorting-array)
+### [找出数组排序后的目标下标](https://leetcode.cn/problems/find-target-indices-after-sorting-array)
 
 <p>给你一个下标从 <strong>0</strong> 开始的整数数组 <code>nums</code> 以及一个目标元素 <code>target</code> 。</p>
 

@@ -1,2 +1,2 @@
-### [松鼠模拟](https://leetcode-cn.com/problems/squirrel-simulation)
+### [松鼠模拟](https://leetcode.cn/problems/squirrel-simulation)
 

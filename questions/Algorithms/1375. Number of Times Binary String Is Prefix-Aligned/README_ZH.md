@@ -1,4 +1,4 @@
-### [二进制字符串前缀一致的次数](https://leetcode-cn.com/problems/number-of-times-binary-string-is-prefix-aligned)
+### [二进制字符串前缀一致的次数](https://leetcode.cn/problems/number-of-times-binary-string-is-prefix-aligned)
 
 <p>给你一个长度为 <code>n</code> 、下标从 <strong>1</strong> 开始的二进制字符串，所有位最开始都是 <code>0</code> 。我们会按步翻转该二进制字符串的所有位（即，将 <code>0</code> 变为 <code>1</code>）。</p>
 

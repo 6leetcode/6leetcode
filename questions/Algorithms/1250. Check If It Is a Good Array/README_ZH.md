@@ -1,4 +1,4 @@
-### [检查「好数组」](https://leetcode-cn.com/problems/check-if-it-is-a-good-array)
+### [检查「好数组」](https://leetcode.cn/problems/check-if-it-is-a-good-array)
 
 <p>给你一个正整数数组 <code>nums</code>，你需要从中任选一些子集，然后将子集中每一个数乘以一个 <strong>任意整数</strong>，并求出他们的和。</p>
 

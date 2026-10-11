@@ -1,4 +1,4 @@
-### [最大频率栈](https://leetcode-cn.com/problems/maximum-frequency-stack)
+### [最大频率栈](https://leetcode.cn/problems/maximum-frequency-stack)
 
 <p>设计一个类似堆栈的数据结构，将元素推入堆栈，并从堆栈中弹出<strong>出现频率</strong>最高的元素。</p>
 

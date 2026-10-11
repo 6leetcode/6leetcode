@@ -1,4 +1,4 @@
-### [第 N 位数字](https://leetcode-cn.com/problems/nth-digit)
+### [第 N 位数字](https://leetcode.cn/problems/nth-digit)
 
 <p>给你一个整数 <code>n</code> ，请你在无限的整数序列&nbsp;<code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...]</code> 中找出并返回第&nbsp;<code>n</code><em> </em>位上的数字。</p>
 

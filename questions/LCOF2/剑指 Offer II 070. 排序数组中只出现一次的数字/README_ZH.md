@@ -1,4 +1,4 @@
-### [排序数组中只出现一次的数字](https://leetcode-cn.com/problems/skFtm2)
+### [排序数组中只出现一次的数字](https://leetcode.cn/problems/skFtm2)
 
 <p>给定一个只包含整数的有序数组 <code>nums</code>&nbsp;，每个元素都会出现两次，唯有一个数只会出现一次，请找出这个唯一的数字。</p>
 
@@ -33,4 +33,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 540&nbsp;题相同：<a href="https://leetcode-cn.com/problems/single-element-in-a-sorted-array/">https://leetcode-cn.com/problems/single-element-in-a-sorted-array/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 540&nbsp;题相同：<a href="https://leetcode.cn/problems/single-element-in-a-sorted-array/">https://leetcode.cn/problems/single-element-in-a-sorted-array/</a></p>

@@ -1,4 +1,4 @@
-### [课程顺序](https://leetcode-cn.com/problems/QA2IGt)
+### [课程顺序](https://leetcode.cn/problems/QA2IGt)
 
 <p>现在总共有 <code>numCourses</code>&nbsp;门课需要选，记为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>numCourses-1</code>。</p>
 
@@ -48,4 +48,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 210&nbsp;题相同：<a href="https://leetcode-cn.com/problems/course-schedule-ii/">https://leetcode-cn.com/problems/course-schedule-ii/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 210&nbsp;题相同：<a href="https://leetcode.cn/problems/course-schedule-ii/">https://leetcode.cn/problems/course-schedule-ii/</a></p>

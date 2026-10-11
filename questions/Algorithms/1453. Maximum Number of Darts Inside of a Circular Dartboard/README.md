@@ -2,7 +2,7 @@
 
 <p>Alice is throwing <code>n</code> darts on a very large wall. You are given an array <code>darts</code> where <code>darts[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> is the position of the <code>i<sup>th</sup></code> dart that Alice threw on the wall.</p>
 
-<p>Bob knows the positions of the <code>n</code> darts on the wall. He wants to place a dartboard of radius <code>r</code> on the wall so that the maximum number of darts that Alice throws lies on the dartboard.</p>
+<p>Bob knows the positions of the <code>n</code> darts on the wall. He wants to place a dartboard of radius <code>r</code> on the wall so that the maximum number of darts that Alice throws lie&nbsp;on the dartboard.</p>
 
 <p>Given the integer <code>r</code>, return <em>the maximum number of darts that can lie on the dartboard</em>.</p>
 
@@ -30,5 +30,6 @@
 	<li><code>1 &lt;= darts.length &lt;= 100</code></li>
 	<li><code>darts[i].length == 2</code></li>
 	<li><code>-10<sup>4</sup> &lt;= x<sub>i</sub>, y<sub>i</sub> &lt;= 10<sup>4</sup></code></li>
+	<li>All the <code>darts</code>&nbsp;are unique</li>
 	<li><code>1 &lt;= r &lt;= 5000</code></li>
 </ul>

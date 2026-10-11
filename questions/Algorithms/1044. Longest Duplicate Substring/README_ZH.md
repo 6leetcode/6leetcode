@@ -1,4 +1,4 @@
-### [最长重复子串](https://leetcode-cn.com/problems/longest-duplicate-substring)
+### [最长重复子串](https://leetcode.cn/problems/longest-duplicate-substring)
 
 <p>给你一个字符串 <code>s</code> ，考虑其所有 <em>重复子串</em> ：即&nbsp;<code>s</code> 的（连续）子串，在 <code>s</code> 中出现 2 次或更多次。这些出现之间可能存在重叠。</p>
 

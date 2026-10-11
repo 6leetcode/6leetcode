@@ -1,4 +1,4 @@
-### [解决智力问题](https://leetcode-cn.com/problems/solving-questions-with-brainpower)
+### [解决智力问题](https://leetcode.cn/problems/solving-questions-with-brainpower)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的二维整数数组&nbsp;<code>questions</code>&nbsp;，其中&nbsp;<code>questions[i] = [points<sub>i</sub>, brainpower<sub>i</sub>]</code>&nbsp;。</p>
 

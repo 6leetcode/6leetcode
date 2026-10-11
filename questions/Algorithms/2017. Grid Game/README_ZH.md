@@ -1,4 +1,4 @@
-### [网格游戏](https://leetcode-cn.com/problems/grid-game)
+### [网格游戏](https://leetcode.cn/problems/grid-game)
 
 <p>给你一个下标从 <strong>0</strong> 开始的二维数组 <code>grid</code> ，数组大小为 <code>2 x n</code> ，其中 <code>grid[r][c]</code> 表示矩阵中 <code>(r, c)</code> 位置上的点数。现在有两个机器人正在矩阵上参与一场游戏。</p>
 

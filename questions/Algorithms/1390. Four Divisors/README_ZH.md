@@ -1,4 +1,4 @@
-### [四因数](https://leetcode-cn.com/problems/four-divisors)
+### [四因数](https://leetcode.cn/problems/four-divisors)
 
 <p>给你一个整数数组 <code>nums</code>，请你返回该数组中恰有四个因数的这些整数的各因数之和。如果数组中不存在满足题意的整数，则返回 <code>0</code> 。</p>
 

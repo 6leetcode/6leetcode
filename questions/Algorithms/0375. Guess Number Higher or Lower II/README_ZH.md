@@ -1,4 +1,4 @@
-### [猜数字大小 II](https://leetcode-cn.com/problems/guess-number-higher-or-lower-ii)
+### [猜数字大小 II](https://leetcode.cn/problems/guess-number-higher-or-lower-ii)
 
 <p>我们正在玩一个猜数游戏，游戏规则如下：</p>
 

@@ -1,4 +1,4 @@
-### [左右两边子数组的和相等](https://leetcode-cn.com/problems/tvdfij)
+### [左右两边子数组的和相等](https://leetcode.cn/problems/tvdfij)
 
 <p>给你一个整数数组&nbsp;<code>nums</code> ，请计算数组的 <strong>中心下标 </strong>。</p>
 
@@ -50,4 +50,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 724&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/find-pivot-index/">https://leetcode-cn.com/problems/find-pivot-index/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 724&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/find-pivot-index/">https://leetcode.cn/problems/find-pivot-index/</a></p>

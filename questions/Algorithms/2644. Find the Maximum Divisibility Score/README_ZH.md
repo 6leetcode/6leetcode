@@ -1,0 +1,72 @@
+### [找出可整除性得分最大的整数](https://leetcode.cn/problems/find-the-maximum-divisibility-score)
+
+<p>给你两个整数数组 <code>nums</code> 和 <code>divisors</code> 。</p>
+
+<p><code>divisors[i]</code> 的 <strong>可整除性得分</strong> 等于满足 <code>nums[j]</code> 能被 <code>divisors[i]</code> 整除的下标 <code>j</code> 的数量。</p>
+
+<p>返回 <strong>可整除性得分</strong> 最大的整数 <code>divisors[i]</code> 。如果有多个整数具有最大得分，则返回数值最小的一个。</p>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">nums = [2,9,15,50], divisors = [5,3,7,2]</span></p>
+
+<p><strong>输出：</strong><span class="example-io">2</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p><code>divisors[0]</code>&nbsp;的可整除性分数为 2 因为&nbsp;<code>nums[2]</code> 和&nbsp;<code>nums[3]</code>&nbsp;能被 5 整除。</p>
+
+<p><code>divisors[1]</code> 的可整除性分数为 2 因为&nbsp;<code>nums[1]</code>&nbsp;和&nbsp;<code>nums[2]</code>&nbsp;能被 3 整除。</p>
+
+<p><code>divisors[2]</code> 的可整除性分数为 0 因为&nbsp;<code>nums</code>&nbsp;中没有数字能被 7 整除。</p>
+
+<p><code>divisors[3]</code> 的可整除性分数为 2 因为 <code>nums[0]</code> 和&nbsp;<code>nums[3]</code>&nbsp;能够被 2 整除。</p>
+
+<p>因为&nbsp;<code>divisors[0]</code>&nbsp;、<code>divisor[1]</code> 和&nbsp;<code>divisors[3]</code>&nbsp;有相同的可整除性分数，我们返回更小的那个&nbsp;<code>divisors[3]</code>。</p>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">nums = [4,7,9,3,9], divisors = [5,2,3]</span></p>
+
+<p><strong>输出：</strong><span class="example-io">3</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p><code>divisors[0]</code> 的可整除性分数为 0&nbsp;因为&nbsp;<code>nums</code>&nbsp;中没有数字能被 5 整除。</p>
+
+<p><code>divisors[1]</code> 的可整除性分数为 1 因为只有 <code>nums[0]</code>&nbsp;能被 2 整除。</p>
+
+<p><code>divisors[2]</code> 的可整除性分数为 3 因为&nbsp;<code>nums[2]</code>&nbsp;，<code>nums[3]</code>&nbsp;和&nbsp;<code>nums[4]</code>&nbsp;能被 3 整除。</p>
+</div>
+
+<p><strong class="example">示例 3：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">nums = [20,14,21,10], divisors = [10,16,20]</span></p>
+
+<p><strong>输出：</strong><span class="example-io">10</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p><code>divisors[0]</code> 的可整除性分数为 2 因为&nbsp;<code>nums[0]</code>&nbsp;和&nbsp;<code>nums[3]</code> 能被 10 整除。</p>
+
+<p><code>divisors[1]</code> 的可整除性分数为 0 因为&nbsp;<code>nums</code>&nbsp;中没有数字能被 16&nbsp;整除。</p>
+
+<p><code>divisors[2]</code> 的可整除性分数为 1 因为&nbsp;<code>nums[0]</code>&nbsp;能被 20&nbsp;整除。</p>
+
+<p>因为&nbsp;<code>divisors[0]</code>&nbsp;的可整除性分数最大，我们返回&nbsp;<code>divisors[0]</code>。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length, divisors.length &lt;= 1000</code></li>
+	<li><code>1 &lt;= nums[i], divisors[i] &lt;= 10<sup>9</sup></code></li>
+</ul>

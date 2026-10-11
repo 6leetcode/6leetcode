@@ -1,4 +1,4 @@
-### [反转之后不同整数的数目](https://leetcode-cn.com/problems/count-number-of-distinct-integers-after-reverse-operations)
+### [反转之后不同整数的数目](https://leetcode.cn/problems/count-number-of-distinct-integers-after-reverse-operations)
 
 <p>给你一个由 <strong>正</strong> 整数组成的数组 <code>nums</code> 。</p>
 

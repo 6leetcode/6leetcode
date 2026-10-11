@@ -1,4 +1,4 @@
-### [裁剪数字后查询第 K 小的数字](https://leetcode-cn.com/problems/query-kth-smallest-trimmed-number)
+### [裁剪数字后查询第 K 小的数字](https://leetcode.cn/problems/query-kth-smallest-trimmed-number)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的字符串数组&nbsp;<code>nums</code>&nbsp;，其中每个字符串 <strong>长度相等</strong>&nbsp;且只包含数字。</p>
 

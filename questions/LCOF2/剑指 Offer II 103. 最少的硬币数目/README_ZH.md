@@ -1,4 +1,4 @@
-### [最少的硬币数目](https://leetcode-cn.com/problems/gaM7Ch)
+### [最少的硬币数目](https://leetcode.cn/problems/gaM7Ch)
 
 <p>给定不同面额的硬币 <code>coins</code> 和一个总金额 <code>amount</code>。编写一个函数来计算可以凑成总金额所需的最少的硬币个数。如果没有任何一种硬币组合能组成总金额，返回&nbsp;<code>-1</code>。</p>
 
@@ -52,4 +52,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 322&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/coin-change/">https://leetcode-cn.com/problems/coin-change/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 322&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/coin-change/">https://leetcode.cn/problems/coin-change/</a></p>

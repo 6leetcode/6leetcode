@@ -1,4 +1,4 @@
-### [跳跃游戏 IV](https://leetcode-cn.com/problems/jump-game-iv)
+### [跳跃游戏 IV](https://leetcode.cn/problems/jump-game-iv)
 
 <p>给你一个整数数组&nbsp;<code>arr</code>&nbsp;，你一开始在数组的第一个元素处（下标为 0）。</p>
 

@@ -1,4 +1,4 @@
-### [有效的数独](https://leetcode-cn.com/problems/valid-sudoku)
+### [有效的数独](https://leetcode.cn/problems/valid-sudoku)
 
 <p>请你判断一个&nbsp;<code>9 x 9</code> 的数独是否有效。只需要<strong> 根据以下规则</strong> ，验证已经填入的数字是否有效即可。</p>
 
@@ -21,7 +21,7 @@
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
-<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/04/12/250px-sudoku-by-l2g-20050714svg.png" style="height:250px; width:250px" />
+<img src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/04/12/250px-sudoku-by-l2g-20050714svg.png" style="height:250px; width:250px" />
 <pre>
 <strong>输入：</strong>board = 
 [["5","3",".",".","7",".",".",".","."]

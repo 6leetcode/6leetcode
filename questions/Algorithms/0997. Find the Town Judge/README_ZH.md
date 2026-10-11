@@ -1,4 +1,4 @@
-### [找到小镇的法官](https://leetcode-cn.com/problems/find-the-town-judge)
+### [找到小镇的法官](https://leetcode.cn/problems/find-the-town-judge)
 
 <p>小镇里有 <code>n</code> 个人，按从 <code>1</code> 到 <code>n</code> 的顺序编号。传言称，这些人中有一个暗地里是小镇法官。</p>
 

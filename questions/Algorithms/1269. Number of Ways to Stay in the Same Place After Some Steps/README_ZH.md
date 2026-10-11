@@ -1,4 +1,4 @@
-### [停在原地的方案数](https://leetcode-cn.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps)
+### [停在原地的方案数](https://leetcode.cn/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps)
 
 <p>有一个长度为 <code>arrLen</code> 的数组，开始有一个指针在索引 <code>0</code> 处。</p>
 

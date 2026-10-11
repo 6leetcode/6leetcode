@@ -1,4 +1,4 @@
-### [最长递增路径](https://leetcode-cn.com/problems/fpTFWP)
+### [最长递增路径](https://leetcode.cn/problems/fpTFWP)
 
 <p>给定一个&nbsp;<code>m x n</code> 整数矩阵&nbsp;<code>matrix</code> ，找出其中 <strong>最长递增路径</strong> 的长度。</p>
 
@@ -45,4 +45,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 329&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/">https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 329&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/">https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/</a></p>

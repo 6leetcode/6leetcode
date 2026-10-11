@@ -1,4 +1,4 @@
-### [三合一](https://leetcode-cn.com/problems/three-in-one-lcci)
+### [三合一](https://leetcode.cn/problems/three-in-one-lcci)
 
 <p>三合一。描述如何只用一个数组来实现三个栈。</p>
 
@@ -6,7 +6,7 @@
 
 <p>构造函数会传入一个<code>stackSize</code>参数，代表每个栈的大小。</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>示例 1：</strong></p>
 
 <pre>
 <strong> 输入</strong>：
@@ -17,7 +17,7 @@
 <strong>说明</strong>：当栈为空时`pop, peek`返回-1，当栈满时`push`不压入元素。
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>示例 2：</strong></p>
 
 <pre>
 <strong> 输入</strong>：

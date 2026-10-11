@@ -1,4 +1,4 @@
-### [第 N 个神奇数字](https://leetcode-cn.com/problems/nth-magical-number)
+### [第 N 个神奇数字](https://leetcode.cn/problems/nth-magical-number)
 
 <p>一个正整数如果能被 <code>a</code> 或 <code>b</code> 整除，那么它是神奇的。</p>
 

@@ -1,4 +1,4 @@
-### [强整数](https://leetcode-cn.com/problems/powerful-integers)
+### [强整数](https://leetcode.cn/problems/powerful-integers)
 
 <p>给定三个整数 <code>x</code>&nbsp;、&nbsp;<code>y</code>&nbsp;和<em>&nbsp;</em><code>bound</code><em>&nbsp;</em>，返回 <em>值小于或等于&nbsp;<code>bound</code>&nbsp;的所有&nbsp;<strong>强整数</strong>&nbsp;组成的列表</em>&nbsp;。</p>
 

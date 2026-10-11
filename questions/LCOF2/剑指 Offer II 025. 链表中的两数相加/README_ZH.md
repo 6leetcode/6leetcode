@@ -1,4 +1,4 @@
-### [链表中的两数相加](https://leetcode-cn.com/problems/lMSNwu)
+### [链表中的两数相加](https://leetcode.cn/problems/lMSNwu)
 
 <p>给定两个 <strong>非空链表</strong> <code>l1</code>和 <code>l2</code>&nbsp;来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。</p>
 
@@ -45,4 +45,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 445&nbsp;题相同：<a href="https://leetcode-cn.com/problems/add-two-numbers-ii/">https://leetcode-cn.com/problems/add-two-numbers-ii/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 445&nbsp;题相同：<a href="https://leetcode.cn/problems/add-two-numbers-ii/">https://leetcode.cn/problems/add-two-numbers-ii/</a></p>

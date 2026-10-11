@@ -1,4 +1,4 @@
-### [机器人能否返回原点](https://leetcode-cn.com/problems/robot-return-to-origin)
+### [机器人能否返回原点](https://leetcode.cn/problems/robot-return-to-origin)
 
 <p>在二维平面上，有一个机器人从原点 <code>(0, 0)</code> 开始。给出它的移动顺序，判断这个机器人在完成移动后是否在<strong>&nbsp;<code>(0, 0)</code> 处结束</strong>。</p>
 

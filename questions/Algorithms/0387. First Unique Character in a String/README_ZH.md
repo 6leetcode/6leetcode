@@ -1,4 +1,4 @@
-### [字符串中的第一个唯一字符](https://leetcode-cn.com/problems/first-unique-character-in-a-string)
+### [字符串中的第一个唯一字符](https://leetcode.cn/problems/first-unique-character-in-a-string)
 
 <p>给定一个字符串&nbsp;<code>s</code>&nbsp;，找到 <em>它的第一个不重复的字符，并返回它的索引</em> 。如果不存在，则返回 <code>-1</code>&nbsp;。</p>
 

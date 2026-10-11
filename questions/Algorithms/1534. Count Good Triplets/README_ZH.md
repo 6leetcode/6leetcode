@@ -1,4 +1,4 @@
-### [统计好三元组](https://leetcode-cn.com/problems/count-good-triplets)
+### [统计好三元组](https://leetcode.cn/problems/count-good-triplets)
 
 <p>给你一个整数数组 <code>arr</code> ，以及 <code>a</code>、<code>b</code> 、<code>c</code> 三个整数。请你统计其中好三元组的数量。</p>
 

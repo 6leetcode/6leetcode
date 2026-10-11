@@ -1,4 +1,4 @@
-### [图中的最长环](https://leetcode-cn.com/problems/longest-cycle-in-a-graph)
+### [图中的最长环](https://leetcode.cn/problems/longest-cycle-in-a-graph)
 
 <p>给你一个 <code>n</code>&nbsp;个节点的 <b>有向图</b>&nbsp;，节点编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;，其中每个节点&nbsp;<strong>至多</strong>&nbsp;有一条出边。</p>
 

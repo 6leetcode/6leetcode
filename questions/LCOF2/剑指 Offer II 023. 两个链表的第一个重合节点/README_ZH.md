@@ -1,4 +1,4 @@
-### [两个链表的第一个重合节点](https://leetcode-cn.com/problems/3u1WK4)
+### [两个链表的第一个重合节点](https://leetcode.cn/problems/3u1WK4)
 
 <p>给定两个单链表的头节点&nbsp;<code>headA</code> 和 <code>headB</code> ，请找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 <code>null</code> 。</p>
 
@@ -69,4 +69,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 160&nbsp;题相同：<a href="https://leetcode-cn.com/problems/intersection-of-two-linked-lists/">https://leetcode-cn.com/problems/intersection-of-two-linked-lists/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 160&nbsp;题相同：<a href="https://leetcode.cn/problems/intersection-of-two-linked-lists/">https://leetcode.cn/problems/intersection-of-two-linked-lists/</a></p>

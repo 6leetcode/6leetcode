@@ -1,4 +1,4 @@
-### [无限棋局](https://leetcode-cn.com/problems/fsa7oZ)
+### [无限棋局](https://leetcode.cn/problems/fsa7oZ)
 
 小力正在通过残局练习来备战「力扣挑战赛」中的「五子棋」项目，他想请你能帮他预测当前残局的输赢情况。棋盘中的棋子分布信息记录于二维数组 `pieces` 中，其中 `pieces[i] = [x,y,color]` 表示第 `i` 枚棋子的横坐标为 `x`，纵坐标为 `y`，棋子颜色为 `color`(`0` 表示黑棋，`1` 表示白棋)。假如黑棋先行，并且黑棋和白棋都按最优策略落子，请你求出当前棋局在三步（按 **黑、白、黑** 的落子顺序）之内的输赢情况（三步之内先构成同行、列或对角线连续同颜色的至少 5 颗即为获胜）：
 - 黑棋胜, 请返回 `"Black"`
@@ -26,7 +26,7 @@
 > 输出：`"Black"`
 >
 > 解释：三步之内黑棋必胜，以下是一种可能的落子情况：
->![902b87df29998b1c181146c8fdb3a4b6.gif](https://pic.leetcode-cn.com/1629800639-KabOfY-902b87df29998b1c181146c8fdb3a4b6.gif){:width="300px"}
+>![902b87df29998b1c181146c8fdb3a4b6.gif](https://pic.leetcode.cn/1629800639-KabOfY-902b87df29998b1c181146c8fdb3a4b6.gif){:width="300px"}
 
 
 

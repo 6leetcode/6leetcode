@@ -1,4 +1,4 @@
-### [灯泡开关](https://leetcode-cn.com/problems/bulb-switcher)
+### [灯泡开关](https://leetcode.cn/problems/bulb-switcher)
 
 <p>初始时有&nbsp;<code>n</code><em> </em>个灯泡处于关闭状态。第一轮，你将会打开所有灯泡。接下来的第二轮，你将会每两个灯泡关闭第二个。</p>
 

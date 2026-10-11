@@ -1,6 +1,6 @@
 ### [Construct the Lexicographically Largest Valid Sequence](https://leetcode.com/problems/construct-the-lexicographically-largest-valid-sequence)
 
-<p>Given an integer <code>n</code>, find a sequence that satisfies all of the following:</p>
+<p>Given an integer <code>n</code>, find a sequence with elements in the range <code>[1, n]</code> that satisfies all of the following:</p>
 
 <ul>
 	<li>The integer <code>1</code> occurs once in the sequence.</li>

@@ -1,4 +1,4 @@
-### [分配重复整数](https://leetcode-cn.com/problems/distribute-repeating-integers)
+### [分配重复整数](https://leetcode.cn/problems/distribute-repeating-integers)
 
 <p>给你一个长度为 <code>n</code> 的整数数组 <code>nums</code> ，这个数组中至多有 <code>50</code> 个不同的值。同时你有 <code>m</code> 个顾客的订单 <code>quantity</code> ，其中，整数 <code>quantity[i]</code> 是第 <code>i</code> 位顾客订单的数目。请你判断是否能将 <code>nums</code> 中的整数分配给这些顾客，且满足：</p>
 

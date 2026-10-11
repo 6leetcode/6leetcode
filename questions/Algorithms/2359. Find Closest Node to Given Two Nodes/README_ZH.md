@@ -1,4 +1,4 @@
-### [找到离给定两个节点最近的节点](https://leetcode-cn.com/problems/find-closest-node-to-given-two-nodes)
+### [找到离给定两个节点最近的节点](https://leetcode.cn/problems/find-closest-node-to-given-two-nodes)
 
 <p>给你一个 <code>n</code>&nbsp;个节点的 <strong>有向图</strong>&nbsp;，节点编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;，每个节点 <strong>至多</strong>&nbsp;有一条出边。</p>
 

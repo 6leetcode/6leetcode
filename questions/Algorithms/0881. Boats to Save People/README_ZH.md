@@ -1,4 +1,4 @@
-### [救生艇](https://leetcode-cn.com/problems/boats-to-save-people)
+### [救生艇](https://leetcode.cn/problems/boats-to-save-people)
 
 <p>给定数组<meta charset="UTF-8" />&nbsp;<code>people</code>&nbsp;。<code>people[i]</code>表示第 <code>i</code><sup>&nbsp;</sup>个人的体重&nbsp;，<strong>船的数量不限</strong>，每艘船可以承载的最大重量为&nbsp;<code>limit</code>。</p>
 

@@ -1,4 +1,4 @@
-### [监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras)
+### [监控二叉树](https://leetcode.cn/problems/binary-tree-cameras)
 
 <p>给定一个二叉树，我们在树的节点上安装摄像头。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/29/bst_cameras_01.png" style="height: 163px; width: 138px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/29/bst_cameras_01.png" style="height: 163px; width: 138px;"></p>
 
 <pre><strong>输入：</strong>[0,0,null,0,0]
 <strong>输出：</strong>1
@@ -19,7 +19,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/29/bst_cameras_02.png" style="height: 312px; width: 139px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/12/29/bst_cameras_02.png" style="height: 312px; width: 139px;"></p>
 
 <pre><strong>输入：</strong>[0,0,null,0,null,0,null,null,0]
 <strong>输出：</strong>2

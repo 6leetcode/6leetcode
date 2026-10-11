@@ -1,4 +1,4 @@
-### [K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group)
+### [K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group)
 
 <p>给你链表的头节点 <code>head</code> ，每&nbsp;<code>k</code><em>&nbsp;</em>个节点一组进行翻转，请你返回修改后的链表。</p>
 

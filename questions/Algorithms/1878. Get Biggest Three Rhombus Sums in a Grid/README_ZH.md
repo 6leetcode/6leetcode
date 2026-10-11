@@ -1,4 +1,4 @@
-### [矩阵中最大的三个菱形和](https://leetcode-cn.com/problems/get-biggest-three-rhombus-sums-in-a-grid)
+### [矩阵中最大的三个菱形和](https://leetcode.cn/problems/get-biggest-three-rhombus-sums-in-a-grid)
 
 <p>给你一个 <code>m x n</code> 的整数矩阵 <code>grid</code> 。</p>
 

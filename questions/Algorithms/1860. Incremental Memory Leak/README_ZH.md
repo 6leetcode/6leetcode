@@ -1,4 +1,4 @@
-### [增长的内存泄露](https://leetcode-cn.com/problems/incremental-memory-leak)
+### [增长的内存泄露](https://leetcode.cn/problems/incremental-memory-leak)
 
 <p>给你两个整数 <code>memory1</code> 和 <code>memory2</code> 分别表示两个内存条剩余可用内存的位数。现在有一个程序每秒递增的速度消耗着内存。</p>
 

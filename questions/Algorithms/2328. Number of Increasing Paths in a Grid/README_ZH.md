@@ -1,4 +1,4 @@
-### [网格图中递增路径的数目](https://leetcode-cn.com/problems/number-of-increasing-paths-in-a-grid)
+### [网格图中递增路径的数目](https://leetcode.cn/problems/number-of-increasing-paths-in-a-grid)
 
 <p>给你一个&nbsp;<code>m x n</code>&nbsp;的整数网格图&nbsp;<code>grid</code>&nbsp;，你可以从一个格子移动到&nbsp;<code>4</code>&nbsp;个方向相邻的任意一个格子。</p>
 

@@ -1,4 +1,4 @@
-### [矩阵中的距离](https://leetcode-cn.com/problems/2bCMpM)
+### [矩阵中的距离](https://leetcode.cn/problems/2bCMpM)
 
 <p>给定一个由 <code>0</code> 和 <code>1</code> 组成的矩阵 <code>mat</code>&nbsp;，请输出一个大小相同的矩阵，其中每一个格子是 <code>mat</code> 中对应位置元素到最近的 <code>0</code> 的距离。</p>
 
@@ -39,4 +39,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 542&nbsp;题相同：<a href="https://leetcode-cn.com/problems/01-matrix/">https://leetcode-cn.com/problems/01-matrix/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 542&nbsp;题相同：<a href="https://leetcode.cn/problems/01-matrix/">https://leetcode.cn/problems/01-matrix/</a></p>

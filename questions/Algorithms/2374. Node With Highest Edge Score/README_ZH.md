@@ -1,4 +1,4 @@
-### [边积分最高的节点](https://leetcode-cn.com/problems/node-with-highest-edge-score)
+### [边积分最高的节点](https://leetcode.cn/problems/node-with-highest-edge-score)
 
 <p>给你一个有向图，图中有 <code>n</code> 个节点，节点编号从 <code>0</code> 到 <code>n - 1</code> ，其中每个节点都 <strong>恰有一条</strong> 出边。</p>
 

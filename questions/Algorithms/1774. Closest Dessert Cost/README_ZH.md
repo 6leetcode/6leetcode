@@ -1,4 +1,4 @@
-### [最接近目标价格的甜点成本](https://leetcode-cn.com/problems/closest-dessert-cost)
+### [最接近目标价格的甜点成本](https://leetcode.cn/problems/closest-dessert-cost)
 
 <p>你打算做甜点，现在需要购买配料。目前共有 <code>n</code> 种冰激凌基料和 <code>m</code> 种配料可供选购。而制作甜点需要遵循以下几条规则：</p>
 

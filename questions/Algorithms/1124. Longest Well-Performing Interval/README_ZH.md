@@ -1,4 +1,4 @@
-### [表现良好的最长时间段](https://leetcode-cn.com/problems/longest-well-performing-interval)
+### [表现良好的最长时间段](https://leetcode.cn/problems/longest-well-performing-interval)
 
 <p>给你一份工作时间表&nbsp;<code>hours</code>，上面记录着某一位员工每天的工作小时数。</p>
 

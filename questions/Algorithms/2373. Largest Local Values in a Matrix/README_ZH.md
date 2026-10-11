@@ -1,4 +1,4 @@
-### [矩阵中的局部最大值](https://leetcode-cn.com/problems/largest-local-values-in-a-matrix)
+### [矩阵中的局部最大值](https://leetcode.cn/problems/largest-local-values-in-a-matrix)
 
 <p>给你一个大小为 <code>n x n</code> 的整数矩阵 <code>grid</code> 。</p>
 

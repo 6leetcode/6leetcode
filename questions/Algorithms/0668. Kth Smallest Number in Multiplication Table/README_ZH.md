@@ -1,4 +1,4 @@
-### [乘法表中第k小的数](https://leetcode-cn.com/problems/kth-smallest-number-in-multiplication-table)
+### [乘法表中第k小的数](https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table)
 
 <p>几乎每一个人都用&nbsp;<a href="https://baike.baidu.com/item/%E4%B9%98%E6%B3%95%E8%A1%A8">乘法表</a>。但是你能在乘法表中快速找到第 <code>k</code> 小的数字吗？</p>
 

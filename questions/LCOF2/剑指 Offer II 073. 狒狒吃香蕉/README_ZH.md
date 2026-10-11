@@ -1,4 +1,4 @@
-### [狒狒吃香蕉](https://leetcode-cn.com/problems/nZZqjQ)
+### [狒狒吃香蕉](https://leetcode.cn/problems/nZZqjQ)
 
 <p>狒狒喜欢吃香蕉。这里有 <code>n</code> 堆香蕉，第 <code>i</code> 堆中有&nbsp;<code>piles[i]</code>&nbsp;根香蕉。警卫已经离开了，将在 <code>h</code> 小时后回来。</p>
 
@@ -46,4 +46,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" /><strong>注意：</strong>本题与主站 875&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/koko-eating-bananas/">https://leetcode-cn.com/problems/koko-eating-bananas/</a></p>
+<p><meta charset="UTF-8" /><strong>注意：</strong>本题与主站 875&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/koko-eating-bananas/">https://leetcode.cn/problems/koko-eating-bananas/</a></p>

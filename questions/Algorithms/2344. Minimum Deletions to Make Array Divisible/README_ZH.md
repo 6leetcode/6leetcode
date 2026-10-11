@@ -1,4 +1,4 @@
-### [使数组可以被整除的最少删除次数](https://leetcode-cn.com/problems/minimum-deletions-to-make-array-divisible)
+### [使数组可以被整除的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-array-divisible)
 
 <p>给你两个正整数数组&nbsp;<code>nums</code> 和&nbsp;<code>numsDivide</code>&nbsp;。你可以从&nbsp;<code>nums</code>&nbsp;中删除任意数目的元素。</p>
 

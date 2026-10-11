@@ -1,4 +1,4 @@
-### [递增子序列](https://leetcode-cn.com/problems/increasing-subsequences)
+### [递增子序列](https://leetcode.cn/problems/increasing-subsequences)
 
 <p>给你一个整数数组 <code>nums</code> ，找出并返回所有该数组中不同的递增子序列，递增子序列中 <strong>至少有两个元素</strong> 。你可以按 <strong>任意顺序</strong> 返回答案。</p>
 

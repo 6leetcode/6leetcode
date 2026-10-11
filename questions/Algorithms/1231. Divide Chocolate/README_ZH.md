@@ -1,2 +1,2 @@
-### [分享巧克力](https://leetcode-cn.com/problems/divide-chocolate)
+### [分享巧克力](https://leetcode.cn/problems/divide-chocolate)
 

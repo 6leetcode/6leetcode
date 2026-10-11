@@ -1,4 +1,4 @@
-### [链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node)
+### [链表随机节点](https://leetcode.cn/problems/linked-list-random-node)
 
 <p>给你一个单链表，随机选择链表的一个节点，并返回相应的节点值。每个节点<strong> 被选中的概率一样</strong> 。</p>
 

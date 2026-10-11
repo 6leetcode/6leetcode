@@ -1,4 +1,4 @@
-### [序列化与反序列化二叉树](https://leetcode-cn.com/problems/h54YBf)
+### [序列化与反序列化二叉树](https://leetcode.cn/problems/h54YBf)
 
 <p>序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。</p>
 
@@ -48,4 +48,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 297&nbsp;题相同：<a href="https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/">https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/</a>&nbsp;</p>
+<p><meta charset="UTF-8" />注意：本题与主站 297&nbsp;题相同：<a href="https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/">https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/</a>&nbsp;</p>

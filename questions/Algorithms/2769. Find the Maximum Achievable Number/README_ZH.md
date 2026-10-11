@@ -1,0 +1,51 @@
+### [找出最大的可达成数字](https://leetcode.cn/problems/find-the-maximum-achievable-number)
+
+<p>给你两个整数 <code>num</code> 和 <code>t</code> 。如果整数 <code>x</code> 可以在执行下述操作 <strong>不超过</strong> <code>t</code> 次的情况下变为与 <code>num</code> 相等，则称其为 <strong>可达成数字</strong> ：</p>
+
+<ul>
+	<li>每次操作将 <code>x</code> 的值增加或减少 <code>1</code> ，同时可以选择将 <code>num</code> 的值增加或减少 <code>1</code> 。</li>
+</ul>
+
+<p>返回所有可达成数字中的 <strong>最大</strong> 值 <code>x</code>。</p>
+
+<p>&nbsp;</p>
+
+<p><strong>示例 1：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong>num = 4, t = 1</p>
+
+<p><strong>输出：</strong>6</p>
+
+<p><strong>解释：</strong></p>
+
+<p>执行下述操作可以使最大可达成数字等于 <code>num</code> ：</p>
+
+<ul>
+	<li>最大可达成数字减少 1 ，同时 <code>num</code> 增加 1 。</li>
+</ul>
+</div>
+
+<p><strong>示例 2：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong>num = 3, t = 2</p>
+
+<p><strong>输出：</strong>7</p>
+
+<p><strong>解释：</strong></p>
+
+<p>执行两次下述操作可以使最大可达成数字等于 num ：</p>
+
+<ul>
+	<li>最大可达成数字减少 1 ，同时 <code>num</code> 增加 1。</li>
+</ul>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 &lt;= num, t&nbsp;&lt;= 50</code></li>
+</ul>

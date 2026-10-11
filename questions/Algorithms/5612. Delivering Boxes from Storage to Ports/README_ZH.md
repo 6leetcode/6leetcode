@@ -1,4 +1,4 @@
-### [从仓库到码头运输箱子](https://leetcode-cn.com/problems/delivering-boxes-from-storage-to-ports)
+### [从仓库到码头运输箱子](https://leetcode.cn/problems/delivering-boxes-from-storage-to-ports)
 
 <p>你有一辆货运卡车，你需要用这一辆车把一些箱子从仓库运送到码头。这辆卡车每次运输有 <strong>箱子数目的限制</strong> 和 <strong>总重量的限制</strong> 。</p>
 

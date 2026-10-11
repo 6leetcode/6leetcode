@@ -1,4 +1,4 @@
-### [分割数组的方案数](https://leetcode-cn.com/problems/number-of-ways-to-split-array)
+### [分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始长度为 <code>n</code>&nbsp;的整数数组&nbsp;<code>nums</code>&nbsp;。<br />
 <span style="">如果以下描述为真，那么</span><span style=""> </span><code>nums</code>&nbsp;在下标 <code>i</code>&nbsp;处有一个 <strong>合法的分割</strong>&nbsp;：</p>

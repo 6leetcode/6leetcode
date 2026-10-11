@@ -1,4 +1,4 @@
-### [最多牌组数](https://leetcode-cn.com/problems/Up5XYM)
+### [最多牌组数](https://leetcode.cn/problems/Up5XYM)
 
 麻将的游戏规则中，共有两种方式凑成「一组牌」：
 - 顺子：三张牌面数字连续的麻将，例如 [4,5,6]

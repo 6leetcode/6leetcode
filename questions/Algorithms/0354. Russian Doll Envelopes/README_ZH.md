@@ -1,4 +1,4 @@
-### [俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes)
+### [俄罗斯套娃信封问题](https://leetcode.cn/problems/russian-doll-envelopes)
 
 <p>给你一个二维整数数组 <code>envelopes</code> ，其中 <code>envelopes[i] = [w<sub>i</sub>, h<sub>i</sub>]</code> ，表示第 <code>i</code> 个信封的宽度和高度。</p>
 

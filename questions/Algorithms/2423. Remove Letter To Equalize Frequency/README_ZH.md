@@ -1,4 +1,4 @@
-### [删除字符使频率相同](https://leetcode-cn.com/problems/remove-letter-to-equalize-frequency)
+### [删除字符使频率相同](https://leetcode.cn/problems/remove-letter-to-equalize-frequency)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的字符串&nbsp;<code>word</code>&nbsp;，字符串只包含小写英文字母。你需要选择 <strong>一个</strong>&nbsp;下标并 <strong>删除</strong>&nbsp;下标处的字符，使得 <code>word</code>&nbsp;中剩余每个字母出现 <strong>频率</strong>&nbsp;相同。</p>
 
@@ -15,14 +15,16 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><b>输入：</b>word = "abcc"
+<pre>
+<b>输入：</b>word = "abcc"
 <b>输出：</b>true
-<b>解释：</b>选择下标 3 并删除该字母，word 变成 "abc" 且每个字母出现频率都为 1 。
+<b>解释：</b>选择下标 3 并删除该字母：word 变成 "abc" 且每个字母出现频率都为 1 。
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><b>输入：</b>word = "aazz"
+<pre>
+<b>输入：</b>word = "aazz"
 <b>输出：</b>false
 <b>解释：</b>我们必须删除一个字母，所以要么 "a" 的频率变为 1 且 "z" 的频率为 2 ，要么两个字母频率反过来。所以不可能让剩余所有字母出现频率相同。
 </pre>

@@ -1,4 +1,4 @@
-### [二叉树中的最长交错路径](https://leetcode-cn.com/problems/longest-zigzag-path-in-a-binary-tree)
+### [二叉树中的最长交错路径](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree)
 
 <p>给你一棵以&nbsp;<code>root</code>&nbsp;为根的二叉树，二叉树中的交错路径定义如下：</p>
 
@@ -17,7 +17,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/03/07/sample_1_1702.png" style="height: 283px; width: 151px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/03/07/sample_1_1702.png" style="height: 283px; width: 151px;"></strong></p>
 
 <pre><strong>输入：</strong>root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]
 <strong>输出：</strong>3
@@ -26,7 +26,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/03/07/sample_2_1702.png" style="height: 253px; width: 120px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/03/07/sample_2_1702.png" style="height: 253px; width: 120px;"></strong></p>
 
 <pre><strong>输入：</strong>root = [1,1,1,null,1,null,null,1,1,null,1]
 <strong>输出：</strong>4

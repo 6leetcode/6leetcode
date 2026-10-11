@@ -1,4 +1,4 @@
-### [字符串中的所有变位词](https://leetcode-cn.com/problems/VabMRr)
+### [字符串中的所有变位词](https://leetcode.cn/problems/VabMRr)
 
 <p>给定两个字符串&nbsp;<code>s</code>&nbsp;和<b>&nbsp;</b><code>p</code>，找到&nbsp;<code>s</code><strong>&nbsp;</strong>中所有 <code>p</code> 的&nbsp;<strong>变位词&nbsp;</strong>的子串，返回这些子串的起始索引。不考虑答案输出的顺序。</p>
 
@@ -38,4 +38,4 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 438&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/" style="background-color: rgb(255, 255, 255);">https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/</a></p>
+<p>注意：本题与主站 438&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/find-all-anagrams-in-a-string/" style="background-color: rgb(255, 255, 255);">https://leetcode.cn/problems/find-all-anagrams-in-a-string/</a></p>

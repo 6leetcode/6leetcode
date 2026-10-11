@@ -1,4 +1,4 @@
-### [所有元音按顺序排布的最长子字符串](https://leetcode-cn.com/problems/longest-substring-of-all-vowels-in-order)
+### [所有元音按顺序排布的最长子字符串](https://leetcode.cn/problems/longest-substring-of-all-vowels-in-order)
 
 <p>当一个字符串满足如下条件时，我们称它是 <b>美丽的</b> ：</p>
 

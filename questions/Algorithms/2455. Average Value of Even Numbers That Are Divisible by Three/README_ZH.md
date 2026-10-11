@@ -1,4 +1,4 @@
-### [可被三整除的偶数的平均值](https://leetcode-cn.com/problems/average-value-of-even-numbers-that-are-divisible-by-three)
+### [可被三整除的偶数的平均值](https://leetcode.cn/problems/average-value-of-even-numbers-that-are-divisible-by-three)
 
 <p>给你一个由正整数组成的整数数组 <code>nums</code> ，返回其中可被 <code>3</code> 整除的所有偶数的平均值。</p>
 

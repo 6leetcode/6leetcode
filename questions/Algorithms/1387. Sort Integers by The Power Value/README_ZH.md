@@ -1,4 +1,4 @@
-### [将整数按权重排序](https://leetcode-cn.com/problems/sort-integers-by-the-power-value)
+### [将整数按权重排序](https://leetcode.cn/problems/sort-integers-by-the-power-value)
 
 <p>我们将整数 <code>x</code>&nbsp;的 <strong>权重</strong> 定义为按照下述规则将 <code>x</code>&nbsp;变成 <code>1</code>&nbsp;所需要的步数：</p>
 

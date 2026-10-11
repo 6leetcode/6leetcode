@@ -1,4 +1,4 @@
-### [前K个高频单词](https://leetcode-cn.com/problems/top-k-frequent-words)
+### [前K个高频单词](https://leetcode.cn/problems/top-k-frequent-words)
 
 <p>给定一个单词列表&nbsp;<code>words</code>&nbsp;和一个整数 <code>k</code> ，返回前&nbsp;<code>k</code><em>&nbsp;</em>个出现次数最多的单词。</p>
 
@@ -30,7 +30,7 @@
 
 <ul>
 	<li><code>1 &lt;= words.length &lt;= 500</code></li>
-	<li><code>1 &lt;= words[i] &lt;= 10</code></li>
+	<li><code>1 &lt;= words[i].length &lt;= 10</code></li>
 	<li><code>words[i]</code>&nbsp;由小写英文字母组成。</li>
 	<li><code>k</code> 的取值范围是&nbsp;<code>[1, <strong>不同</strong> words[i] 的数量]</code></li>
 </ul>

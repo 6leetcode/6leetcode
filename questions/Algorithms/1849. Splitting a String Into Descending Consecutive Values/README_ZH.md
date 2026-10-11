@@ -1,4 +1,4 @@
-### [将字符串拆分为递减的连续值](https://leetcode-cn.com/problems/splitting-a-string-into-descending-consecutive-values)
+### [将字符串拆分为递减的连续值](https://leetcode.cn/problems/splitting-a-string-into-descending-consecutive-values)
 
 <p>给你一个仅由数字组成的字符串 <code>s</code> 。</p>
 

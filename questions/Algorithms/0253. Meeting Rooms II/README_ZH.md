@@ -1,2 +1,2 @@
-### [会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii)
+### [会议室 II](https://leetcode.cn/problems/meeting-rooms-ii)
 

@@ -1,2 +1,2 @@
-### [删除回文子数组](https://leetcode-cn.com/problems/palindrome-removal)
+### [删除回文子数组](https://leetcode.cn/problems/palindrome-removal)
 

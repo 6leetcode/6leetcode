@@ -1,4 +1,4 @@
-### [奇偶树](https://leetcode-cn.com/problems/even-odd-tree)
+### [奇偶树](https://leetcode.cn/problems/even-odd-tree)
 
 <p>如果一棵二叉树满足下述几个条件，则可以称为 <strong>奇偶树</strong> ：</p>
 
@@ -14,7 +14,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/10/04/sample_1_1966.png" style="height: 229px; width: 362px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/10/04/sample_1_1966.png" style="height: 229px; width: 362px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>root = [1,10,4,3,null,7,9,12,8,6,null,null,2]
@@ -29,7 +29,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/10/04/sample_2_1966.png" style="height: 167px; width: 363px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/10/04/sample_2_1966.png" style="height: 167px; width: 363px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>root = [5,4,2,3,3,7]
@@ -43,7 +43,7 @@
 
 <p><strong>示例 3：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/10/04/sample_1_333_1966.png" style="height: 167px; width: 363px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/10/04/sample_1_333_1966.png" style="height: 167px; width: 363px;" /></p>
 
 <pre>
 <strong>输入：</strong>root = [5,9,1,3,5,7]

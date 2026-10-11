@@ -1,6 +1,6 @@
 ### [Rotate Array](https://leetcode.com/problems/rotate-array)
 
-<p>Given an array, rotate the array to the right by <code>k</code> steps, where <code>k</code> is non-negative.</p>
+<p>Given an integer array <code>nums</code>, rotate the array to the right by <code>k</code> steps, where <code>k</code> is non-negative.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

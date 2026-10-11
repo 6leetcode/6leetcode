@@ -1,4 +1,4 @@
-### [最少回文分割](https://leetcode-cn.com/problems/omKAoA)
+### [最少回文分割](https://leetcode.cn/problems/omKAoA)
 
 <p>给定一个字符串 <code>s</code>，请将 <code>s</code> 分割成一些子串，使每个子串都是回文串。</p>
 
@@ -43,4 +43,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 132&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/palindrome-partitioning-ii/">https://leetcode-cn.com/problems/palindrome-partitioning-ii/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 132&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/palindrome-partitioning-ii/">https://leetcode.cn/problems/palindrome-partitioning-ii/</a></p>

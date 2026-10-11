@@ -1,4 +1,4 @@
-### [寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number)
+### [寻找重复数](https://leetcode.cn/problems/find-the-duplicate-number)
 
 <p>给定一个包含&nbsp;<code>n + 1</code> 个整数的数组&nbsp;<code>nums</code> ，其数字都在&nbsp;<code>[1, n]</code>&nbsp;范围内（包括 <code>1</code> 和 <code>n</code>），可知至少存在一个重复的整数。</p>
 
@@ -21,6 +21,15 @@
 <strong>输入：</strong>nums = [3,1,3,4,2]
 <strong>输出：</strong>3
 </pre>
+
+<p><strong>示例 3 :</strong></p>
+
+<pre>
+<strong>输入：</strong>nums = [3,3,3,3,3]
+<strong>输出：</strong>3
+</pre>
+
+<p>&nbsp;</p>
 
 <p>&nbsp;</p>
 

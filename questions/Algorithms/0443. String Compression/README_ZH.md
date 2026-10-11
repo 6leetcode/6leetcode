@@ -1,4 +1,4 @@
-### [压缩字符串](https://leetcode-cn.com/problems/string-compression)
+### [压缩字符串](https://leetcode.cn/problems/string-compression)
 
 <p>给你一个字符数组 <code>chars</code> ，请使用下述算法压缩：</p>
 
@@ -15,30 +15,34 @@
 
 <p>你必须设计并实现一个只使用常量额外空间的算法来解决此问题。</p>
 
+<p><strong>注意：</strong>数组中超出返回长度的字符无关紧要，应予忽略。</p>
+
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
 <pre>
 <strong>输入：</strong>chars = ["a","a","b","b","c","c","c"]
-<strong>输出：</strong>返回 6 ，输入数组的前 6 个字符应该是：["a","2","b","2","c","3"]
-<strong>解释：</strong>"aa" 被 "a2" 替代。"bb" 被 "b2" 替代。"ccc" 被 "c3" 替代。
+<strong>输出：</strong>6
+<strong>解释：</strong>分组是 "aa"、"bb" 和 "ccc"，压缩为 "a2b2c3"。
+在原地修改输入数组之后，chars 的前 6 个字符应为 ["a","2","b","2","c","3"]。
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>chars = ["a"]
-<strong>输出：</strong>返回 1 ，输入数组的前 1 个字符应该是：["a"]
-<strong>解释：</strong>唯一的组是“a”，它保持未压缩，因为它是一个字符。
-</pre>
+<strong>输出：</strong>1
+<strong>解释：</strong>唯一的组是 "a"，因为它是一个单独的字符，所以保持不变。
+在原地修改输入数组后，chars 的第一个字符应为 ["a"]。</pre>
 
 <p><strong>示例 3：</strong></p>
 
 <pre>
 <strong>输入：</strong>chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
-<strong>输出：</strong>返回 4 ，输入数组的前 4 个字符应该是：["a","b","1","2"]。
-<strong>解释：</strong>由于字符 "a" 不重复，所以不会被压缩。"bbbbbbbbbbbb" 被 “b12” 替代。
+<strong>输出：</strong>4
+<strong>解释：</strong>分组是 "a" 和 "bbbbbbbbbbbb"，压缩为"ab12"。
+在对输入数组进行原地修改后，chars 的前 4 个字符应为 ["a","b","1","2"]。
 </pre>
 
 <p>&nbsp;</p>

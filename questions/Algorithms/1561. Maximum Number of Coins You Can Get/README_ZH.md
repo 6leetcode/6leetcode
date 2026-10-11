@@ -1,4 +1,4 @@
-### [你可以获得的最大硬币数目](https://leetcode-cn.com/problems/maximum-number-of-coins-you-can-get)
+### [你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get)
 
 <p>有 3n 堆数目不一的硬币，你和你的朋友们打算按以下方式分硬币：</p>
 

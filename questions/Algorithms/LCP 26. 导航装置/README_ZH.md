@@ -1,4 +1,4 @@
-### [导航装置](https://leetcode-cn.com/problems/hSRGyL)
+### [导航装置](https://leetcode.cn/problems/hSRGyL)
 
 小扣参加的秋日市集景区共有 $N$ 个景点，景点编号为 $1$~$N$。景点内设有 $N-1$ 条双向道路，使所有景点形成了一个二叉树结构，根结点记为 `root`，景点编号即为节点值。
 
@@ -11,7 +11,7 @@
 >
 >解释：在景点 1、3 或景点 1、4 或景点 3、4 设置导航装置。
 >
->![image.png](https://pic.leetcode-cn.com/1597996812-tqrgwu-image.png){:height="250px"}
+>![image.png](https://pic.leetcode.cn/1597996812-tqrgwu-image.png){:height="250px"}
 
 
 
@@ -22,7 +22,7 @@
 >
 >解释：在景点 3、4 设置导航装置皆可。
 >
->![image.png](https://pic.leetcode-cn.com/1597996826-EUQRyz-image.png){:height="200px"}
+>![image.png](https://pic.leetcode.cn/1597996826-EUQRyz-image.png){:height="200px"}
 
 
 

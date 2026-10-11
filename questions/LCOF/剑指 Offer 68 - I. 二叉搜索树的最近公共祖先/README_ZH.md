@@ -1,4 +1,4 @@
-### [二叉搜索树的最近公共祖先](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof)
+### [二叉搜索树的最近公共祖先](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof)
 
 <p>给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。</p>
 
@@ -32,4 +32,4 @@
 	<li>p、q 为不同节点且均存在于给定的二叉搜索树中。</li>
 </ul>
 
-<p>注意：本题与主站 235 题相同：<a href="https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/</a></p>
+<p>注意：本题与主站 235 题相同：<a href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/">https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/</a></p>

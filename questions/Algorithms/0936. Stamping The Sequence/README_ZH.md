@@ -1,4 +1,4 @@
-### [戳印序列](https://leetcode-cn.com/problems/stamping-the-sequence)
+### [戳印序列](https://leetcode.cn/problems/stamping-the-sequence)
 
 <p>你想要用<strong>小写字母</strong>组成一个目标字符串&nbsp;<code>target</code>。&nbsp;</p>
 

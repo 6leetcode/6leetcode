@@ -1,4 +1,4 @@
-### [使字符串有序的最少操作次数](https://leetcode-cn.com/problems/minimum-number-of-operations-to-make-string-sorted)
+### [使字符串有序的最少操作次数](https://leetcode.cn/problems/minimum-number-of-operations-to-make-string-sorted)
 
 <p>给你一个字符串 <code>s</code> （<strong>下标从 0 开始</strong>）。你需要对 <code>s</code> 执行以下操作直到它变为一个有序字符串：</p>
 

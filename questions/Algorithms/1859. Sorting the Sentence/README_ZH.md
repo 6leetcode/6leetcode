@@ -1,4 +1,4 @@
-### [将句子排序](https://leetcode-cn.com/problems/sorting-the-sentence)
+### [将句子排序](https://leetcode.cn/problems/sorting-the-sentence)
 
 <p>一个 <strong>句子</strong> 指的是一个序列的单词用单个空格连接起来，且开头和结尾没有任何空格。每个单词都只包含小写或大写英文字母。</p>
 

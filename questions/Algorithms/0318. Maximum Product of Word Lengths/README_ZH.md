@@ -1,4 +1,4 @@
-### [最大单词长度乘积](https://leetcode-cn.com/problems/maximum-product-of-word-lengths)
+### [最大单词长度乘积](https://leetcode.cn/problems/maximum-product-of-word-lengths)
 
 <p>给你一个字符串数组&nbsp;<code>words</code> ，找出并返回 <code>length(words[i]) * length(words[j])</code>&nbsp;的最大值，并且这两个单词不含有公共字母。如果不存在这样的两个单词，返回 <code>0</code> 。</p>
 

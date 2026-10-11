@@ -1,4 +1,4 @@
-### [统计不开心的朋友](https://leetcode-cn.com/problems/count-unhappy-friends)
+### [统计不开心的朋友](https://leetcode.cn/problems/count-unhappy-friends)
 
 <p>给你一份 <code>n</code> 位朋友的亲近程度列表，其中 <code>n</code> 总是 <strong>偶数</strong> 。</p>
 

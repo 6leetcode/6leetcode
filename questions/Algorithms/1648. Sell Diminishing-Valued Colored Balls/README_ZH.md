@@ -1,4 +1,4 @@
-### [销售价值减少的颜色球](https://leetcode-cn.com/problems/sell-diminishing-valued-colored-balls)
+### [销售价值减少的颜色球](https://leetcode.cn/problems/sell-diminishing-valued-colored-balls)
 
 <p>你有一些球的库存 <code>inventory</code> ，里面包含着不同颜色的球。一个顾客想要 <strong>任意颜色</strong> 总数为 <code>orders</code> 的球。</p>
 
@@ -11,7 +11,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/11/08/jj.gif" style="width: 480px; height: 270px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/11/08/jj.gif" style="width: 480px; height: 270px;" />
 <pre>
 <b>输入：</b>inventory = [2,5], orders = 4
 <b>输出：</b>14

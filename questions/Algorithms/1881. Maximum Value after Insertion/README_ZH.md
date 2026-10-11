@@ -1,4 +1,4 @@
-### [插入后的最大值](https://leetcode-cn.com/problems/maximum-value-after-insertion)
+### [插入后的最大值](https://leetcode.cn/problems/maximum-value-after-insertion)
 
 <p>给你一个非常大的整数 <code>n</code> 和一个整数数字 <code>x</code> ，大整数 <code>n</code> 用一个字符串表示。<code>n</code> 中每一位数字和数字 <code>x</code> 都处于闭区间 <code>[1, 9]</code> 中，且 <code>n</code> 可能表示一个 <strong>负数</strong> 。</p>
 

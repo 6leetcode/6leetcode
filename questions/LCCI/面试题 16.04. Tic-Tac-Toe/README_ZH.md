@@ -1,4 +1,4 @@
-### [井字游戏](https://leetcode-cn.com/problems/tic-tac-toe-lcci)
+### [井字游戏](https://leetcode.cn/problems/tic-tac-toe-lcci)
 
 <p>设计一个算法，判断玩家是否赢了井字游戏。输入是一个 N x N 的数组棋盘，由字符&quot; &quot;，&quot;X&quot;和&quot;O&quot;组成，其中字符&quot; &quot;代表一个空位。</p>
 

@@ -1,4 +1,4 @@
-### [长按键入](https://leetcode-cn.com/problems/long-pressed-name)
+### [长按键入](https://leetcode.cn/problems/long-pressed-name)
 
 <p>你的朋友正在使用键盘输入他的名字&nbsp;<code>name</code>。偶尔，在键入字符&nbsp;<code>c</code>&nbsp;时，按键可能会被<em>长按</em>，而字符可能被输入 1 次或多次。</p>
 

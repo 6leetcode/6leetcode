@@ -1,6 +1,6 @@
-### [查询近30天活跃用户数](https://leetcode-cn.com/problems/user-activity-for-the-past-30-days-i)
+### [查询近30天活跃用户数](https://leetcode.cn/problems/user-activity-for-the-past-30-days-i)
 
-<p>活动记录表：<code>Activity</code></p>
+<p>表：<code>Activity</code></p>
 
 <pre>
 +---------------+---------+
@@ -11,19 +11,21 @@
 | activity_date | date    |
 | activity_type | enum    |
 +---------------+---------+
-该表是用户在社交网站的活动记录。
-该表没有主键，可能包含重复数据。
-activity_type 字段为以下四种值 ('open_session', 'end_session', 'scroll_down', 'send_message')。
-每个 session_id 只属于一个用户。
+该表可能包含重复数据。
+activity_type 列是 ENUM(category) 类型， 从 ('open_session'， 'end_session'， 'scroll_down'， 'send_message') 取值。
+该表记录社交媒体网站的用户活动。
+注意，每个会话只属于一个用户。
 </pre>
 
 <p>&nbsp;</p>
 
-<p>请写SQL查询出截至&nbsp;<code>2019-07-27</code>（包含2019-07-27），近<strong>&nbsp;</strong><code>30</code> 天的每日活跃用户数（当天只要有一条活动记录，即为活跃用户）。</p>
+<p>编写解决方案，统计截至&nbsp;<code>2019-07-27</code>（包含2019-07-27），近<strong>&nbsp;</strong><code>30</code> 天的每日活跃用户数（当天只要有一条活动记录，即为活跃用户）。</p>
 
 <p>以 <strong>任意顺序</strong> 返回结果表。</p>
 
-<p>查询结果示例如下。</p>
+<p>结果示例如下。</p>
+
+<p><strong>注意</strong>：（<code>'open_session'</code>，<code>'end_session'</code>，<code>'scroll_down'</code>，<code>'send_message'</code>）中的任何活动将被视为用户在某一天活跃的有效活动。</p>
 
 <p>&nbsp;</p>
 

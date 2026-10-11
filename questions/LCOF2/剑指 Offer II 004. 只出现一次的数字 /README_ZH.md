@@ -1,4 +1,4 @@
-### [只出现一次的数字 ](https://leetcode-cn.com/problems/WGki4K)
+### [只出现一次的数字 ](https://leetcode.cn/problems/WGki4K)
 
 <p>给你一个整数数组&nbsp;<code>nums</code> ，除某个元素仅出现 <strong>一次</strong> 外，其余每个元素都恰出现 <strong>三次 。</strong>请你找出并返回那个只出现了一次的元素。</p>
 
@@ -34,4 +34,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 137&nbsp;题相同：<a href="https://leetcode-cn.com/problems/single-number-ii/">https://leetcode-cn.com/problems/single-number-ii/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 137&nbsp;题相同：<a href="https://leetcode.cn/problems/single-number-ii/">https://leetcode.cn/problems/single-number-ii/</a></p>

@@ -1,4 +1,4 @@
-### [逃离大迷宫](https://leetcode-cn.com/problems/escape-a-large-maze)
+### [逃离大迷宫](https://leetcode.cn/problems/escape-a-large-maze)
 
 <p>在一个 10<sup>6</sup> x 10<sup>6</sup> 的网格中，每个网格上方格的坐标为 <code>(x, y)</code> 。</p>
 

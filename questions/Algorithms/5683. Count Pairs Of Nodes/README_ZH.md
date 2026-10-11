@@ -1,4 +1,4 @@
-### [统计点对的数目](https://leetcode-cn.com/problems/count-pairs-of-nodes)
+### [统计点对的数目](https://leetcode.cn/problems/count-pairs-of-nodes)
 
 <p>给你一个无向图，无向图由整数 <code>n</code>  ，表示图中节点的数目，和 <code>edges</code> 组成，其中 <code>edges[i] = [u<sub>i</sub>, v<sub>i</sub>]</code> 表示 <code>u<sub>i</sub></code> 和 <code>v<sub>i</sub></code><sub> </sub>之间有一条无向边。同时给你一个代表查询的整数数组 <code>queries</code> 。</p>
 

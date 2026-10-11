@@ -1,4 +1,4 @@
-### [对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list)
+### [对链表进行插入排序](https://leetcode.cn/problems/insertion-sort-list)
 
 <p>给定单个链表的头<meta charset="UTF-8" />&nbsp;<code>head</code>&nbsp;，使用 <strong>插入排序</strong> 对链表进行排序，并返回&nbsp;<em>排序后链表的头</em>&nbsp;。</p>
 
@@ -14,13 +14,13 @@
 
 <p>对链表进行插入排序。</p>
 
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1724130387-qxfMwx-Insertion-sort-example-300px.gif" /></p>
 
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2021/03/04/sort1linked-list.jpg" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1724130414-QbPAjl-image.png" /></p>
 
 <pre>
 <strong>输入:</strong> head = [4,2,1,3]
@@ -28,7 +28,7 @@
 
 <p><strong>示例&nbsp;2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2021/03/04/sort2linked-list.jpg" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1724130432-zoOvdI-image.png" /></p>
 
 <pre>
 <strong>输入:</strong> head = [-1,5,3,4,0]

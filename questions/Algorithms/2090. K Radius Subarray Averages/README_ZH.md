@@ -1,4 +1,4 @@
-### [半径为 k 的子数组平均值](https://leetcode-cn.com/problems/k-radius-subarray-averages)
+### [半径为 k 的子数组平均值](https://leetcode.cn/problems/k-radius-subarray-averages)
 
 <p>给你一个下标从 <strong>0</strong> 开始的数组 <code>nums</code> ，数组中有 <code>n</code> 个整数，另给你一个整数 <code>k</code> 。</p>
 

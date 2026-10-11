@@ -1,4 +1,4 @@
-### [路径总和](https://leetcode-cn.com/problems/path-sum)
+### [路径总和](https://leetcode.cn/problems/path-sum)
 
 <p>给你二叉树的根节点&nbsp;<code>root</code> 和一个表示目标和的整数&nbsp;<code>targetSum</code> 。判断该树中是否存在 <strong>根节点到叶子节点</strong> 的路径，这条路径上所有节点值相加等于目标和&nbsp;<code>targetSum</code> 。如果存在，返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [使数组和能被 P 整除](https://leetcode-cn.com/problems/make-sum-divisible-by-p)
+### [使数组和能被 P 整除](https://leetcode.cn/problems/make-sum-divisible-by-p)
 
 <p>给你一个正整数数组&nbsp;<code>nums</code>，请你移除 <strong>最短</strong>&nbsp;子数组（可以为 <strong>空</strong>），使得剩余元素的 <strong>和</strong>&nbsp;能被 <code>p</code>&nbsp;整除。 <strong>不允许</strong>&nbsp;将整个数组都移除。</p>
 

@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/generate-the-invoice)
+### [生成发票](https://leetcode.cn/problems/generate-the-invoice)
 

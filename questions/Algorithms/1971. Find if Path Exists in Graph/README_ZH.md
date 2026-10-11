@@ -1,4 +1,4 @@
-### [寻找图中是否存在路径](https://leetcode-cn.com/problems/find-if-path-exists-in-graph)
+### [寻找图中是否存在路径](https://leetcode.cn/problems/find-if-path-exists-in-graph)
 
 <p>有一个具有 <code>n</code> 个顶点的 <strong>双向</strong> 图，其中每个顶点标记从 <code>0</code> 到 <code>n - 1</code>（包含 <code>0</code> 和 <code>n - 1</code>）。图中的边用一个二维整数数组 <code>edges</code> 表示，其中 <code>edges[i] = [u<sub>i</sub>, v<sub>i</sub>]</code> 表示顶点 <code>ui</code> 和顶点 <code>vi</code> 之间的双向边。 每个顶点对由 <strong>最多一条</strong> 边连接，并且没有顶点存在与自身相连的边。</p>
 

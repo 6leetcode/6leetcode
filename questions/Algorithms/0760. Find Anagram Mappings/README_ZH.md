@@ -1,2 +1,2 @@
-### [找出变位映射](https://leetcode-cn.com/problems/find-anagram-mappings)
+### [找出变位映射](https://leetcode.cn/problems/find-anagram-mappings)
 

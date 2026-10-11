@@ -1,4 +1,4 @@
-### [逃脱阻碍者](https://leetcode-cn.com/problems/escape-the-ghosts)
+### [逃脱阻碍者](https://leetcode.cn/problems/escape-the-ghosts)
 
 <p>你在进行一个简化版的吃豆人游戏。你从 <code>[0, 0]</code> 点开始出发，你的目的地是&nbsp;<code>target = [x<sub>target</sub>, y<sub>target</sub>]</code> 。地图上有一些阻碍者，以数组 <code>ghosts</code> 给出，第 <code>i</code> 个阻碍者从&nbsp;<code>ghosts[i] = [x<sub>i</sub>, y<sub>i</sub>]</code>&nbsp;出发。所有输入均为 <strong>整数坐标</strong> 。</p>
 
@@ -6,7 +6,7 @@
 
 <p>如果你可以在任何阻碍者抓住你 <strong>之前</strong> 到达目的地（阻碍者可以采取任意行动方式），则被视为逃脱成功。如果你和阻碍者 <strong>同时</strong> 到达了一个位置（包括目的地）&nbsp;<strong>都不算</strong>&nbsp;是逃脱成功。</p>
 
-<p>只有在你有可能成功逃脱时，输出 <code>true</code> ；否则，输出 <code>false</code> 。</p>
+<p>如果不管阻碍者怎么移动都可以成功逃脱时，输出 <code>true</code> ；否则，输出 <code>false</code> 。</p>
 &nbsp;
 
 <p><strong>示例 1：</strong></p>

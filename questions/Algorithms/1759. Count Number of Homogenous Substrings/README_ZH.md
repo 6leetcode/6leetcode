@@ -1,18 +1,19 @@
-### [统计同构子字符串的数目](https://leetcode-cn.com/problems/count-number-of-homogenous-substrings)
+### [统计同质子字符串的数目](https://leetcode.cn/problems/count-number-of-homogenous-substrings)
 
-<p>给你一个字符串 <code>s</code> ，返回<em> </em><code>s</code><em> </em>中 <strong>同构子字符串</strong> 的数目。由于答案可能很大，只需返回对 <code>10<sup>9</sup> + 7</code> <strong>取余 </strong>后的结果。</p>
+<p>给你一个字符串 <code>s</code> ，返回<em> </em><code>s</code><em> </em>中 <strong>同质子字符串</strong> 的数目。由于答案可能很大，只需返回对 <code>10<sup>9</sup> + 7</code> <strong>取余 </strong>后的结果。</p>
 
-<p><strong>同构字符串</strong> 的定义为：如果一个字符串中的所有字符都相同，那么该字符串就是同构字符串。</p>
+<p><strong>同质字符串</strong> 的定义为：如果一个字符串中的所有字符都相同，那么该字符串就是同质字符串。</p>
 
 <p><strong>子字符串</strong> 是字符串中的一个连续字符序列。</p>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>s = "abbcccaa"
+<pre>
+<strong>输入：</strong>s = "abbcccaa"
 <strong>输出：</strong>13
-<strong>解释：</strong>同构子字符串如下所列：
+<strong>解释：</strong>同质子字符串如下所列：
 "a"   出现 3 次。
 "aa"  出现 1 次。
 "b"   出现 2 次。
@@ -24,21 +25,23 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>s = "xy"
+<pre>
+<strong>输入：</strong>s = "xy"
 <strong>输出：</strong>2
-<strong>解释：</strong>同构子字符串是 "x" 和 "y" 。</pre>
+<strong>解释：</strong>同质子字符串是 "x" 和 "y" 。</pre>
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>s = "zzzzz"
+<pre>
+<strong>输入：</strong>s = "zzzzz"
 <strong>输出：</strong>15
 </pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>s</code> 由小写字符串组成</li>
+	<li><code>s</code> 由小写字符串组成。</li>
 </ul>

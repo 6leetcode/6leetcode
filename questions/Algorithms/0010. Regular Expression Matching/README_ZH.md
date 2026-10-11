@@ -1,4 +1,4 @@
-### [正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching)
+### [正则表达式匹配](https://leetcode.cn/problems/regular-expression-matching)
 
 <p>给你一个字符串&nbsp;<code>s</code>&nbsp;和一个字符规律&nbsp;<code>p</code>，请你来实现一个支持 <code>'.'</code>&nbsp;和&nbsp;<code>'*'</code>&nbsp;的正则表达式匹配。</p>
 
@@ -7,7 +7,7 @@
 	<li><code>'*'</code> 匹配零个或多个前面的那一个元素</li>
 </ul>
 
-<p>所谓匹配，是要涵盖&nbsp;<strong>整个&nbsp;</strong>字符串&nbsp;<code>s</code>的，而不是部分字符串。</p>
+<p>返回一个布尔值，表示匹配是否覆盖整个输入字符串（而非部分）。</p>
 &nbsp;
 
 <p><strong>示例 1：</strong></p>
@@ -40,7 +40,7 @@
 
 <ul>
 	<li><code>1 &lt;= s.length&nbsp;&lt;= 20</code></li>
-	<li><code>1 &lt;= p.length&nbsp;&lt;= 30</code></li>
+	<li><code>1 &lt;= p.length&nbsp;&lt;= 20</code></li>
 	<li><code>s</code>&nbsp;只包含从&nbsp;<code>a-z</code>&nbsp;的小写字母。</li>
 	<li><code>p</code>&nbsp;只包含从&nbsp;<code>a-z</code>&nbsp;的小写字母，以及字符&nbsp;<code>.</code>&nbsp;和&nbsp;<code>*</code>。</li>
 	<li>保证每次出现字符&nbsp;<code>*</code> 时，前面都匹配到有效的字符</li>

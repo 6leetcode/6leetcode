@@ -1,4 +1,4 @@
-### [将数组分成两个数组并最小化数组和的差](https://leetcode-cn.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference)
+### [将数组分成两个数组并最小化数组和的差](https://leetcode.cn/problems/partition-array-into-two-arrays-to-minimize-sum-difference)
 
 <p>给你一个长度为 <code>2 * n</code>&nbsp;的整数数组。你需要将&nbsp;<code>nums</code>&nbsp;分成&nbsp;<strong>两个</strong>&nbsp;长度为&nbsp;<code>n</code>&nbsp;的数组，分别求出两个数组的和，并 <strong>最小化</strong>&nbsp;两个数组和之&nbsp;<b>差的绝对值</b>&nbsp;。<code>nums</code>&nbsp;中每个元素都需要放入两个数组之一。</p>
 

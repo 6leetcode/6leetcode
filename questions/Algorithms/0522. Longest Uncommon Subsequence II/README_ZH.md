@@ -1,4 +1,4 @@
-### [最长特殊序列 II](https://leetcode-cn.com/problems/longest-uncommon-subsequence-ii)
+### [最长特殊序列 II](https://leetcode.cn/problems/longest-uncommon-subsequence-ii)
 
 <p>给定字符串列表&nbsp;<code>strs</code> ，返回其中 <strong>最长的特殊序列</strong>&nbsp;的长度。如果最长特殊序列不存在，返回 <code>-1</code> 。</p>
 

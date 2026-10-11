@@ -1,4 +1,4 @@
-### [下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i)
+### [下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i)
 
 <p><code>nums1</code>&nbsp;中数字&nbsp;<code>x</code>&nbsp;的 <strong>下一个更大元素</strong> 是指&nbsp;<code>x</code>&nbsp;在&nbsp;<code>nums2</code> 中对应位置 <strong>右侧</strong> 的 <strong>第一个</strong> 比&nbsp;<code>x</code><strong>&nbsp;</strong>大的元素。</p>
 

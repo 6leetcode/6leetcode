@@ -1,4 +1,4 @@
-### [矩阵对角线元素的和](https://leetcode-cn.com/problems/matrix-diagonal-sum)
+### [矩阵对角线元素的和](https://leetcode.cn/problems/matrix-diagonal-sum)
 
 <p>给你一个正方形矩阵 <code>mat</code>，请你返回矩阵对角线元素的和。</p>
 

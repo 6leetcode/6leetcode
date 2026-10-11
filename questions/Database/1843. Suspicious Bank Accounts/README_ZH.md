@@ -1,2 +1,2 @@
-### [可疑银行账户](https://leetcode-cn.com/problems/suspicious-bank-accounts)
+### [可疑银行账户](https://leetcode.cn/problems/suspicious-bank-accounts)
 

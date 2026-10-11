@@ -1,4 +1,4 @@
-### [根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height)
+### [根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height)
 
 <p>假设有打乱顺序的一群人站成一个队列，数组 <code>people</code> 表示队列中一些人的属性（不一定按顺序）。每个 <code>people[i] = [h<sub>i</sub>, k<sub>i</sub>]</code> 表示第 <code>i</code> 个人的身高为 <code>h<sub>i</sub></code> ，前面 <strong>正好</strong> 有 <code>k<sub>i</sub></code><sub> </sub>个身高大于或等于 <code>h<sub>i</sub></code> 的人。</p>
 

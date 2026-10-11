@@ -1,4 +1,4 @@
-### [字符串相加](https://leetcode-cn.com/problems/add-strings)
+### [字符串相加](https://leetcode.cn/problems/add-strings)
 
 <p>给定两个字符串形式的非负整数&nbsp;<code>num1</code> 和<code>num2</code>&nbsp;，计算它们的和并同样以字符串形式返回。</p>
 

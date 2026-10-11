@@ -1,4 +1,4 @@
-### [两整数之和](https://leetcode-cn.com/problems/sum-of-two-integers)
+### [两整数之和](https://leetcode.cn/problems/sum-of-two-integers)
 
 <p>给你两个整数 <code>a</code> 和 <code>b</code> ，<strong>不使用 </strong>运算符&nbsp;<code>+</code> 和&nbsp;<code>-</code>&nbsp;​​​​​​​，计算并返回两整数之和。</p>
 

@@ -1,4 +1,4 @@
-### [无限集中的最小数字](https://leetcode-cn.com/problems/smallest-number-in-infinite-set)
+### [无限集中的最小数字](https://leetcode.cn/problems/smallest-number-in-infinite-set)
 
 <p>现有一个包含所有正整数的集合 <code>[1, 2, 3, 4, 5, ...]</code> 。</p>
 
@@ -14,7 +14,8 @@
 
 <p><strong>示例：</strong></p>
 
-<pre><strong>输入</strong>
+<pre>
+<strong>输入</strong>
 ["SmallestInfiniteSet", "addBack", "popSmallest", "popSmallest", "popSmallest", "addBack", "popSmallest", "popSmallest", "popSmallest"]
 [[], [2], [], [], [], [1], [], [], []]
 <strong>输出</strong>

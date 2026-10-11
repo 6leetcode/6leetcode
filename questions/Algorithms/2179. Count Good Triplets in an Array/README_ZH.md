@@ -1,4 +1,4 @@
-### [统计数组中好三元组数目](https://leetcode-cn.com/problems/count-good-triplets-in-an-array)
+### [统计数组中好三元组数目](https://leetcode.cn/problems/count-good-triplets-in-an-array)
 
 <p>给你两个下标从 <strong>0</strong>&nbsp;开始且长度为 <code>n</code>&nbsp;的整数数组&nbsp;<code>nums1</code>&nbsp;和&nbsp;<code>nums2</code>&nbsp;，两者都是&nbsp;<code>[0, 1, ..., n - 1]</code>&nbsp;的&nbsp;<strong>排列</strong>&nbsp;。</p>
 

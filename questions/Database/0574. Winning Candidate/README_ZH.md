@@ -1,2 +1,2 @@
-### [当选者](https://leetcode-cn.com/problems/winning-candidate)
+### [当选者](https://leetcode.cn/problems/winning-candidate)
 

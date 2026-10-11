@@ -1,4 +1,4 @@
-### [分割回文串 III](https://leetcode-cn.com/problems/palindrome-partitioning-iii)
+### [分割回文串 III](https://leetcode.cn/problems/palindrome-partitioning-iii)
 
 <p>给你一个由小写字母组成的字符串&nbsp;<code>s</code>，和一个整数&nbsp;<code>k</code>。</p>
 

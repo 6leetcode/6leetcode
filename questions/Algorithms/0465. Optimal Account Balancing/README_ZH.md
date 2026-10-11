@@ -1,2 +1,2 @@
-### [最优账单平衡](https://leetcode-cn.com/problems/optimal-account-balancing)
+### [最优账单平衡](https://leetcode.cn/problems/optimal-account-balancing)
 

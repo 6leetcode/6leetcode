@@ -1,4 +1,4 @@
-### [平方数之和](https://leetcode-cn.com/problems/sum-of-square-numbers)
+### [平方数之和](https://leetcode.cn/problems/sum-of-square-numbers)
 
 <p>给定一个非负整数&nbsp;<code>c</code>&nbsp;，你要判断是否存在两个整数 <code>a</code> 和 <code>b</code>，使得&nbsp;<code>a<sup>2</sup> + b<sup>2</sup> = c</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [重排字符形成目标字符串](https://leetcode-cn.com/problems/rearrange-characters-to-make-target-string)
+### [重排字符形成目标字符串](https://leetcode.cn/problems/rearrange-characters-to-make-target-string)
 
 <p>给你两个下标从 <strong>0</strong> 开始的字符串 <code>s</code> 和 <code>target</code> 。你可以从 <code>s</code> 取出一些字符并将其重排，得到若干新的字符串。</p>
 
@@ -8,7 +8,8 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>s = "ilovecodingonleetcode", target = "code"
+<pre>
+<strong>输入：</strong>s = "ilovecodingonleetcode", target = "code"
 <strong>输出：</strong>2
 <strong>解释：</strong>
 对于 "code" 的第 1 个副本，选取下标为 4 、5 、6 和 7 的字符。
@@ -19,7 +20,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>s = "abcba", target = "abc"
+<pre>
+<strong>输入：</strong>s = "abcba", target = "abc"
 <strong>输出：</strong>1
 <strong>解释：</strong>
 选取下标为 0 、1 和 2 的字符，可以形成 "abc" 的 1 个副本。 
@@ -29,7 +31,8 @@
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>s = "abbaccaddaeea", target = "aaaaa"
+<pre>
+<strong>输入：</strong>s = "abbaccaddaeea", target = "aaaaa"
 <strong>输出：</strong>1
 <strong>解释：</strong>
 选取下标为 0 、3 、6 、9 和 12 的字符，可以形成 "aaaaa" 的 1 个副本。
@@ -45,3 +48,7 @@
 	<li><code>1 &lt;= target.length &lt;= 10</code></li>
 	<li><code>s</code> 和 <code>target</code> 由小写英文字母组成</li>
 </ul>
+
+<p>&nbsp;</p>
+
+<p><strong>注意：</strong>本题与&nbsp;<a href="https://leetcode.cn/problems/maximum-number-of-balloons/">1189. “气球” 的最大数量</a> 相同。</p>

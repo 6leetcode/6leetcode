@@ -1,4 +1,4 @@
-### [二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof)
+### [二叉树的深度](https://leetcode.cn/problems/er-cha-shu-de-shen-du-lcof)
 
 <p>输入一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。</p>
 
@@ -22,4 +22,4 @@
 	<li><code>节点总数 &lt;= 10000</code></li>
 </ol>
 
-<p>注意：本题与主站 104&nbsp;题相同：<a href="https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/">https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/</a></p>
+<p>注意：本题与主站 104&nbsp;题相同：<a href="https://leetcode.cn/problems/maximum-depth-of-binary-tree/">https://leetcode.cn/problems/maximum-depth-of-binary-tree/</a></p>

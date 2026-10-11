@@ -1,4 +1,4 @@
-### [合并K个升序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists)
+### [合并 K 个升序链表](https://leetcode.cn/problems/merge-k-sorted-lists)
 
 <p>给你一个链表数组，每个链表都已经按升序排列。</p>
 

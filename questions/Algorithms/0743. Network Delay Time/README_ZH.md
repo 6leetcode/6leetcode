@@ -1,4 +1,4 @@
-### [网络延迟时间](https://leetcode-cn.com/problems/network-delay-time)
+### [网络延迟时间](https://leetcode.cn/problems/network-delay-time)
 
 <p>有 <code>n</code> 个网络节点，标记为&nbsp;<code>1</code>&nbsp;到 <code>n</code>。</p>
 

@@ -1,4 +1,4 @@
-### [引爆最多的炸弹](https://leetcode-cn.com/problems/detonate-the-maximum-bombs)
+### [引爆最多的炸弹](https://leetcode.cn/problems/detonate-the-maximum-bombs)
 
 <p>给你一个炸弹列表。一个炸弹的 <strong>爆炸范围</strong>&nbsp;定义为以炸弹为圆心的一个圆。</p>
 

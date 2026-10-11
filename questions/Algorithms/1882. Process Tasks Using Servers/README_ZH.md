@@ -1,4 +1,4 @@
-### [使用服务器处理任务](https://leetcode-cn.com/problems/process-tasks-using-servers)
+### [使用服务器处理任务](https://leetcode.cn/problems/process-tasks-using-servers)
 
 <p>给你两个 <strong>下标从 0 开始</strong> 的整数数组 <code>servers</code> 和 <code>tasks</code> ，长度分别为 <code>n</code>​​​​​​ 和 <code>m</code>​​​​​​ 。<code>servers[i]</code> 是第 <code>i<sup>​​​​​​</sup></code>​​​​ 台服务器的 <strong>权重</strong> ，而 <code>tasks[j]</code> 是处理第 <code>j<sup>​​​​​​</sup></code> 项任务 <strong>所需要的时间</strong>（单位：秒）。</p>
 

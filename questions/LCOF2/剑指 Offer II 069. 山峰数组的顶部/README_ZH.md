@@ -1,4 +1,4 @@
-### [山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL)
+### [山峰数组的顶部](https://leetcode.cn/problems/B1IidL)
 
 <p>符合下列属性的数组 <code>arr</code> 称为 <strong>山峰数组</strong>（<strong>山脉数组）</strong> ：</p>
 
@@ -67,4 +67,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 852&nbsp;题相同：<a href="https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/">https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 852&nbsp;题相同：<a href="https://leetcode.cn/problems/peak-index-in-a-mountain-array/">https://leetcode.cn/problems/peak-index-in-a-mountain-array/</a></p>

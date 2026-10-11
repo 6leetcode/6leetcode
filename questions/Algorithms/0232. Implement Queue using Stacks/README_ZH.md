@@ -1,4 +1,4 @@
-### [用栈实现队列](https://leetcode-cn.com/problems/implement-queue-using-stacks)
+### [用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks)
 
 <p>请你仅使用两个栈实现先入先出队列。队列应当支持一般队列支持的所有操作（<code>push</code>、<code>pop</code>、<code>peek</code>、<code>empty</code>）：</p>
 

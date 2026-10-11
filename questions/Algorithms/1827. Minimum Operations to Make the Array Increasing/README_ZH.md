@@ -1,4 +1,4 @@
-### [最少操作使数组递增](https://leetcode-cn.com/problems/minimum-operations-to-make-the-array-increasing)
+### [最少操作使数组递增](https://leetcode.cn/problems/minimum-operations-to-make-the-array-increasing)
 
 <p>给你一个整数数组 <code>nums</code> （<strong>下标从 0 开始</strong>）。每一次操作中，你可以选择数组中一个元素，并将它增加 <code>1</code> 。</p>
 

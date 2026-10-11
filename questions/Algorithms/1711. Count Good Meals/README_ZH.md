@@ -1,4 +1,4 @@
-### [大餐计数](https://leetcode-cn.com/problems/count-good-meals)
+### [大餐计数](https://leetcode.cn/problems/count-good-meals)
 
 <p><strong>大餐</strong> 是指 <strong>恰好包含两道不同餐品</strong> 的一餐，其美味程度之和等于 2 的幂。</p>
 

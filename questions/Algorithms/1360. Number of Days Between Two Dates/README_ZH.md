@@ -1,4 +1,4 @@
-### [日期之间隔几天](https://leetcode-cn.com/problems/number-of-days-between-two-dates)
+### [日期之间隔几天](https://leetcode.cn/problems/number-of-days-between-two-dates)
 
 <p>请你编写一个程序来计算两个日期之间隔了多少天。</p>
 

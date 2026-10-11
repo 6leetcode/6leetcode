@@ -1,4 +1,4 @@
-### [转变日期格式](https://leetcode-cn.com/problems/reformat-date)
+### [转变日期格式](https://leetcode.cn/problems/reformat-date)
 
 <p>给你一个字符串&nbsp;<code>date</code>&nbsp;，它的格式为&nbsp;<code>Day Month Year</code>&nbsp;，其中：</p>
 

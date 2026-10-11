@@ -1,4 +1,4 @@
-### [三维形体的表面积](https://leetcode-cn.com/problems/surface-area-of-3d-shapes)
+### [三维形体的表面积](https://leetcode.cn/problems/surface-area-of-3d-shapes)
 
 <p>给你一个 <code>n * n</code> 的网格&nbsp;<code>grid</code> ，上面放置着一些&nbsp;<code>1 x 1 x 1</code>&nbsp;的正方体。每个值&nbsp;<code>v = grid[i][j]</code>&nbsp;表示&nbsp;<code>v</code>&nbsp;个正方体叠放在对应单元格&nbsp;<code>(i, j)</code>&nbsp;上。</p>
 

@@ -1,4 +1,4 @@
-### [排列硬币](https://leetcode-cn.com/problems/arranging-coins)
+### [排列硬币](https://leetcode.cn/problems/arranging-coins)
 
 <p>你总共有&nbsp;<code>n</code><em>&nbsp;</em>枚硬币，并计划将它们按阶梯状排列。对于一个由 <code>k</code> 行组成的阶梯，其第 <code>i</code><em> </em>行必须正好有 <code>i</code><em> </em>枚硬币。阶梯的最后一行 <strong>可能</strong> 是不完整的。</p>
 

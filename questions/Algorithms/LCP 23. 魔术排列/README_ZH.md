@@ -1,4 +1,4 @@
-### [魔术排列](https://leetcode-cn.com/problems/er94lq)
+### [魔术排列](https://leetcode.cn/problems/er94lq)
 
 秋日市集上，魔术师邀请小扣与他互动。魔术师的道具为分别写有数字 `1~N` 的 `N` 张卡牌，然后请小扣思考一个 `N` 张卡牌的排列 `target`。
 

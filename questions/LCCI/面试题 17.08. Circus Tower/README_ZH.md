@@ -1,4 +1,4 @@
-### [马戏团人塔](https://leetcode-cn.com/problems/circus-tower-lcci)
+### [马戏团人塔](https://leetcode.cn/problems/circus-tower-lcci)
 
 <p>有个马戏团正在设计叠罗汉的表演节目，一个人要站在另一人的肩膀上。出于实际和美观的考虑，在上面的人要比下面的人矮一点且轻一点。已知马戏团每个人的身高和体重，请编写代码计算叠罗汉最多能叠几个人。</p>
 

@@ -1,2 +1,2 @@
-### [序列重建](https://leetcode-cn.com/problems/sequence-reconstruction)
+### [序列重建](https://leetcode.cn/problems/sequence-reconstruction)
 

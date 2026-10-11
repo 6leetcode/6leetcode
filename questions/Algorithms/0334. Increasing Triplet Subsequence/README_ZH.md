@@ -1,4 +1,4 @@
-### [递增的三元子序列](https://leetcode-cn.com/problems/increasing-triplet-subsequence)
+### [递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence)
 
 <p>给你一个整数数组&nbsp;<code>nums</code> ，判断这个数组中是否存在长度为 <code>3</code> 的递增子序列。</p>
 
@@ -26,7 +26,7 @@
 <pre>
 <strong>输入：</strong>nums = [2,1,5,0,4,6]
 <strong>输出：</strong>true
-<strong>解释：</strong>三元组 (3, 4, 5) 满足题意，因为 nums[3] == 0 &lt; nums[4] == 4 &lt; nums[5] == 6
+<strong>解释：</strong>其中一个满足题意的三元组是 (1, 4, 5)，因为 nums[1] == 1 &lt; nums[4] == 4 &lt; nums[5] == 6
 </pre>
 
 <p>&nbsp;</p>

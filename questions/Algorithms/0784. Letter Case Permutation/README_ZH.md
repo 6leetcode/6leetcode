@@ -1,4 +1,4 @@
-### [字母大小写全排列](https://leetcode-cn.com/problems/letter-case-permutation)
+### [字母大小写全排列](https://leetcode.cn/problems/letter-case-permutation)
 
 <p>给定一个字符串&nbsp;<code>s</code>&nbsp;，通过将字符串&nbsp;<code>s</code>&nbsp;中的每个字母转变大小写，我们可以获得一个新的字符串。</p>
 

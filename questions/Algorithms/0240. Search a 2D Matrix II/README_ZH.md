@@ -1,4 +1,4 @@
-### [搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii)
+### [搜索二维矩阵 II](https://leetcode.cn/problems/search-a-2d-matrix-ii)
 
 <p>编写一个高效的算法来搜索&nbsp;<code><em>m</em>&nbsp;x&nbsp;<em>n</em></code>&nbsp;矩阵 <code>matrix</code> 中的一个目标值 <code>target</code> 。该矩阵具有以下特性：</p>
 
@@ -10,14 +10,14 @@
 <p>&nbsp;</p>
 
 <p><b>示例 1：</b></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/11/25/searchgrid2.jpg" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/11/25/searchgrid2.jpg" />
 <pre>
 <b>输入：</b>matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5
 <b>输出：</b>true
 </pre>
 
 <p><b>示例 2：</b></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/11/25/searchgrid.jpg" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/11/25/searchgrid.jpg" />
 <pre>
 <b>输入：</b>matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20
 <b>输出：</b>false

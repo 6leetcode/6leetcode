@@ -1,6 +1,6 @@
-### [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring)
+### [最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring)
 
-<p>给你一个字符串 <code>s</code>，找到 <code>s</code> 中最长的回文子串。</p>
+<p>给你一个字符串 <code>s</code>，找到 <code>s</code> 中最长的 <span data-keyword="palindromic-string">回文</span> <span data-keyword="substring-nonempty">子串</span>。</p>
 
 <p>&nbsp;</p>
 

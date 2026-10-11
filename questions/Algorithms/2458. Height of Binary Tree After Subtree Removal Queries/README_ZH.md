@@ -1,4 +1,4 @@
-### [移除子树后的二叉树高度](https://leetcode-cn.com/problems/height-of-binary-tree-after-subtree-removal-queries)
+### [移除子树后的二叉树高度](https://leetcode.cn/problems/height-of-binary-tree-after-subtree-removal-queries)
 
 <p>给你一棵 <strong>二叉树</strong> 的根节点 <code>root</code> ，树中有 <code>n</code> 个节点。每个节点都可以被分配一个从 <code>1</code> 到 <code>n</code> 且互不相同的值。另给你一个长度为 <code>m</code> 的数组 <code>queries</code> 。</p>
 

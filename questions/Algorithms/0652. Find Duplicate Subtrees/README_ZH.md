@@ -1,4 +1,4 @@
-### [寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees)
+### [寻找重复的子树](https://leetcode.cn/problems/find-duplicate-subtrees)
 
 <p>给你一棵二叉树的根节点 <code>root</code> ，返回所有 <strong>重复的子树 </strong>。</p>
 

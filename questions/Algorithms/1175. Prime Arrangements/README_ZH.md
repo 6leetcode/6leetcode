@@ -1,4 +1,4 @@
-### [质数排列](https://leetcode-cn.com/problems/prime-arrangements)
+### [质数排列](https://leetcode.cn/problems/prime-arrangements)
 
 <p>请你帮忙给从 <code>1</code> 到 <code>n</code>&nbsp;的数设计排列方案，使得所有的「质数」都应该被放在「质数索引」（索引从 1 开始）上；你需要返回可能的方案总数。</p>
 

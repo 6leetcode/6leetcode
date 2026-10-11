@@ -1,4 +1,4 @@
-### [树中距离之和](https://leetcode-cn.com/problems/sum-of-distances-in-tree)
+### [树中距离之和](https://leetcode.cn/problems/sum-of-distances-in-tree)
 
 <p>给定一个无向、连通的树。树中有 <code>n</code> 个标记为 <code>0...n-1</code> 的节点以及 <code>n-1</code>&nbsp;条边&nbsp;。</p>
 

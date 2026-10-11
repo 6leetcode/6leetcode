@@ -1,4 +1,4 @@
-### [所有大于等于节点的值之和](https://leetcode-cn.com/problems/w6cpku)
+### [所有大于等于节点的值之和](https://leetcode.cn/problems/w6cpku)
 
 <p><span style="font-size:10.5pt"><span style="font-family:Calibri"><span style="font-size:10.5000pt"><span style="font-family:宋体"><font face="宋体">给定一个二叉搜索树，请将它的每个</font></span></span></span></span>节点<span style="font-size:10.5pt"><span style="font-family:Calibri"><span style="font-size:10.5000pt"><span style="font-family:宋体"><font face="宋体">的值替换成树中大于或者等于该</font></span></span></span></span>节点<span style="font-size:10.5pt"><span style="font-family:Calibri"><span style="font-size:10.5000pt"><span style="font-family:宋体"><font face="宋体">值的所有</font></span></span></span></span>节点<span style="font-size:10.5pt"><span style="font-family:Calibri"><span style="font-size:10.5000pt"><span style="font-family:宋体"><font face="宋体">值之和。</font></span></span></span></span></p>
 
@@ -60,6 +60,6 @@
 <p><meta charset="UTF-8" />注意：</p>
 
 <ul>
-	<li>本题与主站 538&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/convert-bst-to-greater-tree/">https://leetcode-cn.com/problems/convert-bst-to-greater-tree/</a></li>
-	<li>本题与主站 1038&nbsp;题相同：<a href="https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/">https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/</a></li>
+	<li>本题与主站 538&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/convert-bst-to-greater-tree/">https://leetcode.cn/problems/convert-bst-to-greater-tree/</a></li>
+	<li>本题与主站 1038&nbsp;题相同：<a href="https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/">https://leetcode.cn/problems/binary-search-tree-to-greater-sum-tree/</a></li>
 </ul>

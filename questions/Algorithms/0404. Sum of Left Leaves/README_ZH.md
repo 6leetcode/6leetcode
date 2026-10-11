@@ -1,4 +1,4 @@
-### [左叶子之和](https://leetcode-cn.com/problems/sum-of-left-leaves)
+### [左叶子之和](https://leetcode.cn/problems/sum-of-left-leaves)
 
 <p>给定二叉树的根节点&nbsp;<code>root</code>&nbsp;，返回所有左叶子之和。</p>
 

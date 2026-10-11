@@ -1,4 +1,4 @@
-### [重新排列句子中的单词](https://leetcode-cn.com/problems/rearrange-words-in-a-sentence)
+### [重新排列句子中的单词](https://leetcode.cn/problems/rearrange-words-in-a-sentence)
 
 <p>「句子」是一个用空格分隔单词的字符串。给你一个满足下述格式的句子 <code>text</code> :</p>
 

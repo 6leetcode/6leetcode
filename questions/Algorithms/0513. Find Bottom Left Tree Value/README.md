@@ -1,6 +1,8 @@
 ### [Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value)
 
-<p>Given the <code>root</code> of a binary tree, return the leftmost value in the last row of the tree.</p>
+<p>You are given the <code>root</code> of a binary tree.</p>
+
+<p>Return the <strong>leftmost</strong> value in the <strong>last</strong> row of the tree.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -8,6 +10,7 @@
 <pre>
 <strong>Input:</strong> root = [2,1,3]
 <strong>Output:</strong> 1
+<strong>Explanation:</strong> The last row is [1,3], so the leftmost value is 1.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
@@ -15,6 +18,7 @@
 <pre>
 <strong>Input:</strong> root = [1,2,3,4,null,5,6,null,null,7]
 <strong>Output:</strong> 7
+<strong>Explanation:</strong> The last row contains only the node 7.
 </pre>
 
 <p>&nbsp;</p>

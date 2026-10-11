@@ -1,4 +1,4 @@
-### [使括号有效的最少添加](https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid)
+### [使括号有效的最少添加](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid)
 
 <p>只有满足下面几点之一，括号字符串才是有效的：</p>
 

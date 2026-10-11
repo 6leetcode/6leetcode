@@ -1,4 +1,4 @@
-### [鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop)
+### [鸡蛋掉落](https://leetcode.cn/problems/super-egg-drop)
 
 <p>给你 <code>k</code> 枚相同的鸡蛋，并可以使用一栋从第 <code>1</code> 层到第 <code>n</code> 层共有 <code>n</code> 层楼的建筑。</p>
 

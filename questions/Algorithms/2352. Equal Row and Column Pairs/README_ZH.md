@@ -1,4 +1,4 @@
-### [相等行列对](https://leetcode-cn.com/problems/equal-row-and-column-pairs)
+### [相等行列对](https://leetcode.cn/problems/equal-row-and-column-pairs)
 
 <p>给你一个下标从 <strong>0</strong> 开始、大小为 <code>n x n</code> 的整数矩阵 <code>grid</code> ，返回满足 <code>R<sub>i</sub></code><em> </em>行和<em> </em><code>C<sub>j</sub></code><em> </em>列相等的行列对<em> </em><code>(R<sub>i</sub>, C<sub>j</sub>)</code><em> </em>的数目<em>。</em></p>
 

@@ -1,2 +1,2 @@
-### [移除 9](https://leetcode-cn.com/problems/remove-9)
+### [移除 9](https://leetcode.cn/problems/remove-9)
 

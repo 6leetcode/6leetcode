@@ -1,4 +1,4 @@
-### [IP 地址无效化](https://leetcode-cn.com/problems/defanging-an-ip-address)
+### [IP 地址无效化](https://leetcode.cn/problems/defanging-an-ip-address)
 
 <p>给你一个有效的 <a href="https://baike.baidu.com/item/IPv4" target="_blank">IPv4</a> 地址&nbsp;<code>address</code>，返回这个 IP 地址的无效化版本。</p>
 

@@ -1,4 +1,4 @@
-### [分组的最大数量](https://leetcode-cn.com/problems/maximum-number-of-groups-entering-a-competition)
+### [分组的最大数量](https://leetcode.cn/problems/maximum-number-of-groups-entering-a-competition)
 
 <p>给你一个正整数数组 <code>grades</code> ，表示大学中一些学生的成绩。你打算将 <strong>所有</strong> 学生分为一些 <strong>有序</strong> 的非空分组，其中分组间的顺序满足以下全部条件：</p>
 

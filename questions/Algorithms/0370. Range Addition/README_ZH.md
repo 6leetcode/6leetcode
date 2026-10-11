@@ -1,2 +1,2 @@
-### [区间加法](https://leetcode-cn.com/problems/range-addition)
+### [区间加法](https://leetcode.cn/problems/range-addition)
 

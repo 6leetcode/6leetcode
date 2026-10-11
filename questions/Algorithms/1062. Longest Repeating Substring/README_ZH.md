@@ -1,2 +1,2 @@
-### [最长重复子串](https://leetcode-cn.com/problems/longest-repeating-substring)
+### [最长重复子串的长度](https://leetcode.cn/problems/longest-repeating-substring)
 

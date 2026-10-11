@@ -1,4 +1,4 @@
-### [打砖块](https://leetcode-cn.com/problems/bricks-falling-when-hit)
+### [打砖块](https://leetcode.cn/problems/bricks-falling-when-hit)
 
 <p>有一个 <code>m x n</code> 的二元网格<meta charset="UTF-8" />&nbsp;<code>grid</code>&nbsp;，其中 <code>1</code> 表示砖块，<code>0</code> 表示空白。砖块 <strong>稳定</strong>（不会掉落）的前提是：</p>
 

@@ -1,4 +1,4 @@
-### [字母板上的路径](https://leetcode-cn.com/problems/alphabet-board-path)
+### [字母板上的路径](https://leetcode.cn/problems/alphabet-board-path)
 
 <p>我们从一块字母板上的位置&nbsp;<code>(0, 0)</code>&nbsp;出发，该坐标对应的字符为&nbsp;<code>board[0][0]</code>。</p>
 

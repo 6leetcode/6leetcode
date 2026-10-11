@@ -1,2 +1,2 @@
-### [句子相似性](https://leetcode-cn.com/problems/sentence-similarity)
+### [句子相似性](https://leetcode.cn/problems/sentence-similarity)
 

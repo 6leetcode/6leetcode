@@ -1,4 +1,4 @@
-### [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode-cn.com/problems/n-repeated-element-in-size-2n-array)
+### [在长度 2N 的数组中找出重复 N 次的元素](https://leetcode.cn/problems/n-repeated-element-in-size-2n-array)
 
 <p>给你一个整数数组 <code>nums</code> ，该数组具有以下属性：</p>
 
@@ -6,7 +6,7 @@
 <div>
 <ul>
 	<li><code>nums.length == 2 * n</code>.</li>
-	<li><code>nums</code> 包含 <code>n + 1</code> 个 <strong>不同的</strong> 元素</li>
+	<li><code>nums</code> 包含 <code>n + 1</code> 个 <strong>不同的</strong> 元素，其中 <code>n</code> 个值在数组中出现 <strong>恰好一次</strong>。</li>
 	<li><code>nums</code> 中恰有一个元素重复 <code>n</code> 次</li>
 </ul>
 

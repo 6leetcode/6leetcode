@@ -1,4 +1,4 @@
-### [寻找两个正序数组的中位数](https://leetcode-cn.com/problems/median-of-two-sorted-arrays)
+### [寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays)
 
 <p>给定两个大小分别为 <code>m</code> 和 <code>n</code> 的正序（从小到大）数组&nbsp;<code>nums1</code> 和&nbsp;<code>nums2</code>。请你找出并返回这两个正序数组的 <strong>中位数</strong> 。</p>
 

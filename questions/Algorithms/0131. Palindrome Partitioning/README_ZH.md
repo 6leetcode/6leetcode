@@ -1,10 +1,8 @@
-### [分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning)
+### [分割回文串](https://leetcode.cn/problems/palindrome-partitioning)
 
-<p>给你一个字符串 <code>s</code>，请你将<em> </em><code>s</code><em> </em>分割成一些子串，使每个子串都是 <strong>回文串</strong> 。返回 <code>s</code> 所有可能的分割方案。</p>
+<p>给你一个字符串 <code>s</code>，请你将<em> </em><code>s</code><em> </em>分割成一些 <span data-keyword="substring-nonempty">子串</span>，使每个子串都是 <strong><span data-keyword="palindrome-string">回文串</span></strong> 。返回 <code>s</code> 所有可能的分割方案。</p>
 
-<p><strong>回文串</strong> 是正着读和反着读都一样的字符串。</p>
-
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
@@ -20,11 +18,11 @@
 <strong>输出：</strong>[["a"]]
 </pre>
 
-<p> </p>
+<p>&nbsp;</p>
 
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 <= s.length <= 16</code></li>
+	<li><code>1 &lt;= s.length &lt;= 16</code></li>
 	<li><code>s</code> 仅由小写英文字母组成</li>
 </ul>

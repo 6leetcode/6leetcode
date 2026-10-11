@@ -1,4 +1,4 @@
-### [单词频率](https://leetcode-cn.com/problems/words-frequency-lcci)
+### [单词频率](https://leetcode.cn/problems/words-frequency-lcci)
 
 <p>设计一个方法，找出任意指定单词在一本书中的出现频率。</p>
 

@@ -4,9 +4,11 @@
 
 <p>At the store, there are <code>n</code> ice cream bars. You are given an array <code>costs</code> of length <code>n</code>, where <code>costs[i]</code> is the price of the <code>i<sup>th</sup></code> ice cream bar in coins. The boy initially has <code>coins</code> coins to spend, and he wants to buy as many ice cream bars as possible.&nbsp;</p>
 
+<p><strong>Note:</strong> The boy can buy the ice cream bars in any order.</p>
+
 <p>Return <em>the <strong>maximum</strong> number of ice cream bars the boy can buy with </em><code>coins</code><em> coins.</em></p>
 
-<p><strong>Note:</strong> The boy can buy the ice cream bars in any order.</p>
+<p>You must solve the problem by counting sort.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

@@ -1,4 +1,4 @@
-### [最大的异或](https://leetcode-cn.com/problems/ms70jA)
+### [最大的异或](https://leetcode.cn/problems/ms70jA)
 
 <p>给你一个整数数组 <code>nums</code> ，返回<em> </em><code>nums[i] XOR nums[j]</code> 的最大运算结果，其中 <code>0 ≤ i ≤ j &lt; n</code> 。</p>
 
@@ -33,4 +33,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 421&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/">https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 421&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/">https://leetcode.cn/problems/maximum-xor-of-two-numbers-in-an-array/</a></p>

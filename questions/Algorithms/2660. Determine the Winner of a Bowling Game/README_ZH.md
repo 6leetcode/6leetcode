@@ -1,0 +1,90 @@
+### [保龄球游戏的获胜者](https://leetcode.cn/problems/determine-the-winner-of-a-bowling-game)
+
+<p>给你两个下标从 <strong>0</strong> 开始的整数数组 <code>player1</code> 和 <code>player2</code> ，分别表示玩家 1 和玩家 2 击中的瓶数。</p>
+
+<p>保龄球比赛由 <code>n</code> 轮组成，每轮的瓶数恰好为 <code>10</code> 。</p>
+
+<p>假设玩家在第 <code>i</code> 轮中击中&nbsp;<code>x<sub>i</sub></code> 个瓶子。玩家第 <code>i</code> 轮的价值为：</p>
+
+<ul>
+	<li>如果玩家在该轮的前两轮的任何一轮中击中了 <code>10</code> 个瓶子，则为 <code>2x<sub>i</sub></code> 。</li>
+	<li>否则，为&nbsp;<code>x<sub>i</sub></code> 。</li>
+</ul>
+
+<p>玩家的得分是其 <code>n</code> 轮价值的总和。</p>
+
+<p>返回</p>
+
+<ul>
+	<li>如果玩家 1 的得分高于玩家 2 的得分，则为 <code>1</code> ；</li>
+	<li>如果玩家 2 的得分高于玩家 1 的得分，则为 <code>2</code> ；</li>
+	<li>如果平局，则为 <code>0</code> 。</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">player1 = [5,10,3,2], player2 = [6,5,7,3]</span></p>
+
+<p><strong>输出：</strong><span class="example-io">1</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>玩家 1 的分数为 5 + 10 + 2*3 + 2*2 = 25。</p>
+
+<p>玩家 2&nbsp;的分数为 6 + 5 + 7 + 3 = 21。</p>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">player1 = [3,5,7,6], player2 = [8,10,10,2]</span></p>
+
+<p><strong>输出：</strong><span class="example-io">2</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>玩家 1 的分数为 3 + 5 + 7 + 6 = 21。</p>
+
+<p>玩家 2&nbsp;的分数为 8 + 10 + 2*10 + 2*2 = 42。</p>
+</div>
+
+<p><strong class="example">示例 3：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">player1 = [2,3], player2 = [4,1]</span></p>
+
+<p><strong>输出：</strong><span class="example-io">0</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>玩家 1 的分数为&nbsp;2 + 3 = 5。</p>
+
+<p>玩家 2 的分数为&nbsp;4 + 1 = 5。</p>
+</div>
+
+<p><strong class="example">示例 4：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">player1 = [1,1,1,10,10,10,10], player2 = [10,10,10,10,1,1,1]</span></p>
+
+<p><strong>输出：</strong><span class="example-io">2</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>玩家 1 的分数为 1 + 1 + 1 + 10 + 2*10 + 2*10 + 2*10 = 73。</p>
+
+<p>玩家 2 的分数为 is 10 + 2*10 + 2*10 + 2*10 + 2*1 + 2*1 + 1 = 75。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>n == player1.length == player2.length</code></li>
+	<li><code>1 &lt;= n &lt;= 1000</code></li>
+	<li><code>0 &lt;= player1[i], player2[i] &lt;= 10</code></li>
+</ul>

@@ -1,4 +1,4 @@
-### [添加与搜索单词 - 数据结构设计](https://leetcode-cn.com/problems/add-and-search-word-data-structure-design)
+### [添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/add-and-search-word-data-structure-design)
 
 <p>设计一个支持以下两种操作的数据结构：</p>
 

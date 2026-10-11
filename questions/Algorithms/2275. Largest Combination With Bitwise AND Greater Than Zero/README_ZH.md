@@ -1,4 +1,4 @@
-### [按位与结果大于零的最长组合](https://leetcode-cn.com/problems/largest-combination-with-bitwise-and-greater-than-zero)
+### [按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero)
 
 <p>对数组&nbsp;<code>nums</code> 执行 <strong>按位与</strong> 相当于对数组&nbsp;<code>nums</code> 中的所有整数执行 <strong>按位与</strong> 。</p>
 
@@ -7,7 +7,7 @@
 	<li>同样，对 <code>nums = [7]</code> 而言，按位与等于 <code>7</code> 。</li>
 </ul>
 
-<p>给你一个正整数数组 <code>candidates</code> 。计算 <code>candidates</code> 中的数字每种组合下 <strong>按位与</strong> 的结果。 <code>candidates</code> 中的每个数字在每种组合中只能使用 <strong>一次</strong> 。</p>
+<p>给你一个正整数数组 <code>candidates</code> 。计算 <code>candidates</code> 中的数字每种组合下 <strong>按位与</strong> 的结果。</p>
 
 <p>返回按位与结果大于 <code>0</code> 的 <strong>最长</strong> 组合的长度<em>。</em></p>
 

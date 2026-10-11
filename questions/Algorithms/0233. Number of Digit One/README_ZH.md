@@ -1,4 +1,4 @@
-### [数字 1 的个数](https://leetcode-cn.com/problems/number-of-digit-one)
+### [数字 1 的个数](https://leetcode.cn/problems/number-of-digit-one)
 
 <p>给定一个整数 <code>n</code>，计算所有小于等于 <code>n</code> 的非负整数中数字 <code>1</code> 出现的个数。</p>
 

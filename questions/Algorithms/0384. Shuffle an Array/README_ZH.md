@@ -1,4 +1,4 @@
-### [打乱数组](https://leetcode-cn.com/problems/shuffle-an-array)
+### [打乱数组](https://leetcode.cn/problems/shuffle-an-array)
 
 <p>给你一个整数数组 <code>nums</code> ，设计算法来打乱一个没有重复元素的数组。打乱后，数组的所有排列应该是&nbsp;<strong>等可能</strong>&nbsp;的。</p>
 

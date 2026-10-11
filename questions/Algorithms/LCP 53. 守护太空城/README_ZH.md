@@ -1,4 +1,4 @@
-### [守护太空城](https://leetcode-cn.com/problems/EJvmW4)
+### [守护太空城](https://leetcode.cn/problems/EJvmW4)
 
 各位勇者请注意，力扣太空城发布陨石雨红色预警。
 

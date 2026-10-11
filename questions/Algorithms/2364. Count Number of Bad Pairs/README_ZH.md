@@ -1,4 +1,4 @@
-### [统计坏数对的数目](https://leetcode-cn.com/problems/count-number-of-bad-pairs)
+### [统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs)
 
 <p>给你一个下标从<strong>&nbsp;0</strong>&nbsp;开始的整数数组&nbsp;<code>nums</code>&nbsp;。如果 <code>i &lt; j</code>&nbsp;且&nbsp;<code>j - i != nums[j] - nums[i]</code>&nbsp;，那么我们称&nbsp;<code>(i, j)</code>&nbsp;是一个 <strong>坏</strong><strong>数对</strong>&nbsp;。</p>
 

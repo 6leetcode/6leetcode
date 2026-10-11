@@ -1,4 +1,4 @@
-### [得到要求路径的最小带权子图](https://leetcode-cn.com/problems/minimum-weighted-subgraph-with-the-required-paths)
+### [包含要求路径的最小带权子图](https://leetcode.cn/problems/minimum-weighted-subgraph-with-the-required-paths)
 
 <p>给你一个整数&nbsp;<code>n</code>&nbsp;，它表示一个 <strong>带权有向</strong> 图的节点数，节点编号为&nbsp;<code>0</code> 到&nbsp;<code>n - 1</code>&nbsp;。</p>
 

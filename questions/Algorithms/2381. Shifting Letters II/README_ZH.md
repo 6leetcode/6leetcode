@@ -1,4 +1,4 @@
-### [字母移位 II](https://leetcode-cn.com/problems/shifting-letters-ii)
+### [字母移位 II](https://leetcode.cn/problems/shifting-letters-ii)
 
 <p>给你一个小写英文字母组成的字符串&nbsp;<code>s</code>&nbsp;和一个二维整数数组&nbsp;<code>shifts</code>&nbsp;，其中&nbsp;<code>shifts[i] = [start<sub>i</sub>, end<sub>i</sub>, direction<sub>i</sub>]</code>&nbsp;。对于每个&nbsp;<code>i</code>&nbsp;，将&nbsp;<code>s</code>&nbsp;中从下标&nbsp;<code>start<sub>i</sub></code>&nbsp;到下标&nbsp;<code>end<sub>i</sub></code>&nbsp;（两者都包含）所有字符都进行移位运算，如果&nbsp;<code>direction<sub>i</sub> = 1</code>&nbsp;将字符向后移位，如果&nbsp;<code>direction<sub>i</sub> = 0</code>&nbsp;将字符向前移位。</p>
 

@@ -1,4 +1,4 @@
-### [从树中删除边的最小分数](https://leetcode-cn.com/problems/minimum-score-after-removals-on-a-tree)
+### [从树中删除边的最小分数](https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree)
 
 <p>存在一棵无向连通树，树中有编号从 <code>0</code> 到 <code>n - 1</code> 的 <code>n</code> 个节点， 以及 <code>n - 1</code> 条边。</p>
 

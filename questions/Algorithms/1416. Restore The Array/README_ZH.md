@@ -1,4 +1,4 @@
-### [恢复数组](https://leetcode-cn.com/problems/restore-the-array)
+### [恢复数组](https://leetcode.cn/problems/restore-the-array)
 
 <p>某个程序本来应该输出一个整数数组。但是这个程序忘记输出空格了以致输出了一个数字字符串，我们所知道的信息只有：数组中所有整数都在 <code>[1, k]</code>&nbsp;之间，且数组中的数字都没有前导 0 。</p>
 

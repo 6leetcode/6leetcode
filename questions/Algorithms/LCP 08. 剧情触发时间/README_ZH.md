@@ -1,4 +1,4 @@
-### [剧情触发时间](https://leetcode-cn.com/problems/ju-qing-hong-fa-shi-jian)
+### [剧情触发时间](https://leetcode.cn/problems/ju-qing-hong-fa-shi-jian)
 
 <p>在战略游戏中，玩家往往需要发展自己的势力来触发各种新的剧情。一个势力的主要属性有三种，分别是文明等级（<code>C</code>），资源储备（<code>R</code>）以及人口数量（<code>H</code>）。在游戏开始时（第 0 天），三种属性的值均为 0。</p>
 

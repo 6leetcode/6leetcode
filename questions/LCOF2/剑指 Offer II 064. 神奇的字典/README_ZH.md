@@ -1,4 +1,4 @@
-### [神奇的字典](https://leetcode-cn.com/problems/US1pGT)
+### [神奇的字典](https://leetcode.cn/problems/US1pGT)
 
 <p>设计一个使用单词列表进行初始化的数据结构，单词列表中的单词 <strong>互不相同</strong> 。 如果给出一个单词，请判定能否只将这个单词中<strong>一个</strong>字母换成另一个字母，使得所形成的新单词存在于已构建的神奇字典中。</p>
 
@@ -53,4 +53,4 @@ magicDictionary.search(&quot;leetcoded&quot;); // 返回 False
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 676&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/implement-magic-dictionary/">https://leetcode-cn.com/problems/implement-magic-dictionary/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 676&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/implement-magic-dictionary/">https://leetcode.cn/problems/implement-magic-dictionary/</a></p>

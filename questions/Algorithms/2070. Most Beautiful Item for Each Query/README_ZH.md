@@ -1,4 +1,4 @@
-### [每一个查询的最大美丽值](https://leetcode-cn.com/problems/most-beautiful-item-for-each-query)
+### [每一个查询的最大美丽值](https://leetcode.cn/problems/most-beautiful-item-for-each-query)
 
 <p>给你一个二维整数数组&nbsp;<code>items</code>&nbsp;，其中&nbsp;<code>items[i] = [price<sub>i</sub>, beauty<sub>i</sub>]</code>&nbsp;分别表示每一个物品的 <strong>价格</strong>&nbsp;和 <strong>美丽值</strong>&nbsp;。</p>
 

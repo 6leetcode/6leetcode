@@ -1,4 +1,4 @@
-### [绝对差值和](https://leetcode-cn.com/problems/minimum-absolute-sum-difference)
+### [绝对差值和](https://leetcode.cn/problems/minimum-absolute-sum-difference)
 
 <p>给你两个正整数数组 <code>nums1</code> 和 <code>nums2</code> ，数组的长度都是 <code>n</code> 。</p>
 

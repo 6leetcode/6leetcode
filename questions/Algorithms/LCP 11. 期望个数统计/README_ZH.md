@@ -1,4 +1,4 @@
-### [期望个数统计](https://leetcode-cn.com/problems/qi-wang-ge-shu-tong-ji)
+### [期望个数统计](https://leetcode.cn/problems/qi-wang-ge-shu-tong-ji)
 
 <p>某互联网公司一年一度的春招开始了，一共有 <code>n</code> 名面试者入选。每名面试者都会提交一份简历，公司会根据提供的简历资料产生一个预估的能力值，数值越大代表越有可能通过面试。</p>
 

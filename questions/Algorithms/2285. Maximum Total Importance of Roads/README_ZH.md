@@ -1,4 +1,4 @@
-### [道路的最大总重要性](https://leetcode-cn.com/problems/maximum-total-importance-of-roads)
+### [道路的最大总重要性](https://leetcode.cn/problems/maximum-total-importance-of-roads)
 
 <p>给你一个整数&nbsp;<code>n</code>&nbsp;，表示一个国家里的城市数目。城市编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;。</p>
 

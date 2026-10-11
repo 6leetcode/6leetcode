@@ -1,4 +1,4 @@
-### [检测正方形](https://leetcode-cn.com/problems/detect-squares)
+### [检测正方形](https://leetcode.cn/problems/detect-squares)
 
 <p>给你一个在 X-Y 平面上的点构成的数据流。设计一个满足下述要求的算法：</p>
 

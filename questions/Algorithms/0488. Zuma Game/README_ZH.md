@@ -1,4 +1,4 @@
-### [祖玛游戏](https://leetcode-cn.com/problems/zuma-game)
+### [祖玛游戏](https://leetcode.cn/problems/zuma-game)
 
 <p>你正在参与祖玛游戏的一个变种。</p>
 

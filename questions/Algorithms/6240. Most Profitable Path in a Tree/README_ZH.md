@@ -1,4 +1,4 @@
-### [树上最大得分和路径](https://leetcode-cn.com/problems/most-profitable-path-in-a-tree)
+### [树上最大得分和路径](https://leetcode.cn/problems/most-profitable-path-in-a-tree)
 
 <p>一个 <code>n</code>&nbsp;个节点的无向树，节点编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;，树的根结点是&nbsp;<code>0</code>&nbsp;号节点。给你一个长度为 <code>n - 1</code>&nbsp;的二维整数数组&nbsp;<code>edges</code>&nbsp;，其中&nbsp;<code>edges[i] = [a<sub>i</sub>, b<sub>i</sub>]</code>&nbsp;，表示节点&nbsp;<code>a<sub>i</sub></code> 和&nbsp;<code>b<sub>i</sub></code>&nbsp;在树中有一条边。</p>
 

@@ -1,4 +1,4 @@
-### [划分数组使最大差为 K](https://leetcode-cn.com/problems/partition-array-such-that-maximum-difference-is-k)
+### [划分数组使最大差为 K](https://leetcode.cn/problems/partition-array-such-that-maximum-difference-is-k)
 
 <p>给你一个整数数组 <code>nums</code> 和一个整数 <code>k</code> 。你可以将 <code>nums</code> 划分成一个或多个 <strong>子序列</strong> ，使 <code>nums</code> 中的每个元素都 <strong>恰好</strong> 出现在一个子序列中。</p>
 

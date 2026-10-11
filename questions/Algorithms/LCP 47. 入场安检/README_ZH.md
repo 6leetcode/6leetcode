@@ -1,10 +1,10 @@
-### [入场安检](https://leetcode-cn.com/problems/oPs9Bm)
+### [入场安检](https://leetcode.cn/problems/oPs9Bm)
 
 「力扣挑战赛」 的入场仪式马上就要开始了，由于安保工作的需要，设置了可容纳人数总和为 `M` 的 `N` 个安检室，`capacities[i]` 记录第 `i` 个安检室可容纳人数。安检室拥有两种类型：
 - 先进先出：在安检室中的所有观众中，最早进入安检室的观众最先离开
 - 后进先出：在安检室中的所有观众中，最晚进入安检室的观众最先离开
 
-![c24754f1a5ff56989340ba5004dc5eda.gif](https://pic.leetcode-cn.com/1628843202-cdFPSt-c24754f1a5ff56989340ba5004dc5eda.gif)
+![c24754f1a5ff56989340ba5004dc5eda.gif](https://pic.leetcode.cn/1628843202-cdFPSt-c24754f1a5ff56989340ba5004dc5eda.gif)
 
 
 
@@ -33,7 +33,7 @@
 > - 方案 2：将编号为 `0` 、`1` 的实验室设置为 **先进先出** 的类型，编号为 `2` 的实验室设置为 **后进先出** 的类型。
 >
 > 以下是方案 1 的示意图：
->![c60e38199a225ad62f13b954872edf9b.gif](https://pic.leetcode-cn.com/1628841618-bFKsnt-c60e38199a225ad62f13b954872edf9b.gif)
+>![c60e38199a225ad62f13b954872edf9b.gif](https://pic.leetcode.cn/1628841618-bFKsnt-c60e38199a225ad62f13b954872edf9b.gif)
 
 
 

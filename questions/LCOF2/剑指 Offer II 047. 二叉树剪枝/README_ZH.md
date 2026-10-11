@@ -1,4 +1,4 @@
-### [二叉树剪枝](https://leetcode-cn.com/problems/pOCWxh)
+### [二叉树剪枝](https://leetcode.cn/problems/pOCWxh)
 
 <p>给定一个二叉树 <strong>根节点</strong>&nbsp;<code>root</code>&nbsp;，树的每个节点的值要么是 <code>0</code>，要么是 <code>1</code>。请剪除该二叉树中所有节点的值为 <code>0</code> 的子树。</p>
 
@@ -49,4 +49,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 814&nbsp;题相同：<a href="https://leetcode-cn.com/problems/binary-tree-pruning/">https://leetcode-cn.com/problems/binary-tree-pruning/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 814&nbsp;题相同：<a href="https://leetcode.cn/problems/binary-tree-pruning/">https://leetcode.cn/problems/binary-tree-pruning/</a></p>

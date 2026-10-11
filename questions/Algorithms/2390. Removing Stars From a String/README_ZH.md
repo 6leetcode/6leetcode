@@ -1,4 +1,4 @@
-### [从字符串中移除星号](https://leetcode-cn.com/problems/removing-stars-from-a-string)
+### [从字符串中移除星号](https://leetcode.cn/problems/removing-stars-from-a-string)
 
 <p>给你一个包含若干星号 <code>*</code> 的字符串 <code>s</code> 。</p>
 

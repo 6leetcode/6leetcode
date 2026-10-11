@@ -1,2 +1,2 @@
-### [孤独像素 II](https://leetcode-cn.com/problems/lonely-pixel-ii)
+### [孤独像素 II](https://leetcode.cn/problems/lonely-pixel-ii)
 

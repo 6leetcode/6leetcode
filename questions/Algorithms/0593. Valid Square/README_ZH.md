@@ -1,4 +1,4 @@
-### [有效的正方形](https://leetcode-cn.com/problems/valid-square)
+### [有效的正方形](https://leetcode.cn/problems/valid-square)
 
 <p>给定2D空间中四个点的坐标&nbsp;<code>p1</code>,&nbsp;<code>p2</code>,&nbsp;<code>p3</code>&nbsp;和&nbsp;<code>p4</code>，如果这四个点构成一个正方形，则返回 <code>true</code> 。</p>
 
@@ -12,7 +12,7 @@
 
 <pre>
 <strong>输入:</strong> p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,1]
-<strong>输出:</strong> True
+<strong>输出:</strong> true
 </pre>
 
 <p><strong>示例 2:</strong></p>

@@ -1,4 +1,4 @@
-### [好子数组的最大分数](https://leetcode-cn.com/problems/maximum-score-of-a-good-subarray)
+### [好子数组的最大分数](https://leetcode.cn/problems/maximum-score-of-a-good-subarray)
 
 <p>给你一个整数数组 <code>nums</code> <strong>（下标从 0 开始）</strong>和一个整数 <code>k</code> 。</p>
 

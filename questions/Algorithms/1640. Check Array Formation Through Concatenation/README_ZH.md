@@ -1,4 +1,4 @@
-### [能否连接形成数组](https://leetcode-cn.com/problems/check-array-formation-through-concatenation)
+### [能否连接形成数组](https://leetcode.cn/problems/check-array-formation-through-concatenation)
 
 <p>给你一个整数数组 <code>arr</code> ，数组中的每个整数 <strong>互不相同</strong> 。另有一个由整数数组构成的数组 <code>pieces</code>，其中的整数也 <strong>互不相同</strong> 。请你以 <strong>任意顺序</strong> 连接 <code>pieces</code> 中的数组以形成 <code>arr</code> 。但是，<strong>不允许</strong> 对每个数组 <code>pieces[i]</code> 中的整数重新排序。</p>
 

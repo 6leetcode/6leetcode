@@ -1,4 +1,4 @@
-### [不同的循环子字符串](https://leetcode-cn.com/problems/distinct-echo-substrings)
+### [不同的循环子字符串](https://leetcode.cn/problems/distinct-echo-substrings)
 
 <p>给你一个字符串&nbsp;<code>text</code> ，请你返回满足下述条件的&nbsp;<strong>不同</strong> 非空子字符串的数目：</p>
 

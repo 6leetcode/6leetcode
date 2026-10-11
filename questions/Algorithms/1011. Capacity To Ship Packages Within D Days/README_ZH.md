@@ -1,4 +1,4 @@
-### [在 D 天内送达包裹的能力](https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days)
+### [在 D 天内送达包裹的能力](https://leetcode.cn/problems/capacity-to-ship-packages-within-d-days)
 
 <p>传送带上的包裹必须在 <code>days</code> 天内从一个港口运送到另一个港口。</p>
 
@@ -8,7 +8,7 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <pre>
 <strong>输入：</strong>weights = [1,2,3,4,5,6,7,8,9,10], days = 5
@@ -24,7 +24,7 @@
 请注意，货物必须按照给定的顺序装运，因此使用载重能力为 14 的船舶并将包装分成 (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) 是不允许的。 
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>weights = [3,2,2,4,1,4], days = 3
@@ -36,7 +36,7 @@
 第 3 天：1, 4
 </pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong class="example">示例 3：</strong></p>
 
 <pre>
 <strong>输入：</strong>weights = [1,2,3,1,1], days = 4

@@ -1,4 +1,4 @@
-### [1 比特与 2 比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters)
+### [1 比特与 2 比特字符](https://leetcode.cn/problems/1-bit-and-2-bit-characters)
 
 <p>有两种特殊字符：</p>
 

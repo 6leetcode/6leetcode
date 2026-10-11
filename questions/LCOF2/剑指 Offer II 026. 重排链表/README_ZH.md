@@ -1,4 +1,4 @@
-### [重排链表](https://leetcode-cn.com/problems/LGjMqU)
+### [重排链表](https://leetcode.cn/problems/LGjMqU)
 
 <p>给定一个单链表 <code>L</code><em> </em>的头节点 <code>head</code> ，单链表 <code>L</code> 表示为：</p>
 
@@ -38,4 +38,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 143&nbsp;题相同：<a href="https://leetcode-cn.com/problems/reorder-list/">https://leetcode-cn.com/problems/reorder-list/</a>&nbsp;</p>
+<p><meta charset="UTF-8" />注意：本题与主站 143&nbsp;题相同：<a href="https://leetcode.cn/problems/reorder-list/">https://leetcode.cn/problems/reorder-list/</a>&nbsp;</p>

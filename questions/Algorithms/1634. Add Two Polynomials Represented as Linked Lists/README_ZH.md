@@ -1,2 +1,2 @@
-### [求两个多项式链表的和](https://leetcode-cn.com/problems/add-two-polynomials-represented-as-linked-lists)
+### [求两个多项式链表的和](https://leetcode.cn/problems/add-two-polynomials-represented-as-linked-lists)
 

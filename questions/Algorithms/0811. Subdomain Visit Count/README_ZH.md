@@ -1,4 +1,4 @@
-### [子域名访问计数](https://leetcode-cn.com/problems/subdomain-visit-count)
+### [子域名访问计数](https://leetcode.cn/problems/subdomain-visit-count)
 
 <p>网站域名 <code>"discuss.leetcode.com"</code> 由多个子域名组成。顶级域名为 <code>"com"</code> ，二级域名为 <code>"leetcode.com"</code> ，最低一级为 <code>"discuss.leetcode.com"</code> 。当访问域名 <code>"discuss.leetcode.com"</code> 时，同时也会隐式访问其父域名 <code>"leetcode.com" </code>以及 <code>"com"</code> 。</p>
 

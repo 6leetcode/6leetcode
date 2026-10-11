@@ -1,4 +1,4 @@
-### [采购方案](https://leetcode-cn.com/problems/4xy4Wx)
+### [采购方案](https://leetcode.cn/problems/4xy4Wx)
 
 小力将 N 个零件的报价存于数组 `nums`。小力预算为 `target`，假定小力仅购买两个零件，要求购买零件的花费不超过预算，请问他有多少种采购方案。
 

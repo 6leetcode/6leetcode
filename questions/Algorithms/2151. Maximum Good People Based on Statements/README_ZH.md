@@ -1,4 +1,4 @@
-### [基于陈述统计最多好人数](https://leetcode-cn.com/problems/maximum-good-people-based-on-statements)
+### [基于陈述统计最多好人数](https://leetcode.cn/problems/maximum-good-people-based-on-statements)
 
 <p>游戏中存在两种角色：</p>
 

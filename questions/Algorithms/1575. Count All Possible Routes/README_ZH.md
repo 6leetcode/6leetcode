@@ -1,4 +1,4 @@
-### [统计所有可行路径](https://leetcode-cn.com/problems/count-all-possible-routes)
+### [统计所有可行路径](https://leetcode.cn/problems/count-all-possible-routes)
 
 <p>给你一个 <strong>互不相同</strong>&nbsp;的整数数组，其中&nbsp;<code>locations[i]</code>&nbsp;表示第&nbsp;<code>i</code>&nbsp;个城市的位置。同时给你&nbsp;<code>start</code>，<code>finish</code>&nbsp;和&nbsp;<code>fuel</code>&nbsp;分别表示出发城市、目的地城市和你初始拥有的汽油总量</p>
 

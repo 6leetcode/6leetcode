@@ -1,4 +1,4 @@
-### [前 n 个数字二进制中 1 的个数](https://leetcode-cn.com/problems/w3tCBm)
+### [前 n 个数字二进制中 1 的个数](https://leetcode.cn/problems/w3tCBm)
 
 <p>给定一个非负整数 <code>n</code><b>&nbsp;</b>，请计算 <code>0</code> 到 <code>n</code> 之间的每个数字的二进制表示中 1 的个数，并输出一个数组。</p>
 
@@ -49,4 +49,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 338&nbsp;题相同：<a href="https://leetcode-cn.com/problems/counting-bits/">https://leetcode-cn.com/problems/counting-bits/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 338&nbsp;题相同：<a href="https://leetcode.cn/problems/counting-bits/">https://leetcode.cn/problems/counting-bits/</a></p>

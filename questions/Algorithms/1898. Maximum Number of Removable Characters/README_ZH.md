@@ -1,4 +1,4 @@
-### [可移除字符的最大数目](https://leetcode-cn.com/problems/maximum-number-of-removable-characters)
+### [可移除字符的最大数目](https://leetcode.cn/problems/maximum-number-of-removable-characters)
 
 <p>给你两个字符串 <code>s</code> 和 <code>p</code> ，其中 <code>p</code> 是 <code>s</code> 的一个 <strong>子序列</strong> 。同时，给你一个元素 <strong>互不相同</strong> 且下标 <strong>从 0 开始</strong> 计数的整数数组 <code>removable</code> ，该数组是 <code>s</code> 中下标的一个子集（<code>s</code> 的下标也 <strong>从 0 开始</strong> 计数）。</p>
 

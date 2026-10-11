@@ -1,4 +1,4 @@
-### [复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses)
+### [复原 IP 地址](https://leetcode.cn/problems/restore-ip-addresses)
 
 <p><strong>有效 IP 地址</strong> 正好由四个整数（每个整数位于 <code>0</code> 到 <code>255</code> 之间组成，且不能含有前导 <code>0</code>），整数之间用 <code>'.'</code> 分隔。</p>
 

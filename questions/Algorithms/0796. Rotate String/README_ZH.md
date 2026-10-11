@@ -1,4 +1,4 @@
-### [旋转字符串](https://leetcode-cn.com/problems/rotate-string)
+### [旋转字符串](https://leetcode.cn/problems/rotate-string)
 
 <p>给定两个字符串, <code>s</code>&nbsp;和&nbsp;<code>goal</code>。如果在若干次旋转操作之后，<code>s</code>&nbsp;能变成&nbsp;<code>goal</code>&nbsp;，那么返回&nbsp;<code>true</code>&nbsp;。</p>
 
@@ -10,19 +10,29 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1:</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
-<pre>
-<strong>输入:</strong> s = "abcde", goal = "cdeab"
-<strong>输出:</strong> true
-</pre>
+<div class="example-block">
+<p><strong>输入：</strong> <span class="example-io">s = "abcde", goal = "cdeab"</span></p>
 
-<p><strong>示例 2:</strong></p>
+<p><strong>输出：</strong> <span class="example-io">true</span></p>
 
-<pre>
-<strong>输入:</strong> s = "abcde", goal = "abced"
-<strong>输出:</strong> false
-</pre>
+<p><strong>解释：</strong></p>
+
+<p>将 <code>s</code> 向左旋转 2 个位置，即可将 <code>"ab"</code> 移动到字符串末尾，得到 <code>"cdeab"</code>，与 <code>goal</code> 相等。</p>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong> <span class="example-io">s = "abcde", goal = "abced"</span></p>
+
+<p><strong>输出：</strong> <span class="example-io">false</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>无论对 <code>s</code> 进行多少次旋转，都无法得到 <code>"abced"</code>。由于字符的相对顺序不同，因此 <code>goal</code> 不是 <code>s</code> 的旋转结果。</p>
+</div>
 
 <p>&nbsp;</p>
 

@@ -1,4 +1,4 @@
-### [相对名次](https://leetcode-cn.com/problems/relative-ranks)
+### [相对名次](https://leetcode.cn/problems/relative-ranks)
 
 <p>给你一个长度为 <code>n</code> 的整数数组 <code>score</code> ，其中 <code>score[i]</code> 是第 <code>i</code> 位运动员在比赛中的得分。所有得分都 <strong>互不相同</strong> 。</p>
 

@@ -1,4 +1,4 @@
-### [找出第 K 小的数对距离](https://leetcode-cn.com/problems/find-k-th-smallest-pair-distance)
+### [找出第 K 小的数对距离](https://leetcode.cn/problems/find-k-th-smallest-pair-distance)
 
 <p>数对 <code>(a,b)</code> 由整数 <code>a</code> 和 <code>b</code> 组成，其数对距离定义为 <code>a</code> 和 <code>b</code> 的绝对差值。</p>
 

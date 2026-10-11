@@ -1,2 +1,2 @@
-### [银行账户概要](https://leetcode-cn.com/problems/bank-account-summary)
+### [银行账户概要](https://leetcode.cn/problems/bank-account-summary)
 

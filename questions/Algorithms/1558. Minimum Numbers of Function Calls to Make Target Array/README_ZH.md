@@ -1,4 +1,4 @@
-### [得到目标数组的最少函数调用次数](https://leetcode-cn.com/problems/minimum-numbers-of-function-calls-to-make-target-array)
+### [得到目标数组的最少函数调用次数](https://leetcode.cn/problems/minimum-numbers-of-function-calls-to-make-target-array)
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2020/07/10/sample_2_1887.png" style="height:294px; width:573px" /></p>
 

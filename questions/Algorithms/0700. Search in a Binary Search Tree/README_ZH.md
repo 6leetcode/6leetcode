@@ -1,4 +1,4 @@
-### [二叉搜索树中的搜索](https://leetcode-cn.com/problems/search-in-a-binary-search-tree)
+### [二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree)
 
 <p>给定二叉搜索树（BST）的根节点<meta charset="UTF-8" />&nbsp;<code>root</code>&nbsp;和一个整数值<meta charset="UTF-8" />&nbsp;<code>val</code>。</p>
 
@@ -27,7 +27,7 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li>数中节点数在&nbsp;<code>[1, 5000]</code>&nbsp;范围内</li>
+	<li>树中节点数在&nbsp;<code>[1, 5000]</code>&nbsp;范围内</li>
 	<li><code>1 &lt;= Node.val &lt;= 10<sup>7</sup></code></li>
 	<li><code>root</code>&nbsp;是二叉搜索树</li>
 	<li><code>1 &lt;= val &lt;= 10<sup>7</sup></code></li>

@@ -1,4 +1,4 @@
-### [Range 模块](https://leetcode-cn.com/problems/range-module)
+### [Range 模块](https://leetcode.cn/problems/range-module)
 
 <p>Range模块是跟踪数字范围的模块。设计一个数据结构来跟踪表示为 <strong>半开区间</strong> 的范围并查询它们。</p>
 

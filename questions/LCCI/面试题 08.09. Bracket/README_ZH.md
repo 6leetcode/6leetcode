@@ -1,12 +1,14 @@
-### [括号](https://leetcode-cn.com/problems/bracket-lcci)
+### [括号](https://leetcode.cn/problems/bracket-lcci)
 
 <p>括号。设计一种算法，打印n对括号的所有合法的（例如，开闭一一对应）组合。</p>
 
 <p>说明：解集不能包含重复的子集。</p>
 
-<p>例如，给出 n = 3，生成结果为：</p>
+<p><strong>示例：</strong></p>
 
 <pre>
+<strong>输入：</strong>n = 3
+<strong>输出：</strong>
 [
   "((()))",
   "(()())",

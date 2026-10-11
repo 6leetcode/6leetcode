@@ -1,4 +1,4 @@
-### [DI 序列的有效排列](https://leetcode-cn.com/problems/valid-permutations-for-di-sequence)
+### [DI 序列的有效排列](https://leetcode.cn/problems/valid-permutations-for-di-sequence)
 
 <p>给定一个长度为 <code>n</code> 的字符串 <code>s</code> ，其中 <code>s[i]</code> 是:</p>
 

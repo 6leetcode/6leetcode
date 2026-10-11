@@ -1,4 +1,4 @@
-### [学生出勤记录 II](https://leetcode-cn.com/problems/student-attendance-record-ii)
+### [学生出勤记录 II](https://leetcode.cn/problems/student-attendance-record-ii)
 
 可以用字符串表示一个学生的出勤记录，其中的每个字符用来标记当天的出勤情况（缺勤、迟到、到场）。记录中只含下面三种字符：
 <ul>

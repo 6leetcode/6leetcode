@@ -1,4 +1,4 @@
-### [构建回文串检测](https://leetcode-cn.com/problems/can-make-palindrome-from-substring)
+### [构建回文串检测](https://leetcode.cn/problems/can-make-palindrome-from-substring)
 
 <p>给你一个字符串&nbsp;<code>s</code>，请你对&nbsp;<code>s</code>&nbsp;的子串进行检测。</p>
 

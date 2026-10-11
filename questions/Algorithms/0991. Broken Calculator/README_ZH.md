@@ -1,4 +1,4 @@
-### [坏了的计算器](https://leetcode-cn.com/problems/broken-calculator)
+### [坏了的计算器](https://leetcode.cn/problems/broken-calculator)
 
 <p>在显示着数字&nbsp;<code>startValue</code>&nbsp;的坏计算器上，我们可以执行以下两种操作：</p>
 
@@ -40,5 +40,5 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>1 &lt;= x, y &lt;= 10<sup>9</sup></code></li>
+	<li><code>1 &lt;= startValue, target &lt;= 10<sup>9</sup></code></li>
 </ul>

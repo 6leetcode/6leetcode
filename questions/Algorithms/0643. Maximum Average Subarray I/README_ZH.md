@@ -1,4 +1,4 @@
-### [子数组最大平均数 I](https://leetcode-cn.com/problems/maximum-average-subarray-i)
+### [子数组最大平均数 I](https://leetcode.cn/problems/maximum-average-subarray-i)
 
 <p>给你一个由 <code>n</code> 个元素组成的整数数组 <code>nums</code> 和一个整数 <code>k</code> 。</p>
 

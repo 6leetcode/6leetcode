@@ -1,4 +1,4 @@
-### [卡车上的最大单元数](https://leetcode-cn.com/problems/maximum-units-on-a-truck)
+### [卡车上的最大单元数](https://leetcode.cn/problems/maximum-units-on-a-truck)
 
 <p>请你将一些箱子装在 <strong>一辆卡车</strong> 上。给你一个二维数组 <code>boxTypes</code> ，其中 <code>boxTypes[i] = [numberOfBoxes<sub>i</sub>, numberOfUnitsPerBox<sub>i</sub>]</code> ：</p>
 

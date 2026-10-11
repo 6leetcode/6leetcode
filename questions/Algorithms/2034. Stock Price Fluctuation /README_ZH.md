@@ -1,4 +1,4 @@
-### [股票价格波动](https://leetcode-cn.com/problems/stock-price-fluctuation)
+### [股票价格波动](https://leetcode.cn/problems/stock-price-fluctuation)
 
 <p>给你一支股票价格的数据流。数据流中每一条记录包含一个 <strong>时间戳</strong>&nbsp;和该时间点股票对应的 <strong>价格</strong>&nbsp;。</p>
 

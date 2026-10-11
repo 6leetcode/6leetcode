@@ -1,4 +1,4 @@
-### [子数组中占绝大多数的元素](https://leetcode-cn.com/problems/online-majority-element-in-subarray)
+### [子数组中占绝大多数的元素](https://leetcode.cn/problems/online-majority-element-in-subarray)
 
 <p>设计一个数据结构，有效地找到给定子数组的 <strong>多数元素</strong> 。</p>
 

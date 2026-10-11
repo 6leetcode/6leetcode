@@ -1,4 +1,4 @@
-### [统计「优美子数组」](https://leetcode-cn.com/problems/count-number-of-nice-subarrays)
+### [统计「优美子数组」](https://leetcode.cn/problems/count-number-of-nice-subarrays)
 
 <p>给你一个整数数组&nbsp;<code>nums</code> 和一个整数 <code>k</code>。如果某个连续子数组中恰好有 <code>k</code> 个奇数数字，我们就认为这个子数组是「<strong>优美子数组</strong>」。</p>
 

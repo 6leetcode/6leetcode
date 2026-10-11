@@ -1,4 +1,4 @@
-### [网格照明](https://leetcode-cn.com/problems/grid-illumination)
+### [网格照明](https://leetcode.cn/problems/grid-illumination)
 
 <p>在大小为 <code>n x n</code> 的网格 <code>grid</code> 上，每个单元格都有一盏灯，最初灯都处于 <strong>关闭</strong> 状态。</p>
 

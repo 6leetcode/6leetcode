@@ -1,2 +1,2 @@
-### [验证回文字符串 III](https://leetcode-cn.com/problems/valid-palindrome-iii)
+### [验证回文串 III](https://leetcode.cn/problems/valid-palindrome-iii)
 

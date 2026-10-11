@@ -1,4 +1,4 @@
-### [雪糕的最大数量](https://leetcode-cn.com/problems/maximum-ice-cream-bars)
+### [雪糕的最大数量](https://leetcode.cn/problems/maximum-ice-cream-bars)
 
 <p>夏日炎炎，小男孩 Tony 想买一些雪糕消消暑。</p>
 

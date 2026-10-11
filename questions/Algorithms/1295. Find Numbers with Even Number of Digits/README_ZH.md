@@ -1,12 +1,13 @@
-### [统计位数为偶数的数字](https://leetcode-cn.com/problems/find-numbers-with-even-number-of-digits)
+### [统计位数为偶数的数字](https://leetcode.cn/problems/find-numbers-with-even-number-of-digits)
 
-<p>给你一个整数数组&nbsp;<code>nums</code>，请你返回其中位数为&nbsp;<strong>偶数</strong>&nbsp;的数字的个数。</p>
+<p>给你一个整数数组&nbsp;<code>nums</code>，请你返回其中包含&nbsp;<strong>偶数</strong>&nbsp;个数位的数字的个数。</p>
 
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>nums = [12,345,2,6,7896]
+<pre>
+<strong>输入：</strong>nums = [12,345,2,6,7896]
 <strong>输出：</strong>2
 <strong>解释：
 </strong>12 是 2 位数字（位数为偶数）&nbsp;
@@ -19,7 +20,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>nums = [555,901,482,1771]
+<pre>
+<strong>输入：</strong>nums = [555,901,482,1771]
 <strong>输出：</strong>1 
 <strong>解释： </strong>
 只有 1771 是位数为偶数的数字。
@@ -31,5 +33,5 @@
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 500</code></li>
-	<li><code>1 &lt;= nums[i] &lt;= 10^5</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>

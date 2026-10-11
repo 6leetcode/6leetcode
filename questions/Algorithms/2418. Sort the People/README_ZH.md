@@ -1,4 +1,4 @@
-### [按身高排序](https://leetcode-cn.com/problems/sort-the-people)
+### [按身高排序](https://leetcode.cn/problems/sort-the-people)
 
 <p>给你一个字符串数组 <code>names</code> ，和一个由 <strong>互不相同</strong> 的正整数组成的数组 <code>heights</code> 。两个数组的长度均为 <code>n</code> 。</p>
 

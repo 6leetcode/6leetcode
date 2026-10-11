@@ -1,4 +1,4 @@
-### [用户分组](https://leetcode-cn.com/problems/group-the-people-given-the-group-size-they-belong-to)
+### [用户分组](https://leetcode.cn/problems/group-the-people-given-the-group-size-they-belong-to)
 
 <p>有&nbsp;<code>n</code>&nbsp;个人被分成数量未知的组。每个人都被标记为一个从 <code>0</code> 到 <code>n - 1</code> 的<strong>唯一ID</strong>&nbsp;。</p>
 

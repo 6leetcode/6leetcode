@@ -1,4 +1,4 @@
-### [计算力扣银行的钱](https://leetcode-cn.com/problems/calculate-money-in-leetcode-bank)
+### [计算力扣银行的钱](https://leetcode.cn/problems/calculate-money-in-leetcode-bank)
 
 <p>Hercy 想要为购买第一辆车存钱。他 <strong>每天</strong> 都往力扣银行里存钱。</p>
 

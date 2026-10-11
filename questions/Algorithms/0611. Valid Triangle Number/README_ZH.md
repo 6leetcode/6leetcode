@@ -1,4 +1,4 @@
-### [有效三角形的个数](https://leetcode-cn.com/problems/valid-triangle-number)
+### [有效三角形的个数](https://leetcode.cn/problems/valid-triangle-number)
 
 <p>给定一个包含非负整数的数组&nbsp;<code>nums</code> ，返回其中可以组成三角形三条边的三元组个数。</p>
 

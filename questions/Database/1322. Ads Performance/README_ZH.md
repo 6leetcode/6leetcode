@@ -1,2 +1,2 @@
-### [广告效果](https://leetcode-cn.com/problems/ads-performance)
+### [广告效果](https://leetcode.cn/problems/ads-performance)
 

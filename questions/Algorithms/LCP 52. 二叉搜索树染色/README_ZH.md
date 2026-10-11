@@ -1,4 +1,4 @@
-### [二叉搜索树染色](https://leetcode-cn.com/problems/QO5KpG)
+### [二叉搜索树染色](https://leetcode.cn/problems/QO5KpG)
 
 欢迎各位勇者来到力扣城，本次试炼主题为「二叉搜索树染色」。
 
@@ -22,7 +22,7 @@
 >第 1 次操作，将值为 1、2、3 的节点染红；
 >第 2 次操作，将值为 3、4、5 的节点染蓝；
 >因此，最终值为 1、2 的节点为红色节点，返回数量 2
-![image.png](https://pic.leetcode-cn.com/1649833948-arSlXd-image.png){:width=230px}
+![image.png](https://pic.leetcode.cn/1649833948-arSlXd-image.png){:width=230px}
 
 
 **示例 2：**
@@ -37,7 +37,7 @@
 >第 2 次操作，将值为 4、5 的节点染蓝；
 >第 3 次操作，将值为 5、6、7 的节点染红；
 >因此，最终值为 1、2、5、6、7 的节点为红色节点，返回数量 5
-![image.png](https://pic.leetcode-cn.com/1649833763-BljEbP-image.png){:width=230px}
+![image.png](https://pic.leetcode.cn/1649833763-BljEbP-image.png){:width=230px}
 
 **提示：**
 + `1 <= 二叉树节点数量 <= 10^5`

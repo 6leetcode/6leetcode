@@ -5,12 +5,14 @@
 <p>A <strong>palindrome pair</strong> is a pair of integers <code>(i, j)</code> such that:</p>
 
 <ul>
-	<li><code>0 &lt;= i, j &lt; word.length</code>,</li>
+	<li><code>0 &lt;= i, j &lt; words.length</code>,</li>
 	<li><code>i != j</code>, and</li>
 	<li><code>words[i] + words[j]</code> (the concatenation of the two strings) is a <span data-keyword="palindrome-string">palindrome</span>.</li>
 </ul>
 
 <p>Return <em>an array of all the <strong>palindrome pairs</strong> of </em><code>words</code>.</p>
+
+<p>You must write an algorithm with&nbsp;<code>O(sum of words[i].length)</code>&nbsp;runtime complexity.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

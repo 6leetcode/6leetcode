@@ -1,4 +1,4 @@
-### [数组美丽值求和](https://leetcode-cn.com/problems/sum-of-beauty-in-the-array)
+### [数组美丽值求和](https://leetcode.cn/problems/sum-of-beauty-in-the-array)
 
 <p>给你一个下标从 <strong>0</strong> 开始的整数数组 <code>nums</code> 。对于每个下标 <code>i</code>（<code>1 &lt;= i &lt;= nums.length - 2</code>），<code>nums[i]</code> 的 <strong>美丽值</strong> 等于：</p>
 

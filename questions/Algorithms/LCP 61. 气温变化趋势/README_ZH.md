@@ -1,4 +1,4 @@
-### [气温变化趋势](https://leetcode-cn.com/problems/6CE719)
+### [气温变化趋势](https://leetcode.cn/problems/6CE719)
 
 力扣城计划在两地设立「力扣嘉年华」的分会场，气象小组正在分析两地区的气温变化趋势，对于第 `i ~ (i+1)` 天的气温变化趋势，将根据以下规则判断：
 - 若第 `i+1` 天的气温 **高于** 第 `i` 天，为 **上升** 趋势
@@ -17,7 +17,7 @@
 >输出：`2`
 >
 >解释：如下表所示， 第 `2～4` 天两地气温变化趋势相同，且持续时间最长，因此返回 `4-2=2`
-![image.png](https://pic.leetcode-cn.com/1663902654-hlrSvs-image.png){:width=1000px}
+![image.png](https://pic.leetcode.cn/1663902654-hlrSvs-image.png){:width=1000px}
 
 
 **示例 2：**

@@ -1,4 +1,4 @@
-### [岛屿的周长](https://leetcode-cn.com/problems/island-perimeter)
+### [岛屿的周长](https://leetcode.cn/problems/island-perimeter)
 
 <p>给定一个 <code>row x col</code> 的二维网格地图 <code>grid</code> ，其中：<code>grid[i][j] = 1</code> 表示陆地， <code>grid[i][j] = 0</code> 表示水域。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/island.png" /></p>
+<p><img src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/10/12/island.png" /></p>
 
 <pre>
 <strong>输入：</strong>grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]

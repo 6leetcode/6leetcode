@@ -1,4 +1,4 @@
-### [第 N 个泰波那契数](https://leetcode-cn.com/problems/n-th-tribonacci-number)
+### [第 N 个泰波那契数](https://leetcode.cn/problems/n-th-tribonacci-number)
 
 <p>泰波那契序列&nbsp;T<sub>n</sub>&nbsp;定义如下：&nbsp;</p>
 

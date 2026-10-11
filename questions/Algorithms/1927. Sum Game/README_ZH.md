@@ -1,4 +1,4 @@
-### [求和游戏](https://leetcode-cn.com/problems/sum-game)
+### [求和游戏](https://leetcode.cn/problems/sum-game)
 
 <p>Alice 和 Bob 玩一个游戏，两人轮流行动，<strong>Alice 先手</strong> 。</p>
 

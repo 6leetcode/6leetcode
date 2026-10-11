@@ -1,4 +1,4 @@
-### [字典序的第K小数字](https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order)
+### [字典序的第K小数字](https://leetcode.cn/problems/k-th-smallest-in-lexicographical-order)
 
 <p>给定整数&nbsp;<code>n</code>&nbsp;和&nbsp;<code>k</code>，返回&nbsp;&nbsp;<code>[1, n]</code>&nbsp;中字典序第&nbsp;<code>k</code>&nbsp;小的数字。</p>
 

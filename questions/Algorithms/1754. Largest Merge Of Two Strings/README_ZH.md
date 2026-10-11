@@ -1,4 +1,4 @@
-### [构造字典序最大的合并字符串](https://leetcode-cn.com/problems/largest-merge-of-two-strings)
+### [构造字典序最大的合并字符串](https://leetcode.cn/problems/largest-merge-of-two-strings)
 
 <p>给你两个字符串 <code>word1</code> 和 <code>word2</code> 。你需要按下述方式构造一个新字符串 <code>merge</code> ：如果 <code>word1</code> 或 <code>word2</code> 非空，选择 <strong>下面选项之一</strong> 继续操作：</p>
 

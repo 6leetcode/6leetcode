@@ -1,4 +1,4 @@
-### [拆分成最多数目的正偶数之和](https://leetcode-cn.com/problems/maximum-split-of-positive-even-integers)
+### [拆分成最多数目的正偶数之和](https://leetcode.cn/problems/maximum-split-of-positive-even-integers)
 
 <p>给你一个整数&nbsp;<code>finalSum</code>&nbsp;。请你将它拆分成若干个&nbsp;<strong>互不相同</strong> 的正偶数之和，且拆分出来的正偶数数目&nbsp;<strong>最多</strong>&nbsp;。</p>
 

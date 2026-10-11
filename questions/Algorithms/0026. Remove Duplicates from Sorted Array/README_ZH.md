@@ -1,12 +1,10 @@
-### [删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array)
+### [删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array)
 
-<p>给你一个 <strong>升序排列</strong> 的数组 <code>nums</code> ，请你<strong><a href="http://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95" target="_blank"> 原地</a></strong> 删除重复出现的元素，使每个元素 <strong>只出现一次</strong> ，返回删除后数组的新长度。元素的 <strong>相对顺序</strong> 应该保持 <strong>一致</strong> 。</p>
+<p>给你一个 <strong>非严格递增排列</strong> 的数组 <code>nums</code> ，请你<strong><a href="http://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95" target="_blank"> 原地</a></strong> 删除重复出现的元素，使每个元素 <strong>只出现一次</strong> ，返回删除后数组的新长度。元素的 <strong>相对顺序</strong> 应该保持 <strong>一致</strong> 。然后返回 <code>nums</code> 中唯一元素的个数。</p>
 
-<p>由于在某些语言中不能改变数组的长度，所以必须将结果放在数组nums的第一部分。更规范地说，如果在删除重复项之后有 <code>k</code> 个元素，那么&nbsp;<code>nums</code>&nbsp;的前 <code>k</code> 个元素应该保存最终结果。</p>
+<p>考虑 <code>nums</code> 的唯一元素的数量为 <code>k</code>。去重后，返回唯一元素的数量 <code>k</code>。</p>
 
-<p>将最终结果插入&nbsp;<code>nums</code> 的前 <code>k</code> 个位置后返回 <code>k</code> 。</p>
-
-<p>不要使用额外的空间，你必须在 <strong><a href="https://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95" target="_blank">原地 </a>修改输入数组 </strong>并在使用 O(1) 额外空间的条件下完成。</p>
+<p><code>nums</code> 的前 <code>k</code> 个元素应包含 <strong>排序后</strong> 的唯一数字。下标&nbsp;<code>k - 1</code> 之后的剩余元素可以忽略。</p>
 
 <p><strong>判题标准:</strong></p>
 
@@ -27,7 +25,7 @@ for (int i = 0; i &lt; k; i++) {
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <pre>
 <strong>输入：</strong>nums = [1,1,2]
@@ -35,11 +33,11 @@ for (int i = 0; i &lt; k; i++) {
 <strong>解释：</strong>函数应该返回新的长度 <strong><code>2</code></strong> ，并且原数组 <em>nums </em>的前两个元素被修改为 <strong><code>1</code></strong>, <strong><code>2 </code></strong><code>。</code>不需要考虑数组中超出新长度后面的元素。
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>nums = [0,0,1,1,1,2,2,3,3,4]
-<strong>输出：</strong>5, nums = [0,1,2,3,4]
+<strong>输出：</strong>5, nums = [0,1,2,3,4,_,_,_,_,_]
 <strong>解释：</strong>函数应该返回新的长度 <strong><code>5</code></strong> ， 并且原数组 <em>nums </em>的前五个元素被修改为 <strong><code>0</code></strong>, <strong><code>1</code></strong>, <strong><code>2</code></strong>, <strong><code>3</code></strong>, <strong><code>4</code></strong> 。不需要考虑数组中超出新长度后面的元素。
 </pre>
 
@@ -49,6 +47,6 @@ for (int i = 0; i &lt; k; i++) {
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
-	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
-	<li><code>nums</code> 已按 <strong>升序</strong> 排列</li>
+	<li><code>-10<font size="1">0</font>&nbsp;&lt;= nums[i] &lt;= 10<font size="1">0</font></code></li>
+	<li><code>nums</code> 已按 <strong>非递减</strong>&nbsp;顺序排列。</li>
 </ul>

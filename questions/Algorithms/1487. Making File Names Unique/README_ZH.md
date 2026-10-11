@@ -1,4 +1,4 @@
-### [保证文件名唯一](https://leetcode-cn.com/problems/making-file-names-unique)
+### [保证文件名唯一](https://leetcode.cn/problems/making-file-names-unique)
 
 <p>给你一个长度为 <code>n</code> 的字符串数组 <code>names</code> 。你将会在文件系统中创建 <code>n</code> 个文件夹：在第 <code>i</code> 分钟，新建名为 <code>names[i]</code> 的文件夹。</p>
 

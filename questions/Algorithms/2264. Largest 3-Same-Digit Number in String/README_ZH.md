@@ -1,4 +1,4 @@
-### [字符串中最大的 3 位相同数字](https://leetcode-cn.com/problems/largest-3-same-digit-number-in-string)
+### [字符串中最大的 3 位相同数字](https://leetcode.cn/problems/largest-3-same-digit-number-in-string)
 
 <p>给你一个字符串 <code>num</code> ，表示一个大整数。如果一个整数满足下述所有条件，则认为该整数是一个 <strong>优质整数</strong> ：</p>
 

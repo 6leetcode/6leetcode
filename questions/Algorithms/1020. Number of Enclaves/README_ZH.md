@@ -1,4 +1,4 @@
-### [飞地的数量](https://leetcode-cn.com/problems/number-of-enclaves)
+### [飞地的数量](https://leetcode.cn/problems/number-of-enclaves)
 
 <p>给你一个大小为 <code>m x n</code> 的二进制矩阵 <code>grid</code> ，其中 <code>0</code> 表示一个海洋单元格、<code>1</code> 表示一个陆地单元格。</p>
 

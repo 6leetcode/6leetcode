@@ -1,4 +1,4 @@
-### [重复 K 次的最长子序列](https://leetcode-cn.com/problems/longest-subsequence-repeated-k-times)
+### [重复 K 次的最长子序列](https://leetcode.cn/problems/longest-subsequence-repeated-k-times)
 
 <p>给你一个长度为 <code>n</code> 的字符串 <code>s</code> ，和一个整数 <code>k</code> 。请你找出字符串 <code>s</code> 中 <strong>重复</strong> <code>k</code> 次的 <strong>最长子序列</strong> 。</p>
 
@@ -48,6 +48,6 @@
 <ul>
 	<li><code>n == s.length</code></li>
 	<li><code>2 &lt;= k &lt;= 2000</code></li>
-	<li><code>2 &lt;= n &lt; k * 8</code></li>
+	<li><code>2 &lt;= n &lt; min(2001, k * 8)</code></li>
 	<li><code>s</code> 由小写英文字母组成</li>
 </ul>

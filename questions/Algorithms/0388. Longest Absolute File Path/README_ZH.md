@@ -1,4 +1,4 @@
-### [文件的最长绝对路径](https://leetcode-cn.com/problems/longest-absolute-file-path)
+### [文件的最长绝对路径](https://leetcode.cn/problems/longest-absolute-file-path)
 
 <p>假设有一个同时存储文件和目录的文件系统。下图展示了文件系统的一个示例：</p>
 

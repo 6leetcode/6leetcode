@@ -1,2 +1,2 @@
-### [大满贯数量](https://leetcode-cn.com/problems/grand-slam-titles)
+### [大满贯数量](https://leetcode.cn/problems/grand-slam-titles)
 

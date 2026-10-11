@@ -4,6 +4,8 @@
 
 <p>Note that operands in the returned expressions <strong>should not</strong> contain leading zeros.</p>
 
+<p><strong>Note</strong> that a number can contain multiple digits.</p>
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 

@@ -1,4 +1,4 @@
-### [将杂乱无章的数字排序](https://leetcode-cn.com/problems/sort-the-jumbled-numbers)
+### [将杂乱无章的数字排序](https://leetcode.cn/problems/sort-the-jumbled-numbers)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>mapping</code>&nbsp;，它表示一个十进制数的映射规则，<code>mapping[i] = j</code>&nbsp;表示这个规则下将数位&nbsp;<code>i</code>&nbsp;映射为数位 <code>j</code>&nbsp;。</p>
 
@@ -17,12 +17,13 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><b>输入：</b>mapping = [8,9,4,0,2,1,3,5,7,6], nums = [991,338,38]
+<pre>
+<b>输入：</b>mapping = [8,9,4,0,2,1,3,5,7,6], nums = [991,338,38]
 <b>输出：</b>[338,38,991]
 <b>解释：</b>
 将数字 991 按照如下规则映射：
 1. mapping[9] = 6 ，所有数位 9 都会变成 6 。
-2. mapping[1] = 9 ，所有数位 1 都会变成 8 。
+2. mapping[1] = 9 ，所有数位 1 都会变成 9 。
 所以，991 映射的值为 669 。
 338 映射为 007 ，去掉前导 0 后得到 7 。
 38 映射为 07 ，去掉前导 0 后得到 7 。
@@ -32,7 +33,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><b>输入：</b>mapping = [0,1,2,3,4,5,6,7,8,9], nums = [789,456,123]
+<pre>
+<b>输入：</b>mapping = [0,1,2,3,4,5,6,7,8,9], nums = [789,456,123]
 <b>输出：</b>[123,456,789]
 <b>解释：</b>789 映射为 789 ，456 映射为 456 ，123 映射为 123 。所以排序后数组为 [123,456,789] 。
 </pre>

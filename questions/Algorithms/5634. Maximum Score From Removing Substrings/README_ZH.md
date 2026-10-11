@@ -1,4 +1,4 @@
-### [删除子字符串的最大得分](https://leetcode-cn.com/problems/maximum-score-from-removing-substrings)
+### [删除子字符串的最大得分](https://leetcode.cn/problems/maximum-score-from-removing-substrings)
 
 <p>给你一个字符串 <code>s</code> 和两个整数 <code>x</code> 和 <code>y</code> 。你可以执行下面两种操作任意次。</p>
 

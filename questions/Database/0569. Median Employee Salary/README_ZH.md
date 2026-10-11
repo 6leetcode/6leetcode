@@ -1,2 +1,2 @@
-### [员工薪水中位数](https://leetcode-cn.com/problems/median-employee-salary)
+### [员工薪水中位数](https://leetcode.cn/problems/median-employee-salary)
 

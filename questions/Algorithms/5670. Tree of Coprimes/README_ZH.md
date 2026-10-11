@@ -1,4 +1,4 @@
-### [互质树](https://leetcode-cn.com/problems/tree-of-coprimes)
+### [互质树](https://leetcode.cn/problems/tree-of-coprimes)
 
 <p>给你一个 <code>n</code> 个节点的树（也就是一个无环连通无向图），节点编号从 <code>0</code> 到 <code>n - 1</code> ，且恰好有 <code>n - 1</code> 条边，每个节点有一个值。树的 <strong>根节点</strong> 为 0 号点。</p>
 

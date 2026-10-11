@@ -1,4 +1,4 @@
-### [对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof)
+### [对称的二叉树](https://leetcode.cn/problems/dui-cheng-de-er-cha-shu-lcof)
 
 <p>请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。</p>
 
@@ -36,4 +36,4 @@
 
 <p><code>0 &lt;= 节点个数 &lt;= 1000</code></p>
 
-<p>注意：本题与主站 101 题相同：<a href="https://leetcode-cn.com/problems/symmetric-tree/">https://leetcode-cn.com/problems/symmetric-tree/</a></p>
+<p>注意：本题与主站 101 题相同：<a href="https://leetcode.cn/problems/symmetric-tree/">https://leetcode.cn/problems/symmetric-tree/</a></p>

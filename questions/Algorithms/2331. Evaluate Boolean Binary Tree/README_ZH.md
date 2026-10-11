@@ -1,4 +1,4 @@
-### [计算布尔二叉树的值](https://leetcode-cn.com/problems/evaluate-boolean-binary-tree)
+### [计算布尔二叉树的值](https://leetcode.cn/problems/evaluate-boolean-binary-tree)
 
 <p>给你一棵 <strong>完整二叉树</strong>&nbsp;的根，这棵树有以下特征：</p>
 

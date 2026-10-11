@@ -1,4 +1,4 @@
-### [推多米诺](https://leetcode-cn.com/problems/push-dominoes)
+### [推多米诺](https://leetcode.cn/problems/push-dominoes)
 
 <p><code>n</code> 张多米诺骨牌排成一行，将每张多米诺骨牌垂直竖立。在开始时，同时把一些多米诺骨牌向左或向右推。</p>
 

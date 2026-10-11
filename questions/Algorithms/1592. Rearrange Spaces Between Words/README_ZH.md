@@ -1,4 +1,4 @@
-### [重新排列单词间的空格](https://leetcode-cn.com/problems/rearrange-spaces-between-words)
+### [重新排列单词间的空格](https://leetcode.cn/problems/rearrange-spaces-between-words)
 
 <p>给你一个字符串 <code>text</code> ，该字符串由若干被空格包围的单词组成。每个单词由一个或者多个小写英文字母组成，并且两个单词之间至少存在一个空格。题目测试用例保证 <code>text</code> <strong>至少包含一个单词</strong> 。</p>
 

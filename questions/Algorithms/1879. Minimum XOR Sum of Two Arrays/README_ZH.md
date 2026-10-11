@@ -1,4 +1,4 @@
-### [两个数组最小的异或值之和](https://leetcode-cn.com/problems/minimum-xor-sum-of-two-arrays)
+### [两个数组最小的异或值之和](https://leetcode.cn/problems/minimum-xor-sum-of-two-arrays)
 
 <p>给你两个整数数组 <code>nums1</code> 和 <code>nums2</code> ，它们长度都为 <code>n</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [得到子序列的最少操作次数](https://leetcode-cn.com/problems/minimum-operations-to-make-a-subsequence)
+### [得到子序列的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-a-subsequence)
 
 <p>给你一个数组 <code>target</code> ，包含若干 <strong>互不相同</strong> 的整数，以及另一个整数数组 <code>arr</code> ，<code>arr</code> <strong>可能</strong> 包含重复元素。</p>
 

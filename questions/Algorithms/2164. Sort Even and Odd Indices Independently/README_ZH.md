@@ -1,4 +1,4 @@
-### [对奇偶下标分别排序](https://leetcode-cn.com/problems/sort-even-and-odd-indices-independently)
+### [对奇偶下标分别排序](https://leetcode.cn/problems/sort-even-and-odd-indices-independently)
 
 <p>给你一个下标从 <strong>0</strong> 开始的整数数组 <code>nums</code> 。根据下述规则重排 <code>nums</code> 中的值：</p>
 

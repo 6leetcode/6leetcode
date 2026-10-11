@@ -1,4 +1,4 @@
-### [UTF-8 编码验证](https://leetcode-cn.com/problems/utf-8-validation)
+### [UTF-8 编码验证](https://leetcode.cn/problems/utf-8-validation)
 
 <p>给定一个表示数据的整数数组&nbsp;<code>data</code>&nbsp;，返回它是否为有效的 <strong>UTF-8</strong> 编码。</p>
 

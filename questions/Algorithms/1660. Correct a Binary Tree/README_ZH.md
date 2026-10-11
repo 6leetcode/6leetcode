@@ -1,2 +1,2 @@
-### [纠正二叉树](https://leetcode-cn.com/problems/correct-a-binary-tree)
+### [纠正二叉树](https://leetcode.cn/problems/correct-a-binary-tree)
 

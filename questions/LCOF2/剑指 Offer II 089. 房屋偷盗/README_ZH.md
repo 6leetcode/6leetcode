@@ -1,4 +1,4 @@
-### [房屋偷盗](https://leetcode-cn.com/problems/Gu0c2T)
+### [房屋偷盗](https://leetcode.cn/problems/Gu0c2T)
 
 <p>一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响小偷偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，<strong>如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警</strong>。</p>
 
@@ -34,4 +34,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 198&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/house-robber/">https://leetcode-cn.com/problems/house-robber/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 198&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/house-robber/">https://leetcode.cn/problems/house-robber/</a></p>

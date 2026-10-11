@@ -1,4 +1,4 @@
-### [合并相似的物品](https://leetcode-cn.com/problems/merge-similar-items)
+### [合并相似的物品](https://leetcode.cn/problems/merge-similar-items)
 
 <p>给你两个二维整数数组&nbsp;<code>items1</code> 和&nbsp;<code>items2</code>&nbsp;，表示两个物品集合。每个数组&nbsp;<code>items</code>&nbsp;有以下特质：</p>
 
@@ -20,7 +20,7 @@
 <b>输出：</b>[[1,6],[3,9],[4,5]]
 <b>解释：</b>
 value = 1 的物品在 items1 中 weight = 1 ，在 items2 中 weight = 5 ，总重量为 1 + 5 = 6 。
-value = 3 的物品再 items1 中 weight = 8 ，在 items2 中 weight = 1 ，总重量为 8 + 1 = 9 。
+value = 3 的物品在 items1 中 weight = 8 ，在 items2 中 weight = 1 ，总重量为 8 + 1 = 9 。
 value = 4 的物品在 items1 中 weight = 5 ，总重量为 5 。
 所以，我们返回 [[1,6],[3,9],[4,5]] 。
 </pre>

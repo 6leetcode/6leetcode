@@ -1,4 +1,4 @@
-### [解压缩编码列表](https://leetcode-cn.com/problems/decompress-run-length-encoded-list)
+### [解压缩编码列表](https://leetcode.cn/problems/decompress-run-length-encoded-list)
 
 <p>给你一个以行程长度编码压缩的整数列表 <code>nums</code> 。</p>
 

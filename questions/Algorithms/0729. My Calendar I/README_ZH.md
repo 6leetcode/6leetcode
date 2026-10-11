@@ -1,21 +1,21 @@
-### [我的日程安排表 I](https://leetcode-cn.com/problems/my-calendar-i)
+### [我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i)
 
 <p>实现一个 <code>MyCalendar</code> 类来存放你的日程安排。如果要添加的日程安排不会造成 <strong>重复预订</strong> ，则可以存储这个新的日程安排。</p>
 
 <p>当两个日程安排有一些时间上的交叉时（例如两个日程安排都在同一时间内），就会产生 <strong>重复预订</strong> 。</p>
 
-<p>日程可以用一对整数 <code>start</code> 和 <code>end</code> 表示，这里的时间是半开区间，即 <code>[start, end)</code>, 实数&nbsp;<code>x</code> 的范围为， &nbsp;<code>start &lt;= x &lt; end</code> 。</p>
+<p>日程可以用一对整数 <code>startTime</code> 和 <code>endTime</code> 表示，这里的时间是半开区间，即 <code>[startTime, endTime)</code>, 实数&nbsp;<code>x</code> 的范围为， &nbsp;<code>startTime &lt;= x &lt; endTime</code> 。</p>
 
 <p>实现 <code>MyCalendar</code> 类：</p>
 
 <ul>
 	<li><code>MyCalendar()</code> 初始化日历对象。</li>
-	<li><code>boolean book(int start, int end)</code> 如果可以将日程安排成功添加到日历中而不会导致重复预订，返回 <code>true</code> 。否则，返回 <code>false</code>&nbsp;并且不要将该日程安排添加到日历中。</li>
+	<li><code>boolean book(int startTime, int endTime)</code> 如果可以将日程安排成功添加到日历中而不会导致重复预订，返回 <code>true</code> 。否则，返回 <code>false</code>&nbsp;并且不要将该日程安排添加到日历中。</li>
 </ul>
 
 <p>&nbsp;</p>
 
-<p><strong>示例：</strong></p>
+<p><strong class="example">示例：</strong></p>
 
 <pre>
 <strong>输入：</strong>

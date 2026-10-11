@@ -1,4 +1,4 @@
-### [强密码检验器 II](https://leetcode-cn.com/problems/strong-password-checker-ii)
+### [强密码检验器 II](https://leetcode.cn/problems/strong-password-checker-ii)
 
 <p>如果一个密码满足以下所有条件，我们称它是一个 <strong>强</strong>&nbsp;密码：</p>
 

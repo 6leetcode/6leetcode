@@ -1,4 +1,4 @@
-### [换水问题](https://leetcode-cn.com/problems/water-bottles)
+### [换水问题](https://leetcode.cn/problems/water-bottles)
 
 <p>超市正在促销，你可以用 <code>numExchange</code> 个空水瓶从超市兑换一瓶水。最开始，你一共购入了 <code>numBottles</code> 瓶水。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/19/sample_1_1875.png" style="height: 240px; width: 480px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/19/sample_1_1875.png" style="height: 240px; width: 480px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>numBottles = 9, numExchange = 3
@@ -21,7 +21,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/19/sample_2_1875.png" style="height: 240px; width: 790px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/19/sample_2_1875.png" style="height: 240px; width: 790px;" /></p>
 
 <pre>
 <strong>输入：</strong>numBottles = 15, numExchange = 4

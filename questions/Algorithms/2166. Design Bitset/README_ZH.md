@@ -1,4 +1,4 @@
-### [设计位集](https://leetcode-cn.com/problems/design-bitset)
+### [设计位集](https://leetcode.cn/problems/design-bitset)
 
 <p><strong>位集 Bitset</strong> 是一种能以紧凑形式存储位的数据结构。</p>
 

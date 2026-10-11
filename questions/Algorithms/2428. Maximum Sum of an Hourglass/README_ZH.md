@@ -1,4 +1,4 @@
-### [沙漏的最大总和](https://leetcode-cn.com/problems/maximum-sum-of-an-hourglass)
+### [沙漏的最大总和](https://leetcode.cn/problems/maximum-sum-of-an-hourglass)
 
 <p>给你一个大小为 <code>m x n</code> 的整数矩阵 <code>grid</code> 。</p>
 

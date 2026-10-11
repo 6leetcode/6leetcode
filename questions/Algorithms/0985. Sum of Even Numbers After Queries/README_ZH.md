@@ -1,4 +1,4 @@
-### [查询后的偶数和](https://leetcode-cn.com/problems/sum-of-even-numbers-after-queries)
+### [查询后的偶数和](https://leetcode.cn/problems/sum-of-even-numbers-after-queries)
 
 <p>给出一个整数数组&nbsp;<code>A</code>&nbsp;和一个查询数组&nbsp;<code>queries</code>。</p>
 

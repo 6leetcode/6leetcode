@@ -1,4 +1,4 @@
-### [最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii)
+### [最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii)
 
 <p>有一堆石头，用整数数组&nbsp;<code>stones</code> 表示。其中&nbsp;<code>stones[i]</code> 表示第 <code>i</code> 块石头的重量。</p>
 

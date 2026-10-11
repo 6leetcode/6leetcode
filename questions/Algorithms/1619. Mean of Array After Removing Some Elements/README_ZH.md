@@ -1,4 +1,4 @@
-### [删除某些元素后的数组均值](https://leetcode-cn.com/problems/mean-of-array-after-removing-some-elements)
+### [删除某些元素后的数组均值](https://leetcode.cn/problems/mean-of-array-after-removing-some-elements)
 
 <p>给你一个整数数组 <code>arr</code> ，请你删除最小 <code>5%</code> 的数字和最大 <code>5%</code> 的数字后，剩余数字的平均值。</p>
 

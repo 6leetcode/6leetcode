@@ -1,4 +1,4 @@
-### [数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array)
+### [数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array)
 
 <p>给定整数数组 <code>nums</code> 和整数 <code>k</code>，请返回数组中第 <code><strong>k</strong></code> 个最大的元素。</p>
 

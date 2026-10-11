@@ -1,4 +1,4 @@
-### [相似度为 K 的字符串](https://leetcode-cn.com/problems/k-similar-strings)
+### [相似度为 K 的字符串](https://leetcode.cn/problems/k-similar-strings)
 
 <p>对于某些非负整数 <code>k</code> ，如果交换 <code>s1</code> 中两个字母的位置恰好 <code>k</code> 次，能够使结果字符串等于 <code>s2</code> ，则认为字符串 <code>s1</code> 和 <code>s2</code> 的<strong> 相似度为 </strong><code>k</code><strong> </strong><strong>。</strong></p>
 

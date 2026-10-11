@@ -1,4 +1,4 @@
-### [换座位](https://leetcode-cn.com/problems/exchange-seats)
+### [换座位](https://leetcode.cn/problems/exchange-seats)
 
 <p>表:&nbsp;<code>Seat</code></p>
 
@@ -7,16 +7,16 @@
 | Column Name | Type    |
 +-------------+---------+
 | id          | int     |
-| name        | varchar |
+| student     | varchar |
 +-------------+---------+
-Id是该表的主键列。
-该表的每一行都表示学生的姓名和ID。
-Id是一个连续的增量。
+<code>id</code> 是该表的主键（唯一值）列。
+该表的每一行都表示学生的姓名和 ID。
+ID 序列始终从 1 开始并连续增加。
 </pre>
 
 <p>&nbsp;</p>
 
-<p>编写SQL查询来交换每两个连续的学生的座位号。如果学生的数量是奇数，则最后一个学生的id不交换。</p>
+<p>编写解决方案来交换每两个连续的学生的座位号。如果学生的数量是奇数，则最后一个学生的id不交换。</p>
 
 <p>按 <code>id</code> <strong>升序</strong> 返回结果表。</p>
 

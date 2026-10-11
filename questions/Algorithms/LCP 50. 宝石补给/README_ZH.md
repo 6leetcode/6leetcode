@@ -1,4 +1,4 @@
-### [宝石补给](https://leetcode-cn.com/problems/WHnhjV)
+### [宝石补给](https://leetcode.cn/problems/WHnhjV)
 
 欢迎各位勇者来到力扣新手村，在开始试炼之前，请各位勇者先进行「宝石补给」。
 

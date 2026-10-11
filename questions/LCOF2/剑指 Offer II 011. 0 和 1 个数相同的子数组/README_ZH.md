@@ -1,4 +1,4 @@
-### [0 和 1 个数相同的子数组](https://leetcode-cn.com/problems/A1NYOS)
+### [0 和 1 个数相同的子数组](https://leetcode.cn/problems/A1NYOS)
 
 <p>给定一个二进制数组 <code>nums</code> , 找到含有相同数量的 <code>0</code> 和 <code>1</code> 的最长连续子数组，并返回该子数组的长度。</p>
 
@@ -29,4 +29,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 525&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/contiguous-array/">https://leetcode-cn.com/problems/contiguous-array/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 525&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/contiguous-array/">https://leetcode.cn/problems/contiguous-array/</a></p>

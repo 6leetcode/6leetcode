@@ -1,4 +1,4 @@
-### [含最多 K 个可整除元素的子数组](https://leetcode-cn.com/problems/k-divisible-elements-subarrays)
+### [含最多 K 个可整除元素的子数组](https://leetcode.cn/problems/k-divisible-elements-subarrays)
 
 <p>给你一个整数数组 <code>nums</code> 和两个整数 <code>k</code> 和 <code>p</code> ，找出并返回满足要求的不同的子数组数，要求子数组中最多 <code>k</code> 个可被 <code>p</code> 整除的元素。</p>
 

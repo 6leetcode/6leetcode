@@ -1,4 +1,4 @@
-### [统计特殊整数](https://leetcode-cn.com/problems/count-special-integers)
+### [统计特殊整数](https://leetcode.cn/problems/count-special-integers)
 
 <p>如果一个正整数每一个数位都是 <strong>互不相同</strong>&nbsp;的，我们称它是 <strong>特殊整数</strong> 。</p>
 

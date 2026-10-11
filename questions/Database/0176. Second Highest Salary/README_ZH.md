@@ -1,4 +1,4 @@
-### [第二高的薪水](https://leetcode-cn.com/problems/second-highest-salary)
+### [第二高的薪水](https://leetcode.cn/problems/second-highest-salary)
 
 <code>Employee</code> 表：
 <div class="original__bRMd">
@@ -16,7 +16,7 @@ id 是这个表的主键。
 
 <p>&nbsp;</p>
 
-<p>编写一个 SQL 查询，获取并返回 <code>Employee</code>&nbsp;表中第二高的薪水 。如果不存在第二高的薪水，查询应该返回 <code>null</code> 。</p>
+<p>查询并返回 <code>Employee</code>&nbsp;表中第二高的 <b>不同</b>&nbsp;薪水 。如果不存在第二高的薪水，查询应该返回 <code>null(Pandas 则返回 None)</code> 。</p>
 
 <p>查询结果如下例所示。</p>
 

@@ -1,4 +1,4 @@
-### [积压订单中的订单总数](https://leetcode-cn.com/problems/number-of-orders-in-the-backlog)
+### [积压订单中的订单总数](https://leetcode.cn/problems/number-of-orders-in-the-backlog)
 
 <p>给你一个二维整数数组 <code>orders</code> ，其中每个 <code>orders[i] = [price<sub>i</sub>, amount<sub>i</sub>, orderType<sub>i</sub>]</code> 表示有 <code>amount<sub>i</sub></code><sub> </sub>笔类型为 <code>orderType<sub>i</sub></code> 、价格为 <code>price<sub>i</sub></code> 的订单。</p>
 
@@ -23,7 +23,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/03/21/ex1.png" style="width: 450px; height: 479px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/03/21/ex1.png" style="width: 450px; height: 479px;" />
 <pre>
 <strong>输入：</strong>orders = [[10,5,0],[15,2,1],[25,1,1],[30,4,0]]
 <strong>输出：</strong>6
@@ -36,7 +36,7 @@
 </pre>
 
 <p><strong>示例 2：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/03/21/ex2.png" style="width: 450px; height: 584px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/03/21/ex2.png" style="width: 450px; height: 584px;" />
 <pre>
 <strong>输入：</strong>orders = [[7,1000000000,1],[15,3,0],[5,999999995,0],[5,1,1]]
 <strong>输出：</strong>999999984

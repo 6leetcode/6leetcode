@@ -1,4 +1,4 @@
-### [省份数量](https://leetcode-cn.com/problems/number-of-provinces)
+### [省份数量](https://leetcode.cn/problems/number-of-provinces)
 
 <div class="original__bRMd">
 <div>

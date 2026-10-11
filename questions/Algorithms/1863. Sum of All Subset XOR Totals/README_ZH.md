@@ -1,4 +1,4 @@
-### [找出所有子集的异或总和再求和](https://leetcode-cn.com/problems/sum-of-all-subset-xor-totals)
+### [找出所有子集的异或总和再求和](https://leetcode.cn/problems/sum-of-all-subset-xor-totals)
 
 <p>一个数组的<strong> 异或总和</strong> 定义为数组中所有元素按位 <code>XOR</code> 的结果；如果数组为 <strong>空</strong> ，则异或总和为 <code>0</code> 。</p>
 

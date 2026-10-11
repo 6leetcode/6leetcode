@@ -1,2 +1,2 @@
-### [金币路径](https://leetcode-cn.com/problems/coin-path)
+### [成本最小路径](https://leetcode.cn/problems/coin-path)
 

@@ -1,4 +1,4 @@
-### [知道秘密的人数](https://leetcode-cn.com/problems/number-of-people-aware-of-a-secret)
+### [知道秘密的人数](https://leetcode.cn/problems/number-of-people-aware-of-a-secret)
 
 <p>在第 <code>1</code>&nbsp;天，有一个人发现了一个秘密。</p>
 

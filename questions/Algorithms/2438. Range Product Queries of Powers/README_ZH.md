@@ -1,4 +1,4 @@
-### [二的幂数组中查询范围内的乘积](https://leetcode-cn.com/problems/range-product-queries-of-powers)
+### [二的幂数组中查询范围内的乘积](https://leetcode.cn/problems/range-product-queries-of-powers)
 
 <p>给你一个正整数&nbsp;<code>n</code>&nbsp;，你需要找到一个下标从&nbsp;<strong>0</strong>&nbsp;开始的数组&nbsp;<code>powers</code>&nbsp;，它包含 <strong>最少</strong>&nbsp;数目的 <code>2</code>&nbsp;的幂，且它们的和为&nbsp;<code>n</code>&nbsp;。<code>powers</code>&nbsp;数组是&nbsp;<strong>非递减</strong>&nbsp;顺序的。根据前面描述，构造&nbsp;<code>powers</code>&nbsp;数组的方法是唯一的。</p>
 
@@ -10,19 +10,21 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><b>输入：</b>n = 15, queries = [[0,1],[2,2],[0,3]]
+<pre>
+<b>输入：</b>n = 15, queries = [[0,1],[2,2],[0,3]]
 <b>输出：</b>[2,4,64]
 <strong>解释：</strong>
 对于 n = 15 ，得到 powers = [1,2,4,8] 。没法得到元素数目更少的数组。
 第 1 个查询的答案：powers[0] * powers[1] = 1 * 2 = 2 。
 第 2 个查询的答案：powers[2] = 4 。
 第 3 个查询的答案：powers[0] * powers[1] * powers[2] * powers[3] = 1 * 2 * 4 * 8 = 64 。
-每个答案对 10<sup>9</sup> + 7 得到的结果都相同，所以返回 [2,4,64] 。
+每个答案对 10<sup>9</sup> + 7 取余得到的结果都相同，所以返回 [2,4,64] 。
 </pre>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><b>输入：</b>n = 2, queries = [[0,0]]
+<pre>
+<b>输入：</b>n = 2, queries = [[0,0]]
 <b>输出：</b>[2]
 <strong>解释：</strong>
 对于 n = 2, powers = [2] 。

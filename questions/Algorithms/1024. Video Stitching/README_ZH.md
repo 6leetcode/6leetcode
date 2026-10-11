@@ -1,4 +1,4 @@
-### [视频拼接](https://leetcode-cn.com/problems/video-stitching)
+### [视频拼接](https://leetcode.cn/problems/video-stitching)
 
 <p>你将会获得一系列视频片段，这些片段来自于一项持续时长为&nbsp;<code>time</code>&nbsp;秒的体育赛事。这些片段可能有所重叠，也可能长度不一。</p>
 

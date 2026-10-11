@@ -1,4 +1,4 @@
-### [HTML 实体解析器](https://leetcode-cn.com/problems/html-entity-parser)
+### [HTML 实体解析器](https://leetcode.cn/problems/html-entity-parser)
 
 <p>「HTML&nbsp;实体解析器」 是一种特殊的解析器，它将 HTML 代码作为输入，并用字符本身替换掉所有这些特殊的字符实体。</p>
 

@@ -1,4 +1,4 @@
-### [检查相同字母间的距离](https://leetcode-cn.com/problems/check-distances-between-same-letters)
+### [检查相同字母间的距离](https://leetcode.cn/problems/check-distances-between-same-letters)
 
 <p>给你一个下标从 <strong>0</strong> 开始的字符串 <code>s</code> ，该字符串仅由小写英文字母组成，<code>s</code> 中的每个字母都 <strong>恰好</strong> 出现 <strong>两次</strong> 。另给你一个下标从 <strong>0</strong> 开始、长度为 <code>26</code> 的的整数数组 <code>distance</code> 。</p>
 

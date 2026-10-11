@@ -1,4 +1,4 @@
-### [吃苹果的最大数目](https://leetcode-cn.com/problems/maximum-number-of-eaten-apples)
+### [吃苹果的最大数目](https://leetcode.cn/problems/maximum-number-of-eaten-apples)
 
 <p>有一棵特殊的苹果树，一连 <code>n</code> 天，每天都可以长出若干个苹果。在第 <code>i</code> 天，树上会长出 <code>apples[i]</code> 个苹果，这些苹果将会在 <code>days[i]</code> 天后（也就是说，第 <code>i + days[i]</code> 天时）腐烂，变得无法食用。也可能有那么几天，树上不会长出新的苹果，此时用 <code>apples[i] == 0</code> 且 <code>days[i] == 0</code> 表示。</p>
 

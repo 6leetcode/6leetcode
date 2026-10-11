@@ -1,4 +1,4 @@
-### [转置文件](https://leetcode-cn.com/problems/transpose-file)
+### [转置文件](https://leetcode.cn/problems/transpose-file)
 
 <p>给定一个文件 <code>file.txt</code>，转置它的内容。</p>
 

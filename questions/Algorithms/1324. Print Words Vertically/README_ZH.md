@@ -1,4 +1,4 @@
-### [竖直打印单词](https://leetcode-cn.com/problems/print-words-vertically)
+### [竖直打印单词](https://leetcode.cn/problems/print-words-vertically)
 
 <p>给你一个字符串&nbsp;<code>s</code>。请你按照单词在 <code>s</code> 中的出现顺序将它们全部竖直返回。<br>
 单词应该以字符串列表的形式返回，必要时用空格补位，但输出尾部的空格需要删除（不允许尾随空格）。<br>

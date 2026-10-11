@@ -1,4 +1,4 @@
-### [累加数](https://leetcode-cn.com/problems/additive-number)
+### [累加数](https://leetcode.cn/problems/additive-number)
 
 <p><strong>累加数</strong> 是一个字符串，组成它的数字可以形成累加序列。</p>
 

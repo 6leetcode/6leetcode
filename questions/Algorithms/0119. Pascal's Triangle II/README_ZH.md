@@ -1,10 +1,10 @@
-### [杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii)
+### [杨辉三角 II](https://leetcode.cn/problems/pascals-triangle-ii)
 
 <p>给定一个非负索引 <code>rowIndex</code>，返回「杨辉三角」的第 <code>rowIndex</code><em> </em>行。</p>
 
 <p><small>在「杨辉三角」中，每个数是它左上方和右上方的数的和。</small></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1626927345-DZmfxB-PascalTriangleAnimated2.gif" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1626927345-DZmfxB-PascalTriangleAnimated2.gif" /></p>
 
 <p> </p>
 

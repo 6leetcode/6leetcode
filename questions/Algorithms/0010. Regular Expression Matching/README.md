@@ -7,7 +7,7 @@
 	<li><code>&#39;*&#39;</code> Matches zero or more of the preceding element.</li>
 </ul>
 
-<p>The matching should cover the <strong>entire</strong> input string (not partial).</p>
+<p>Return a boolean indicating whether the matching covers the entire input string (not partial).</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -39,7 +39,7 @@
 
 <ul>
 	<li><code>1 &lt;= s.length&nbsp;&lt;= 20</code></li>
-	<li><code>1 &lt;= p.length&nbsp;&lt;= 30</code></li>
+	<li><code>1 &lt;= p.length&nbsp;&lt;= 20</code></li>
 	<li><code>s</code> contains only lowercase English letters.</li>
 	<li><code>p</code> contains only lowercase English letters, <code>&#39;.&#39;</code>, and&nbsp;<code>&#39;*&#39;</code>.</li>
 	<li>It is guaranteed for each appearance of the character <code>&#39;*&#39;</code>, there will be a previous valid character to match.</li>

@@ -1,4 +1,4 @@
-### [单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits)
+### [单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits)
 
 <p>当且仅当每个相邻位数上的数字&nbsp;<code>x</code>&nbsp;和&nbsp;<code>y</code>&nbsp;满足&nbsp;<code>x &lt;= y</code>&nbsp;时，我们称这个整数是<strong>单调递增</strong>的。</p>
 

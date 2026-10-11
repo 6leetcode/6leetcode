@@ -1,4 +1,4 @@
-### [连续差相同的数字](https://leetcode-cn.com/problems/numbers-with-same-consecutive-differences)
+### [连续差相同的数字](https://leetcode.cn/problems/numbers-with-same-consecutive-differences)
 
 <p>返回所有长度为 <code>n</code> 且满足其每两个连续位上的数字之间的差的绝对值为 <code>k</code> 的<strong> 非负整数 </strong>。</p>
 

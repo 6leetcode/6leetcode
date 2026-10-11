@@ -1,4 +1,4 @@
-### [部门工资前三高的所有员工](https://leetcode-cn.com/problems/department-top-three-salaries)
+### [部门工资前三高的所有员工](https://leetcode.cn/problems/department-top-three-salaries)
 
 <p>表:&nbsp;<code>Employee</code></p>
 
@@ -11,8 +11,8 @@
 | salary       | int     |
 | departmentId | int     |
 +--------------+---------+
-Id是该表的主键列。
-departmentId是Department表中ID的外键。
+id 是该表的主键列(具有唯一值的列)。
+departmentId 是 Department 表中 ID 的外键（reference 列）。
 该表的每一行都表示员工的ID、姓名和工资。它还包含了他们部门的ID。
 </pre>
 
@@ -27,7 +27,7 @@ departmentId是Department表中ID的外键。
 | id          | int     |
 | name        | varchar |
 +-------------+---------+
-Id是该表的主键列。
+id 是该表的主键列(具有唯一值的列)。
 该表的每一行表示部门ID和部门名。
 </pre>
 
@@ -35,11 +35,11 @@ Id是该表的主键列。
 
 <p>公司的主管们感兴趣的是公司每个部门中谁赚的钱最多。一个部门的 <strong>高收入者</strong> 是指一个员工的工资在该部门的 <strong>不同</strong> 工资中 <strong>排名前三</strong> 。</p>
 
-<p>编写一个SQL查询，找出每个部门中 <strong>收入高的员工</strong> 。</p>
+<p>编写解决方案，找出每个部门中 <strong>收入高的员工</strong> 。</p>
 
 <p>以 <strong>任意顺序</strong> 返回结果表。</p>
 
-<p>查询结果格式如下所示。</p>
+<p>返回结果格式如下所示。</p>
 
 <p>&nbsp;</p>
 
@@ -87,3 +87,11 @@ Department  表:
 - 亨利的工资最高
 - 山姆的薪水第二高
 - 没有第三高的工资，因为只有两名员工</pre>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li>没有姓名、薪资和部门 <strong>完全</strong> 相同的员工。</li>
+</ul>

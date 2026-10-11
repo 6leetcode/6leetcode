@@ -1,4 +1,4 @@
-### [按奇偶排序数组 II](https://leetcode-cn.com/problems/sort-array-by-parity-ii)
+### [按奇偶排序数组 II](https://leetcode.cn/problems/sort-array-by-parity-ii)
 
 <p>给定一个非负整数数组&nbsp;<code>nums</code>，&nbsp;&nbsp;<code>nums</code> 中一半整数是 <strong>奇数</strong> ，一半整数是 <strong>偶数</strong> 。</p>
 

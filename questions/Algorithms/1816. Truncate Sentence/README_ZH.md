@@ -1,4 +1,4 @@
-### [截断句子](https://leetcode-cn.com/problems/truncate-sentence)
+### [截断句子](https://leetcode.cn/problems/truncate-sentence)
 
 <p><strong>句子</strong> 是一个单词列表，列表中的单词之间用单个空格隔开，且不存在前导或尾随空格。每个单词仅由大小写英文字母组成（不含标点符号）。</p>
 

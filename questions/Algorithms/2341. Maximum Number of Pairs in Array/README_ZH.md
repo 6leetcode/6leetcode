@@ -1,4 +1,4 @@
-### [数组能形成多少数对](https://leetcode-cn.com/problems/maximum-number-of-pairs-in-array)
+### [数组能形成多少数对](https://leetcode.cn/problems/maximum-number-of-pairs-in-array)
 
 <p>给你一个下标从 <strong>0</strong> 开始的整数数组 <code>nums</code> 。在一步操作中，你可以执行以下步骤：</p>
 

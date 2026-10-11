@@ -1,4 +1,4 @@
-### [座位预约管理系统](https://leetcode-cn.com/problems/seat-reservation-manager)
+### [座位预约管理系统](https://leetcode.cn/problems/seat-reservation-manager)
 
 <p>请你设计一个管理 <code>n</code> 个座位预约的系统，座位编号从 <code>1</code> 到 <code>n</code> 。</p>
 

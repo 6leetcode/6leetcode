@@ -1,4 +1,4 @@
-### [距离相等的条形码](https://leetcode-cn.com/problems/distant-barcodes)
+### [距离相等的条形码](https://leetcode.cn/problems/distant-barcodes)
 
 <p>在一个仓库里，有一排条形码，其中第 <code>i</code> 个条形码为&nbsp;<code>barcodes[i]</code>。</p>
 

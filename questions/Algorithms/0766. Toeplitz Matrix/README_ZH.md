@@ -1,4 +1,4 @@
-### [托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix)
+### [托普利茨矩阵](https://leetcode.cn/problems/toeplitz-matrix)
 
 <p>给你一个 <code>m x n</code> 的矩阵 <code>matrix</code> 。如果这个矩阵是托普利茨矩阵，返回 <code>true</code> ；否则，返回<em> </em><code>false</code><em> 。</em></p>
 

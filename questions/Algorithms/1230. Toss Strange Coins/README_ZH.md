@@ -1,2 +1,2 @@
-### [抛掷硬币](https://leetcode-cn.com/problems/toss-strange-coins)
+### [抛掷硬币](https://leetcode.cn/problems/toss-strange-coins)
 

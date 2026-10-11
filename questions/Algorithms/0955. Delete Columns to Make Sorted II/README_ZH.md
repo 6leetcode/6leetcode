@@ -1,4 +1,4 @@
-### [删列造序 II](https://leetcode-cn.com/problems/delete-columns-to-make-sorted-ii)
+### [删列造序 II](https://leetcode.cn/problems/delete-columns-to-make-sorted-ii)
 
 <p>给定由 <code>n</code> 个字符串组成的数组 <code>strs</code>，其中每个字符串长度相等。</p>
 

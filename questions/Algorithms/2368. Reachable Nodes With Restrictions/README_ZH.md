@@ -1,4 +1,4 @@
-### [受限条件下可到达节点的数目](https://leetcode-cn.com/problems/reachable-nodes-with-restrictions)
+### [受限条件下可到达节点的数目](https://leetcode.cn/problems/reachable-nodes-with-restrictions)
 
 <p>现有一棵由 <code>n</code> 个节点组成的无向树，节点编号从 <code>0</code> 到 <code>n - 1</code> ，共有 <code>n - 1</code> 条边。</p>
 

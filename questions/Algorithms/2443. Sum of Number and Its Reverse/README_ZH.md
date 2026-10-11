@@ -1,4 +1,4 @@
-### [反转之后的数字和](https://leetcode-cn.com/problems/sum-of-number-and-its-reverse)
+### [反转之后的数字和](https://leetcode.cn/problems/sum-of-number-and-its-reverse)
 
 <p>给你一个 <strong>非负</strong> 整数 <code>num</code> 。如果存在某个 <strong>非负</strong> 整数 <code>k</code> 满足 <code>k + reverse(k) = num</code>&nbsp; ，则返回 <code>true</code> ；否则，返回<em> </em><code>false</code> 。</p>
 

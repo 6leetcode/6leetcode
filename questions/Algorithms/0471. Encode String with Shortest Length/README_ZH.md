@@ -1,2 +1,2 @@
-### [编码最短长度的字符串](https://leetcode-cn.com/problems/encode-string-with-shortest-length)
+### [编码最短长度的字符串](https://leetcode.cn/problems/encode-string-with-shortest-length)
 

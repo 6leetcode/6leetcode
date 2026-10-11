@@ -1,4 +1,4 @@
-### [找到和为给定整数的三个连续整数](https://leetcode-cn.com/problems/find-three-consecutive-integers-that-sum-to-a-given-number)
+### [找到和为给定整数的三个连续整数](https://leetcode.cn/problems/find-three-consecutive-integers-that-sum-to-a-given-number)
 
 <p>给你一个整数&nbsp;<code>num</code>&nbsp;，请你返回三个连续的整数，它们的&nbsp;<strong>和</strong>&nbsp;为<em>&nbsp;</em><code>num</code>&nbsp;。如果&nbsp;<code>num</code>&nbsp;无法被表示成三个连续整数的和，请你返回一个 <strong>空</strong>&nbsp;数组。</p>
 

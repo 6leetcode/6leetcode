@@ -1,4 +1,4 @@
-### [旋转图像](https://leetcode-cn.com/problems/rotate-image)
+### [旋转图像](https://leetcode.cn/problems/rotate-image)
 
 <p>给定一个 <em>n&nbsp;</em>×&nbsp;<em>n</em> 的二维矩阵&nbsp;<code>matrix</code> 表示一个图像。请你将图像顺时针旋转 90 度。</p>
 

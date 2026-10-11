@@ -1,4 +1,4 @@
-### [全排列](https://leetcode-cn.com/problems/permutations)
+### [全排列](https://leetcode.cn/problems/permutations)
 
 <p>给定一个不含重复数字的数组 <code>nums</code> ，返回其 <em>所有可能的全排列</em> 。你可以 <strong>按任意顺序</strong> 返回答案。</p>
 

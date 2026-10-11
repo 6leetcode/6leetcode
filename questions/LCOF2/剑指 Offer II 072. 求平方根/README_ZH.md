@@ -1,4 +1,4 @@
-### [求平方根](https://leetcode-cn.com/problems/jJ0w9p)
+### [求平方根](https://leetcode.cn/problems/jJ0w9p)
 
 <p>给定一个非负整数 <code>x</code> ，计算并返回 <code>x</code> 的平方根，即实现&nbsp;<code>int sqrt(int x)</code>&nbsp;函数。</p>
 
@@ -33,4 +33,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 69&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/sqrtx/">https://leetcode-cn.com/problems/sqrtx/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 69&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/sqrtx/">https://leetcode.cn/problems/sqrtx/</a></p>

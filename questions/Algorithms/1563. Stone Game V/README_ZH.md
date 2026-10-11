@@ -1,4 +1,4 @@
-### [石子游戏 V](https://leetcode-cn.com/problems/stone-game-v)
+### [石子游戏 V](https://leetcode.cn/problems/stone-game-v)
 
 <p>几块石子 <strong>排成一行</strong> ，每块石子都有一个关联值，关联值为整数，由数组 <code>stoneValue</code> 给出。</p>
 
@@ -12,7 +12,8 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>stoneValue = [6,2,3,4,5,5]
+<pre>
+<strong>输入：</strong>stoneValue = [6,2,3,4,5,5]
 <strong>输出：</strong>18
 <strong>解释：</strong>在第一轮中，Alice 将行划分为 [6，2，3]，[4，5，5] 。左行的值是 11 ，右行的值是 14 。Bob 丢弃了右行，Alice 的分数现在是 11 。
 在第二轮中，Alice 将行分成 [6]，[2，3] 。这一次 Bob 扔掉了左行，Alice 的分数变成了 16（11 + 5）。
@@ -21,13 +22,15 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>stoneValue = [7,7,7,7,7,7,7]
+<pre>
+<strong>输入：</strong>stoneValue = [7,7,7,7,7,7,7]
 <strong>输出：</strong>28
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
-<pre><strong>输入：</strong>stoneValue = [4]
+<pre>
+<strong>输入：</strong>stoneValue = [4]
 <strong>输出：</strong>0
 </pre>
 
@@ -37,5 +40,5 @@
 
 <ul>
 	<li><code>1 &lt;= stoneValue.length &lt;= 500</code></li>
-	<li><code>1 &lt;=&nbsp;stoneValue[i] &lt;= 10^6</code></li>
+	<li><code>1 &lt;=&nbsp;stoneValue[i] &lt;= 10<sup>6</sup></code></li>
 </ul>

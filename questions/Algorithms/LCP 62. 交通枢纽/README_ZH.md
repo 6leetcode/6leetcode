@@ -1,4 +1,4 @@
-### [交通枢纽](https://leetcode-cn.com/problems/D9PW8w)
+### [交通枢纽](https://leetcode.cn/problems/D9PW8w)
 
 为了缓解「力扣嘉年华」期间的人流压力，组委会在活动期间开设了一些交通专线。`path[i] = [a, b]` 表示有一条从地点 `a`通往地点 `b` 的 **单向** 交通专线。
 若存在一个地点，满足以下要求，我们则称之为 **交通枢纽**：
@@ -18,7 +18,7 @@
 >解释：如下图所示：
 > 地点 `0,1,2` 各有一条通往地点 `3` 的交通专线，
 > 且地点 `3` 不存在任何**通往其他地点**的交通专线。
->![image.png](https://pic.leetcode-cn.com/1663902572-yOlUCr-image.png){:width=200px}
+>![image.png](https://pic.leetcode.cn/1663902572-yOlUCr-image.png){:width=200px}
 
 
 **示例 2：**
@@ -27,7 +27,7 @@
 >输出：`-1`
 >
 >解释：如下图所示：不存在满足 **交通枢纽** 的地点。
->![image.png](https://pic.leetcode-cn.com/1663902595-McsEkY-image.png){:width=200px}
+>![image.png](https://pic.leetcode.cn/1663902595-McsEkY-image.png){:width=200px}
 
 **提示：**
 - `1 <= path.length <= 1000`

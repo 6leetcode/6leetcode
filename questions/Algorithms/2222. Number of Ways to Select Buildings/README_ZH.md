@@ -1,4 +1,4 @@
-### [选择建筑的方案数](https://leetcode-cn.com/problems/number-of-ways-to-select-buildings)
+### [选择建筑的方案数](https://leetcode.cn/problems/number-of-ways-to-select-buildings)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的二进制字符串&nbsp;<code>s</code>&nbsp;，它表示一条街沿途的建筑类型，其中：</p>
 

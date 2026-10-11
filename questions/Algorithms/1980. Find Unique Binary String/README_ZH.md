@@ -1,4 +1,4 @@
-### [找出不同的二进制字符串](https://leetcode-cn.com/problems/find-unique-binary-string)
+### [找出不同的二进制字符串](https://leetcode.cn/problems/find-unique-binary-string)
 
 <p>给你一个字符串数组 <code>nums</code> ，该数组由 <code>n</code> 个 <strong>互不相同</strong> 的二进制字符串组成，且每个字符串长度都是 <code>n</code> 。请你找出并返回一个长度为&nbsp;<code>n</code>&nbsp;且&nbsp;<strong>没有出现</strong> 在 <code>nums</code> 中的二进制字符串<em>。</em>如果存在多种答案，只需返回 <strong>任意一个</strong> 即可。</p>
 

@@ -1,4 +1,4 @@
-### [环形子数组的最大和](https://leetcode-cn.com/problems/maximum-sum-circular-subarray)
+### [环形子数组的最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray)
 
 <p>给定一个长度为 <code>n</code> 的<strong>环形整数数组</strong>&nbsp;<code>nums</code>&nbsp;，返回<em>&nbsp;<code>nums</code>&nbsp;的非空 <strong>子数组</strong> 的最大可能和&nbsp;</em>。</p>
 

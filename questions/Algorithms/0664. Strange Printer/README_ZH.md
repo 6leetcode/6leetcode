@@ -1,4 +1,4 @@
-### [奇怪的打印机](https://leetcode-cn.com/problems/strange-printer)
+### [奇怪的打印机](https://leetcode.cn/problems/strange-printer)
 
 <p>有台奇怪的打印机有以下两个特殊要求：</p>
 

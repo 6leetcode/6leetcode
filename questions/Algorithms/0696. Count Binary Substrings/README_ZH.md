@@ -1,4 +1,4 @@
-### [计数二进制子串](https://leetcode-cn.com/problems/count-binary-substrings)
+### [计数二进制子串](https://leetcode.cn/problems/count-binary-substrings)
 
 <p>给定一个字符串&nbsp;<code>s</code>，统计并返回具有相同数量 <code>0</code> 和 <code>1</code> 的非空（连续）子字符串的数量，并且这些子字符串中的所有 <code>0</code> 和所有 <code>1</code> 都是成组连续的。</p>
 

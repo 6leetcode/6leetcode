@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/build-the-equation)
+### [建立方程](https://leetcode.cn/problems/build-the-equation)
 

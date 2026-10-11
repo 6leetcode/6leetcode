@@ -1,4 +1,4 @@
-### [用三种不同颜色为网格涂色](https://leetcode-cn.com/problems/painting-a-grid-with-three-different-colors)
+### [用三种不同颜色为网格涂色](https://leetcode.cn/problems/painting-a-grid-with-three-different-colors)
 
 <p>给你两个整数 <code>m</code> 和 <code>n</code> 。构造一个 <code>m x n</code> 的网格，其中每个单元格最开始是白色。请你用 <strong>红、绿、蓝</strong> 三种颜色为每个单元格涂色。所有单元格都需要被涂色。</p>
 

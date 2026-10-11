@@ -1,4 +1,4 @@
-### [数组元素积的符号](https://leetcode-cn.com/problems/sign-of-the-product-of-an-array)
+### [数组元素积的符号](https://leetcode.cn/problems/sign-of-the-product-of-an-array)
 
 <p>已知函数 <code>signFunc(x)</code> 将会根据 <code>x</code> 的正负返回特定值：</p>
 

@@ -1,4 +1,4 @@
-### [最长快乐字符串](https://leetcode-cn.com/problems/longest-happy-string)
+### [最长快乐字符串](https://leetcode.cn/problems/longest-happy-string)
 
 <p>如果字符串中不含有任何 <code>&#39;aaa&#39;</code>，<code>&#39;bbb&#39;</code> 或 <code>&#39;ccc&#39;</code> 这样的字符串作为子串，那么该字符串就是一个「快乐字符串」。</p>
 

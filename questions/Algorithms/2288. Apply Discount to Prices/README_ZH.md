@@ -1,16 +1,16 @@
-### [价格减免](https://leetcode-cn.com/problems/apply-discount-to-prices)
+### [价格减免](https://leetcode.cn/problems/apply-discount-to-prices)
 
-<p><strong>句子</strong> 是由若干个单词组成的字符串，单词之间用单个空格分隔，其中每个单词可以包含数字、小写字母、和美元符号 <code>'$'</code> 。如果单词的形式为美元符号后跟着一个非负实数，那么这个单词就表示一个价格。</p>
+<p><strong>句子</strong> 是由若干个单词组成的字符串，单词之间用单个空格分隔，其中每个单词可以包含数字、小写字母、和美元符号 <code>'$'</code> 。如果单词的形式为美元符号后跟着一个非负实数，那么这个单词就表示一个 <strong>价格</strong> 。</p>
 
 <ul>
-	<li>例如 <code>"$100"</code>、<code>"$23"</code> 和 <code>"$6.75"</code> 表示价格，而 <code>"100"</code>、<code>"$"</code> 和 <code>"2$3"</code> 不是。</li>
+	<li>例如 <code>"$100"</code>、<code>"$23"</code> 和 <code>"$6"</code> 表示价格，而 <code>"100"</code>、<code>"$"</code> 和 <code>"$1e5</code> 不是。</li>
 </ul>
 
-<p><strong>注意：</strong>本题输入中的价格均为整数。</p>
-
-<p>给你一个字符串 <code>sentence</code>&nbsp; 和一个整数 <code>discount</code> 。对于每个表示价格的单词，都在价格的基础上减免 <code>discount%</code> ，并 <strong>更新</strong> 该单词到句子中。所有更新后的价格应该表示为一个 <strong>恰好保留小数点后两位</strong> 的数字。</p>
+<p>给你一个字符串 <code>sentence</code> 表示一个句子和一个整数 <code>discount</code> 。对于每个表示价格的单词，都在价格的基础上减免 <code>discount%</code> ，并 <strong>更新</strong> 该单词到句子中。所有更新后的价格应该表示为一个 <strong>恰好保留小数点后两位</strong> 的数字。</p>
 
 <p>返回表示修改后句子的字符串。</p>
+
+<p>注意：所有价格 <strong>最多</strong> 为&nbsp;<code>10</code> 位数字。</p>
 
 <p>&nbsp;</p>
 
@@ -22,7 +22,7 @@
 <strong>解释：</strong>
 表示价格的单词是 "$1" 和 "$2" 。 
 - "$1" 减免 50% 为 "$0.50" ，所以 "$1" 替换为 "$0.50" 。
-- "$2" 减免 50% 为 "$1" ，所以 "$1" 替换为 "$1.00" 。</pre>
+- "$2" 减免 50% 为 "$1" ，所以 "$2" 替换为 "$1.00" 。</pre>
 
 <p><strong>示例 2：</strong></p>
 

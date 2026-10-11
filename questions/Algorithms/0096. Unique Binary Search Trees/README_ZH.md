@@ -1,4 +1,4 @@
-### [不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees)
+### [不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees)
 
 <p>给你一个整数 <code>n</code> ，求恰由 <code>n</code> 个节点组成且节点值从 <code>1</code> 到 <code>n</code> 互不相同的 <strong>二叉搜索树</strong> 有多少种？返回满足题意的二叉搜索树的种数。</p>
 

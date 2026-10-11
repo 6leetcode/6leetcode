@@ -1,4 +1,4 @@
-### [表示数值的字符串](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof)
+### [表示数值的字符串](https://leetcode.cn/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof)
 
 <p>请实现一个函数用来判断字符串是否表示<strong>数值</strong>（包括整数和小数）。</p>
 

@@ -1,4 +1,4 @@
-### [速算机器人](https://leetcode-cn.com/problems/nGK0Fy)
+### [速算机器人](https://leetcode.cn/problems/nGK0Fy)
 
 小扣在秋日市集发现了一款速算机器人。店家对机器人说出两个数字（记作 `x` 和 `y`），请小扣说出计算指令：
 - `"A"` 运算：使 `x = 2 * x + y`；

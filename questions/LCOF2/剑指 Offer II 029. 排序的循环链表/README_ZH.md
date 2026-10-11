@@ -1,4 +1,4 @@
-### [排序的循环链表](https://leetcode-cn.com/problems/4ueAj6)
+### [排序的循环链表](https://leetcode.cn/problems/4ueAj6)
 
 <p>给定<strong>循环单调非递减列表</strong>中的一个点，写一个函数向这个列表中插入一个新元素&nbsp;<code>insertVal</code> ，使这个列表仍然是循环升序的。</p>
 
@@ -50,4 +50,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 708&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/insert-into-a-sorted-circular-linked-list/">https://leetcode-cn.com/problems/insert-into-a-sorted-circular-linked-list/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 708&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/">https://leetcode.cn/problems/insert-into-a-sorted-circular-linked-list/</a></p>

@@ -1,4 +1,4 @@
-### [安排工作以达到最大收益](https://leetcode-cn.com/problems/most-profit-assigning-work)
+### [安排工作以达到最大收益](https://leetcode.cn/problems/most-profit-assigning-work)
 
 <p>你有 <code>n</code>&nbsp;个工作和 <code>m</code> 个工人。给定三个数组：&nbsp;<code>difficulty</code>,&nbsp;<code>profit</code>&nbsp;和&nbsp;<code>worker</code>&nbsp;，其中:</p>
 

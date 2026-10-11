@@ -36,6 +36,5 @@
 	<li><code>edges.length == n - 1</code></li>
 	<li><code>edges[i].length == 2</code></li>
 	<li><code>0 &lt;= a<sub>i</sub> &lt; b<sub>i</sub> &lt;= n - 1</code></li>
-	<li><code>from<sub>i</sub> &lt; to<sub>i</sub></code></li>
 	<li><code>hasApple.length == n</code></li>
 </ul>

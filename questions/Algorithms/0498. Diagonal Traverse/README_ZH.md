@@ -1,4 +1,4 @@
-### [对角线遍历](https://leetcode-cn.com/problems/diagonal-traverse)
+### [对角线遍历](https://leetcode.cn/problems/diagonal-traverse)
 
 <p>给你一个大小为 <code>m x n</code> 的矩阵 <code>mat</code> ，请以对角线遍历的顺序，用一个数组返回这个矩阵中的所有元素。</p>
 

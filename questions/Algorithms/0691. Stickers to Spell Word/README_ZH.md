@@ -1,4 +1,4 @@
-### [贴纸拼词](https://leetcode-cn.com/problems/stickers-to-spell-word)
+### [贴纸拼词](https://leetcode.cn/problems/stickers-to-spell-word)
 
 <p>我们有 <code>n</code> 种不同的贴纸。每个贴纸上都有一个小写的英文单词。</p>
 

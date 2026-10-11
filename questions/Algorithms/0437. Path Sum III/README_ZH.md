@@ -1,4 +1,4 @@
-### [路径总和 III](https://leetcode-cn.com/problems/path-sum-iii)
+### [路径总和 III](https://leetcode.cn/problems/path-sum-iii)
 
 <p>给定一个二叉树的根节点 <code>root</code> ，和一个整数 <code>targetSum</code> ，求该二叉树里节点值之和等于 <code>targetSum</code> 的 <strong>路径</strong> 的数目。</p>
 

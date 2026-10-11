@@ -1,4 +1,4 @@
-### [零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2)
+### [零钱兑换 II](https://leetcode.cn/problems/coin-change-2)
 
 <p>给你一个整数数组 <code>coins</code> 表示不同面额的硬币，另给一个整数 <code>amount</code> 表示总金额。</p>
 

@@ -1,4 +1,4 @@
-### [最后一个能进入电梯的人](https://leetcode-cn.com/problems/last-person-to-fit-in-the-elevator)
+### [最后一个能进入电梯的人](https://leetcode.cn/problems/last-person-to-fit-in-the-elevator)
 
 <p>表: <code>Queue</code></p>
 

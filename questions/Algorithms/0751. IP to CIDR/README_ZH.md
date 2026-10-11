@@ -1,2 +1,2 @@
-### [IP 到 CIDR](https://leetcode-cn.com/problems/ip-to-cidr)
+### [IP 到 CIDR](https://leetcode.cn/problems/ip-to-cidr)
 

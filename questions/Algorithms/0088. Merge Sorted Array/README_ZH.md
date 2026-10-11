@@ -1,4 +1,4 @@
-### [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array)
+### [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array)
 
 <p>给你两个按 <strong>非递减顺序</strong> 排列的整数数组&nbsp;<code>nums1</code><em> </em>和 <code>nums2</code>，另有两个整数 <code>m</code> 和 <code>n</code> ，分别表示 <code>nums1</code> 和 <code>nums2</code> 中的元素数目。</p>
 

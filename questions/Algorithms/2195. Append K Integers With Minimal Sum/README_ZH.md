@@ -1,4 +1,4 @@
-### [向数组中追加 K 个整数](https://leetcode-cn.com/problems/append-k-integers-with-minimal-sum)
+### [向数组中追加 K 个整数](https://leetcode.cn/problems/append-k-integers-with-minimal-sum)
 
 <p>给你一个整数数组 <code>nums</code> 和一个整数 <code>k</code> 。请你向 <code>nums</code> 中追加 <code>k</code> 个 <strong>未</strong> 出现在 <code>nums</code> 中的、<strong>互不相同</strong> 的 <strong>正</strong> 整数，并使结果数组的元素和 <strong>最小</strong> 。</p>
 

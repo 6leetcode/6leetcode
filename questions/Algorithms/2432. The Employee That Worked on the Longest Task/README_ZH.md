@@ -1,4 +1,4 @@
-### [处理用时最长的那个任务的员工](https://leetcode-cn.com/problems/the-employee-that-worked-on-the-longest-task)
+### [处理用时最长的那个任务的员工](https://leetcode.cn/problems/the-employee-that-worked-on-the-longest-task)
 
 <p>共有 <code>n</code> 位员工，每位员工都有一个从 <code>0</code> 到 <code>n - 1</code> 的唯一 id 。</p>
 

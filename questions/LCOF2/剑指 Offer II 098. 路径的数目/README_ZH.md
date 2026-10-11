@@ -1,4 +1,4 @@
-### [路径的数目](https://leetcode-cn.com/problems/2AoeFn)
+### [路径的数目](https://leetcode.cn/problems/2AoeFn)
 
 <p>一个机器人位于一个 <code>m x n</code><em>&nbsp;</em>网格的左上角 （起始点在下图中标记为 &ldquo;Start&rdquo; ）。</p>
 
@@ -52,4 +52,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 62&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/unique-paths/">https://leetcode-cn.com/problems/unique-paths/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 62&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/unique-paths/">https://leetcode.cn/problems/unique-paths/</a></p>

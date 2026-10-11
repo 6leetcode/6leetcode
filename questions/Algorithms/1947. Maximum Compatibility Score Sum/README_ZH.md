@@ -1,4 +1,4 @@
-### [最大兼容性评分和](https://leetcode-cn.com/problems/maximum-compatibility-score-sum)
+### [最大兼容性评分和](https://leetcode.cn/problems/maximum-compatibility-score-sum)
 
 <p>有一份由 <code>n</code> 个问题组成的调查问卷，每个问题的答案要么是 <code>0</code>（no，否），要么是 <code>1</code>（yes，是）。</p>
 

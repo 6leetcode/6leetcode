@@ -1,4 +1,4 @@
-### [最长快乐前缀](https://leetcode-cn.com/problems/longest-happy-prefix)
+### [最长快乐前缀](https://leetcode.cn/problems/longest-happy-prefix)
 
 <p><strong>「快乐前缀」</strong>&nbsp;是在原字符串中既是&nbsp;<strong>非空</strong> 前缀也是后缀（不包括原字符串自身）的字符串。</p>
 

@@ -1,4 +1,4 @@
-### [最高建筑高度](https://leetcode-cn.com/problems/maximum-building-height)
+### [最高建筑高度](https://leetcode.cn/problems/maximum-building-height)
 
 <p>在一座城市里，你需要建 <code>n</code> 栋新的建筑。这些新的建筑会从 <code>1</code> 到 <code>n</code> 编号排成一列。</p>
 
@@ -19,7 +19,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/04/25/ic236-q4-ex1-1.png" style="width: 400px; height: 253px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/04/25/ic236-q4-ex1-1.png" style="width: 400px; height: 253px;" />
 <pre>
 <b>输入：</b>n = 5, restrictions = [[2,1],[4,1]]
 <b>输出：</b>2
@@ -27,7 +27,7 @@
 我们可以使建筑高度分别为 [0,1,2,1,2] ，最高建筑的高度为 2 。</pre>
 
 <p><strong>示例 2：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/04/25/ic236-q4-ex2.png" style="width: 500px; height: 269px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/04/25/ic236-q4-ex2.png" style="width: 500px; height: 269px;" />
 <pre>
 <b>输入：</b>n = 6, restrictions = []
 <b>输出：</b>5
@@ -36,7 +36,7 @@
 </pre>
 
 <p><strong>示例 3：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/04/25/ic236-q4-ex3.png" style="width: 500px; height: 187px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/04/25/ic236-q4-ex3.png" style="width: 500px; height: 187px;" />
 <pre>
 <b>输入：</b>n = 10, restrictions = [[5,3],[2,5],[7,4],[10,3]]
 <b>输出：</b>5

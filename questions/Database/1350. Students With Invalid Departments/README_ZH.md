@@ -1,2 +1,2 @@
-### [院系无效的学生](https://leetcode-cn.com/problems/students-with-invalid-departments)
+### [院系无效的学生](https://leetcode.cn/problems/students-with-invalid-departments)
 

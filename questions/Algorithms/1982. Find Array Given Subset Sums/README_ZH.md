@@ -1,4 +1,4 @@
-### [从子集的和还原数组](https://leetcode-cn.com/problems/find-array-given-subset-sums)
+### [从子集的和还原数组](https://leetcode.cn/problems/find-array-given-subset-sums)
 
 <p>存在一个未知数组需要你进行还原，给你一个整数 <code>n</code> 表示该数组的长度。另给你一个数组 <code>sums</code> ，由未知数组中全部 <code>2<sup>n</sup></code> 个 <strong>子集的和</strong> 组成（子集中的元素没有特定的顺序）。</p>
 

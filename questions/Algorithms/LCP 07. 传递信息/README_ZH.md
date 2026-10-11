@@ -1,4 +1,4 @@
-### [传递信息](https://leetcode-cn.com/problems/chuan-di-xin-xi)
+### [传递信息](https://leetcode.cn/problems/chuan-di-xin-xi)
 
 <p>小朋友 A 在和 ta 的小伙伴们玩传信息游戏，游戏规则如下：</p>
 

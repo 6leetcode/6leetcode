@@ -1,4 +1,4 @@
-### [买钢笔和铅笔的方案数](https://leetcode-cn.com/problems/number-of-ways-to-buy-pens-and-pencils)
+### [买钢笔和铅笔的方案数](https://leetcode.cn/problems/number-of-ways-to-buy-pens-and-pencils)
 
 <p>给你一个整数&nbsp;<code>total</code>&nbsp;，表示你拥有的总钱数。同时给你两个整数&nbsp;<code>cost1</code> 和&nbsp;<code>cost2</code>&nbsp;，分别表示一支钢笔和一支铅笔的价格。你可以花费你部分或者全部的钱，去买任意数目的两种笔。</p>
 

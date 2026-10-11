@@ -1,2 +1,2 @@
-### [最短单词距离 III](https://leetcode-cn.com/problems/shortest-word-distance-iii)
+### [最短单词距离 III](https://leetcode.cn/problems/shortest-word-distance-iii)
 

@@ -1,4 +1,4 @@
-### [腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges)
+### [腐烂的橘子](https://leetcode.cn/problems/rotting-oranges)
 
 <p>在给定的&nbsp;<code>m x n</code>&nbsp;网格<meta charset="UTF-8" />&nbsp;<code>grid</code>&nbsp;中，每个单元格可以有以下三个值之一：</p>
 
@@ -16,7 +16,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/16/oranges.png" style="height: 137px; width: 650px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/02/16/oranges.png" style="height: 137px; width: 650px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>grid = [[2,1,1],[1,1,0],[0,1,1]]
@@ -28,7 +28,7 @@
 <pre>
 <strong>输入：</strong>grid = [[2,1,1],[0,1,1],[1,0,1]]
 <strong>输出：</strong>-1
-<strong>解释：</strong>左下角的橘子（第 2 行， 第 0 列）永远不会腐烂，因为腐烂只会发生在 4 个正向上。
+<strong>解释：</strong>左下角的橘子（第 2 行， 第 0 列）永远不会腐烂，因为腐烂只会发生在 4 个方向上。
 </pre>
 
 <p><strong>示例 3：</strong></p>

@@ -1,4 +1,4 @@
-### [最高的广告牌](https://leetcode-cn.com/problems/tallest-billboard)
+### [最高的广告牌](https://leetcode.cn/problems/tallest-billboard)
 
 <p>你正在安装一个广告牌，并希望它高度最大。这块广告牌将有两个钢制支架，两边各一个。每个钢支架的高度必须相等。</p>
 

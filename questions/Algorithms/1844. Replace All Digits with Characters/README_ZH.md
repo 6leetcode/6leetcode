@@ -1,4 +1,4 @@
-### [将所有数字用字符替换](https://leetcode-cn.com/problems/replace-all-digits-with-characters)
+### [将所有数字用字符替换](https://leetcode.cn/problems/replace-all-digits-with-characters)
 
 <p>给你一个下标从 <strong>0</strong> 开始的字符串 <code>s</code> ，它的 <strong>偶数</strong> 下标处为小写英文字母，<strong>奇数</strong> 下标处为数字。</p>
 

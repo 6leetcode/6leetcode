@@ -1,4 +1,4 @@
-### [查找插入位置](https://leetcode-cn.com/problems/N6YdxV)
+### [查找插入位置](https://leetcode.cn/problems/N6YdxV)
 
 <p>给定一个排序的整数数组 <code>nums</code>&nbsp;和一个整数目标值<code> target</code> ，请在数组中找到&nbsp;<code>target&nbsp;</code>，并返回其下标。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。</p>
 
@@ -54,4 +54,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 35&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/search-insert-position/">https://leetcode-cn.com/problems/search-insert-position/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 35&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/search-insert-position/">https://leetcode.cn/problems/search-insert-position/</a></p>

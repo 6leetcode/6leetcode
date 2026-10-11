@@ -1,4 +1,4 @@
-### [外星文字典](https://leetcode-cn.com/problems/Jf1JuT)
+### [外星文字典](https://leetcode.cn/problems/Jf1JuT)
 
 <p>现有一种使用英语字母的外星文语言，这门语言的字母顺序与英语顺序不同。</p>
 
@@ -49,4 +49,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 269&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/alien-dictionary/">https://leetcode-cn.com/problems/alien-dictionary/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 269&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/alien-dictionary/">https://leetcode.cn/problems/alien-dictionary/</a></p>

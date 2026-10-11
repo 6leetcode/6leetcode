@@ -1,4 +1,4 @@
-### [图片平滑器](https://leetcode-cn.com/problems/image-smoother)
+### [图片平滑器](https://leetcode.cn/problems/image-smoother)
 
 <p><strong>图像平滑器</strong> 是大小为&nbsp;<code>3 x 3</code> 的过滤器，用于对图像的每个单元格平滑处理，平滑处理后单元格的值为该单元格的平均灰度。</p>
 

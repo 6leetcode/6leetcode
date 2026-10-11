@@ -1,2 +1,2 @@
-### [寻找排列](https://leetcode-cn.com/problems/find-permutation)
+### [寻找排列](https://leetcode.cn/problems/find-permutation)
 

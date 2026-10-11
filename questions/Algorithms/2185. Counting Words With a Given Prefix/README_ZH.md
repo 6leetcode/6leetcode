@@ -1,4 +1,4 @@
-### [统计包含给定前缀的字符串](https://leetcode-cn.com/problems/counting-words-with-a-given-prefix)
+### [统计包含给定前缀的字符串](https://leetcode.cn/problems/counting-words-with-a-given-prefix)
 
 <p>给你一个字符串数组 <code>words</code> 和一个字符串 <code>pref</code> 。</p>
 

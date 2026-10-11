@@ -1,4 +1,4 @@
-### [地图中的最高点](https://leetcode-cn.com/problems/map-of-highest-peak)
+### [地图中的最高点](https://leetcode.cn/problems/map-of-highest-peak)
 
 <p>给你一个大小为 <code>m x n</code> 的整数矩阵 <code>isWater</code> ，它代表了一个由 <strong>陆地</strong> 和 <strong>水域</strong> 单元格组成的地图。</p>
 

@@ -1,4 +1,4 @@
-### [最长递增子序列 II](https://leetcode-cn.com/problems/longest-increasing-subsequence-ii)
+### [最长递增子序列 II](https://leetcode.cn/problems/longest-increasing-subsequence-ii)
 
 <p>给你一个整数数组&nbsp;<code>nums</code>&nbsp;和一个整数&nbsp;<code>k</code>&nbsp;。</p>
 

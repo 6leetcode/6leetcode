@@ -1,4 +1,4 @@
-### [旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof)
+### [旋转数组的最小数字](https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof)
 
 <p>把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。</p>
 
@@ -33,4 +33,4 @@
 	<li><code>numbers</code> 原来是一个升序排序的数组，并进行了 <code>1</code> 至 <code>n</code> 次旋转</li>
 </ul>
 
-<p>注意：本题与主站 154 题相同：<a href="https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/">https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/</a></p>
+<p>注意：本题与主站 154 题相同：<a href="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/">https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/</a></p>

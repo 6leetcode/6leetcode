@@ -1,4 +1,4 @@
-### [到达角落需要移除障碍物的最小数目](https://leetcode-cn.com/problems/minimum-obstacle-removal-to-reach-corner)
+### [到达角落需要移除障碍物的最小数目](https://leetcode.cn/problems/minimum-obstacle-removal-to-reach-corner)
 
 <p>给你一个下标从 <strong>0</strong> 开始的二维整数数组 <code>grid</code> ，数组大小为 <code>m x n</code> 。每个单元格都是两个值之一：</p>
 

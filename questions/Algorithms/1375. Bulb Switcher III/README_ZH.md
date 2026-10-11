@@ -1,4 +1,4 @@
-### [灯泡开关 III](https://leetcode-cn.com/problems/bulb-switcher-iii)
+### [灯泡开关 III](https://leetcode.cn/problems/bulb-switcher-iii)
 
 <p>房间中有 <code>n</code> 枚灯泡，编号从 <code>1</code> 到 <code>n</code>，自左向右排成一排。最初，所有的灯都是关着的。</p>
 

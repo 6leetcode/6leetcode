@@ -1,4 +1,4 @@
-### [找出数组中的第一个回文字符串](https://leetcode-cn.com/problems/find-first-palindromic-string-in-the-array)
+### [找出数组中的第一个回文字符串](https://leetcode.cn/problems/find-first-palindromic-string-in-the-array)
 
 <p>给你一个字符串数组 <code>words</code> ，找出并返回数组中的 <strong>第一个回文字符串</strong> 。如果不存在满足要求的字符串，返回一个 <strong>空字符串</strong><em> </em><code>""</code> 。</p>
 

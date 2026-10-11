@@ -1,4 +1,4 @@
-### [阶乘后的零](https://leetcode-cn.com/problems/factorial-trailing-zeroes)
+### [阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes)
 
 <p>给定一个整数 <code>n</code> ，返回 <code>n!</code> 结果中尾随零的数量。</p>
 

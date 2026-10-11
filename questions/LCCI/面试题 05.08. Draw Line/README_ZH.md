@@ -1,4 +1,4 @@
-### [绘制直线](https://leetcode-cn.com/problems/draw-line-lcci)
+### [绘制直线](https://leetcode.cn/problems/draw-line-lcci)
 
 <p>已知一个由像素点组成的单色屏幕，每行均有 <code>w</code> 个像素点，所有像素点初始为 <code>0</code>，左上角位置为 <code>(0,0)</code>。</p>
 
@@ -16,7 +16,7 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例1:</strong></p>
+<p><strong>示例 1：</strong></p>
 
 <pre>
 <strong> 输入</strong>：length = 1, w = 32, x1 = 30, x2 = 31, y = 0
@@ -24,7 +24,7 @@
 <strong> 解释</strong>：在第 0 行的第 30 位到第 31 位画一条直线，屏幕二进制形式表示为 [00000000000000000000000000000011]，因此返回 [3]
 </pre>
 
-<p><strong>示例2:</strong></p>
+<p><strong>示例 2：</strong></p>
 
 <pre>
 <strong> 输入</strong>：length = 3, w = 96, x1 = 0, x2 = 95, y = 0

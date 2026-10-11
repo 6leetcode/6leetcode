@@ -1,4 +1,4 @@
-### [出现最频繁的偶数元素](https://leetcode-cn.com/problems/most-frequent-even-element)
+### [出现最频繁的偶数元素](https://leetcode.cn/problems/most-frequent-even-element)
 
 <p>给你一个整数数组 <code>nums</code> ，返回出现最频繁的偶数元素。</p>
 

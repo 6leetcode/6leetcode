@@ -1,4 +1,4 @@
-### [点菜展示表](https://leetcode-cn.com/problems/display-table-of-food-orders-in-a-restaurant)
+### [点菜展示表](https://leetcode.cn/problems/display-table-of-food-orders-in-a-restaurant)
 
 <p>给你一个数组 <code>orders</code>，表示客户在餐厅中完成的订单，确切地说， <code>orders[i]=[customerName<sub>i</sub>,tableNumber<sub>i</sub>,foodItem<sub>i</sub>]</code> ，其中 <code>customerName<sub>i</sub></code> 是客户的姓名，<code>tableNumber<sub>i</sub></code> 是客户所在餐桌的桌号，而 <code>foodItem<sub>i</sub></code> 是客户点的餐品名称。</p>
 

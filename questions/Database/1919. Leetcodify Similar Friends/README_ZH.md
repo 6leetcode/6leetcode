@@ -1,2 +1,2 @@
-### [兴趣相同的朋友](https://leetcode-cn.com/problems/leetcodify-similar-friends)
+### [兴趣相同的朋友](https://leetcode.cn/problems/leetcodify-similar-friends)
 

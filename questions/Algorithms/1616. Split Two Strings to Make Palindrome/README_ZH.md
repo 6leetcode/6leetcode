@@ -1,4 +1,4 @@
-### [分割两个字符串得到回文串](https://leetcode-cn.com/problems/split-two-strings-to-make-palindrome)
+### [分割两个字符串得到回文串](https://leetcode.cn/problems/split-two-strings-to-make-palindrome)
 
 <p>给你两个字符串&nbsp;<code>a</code> 和&nbsp;<code>b</code>&nbsp;，它们长度相同。请你选择一个下标，将两个字符串都在&nbsp;<strong>相同的下标 </strong>分割开。由&nbsp;<code>a</code>&nbsp;可以得到两个字符串：&nbsp;<code>a<sub>prefix</sub></code>&nbsp;和&nbsp;<code>a<sub>suffix</sub></code>&nbsp;，满足&nbsp;<code>a = a<sub>prefix</sub> + a<sub>suffix</sub></code><sub>&nbsp;</sub>，同理，由&nbsp;<code>b</code> 可以得到两个字符串&nbsp;<code>b<sub>prefix</sub></code> 和&nbsp;<code>b<sub>suffix</sub></code>&nbsp;，满足&nbsp;<code>b = b<sub>prefix</sub> + b<sub>suffix</sub></code>&nbsp;。请你判断&nbsp;<code>a<sub>prefix</sub> + b<sub>suffix</sub></code> 或者&nbsp;<code>b<sub>prefix</sub> + a<sub>suffix</sub></code>&nbsp;能否构成回文串。</p>
 
@@ -24,8 +24,8 @@ b<sub>prefix</sub> = "", b<sub>suffix</sub> = "y"
 <p><strong>示例 2：</strong></p>
 
 <pre>
-<strong>输入：</strong>a = "abdef", b = "fecab"
-<strong>输出：</strong>true
+<strong>输入：</strong>a = "xbdef", b = "xecab"
+<strong>输出：</strong>false
 </pre>
 
 <p><strong>示例 3：</strong></p>

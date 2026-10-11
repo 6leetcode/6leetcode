@@ -1,6 +1,6 @@
 ### [Maximum Number of Occurrences of a Substring](https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring)
 
-<p>Given a string <code>s</code>, return the maximum number of ocurrences of <strong>any</strong> substring under the following rules:</p>
+<p>Given a string <code>s</code>, return the maximum number of occurrences of <strong>any</strong> substring under the following rules:</p>
 
 <ul>
 	<li>The number of unique characters in the substring must be less than or equal to <code>maxLetters</code>.</li>
@@ -13,7 +13,7 @@
 <pre>
 <strong>Input:</strong> s = &quot;aababcaab&quot;, maxLetters = 2, minSize = 3, maxSize = 4
 <strong>Output:</strong> 2
-<strong>Explanation:</strong> Substring &quot;aab&quot; has 2 ocurrences in the original string.
+<strong>Explanation:</strong> Substring &quot;aab&quot; has 2 occurrences in the original string.
 It satisfies the conditions, 2 unique letters and size 3 (between minSize and maxSize).
 </pre>
 

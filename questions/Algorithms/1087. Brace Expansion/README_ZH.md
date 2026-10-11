@@ -1,2 +1,2 @@
-### [花括号展开](https://leetcode-cn.com/problems/brace-expansion)
+### [花括号展开](https://leetcode.cn/problems/brace-expansion)
 

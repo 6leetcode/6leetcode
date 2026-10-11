@@ -1,4 +1,4 @@
-### [构建字典序最大的可行序列](https://leetcode-cn.com/problems/construct-the-lexicographically-largest-valid-sequence)
+### [构建字典序最大的可行序列](https://leetcode.cn/problems/construct-the-lexicographically-largest-valid-sequence)
 
 <p>给你一个整数 <code>n</code> ，请你找到满足下面条件的一个序列：</p>
 

@@ -1,4 +1,4 @@
-### [特殊等价字符串组](https://leetcode-cn.com/problems/groups-of-special-equivalent-strings)
+### [特殊等价字符串组](https://leetcode.cn/problems/groups-of-special-equivalent-strings)
 
 <p>给你一个字符串数组 <code>words</code>。</p>
 

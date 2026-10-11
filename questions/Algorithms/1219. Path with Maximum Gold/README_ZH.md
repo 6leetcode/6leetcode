@@ -1,4 +1,4 @@
-### [黄金矿工](https://leetcode-cn.com/problems/path-with-maximum-gold)
+### [黄金矿工](https://leetcode.cn/problems/path-with-maximum-gold)
 
 <p>你要开发一座金矿，地质勘测学家已经探明了这座金矿中的资源分布，并用大小为&nbsp;<code>m * n</code> 的网格 <code>grid</code> 进行了标注。每个单元格中的整数就表示这一单元格中的黄金数量；如果该单元格是空的，那么就是 <code>0</code>。</p>
 

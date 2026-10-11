@@ -1,4 +1,4 @@
-### [RLE 迭代器](https://leetcode-cn.com/problems/rle-iterator)
+### [RLE 迭代器](https://leetcode.cn/problems/rle-iterator)
 
 <p>我们可以使用游程编码(即&nbsp;<strong>RLE&nbsp;</strong>)来编码一个整数序列。在偶数长度&nbsp;<code>encoding</code>&nbsp;( <strong>从 0 开始</strong> )的游程编码数组中，对于所有偶数 <code>i</code> ，<code>encoding[i]</code>&nbsp;告诉我们非负整数&nbsp;<code>encoding[i + 1]</code>&nbsp;在序列中重复的次数。</p>
 

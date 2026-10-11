@@ -1,4 +1,4 @@
-### [最大回文数字](https://leetcode-cn.com/problems/largest-palindromic-number)
+### [最大回文数字](https://leetcode.cn/problems/largest-palindromic-number)
 
 <p>给你一个仅由数字（<code>0 - 9</code>）组成的字符串 <code>num</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [交替打印字符串](https://leetcode-cn.com/problems/fizz-buzz-multithreaded)
+### [多线程 Fizz Buzz](https://leetcode.cn/problems/fizz-buzz-multithreaded)
 
 <p>编写一个可以从 1 到 n 输出代表这个数字的字符串的程序，但是：</p>
 

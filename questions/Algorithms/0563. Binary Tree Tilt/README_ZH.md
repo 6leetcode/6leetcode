@@ -1,4 +1,4 @@
-### [二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt)
+### [二叉树的坡度](https://leetcode.cn/problems/binary-tree-tilt)
 
 <p>给你一个二叉树的根节点 <code>root</code> ，计算并返回 <strong>整个树 </strong>的坡度 。</p>
 

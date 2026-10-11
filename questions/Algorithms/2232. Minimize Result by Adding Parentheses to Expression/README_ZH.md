@@ -1,4 +1,4 @@
-### [向表达式添加括号后的最小结果](https://leetcode-cn.com/problems/minimize-result-by-adding-parentheses-to-expression)
+### [向表达式添加括号后的最小结果](https://leetcode.cn/problems/minimize-result-by-adding-parentheses-to-expression)
 
 <p>给你一个下标从 <strong>0</strong> 开始的字符串 <code>expression</code> ，格式为 <code>"&lt;num1&gt;+&lt;num2&gt;"</code> ，其中 <code>&lt;num1&gt;</code> 和 <code>&lt;num2&gt;</code> 表示正整数。</p>
 

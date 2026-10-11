@@ -1,4 +1,4 @@
-### [原子的数量](https://leetcode-cn.com/problems/number-of-atoms)
+### [原子的数量](https://leetcode.cn/problems/number-of-atoms)
 
 <p>给你一个字符串化学式 <code>formula</code> ，返回 <strong>每种原子的数量</strong> 。</p>
 

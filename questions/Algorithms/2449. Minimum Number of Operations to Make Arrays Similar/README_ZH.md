@@ -1,4 +1,4 @@
-### [使数组相似的最少操作次数](https://leetcode-cn.com/problems/minimum-number-of-operations-to-make-arrays-similar)
+### [使数组相似的最少操作次数](https://leetcode.cn/problems/minimum-number-of-operations-to-make-arrays-similar)
 
 <p>给你两个正整数数组&nbsp;<code>nums</code> 和&nbsp;<code>target</code>&nbsp;，两个数组长度相等。</p>
 

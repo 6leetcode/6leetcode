@@ -1,4 +1,4 @@
-### [Excel 表列序号](https://leetcode-cn.com/problems/excel-sheet-column-number)
+### [Excel 表列序号](https://leetcode.cn/problems/excel-sheet-column-number)
 
 <p>给你一个字符串&nbsp;<code>columnTitle</code> ，表示 Excel 表格中的列名称。返回 <em>该列名称对应的列序号</em>&nbsp;。</p>
 

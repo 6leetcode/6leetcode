@@ -1,4 +1,4 @@
-### [文本左右对齐](https://leetcode-cn.com/problems/text-justification)
+### [文本左右对齐](https://leetcode.cn/problems/text-justification)
 
 <p>给定一个单词数组&nbsp;<code>words</code> 和一个长度&nbsp;<code>maxWidth</code>&nbsp;，重新排版单词，使其成为每行恰好有&nbsp;<code>maxWidth</code>&nbsp;个字符，且左右两端对齐的文本。</p>
 

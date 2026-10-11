@@ -1,4 +1,4 @@
-### [粉刷房子](https://leetcode-cn.com/problems/JEj789)
+### [粉刷房子](https://leetcode.cn/problems/JEj789)
 
 <p>假如有一排房子，共 <code>n</code> 个，每个房子可以被粉刷成红色、蓝色或者绿色这三种颜色中的一种，你需要粉刷所有的房子并且使其相邻的两个房子颜色不能相同。</p>
 
@@ -39,4 +39,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 256&nbsp;题相同：<a href="https://leetcode-cn.com/problems/paint-house/">https://leetcode-cn.com/problems/paint-house/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 256&nbsp;题相同：<a href="https://leetcode.cn/problems/paint-house/">https://leetcode.cn/problems/paint-house/</a></p>

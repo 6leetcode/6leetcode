@@ -1,2 +1,2 @@
-### [迷宫 III](https://leetcode-cn.com/problems/the-maze-iii)
+### [迷宫 III](https://leetcode.cn/problems/the-maze-iii)
 

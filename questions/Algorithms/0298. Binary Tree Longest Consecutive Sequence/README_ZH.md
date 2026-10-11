@@ -1,2 +1,2 @@
-### [二叉树最长连续序列](https://leetcode-cn.com/problems/binary-tree-longest-consecutive-sequence)
+### [二叉树最长连续序列](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence)
 

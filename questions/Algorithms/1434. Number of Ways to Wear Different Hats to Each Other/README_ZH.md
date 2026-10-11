@@ -1,4 +1,4 @@
-### [每个人戴不同帽子的方案数](https://leetcode-cn.com/problems/number-of-ways-to-wear-different-hats-to-each-other)
+### [每个人戴不同帽子的方案数](https://leetcode.cn/problems/number-of-ways-to-wear-different-hats-to-each-other)
 
 <p>总共有 <code>n</code>&nbsp;个人和 <code>40</code> 种不同的帽子，帽子编号从 <code>1</code> 到 <code>40</code> 。</p>
 
@@ -34,13 +34,6 @@
 <strong>输出：</strong>24
 <strong>解释：</strong>每个人都可以从编号为 1 到 4 的帽子中选。
 (1,2,3,4) 4 个帽子的排列方案数为 24 。
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
-<strong>输入：</strong>hats = [[1,2,3],[2,3,5,6],[1,3,7,9],[1,8,9],[2,5,7]]
-<strong>输出：</strong>111
 </pre>
 
 <p>&nbsp;</p>

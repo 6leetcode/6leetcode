@@ -1,4 +1,4 @@
-### [最大方阵和](https://leetcode-cn.com/problems/maximum-matrix-sum)
+### [最大方阵和](https://leetcode.cn/problems/maximum-matrix-sum)
 
 <p>给你一个&nbsp;<code>n x n</code>&nbsp;的整数方阵&nbsp;<code>matrix</code>&nbsp;。你可以执行以下操作&nbsp;<strong>任意次</strong>&nbsp;：</p>
 

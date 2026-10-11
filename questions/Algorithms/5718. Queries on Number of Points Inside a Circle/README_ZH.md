@@ -1,4 +1,4 @@
-### [统计一个圆中点的数目](https://leetcode-cn.com/problems/queries-on-number-of-points-inside-a-circle)
+### [统计一个圆中点的数目](https://leetcode.cn/problems/queries-on-number-of-points-inside-a-circle)
 
 <p>给你一个数组 <code>points</code> ，其中 <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> ，表示第 <code>i</code> 个点在二维平面上的坐标。多个点可能会有 <strong>相同</strong> 的坐标。</p>
 

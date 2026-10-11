@@ -1,4 +1,4 @@
-### [最小区间](https://leetcode-cn.com/problems/smallest-range-covering-elements-from-k-lists)
+### [最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists)
 
 <p>你有&nbsp;<code>k</code>&nbsp;个 <strong>非递减排列</strong> 的整数列表。找到一个 <strong>最小 </strong>区间，使得&nbsp;<code>k</code>&nbsp;个列表中的每个列表至少有一个数包含在其中。</p>
 

@@ -1,4 +1,4 @@
-### [花园的最大总美丽值](https://leetcode-cn.com/problems/maximum-total-beauty-of-the-gardens)
+### [花园的最大总美丽值](https://leetcode.cn/problems/maximum-total-beauty-of-the-gardens)
 
 <p>Alice 是&nbsp;<code>n</code>&nbsp;个花园的园丁，她想通过种花，最大化她所有花园的总美丽值。</p>
 

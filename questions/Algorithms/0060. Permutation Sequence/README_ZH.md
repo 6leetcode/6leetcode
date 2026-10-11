@@ -1,4 +1,4 @@
-### [排列序列](https://leetcode-cn.com/problems/permutation-sequence)
+### [排列序列](https://leetcode.cn/problems/permutation-sequence)
 
 <p>给出集合 <code>[1,2,3,...,n]</code>，其所有元素共有 <code>n!</code> 种排列。</p>
 

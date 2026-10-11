@@ -1,8 +1,10 @@
-### [汇总区间](https://leetcode-cn.com/problems/summary-ranges)
+### [汇总区间](https://leetcode.cn/problems/summary-ranges)
 
 <p>给定一个 &nbsp;<strong>无重复元素</strong> 的&nbsp;<strong>有序</strong> 整数数组 <code>nums</code> 。</p>
 
-<p>返回 <em><strong>恰好覆盖数组中所有数字</strong> 的 <strong>最小有序</strong> 区间范围列表&nbsp;</em>。也就是说，<code>nums</code> 的每个元素都恰好被某个区间范围所覆盖，并且不存在属于某个范围但不属于 <code>nums</code> 的数字 <code>x</code> 。</p>
+<p>区间 <code>[a,b]</code> 是从 <code>a</code> 到 <code>b</code>（包含）的所有整数的集合。</p>
+
+<p>返回 <em><strong>恰好覆盖数组中所有数字</strong> 的 <strong>最小有序</strong> 区间范围列表&nbsp;</em>。也就是说，<code>nums</code> 的每个元素都恰好被某个区间范围所覆盖，并且不存在属于某个区间但不属于 <code>nums</code> 的数字 <code>x</code> 。</p>
 
 <p>列表中的每个区间范围 <code>[a,b]</code> 应该按如下格式输出：</p>
 
@@ -13,7 +15,7 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <pre>
 <strong>输入：</strong>nums = [0,1,2,4,5,7]
@@ -24,7 +26,7 @@
 [7,7] --&gt; "7"
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>nums = [0,2,3,4,6,8,9]

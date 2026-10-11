@@ -1,4 +1,4 @@
-### [两个数对之间的最大乘积差](https://leetcode-cn.com/problems/maximum-product-difference-between-two-pairs)
+### [两个数对之间的最大乘积差](https://leetcode.cn/problems/maximum-product-difference-between-two-pairs)
 
 <p>两个数对 <code>(a, b)</code> 和 <code>(c, d)</code> 之间的 <strong>乘积差</strong> 定义为 <code>(a * b) - (c * d)</code> 。</p>
 

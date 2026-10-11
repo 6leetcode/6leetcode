@@ -1,4 +1,4 @@
-### [岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island)
+### [岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island)
 
 <p>给你一个大小为 <code>m x n</code> 的二进制矩阵 <code>grid</code> 。</p>
 

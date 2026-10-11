@@ -1,4 +1,4 @@
-### [两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii)
+### [两数相加 II](https://leetcode.cn/problems/add-two-numbers-ii)
 
 <p>给你两个 <strong>非空 </strong>链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。</p>
 
@@ -8,7 +8,7 @@
 
 <p><strong>示例1：</strong></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1626420025-fZfzMX-image.png" style="width: 302px; " /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1626420025-fZfzMX-image.png" style="width: 302px; " /></p>
 
 <pre>
 <strong>输入：</strong>l1 = [7,2,4,3], l2 = [5,6,4]

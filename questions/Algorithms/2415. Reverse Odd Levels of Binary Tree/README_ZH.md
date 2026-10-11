@@ -1,4 +1,4 @@
-### [反转二叉树的奇数层](https://leetcode-cn.com/problems/reverse-odd-levels-of-binary-tree)
+### [反转二叉树的奇数层](https://leetcode.cn/problems/reverse-odd-levels-of-binary-tree)
 
 <p>给你一棵 <strong>完美</strong> 二叉树的根节点 <code>root</code> ，请你反转这棵树中每个 <strong>奇数</strong> 层的节点值。</p>
 

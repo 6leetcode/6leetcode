@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/closest-fair-integer)
+### [最近的公平整数](https://leetcode.cn/problems/closest-fair-integer)
 

@@ -1,6 +1,6 @@
 ### [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums)
 
-<p>You are given two integer arrays <code>nums1</code> and <code>nums2</code> sorted in <strong>ascending order</strong> and an integer <code>k</code>.</p>
+<p>You are given two integer arrays <code>nums1</code> and <code>nums2</code> sorted in <strong>non-decreasing&nbsp;order</strong> and an integer <code>k</code>.</p>
 
 <p>Define a pair <code>(u, v)</code> which consists of one element from the first array and one element from the second array.</p>
 
@@ -23,20 +23,13 @@
 <strong>Explanation:</strong> The first 2 pairs are returned from the sequence: [1,1],[1,1],[1,2],[2,1],[1,2],[2,2],[1,3],[1,3],[2,3]
 </pre>
 
-<p><strong class="example">Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums1 = [1,2], nums2 = [3], k = 3
-<strong>Output:</strong> [[1,3],[2,3]]
-<strong>Explanation:</strong> All possible pairs are returned from the sequence: [1,3],[2,3]
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
 	<li><code>1 &lt;= nums1.length, nums2.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums1[i], nums2[i] &lt;= 10<sup>9</sup></code></li>
-	<li><code>nums1</code> and <code>nums2</code> both are sorted in <strong>ascending order</strong>.</li>
+	<li><code>nums1</code> and <code>nums2</code> both are sorted in <strong>non-decreasing order</strong>.</li>
 	<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>
+	<li><code>k &lt;=&nbsp;nums1.length *&nbsp;nums2.length</code></li>
 </ul>

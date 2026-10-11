@@ -1,4 +1,4 @@
-### [距离字典两次编辑以内的单词](https://leetcode-cn.com/problems/words-within-two-edits-of-dictionary)
+### [距离字典两次编辑以内的单词](https://leetcode.cn/problems/words-within-two-edits-of-dictionary)
 
 <p>给你两个字符串数组&nbsp;<code>queries</code> 和&nbsp;<code>dictionary</code>&nbsp;。数组中所有单词都只包含小写英文字母，且长度都相同。</p>
 

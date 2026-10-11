@@ -1,4 +1,4 @@
-### [子数组范围和](https://leetcode-cn.com/problems/sum-of-subarray-ranges)
+### [子数组范围和](https://leetcode.cn/problems/sum-of-subarray-ranges)
 
 <p>给你一个整数数组 <code>nums</code> 。<code>nums</code> 中，子数组的 <strong>范围</strong> 是子数组中最大元素和最小元素的差值。</p>
 

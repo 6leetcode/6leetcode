@@ -1,4 +1,4 @@
-### [设计一个 ATM 机器](https://leetcode-cn.com/problems/design-an-atm-machine)
+### [设计一个 ATM 机器](https://leetcode.cn/problems/design-an-atm-machine)
 
 <p>一个 ATM 机器，存有&nbsp;<code>5</code>&nbsp;种面值的钞票：<code>20</code>&nbsp;，<code>50</code>&nbsp;，<code>100</code>&nbsp;，<code>200</code>&nbsp;和&nbsp;<code>500</code>&nbsp;美元。初始时，ATM 机是空的。用户可以用它存或者取任意数目的钱。</p>
 

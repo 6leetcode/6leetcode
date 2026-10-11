@@ -1,4 +1,4 @@
-### [最大间距](https://leetcode-cn.com/problems/maximum-gap)
+### [最大间距](https://leetcode.cn/problems/maximum-gap)
 
 <p>给定一个无序的数组&nbsp;<code>nums</code>，返回 <em>数组在排序之后，相邻元素之间最大的差值</em> 。如果数组元素个数小于 2，则返回 <code>0</code> 。</p>
 

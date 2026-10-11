@@ -1,4 +1,4 @@
-### [最小移动总距离](https://leetcode-cn.com/problems/minimum-total-distance-traveled)
+### [最小移动总距离](https://leetcode.cn/problems/minimum-total-distance-traveled)
 
 <p>X 轴上有一些机器人和工厂。给你一个整数数组&nbsp;<code>robot</code>&nbsp;，其中&nbsp;<code>robot[i]</code>&nbsp;是第&nbsp;<code>i</code>&nbsp;个机器人的位置。再给你一个二维整数数组&nbsp;<code>factory</code>&nbsp;，其中&nbsp;<code>factory[j] = [position<sub>j</sub>, limit<sub>j</sub>]</code>&nbsp;，表示第 <code>j</code>&nbsp;个工厂的位置在&nbsp;<code>position<sub>j</sub></code>&nbsp;，且第 <code>j</code>&nbsp;个工厂最多可以修理&nbsp;<code>limit<sub>j</sub></code>&nbsp;个机器人。</p>
 
@@ -24,7 +24,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1667542978-utuiPv-image.png" style="width: 500px; height: 320px;" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1667542978-utuiPv-image.png" style="width: 500px; height: 320px;" /></p>
 
 <pre>
 <b>输入：</b>robot = [0,4,6], factory = [[2,2],[6,2]]
@@ -40,7 +40,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1667542984-OAIRFN-image.png" style="width: 500px; height: 329px;" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1667542984-OAIRFN-image.png" style="width: 500px; height: 329px;" /></p>
 
 <pre>
 <b>输入：</b>robot = [1,-1], factory = [[-2,1],[2,1]]

@@ -1,4 +1,4 @@
-### [滑动窗口的平均值](https://leetcode-cn.com/problems/qIsx9U)
+### [滑动窗口的平均值](https://leetcode.cn/problems/qIsx9U)
 
 <p>给定一个整数数据流和一个窗口大小，根据该滑动窗口的大小，计算滑动窗口里所有数字的平均值。</p>
 
@@ -40,4 +40,4 @@ movingAverage.next(5); // 返回 6.0 = (10 + 3 + 5) / 3
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 346&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/moving-average-from-data-stream/">https://leetcode-cn.com/problems/moving-average-from-data-stream/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 346&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/moving-average-from-data-stream/">https://leetcode.cn/problems/moving-average-from-data-stream/</a></p>

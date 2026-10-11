@@ -1,2 +1,2 @@
-### [墙与门](https://leetcode-cn.com/problems/walls-and-gates)
+### [墙与门](https://leetcode.cn/problems/walls-and-gates)
 

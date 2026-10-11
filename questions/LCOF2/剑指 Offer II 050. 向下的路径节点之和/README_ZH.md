@@ -1,4 +1,4 @@
-### [向下的路径节点之和](https://leetcode-cn.com/problems/6eUYwP)
+### [向下的路径节点之和](https://leetcode.cn/problems/6eUYwP)
 
 <p>给定一个二叉树的根节点 <code>root</code>&nbsp;，和一个整数 <code>targetSum</code> ，求该二叉树里节点值之和等于 <code>targetSum</code> 的 <strong>路径</strong> 的数目。</p>
 
@@ -35,4 +35,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 437&nbsp;题相同：<a href="https://leetcode-cn.com/problems/path-sum-iii/">https://leetcode-cn.com/problems/path-sum-iii/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 437&nbsp;题相同：<a href="https://leetcode.cn/problems/path-sum-iii/">https://leetcode.cn/problems/path-sum-iii/</a></p>

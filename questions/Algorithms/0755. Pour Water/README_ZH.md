@@ -1,2 +1,2 @@
-### [倒水](https://leetcode-cn.com/problems/pour-water)
+### [倒水](https://leetcode.cn/problems/pour-water)
 

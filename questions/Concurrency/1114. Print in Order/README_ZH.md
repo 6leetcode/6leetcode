@@ -1,4 +1,4 @@
-### [按序打印](https://leetcode-cn.com/problems/print-in-order)
+### [按序打印](https://leetcode.cn/problems/print-in-order)
 
 <p>给你一个类：</p>
 

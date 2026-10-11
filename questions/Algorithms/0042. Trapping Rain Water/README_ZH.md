@@ -1,4 +1,4 @@
-### [接雨水](https://leetcode-cn.com/problems/trapping-rain-water)
+### [接雨水](https://leetcode.cn/problems/trapping-rain-water)
 
 <p>给定&nbsp;<code>n</code> 个非负整数表示每个宽度为 <code>1</code> 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。</p>
 
@@ -6,7 +6,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/rainwatertrap.png" style="height: 161px; width: 412px;" /></p>
+<p><img src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/10/22/rainwatertrap.png" style="height: 161px; width: 412px;" /></p>
 
 <pre>
 <strong>输入：</strong>height = [0,1,0,2,1,0,1,3,2,1,2,1]

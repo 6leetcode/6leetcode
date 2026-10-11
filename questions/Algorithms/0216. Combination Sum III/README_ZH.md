@@ -1,4 +1,4 @@
-### [组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii)
+### [组合总和 III](https://leetcode.cn/problems/combination-sum-iii)
 
 <p>找出所有相加之和为&nbsp;<code>n</code><em> </em>的&nbsp;<code>k</code><strong>&nbsp;</strong>个数的组合，且满足下列条件：</p>
 

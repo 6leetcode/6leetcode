@@ -1,4 +1,4 @@
-### [快速公交](https://leetcode-cn.com/problems/meChtZ)
+### [快速公交](https://leetcode.cn/problems/meChtZ)
 
 小扣打算去秋日市集，由于游客较多，小扣的移动速度受到了人流影响：
 - 小扣从 `x` 号站点移动至 `x + 1` 号站点需要花费的时间为 `inc`；

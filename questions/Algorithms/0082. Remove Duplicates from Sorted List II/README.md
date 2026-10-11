@@ -1,6 +1,10 @@
 ### [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)
 
-<p>Given the <code>head</code> of a sorted linked list, <em>delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list</em>. Return <em>the linked list <strong>sorted</strong> as well</em>.</p>
+<p>You are given the <code>head</code> of a <strong>sorted</strong> linked list.</p>
+
+<p>Delete all nodes that have <strong>duplicate</strong> numbers, leaving only <strong>distinct</strong> numbers from the original list.</p>
+
+<p>Return the linked list <strong>sorted</strong> as well.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

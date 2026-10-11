@@ -1,4 +1,4 @@
-### [找出缺失的观测数据](https://leetcode-cn.com/problems/find-missing-observations)
+### [找出缺失的观测数据](https://leetcode.cn/problems/find-missing-observations)
 
 <p>现有一份 <code>n + m</code>&nbsp;次投掷单个<strong> 六面</strong> 骰子的观测数据，骰子的每个面从 <code>1</code> 到 <code>6</code> 编号。观测数据中缺失了 <code>n</code> 份，你手上只拿到剩余&nbsp;<code>m</code> 次投掷的数据。幸好你有之前计算过的这 <code>n + m</code> 次投掷数据的 <strong>平均值</strong> 。</p>
 

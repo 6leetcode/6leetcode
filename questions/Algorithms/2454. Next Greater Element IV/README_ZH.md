@@ -1,4 +1,4 @@
-### [下一个更大元素 IV](https://leetcode-cn.com/problems/next-greater-element-iv)
+### [下一个更大元素 IV](https://leetcode.cn/problems/next-greater-element-iv)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的非负整数数组&nbsp;<code>nums</code>&nbsp;。对于&nbsp;<code>nums</code>&nbsp;中每一个整数，你必须找到对应元素的&nbsp;<strong>第二大</strong>&nbsp;整数。</p>
 

@@ -1,4 +1,4 @@
-### [优美的排列 II](https://leetcode-cn.com/problems/beautiful-arrangement-ii)
+### [优美的排列 II](https://leetcode.cn/problems/beautiful-arrangement-ii)
 
 <p>给你两个整数 <code>n</code> 和 <code>k</code> ，请你构造一个答案列表 <code>answer</code> ，该列表应当包含从 <code>1</code> 到 <code>n</code> 的 <code>n</code> 个不同正整数，并同时满足下述条件：</p>
 

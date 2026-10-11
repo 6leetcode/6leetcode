@@ -1,4 +1,4 @@
-### [子字符串的最优划分](https://leetcode-cn.com/problems/optimal-partition-of-string)
+### [子字符串的最优划分](https://leetcode.cn/problems/optimal-partition-of-string)
 
 <p>给你一个字符串 <code>s</code> ，请你将该字符串划分成一个或多个 <strong>子字符串</strong> ，并满足每个子字符串中的字符都是 <strong>唯一</strong> 的。也就是说，在单个子字符串中，字母的出现次数都不超过 <strong>一次</strong> 。</p>
 

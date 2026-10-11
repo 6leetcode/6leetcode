@@ -1,4 +1,4 @@
-### [大的国家](https://leetcode-cn.com/problems/big-countries)
+### [大的国家](https://leetcode.cn/problems/big-countries)
 
 <p><code>World</code> 表：</p>
 
@@ -13,9 +13,9 @@
 | continent   | varchar |
 | area        | int     |
 | population  | int     |
-| gdp         | int     |
+| gdp         | bigint  |
 +-------------+---------+
-name 是这张表的主键。
+<code>name</code> 是该表的主键（具有唯一值的列）。
 这张表的每一行提供：国家名称、所属大陆、面积、人口和 GDP 值。
 </pre>
 
@@ -28,15 +28,15 @@ name 是这张表的主键。
 	<li>人口至少为 2500 万（即 <code>25000000</code>）</li>
 </ul>
 
-<p>编写一个 SQL 查询以报告 <strong>大国</strong> 的国家名称、人口和面积。</p>
+<p>编写解决方案找出&nbsp;<strong>大国</strong> 的国家名称、人口和面积。</p>
 
 <p>按 <strong>任意顺序</strong> 返回结果表。</p>
 
-<p>查询结果格式如下例所示。</p>
+<p>返回结果格式如下例所示。</p>
 
 <p>&nbsp;</p>
 
-<p><strong>示例：</strong></p>
+<p><strong class="example">示例：</strong></p>
 
 <pre>
 <strong>输入：</strong>

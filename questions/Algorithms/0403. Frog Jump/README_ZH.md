@@ -1,4 +1,4 @@
-### [青蛙过河](https://leetcode-cn.com/problems/frog-jump)
+### [青蛙过河](https://leetcode.cn/problems/frog-jump)
 
 <p>一只青蛙想要过河。 假定河流被等分为若干个单元格，并且在每一个单元格内都有可能放有一块石子（也有可能没有）。 青蛙可以跳上石子，但是不可以跳入水中。</p>
 

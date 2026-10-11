@@ -1,4 +1,4 @@
-### [螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix)
+### [螺旋矩阵](https://leetcode.cn/problems/spiral-matrix)
 
 <p>给你一个 <code>m</code> 行 <code>n</code> 列的矩阵 <code>matrix</code> ，请按照 <strong>顺时针螺旋顺序</strong> ，返回矩阵中的所有元素。</p>
 

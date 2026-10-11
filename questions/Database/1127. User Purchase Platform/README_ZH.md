@@ -1,2 +1,2 @@
-### [用户购买平台](https://leetcode-cn.com/problems/user-purchase-platform)
+### [用户购买平台](https://leetcode.cn/problems/user-purchase-platform)
 

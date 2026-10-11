@@ -1,4 +1,4 @@
-### [排序链表](https://leetcode-cn.com/problems/sort-list)
+### [排序链表](https://leetcode.cn/problems/sort-list)
 
 <p>给你链表的头结点&nbsp;<code>head</code>&nbsp;，请将其按 <strong>升序</strong> 排列并返回 <strong>排序后的链表</strong> 。</p>
 

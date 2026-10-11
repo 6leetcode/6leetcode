@@ -1,4 +1,4 @@
-### [K 和数对的最大数目](https://leetcode-cn.com/problems/max-number-of-k-sum-pairs)
+### [K 和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs)
 
 <p>给你一个整数数组 <code>nums</code> 和一个整数 <code>k</code> 。</p>
 

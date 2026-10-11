@@ -1,4 +1,4 @@
-### [岛屿的最大面积](https://leetcode-cn.com/problems/ZL6zAn)
+### [岛屿的最大面积](https://leetcode.cn/problems/ZL6zAn)
 
 <p>给定一个由&nbsp;<code>0</code> 和 <code>1</code> 组成的非空二维数组&nbsp;<code>grid</code>&nbsp;，用来表示海洋岛屿地图。</p>
 
@@ -36,4 +36,4 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 695&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/max-area-of-island/">https://leetcode-cn.com/problems/max-area-of-island/</a></p>
+<p>注意：本题与主站 695&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/max-area-of-island/">https://leetcode.cn/problems/max-area-of-island/</a></p>

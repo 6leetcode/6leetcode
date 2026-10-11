@@ -1,4 +1,4 @@
-### [从房屋收集雨水需要的最少水桶数](https://leetcode-cn.com/problems/minimum-number-of-buckets-required-to-collect-rainwater-from-houses)
+### [从房屋收集雨水需要的最少水桶数](https://leetcode.cn/problems/minimum-number-of-buckets-required-to-collect-rainwater-from-houses)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的字符串&nbsp;<code>street</code>&nbsp;。<code>street</code>&nbsp;中每个字符要么是表示房屋的&nbsp;<code>'H'</code> ，要么是表示空位的&nbsp;<code>'.'</code>&nbsp;。</p>
 

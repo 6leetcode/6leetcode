@@ -1,4 +1,4 @@
-### [天际线问题](https://leetcode-cn.com/problems/the-skyline-problem)
+### [天际线问题](https://leetcode.cn/problems/the-skyline-problem)
 
 <p>城市的 <strong>天际线</strong> 是从远处观看该城市中所有建筑物形成的轮廓的外部轮廓。给你所有建筑物的位置和高度，请返回 <em>由这些建筑物形成的<strong> 天际线</strong></em> 。</p>
 

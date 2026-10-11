@@ -1,4 +1,4 @@
-### [连接所有点的最小费用](https://leetcode-cn.com/problems/min-cost-to-connect-all-points)
+### [连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points)
 
 <p>给你一个<code>points</code>&nbsp;数组，表示 2D 平面上的一些点，其中&nbsp;<code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code>&nbsp;。</p>
 

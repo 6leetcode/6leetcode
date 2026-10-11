@@ -1,4 +1,4 @@
-### [找到指定长度的回文数](https://leetcode-cn.com/problems/find-palindrome-with-fixed-length)
+### [找到指定长度的回文数](https://leetcode.cn/problems/find-palindrome-with-fixed-length)
 
 <p>给你一个整数数组&nbsp;<code>queries</code>&nbsp;和一个 <strong>正</strong>&nbsp;整数&nbsp;<code>intLength</code>&nbsp;，请你返回一个数组&nbsp;<code>answer</code>&nbsp;，其中&nbsp;<code>answer[i]</code> 是长度为&nbsp;<code>intLength</code>&nbsp;的&nbsp;<strong>正回文数</strong> 中第<em>&nbsp;</em><code>queries[i]</code>&nbsp;小的数字，如果不存在这样的回文数，则为 <code>-1</code>&nbsp;。</p>
 

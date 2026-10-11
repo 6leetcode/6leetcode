@@ -1,4 +1,4 @@
-### [用 Rand7() 实现 Rand10()](https://leetcode-cn.com/problems/implement-rand10-using-rand7)
+### [用 Rand7() 实现 Rand10()](https://leetcode.cn/problems/implement-rand10-using-rand7)
 
 <p>给定方法&nbsp;<code>rand7</code>&nbsp;可生成 <code>[1,7]</code> 范围内的均匀随机整数，试写一个方法&nbsp;<code>rand10</code>&nbsp;生成 <code>[1,10]</code> 范围内的均匀随机整数。</p>
 

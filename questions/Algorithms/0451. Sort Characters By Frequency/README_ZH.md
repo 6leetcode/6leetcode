@@ -1,4 +1,4 @@
-### [根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency)
+### [根据字符出现频率排序](https://leetcode.cn/problems/sort-characters-by-frequency)
 
 <p>给定一个字符串 <code>s</code> ，根据字符出现的 <strong>频率</strong> 对其进行 <strong>降序排序</strong> 。一个字符出现的 <strong>频率</strong> 是它出现在字符串中的次数。</p>
 
@@ -6,7 +6,7 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1:</strong></p>
+<p><strong class="example">示例 1:</strong></p>
 
 <pre>
 <strong>输入: </strong>s = "tree"
@@ -15,7 +15,7 @@
 因此'e'必须出现在'r'和't'之前。此外，"eetr"也是一个有效的答案。
 </pre>
 
-<p><strong>示例 2:</strong></p>
+<p><strong class="example">示例 2:</strong></p>
 
 <pre>
 <strong>输入: </strong>s = "cccaaa"
@@ -24,7 +24,7 @@
 注意"cacaca"是不正确的，因为相同的字母必须放在一起。
 </pre>
 
-<p><strong>示例 3:</strong></p>
+<p><strong class="example">示例 3:</strong></p>
 
 <pre>
 <strong>输入: </strong>s = "Aabb"

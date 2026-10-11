@@ -1,4 +1,4 @@
-### [检查操作是否合法](https://leetcode-cn.com/problems/check-if-move-is-legal)
+### [检查操作是否合法](https://leetcode.cn/problems/check-if-move-is-legal)
 
 <p>给你一个下标从&nbsp;<strong>0</strong>&nbsp;开始的&nbsp;<code>8 x 8</code> 网格&nbsp;<code>board</code>&nbsp;，其中&nbsp;<code>board[r][c]</code>&nbsp;表示游戏棋盘上的格子&nbsp;<code>(r, c)</code>&nbsp;。棋盘上空格用&nbsp;<code>'.'</code>&nbsp;表示，白色格子用&nbsp;<code>'W'</code>&nbsp;表示，黑色格子用&nbsp;<code>'B'</code>&nbsp;表示。</p>
 

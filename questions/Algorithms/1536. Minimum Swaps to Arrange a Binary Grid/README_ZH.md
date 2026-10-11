@@ -1,4 +1,4 @@
-### [排布二进制网格的最少交换次数](https://leetcode-cn.com/problems/minimum-swaps-to-arrange-a-binary-grid)
+### [排布二进制网格的最少交换次数](https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid)
 
 <p>给你一个&nbsp;<code>n&nbsp;x n</code>&nbsp;的二进制网格&nbsp;<code>grid</code>，每一次操作中，你可以选择网格的&nbsp;<strong>相邻两行</strong>&nbsp;进行交换。</p>
 
@@ -12,7 +12,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/08/02/fw.jpg" style="height: 141px; width: 750px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/08/02/fw.jpg" style="height: 141px; width: 750px;"></p>
 
 <pre><strong>输入：</strong>grid = [[0,0,1],[1,1,0],[1,0,0]]
 <strong>输出：</strong>3
@@ -20,7 +20,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/08/02/e2.jpg" style="height: 270px; width: 270px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/08/02/e2.jpg" style="height: 270px; width: 270px;"></p>
 
 <pre><strong>输入：</strong>grid = [[0,1,1,0],[0,1,1,0],[0,1,1,0],[0,1,1,0]]
 <strong>输出：</strong>-1
@@ -29,7 +29,7 @@
 
 <p><strong>示例 3：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/08/02/e3.jpg" style="height: 210px; width: 210px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/08/02/e3.jpg" style="height: 210px; width: 210px;"></p>
 
 <pre><strong>输入：</strong>grid = [[1,0,0],[1,1,0],[1,1,1]]
 <strong>输出：</strong>0

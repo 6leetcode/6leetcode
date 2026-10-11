@@ -1,2 +1,2 @@
-### [删除树节点](https://leetcode-cn.com/problems/delete-tree-nodes)
+### [删除树节点](https://leetcode.cn/problems/delete-tree-nodes)
 

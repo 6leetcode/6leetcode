@@ -1,4 +1,4 @@
-### [两个字符串的删除操作](https://leetcode-cn.com/problems/delete-operation-for-two-strings)
+### [两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings)
 
 <p>给定两个单词&nbsp;<code>word1</code>&nbsp;和<meta charset="UTF-8" />&nbsp;<code>word2</code>&nbsp;，返回使得<meta charset="UTF-8" />&nbsp;<code>word1</code>&nbsp;和&nbsp;<meta charset="UTF-8" />&nbsp;<code>word2</code><em>&nbsp;</em><strong>相同</strong>所需的<strong>最小步数</strong>。</p>
 

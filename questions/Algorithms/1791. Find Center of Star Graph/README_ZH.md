@@ -1,4 +1,4 @@
-### [找出星型图的中心节点](https://leetcode-cn.com/problems/find-center-of-star-graph)
+### [找出星型图的中心节点](https://leetcode.cn/problems/find-center-of-star-graph)
 
 <p>有一个无向的 <strong>星型</strong> 图，由 <code>n</code> 个编号从 <code>1</code> 到 <code>n</code> 的节点组成。星型图有一个 <strong>中心</strong> 节点，并且恰有 <code>n - 1</code> 条边将中心节点与其他每个节点连接起来。</p>
 
@@ -7,7 +7,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/03/14/star_graph.png" style="width: 331px; height: 321px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/03/14/star_graph.png" style="width: 331px; height: 321px;" />
 <pre>
 <strong>输入：</strong>edges = [[1,2],[2,3],[4,2]]
 <strong>输出：</strong>2

@@ -1,4 +1,4 @@
-### [统计字典序元音字符串的数目](https://leetcode-cn.com/problems/count-sorted-vowel-strings)
+### [统计字典序元音字符串的数目](https://leetcode.cn/problems/count-sorted-vowel-strings)
 
 <p>给你一个整数 <code>n</code>，请返回长度为 <code>n</code> 、仅由元音 (<code>a</code>, <code>e</code>, <code>i</code>, <code>o</code>, <code>u</code>) 组成且按 <strong>字典序排列</strong> 的字符串数量。</p>
 

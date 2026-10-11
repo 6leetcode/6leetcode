@@ -1,4 +1,4 @@
-### [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)
+### [买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)
 
 <p>给定一个数组 <code>prices</code> ，它的第 <code>i</code> 个元素 <code>prices[i]</code> 表示一支给定股票第 <code>i</code> 天的价格。</p>
 

@@ -1,2 +1,2 @@
-### [中心对称数 II](https://leetcode-cn.com/problems/strobogrammatic-number-ii)
+### [中心对称数 II](https://leetcode.cn/problems/strobogrammatic-number-ii)
 

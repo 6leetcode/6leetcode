@@ -1,4 +1,4 @@
-### [巫师的总力量和](https://leetcode-cn.com/problems/sum-of-total-strength-of-wizards)
+### [巫师的总力量和](https://leetcode.cn/problems/sum-of-total-strength-of-wizards)
 
 <p>作为国王的统治者，你有一支巫师军队听你指挥。</p>
 

@@ -1,4 +1,4 @@
-### [向字符串添加空格](https://leetcode-cn.com/problems/adding-spaces-to-a-string)
+### [向字符串添加空格](https://leetcode.cn/problems/adding-spaces-to-a-string)
 
 <p>给你一个下标从 <strong>0</strong> 开始的字符串 <code>s</code> ，以及一个下标从 <strong>0</strong> 开始的整数数组 <code>spaces</code> 。</p>
 

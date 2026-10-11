@@ -1,0 +1,50 @@
+### [K 因数分解](https://leetcode.cn/problems/balanced-k-factor-decomposition)
+
+<p>给你两个整数 <code>n</code> 和 <code>k</code>。</p>
+
+<p>将数字 <code>n</code> <strong>恰好</strong> 分割成 <code>k</code> 个正整数，使得这些整数的&nbsp;<strong>乘积&nbsp;等于</strong> <code>n</code>。</p>
+
+<p>返回 <strong>任一</strong> 分割方案，使得这些数字中&nbsp;<strong>最大值&nbsp;</strong>和&nbsp;<strong>最小值&nbsp;</strong>之间的差值<strong>&nbsp;最小化</strong>。结果可以以任意顺序返回。</p>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">n = 100, k = 2</span></p>
+
+<p><strong>输出：</strong><span class="example-io">[10,10]</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>分割方案 <code>[10, 10]</code> 的结果是 <code>10 * 10 = 100</code>，且最大值与最小值的差值为 0，这是最小可能值。</p>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong><span class="example-io">n = 44, k = 3</span></p>
+
+<p><strong>输出：</strong><span class="example-io">[2,2,11]</span></p>
+
+<p><strong>解释：</strong></p>
+
+<ul>
+	<li>分割方案 <code>[1, 1, 44]</code> 的差值为 43</li>
+	<li>分割方案 <code>[1, 2, 22]</code> 的差值为 21</li>
+	<li>分割方案 <code>[1, 4, 11]</code> 的差值为 10</li>
+	<li>分割方案 <code>[2, 2, 11]</code> 的差值为 9</li>
+</ul>
+
+<p>因此，<code>[2, 2, 11]</code> 是最优分割方案，其差值最小，为 9。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>4 &lt;= n &lt;= 10<sup>5</sup></code></li>
+	<li><code>2 &lt;= k &lt;= 5</code></li>
+	<li><code>k</code> 严格小于 <code>n</code> 的正因数的总数。</li>
+</ul>

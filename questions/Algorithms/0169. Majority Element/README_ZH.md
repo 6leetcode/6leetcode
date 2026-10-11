@@ -1,4 +1,4 @@
-### [多数元素](https://leetcode-cn.com/problems/majority-element)
+### [多数元素](https://leetcode.cn/problems/majority-element)
 
 <p>给定一个大小为 <code>n</code><em> </em>的数组&nbsp;<code>nums</code> ，返回其中的多数元素。多数元素是指在数组中出现次数 <strong>大于</strong>&nbsp;<code>⌊ n/2 ⌋</code>&nbsp;的元素。</p>
 
@@ -26,6 +26,7 @@
 	<li><code>n == nums.length</code></li>
 	<li><code>1 &lt;= n &lt;= 5 * 10<sup>4</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+	<li>输入保证数组中一定有一个多数元素。</li>
 </ul>
 
 <p>&nbsp;</p>

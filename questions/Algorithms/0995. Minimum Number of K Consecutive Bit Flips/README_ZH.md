@@ -1,4 +1,4 @@
-### [K 连续位的最小翻转次数](https://leetcode-cn.com/problems/minimum-number-of-k-consecutive-bit-flips)
+### [K 连续位的最小翻转次数](https://leetcode.cn/problems/minimum-number-of-k-consecutive-bit-flips)
 
 <p>给定一个二进制数组 <code>nums</code> 和一个整数 <code>k</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [新 21 点](https://leetcode-cn.com/problems/new-21-game)
+### [新 21 点](https://leetcode.cn/problems/new-21-game)
 
 <p>爱丽丝参与一个大致基于纸牌游戏 <strong>“21点”</strong> 规则的游戏，描述如下：</p>
 

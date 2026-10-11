@@ -1,4 +1,4 @@
-### [加减的目标值](https://leetcode-cn.com/problems/YaVDxD)
+### [加减的目标值](https://leetcode.cn/problems/YaVDxD)
 
 <p>给定一个正整数数组 <code>nums</code> 和一个整数 <code>target</code> 。</p>
 
@@ -45,4 +45,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 494&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/target-sum/">https://leetcode-cn.com/problems/target-sum/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 494&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/target-sum/">https://leetcode.cn/problems/target-sum/</a></p>

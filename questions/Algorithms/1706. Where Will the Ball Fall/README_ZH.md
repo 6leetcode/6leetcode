@@ -1,4 +1,4 @@
-### [球会落何处](https://leetcode-cn.com/problems/where-will-the-ball-fall)
+### [球会落何处](https://leetcode.cn/problems/where-will-the-ball-fall)
 
 <p>用一个大小为 <code>m x n</code> 的二维网格 <code>grid</code> 表示一个箱子。你有 <code>n</code> 颗球。箱子的顶部和底部都是开着的。</p>
 
@@ -17,7 +17,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/12/26/ball.jpg" style="width: 500px; height: 385px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/12/26/ball.jpg" style="width: 500px; height: 385px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>grid = [[1,1,1,-1,-1],[1,1,1,-1,-1],[-1,-1,-1,1,1],[1,1,1,1,-1],[-1,-1,-1,-1,-1]]

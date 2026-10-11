@@ -1,4 +1,4 @@
-### [多余的边](https://leetcode-cn.com/problems/7LpjUW)
+### [多余的边](https://leetcode.cn/problems/7LpjUW)
 
 <p>树可以看成是一个连通且 <strong>无环&nbsp;</strong>的&nbsp;<strong>无向&nbsp;</strong>图。</p>
 
@@ -42,4 +42,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 684&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/redundant-connection/">https://leetcode-cn.com/problems/redundant-connection/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 684&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/redundant-connection/">https://leetcode.cn/problems/redundant-connection/</a></p>

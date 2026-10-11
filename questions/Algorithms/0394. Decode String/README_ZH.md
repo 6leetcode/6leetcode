@@ -1,4 +1,4 @@
-### [字符串解码](https://leetcode-cn.com/problems/decode-string)
+### [字符串解码](https://leetcode.cn/problems/decode-string)
 
 <p>给定一个经过编码的字符串，返回它解码后的字符串。</p>
 
@@ -7,6 +7,8 @@
 <p>你可以认为输入字符串总是有效的；输入字符串中没有额外的空格，且输入的方括号总是符合格式要求的。</p>
 
 <p>此外，你可以认为原始数据不包含数字，所有的数字只表示重复的次数 <code>k</code> ，例如不会出现像&nbsp;<code>3a</code>&nbsp;或&nbsp;<code>2[4]</code>&nbsp;的输入。</p>
+
+<p>测试用例保证输出的长度不会超过&nbsp;<code>10<sup>5</sup></code>。</p>
 
 <p>&nbsp;</p>
 

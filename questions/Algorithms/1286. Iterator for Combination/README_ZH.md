@@ -1,4 +1,4 @@
-### [字母组合迭代器](https://leetcode-cn.com/problems/iterator-for-combination)
+### [字母组合迭代器](https://leetcode.cn/problems/iterator-for-combination)
 
 <p>请你设计一个迭代器类&nbsp;<code>CombinationIterator</code>&nbsp;，包括以下内容：</p>
 

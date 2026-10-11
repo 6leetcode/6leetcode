@@ -1,4 +1,4 @@
-### [最高频元素的频数](https://leetcode-cn.com/problems/frequency-of-the-most-frequent-element)
+### [最高频元素的频数](https://leetcode.cn/problems/frequency-of-the-most-frequent-element)
 
 <p>元素的 <strong>频数</strong> 是该元素在一个数组中出现的次数。</p>
 

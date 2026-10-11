@@ -1,4 +1,4 @@
-### [最大相等频率](https://leetcode-cn.com/problems/maximum-equal-frequency)
+### [最大相等频率](https://leetcode.cn/problems/maximum-equal-frequency)
 
 <p>给你一个正整数数组&nbsp;<code>nums</code>，请你帮忙从该数组中找出能满足下面要求的 <strong>最长</strong> 前缀，并返回该前缀的长度：</p>
 

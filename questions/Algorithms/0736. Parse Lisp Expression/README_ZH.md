@@ -1,4 +1,4 @@
-### [Lisp 语法解析](https://leetcode-cn.com/problems/parse-lisp-expression)
+### [Lisp 语法解析](https://leetcode.cn/problems/parse-lisp-expression)
 
 <p>给你一个类似 Lisp 语句的字符串表达式 <code>expression</code>，求出其计算结果。</p>
 

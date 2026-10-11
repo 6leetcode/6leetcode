@@ -1,4 +1,4 @@
-### [最长公共前缀](https://leetcode-cn.com/problems/longest-common-prefix)
+### [最长公共前缀](https://leetcode.cn/problems/longest-common-prefix)
 
 <p>编写一个函数来查找字符串数组中的最长公共前缀。</p>
 
@@ -6,14 +6,14 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <pre>
 <strong>输入：</strong>strs = ["flower","flow","flight"]
 <strong>输出：</strong>"fl"
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>strs = ["dog","racecar","car"]
@@ -27,5 +27,5 @@
 <ul>
 	<li><code>1 &lt;= strs.length &lt;= 200</code></li>
 	<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>
-	<li><code>strs[i]</code> 仅由小写英文字母组成</li>
+	<li><code>strs[i]</code>&nbsp;如果非空，则仅由小写英文字母组成</li>
 </ul>

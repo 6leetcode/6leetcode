@@ -1,4 +1,4 @@
-### [子序列的数目](https://leetcode-cn.com/problems/21dk04)
+### [子序列的数目](https://leetcode.cn/problems/21dk04)
 
 <p>给定一个字符串 <code>s</code><strong> </strong>和一个字符串 <code>t</code> ，计算在 <code>s</code> 的子序列中 <code>t</code> 出现的个数。</p>
 
@@ -44,4 +44,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 115&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/distinct-subsequences/">https://leetcode-cn.com/problems/distinct-subsequences/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 115&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/distinct-subsequences/">https://leetcode.cn/problems/distinct-subsequences/</a></p>

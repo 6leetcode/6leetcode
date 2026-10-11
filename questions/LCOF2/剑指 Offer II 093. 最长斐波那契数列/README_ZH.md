@@ -1,4 +1,4 @@
-### [最长斐波那契数列](https://leetcode-cn.com/problems/Q91FMA)
+### [最长斐波那契数列](https://leetcode.cn/problems/Q91FMA)
 
 <p>如果序列&nbsp;<code>X_1, X_2, ..., X_n</code>&nbsp;满足下列条件，就说它是&nbsp;<em>斐波那契式&nbsp;</em>的：</p>
 
@@ -45,4 +45,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 873&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/">https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 873&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/">https://leetcode.cn/problems/length-of-longest-fibonacci-subsequence/</a></p>

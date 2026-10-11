@@ -1,4 +1,4 @@
-### [数字的补数](https://leetcode-cn.com/problems/number-complement)
+### [数字的补数](https://leetcode.cn/problems/number-complement)
 
 <p>对整数的二进制表示取反（<code>0</code> 变 <code>1</code> ，<code>1</code> 变 <code>0</code>）后，再转换为十进制表示，可以得到这个整数的补数。</p>
 
@@ -39,4 +39,4 @@
 
 <p>&nbsp;</p>
 
-<p><strong>注意：</strong>本题与 1009 <a href="https://leetcode-cn.com/problems/complement-of-base-10-integer/">https://leetcode-cn.com/problems/complement-of-base-10-integer/</a> 相同</p>
+<p><strong>注意：</strong>本题与 1009 <a href="https://leetcode.cn/problems/complement-of-base-10-integer/">https://leetcode.cn/problems/complement-of-base-10-integer/</a> 相同</p>

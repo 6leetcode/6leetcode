@@ -1,4 +1,4 @@
-### [查找给定哈希值的子串](https://leetcode-cn.com/problems/find-substring-with-given-hash-value)
+### [查找给定哈希值的子串](https://leetcode.cn/problems/find-substring-with-given-hash-value)
 
 <p>给定整数 <code>p</code>&nbsp;和 <code>m</code>&nbsp;，一个长度为 <code>k</code>&nbsp;且下标从 <strong>0</strong>&nbsp;开始的字符串&nbsp;<code>s</code>&nbsp;的哈希值按照如下函数计算：</p>
 

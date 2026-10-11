@@ -1,4 +1,4 @@
-### [守卫城堡](https://leetcode-cn.com/problems/7rLGCR)
+### [守卫城堡](https://leetcode.cn/problems/7rLGCR)
 
 城堡守卫游戏的胜利条件为使恶魔无法从出生点到达城堡。游戏地图可视作 `2*N` 的方格图，记作字符串数组 `grid`，其中：
 - `"."` 表示恶魔可随意通行的平地；
@@ -19,7 +19,7 @@
 >输出：`3`
 >
 >解释：至少需要放置三个障碍物
-![image.png](https://pic.leetcode-cn.com/1614828255-uuNdNJ-image.png)
+![image.png](https://pic.leetcode.cn/1614828255-uuNdNJ-image.png)
 
 
 **示例 2：**
@@ -28,7 +28,7 @@
 >输出：`-1`
 >
 >解释：无论怎样修筑障碍物，均无法阻挡最左侧出生的恶魔到达城堡位置
-![image.png](https://pic.leetcode-cn.com/1614828208-oFlpVs-image.png)
+![image.png](https://pic.leetcode.cn/1614828208-oFlpVs-image.png)
 
 **示例 3：**
 >输入：`grid = ["SP#.C.#PS", "P.#...#.P"]`
@@ -36,7 +36,7 @@
 >输出：`0`
 >
 >解释：无需放置障碍物即可获得胜利
-![image.png](https://pic.leetcode-cn.com/1614828242-oveClu-image.png)
+![image.png](https://pic.leetcode.cn/1614828242-oveClu-image.png)
 
 **示例 4：**
 >输入：`grid = ["CP.#.P.", "...S..S"]`
@@ -44,7 +44,7 @@
 >输出：`4`
 >
 >解释：至少需要放置 4 个障碍物，示意图为放置方法之一
-![image.png](https://pic.leetcode-cn.com/1614828218-sIAYkb-image.png)
+![image.png](https://pic.leetcode.cn/1614828218-sIAYkb-image.png)
 
 
 **提示：**

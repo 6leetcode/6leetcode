@@ -1,4 +1,4 @@
-### [地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible)
+### [地图分析](https://leetcode.cn/problems/as-far-from-land-as-possible)
 
 <p>你现在手里有一份大小为<meta charset="UTF-8" />&nbsp;<code>n x n</code>&nbsp;的 网格 <code>grid</code>，上面的每个 单元格 都用&nbsp;<code>0</code>&nbsp;和&nbsp;<code>1</code>&nbsp;标记好了。其中&nbsp;<code>0</code>&nbsp;代表海洋，<code>1</code>&nbsp;代表陆地。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/08/17/1336_ex1.jpeg" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/08/17/1336_ex1.jpeg" /></strong></p>
 
 <pre>
 <strong>输入：</strong>grid = [[1,0,1],[0,0,0],[1,0,1]]
@@ -21,7 +21,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/08/17/1336_ex2.jpeg" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/08/17/1336_ex2.jpeg" /></strong></p>
 
 <pre>
 <strong>输入：</strong>grid = [[1,0,0],[0,0,0],[0,0,0]]

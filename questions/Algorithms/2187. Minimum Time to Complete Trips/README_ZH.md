@@ -1,4 +1,4 @@
-### [完成旅途的最少时间](https://leetcode-cn.com/problems/minimum-time-to-complete-trips)
+### [完成旅途的最少时间](https://leetcode.cn/problems/minimum-time-to-complete-trips)
 
 <p>给你一个数组&nbsp;<code>time</code>&nbsp;，其中&nbsp;<code>time[i]</code>&nbsp;表示第 <code>i</code>&nbsp;辆公交车完成 <strong>一趟</strong><strong>旅途</strong>&nbsp;所需要花费的时间。</p>
 

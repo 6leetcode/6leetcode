@@ -1,4 +1,4 @@
-### [最短的单词编码](https://leetcode-cn.com/problems/iSwD2y)
+### [最短的单词编码](https://leetcode.cn/problems/iSwD2y)
 
 <p>单词数组&nbsp;<code>words</code> 的 <strong>有效编码</strong> 由任意助记字符串 <code>s</code> 和下标数组 <code>indices</code> 组成，且满足：</p>
 
@@ -43,4 +43,4 @@ words[2] = &quot;bell&quot; ，s 开始于 indices[2] = 5 到下一个 &#39;#&#3
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 820&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/short-encoding-of-words/">https://leetcode-cn.com/problems/short-encoding-of-words/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 820&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/short-encoding-of-words/">https://leetcode.cn/problems/short-encoding-of-words/</a></p>

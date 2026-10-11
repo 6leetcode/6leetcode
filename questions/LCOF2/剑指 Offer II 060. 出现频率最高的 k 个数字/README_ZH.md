@@ -1,4 +1,4 @@
-### [出现频率最高的 k 个数字](https://leetcode-cn.com/problems/g5c51o)
+### [出现频率最高的 k 个数字](https://leetcode.cn/problems/g5c51o)
 
 <p>给定一个整数数组 <code>nums</code> 和一个整数 <code>k</code>&nbsp;，请返回其中出现频率前 <code>k</code> 高的元素。可以按 <strong>任意顺序</strong> 返回答案。</p>
 
@@ -33,4 +33,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 347&nbsp;题相同：<a href="https://leetcode-cn.com/problems/top-k-frequent-elements/">https://leetcode-cn.com/problems/top-k-frequent-elements/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 347&nbsp;题相同：<a href="https://leetcode.cn/problems/top-k-frequent-elements/">https://leetcode.cn/problems/top-k-frequent-elements/</a></p>

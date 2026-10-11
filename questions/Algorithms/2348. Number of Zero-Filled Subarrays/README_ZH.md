@@ -1,4 +1,4 @@
-### [全 0 子数组的数目](https://leetcode-cn.com/problems/number-of-zero-filled-subarrays)
+### [全 0 子数组的数目](https://leetcode.cn/problems/number-of-zero-filled-subarrays)
 
 <p>给你一个整数数组&nbsp;<code>nums</code>&nbsp;，返回全部为&nbsp;<code>0</code>&nbsp;的&nbsp;<strong>子数组</strong>&nbsp;数目。</p>
 

@@ -1,4 +1,4 @@
-### [拿硬币](https://leetcode-cn.com/problems/na-ying-bi)
+### [拿硬币](https://leetcode.cn/problems/na-ying-bi)
 
 <p>桌上有 <code>n</code> 堆力扣币，每堆的数量保存在数组 <code>coins</code> 中。我们每次可以选择任意一堆，拿走其中的一枚或者两枚，求拿完所有力扣币的最少次数。</p>
 

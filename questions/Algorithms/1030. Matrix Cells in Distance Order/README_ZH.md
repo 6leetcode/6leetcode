@@ -1,4 +1,4 @@
-### [距离顺序排列矩阵单元格](https://leetcode-cn.com/problems/matrix-cells-in-distance-order)
+### [距离顺序排列矩阵单元格](https://leetcode.cn/problems/matrix-cells-in-distance-order)
 
 <p>给定四个整数 <code>rows</code>&nbsp;,&nbsp; &nbsp;<code>cols</code> ,&nbsp; <code>rCenter</code> 和 <code>cCenter</code> 。有一个&nbsp;<code>rows x cols</code>&nbsp;的矩阵，你在单元格上的坐标是&nbsp;<code>(rCenter, cCenter)</code> 。</p>
 

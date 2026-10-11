@@ -1,4 +1,4 @@
-### [古董键盘](https://leetcode-cn.com/problems/Uh984O)
+### [古董键盘](https://leetcode.cn/problems/Uh984O)
 
 小扣在秋日市集购买了一个古董键盘。由于古董键盘年久失修，键盘上只有 26 个字母 **a~z** 可以按下，且每个字母最多仅能被按 `k` 次。
 

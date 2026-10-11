@@ -1,4 +1,4 @@
-### [格雷编码](https://leetcode-cn.com/problems/gray-code)
+### [格雷编码](https://leetcode.cn/problems/gray-code)
 
 <strong>n 位格雷码序列</strong> 是一个由 <code>2<sup>n</sup></code> 个整数组成的序列，其中：
 <ul>

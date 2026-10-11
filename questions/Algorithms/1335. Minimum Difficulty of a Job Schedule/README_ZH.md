@@ -1,4 +1,4 @@
-### [工作计划的最低难度](https://leetcode-cn.com/problems/minimum-difficulty-of-a-job-schedule)
+### [工作计划的最低难度](https://leetcode.cn/problems/minimum-difficulty-of-a-job-schedule)
 
 <p>你需要制定一份&nbsp;<code>d</code>&nbsp;天的工作计划表。工作之间存在依赖，要想执行第&nbsp;<code>i</code>&nbsp;项工作，你必须完成全部&nbsp;<code>j</code>&nbsp;项工作（&nbsp;<code>0 &lt;= j &lt; i</code>）。</p>
 
@@ -12,7 +12,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/26/untitled.png" style="height: 304px; width: 365px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/26/untitled.png" style="height: 304px; width: 365px;"></p>
 
 <pre><strong>输入：</strong>jobDifficulty = [6,5,4,3,2,1], d = 2
 <strong>输出：</strong>7

@@ -8,7 +8,7 @@
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/08/10/falling-grid.jpg" style="width: 244px; height: 245px;" />
 <pre>
-<strong>Input:</strong> arr = [[1,2,3],[4,5,6],[7,8,9]]
+<strong>Input:</strong> grid = [[1,2,3],[4,5,6],[7,8,9]]
 <strong>Output:</strong> 13
 <strong>Explanation:</strong> 
 The possible falling paths are:

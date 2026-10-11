@@ -1,4 +1,4 @@
-### [统计特殊子序列的数目](https://leetcode-cn.com/problems/count-number-of-special-subsequences)
+### [统计特殊子序列的数目](https://leetcode.cn/problems/count-number-of-special-subsequences)
 
 <p><strong>特殊序列</strong> 是由&nbsp;<strong>正整数</strong>&nbsp;个 <code>0</code>&nbsp;，紧接着&nbsp;<strong>正整数</strong>&nbsp;个 <code>1</code>&nbsp;，最后 <strong>正整数</strong>&nbsp;个 <code>2</code>&nbsp;组成的序列。</p>
 

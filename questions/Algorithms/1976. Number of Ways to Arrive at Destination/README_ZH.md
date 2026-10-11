@@ -1,4 +1,4 @@
-### [到达目的地的方案数](https://leetcode-cn.com/problems/number-of-ways-to-arrive-at-destination)
+### [到达目的地的方案数](https://leetcode.cn/problems/number-of-ways-to-arrive-at-destination)
 
 <p>你在一个城市里，城市由 <code>n</code>&nbsp;个路口组成，路口编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;，某些路口之间有 <strong>双向</strong>&nbsp;道路。输入保证你可以从任意路口出发到达其他任意路口，且任意两个路口之间最多有一条路。</p>
 
@@ -9,8 +9,9 @@
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/07/17/graph2.png" style="width: 235px; height: 381px;">
-<pre><b>输入：</b>n = 7, roads = [[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]
+<img alt="" src="https://assets.leetcode.com/uploads/2025/02/14/1976_corrected.png" style="width: 255px; height: 400px;" />
+<pre>
+<b>输入：</b>n = 7, roads = [[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]
 <b>输出：</b>4
 <b>解释：</b>从路口 0 出发到路口 6 花费的最少时间是 7 分钟。
 四条花费 7 分钟的路径分别为：
@@ -22,7 +23,8 @@
 
 <p><strong>示例 2：</strong></p>
 
-<pre><b>输入：</b>n = 2, roads = [[1,0,10]]
+<pre>
+<b>输入：</b>n = 2, roads = [[1,0,10]]
 <b>输出：</b>1
 <b>解释：</b>只有一条从路口 0 到路口 1 的路，花费 10 分钟。
 </pre>

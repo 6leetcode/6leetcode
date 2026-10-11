@@ -1,4 +1,4 @@
-### [四数相加 II](https://leetcode-cn.com/problems/4sum-ii)
+### [四数相加 II](https://leetcode.cn/problems/4sum-ii)
 
 <p>给你四个整数数组 <code>nums1</code>、<code>nums2</code>、<code>nums3</code> 和 <code>nums4</code> ，数组长度都是 <code>n</code> ，请你计算有多少个元组 <code>(i, j, k, l)</code> 能满足：</p>
 

@@ -1,4 +1,4 @@
-### [邻位交换的最小次数](https://leetcode-cn.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number)
+### [邻位交换的最小次数](https://leetcode.cn/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number)
 
 <p>给你一个表示大整数的字符串 <code>num</code> ，和一个整数 <code>k</code> 。</p>
 

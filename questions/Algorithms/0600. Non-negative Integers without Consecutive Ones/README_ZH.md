@@ -1,4 +1,4 @@
-### [不含连续1的非负整数](https://leetcode-cn.com/problems/non-negative-integers-without-consecutive-ones)
+### [不含连续1的非负整数](https://leetcode.cn/problems/non-negative-integers-without-consecutive-ones)
 
 <p>给定一个正整数 <code>n</code> ，请你统计在&nbsp;<code>[0, n]</code> 范围的非负整数中，有多少个整数的二进制表示中不存在 <strong>连续的 1 </strong>。</p>
 

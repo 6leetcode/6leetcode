@@ -1,2 +1,2 @@
-### [有序转化数组](https://leetcode-cn.com/problems/sort-transformed-array)
+### [有序转化数组](https://leetcode.cn/problems/sort-transformed-array)
 

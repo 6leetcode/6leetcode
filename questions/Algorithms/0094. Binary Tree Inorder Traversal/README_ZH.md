@@ -1,4 +1,4 @@
-### [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)
+### [二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal)
 
 <p>给定一个二叉树的根节点 <code>root</code> ，返回 <em>它的 <strong>中序</strong>&nbsp;遍历</em> 。</p>
 

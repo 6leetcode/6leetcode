@@ -1,4 +1,4 @@
-### [所有子字符串美丽值之和](https://leetcode-cn.com/problems/sum-of-beauty-of-all-substrings)
+### [所有子字符串美丽值之和](https://leetcode.cn/problems/sum-of-beauty-of-all-substrings)
 
 <p>一个字符串的 <strong>美丽值</strong> 定义为：出现频率最高字符与出现频率最低字符的出现次数之差。</p>
 

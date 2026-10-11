@@ -1,4 +1,4 @@
-### [完全平方数](https://leetcode-cn.com/problems/perfect-squares)
+### [完全平方数](https://leetcode.cn/problems/perfect-squares)
 
 <p>给你一个整数 <code>n</code> ，返回 <em>和为 <code>n</code> 的完全平方数的最少数量</em> 。</p>
 

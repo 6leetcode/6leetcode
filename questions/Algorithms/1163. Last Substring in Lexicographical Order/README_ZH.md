@@ -1,4 +1,4 @@
-### [按字典序排在最后的子串](https://leetcode-cn.com/problems/last-substring-in-lexicographical-order)
+### [按字典序排在最后的子串](https://leetcode.cn/problems/last-substring-in-lexicographical-order)
 
 <p>给你一个字符串&nbsp;<code>s</code>&nbsp;，找出它的所有子串并按字典序排列，返回排在最后的那个子串。</p>
 

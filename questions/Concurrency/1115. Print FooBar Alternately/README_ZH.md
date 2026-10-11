@@ -1,4 +1,4 @@
-### [交替打印 FooBar](https://leetcode-cn.com/problems/print-foobar-alternately)
+### [交替打印 FooBar](https://leetcode.cn/problems/print-foobar-alternately)
 
 <p>给你一个类：</p>
 

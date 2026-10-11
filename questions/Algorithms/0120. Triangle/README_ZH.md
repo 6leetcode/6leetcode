@@ -1,4 +1,4 @@
-### [三角形最小路径和](https://leetcode-cn.com/problems/triangle)
+### [三角形最小路径和](https://leetcode.cn/problems/triangle)
 
 <p>给定一个三角形 <code>triangle</code> ，找出自顶向下的最小路径和。</p>
 

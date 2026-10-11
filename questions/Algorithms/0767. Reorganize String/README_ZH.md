@@ -1,6 +1,6 @@
-### [重构字符串](https://leetcode-cn.com/problems/reorganize-string)
+### [重构字符串](https://leetcode.cn/problems/reorganize-string)
 
-<p>给定一个字符串&nbsp;<code>s</code>&nbsp;，检查是否能重新排布其中的字母，使得两相邻的字符不同。</p>
+<p>给定一个字符串&nbsp;<code>s</code>&nbsp;，检查是否能重新排布其中的字母，使得任意两个相邻字符不相同。</p>
 
 <p>返回<em> <code>s</code>&nbsp;的任意可能的重新排列。若不可行，返回空字符串&nbsp;<code>""</code></em>&nbsp;。</p>
 

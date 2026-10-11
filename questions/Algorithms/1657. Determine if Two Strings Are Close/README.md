@@ -46,7 +46,7 @@ Apply Operation 1: &quot;<u>a</u>c<u>b</u>&quot; -&gt; &quot;<u>b</u>c<u>a</u>&q
 <strong>Output:</strong> true
 <strong>Explanation:</strong> You can attain word2 from word1 in 3 operations.
 Apply Operation 1: &quot;ca<u>b</u>bb<u>a</u>&quot; -&gt; &quot;ca<u>a</u>bb<u>b</u>&quot;
-<code>Apply Operation 2: &quot;</code><u>c</u>aa<u>bbb</u>&quot; -&gt; &quot;<u>b</u>aa<u>ccc</u>&quot;
+Apply Operation 2: &quot;<u>c</u>aa<u>bbb</u>&quot; -&gt; &quot;<u>b</u>aa<u>ccc</u>&quot;
 Apply Operation 2: &quot;<u>baa</u>ccc&quot; -&gt; &quot;<u>abb</u>ccc&quot;
 </pre>
 
@@ -55,5 +55,5 @@ Apply Operation 2: &quot;<u>baa</u>ccc&quot; -&gt; &quot;<u>abb</u>ccc&quot;
 
 <ul>
 	<li><code>1 &lt;= word1.length, word2.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>word1</code> and <code>word2</code> contain&nbsp;only lowercase English letters.</li>
+	<li><code>word1</code> and <code>word2</code> contain only lowercase English letters.</li>
 </ul>

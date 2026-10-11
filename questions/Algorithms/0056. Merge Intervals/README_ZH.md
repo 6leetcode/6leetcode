@@ -1,4 +1,4 @@
-### [合并区间](https://leetcode-cn.com/problems/merge-intervals)
+### [合并区间](https://leetcode.cn/problems/merge-intervals)
 
 <p>以数组 <code>intervals</code> 表示若干个区间的集合，其中单个区间为 <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> 。请你合并所有重叠的区间，并返回&nbsp;<em>一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间</em>&nbsp;。</p>
 
@@ -18,6 +18,14 @@
 <strong>输入：</strong>intervals = [[1,4],[4,5]]
 <strong>输出：</strong>[[1,5]]
 <strong>解释：</strong>区间 [1,4] 和 [4,5] 可被视为重叠区间。</pre>
+
+<p><strong class="example">示例 3：</strong></p>
+
+<pre>
+<b>输入：</b>intervals = [[4,7],[1,4]]
+<b>输出：</b>[[1,7]]
+<b>解释：</b>区间 [1,4] 和 [4,7] 可被视为重叠区间。
+</pre>
 
 <p>&nbsp;</p>
 

@@ -1,10 +1,10 @@
-### [环形闯关游戏](https://leetcode-cn.com/problems/K8GULz)
+### [环形闯关游戏](https://leetcode.cn/problems/K8GULz)
 
 「力扣挑战赛」中有一个由 `N` 个关卡组成的**环形**闯关游戏，关卡编号为 `0`~`N-1`，编号 `0` 的关卡和编号 `N-1` 的关卡相邻。每个关卡均有积分要求，`challenge[i]` 表示挑战编号 `i` 的关卡最少需要拥有的积分。
-![图片.png](https://pic.leetcode-cn.com/1630392170-ucncVS-%E5%9B%BE%E7%89%87.png){:width="240px"}
+![图片.png](https://pic.leetcode.cn/1630392170-ucncVS-%E5%9B%BE%E7%89%87.png){:width="240px"}
 
 
-小扣想要挑战关卡，闯关的具体规则如下：
+小扣想要挑战关卡，闯关具体规则如下：
 
 - 初始小扣可以指定其中一个关卡为「开启」状态，其余关卡将处于「未开启」状态。
 - 小扣可以挑战处于「开启」状态且**满足最少积分要求**的关卡，若小扣挑战该关卡前积分为 `score`，挑战结束后，积分将增长为 `score|challenge[i]`（即位运算中的 `"OR"` 运算）
@@ -47,4 +47,4 @@
 
 **提示：** 
 - `1 <= challenge.length <= 5*10^4`
-- `1 <= challenge[i] <= 10^18`
+- `1 <= challenge[i] <= 10^14`

@@ -1,4 +1,4 @@
-### [最大整除子集](https://leetcode-cn.com/problems/largest-divisible-subset)
+### [最大整除子集](https://leetcode.cn/problems/largest-divisible-subset)
 
 给你一个由 <strong>无重复</strong> 正整数组成的集合 <code>nums</code> ，请你找出并返回其中最大的整除子集 <code>answer</code> ，子集中每一元素对 <code>(answer[i], answer[j])</code> 都应当满足：
 <ul>

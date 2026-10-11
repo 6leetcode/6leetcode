@@ -1,4 +1,4 @@
-### [飞机座位分配概率](https://leetcode-cn.com/problems/airplane-seat-assignment-probability)
+### [飞机座位分配概率](https://leetcode.cn/problems/airplane-seat-assignment-probability)
 
 <p>有 <code>n</code> 位乘客即将登机，飞机正好有 <code>n</code> 个座位。第一位乘客的票丢了，他随便选了一个座位坐下。</p>
 

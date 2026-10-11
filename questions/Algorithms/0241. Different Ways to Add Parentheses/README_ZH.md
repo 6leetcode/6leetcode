@@ -1,4 +1,4 @@
-### [为运算表达式设计优先级](https://leetcode-cn.com/problems/different-ways-to-add-parentheses)
+### [为运算表达式设计优先级](https://leetcode.cn/problems/different-ways-to-add-parentheses)
 
 <p>给你一个由数字和运算符组成的字符串&nbsp;<code>expression</code> ，按不同优先级组合数字和运算符，计算并返回所有可能组合的结果。你可以 <strong>按任意顺序</strong> 返回答案。</p>
 
@@ -37,4 +37,5 @@
 	<li><code>1 &lt;= expression.length &lt;= 20</code></li>
 	<li><code>expression</code> 由数字和算符 <code>'+'</code>、<code>'-'</code> 和 <code>'*'</code> 组成。</li>
 	<li>输入表达式中的所有整数值在范围 <code>[0, 99]</code>&nbsp;</li>
+	<li>输入表达式中的所有整数都没有前导&nbsp;<code>'-'</code>&nbsp;或&nbsp;<code>'+'</code> 表示符号。</li>
 </ul>

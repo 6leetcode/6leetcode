@@ -1,4 +1,4 @@
-### [恰好移动 k 步到达某一位置的方法数目](https://leetcode-cn.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps)
+### [恰好移动 k 步到达某一位置的方法数目](https://leetcode.cn/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps)
 
 <p>给你两个 <strong>正</strong> 整数 <code>startPos</code> 和 <code>endPos</code> 。最初，你站在 <strong>无限</strong> 数轴上位置 <code>startPos</code> 处。在一步移动中，你可以向左或者向右移动一个位置。</p>
 

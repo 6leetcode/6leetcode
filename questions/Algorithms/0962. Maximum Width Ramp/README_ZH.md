@@ -1,4 +1,4 @@
-### [最大宽度坡](https://leetcode-cn.com/problems/maximum-width-ramp)
+### [最大宽度坡](https://leetcode.cn/problems/maximum-width-ramp)
 
 <p>给定一个整数数组&nbsp;<code>A</code>，<em>坡</em>是元组&nbsp;<code>(i, j)</code>，其中&nbsp;&nbsp;<code>i &lt; j</code>&nbsp;且&nbsp;<code>A[i] &lt;= A[j]</code>。这样的坡的宽度为&nbsp;<code>j - i</code>。</p>
 

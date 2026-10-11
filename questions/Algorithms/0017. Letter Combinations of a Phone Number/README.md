@@ -15,13 +15,6 @@
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> digits = &quot;&quot;
-<strong>Output:</strong> []
-</pre>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<pre>
 <strong>Input:</strong> digits = &quot;2&quot;
 <strong>Output:</strong> [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]
 </pre>
@@ -30,6 +23,6 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>0 &lt;= digits.length &lt;= 4</code></li>
+	<li><code>1 &lt;= digits.length &lt;= 4</code></li>
 	<li><code>digits[i]</code> is a digit in the range <code>[&#39;2&#39;, &#39;9&#39;]</code>.</li>
 </ul>

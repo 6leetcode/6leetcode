@@ -1,4 +1,4 @@
-### [装包裹的最小浪费空间](https://leetcode-cn.com/problems/minimum-space-wasted-from-packaging)
+### [装包裹的最小浪费空间](https://leetcode.cn/problems/minimum-space-wasted-from-packaging)
 
 <p>给你 <code>n</code> 个包裹，你需要把它们装在箱子里，<strong>每个箱子装一个包裹</strong>。总共有 <code>m</code> 个供应商提供 <strong>不同尺寸</strong> 的箱子（每个规格都有无数个箱子）。如果一个包裹的尺寸 <strong>小于等于</strong> 一个箱子的尺寸，那么这个包裹就可以放入这个箱子之中。</p>
 

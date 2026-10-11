@@ -1,2 +1,2 @@
-### [轰炸敌人](https://leetcode-cn.com/problems/bomb-enemy)
+### [轰炸敌人](https://leetcode.cn/problems/bomb-enemy)
 

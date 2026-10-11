@@ -1,4 +1,4 @@
-### [判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci)
+### [判定字符是否唯一](https://leetcode.cn/problems/is-unique-lcci)
 
 <p>实现一个算法，确定一个字符串 <code>s</code> 的所有字符是否全都不同。</p>
 

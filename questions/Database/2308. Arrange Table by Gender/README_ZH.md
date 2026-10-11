@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/arrange-table-by-gender)
+### [按性别排列表格](https://leetcode.cn/problems/arrange-table-by-gender)
 

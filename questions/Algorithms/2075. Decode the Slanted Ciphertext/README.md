@@ -12,7 +12,7 @@
 
 <p>For example, if <code>originalText = &quot;cipher&quot;</code> and <code>rows = 3</code>, then we encode it in the following manner:</p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/10/25/desc2.png" style="width: 281px; height: 211px;" />
-<p>The blue arrows depict how <code>originalText</code> is placed in the matrix, and the red arrows denote the order in which <code>encodedText</code> is formed. In the above example, <code>encodedText = &quot;ch ie pr&quot;</code>.</p>
+<p>The blue arrows depict how <code>originalText</code> is placed in the matrix, and the red arrows denote the order in which <code>encodedText</code> is formed. In the above example, <code>encodedText = &quot;ch   ie   pr&quot;</code>.</p>
 
 <p>Given the encoded string <code>encodedText</code> and number of rows <code>rows</code>, return <em>the original string</em> <code>originalText</code>.</p>
 

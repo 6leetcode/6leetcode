@@ -1,4 +1,4 @@
-### [课程表 II](https://leetcode-cn.com/problems/course-schedule-ii)
+### [课程表 II](https://leetcode.cn/problems/course-schedule-ii)
 
 <p>现在你总共有 <code>numCourses</code> 门课需要选，记为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>numCourses - 1</code>。给你一个数组&nbsp;<code>prerequisites</code> ，其中 <code>prerequisites[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> ，表示在选修课程 <code>a<sub>i</sub></code> 前 <strong>必须</strong> 先选修&nbsp;<code>b<sub>i</sub></code> 。</p>
 

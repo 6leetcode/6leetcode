@@ -1,4 +1,4 @@
-### [最长字符串链](https://leetcode-cn.com/problems/longest-string-chain)
+### [最长字符串链](https://leetcode.cn/problems/longest-string-chain)
 
 <p>给出一个单词数组&nbsp;<code>words</code>&nbsp;，其中每个单词都由小写英文字母组成。</p>
 

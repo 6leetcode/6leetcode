@@ -1,4 +1,4 @@
-### [找出数组的最大公约数](https://leetcode-cn.com/problems/find-greatest-common-divisor-of-array)
+### [找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array)
 
 <p>给你一个整数数组 <code>nums</code> ，返回数组中最大数和最小数的 <strong>最大公约数</strong> 。</p>
 

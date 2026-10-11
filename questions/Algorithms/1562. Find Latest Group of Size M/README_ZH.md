@@ -1,4 +1,4 @@
-### [查找大小为 M 的最新分组](https://leetcode-cn.com/problems/find-latest-group-of-size-m)
+### [查找大小为 M 的最新分组](https://leetcode.cn/problems/find-latest-group-of-size-m)
 
 <p>给你一个数组 <code>arr</code> ，该数组表示一个从 <code>1</code> 到 <code>n</code> 的数字排列。有一个长度为 <code>n</code> 的二进制字符串，该字符串上的所有位最初都设置为 <code>0</code> 。</p>
 

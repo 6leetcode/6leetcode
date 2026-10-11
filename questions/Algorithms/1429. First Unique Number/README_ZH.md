@@ -1,2 +1,2 @@
-### [第一个唯一数字](https://leetcode-cn.com/problems/first-unique-number)
+### [第一个唯一数字](https://leetcode.cn/problems/first-unique-number)
 

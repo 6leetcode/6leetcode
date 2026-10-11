@@ -1,4 +1,4 @@
-### [买票需要的时间](https://leetcode-cn.com/problems/time-needed-to-buy-tickets)
+### [买票需要的时间](https://leetcode.cn/problems/time-needed-to-buy-tickets)
 
 <p>有 <code>n</code> 个人前来排队买票，其中第 <code>0</code> 人站在队伍 <strong>最前方</strong> ，第 <code>(n - 1)</code> 人站在队伍 <strong>最后方</strong> 。</p>
 
@@ -12,23 +12,40 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><strong>输入：</strong>tickets = [2,3,2], k = 2
-<strong>输出：</strong>6
-<strong>解释：</strong> 
-- 第一轮，队伍中的每个人都买到一张票，队伍变为 [1, 2, 1] 。
-- 第二轮，队伍中的每个都又都买到一张票，队伍变为 [0, 1, 0] 。
-位置 2 的人成功买到 2 张票，用掉 3 + 3 = 6 秒。
-</pre>
+<div class="example-block">
+<p><strong>输入：</strong>tickets = [2,3,2], k = 2</p>
+
+<p><strong>输出：</strong>6</p>
+
+<p><strong>解释：</strong></p>
+
+<ul>
+	<li>队伍一开始为 [2,3,2]，第 k 个人以下划线标识。</li>
+	<li>在最前面的人买完票后，队伍在第 1 秒变成 [3,<u>2</u>,1]。</li>
+	<li>继续这个过程，队伍在第 2 秒变为[<u>2</u>,1,2]。</li>
+	<li>继续这个过程，队伍在第 3 秒变为[1,2,<u>1</u>]。</li>
+	<li>继续这个过程，队伍在第 4 秒变为[2,<u>1</u>]。</li>
+	<li>继续这个过程，队伍在第 5 秒变为[<u>1</u>,1]。</li>
+	<li>继续这个过程，队伍在第 6 秒变为[1]。第 k 个人完成买票，所以返回 6。</li>
+</ul>
+</div>
 
 <p><strong>示例 2：</strong></p>
 
-<pre><strong>输入：</strong>tickets = [5,1,1,1], k = 0
-<strong>输出：</strong>8
-<strong>解释：</strong>
-- 第一轮，队伍中的每个人都买到一张票，队伍变为 [4, 0, 0, 0] 。
-- 接下来的 4 轮，只有位置 0 的人在买票。
-位置 0 的人成功买到 5 张票，用掉 4 + 1 + 1 + 1 + 1 = 8 秒。
-</pre>
+<div class="example-block">
+<p><strong>输入：</strong>tickets = [5,1,1,1], k = 0</p>
+
+<p><strong>输出：</strong>8</p>
+
+<p><strong>解释：</strong></p>
+
+<ul>
+	<li>队伍一开始为 [<u>5</u>,1,1,1]，第 k 个人以下划线标识。</li>
+	<li>在最前面的人买完票后，队伍在第 1 秒变成 [1,1,1,<u>4</u>]。</li>
+	<li>继续这个过程 3 秒，队伍在第 4&nbsp;秒变为[<u>4</u>]。</li>
+	<li>继续这个过程 4 秒，队伍在第 8&nbsp;秒变为[]。第 k 个人完成买票，所以返回 8。</li>
+</ul>
+</div>
 
 <p>&nbsp;</p>
 

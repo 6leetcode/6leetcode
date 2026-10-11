@@ -1,4 +1,4 @@
-### [打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii)
+### [打家劫舍 III](https://leetcode.cn/problems/house-robber-iii)
 
 <p>小偷又发现了一个新的可行窃的地区。这个地区只有一个入口，我们称之为<meta charset="UTF-8" />&nbsp;<code>root</code>&nbsp;。</p>
 

@@ -1,4 +1,4 @@
-### [树节点的第 K 个祖先](https://leetcode-cn.com/problems/kth-ancestor-of-a-tree-node)
+### [树节点的第 K 个祖先](https://leetcode.cn/problems/kth-ancestor-of-a-tree-node)
 
 <p>给你一棵树，树上有 <code>n</code> 个节点，按从 <code>0</code> 到 <code>n-1</code> 编号。树以父节点数组的形式给出，其中 <code>parent[i]</code> 是节点 <code>i</code> 的父节点。树的根节点是编号为 <code>0</code> 的节点。</p>
 
@@ -15,7 +15,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/06/14/1528_ex1.png" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/06/14/1528_ex1.png" /></strong></p>
 
 <pre>
 <strong>输入：</strong>

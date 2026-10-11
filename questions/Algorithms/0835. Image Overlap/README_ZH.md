@@ -1,4 +1,4 @@
-### [图像重叠](https://leetcode-cn.com/problems/image-overlap)
+### [图像重叠](https://leetcode.cn/problems/image-overlap)
 
 <p>给你两个图像 <code>img1</code> 和 <code>img2</code> ，两个图像的大小都是 <code>n x n</code> ，用大小相同的二进制正方形矩阵表示。二进制矩阵仅由若干 <code>0</code> 和若干 <code>1</code> 组成。</p>
 

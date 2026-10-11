@@ -1,4 +1,4 @@
-### [跳跃游戏 V](https://leetcode-cn.com/problems/jump-game-v)
+### [跳跃游戏 V](https://leetcode.cn/problems/jump-game-v)
 
 <p>给你一个整数数组&nbsp;<code>arr</code> 和一个整数&nbsp;<code>d</code> 。每一步你可以从下标&nbsp;<code>i</code>&nbsp;跳到：</p>
 
@@ -17,7 +17,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/02/02/meta-chart.jpeg" style="height: 419px; width: 633px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/02/02/meta-chart.jpeg" style="height: 419px; width: 633px;"></p>
 
 <pre><strong>输入：</strong>arr = [6,4,14,6,8,13,9,7,10,6,12], d = 2
 <strong>输出：</strong>4

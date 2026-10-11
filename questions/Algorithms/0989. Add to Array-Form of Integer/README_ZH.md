@@ -1,4 +1,4 @@
-### [数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer)
+### [数组形式的整数加法](https://leetcode.cn/problems/add-to-array-form-of-integer)
 
 <p>整数的 <strong>数组形式</strong> &nbsp;<code>num</code>&nbsp;是按照从左到右的顺序表示其数字的数组。</p>
 

@@ -1,4 +1,4 @@
-### [判断两个事件是否存在冲突](https://leetcode-cn.com/problems/determine-if-two-events-have-conflict)
+### [判断两个事件是否存在冲突](https://leetcode.cn/problems/determine-if-two-events-have-conflict)
 
 <p>给你两个字符串数组 <code>event1</code> 和&nbsp;<code>event2</code>&nbsp;，表示发生在同一天的两个闭区间时间段事件，其中：</p>
 
@@ -44,7 +44,7 @@
 <p><b>提示：</b></p>
 
 <ul>
-	<li><code>evnet1.length == event2.length == 2.</code></li>
+	<li><code>event1.length == event2.length == 2</code></li>
 	<li><code>event1[i].length == event2[i].length == 5</code></li>
 	<li><code>startTime<sub>1</sub> &lt;= endTime<sub>1</sub></code></li>
 	<li><code>startTime<sub>2</sub> &lt;= endTime<sub>2</sub></code></li>

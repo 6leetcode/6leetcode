@@ -1,4 +1,4 @@
-### [随机数索引](https://leetcode-cn.com/problems/random-pick-index)
+### [随机数索引](https://leetcode.cn/problems/random-pick-index)
 
 <p>给你一个可能含有 <strong>重复元素</strong> 的整数数组&nbsp;<code>nums</code> ，请你随机输出给定的目标数字&nbsp;<code>target</code> 的索引。你可以假设给定的数字一定存在于数组中。</p>
 

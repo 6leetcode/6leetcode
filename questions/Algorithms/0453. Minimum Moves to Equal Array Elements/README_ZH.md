@@ -1,4 +1,4 @@
-### [最小操作次数使数组元素相等](https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements)
+### [最小操作次数使数组元素相等](https://leetcode.cn/problems/minimum-moves-to-equal-array-elements)
 
 <p>给你一个长度为 <code>n</code> 的整数数组，每次操作将会使 <code>n - 1</code> 个元素增加 <code>1</code> 。返回让数组所有元素相等的最小操作次数。</p>
 

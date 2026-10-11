@@ -1,4 +1,4 @@
-### [会议室 III](https://leetcode-cn.com/problems/meeting-rooms-iii)
+### [会议室 III](https://leetcode.cn/problems/meeting-rooms-iii)
 
 <p>给你一个整数 <code>n</code> ，共有编号从 <code>0</code> 到 <code>n - 1</code> 的 <code>n</code> 个会议室。</p>
 

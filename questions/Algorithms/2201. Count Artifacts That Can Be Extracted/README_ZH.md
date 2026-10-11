@@ -1,4 +1,4 @@
-### [统计可以提取的工件](https://leetcode-cn.com/problems/count-artifacts-that-can-be-extracted)
+### [统计可以提取的工件](https://leetcode.cn/problems/count-artifacts-that-can-be-extracted)
 
 <p>存在一个 <code>n x n</code> 大小、下标从 <strong>0</strong> 开始的网格，网格中埋着一些工件。给你一个整数 <code>n</code> 和一个下标从 <strong>0</strong> 开始的二维整数数组 <code>artifacts</code> ，<code>artifacts</code> 描述了矩形工件的位置，其中 <code>artifacts[i] = [r1<sub>i</sub>, c1<sub>i</sub>, r2<sub>i</sub>, c2<sub>i</sub>]</code> 表示第 <code>i</code> 个工件在子网格中的填埋情况：</p>
 

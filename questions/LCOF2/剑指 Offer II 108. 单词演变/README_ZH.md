@@ -1,4 +1,4 @@
-### [单词演变](https://leetcode-cn.com/problems/om3reC)
+### [单词演变](https://leetcode.cn/problems/om3reC)
 
 <p>在字典（单词列表）&nbsp;<code>wordList</code> 中，从单词 <code>beginWord</code><em>&nbsp;</em>和 <code>endWord</code> 的 <strong>转换序列 </strong>是一个按下述规格形成的序列：</p>
 
@@ -44,4 +44,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 127&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/word-ladder/">https://leetcode-cn.com/problems/word-ladder/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 127&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/word-ladder/">https://leetcode.cn/problems/word-ladder/</a></p>

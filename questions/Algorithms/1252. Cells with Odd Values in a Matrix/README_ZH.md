@@ -1,4 +1,4 @@
-### [奇数值单元格的数目](https://leetcode-cn.com/problems/cells-with-odd-values-in-a-matrix)
+### [奇数值单元格的数目](https://leetcode.cn/problems/cells-with-odd-values-in-a-matrix)
 
 <p>给你一个 <code>m x n</code> 的矩阵，最开始的时候，每个单元格中的值都是 <code>0</code>。</p>
 
@@ -17,7 +17,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/06/e1.png" style="height: 118px; width: 600px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/11/06/e1.png" style="height: 118px; width: 600px;" /></p>
 
 <pre>
 <strong>输入：</strong>m = 2, n = 3, indices = [[0,1],[1,1]]
@@ -29,7 +29,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/06/e2.png" style="height: 150px; width: 600px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/11/06/e2.png" style="height: 150px; width: 600px;" /></p>
 
 <pre>
 <strong>输入：</strong>m = 2, n = 2, indices = [[1,1],[0,0]]

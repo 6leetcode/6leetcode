@@ -1,4 +1,4 @@
-### [日程表](https://leetcode-cn.com/problems/fi9suh)
+### [日程表](https://leetcode.cn/problems/fi9suh)
 
 <p>请实现一个 <code>MyCalendar</code> 类来存放你的日程安排。如果要添加的时间内没有其他安排，则可以存储这个新的日程安排。</p>
 
@@ -39,4 +39,4 @@ MyCalendar.book(20, 30); // returns true ，第三个日程安排可以添加到
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 729&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/my-calendar-i/">https://leetcode-cn.com/problems/my-calendar-i/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 729&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/my-calendar-i/">https://leetcode.cn/problems/my-calendar-i/</a></p>

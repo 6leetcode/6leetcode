@@ -1,4 +1,4 @@
-### [最美子字符串的数目](https://leetcode-cn.com/problems/number-of-wonderful-substrings)
+### [最美子字符串的数目](https://leetcode.cn/problems/number-of-wonderful-substrings)
 
 <p>如果某个字符串中 <strong>至多一个</strong> 字母出现 <strong>奇数</strong> 次，则称其为 <strong>最美</strong> 字符串。</p>
 

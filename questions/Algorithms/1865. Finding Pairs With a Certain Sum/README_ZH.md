@@ -1,4 +1,4 @@
-### [找出和为指定值的下标对](https://leetcode-cn.com/problems/finding-pairs-with-a-certain-sum)
+### [找出和为指定值的下标对](https://leetcode.cn/problems/finding-pairs-with-a-certain-sum)
 
 <p>给你两个整数数组 <code>nums1</code> 和 <code>nums2</code> ，请你实现一个支持下述两类查询的数据结构：</p>
 

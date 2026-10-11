@@ -1,4 +1,4 @@
-### [设计一个验证系统](https://leetcode-cn.com/problems/design-authentication-manager)
+### [设计一个验证系统](https://leetcode.cn/problems/design-authentication-manager)
 
 <p>你需要设计一个包含验证码的验证系统。每一次验证中，用户会收到一个新的验证码，这个验证码在 <code>currentTime</code> 时刻之后 <code>timeToLive</code> 秒过期。如果验证码被更新了，那么它会在 <code>currentTime</code> （可能与之前的 <code>currentTime</code> 不同）时刻延长 <code>timeToLive</code> 秒。</p>
 

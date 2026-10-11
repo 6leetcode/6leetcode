@@ -1,4 +1,4 @@
-### [反转两次的数字](https://leetcode-cn.com/problems/a-number-after-a-double-reversal)
+### [反转两次的数字](https://leetcode.cn/problems/a-number-after-a-double-reversal)
 
 <p><strong>反转</strong> 一个整数意味着倒置它的所有位。</p>
 

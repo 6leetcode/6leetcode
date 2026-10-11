@@ -1,4 +1,4 @@
-### [蜡烛之间的盘子](https://leetcode-cn.com/problems/plates-between-candles)
+### [蜡烛之间的盘子](https://leetcode.cn/problems/plates-between-candles)
 
 <p>给你一个长桌子，桌子上盘子和蜡烛排成一列。给你一个下标从 <strong>0</strong>&nbsp;开始的字符串&nbsp;<code>s</code>&nbsp;，它只包含字符&nbsp;<code>'*'</code> 和&nbsp;<code>'|'</code>&nbsp;，其中&nbsp;<code>'*'</code>&nbsp;表示一个 <strong>盘子</strong>&nbsp;，<code>'|'</code>&nbsp;表示一支&nbsp;<strong>蜡烛</strong>&nbsp;。</p>
 

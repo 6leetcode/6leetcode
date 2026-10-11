@@ -1,4 +1,4 @@
-### [设计一个文本编辑器](https://leetcode-cn.com/problems/design-a-text-editor)
+### [设计一个文本编辑器](https://leetcode.cn/problems/design-a-text-editor)
 
 <p>请你设计一个带光标的文本编辑器，它可以实现以下功能：</p>
 

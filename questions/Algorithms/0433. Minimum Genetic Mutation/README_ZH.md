@@ -1,4 +1,4 @@
-### [最小基因变化](https://leetcode-cn.com/problems/minimum-genetic-mutation)
+### [最小基因变化](https://leetcode.cn/problems/minimum-genetic-mutation)
 
 <p>基因序列可以表示为一条由 8 个字符组成的字符串，其中每个字符都是 <code>'A'</code>、<code>'C'</code>、<code>'G'</code> 和 <code>'T'</code> 之一。</p>
 

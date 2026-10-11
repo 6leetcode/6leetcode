@@ -1,4 +1,4 @@
-### [删除回文子序列](https://leetcode-cn.com/problems/remove-palindromic-subsequences)
+### [删除回文子序列](https://leetcode.cn/problems/remove-palindromic-subsequences)
 
 <p>给你一个字符串&nbsp;<code>s</code>，它仅由字母&nbsp;<code>'a'</code> 和 <code>'b'</code>&nbsp;组成。每一次删除操作都可以从 <code>s</code> 中删除一个回文 <strong>子序列</strong>。</p>
 

@@ -1,4 +1,4 @@
-### [设计哈希集合](https://leetcode-cn.com/problems/design-hashset)
+### [设计哈希集合](https://leetcode.cn/problems/design-hashset)
 
 <p>不使用任何内建的哈希表库设计一个哈希集合（HashSet）。</p>
 

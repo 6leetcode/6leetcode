@@ -1,4 +1,4 @@
-### [石子游戏 VI](https://leetcode-cn.com/problems/stone-game-vi)
+### [石子游戏 VI](https://leetcode.cn/problems/stone-game-vi)
 
 <p>Alice 和 Bob 轮流玩一个游戏，Alice 先手。</p>
 

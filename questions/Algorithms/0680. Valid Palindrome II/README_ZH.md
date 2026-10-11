@@ -1,4 +1,4 @@
-### [验证回文串 II](https://leetcode-cn.com/problems/valid-palindrome-ii)
+### [验证回文串 II](https://leetcode.cn/problems/valid-palindrome-ii)
 
 <p>给你一个字符串&nbsp;<code>s</code>，<strong>最多</strong> 可以从中删除一个字符。</p>
 

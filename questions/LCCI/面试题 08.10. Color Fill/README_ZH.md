@@ -1,4 +1,4 @@
-### [颜色填充](https://leetcode-cn.com/problems/color-fill-lcci)
+### [颜色填充](https://leetcode.cn/problems/color-fill-lcci)
 
 <p>编写函数，实现许多图片编辑软件都支持的「颜色填充」功能。</p>
 

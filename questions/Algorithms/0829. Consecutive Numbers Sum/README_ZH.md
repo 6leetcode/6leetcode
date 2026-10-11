@@ -1,4 +1,4 @@
-### [连续整数求和](https://leetcode-cn.com/problems/consecutive-numbers-sum)
+### [连续整数求和](https://leetcode.cn/problems/consecutive-numbers-sum)
 
 <p>给定一个正整数 <code>n</code>，返回 <em>连续正整数满足所有数字之和为 <code>n</code>&nbsp;的组数</em> 。&nbsp;</p>
 

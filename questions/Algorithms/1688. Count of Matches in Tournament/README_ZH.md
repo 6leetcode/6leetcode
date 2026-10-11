@@ -1,4 +1,4 @@
-### [比赛中的配对次数](https://leetcode-cn.com/problems/count-of-matches-in-tournament)
+### [比赛中的配对次数](https://leetcode.cn/problems/count-of-matches-in-tournament)
 
 <p>给你一个整数 <code>n</code> ，表示比赛中的队伍数。比赛遵循一种独特的赛制：</p>
 

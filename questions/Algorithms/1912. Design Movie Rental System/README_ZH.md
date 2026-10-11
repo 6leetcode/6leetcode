@@ -1,4 +1,4 @@
-### [设计电影租借系统](https://leetcode-cn.com/problems/design-movie-rental-system)
+### [设计电影租借系统](https://leetcode.cn/problems/design-movie-rental-system)
 
 <p>你有一个电影租借公司和 <code>n</code> 个电影商店。你想要实现一个电影租借系统，它支持查询、预订和返还电影的操作。同时系统还能生成一份当前被借出电影的报告。</p>
 

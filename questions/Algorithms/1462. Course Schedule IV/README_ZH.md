@@ -1,4 +1,4 @@
-### [课程表 IV](https://leetcode-cn.com/problems/course-schedule-iv)
+### [课程表 IV](https://leetcode.cn/problems/course-schedule-iv)
 
 <p>你总共需要上<meta charset="UTF-8" />&nbsp;<code>numCourses</code>&nbsp;门课，课程编号依次为 <code>0</code>&nbsp;到&nbsp;<code>numCourses-1</code>&nbsp;。你会得到一个数组&nbsp;<code>prerequisite</code> ，其中<meta charset="UTF-8" />&nbsp;<code>prerequisites[i] = [a<sub>i</sub>, b<sub>i</sub>]</code>&nbsp;表示如果你想选<meta charset="UTF-8" />&nbsp;<code>b<sub>i</sub></code> 课程，你<strong> 必须</strong> 先选<meta charset="UTF-8" />&nbsp;<code>a<sub>i</sub></code>&nbsp;课程。</p>
 
@@ -14,17 +14,18 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2021/05/01/courses4-1-graph.jpg" /></p>
 
 <pre>
 <strong>输入：</strong>numCourses = 2, prerequisites = [[1,0]], queries = [[0,1],[1,0]]
 <strong>输出：</strong>[false,true]
-<strong>解释：</strong>课程 0 不是课程 1 的先修课程，但课程 1 是课程 0 的先修课程。
+<strong>解释：</strong>[1, 0] 数对表示在你上课程 0 之前必须先上课程 1。
+课程 0 不是课程 1 的先修课程，但课程 1 是课程 0 的先修课程。
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>numCourses = 2, prerequisites = [], queries = [[1,0],[0,1]]
@@ -32,7 +33,7 @@
 <strong>解释：</strong>没有先修课程对，所以每门课程之间是独立的。
 </pre>
 
-<p><strong>示例 3：</strong></p>
+<p><strong class="example">示例 3：</strong></p>
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2021/05/01/courses4-3-graph.jpg" /></p>
 
@@ -51,10 +52,11 @@
 	<li><code>2 &lt;= numCourses &lt;= 100</code></li>
 	<li><code>0 &lt;= prerequisites.length &lt;= (numCourses * (numCourses - 1) / 2)</code></li>
 	<li><code>prerequisites[i].length == 2</code></li>
-	<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub>&nbsp;&lt;= n - 1</code></li>
+	<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub>&nbsp;&lt;= numCourses - 1</code></li>
 	<li><code>a<sub>i</sub>&nbsp;!= b<sub>i</sub></code></li>
 	<li>每一对<meta charset="UTF-8" />&nbsp;<code>[a<sub>i</sub>, b<sub>i</sub>]</code>&nbsp;都 <strong>不同</strong></li>
 	<li>先修课程图中没有环。</li>
-	<li><code>0 &lt;= u<sub>i</sub>, v<sub>i</sub>&nbsp;&lt;= n - 1</code></li>
+	<li><code>1 &lt;= queries.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= u<sub>i</sub>, v<sub>i</sub>&nbsp;&lt;= numCourses - 1</code></li>
 	<li><code>u<sub>i</sub>&nbsp;!= v<sub>i</sub></code></li>
 </ul>

@@ -1,4 +1,4 @@
-### [找到一个数字的 K 美丽值](https://leetcode-cn.com/problems/find-the-k-beauty-of-a-number)
+### [找到一个数字的 K 美丽值](https://leetcode.cn/problems/find-the-k-beauty-of-a-number)
 
 <p>一个整数 <code>num</code>&nbsp;的&nbsp;<strong>k&nbsp;</strong>美丽值定义为&nbsp;<code>num</code>&nbsp;中符合以下条件的&nbsp;<strong>子字符串</strong>&nbsp;数目：</p>
 

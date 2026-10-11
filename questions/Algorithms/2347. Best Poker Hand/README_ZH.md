@@ -1,4 +1,4 @@
-### [最好的扑克手牌](https://leetcode-cn.com/problems/best-poker-hand)
+### [最好的扑克手牌](https://leetcode.cn/problems/best-poker-hand)
 
 <p>给你一个整数数组&nbsp;<code>ranks</code>&nbsp;和一个字符数组&nbsp;<code>suit</code>&nbsp;。你有&nbsp;<code>5</code>&nbsp;张扑克牌，第&nbsp;<code>i</code>&nbsp;张牌大小为&nbsp;<code>ranks[i]</code>&nbsp;，花色为&nbsp;<code>suits[i]</code>&nbsp;。</p>
 

@@ -1,4 +1,4 @@
-### [由斜杠划分区域](https://leetcode-cn.com/problems/regions-cut-by-slashes)
+### [由斜杠划分区域](https://leetcode.cn/problems/regions-cut-by-slashes)
 
 <p>在由 <code>1 x 1</code> 方格组成的 <code>n&nbsp;x n</code>&nbsp;网格&nbsp;<code>grid</code> 中，每个 <code>1 x 1</code>&nbsp;方块由 <code>'/'</code>、<code>'\'</code> 或空格构成。这些字符会将方块划分为一些共边的区域。</p>
 

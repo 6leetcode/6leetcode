@@ -1,2 +1,2 @@
-### [找到二叉树中的距离](https://leetcode-cn.com/problems/find-distance-in-a-binary-tree)
+### [找到二叉树中的距离](https://leetcode.cn/problems/find-distance-in-a-binary-tree)
 

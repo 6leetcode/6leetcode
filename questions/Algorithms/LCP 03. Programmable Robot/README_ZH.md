@@ -1,4 +1,4 @@
-### [机器人大冒险](https://leetcode-cn.com/problems/programmable-robot)
+### [机器人大冒险](https://leetcode.cn/problems/programmable-robot)
 
 <p>力扣团队买了一个可编程机器人，机器人初始位置在原点<code>(0, 0)</code>。小伙伴事先给机器人输入一串指令<code>command</code>，机器人就会<strong>无限循环</strong>这条指令的步骤进行移动。指令有两种：</p>
 

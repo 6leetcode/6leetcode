@@ -1,4 +1,4 @@
-### [K 次调整数组大小浪费的最小总空间](https://leetcode-cn.com/problems/minimum-total-space-wasted-with-k-resizing-operations)
+### [K 次调整数组大小浪费的最小总空间](https://leetcode.cn/problems/minimum-total-space-wasted-with-k-resizing-operations)
 
 <p>你正在设计一个动态数组。给你一个下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>nums</code>&nbsp;，其中&nbsp;<code>nums[i]</code>&nbsp;是&nbsp;<code>i</code>&nbsp;时刻数组中的元素数目。除此以外，你还有一个整数 <code>k</code>&nbsp;，表示你可以 <strong>调整</strong>&nbsp;数组大小的 <strong>最多</strong>&nbsp;次数（每次都可以调整成 <strong>任意</strong>&nbsp;大小）。</p>
 

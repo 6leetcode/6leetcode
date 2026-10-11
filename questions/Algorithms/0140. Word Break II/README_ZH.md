@@ -1,4 +1,4 @@
-### [单词拆分 II](https://leetcode-cn.com/problems/word-break-ii)
+### [单词拆分 II](https://leetcode.cn/problems/word-break-ii)
 
 <p>给定一个字符串 <code>s</code> 和一个字符串字典<meta charset="UTF-8" />&nbsp;<code>wordDict</code>&nbsp;，在字符串<meta charset="UTF-8" />&nbsp;<code>s</code>&nbsp;中增加空格来构建一个句子，使得句子中所有的单词都在词典中。<strong>以任意顺序</strong> 返回所有这些可能的句子。</p>
 
@@ -6,14 +6,14 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <pre>
-<strong>输入:</strong>s = "<code>catsanddog</code>", wordDict = <code>["cat","cats","and","sand","dog"]</code>
-<strong>输出:</strong><code>["cats and dog","cat sand dog"]</code>
+<strong>输入:</strong>s = "catsanddog", wordDict = ["cat","cats","and","sand","dog"]
+<strong>输出:</strong>["cats and dog","cat sand dog"]
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入:</strong>s = "pineapplepenapple", wordDict = ["apple","pen","applepen","pine","pineapple"]
@@ -21,7 +21,7 @@
 <strong>解释:</strong> 注意你可以重复使用字典中的单词。
 </pre>
 
-<p><strong>示例&nbsp;3：</strong></p>
+<p><strong class="example">示例&nbsp;3：</strong></p>
 
 <pre>
 <strong>输入:</strong>s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]

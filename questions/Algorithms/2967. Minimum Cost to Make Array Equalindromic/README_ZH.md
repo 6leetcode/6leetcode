@@ -1,0 +1,45 @@
+### [使数组成为等数数组的最小代价](https://leetcode.cn/problems/minimum-cost-to-make-array-equalindromic)
+
+<p>给你一个整数数组&nbsp;<code>nums</code>。</p>
+
+<p>在一次 <strong>操作</strong> 中，你可以选择一个下标 <code>i</code>，并将 <code>nums[i]</code> 加 <code>1</code> 或减 <code>1</code>。</p>
+
+<p>返回将 <code>nums</code> 中每个元素都变为 <strong>相同</strong> 的 <span data-keyword="palindrome-integer">正回文整数</span> 所需的 <strong>最小</strong> 操作数。</p>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<pre>
+<b>输入：</b>nums = [1,2,3,4,5]
+<b>输出：</b>6
+<b>解释：</b>增加 nums[0] 两次和 nums[1] 一次，然后减少 nums[3] 一次和 nums[4] 两次。经过 6 次操作，nums 变为 [3,3,3,3,3]，3 是一个正回文整数。
+可以证明这是所需的最小操作次数。
+</pre>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<pre>
+<b>输入：</b>nums = [10,12,13,14,15]
+<b>输出：</b>11
+<b>解释：</b>增加 nums[0] 一次，然后分别减少 nums[1]、nums[2]、nums[3] 和 nums[4] 1、2、3 和 4 次。经过 11 次操作后，nums 变为 [11,11,11,11,11]，11 是一个正回文整数。
+可以证明这是所需的最小操作次数。
+</pre>
+
+<p><strong class="example">示例 3 ：</strong></p>
+
+<pre>
+<b>输入：</b>nums = [22,33,22,33,22]
+<b>输出：</b>22
+<b>解释：</b>减少 nums[1] 和 nums[3] 各 11 次。经过 22 次操作，nums 变为 [22,22,22,22,22]，22 是一个正回文整数。
+可以证明这是所需的最小操作次数。
+</pre>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+</ul>

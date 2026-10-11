@@ -18,7 +18,7 @@
 <pre>
 <strong>Input:</strong> nums = [2,4,6], k = 1
 <strong>Output:</strong> 0
-<strong>Explanation:</strong> There is no odd numbers in the array.
+<strong>Explanation:</strong> There are no odd numbers in the array.
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>

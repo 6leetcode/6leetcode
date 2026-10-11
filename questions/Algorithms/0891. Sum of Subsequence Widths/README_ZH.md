@@ -1,4 +1,4 @@
-### [子序列宽度之和](https://leetcode-cn.com/problems/sum-of-subsequence-widths)
+### [子序列宽度之和](https://leetcode.cn/problems/sum-of-subsequence-widths)
 
 <p>一个序列的 <strong>宽度</strong> 定义为该序列中最大元素和最小元素的差值。</p>
 

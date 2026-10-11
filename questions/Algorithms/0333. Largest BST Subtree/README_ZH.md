@@ -1,2 +1,2 @@
-### [最大 BST 子树](https://leetcode-cn.com/problems/largest-bst-subtree)
+### [最大二叉搜索子树](https://leetcode.cn/problems/largest-bst-subtree)
 

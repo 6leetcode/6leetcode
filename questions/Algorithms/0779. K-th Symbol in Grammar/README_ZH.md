@@ -1,4 +1,4 @@
-### [第K个语法符号](https://leetcode-cn.com/problems/k-th-symbol-in-grammar)
+### [第K个语法符号](https://leetcode.cn/problems/k-th-symbol-in-grammar)
 
 <p>我们构建了一个包含 <code>n</code> 行(&nbsp;<strong>索引从 1&nbsp; 开始&nbsp;</strong>)的表。首先在第一行我们写上一个 <code>0</code>。接下来的每一行，将前一行中的<code>0</code>替换为<code>01</code>，<code>1</code>替换为<code>10</code>。</p>
 

@@ -1,4 +1,4 @@
-### [对数组执行操作](https://leetcode-cn.com/problems/apply-operations-to-an-array)
+### [对数组执行操作](https://leetcode.cn/problems/apply-operations-to-an-array)
 
 <p>给你一个下标从 <strong>0</strong> 开始的数组 <code>nums</code> ，数组大小为 <code>n</code> ，且由 <strong>非负</strong> 整数组成。</p>
 

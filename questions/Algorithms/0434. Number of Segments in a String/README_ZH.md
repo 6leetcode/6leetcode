@@ -1,4 +1,4 @@
-### [字符串中的单词数](https://leetcode-cn.com/problems/number-of-segments-in-a-string)
+### [字符串中的单词数](https://leetcode.cn/problems/number-of-segments-in-a-string)
 
 <p>统计字符串中的单词个数，这里的单词指的是连续的不是空格的字符。</p>
 

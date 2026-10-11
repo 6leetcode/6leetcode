@@ -1,4 +1,4 @@
-### [转化时间需要的最少操作数](https://leetcode-cn.com/problems/minimum-number-of-operations-to-convert-time)
+### [转化时间需要的最少操作数](https://leetcode.cn/problems/minimum-number-of-operations-to-convert-time)
 
 <p>给你两个字符串 <code>current</code> 和 <code>correct</code> ，表示两个 <strong>24 小时制时间</strong> 。</p>
 

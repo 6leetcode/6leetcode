@@ -1,4 +1,4 @@
-### [最流行的视频创作者](https://leetcode-cn.com/problems/most-popular-video-creator)
+### [最流行的视频创作者](https://leetcode.cn/problems/most-popular-video-creator)
 
 <p>给你两个字符串数组 <code>creators</code> 和 <code>ids</code> ，和一个整数数组 <code>views</code> ，所有数组的长度都是 <code>n</code> 。平台上第 <code>i</code> 个视频者是&nbsp;<code>creator[i]</code> ，视频分配的 id 是 <code>ids[i]</code> ，且播放量为 <code>views[i]</code> 。</p>
 

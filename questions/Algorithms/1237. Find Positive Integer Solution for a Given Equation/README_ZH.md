@@ -1,4 +1,4 @@
-### [找出给定方程的正整数解](https://leetcode-cn.com/problems/find-positive-integer-solution-for-a-given-equation)
+### [找出给定方程的正整数解](https://leetcode.cn/problems/find-positive-integer-solution-for-a-given-equation)
 
 <p>给你一个函数  <code>f(x, y)</code> 和一个目标结果 <code>z</code>，函数公式未知，请你计算方程 <code>f(x,y) == z</code> 所有可能的正整数 <strong>数对</strong> <code>x</code> 和 <code>y</code>。满足条件的结果数对可以按任意顺序返回。</p>
 

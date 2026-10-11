@@ -1,4 +1,4 @@
-### [重复叠加字符串匹配](https://leetcode-cn.com/problems/repeated-string-match)
+### [重复叠加字符串匹配](https://leetcode.cn/problems/repeated-string-match)
 
 <p>给定两个字符串&nbsp;<code>a</code> 和 <code>b</code>，寻找重复叠加字符串 <code>a</code> 的最小次数，使得字符串 <code>b</code> 成为叠加后的字符串 <code>a</code> 的子串，如果不存在则返回 <code>-1</code>。</p>
 

@@ -1,4 +1,4 @@
-### [装饰树](https://leetcode-cn.com/problems/KnLfVT)
+### [装饰树](https://leetcode.cn/problems/KnLfVT)
 
 力扣嘉年华上的 DIY 手工展位准备了一棵缩小版的 **二叉** 装饰树 `root` 和灯饰，你需要将灯饰逐一插入装饰树中，要求如下：
 
@@ -15,7 +15,7 @@
 >输出：`[7,-1,-1,5,null,null,6]`
 >
 >解释：如下图所示，
->![image.png](https://pic.leetcode-cn.com/1663575757-yRLGaq-image.png){:width=400px}
+>![image.png](https://pic.leetcode.cn/1663575757-yRLGaq-image.png){:width=400px}
 
 **示例 2：**
 >输入：
@@ -24,7 +24,7 @@
 >输出：`[3,-1,-1,1,null,null,7,-1,-1,null,-1,3,null,null,8,null,4]`
 >
 >解释：如下图所示
-![image.png](https://pic.leetcode-cn.com/1663577920-sjrAYH-image.png){:width=500px}
+![image.png](https://pic.leetcode.cn/1663577920-sjrAYH-image.png){:width=500px}
 
 **提示：**
 >`0 <= root.Val <= 1000`

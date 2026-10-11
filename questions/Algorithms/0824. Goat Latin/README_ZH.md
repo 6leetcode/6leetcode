@@ -1,4 +1,4 @@
-### [山羊拉丁文](https://leetcode-cn.com/problems/goat-latin)
+### [山羊拉丁文](https://leetcode.cn/problems/goat-latin)
 
 <p>给你一个由若干单词组成的句子&nbsp;<code>sentence</code> ，单词间由空格分隔。每个单词仅由大写和小写英文字母组成。</p>
 

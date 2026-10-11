@@ -1,4 +1,4 @@
-### [最长特殊序列 Ⅰ](https://leetcode-cn.com/problems/longest-uncommon-subsequence-i)
+### [最长特殊序列 Ⅰ](https://leetcode.cn/problems/longest-uncommon-subsequence-i)
 
 <p>给你两个字符串，请你从这两个字符串中找出最长的特殊序列。</p>
 

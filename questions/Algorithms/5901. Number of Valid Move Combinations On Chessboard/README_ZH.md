@@ -1,4 +1,4 @@
-### [棋盘上有效移动组合的数目](https://leetcode-cn.com/problems/number-of-valid-move-combinations-on-chessboard)
+### [棋盘上有效移动组合的数目](https://leetcode.cn/problems/number-of-valid-move-combinations-on-chessboard)
 
 <p>有一个&nbsp;<code>8 x 8</code>&nbsp;的棋盘，它包含&nbsp;<code>n</code>&nbsp;个棋子（棋子包括车，后和象三种）。给你一个长度为 <code>n</code>&nbsp;的字符串数组&nbsp;<code>pieces</code>&nbsp;，其中&nbsp;<code>pieces[i]</code>&nbsp;表示第 <code>i</code>&nbsp;个棋子的类型（车，后或象）。除此以外，还给你一个长度为 <code>n</code>&nbsp;的二维整数数组&nbsp;<code>positions</code>&nbsp;，其中 <code>positions[i] = [r<sub>i</sub>, c<sub>i</sub>]</code>&nbsp;表示第 <code>i</code>&nbsp;个棋子现在在棋盘上的位置为&nbsp;<code>(r<sub>i</sub>, c<sub>i</sub>)</code>&nbsp;，棋盘下标从 <strong>1</strong>&nbsp;开始。</p>
 

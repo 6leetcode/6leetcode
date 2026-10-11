@@ -1,4 +1,4 @@
-### [TinyURL 的加密与解密](https://leetcode-cn.com/problems/encode-and-decode-tinyurl)
+### [TinyURL 的加密与解密](https://leetcode.cn/problems/encode-and-decode-tinyurl)
 
 <p>TinyURL 是一种 URL 简化服务， 比如：当你输入一个 URL&nbsp;<code>https://leetcode.com/problems/design-tinyurl</code>&nbsp;时，它将返回一个简化的URL&nbsp;<code>http://tinyurl.com/4e9iAk</code> 。请你设计一个类来加密与解密 TinyURL 。</p>
 

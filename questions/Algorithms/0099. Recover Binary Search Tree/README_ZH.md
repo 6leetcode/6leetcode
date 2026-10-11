@@ -1,4 +1,4 @@
-### [恢复二叉搜索树](https://leetcode-cn.com/problems/recover-binary-search-tree)
+### [恢复二叉搜索树](https://leetcode.cn/problems/recover-binary-search-tree)
 
 <p>给你二叉搜索树的根节点 <code>root</code> ，该树中的 <strong>恰好</strong> 两个节点的值被错误地交换。<em>请在不改变其结构的情况下，恢复这棵树&nbsp;</em>。</p>
 

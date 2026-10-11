@@ -1,4 +1,4 @@
-### [实现 strStr()](https://leetcode-cn.com/problems/implement-strstr)
+### [实现 strStr()](https://leetcode.cn/problems/implement-strstr)
 
 <p>实现 <a href="https://baike.baidu.com/item/strstr/811469" target="_blank">strStr()</a> 函数。</p>
 

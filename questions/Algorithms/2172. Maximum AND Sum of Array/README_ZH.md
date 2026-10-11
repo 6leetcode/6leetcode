@@ -1,4 +1,4 @@
-### [数组的最大与和](https://leetcode-cn.com/problems/maximum-and-sum-of-array)
+### [数组的最大与和](https://leetcode.cn/problems/maximum-and-sum-of-array)
 
 <p>给你一个长度为&nbsp;<code>n</code>&nbsp;的整数数组&nbsp;<code>nums</code>&nbsp;和一个整数&nbsp;<code>numSlots</code>&nbsp;，满足<code>2 * numSlots &gt;= n</code>&nbsp;。总共有&nbsp;<code>numSlots</code>&nbsp;个篮子，编号为&nbsp;<code>1</code>&nbsp;到&nbsp;<code>numSlots</code>&nbsp;。</p>
 

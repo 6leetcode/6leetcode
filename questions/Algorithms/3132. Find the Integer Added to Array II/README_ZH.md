@@ -1,0 +1,46 @@
+### [找出与数组相加的整数 II](https://leetcode.cn/problems/find-the-integer-added-to-array-ii)
+
+<p>给你两个整数数组 <code>nums1</code> 和 <code>nums2</code>。</p>
+
+<p>如果 <code>nums1</code> 中存在两个元素，移除这两个元素并将 <code>x</code> 加到 <code>nums1</code> 剩余的所有元素上（如果 <code>x</code> 是负数，则减去 <code>x</code>），得到的数组与 <code>nums2</code> 相等，则称&nbsp;<code>nums2</code> 可以从 <code>nums1</code> 通过一个整数 <code>x</code> 到达。当两个数组包含相同的整数且频率相同时，它们被认为是 <strong>相等</strong> 的。</p>
+
+<p>返回能够实现数组相等的 <strong>最小 </strong>整数<em> </em><code>x</code><em> </em>。</p>
+
+<p>保证&nbsp;<code>nums1</code> 至少可以通过一个 <code>x</code> 到达 <code>nums2</code>。</p>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1:</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong>nums1 = [4,20,16,12,8], nums2 = [14,18,10]</p>
+
+<p><strong>输出：</strong>-2</p>
+
+<p><strong>解释：</strong></p>
+
+<p>移除 <code>nums1</code> 中下标为 <code>[0,4]</code> 的两个元素，并且每个元素与 <code>-2</code> 相加后，<code>nums1</code> 变为 <code>[18,14,10]</code> ，与 <code>nums2</code> 相等。</p>
+</div>
+
+<p><strong class="example">示例 2:</strong></p>
+
+<div class="example-block">
+<p><strong>输入：</strong>nums1 = [3,5,5,3], nums2 = [7,7]</p>
+
+<p><strong>输出：</strong>2</p>
+
+<p><strong>解释：</strong></p>
+
+<p>移除 <code>nums1</code> 中下标为 <code>[0,3]</code> 的两个元素，并且每个元素与 <code>2</code> 相加后，<code>nums1</code> 变为 <code>[7,7]</code> ，与 <code>nums2</code> 相等。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>3 &lt;= nums1.length &lt;= 200</code></li>
+	<li><code>nums2.length == nums1.length - 2</code></li>
+	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 1000</code></li>
+	<li>保证&nbsp;<code>nums1</code> 至少可以通过一个 <code>x</code> 到达 <code>nums2</code>。</li>
+</ul>

@@ -1,2 +1,2 @@
-### [扫地机器人](https://leetcode-cn.com/problems/robot-room-cleaner)
+### [扫地机器人](https://leetcode.cn/problems/robot-room-cleaner)
 

@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/number-of-single-divisor-triplets)
+### [单因数三元组](https://leetcode.cn/problems/number-of-single-divisor-triplets)
 

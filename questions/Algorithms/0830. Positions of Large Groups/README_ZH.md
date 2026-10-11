@@ -1,4 +1,4 @@
-### [较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups)
+### [较大分组的位置](https://leetcode.cn/problems/positions-of-large-groups)
 
 <p>在一个由小写字母构成的字符串 <code>s</code> 中，包含由一些连续的相同字符所构成的分组。</p>
 

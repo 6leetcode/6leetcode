@@ -1,4 +1,4 @@
-### [字母移位](https://leetcode-cn.com/problems/shifting-letters)
+### [字母移位](https://leetcode.cn/problems/shifting-letters)
 
 <p>有一个由小写字母组成的字符串 <code>s</code>，和一个长度相同的整数数组 <code>shifts</code>。</p>
 

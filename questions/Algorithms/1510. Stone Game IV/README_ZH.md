@@ -1,4 +1,4 @@
-### [石子游戏 IV](https://leetcode-cn.com/problems/stone-game-iv)
+### [石子游戏 IV](https://leetcode.cn/problems/stone-game-iv)
 
 <p>Alice 和 Bob 两个人轮流玩一个游戏，Alice 先手。</p>
 

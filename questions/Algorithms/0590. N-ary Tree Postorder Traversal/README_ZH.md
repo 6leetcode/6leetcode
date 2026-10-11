@@ -1,4 +1,4 @@
-### [N 叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal)
+### [N 叉树的后序遍历](https://leetcode.cn/problems/n-ary-tree-postorder-traversal)
 
 <p>给定一个 n&nbsp;叉树的根节点<meta charset="UTF-8" />&nbsp;<code>root</code>&nbsp;，返回 <em>其节点值的<strong> 后序遍历</strong></em> 。</p>
 
@@ -6,7 +6,7 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <p><img src="https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png" style="height: 193px; width: 300px;" /></p>
 
@@ -15,7 +15,7 @@
 <strong>输出：</strong>[5,6,3,2,4,1]
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <p><img alt="" src="https://assets.leetcode.com/uploads/2019/11/08/sample_4_964.png" style="height: 269px; width: 296px;" /></p>
 

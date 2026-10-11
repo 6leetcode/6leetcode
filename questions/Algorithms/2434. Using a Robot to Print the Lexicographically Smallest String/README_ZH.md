@@ -1,4 +1,4 @@
-### [使用机器人打印字典序最小的字符串](https://leetcode-cn.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string)
+### [使用机器人打印字典序最小的字符串](https://leetcode.cn/problems/using-a-robot-to-print-the-lexicographically-smallest-string)
 
 <p>给你一个字符串&nbsp;<code>s</code>&nbsp;和一个机器人，机器人当前有一个空字符串&nbsp;<code>t</code>&nbsp;。执行以下操作之一，直到&nbsp;<code>s</code> 和&nbsp;<code>t</code>&nbsp;<strong>都变成空字符串：</strong></p>
 

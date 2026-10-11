@@ -1,4 +1,4 @@
-### [最接近的因数](https://leetcode-cn.com/problems/closest-divisors)
+### [最接近的因数](https://leetcode.cn/problems/closest-divisors)
 
 <p>给你一个整数&nbsp;<code>num</code>，请你找出同时满足下面全部要求的两个整数：</p>
 

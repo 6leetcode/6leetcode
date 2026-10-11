@@ -1,4 +1,4 @@
-### [拆炸弹](https://leetcode-cn.com/problems/defuse-the-bomb)
+### [拆炸弹](https://leetcode.cn/problems/defuse-the-bomb)
 
 <p>你有一个炸弹需要拆除，时间紧迫！你的情报员会给你一个长度为 <code>n</code> 的 <strong>循环</strong> 数组 <code>code</code> 以及一个密钥 <code>k</code> 。</p>
 

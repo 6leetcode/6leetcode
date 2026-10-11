@@ -1,0 +1,70 @@
+### [最少翻转操作数](https://leetcode.cn/problems/minimum-reverse-operations)
+
+<p>给定一个整数&nbsp;<code>n</code>&nbsp;和一个整数&nbsp;<code>p</code>，它们表示一个长度为 <code>n</code> 且除了下标为&nbsp;<code>p</code>&nbsp;处是 <code>1</code>&nbsp;以外，其他所有数都是 <code>0</code>&nbsp;的数组&nbsp;<code>arr</code>。同时给定一个整数数组&nbsp;<code>banned</code>&nbsp;，它包含数组中的一些限制位置。在&nbsp;<code>arr</code>&nbsp;上进行下列操作：</p>
+
+<ul>
+	<li>如果单个 1 不在&nbsp;<code>banned</code>&nbsp;中的位置上，反转大小为 <code>k</code> 的 <strong><span data-keyword="subarray-nonempty">子数组</span></strong>。</li>
+</ul>
+
+<p>返回一个包含&nbsp;<code>n</code>&nbsp;个结果的整数数组&nbsp;<code>answer</code>，其中第&nbsp;<code>i</code>&nbsp;个结果是将&nbsp;<code>1</code>&nbsp;放到位置&nbsp;<code>i</code>&nbsp;处所需的&nbsp;<strong>最少</strong>&nbsp;翻转操作次数，如果无法放到位置&nbsp;<code>i</code>&nbsp;处，此数为&nbsp;<code>-1</code>&nbsp;。</p>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>n = 4, p = 0, banned = [1,2], k = 4</span></p>
+
+<p><span class="example-io"><b>输出：</b>[0,-1,-1,1]</span></p>
+
+<p><strong>解释：</strong></p>
+
+<ul>
+	<li>一开始 1 位于位置 0，因此我们需要在位置 0 上的操作数是 0。</li>
+	<li>我们不能将 1 放置在被禁止的位置上，所以位置 1 和 2 的答案是 -1。</li>
+	<li>执行大小为 4 的操作以反转整个数组。</li>
+	<li>在一次操作后，1 位于位置 3，因此位置 3 的答案是 1。</li>
+</ul>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>n = 5, p = 0, banned = [2,4], k = 3</span></p>
+
+<p><span class="example-io"><b>输出：</b>[0,-1,-1,-1,-1]</span></p>
+
+<p><b>解释：</b></p>
+
+<ul>
+	<li>一开始 1 位于位置 0，因此我们需要在位置 0 上的操作数是 0。</li>
+	<li>我们不能在&nbsp;<code>[0, 2]</code>&nbsp;的子数组位置上执行操作，因为位置 2 在 banned 中。</li>
+	<li>由于 1 不能够放置在位置 2 上，使用更多操作将 1 放置在其它位置上是不可能的。</li>
+</ul>
+</div>
+
+<p><strong class="example">示例 3：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>n = 4, p = 2, banned = [0,1,3], k = 1</span></p>
+
+<p><span class="example-io"><b>输出：</b>[-1,-1,0,-1]</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>执行大小为 1 的操作，且 1 永远不会改变位置。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= p &lt;= n - 1</code></li>
+	<li><code>0 &lt;= banned.length &lt;= n - 1</code></li>
+	<li><code>0 &lt;= banned[i] &lt;= n - 1</code></li>
+	<li><code>1 &lt;= k &lt;= n&nbsp;</code></li>
+	<li><code>banned[i] != p</code></li>
+	<li><code>banned</code>&nbsp;中的值 <strong>互不相同</strong>&nbsp;。</li>
+</ul>

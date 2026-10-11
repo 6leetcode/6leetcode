@@ -1,4 +1,4 @@
-### [矩阵中的路径](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof)
+### [矩阵中的路径](https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof)
 
 <p>给定一个&nbsp;<code>m x n</code> 二维字符网格&nbsp;<code>board</code> 和一个字符串单词&nbsp;<code>word</code> 。如果&nbsp;<code>word</code> 存在于网格中，返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
 
@@ -38,4 +38,4 @@
 	<li><code>board </code>和<code> word </code>仅由大小写英文字母组成</li>
 </ul>
 
-<p><strong>注意：</strong>本题与主站 79 题相同：<a href="https://leetcode-cn.com/problems/word-search/">https://leetcode-cn.com/problems/word-search/</a></p>
+<p><strong>注意：</strong>本题与主站 79 题相同：<a href="https://leetcode.cn/problems/word-search/">https://leetcode.cn/problems/word-search/</a></p>

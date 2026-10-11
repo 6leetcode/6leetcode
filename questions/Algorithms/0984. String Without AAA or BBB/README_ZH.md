@@ -1,4 +1,4 @@
-### [不含 AAA 或 BBB 的字符串](https://leetcode-cn.com/problems/string-without-aaa-or-bbb)
+### [不含 AAA 或 BBB 的字符串](https://leetcode.cn/problems/string-without-aaa-or-bbb)
 
 <p>给定两个整数 <code>a</code>&nbsp;和 <code>b</code>&nbsp;，返回&nbsp;<strong>任意</strong>&nbsp;字符串 <code>s</code>&nbsp;，要求满足：</p>
 

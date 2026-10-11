@@ -1,4 +1,4 @@
-### [一和零](https://leetcode-cn.com/problems/ones-and-zeroes)
+### [一和零](https://leetcode.cn/problems/ones-and-zeroes)
 
 <p>给你一个二进制字符串数组 <code>strs</code> 和两个整数 <code>m</code> 和 <code>n</code> 。</p>
 

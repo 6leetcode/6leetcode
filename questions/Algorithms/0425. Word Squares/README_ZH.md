@@ -1,2 +1,2 @@
-### [单词方块](https://leetcode-cn.com/problems/word-squares)
+### [单词方块](https://leetcode.cn/problems/word-squares)
 

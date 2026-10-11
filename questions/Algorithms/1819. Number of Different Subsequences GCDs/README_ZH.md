@@ -1,4 +1,4 @@
-### [序列中不同最大公约数的数目](https://leetcode-cn.com/problems/number-of-different-subsequences-gcds)
+### [序列中不同最大公约数的数目](https://leetcode.cn/problems/number-of-different-subsequences-gcds)
 
 <p>给你一个由正整数组成的数组 <code>nums</code> 。</p>
 
@@ -19,7 +19,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/04/03/image-1.png" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/04/03/image-1.png" />
 <pre>
 <strong>输入：</strong>nums = [6,10,3]
 <strong>输出：</strong>5

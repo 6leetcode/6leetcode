@@ -1,4 +1,4 @@
-### [修剪二叉搜索树](https://leetcode-cn.com/problems/trim-a-binary-search-tree)
+### [修剪二叉搜索树](https://leetcode.cn/problems/trim-a-binary-search-tree)
 
 <p>给你二叉搜索树的根节点 <code>root</code> ，同时给定最小边界<code>low</code> 和最大边界 <code>high</code>。通过修剪二叉搜索树，使得所有节点的值在<code>[low, high]</code>中。修剪树 <strong>不应该</strong>&nbsp;改变保留在树中的元素的相对结构 (即，如果没有被移除，原有的父代子代关系都应当保留)。 可以证明，存在&nbsp;<strong>唯一的答案</strong>&nbsp;。</p>
 

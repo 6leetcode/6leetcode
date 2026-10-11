@@ -1,4 +1,4 @@
-### [下载插件](https://leetcode-cn.com/problems/Ju9Xwi)
+### [下载插件](https://leetcode.cn/problems/Ju9Xwi)
 
 小扣打算给自己的 **VS code** 安装使用插件，初始状态下带宽每分钟可以完成 `1` 个插件的下载。假定每分钟选择以下两种策略之一:
 - 使用当前带宽下载插件

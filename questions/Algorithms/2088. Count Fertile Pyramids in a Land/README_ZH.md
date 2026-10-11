@@ -1,4 +1,4 @@
-### [统计农场中肥沃金字塔的数目](https://leetcode-cn.com/problems/count-fertile-pyramids-in-a-land)
+### [统计农场中肥沃金字塔的数目](https://leetcode.cn/problems/count-fertile-pyramids-in-a-land)
 
 <p>有一个 <strong>矩形网格</strong>&nbsp;状的农场，划分为&nbsp;<code>m</code>&nbsp;行&nbsp;<code>n</code>&nbsp;列的单元格。每个格子要么是 <strong>肥沃的</strong>&nbsp;（用 <code>1</code>&nbsp;表示），要么是 <strong>贫瘠</strong>&nbsp;的（用 <code>0</code>&nbsp;表示）。网格图以外的所有与格子都视为贫瘠的。</p>
 

@@ -1,4 +1,4 @@
-### [一个区间内所有数乘积的缩写](https://leetcode-cn.com/problems/abbreviating-the-product-of-a-range)
+### [一个区间内所有数乘积的缩写](https://leetcode.cn/problems/abbreviating-the-product-of-a-range)
 
 <p>给你两个正整数&nbsp;<code>left</code>&nbsp;和&nbsp;<code>right</code>&nbsp;，满足&nbsp;<code>left &lt;= right</code>&nbsp;。请你计算&nbsp;<strong>闭区间</strong>&nbsp;<code>[left, right]</code>&nbsp;中所有整数的&nbsp;<strong>乘积</strong>&nbsp;。</p>
 

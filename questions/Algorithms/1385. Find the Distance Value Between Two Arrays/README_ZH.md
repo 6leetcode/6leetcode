@@ -1,4 +1,4 @@
-### [两个数组间的距离值](https://leetcode-cn.com/problems/find-the-distance-value-between-two-arrays)
+### [两个数组间的距离值](https://leetcode.cn/problems/find-the-distance-value-between-two-arrays)
 
 <p>给你两个整数数组&nbsp;<code>arr1</code>&nbsp;，&nbsp;<code>arr2</code>&nbsp;和一个整数&nbsp;<code>d</code>&nbsp;，请你返回两个数组之间的&nbsp;<strong>距离值</strong>&nbsp;。</p>
 

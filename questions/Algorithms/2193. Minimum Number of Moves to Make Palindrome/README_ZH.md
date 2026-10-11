@@ -1,4 +1,4 @@
-### [得到回文串的最少操作次数](https://leetcode-cn.com/problems/minimum-number-of-moves-to-make-palindrome)
+### [得到回文串的最少操作次数](https://leetcode.cn/problems/minimum-number-of-moves-to-make-palindrome)
 
 <p>给你一个只包含小写英文字母的字符串&nbsp;<code>s</code>&nbsp;。</p>
 

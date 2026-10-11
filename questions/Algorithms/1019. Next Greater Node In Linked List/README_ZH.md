@@ -1,4 +1,4 @@
-### [链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list)
+### [链表中的下一个更大节点](https://leetcode.cn/problems/next-greater-node-in-linked-list)
 
 <p>给定一个长度为&nbsp;<code>n</code>&nbsp;的链表&nbsp;<code>head</code></p>
 

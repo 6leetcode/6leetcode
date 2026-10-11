@@ -1,4 +1,4 @@
-### [最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray)
+### [最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray)
 
 <p>给两个整数数组&nbsp;<code>nums1</code>&nbsp;和&nbsp;<code>nums2</code>&nbsp;，返回 <em>两个数组中 <strong>公共的</strong> 、长度最长的子数组的长度&nbsp;</em>。</p>
 

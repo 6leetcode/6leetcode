@@ -1,4 +1,4 @@
-### [统计星号](https://leetcode-cn.com/problems/count-asterisks)
+### [统计星号](https://leetcode.cn/problems/count-asterisks)
 
 <p>给你一个字符串&nbsp;<code>s</code>&nbsp;，每&nbsp;<strong>两个</strong>&nbsp;连续竖线&nbsp;<code>'|'</code>&nbsp;为 <strong>一对</strong>&nbsp;。换言之，第一个和第二个&nbsp;<code>'|'</code>&nbsp;为一对，第三个和第四个&nbsp;<code>'|'</code>&nbsp;为一对，以此类推。</p>
 

@@ -1,4 +1,4 @@
-### [个位数字为 K 的整数之和](https://leetcode-cn.com/problems/sum-of-numbers-with-units-digit-k)
+### [个位数字为 K 的整数之和](https://leetcode.cn/problems/sum-of-numbers-with-units-digit-k)
 
 <p>给你两个整数 <code>num</code> 和 <code>k</code> ，考虑具有以下属性的正整数多重集：</p>
 

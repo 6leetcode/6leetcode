@@ -1,4 +1,4 @@
-### [K 次增加后的最大乘积](https://leetcode-cn.com/problems/maximum-product-after-k-increments)
+### [K 次增加后的最大乘积](https://leetcode.cn/problems/maximum-product-after-k-increments)
 
 <p>给你一个非负整数数组&nbsp;<code>nums</code>&nbsp;和一个整数&nbsp;<code>k</code>&nbsp;。每次操作，你可以选择&nbsp;<code>nums</code>&nbsp;中 <strong>任一</strong>&nbsp;元素并将它 <strong>增加</strong>&nbsp;<code>1</code>&nbsp;。</p>
 

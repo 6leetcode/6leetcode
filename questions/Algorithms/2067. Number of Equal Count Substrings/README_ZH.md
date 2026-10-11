@@ -1,2 +1,2 @@
-### [](https://leetcode-cn.com/problems/number-of-equal-count-substrings)
+### [等计数子串的数量](https://leetcode.cn/problems/number-of-equal-count-substrings)
 

@@ -1,4 +1,4 @@
-### [每隔 n 个顾客打折](https://leetcode-cn.com/problems/apply-discount-every-n-orders)
+### [每隔 n 个顾客打折](https://leetcode.cn/problems/apply-discount-every-n-orders)
 
 <p>超市里正在举行打折活动，每隔&nbsp;<code>n</code>&nbsp;个顾客会得到 <code>discount</code>&nbsp;的折扣。</p>
 

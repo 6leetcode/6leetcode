@@ -1,4 +1,4 @@
-### [把字符串转换成整数](https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof)
+### [把字符串转换成整数](https://leetcode.cn/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof)
 
 <p>写一个函数 StrToInt，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。</p>
 
@@ -56,4 +56,4 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 8 题相同：<a href="https://leetcode-cn.com/problems/string-to-integer-atoi/">https://leetcode-cn.com/problems/string-to-integer-atoi/</a></p>
+<p>注意：本题与主站 8 题相同：<a href="https://leetcode.cn/problems/string-to-integer-atoi/">https://leetcode.cn/problems/string-to-integer-atoi/</a></p>

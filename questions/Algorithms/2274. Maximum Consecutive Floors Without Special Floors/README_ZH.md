@@ -1,4 +1,4 @@
-### [不含特殊楼层的最大连续楼层数](https://leetcode-cn.com/problems/maximum-consecutive-floors-without-special-floors)
+### [不含特殊楼层的最大连续楼层数](https://leetcode.cn/problems/maximum-consecutive-floors-without-special-floors)
 
 <p>Alice 管理着一家公司，并租用大楼的部分楼层作为办公空间。Alice 决定将一些楼层作为 <strong>特殊楼层</strong> ，仅用于放松。</p>
 

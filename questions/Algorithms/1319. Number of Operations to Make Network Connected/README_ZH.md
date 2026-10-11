@@ -1,4 +1,4 @@
-### [连通网络的操作次数](https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected)
+### [连通网络的操作次数](https://leetcode.cn/problems/number-of-operations-to-make-network-connected)
 
 <p>用以太网线缆将&nbsp;<code>n</code>&nbsp;台计算机连接成一个网络，计算机的编号从&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n-1</code>。线缆用&nbsp;<code>connections</code>&nbsp;表示，其中&nbsp;<code>connections[i] = [a, b]</code>&nbsp;连接了计算机&nbsp;<code>a</code>&nbsp;和&nbsp;<code>b</code>。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/11/sample_1_1677.png" style="height: 167px; width: 570px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/11/sample_1_1677.png" style="height: 167px; width: 570px;"></strong></p>
 
 <pre><strong>输入：</strong>n = 4, connections = [[0,1],[0,2],[1,2]]
 <strong>输出：</strong>1
@@ -19,7 +19,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/11/sample_2_1677.png" style="height: 175px; width: 660px;"></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/11/sample_2_1677.png" style="height: 175px; width: 660px;"></strong></p>
 
 <pre><strong>输入：</strong>n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]
 <strong>输出：</strong>2

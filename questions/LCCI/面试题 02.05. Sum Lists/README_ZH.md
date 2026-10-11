@@ -1,4 +1,4 @@
-### [链表求和](https://leetcode-cn.com/problems/sum-lists-lcci)
+### [链表求和](https://leetcode.cn/problems/sum-lists-lcci)
 
 <p>给定两个用链表表示的整数，每个节点包含一个数位。</p>
 

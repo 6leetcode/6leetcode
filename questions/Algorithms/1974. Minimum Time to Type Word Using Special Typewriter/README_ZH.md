@@ -1,4 +1,4 @@
-### [使用特殊打字机键入单词的最少时间](https://leetcode-cn.com/problems/minimum-time-to-type-word-using-special-typewriter)
+### [使用特殊打字机键入单词的最少时间](https://leetcode.cn/problems/minimum-time-to-type-word-using-special-typewriter)
 
 <p>有一个特殊打字机，它由一个 <strong>圆盘</strong> 和一个 <strong>指针</strong>&nbsp;组成， 圆盘上标有小写英文字母&nbsp;<code>'a'</code> 到&nbsp;<code>'z'</code>。<strong>只有</strong>&nbsp;当指针指向某个字母时，它才能被键入。指针 <strong>初始时</strong>&nbsp;指向字符 <code>'a'</code>&nbsp;。</p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/07/31/chart.jpg" style="width: 530px; height: 410px;" />
@@ -20,7 +20,7 @@
 <b>输出：</b>5
 <strong>解释：
 </strong>单词按如下操作键入：
-- 花 1 秒键入字符 'a' in 1 ，因为指针初始指向 'a' ，故不需移动指针。
+- 花 1 秒键入字符 'a'，因为指针初始指向 'a' ，故不需移动指针。
 - 花 1 秒将指针顺时针移到 'b' 。
 - 花 1 秒键入字符 'b' 。
 - 花 1 秒将指针顺时针移到 'c' 。

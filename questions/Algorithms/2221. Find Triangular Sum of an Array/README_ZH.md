@@ -1,4 +1,4 @@
-### [数组的三角和](https://leetcode-cn.com/problems/find-triangular-sum-of-an-array)
+### [数组的三角和](https://leetcode.cn/problems/find-triangular-sum-of-an-array)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>nums</code>&nbsp;，其中&nbsp;<code>nums[i]</code>&nbsp;是 <code>0</code>&nbsp;到 <code>9</code>&nbsp;之间（两者都包含）的一个数字。</p>
 

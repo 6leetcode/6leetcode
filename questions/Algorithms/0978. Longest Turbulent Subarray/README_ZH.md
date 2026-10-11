@@ -1,4 +1,4 @@
-### [最长湍流子数组](https://leetcode-cn.com/problems/longest-turbulent-subarray)
+### [最长湍流子数组](https://leetcode.cn/problems/longest-turbulent-subarray)
 
 <p>给定一个整数数组 <code>arr</code>&nbsp;，返回 <code>arr</code>&nbsp;的&nbsp;<em>最大湍流子数组的<strong>长度</strong></em><strong>&nbsp;</strong>。</p>
 

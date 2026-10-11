@@ -1,10 +1,10 @@
-### [骑士在棋盘上的概率](https://leetcode-cn.com/problems/knight-probability-in-chessboard)
+### [骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard)
 
 <p>在一个&nbsp;<code>n x n</code>&nbsp;的国际象棋棋盘上，一个骑士从单元格 <code>(row, column)</code>&nbsp;开始，并尝试进行 <code>k</code> 次移动。行和列是 <strong>从 0 开始</strong> 的，所以左上单元格是 <code>(0,0)</code> ，右下单元格是 <code>(n - 1, n - 1)</code> 。</p>
 
 <p>象棋骑士有8种可能的走法，如下图所示。每次移动在基本方向上是两个单元格，然后在正交方向上是一个单元格。</p>
 
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/12/knight.png" style="height: 300px; width: 300px;" /></p>
+<p><img src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2018/10/12/knight.png" style="height: 300px; width: 300px;" /></p>
 
 <p>每次骑士要移动时，它都会随机从8种可能的移动中选择一种(即使棋子会离开棋盘)，然后移动到那里。</p>
 
@@ -38,5 +38,5 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 25</code></li>
 	<li><code>0 &lt;= k &lt;= 100</code></li>
-	<li><code>0 &lt;= row, column &lt;= n</code></li>
+	<li><code>0 &lt;= row, column &lt;= n - 1</code></li>
 </ul>

@@ -1,12 +1,13 @@
-### [排序矩阵查找](https://leetcode-cn.com/problems/sorted-matrix-search-lcci)
+### [排序矩阵查找](https://leetcode.cn/problems/sorted-matrix-search-lcci)
 
-<p>给定M&times;N矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。</p>
+<p>给定 M×N 矩阵，每一行、每一列都按升序排列，请编写代码找出某元素。</p>
 
-<p><strong>示例:</strong></p>
+<p><strong>示例：</strong></p>
 
 <p>现有矩阵 matrix 如下：</p>
 
-<pre>[
+<pre>
+[
   [1,   4,  7, 11, 15],
   [2,   5,  8, 12, 19],
   [3,   6,  9, 16, 22],

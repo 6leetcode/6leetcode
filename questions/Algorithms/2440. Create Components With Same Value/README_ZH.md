@@ -1,4 +1,4 @@
-### [创建价值相同的连通块](https://leetcode-cn.com/problems/create-components-with-same-value)
+### [创建价值相同的连通块](https://leetcode.cn/problems/create-components-with-same-value)
 
 <p>有一棵&nbsp;<code>n</code>&nbsp;个节点的无向树，节点编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;。</p>
 

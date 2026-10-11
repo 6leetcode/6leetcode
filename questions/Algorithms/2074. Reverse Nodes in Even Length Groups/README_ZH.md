@@ -1,4 +1,4 @@
-### [反转偶数长度组的节点](https://leetcode-cn.com/problems/reverse-nodes-in-even-length-groups)
+### [反转偶数长度组的节点](https://leetcode.cn/problems/reverse-nodes-in-even-length-groups)
 
 <p>给你一个链表的头节点 <code>head</code> 。</p>
 

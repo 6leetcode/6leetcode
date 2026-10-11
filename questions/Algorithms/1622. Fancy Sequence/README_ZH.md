@@ -1,4 +1,4 @@
-### [奇妙序列](https://leetcode-cn.com/problems/fancy-sequence)
+### [奇妙序列](https://leetcode.cn/problems/fancy-sequence)
 
 <p>请你实现三个 API <code>append</code>，<code>addAll</code> 和 <code>multAll</code> 来实现奇妙序列。</p>
 

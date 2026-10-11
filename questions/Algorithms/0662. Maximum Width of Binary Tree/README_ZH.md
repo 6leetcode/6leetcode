@@ -1,4 +1,4 @@
-### [二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree)
+### [二叉树最大宽度](https://leetcode.cn/problems/maximum-width-of-binary-tree)
 
 <p>给你一棵二叉树的根节点 <code>root</code> ，返回树的 <strong>最大宽度</strong> 。</p>
 

@@ -1,4 +1,4 @@
-### [困于环中的机器人](https://leetcode-cn.com/problems/robot-bounded-in-circle)
+### [困于环中的机器人](https://leetcode.cn/problems/robot-bounded-in-circle)
 
 <p>在无限的平面上，机器人最初位于&nbsp;<code>(0, 0)</code>&nbsp;处，面朝北方。注意:</p>
 

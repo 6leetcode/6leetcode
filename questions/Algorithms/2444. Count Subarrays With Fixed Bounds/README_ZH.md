@@ -1,4 +1,4 @@
-### [统计定界子数组的数目](https://leetcode-cn.com/problems/count-subarrays-with-fixed-bounds)
+### [统计定界子数组的数目](https://leetcode.cn/problems/count-subarrays-with-fixed-bounds)
 
 <p>给你一个整数数组 <code>nums</code> 和两个整数 <code>minK</code> 以及 <code>maxK</code> 。</p>
 

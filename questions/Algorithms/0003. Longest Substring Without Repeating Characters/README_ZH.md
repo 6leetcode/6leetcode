@@ -1,6 +1,6 @@
-### [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters)
+### [无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters)
 
-<p>给定一个字符串 <code>s</code> ，请你找出其中不含有重复字符的&nbsp;<strong>最长子串&nbsp;</strong>的长度。</p>
+<p>给定一个字符串 <code>s</code> ，请你找出其中不含有重复字符的&nbsp;<strong>最长 <span data-keyword="substring-nonempty">子串</span></strong><strong>&nbsp;</strong>的长度。</p>
 
 <p>&nbsp;</p>
 
@@ -9,7 +9,7 @@
 <pre>
 <strong>输入: </strong>s = "abcabcbb"
 <strong>输出: </strong>3 
-<strong>解释:</strong> 因为无重复字符的最长子串是 <code>"abc"，所以其</code>长度为 3。
+<strong>解释:</strong> 因为无重复字符的最长子串是 <code>"abc"</code>，所以其长度为 3。注意 "bca" 和 "cab" 也是正确答案。
 </pre>
 
 <p><strong>示例 2:</strong></p>
@@ -34,6 +34,6 @@
 <p><strong>提示：</strong></p>
 
 <ul>
-	<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code>&nbsp;由英文字母、数字、符号和空格组成</li>
 </ul>

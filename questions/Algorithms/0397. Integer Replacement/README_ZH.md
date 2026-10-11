@@ -1,4 +1,4 @@
-### [整数替换](https://leetcode-cn.com/problems/integer-replacement)
+### [整数替换](https://leetcode.cn/problems/integer-replacement)
 
 <p>给定一个正整数&nbsp;<code>n</code> ，你可以做如下操作：</p>
 

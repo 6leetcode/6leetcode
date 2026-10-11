@@ -1,4 +1,4 @@
-### [链表排序](https://leetcode-cn.com/problems/7WHec2)
+### [链表排序](https://leetcode.cn/problems/7WHec2)
 
 <p>给定链表的头结点&nbsp;<code>head</code>&nbsp;，请将其按 <strong>升序</strong> 排列并返回 <strong>排序后的链表</strong> 。</p>
 
@@ -47,4 +47,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 148&nbsp;题相同：<a href="https://leetcode-cn.com/problems/sort-list/">https://leetcode-cn.com/problems/sort-list/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 148&nbsp;题相同：<a href="https://leetcode.cn/problems/sort-list/">https://leetcode.cn/problems/sort-list/</a></p>

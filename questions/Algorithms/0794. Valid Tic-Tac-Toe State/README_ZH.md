@@ -1,4 +1,4 @@
-### [有效的井字游戏](https://leetcode-cn.com/problems/valid-tic-tac-toe-state)
+### [有效的井字游戏](https://leetcode.cn/problems/valid-tic-tac-toe-state)
 
 <p>给你一个字符串数组 <code>board</code> 表示井字游戏的棋盘。当且仅当在井字游戏过程中，棋盘有可能达到 <code>board</code> 所显示的状态时，才返回 <code>true</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [两个子序列的最大点积](https://leetcode-cn.com/problems/max-dot-product-of-two-subsequences)
+### [两个子序列的最大点积](https://leetcode.cn/problems/max-dot-product-of-two-subsequences)
 
 <p>给你两个数组&nbsp;<code>nums1</code>&nbsp;和&nbsp;<code>nums2</code>&nbsp;。</p>
 
@@ -38,7 +38,7 @@
 
 <ul>
 	<li><code>1 &lt;= nums1.length, nums2.length &lt;= 500</code></li>
-	<li><code>-1000 &lt;= nums1[i], nums2[i] &lt;= 100</code></li>
+	<li><code>-1000 &lt;= nums1[i], nums2[i] &lt;= 1000</code></li>
 </ul>
 
 <p>&nbsp;</p>
@@ -48,7 +48,7 @@
 <pre>
 定义 <code><strong>a</strong>&nbsp;= [<em>a</em><sub>1</sub>,&nbsp;<em>a</em><sub>2</sub>,…,&nbsp;<em>a</em><sub><em>n</em></sub>]</code> 和<strong> <code>b</code></strong><code>&nbsp;= [<em>b</em><sub>1</sub>,&nbsp;<em>b</em><sub>2</sub>,…,&nbsp;<em>b</em><sub><em>n</em></sub>]</code> 的点积为：
 
-<img alt="\mathbf{a}\cdot \mathbf{b} = \sum_{i=1}^n a_ib_i = a_1b_1 + a_2b_2 + \cdots + a_nb_n " class="tex" src="https://pic.leetcode-cn.com/1666164309-PBJMQp-image.png" />
+<img alt="\mathbf{a}\cdot \mathbf{b} = \sum_{i=1}^n a_ib_i = a_1b_1 + a_2b_2 + \cdots + a_nb_n " class="tex" src="https://pic.leetcode.cn/1666164309-PBJMQp-image.png" />
 
 这里的 <strong>Σ</strong> 指示总和符号。
 </pre>

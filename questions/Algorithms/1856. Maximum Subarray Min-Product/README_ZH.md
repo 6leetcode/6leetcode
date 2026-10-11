@@ -1,4 +1,4 @@
-### [子数组最小乘积的最大值](https://leetcode-cn.com/problems/maximum-subarray-min-product)
+### [子数组最小乘积的最大值](https://leetcode.cn/problems/maximum-subarray-min-product)
 
 <p>一个数组的 <strong>最小乘积</strong> 定义为这个数组中 <strong>最小值</strong> <strong>乘以 </strong>数组的 <strong>和</strong> 。</p>
 

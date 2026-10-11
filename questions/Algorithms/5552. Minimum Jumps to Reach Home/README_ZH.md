@@ -1,4 +1,4 @@
-### [到家的最少跳跃次数](https://leetcode-cn.com/problems/minimum-jumps-to-reach-home)
+### [到家的最少跳跃次数](https://leetcode.cn/problems/minimum-jumps-to-reach-home)
 
 <p>有一只跳蚤的家在数轴上的位置 <code>x</code> 处。请你帮助它从位置 <code>0</code> 出发，到达它的家。</p>
 

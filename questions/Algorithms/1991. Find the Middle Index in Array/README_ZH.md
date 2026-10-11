@@ -1,4 +1,4 @@
-### [找到数组的中间位置](https://leetcode-cn.com/problems/find-the-middle-index-in-array)
+### [找到数组的中间位置](https://leetcode.cn/problems/find-the-middle-index-in-array)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的整数数组&nbsp;<code>nums</code>&nbsp;，请你找到 <strong>最左边</strong>&nbsp;的中间位置&nbsp;<code>middleIndex</code>&nbsp;（也就是所有可能中间位置下标最小的一个）。</p>
 
@@ -60,4 +60,4 @@
 
 <p>&nbsp;</p>
 
-<p><strong>注意：</strong>本题与主站 724 题相同：<a href="https://leetcode-cn.com/problems/find-pivot-index/" target="_blank">https://leetcode-cn.com/problems/find-pivot-index/</a></p>
+<p><strong>注意：</strong>本题与主站 724 题相同：<a href="https://leetcode.cn/problems/find-pivot-index/" target="_blank">https://leetcode.cn/problems/find-pivot-index/</a></p>

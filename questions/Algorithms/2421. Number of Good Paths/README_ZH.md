@@ -1,4 +1,4 @@
-### [好路径的数目](https://leetcode-cn.com/problems/number-of-good-paths)
+### [好路径的数目](https://leetcode.cn/problems/number-of-good-paths)
 
 <p>给你一棵 <code>n</code>&nbsp;个节点的树（连通无向无环的图），节点编号从&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;且恰好有&nbsp;<code>n - 1</code>&nbsp;条边。</p>
 

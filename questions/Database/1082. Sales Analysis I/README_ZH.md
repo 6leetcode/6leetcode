@@ -1,2 +1,2 @@
-### [销售分析 I ](https://leetcode-cn.com/problems/sales-analysis-i)
+### [销售分析 I ](https://leetcode.cn/problems/sales-analysis-i)
 

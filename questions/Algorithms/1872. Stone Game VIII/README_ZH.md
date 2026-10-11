@@ -1,4 +1,4 @@
-### [石子游戏 VIII](https://leetcode-cn.com/problems/stone-game-viii)
+### [石子游戏 VIII](https://leetcode.cn/problems/stone-game-viii)
 
 <p>Alice 和 Bob 玩一个游戏，两人轮流操作， <strong>Alice 先手</strong> 。</p>
 

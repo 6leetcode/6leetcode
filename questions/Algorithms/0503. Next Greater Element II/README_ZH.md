@@ -1,4 +1,4 @@
-### [下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii)
+### [下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii)
 
 <p>给定一个循环数组&nbsp;<code>nums</code>&nbsp;（&nbsp;<code>nums[nums.length - 1]</code>&nbsp;的下一个元素是&nbsp;<code>nums[0]</code>&nbsp;），返回&nbsp;<em><code>nums</code>&nbsp;中每个元素的 <strong>下一个更大元素</strong></em> 。</p>
 

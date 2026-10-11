@@ -1,4 +1,4 @@
-### [最少的后缀翻转次数](https://leetcode-cn.com/problems/minimum-suffix-flips)
+### [最少的后缀翻转次数](https://leetcode.cn/problems/minimum-suffix-flips)
 
 <p>给你一个长度为 <code>n</code> 、下标从 <strong>0</strong> 开始的二进制字符串 <code>target</code> 。你自己有另一个长度为 <code>n</code> 的二进制字符串 <code>s</code> ，最初每一位上都是 0 。你想要让 <code>s</code> 和 <code>target</code> 相等。</p>
 

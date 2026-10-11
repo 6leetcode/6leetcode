@@ -1,4 +1,4 @@
-### [统计字符串中的元音子字符串](https://leetcode-cn.com/problems/count-vowel-substrings-of-a-string)
+### [统计字符串中的元音子字符串](https://leetcode.cn/problems/count-vowel-substrings-of-a-string)
 
 <p><strong>子字符串</strong> 是字符串中的一个连续（非空）的字符序列。</p>
 

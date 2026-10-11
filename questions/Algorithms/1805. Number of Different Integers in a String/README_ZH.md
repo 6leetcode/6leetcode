@@ -1,4 +1,4 @@
-### [字符串中不同整数的数目](https://leetcode-cn.com/problems/number-of-different-integers-in-a-string)
+### [字符串中不同整数的数目](https://leetcode.cn/problems/number-of-different-integers-in-a-string)
 
 <p>给你一个字符串 <code>word</code> ，该字符串由数字和小写英文字母组成。</p>
 

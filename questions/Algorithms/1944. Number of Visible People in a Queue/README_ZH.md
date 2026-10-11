@@ -1,4 +1,4 @@
-### [队列中可以看到的人数](https://leetcode-cn.com/problems/number-of-visible-people-in-a-queue)
+### [队列中可以看到的人数](https://leetcode.cn/problems/number-of-visible-people-in-a-queue)
 
 <p>有&nbsp;<code>n</code>&nbsp;个人排成一个队列，<strong>从左到右</strong>&nbsp;编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;。给你以一个整数数组&nbsp;<code>heights</code>&nbsp;，每个整数 <strong>互不相同</strong>，<code>heights[i]</code>&nbsp;表示第&nbsp;<code>i</code>&nbsp;个人的高度。</p>
 

@@ -1,4 +1,4 @@
-### [序列顺序查询](https://leetcode-cn.com/problems/sequentially-ordinal-rank-tracker)
+### [序列顺序查询](https://leetcode.cn/problems/sequentially-ordinal-rank-tracker)
 
 <p>一个观光景点由它的名字&nbsp;<code>name</code> 和景点评分&nbsp;<code>score</code>&nbsp;组成，其中&nbsp;<code>name</code>&nbsp;是所有观光景点中&nbsp;<strong>唯一</strong>&nbsp;的字符串，<code>score</code>&nbsp;是一个整数。景点按照最好到最坏排序。景点评分 <strong>越高</strong>&nbsp;，这个景点越好。如果有两个景点的评分一样，那么 <strong>字典序较小</strong>&nbsp;的景点更好。</p>
 
@@ -38,7 +38,7 @@
 SORTracker tracker = new SORTracker(); // 初始化系统
 tracker.add("bradford", 2); // 添加 name="bradford" 且 score=2 的景点。
 tracker.add("branford", 3); // 添加 name="branford" 且 score=3 的景点。
-tracker.get();              // 从好带坏的景点为：branford ，bradford 。
+tracker.get();              // 从好到坏的景点为：branford ，bradford 。
                             // 注意到 branford 比 bradford 好，因为它的 <strong>评分更高</strong> (3 &gt; 2) 。
                             // 这是第 1 次调用 get() ，所以返回最好的景点："branford" 。
 tracker.add("alps", 2);     // 添加 name="alps" 且 score=2 的景点。

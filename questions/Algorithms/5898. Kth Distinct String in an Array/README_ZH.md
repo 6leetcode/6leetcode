@@ -1,4 +1,4 @@
-### [数组中第 K 个独一无二的字符串](https://leetcode-cn.com/problems/kth-distinct-string-in-an-array)
+### [数组中第 K 个独一无二的字符串](https://leetcode.cn/problems/kth-distinct-string-in-an-array)
 
 <p><strong>独一无二的字符串</strong>&nbsp;指的是在一个数组中只出现过 <strong>一次</strong>&nbsp;的字符串。</p>
 

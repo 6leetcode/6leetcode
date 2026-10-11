@@ -1,4 +1,4 @@
-### [服务中心的最佳位置](https://leetcode-cn.com/problems/best-position-for-a-service-centre)
+### [服务中心的最佳位置](https://leetcode.cn/problems/best-position-for-a-service-centre)
 
 <p>一家快递公司希望在新城市建立新的服务中心。公司统计了该城市所有客户在二维地图上的坐标，并希望能够以此为依据为新的服务中心选址：使服务中心 <strong>到所有客户的欧几里得距离的总和最小</strong> 。</p>
 
@@ -6,7 +6,7 @@
 
 <p>换句话说，请你为服务中心选址，该位置的坐标 <code>[x<sub>centre</sub>, y<sub>centre</sub>]</code> 需要使下面的公式取到最小值：</p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/q4_edited.jpg" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/12/q4_edited.jpg" /></p>
 
 <p>与真实值误差在 <code>10<sup>-5</sup></code>之内的答案将被视作正确答案。</p>
 
@@ -14,7 +14,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/q4_e1.jpg" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/12/q4_e1.jpg" /></p>
 
 <pre>
 <strong>输入：</strong>positions = [[0,1],[1,0],[1,2],[2,1]]
@@ -24,7 +24,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/07/12/q4_e3.jpg" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/07/12/q4_e3.jpg" /></p>
 
 <pre>
 <strong>输入：</strong>positions = [[1,1],[3,3]]

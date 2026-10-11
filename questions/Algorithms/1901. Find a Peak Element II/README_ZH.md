@@ -1,4 +1,4 @@
-### [寻找峰值 II](https://leetcode-cn.com/problems/find-a-peak-element-ii)
+### [寻找峰值 II](https://leetcode.cn/problems/find-a-peak-element-ii)
 
 <p>一个 2D 网格中的 <strong>峰值</strong><strong> </strong>是指那些 <strong>严格大于 </strong>其相邻格子(上、下、左、右)的元素。</p>
 

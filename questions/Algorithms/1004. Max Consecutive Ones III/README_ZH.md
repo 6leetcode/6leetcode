@@ -1,6 +1,6 @@
-### [最大连续1的个数 III](https://leetcode-cn.com/problems/max-consecutive-ones-iii)
+### [最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii)
 
-<p>给定一个二进制数组&nbsp;<code>nums</code>&nbsp;和一个整数 <code>k</code>，如果可以翻转最多 <code>k</code> 个 <code>0</code> ，则返回 <em>数组中连续 <code>1</code> 的最大个数</em> 。</p>
+<p>给定一个二进制数组&nbsp;<code>nums</code>&nbsp;和一个整数 <code>k</code>，假设最多可以翻转 <code>k</code> 个 <code>0</code> ，则返回执行操作后 <em>数组中连续 <code>1</code> 的最大个数</em> 。</p>
 
 <p>&nbsp;</p>
 
@@ -26,6 +26,6 @@
 
 <ul>
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>nums[i]</code>&nbsp;不是&nbsp;<code>0</code>&nbsp;就是&nbsp;<code>1</code></li>
+	<li><code>nums[i]</code>&nbsp;不是&nbsp;0&nbsp;就是&nbsp;1</li>
 	<li><code>0 &lt;= k &lt;= nums.length</code></li>
 </ul>

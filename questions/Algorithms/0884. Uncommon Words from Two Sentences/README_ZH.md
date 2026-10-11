@@ -1,4 +1,4 @@
-### [两句话中的不常见单词](https://leetcode-cn.com/problems/uncommon-words-from-two-sentences)
+### [两句话中的不常见单词](https://leetcode.cn/problems/uncommon-words-from-two-sentences)
 
 <p><strong>句子</strong> 是一串由空格分隔的单词。每个 <strong>单词</strong><em> </em>仅由小写字母组成。</p>
 

@@ -1,4 +1,4 @@
-### [字符串中第二大的数字](https://leetcode-cn.com/problems/second-largest-digit-in-a-string)
+### [字符串中第二大的数字](https://leetcode.cn/problems/second-largest-digit-in-a-string)
 
 <p>给你一个混合字符串 <code>s</code> ，请你返回 <code>s</code> 中 <strong>第二大 </strong>的数字，如果不存在第二大的数字，请你返回 <code>-1</code> 。</p>
 

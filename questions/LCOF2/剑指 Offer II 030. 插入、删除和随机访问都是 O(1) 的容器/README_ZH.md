@@ -1,4 +1,4 @@
-### [插入、删除和随机访问都是 O(1) 的容器](https://leetcode-cn.com/problems/FortPu)
+### [插入、删除和随机访问都是 O(1) 的容器](https://leetcode.cn/problems/FortPu)
 
 <p>设计一个支持在<em>平均&nbsp;</em>时间复杂度 <strong>O(1)</strong>&nbsp;下，执行以下操作的数据结构：</p>
 
@@ -45,4 +45,4 @@ randomSet.getRandom(); // 由于 2 是集合中唯一的数字，getRandom 总�
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 380&nbsp;题相同：<a href="https://leetcode-cn.com/problems/insert-delete-getrandom-o1/">https://leetcode-cn.com/problems/insert-delete-getrandom-o1/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 380&nbsp;题相同：<a href="https://leetcode.cn/problems/insert-delete-getrandom-o1/">https://leetcode.cn/problems/insert-delete-getrandom-o1/</a></p>

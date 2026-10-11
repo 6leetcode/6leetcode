@@ -1,4 +1,4 @@
-### [第一个出现两次的字母](https://leetcode-cn.com/problems/first-letter-to-appear-twice)
+### [第一个出现两次的字母](https://leetcode.cn/problems/first-letter-to-appear-twice)
 
 <p>给你一个由小写英文字母组成的字符串 <code>s</code> ，请你找出并返回第一个出现 <strong>两次</strong> 的字母。</p>
 

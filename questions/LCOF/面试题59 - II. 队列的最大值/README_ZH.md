@@ -1,4 +1,4 @@
-### [队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof)
+### [队列的最大值](https://leetcode.cn/problems/dui-lie-de-zui-da-zhi-lcof)
 
 <p>请定义一个队列并实现函数 <code>max_value</code> 得到队列里的最大值，要求函数<code>max_value</code>、<code>push_back</code> 和 <code>pop_front</code> 的<strong>均摊</strong>时间复杂度都是O(1)。</p>
 

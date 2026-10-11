@@ -1,4 +1,4 @@
-### [航班预订统计](https://leetcode-cn.com/problems/corporate-flight-bookings)
+### [航班预订统计](https://leetcode.cn/problems/corporate-flight-bookings)
 
 <p>这里有&nbsp;<code>n</code>&nbsp;个航班，它们分别从 <code>1</code> 到 <code>n</code> 进行编号。</p>
 

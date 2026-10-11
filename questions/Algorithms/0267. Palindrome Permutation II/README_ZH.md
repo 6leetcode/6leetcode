@@ -1,2 +1,2 @@
-### [回文排列 II](https://leetcode-cn.com/problems/palindrome-permutation-ii)
+### [回文排列 II](https://leetcode.cn/problems/palindrome-permutation-ii)
 

@@ -1,4 +1,4 @@
-### [分糖果](https://leetcode-cn.com/problems/distribute-candies)
+### [分糖果](https://leetcode.cn/problems/distribute-candies)
 
 <p>Alice 有 <code>n</code> 枚糖，其中第 <code>i</code> 枚糖的类型为 <code>candyType[i]</code> 。Alice 注意到她的体重正在增长，所以前去拜访了一位医生。</p>
 

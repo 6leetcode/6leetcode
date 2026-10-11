@@ -1,4 +1,4 @@
-### [下一个更大元素 III](https://leetcode-cn.com/problems/next-greater-element-iii)
+### [下一个更大元素 III](https://leetcode.cn/problems/next-greater-element-iii)
 
 <p>给你一个正整数 <code>n</code> ，请你找出符合条件的最小整数，其由重新排列 <code>n</code><strong> </strong>中存在的每位数字组成，并且其值大于 <code>n</code> 。如果不存在这样的正整数，则返回 <code>-1</code> 。</p>
 

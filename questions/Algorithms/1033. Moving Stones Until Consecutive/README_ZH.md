@@ -1,4 +1,4 @@
-### [移动石子直到连续](https://leetcode-cn.com/problems/moving-stones-until-consecutive)
+### [移动石子直到连续](https://leetcode.cn/problems/moving-stones-until-consecutive)
 
 <p>三枚石子放置在数轴上，位置分别为 <code>a</code>，<code>b</code>，<code>c</code>。</p>
 

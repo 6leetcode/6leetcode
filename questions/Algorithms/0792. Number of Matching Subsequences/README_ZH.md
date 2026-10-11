@@ -1,4 +1,4 @@
-### [匹配子序列的单词数](https://leetcode-cn.com/problems/number-of-matching-subsequences)
+### [匹配子序列的单词数](https://leetcode.cn/problems/number-of-matching-subsequences)
 
 <p>给定字符串 <code>s</code>&nbsp;和字符串数组&nbsp;<code>words</code>, 返回&nbsp;&nbsp;<em><code>words[i]</code>&nbsp;中是<code>s</code>的子序列的单词个数</em>&nbsp;。</p>
 

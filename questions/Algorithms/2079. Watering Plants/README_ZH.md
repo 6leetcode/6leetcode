@@ -1,4 +1,4 @@
-### [给植物浇水](https://leetcode-cn.com/problems/watering-plants)
+### [给植物浇水](https://leetcode.cn/problems/watering-plants)
 
 <p>你打算用一个水罐给花园里的 <code>n</code> 株植物浇水。植物排成一行，从左到右进行标记，编号从 <code>0</code> 到 <code>n - 1</code> 。其中，第 <code>i</code> 株植物的位置是 <code>x = i</code> 。<code>x = -1</code>&nbsp;处有一条河，你可以在那里重新灌满你的水罐。</p>
 

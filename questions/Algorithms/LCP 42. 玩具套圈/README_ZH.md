@@ -1,4 +1,4 @@
-### [玩具套圈](https://leetcode-cn.com/problems/vFjcfV)
+### [玩具套圈](https://leetcode.cn/problems/vFjcfV)
 
 「力扣挑战赛」场地外，小力组织了一个套玩具的游戏。所有的玩具摆在平地上，`toys[i]` 以 `[xi,yi,ri]` 的形式记录了第 `i` 个玩具的坐标 `(xi,yi)` 和半径 `ri`。小扣试玩了一下，他扔了若干个半径均为 `r` 的圈，`circles[j]` 记录了第 `j` 个圈的坐标 `(xj,yj)`。套圈的规则如下：
 - 若一个玩具被某个圈完整覆盖了（即玩具的任意部分均在圈内或者圈上），则该玩具被套中。
@@ -17,7 +17,7 @@
 > 输出：`1`
 > 
 > 解释： 如图所示，仅套中一个玩具
-![image.png](https://pic.leetcode-cn.com/1629194140-ydKiGF-image.png)
+![image.png](https://pic.leetcode.cn/1629194140-ydKiGF-image.png)
 
 
 **示例 2：**
@@ -27,7 +27,7 @@
 > 输出：`2`
 > 
 > 解释： 如图所示，套中两个玩具
-![image.png](https://pic.leetcode-cn.com/1629194157-RiOAuy-image.png){:width="400px"}
+![image.png](https://pic.leetcode.cn/1629194157-RiOAuy-image.png){:width="400px"}
 
 
 

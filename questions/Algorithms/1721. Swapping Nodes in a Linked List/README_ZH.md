@@ -1,4 +1,4 @@
-### [交换链表中的节点](https://leetcode-cn.com/problems/swapping-nodes-in-a-linked-list)
+### [交换链表中的节点](https://leetcode.cn/problems/swapping-nodes-in-a-linked-list)
 
 <p>给你链表的头节点 <code>head</code> 和一个整数 <code>k</code> 。</p>
 
@@ -7,7 +7,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/01/10/linked1.jpg" style="width: 722px; height: 202px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/01/10/linked1.jpg" style="width: 722px; height: 202px;" />
 <pre>
 <strong>输入：</strong>head = [1,2,3,4,5], k = 2
 <strong>输出：</strong>[1,4,3,2,5]

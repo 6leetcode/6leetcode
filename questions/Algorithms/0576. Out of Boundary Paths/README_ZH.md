@@ -1,4 +1,4 @@
-### [出界的路径数](https://leetcode-cn.com/problems/out-of-boundary-paths)
+### [出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths)
 
 <p>给你一个大小为 <code>m x n</code> 的网格和一个球。球的起始坐标为 <code>[startRow, startColumn]</code> 。你可以将球移到在四个方向上相邻的单元格内（可以穿过网格边界到达网格之外）。你 <strong>最多</strong> 可以移动 <code>maxMove</code> 次球。</p>
 

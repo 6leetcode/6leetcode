@@ -1,4 +1,4 @@
-### [灯泡开关 IV](https://leetcode-cn.com/problems/bulb-switcher-iv)
+### [灯泡开关 IV](https://leetcode.cn/problems/bulb-switcher-iv)
 
 <p>房间中有 <code>n</code> 个灯泡，编号从 <code>0</code> 到 <code>n-1</code> ，自左向右排成一行。最开始的时候，所有的灯泡都是 <strong>关</strong> 着的。</p>
 

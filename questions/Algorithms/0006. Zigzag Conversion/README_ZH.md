@@ -1,4 +1,4 @@
-### [Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion)
+### [Z 字形变换](https://leetcode.cn/problems/zigzag-conversion)
 
 <p>将一个给定字符串 <code>s</code> 根据给定的行数 <code>numRows</code> ，以从上往下、从左到右进行 Z 字形排列。</p>
 

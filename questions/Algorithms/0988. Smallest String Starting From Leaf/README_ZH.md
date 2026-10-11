@@ -1,4 +1,4 @@
-### [从叶结点开始的最小字符串](https://leetcode-cn.com/problems/smallest-string-starting-from-leaf)
+### [从叶结点开始的最小字符串](https://leetcode.cn/problems/smallest-string-starting-from-leaf)
 
 <p>给定一颗根结点为&nbsp;<code>root</code>&nbsp;的二叉树，树中的每一个结点都有一个&nbsp;<code>[0, 25]</code>&nbsp;范围内的值，分别代表字母&nbsp;<code>'a'</code> 到&nbsp;<code>'z'</code>。</p>
 
@@ -21,7 +21,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/02/02/tree1.png" style="height: 358px; width: 534px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/02/02/tree1.png" style="height: 358px; width: 534px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>root = [0,1,2,3,4,3,4]

@@ -1,4 +1,4 @@
-### [重构一棵树的方案数](https://leetcode-cn.com/problems/number-of-ways-to-reconstruct-a-tree)
+### [重构一棵树的方案数](https://leetcode.cn/problems/number-of-ways-to-reconstruct-a-tree)
 
 <p>给你一个数组 <code>pairs</code> ，其中 <code>pairs[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> ，并且满足：</p>
 
@@ -32,7 +32,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/01/09/trees2.png" style="width: 208px; height: 221px;" />
+<img src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/01/09/trees2.png" style="width: 208px; height: 221px;" />
 <pre>
 <b>输入：</b>pairs = [[1,2],[2,3]]
 <b>输出：</b>1
@@ -40,7 +40,7 @@
 </pre>
 
 <p><strong>示例 2：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2021/01/09/tree.png" style="width: 234px; height: 241px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2021/01/09/tree.png" style="width: 234px; height: 241px;" />
 <pre>
 <b>输入：</b>pairs = [[1,2],[2,3],[1,3]]
 <b>输出：</b>2

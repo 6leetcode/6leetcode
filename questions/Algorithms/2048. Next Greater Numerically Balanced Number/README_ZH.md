@@ -1,4 +1,4 @@
-### [下一个更大的数值平衡数](https://leetcode-cn.com/problems/next-greater-numerically-balanced-number)
+### [下一个更大的数值平衡数](https://leetcode.cn/problems/next-greater-numerically-balanced-number)
 
 <p>如果整数&nbsp; <code>x</code> 满足：对于每个数位&nbsp;<code>d</code> ，这个数位&nbsp;<strong>恰好</strong> 在 <code>x</code> 中出现 <code>d</code> 次。那么整数 <code>x</code> 就是一个 <strong>数值平衡数</strong> 。</p>
 

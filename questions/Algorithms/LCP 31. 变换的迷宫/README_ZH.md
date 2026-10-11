@@ -1,4 +1,4 @@
-### [变换的迷宫](https://leetcode-cn.com/problems/Db3wC1)
+### [变换的迷宫](https://leetcode.cn/problems/Db3wC1)
 
 某解密游戏中，有一个 N\*M 的迷宫，迷宫地形会随时间变化而改变，迷宫出口一直位于 `(n-1,m-1)` 位置。迷宫变化规律记录于 `maze` 中，`maze[i]` 表示 `i` 时刻迷宫的地形状态，`"."` 表示可通行空地，`"#"` 表示陷阱。
 
@@ -18,7 +18,7 @@
 >输出：`true`
 >
 >解释：
-![maze.gif](https://pic.leetcode-cn.com/1615892239-SCIjyf-maze.gif)
+![maze.gif](https://pic.leetcode.cn/1615892239-SCIjyf-maze.gif)
 
 
 **示例 2：**

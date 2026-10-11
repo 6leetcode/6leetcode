@@ -1,4 +1,4 @@
-### [分糖果 II](https://leetcode-cn.com/problems/distribute-candies-to-people)
+### [分糖果 II](https://leetcode.cn/problems/distribute-candies-to-people)
 
 <p>排排坐，分糖果。</p>
 

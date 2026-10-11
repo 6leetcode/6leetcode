@@ -1,4 +1,4 @@
-### [最小不兼容性](https://leetcode-cn.com/problems/minimum-incompatibility)
+### [最小不兼容性](https://leetcode.cn/problems/minimum-incompatibility)
 
 <p>给你一个整数数组 <code>nums</code>​​​ 和一个整数 <code>k</code> 。你需要将这个数组划分到 <code>k</code> 个相同大小的子集中，使得同一个子集里面没有两个相同的元素。</p>
 

@@ -1,4 +1,4 @@
-### [最多的不重叠子字符串](https://leetcode-cn.com/problems/maximum-number-of-non-overlapping-substrings)
+### [最多的不重叠子字符串](https://leetcode.cn/problems/maximum-number-of-non-overlapping-substrings)
 
 <p>给你一个只包含小写字母的字符串&nbsp;<code>s</code>&nbsp;，你需要找到 <code>s</code>&nbsp;中最多数目的非空子字符串，满足如下条件：</p>
 

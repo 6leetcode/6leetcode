@@ -1,0 +1,36 @@
+### [睡眠函数](https://leetcode.cn/problems/sleep)
+
+<p>请你编写一个异步函数，它接收一个正整数参数 <code>millis</code>&nbsp;，并休眠 <code>millis</code> 毫秒。要求此函数可以解析任何值。</p>
+
+<p><strong>请注意</strong>，实际睡眠持续时间与&nbsp;<code>millis</code> 之间的微小偏差是可以接受的。</p>
+
+<p>&nbsp;</p>
+
+<p><b>示例 1：</b></p>
+
+<pre>
+<b>输入：</b>millis = 100
+<b>输出：</b>100
+<b>解释：</b>
+在 100ms 后此异步函数执行完时返回一个 Promise 对象
+let t = Date.now();
+sleep(100).then(() =&gt; {
+  console.log(Date.now() - t); // 100
+});
+</pre>
+
+<p><b>示例 2：</b></p>
+
+<pre>
+<b>输入：</b>millis = 200
+<b>输出：</b>200
+<b>解释：</b>在 200ms 后函数执行完时返回一个 Promise 对象
+</pre>
+
+<p>&nbsp;</p>
+
+<p><b>提示：</b></p>
+
+<ul>
+	<li><code>1 &lt;= millis &lt;= 1000</code></li>
+</ul>

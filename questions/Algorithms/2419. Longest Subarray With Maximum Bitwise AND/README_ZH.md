@@ -1,4 +1,4 @@
-### [按位与最大的最长子数组](https://leetcode-cn.com/problems/longest-subarray-with-maximum-bitwise-and)
+### [按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and)
 
 <p>给你一个长度为 <code>n</code> 的整数数组 <code>nums</code> 。</p>
 

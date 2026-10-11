@@ -1,2 +1,2 @@
-### [子树的最大平均值](https://leetcode-cn.com/problems/maximum-average-subtree)
+### [子树的最大平均值](https://leetcode.cn/problems/maximum-average-subtree)
 

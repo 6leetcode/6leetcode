@@ -1,4 +1,4 @@
-### [合并二叉树](https://leetcode-cn.com/problems/merge-two-binary-trees)
+### [合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees)
 
 <p>给你两棵二叉树： <code>root1</code> 和 <code>root2</code> 。</p>
 

@@ -1,2 +1,2 @@
-### [阿姆斯特朗数](https://leetcode-cn.com/problems/armstrong-number)
+### [阿姆斯特朗数](https://leetcode.cn/problems/armstrong-number)
 

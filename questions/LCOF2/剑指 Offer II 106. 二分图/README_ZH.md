@@ -1,4 +1,4 @@
-### [二分图](https://leetcode-cn.com/problems/vEAB3K)
+### [二分图](https://leetcode.cn/problems/vEAB3K)
 
 <p>存在一个 <strong>无向图</strong> ，图中有 <code>n</code> 个节点。其中每个节点都有一个介于 <code>0</code> 到 <code>n - 1</code> 之间的唯一编号。</p>
 
@@ -51,4 +51,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 785&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/is-graph-bipartite/">https://leetcode-cn.com/problems/is-graph-bipartite/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 785&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/is-graph-bipartite/">https://leetcode.cn/problems/is-graph-bipartite/</a></p>

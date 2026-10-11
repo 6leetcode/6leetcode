@@ -1,4 +1,4 @@
-### [到目标元素的最小距离](https://leetcode-cn.com/problems/minimum-distance-to-the-target-element)
+### [到目标元素的最小距离](https://leetcode.cn/problems/minimum-distance-to-the-target-element)
 
 <p>给你一个整数数组 <code>nums</code> （下标 <strong>从 0 开始</strong> 计数）以及两个整数 <code>target</code> 和 <code>start</code> ，请你找出一个下标 <code>i</code> ，满足 <code>nums[i] == target</code> 且 <code>abs(i - start)</code> <strong>最小化</strong> 。注意：<code>abs(x)</code> 表示 <code>x</code> 的绝对值。</p>
 

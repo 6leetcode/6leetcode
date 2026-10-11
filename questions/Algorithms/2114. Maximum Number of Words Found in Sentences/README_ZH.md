@@ -1,4 +1,4 @@
-### [句子中的最多单词数](https://leetcode-cn.com/problems/maximum-number-of-words-found-in-sentences)
+### [句子中的最多单词数](https://leetcode.cn/problems/maximum-number-of-words-found-in-sentences)
 
 <p>一个 <strong>句子</strong>&nbsp;由一些 <strong>单词</strong>&nbsp;以及它们之间的单个空格组成，句子的开头和结尾不会有多余空格。</p>
 

@@ -1,4 +1,4 @@
-### [组合总和](https://leetcode-cn.com/problems/combination-sum)
+### [组合总和](https://leetcode.cn/problems/combination-sum)
 
 <p>给你一个 <strong>无重复元素</strong> 的整数数组&nbsp;<code>candidates</code> 和一个目标整数&nbsp;<code>target</code>&nbsp;，找出&nbsp;<code>candidates</code>&nbsp;中可以使数字和为目标数&nbsp;<code>target</code> 的 所有<em>&nbsp;</em><strong>不同组合</strong> ，并以列表形式返回。你可以按 <strong>任意顺序</strong> 返回这些组合。</p>
 
@@ -11,7 +11,7 @@
 <p><strong>示例&nbsp;1：</strong></p>
 
 <pre>
-<strong>输入：</strong>candidates = <code>[2,3,6,7], </code>target = <code>7</code>
+<strong>输入：</strong>candidates = [2,3,6,7], target = 7
 <strong>输出：</strong>[[2,2,3],[7]]
 <strong>解释：</strong>
 2 和 3 可以形成一组候选，2 + 2 + 3 = 7 。注意 2 可以使用多次。
@@ -21,13 +21,13 @@
 <p><strong>示例&nbsp;2：</strong></p>
 
 <pre>
-<strong>输入: </strong>candidates = [2,3,5]<code>, </code>target = 8
+<strong>输入: </strong>candidates = [2,3,5], target = 8
 <strong>输出: </strong>[[2,2,2,2],[2,3,3],[3,5]]</pre>
 
 <p><strong>示例 3：</strong></p>
 
 <pre>
-<strong>输入: </strong>candidates = <code>[2], </code>target = 1
+<strong>输入: </strong>candidates = [2], target = 1
 <strong>输出: </strong>[]
 </pre>
 

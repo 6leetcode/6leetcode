@@ -1,4 +1,4 @@
-### [存在连续三个奇数的数组](https://leetcode-cn.com/problems/three-consecutive-odds)
+### [存在连续三个奇数的数组](https://leetcode.cn/problems/three-consecutive-odds)
 
 <p>给你一个整数数组 <code>arr</code>，请你判断数组中是否存在连续三个元素都是奇数的情况：如果存在，请返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
 

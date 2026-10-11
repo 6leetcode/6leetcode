@@ -1,4 +1,4 @@
-### [N 叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree)
+### [N 叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-n-ary-tree)
 
 <p>给定一个 N 叉树，找到其最大深度。</p>
 

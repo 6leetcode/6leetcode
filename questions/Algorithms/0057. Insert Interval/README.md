@@ -2,9 +2,13 @@
 
 <p>You are given an array of non-overlapping intervals <code>intervals</code> where <code>intervals[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> represent the start and the end of the <code>i<sup>th</sup></code> interval and <code>intervals</code> is sorted in ascending order by <code>start<sub>i</sub></code>. You are also given an interval <code>newInterval = [start, end]</code> that represents the start and end of another interval.</p>
 
+<p>Two intervals are considered overlapping if they share <strong>at least</strong> one point.</p>
+
 <p>Insert <code>newInterval</code> into <code>intervals</code> such that <code>intervals</code> is still sorted in ascending order by <code>start<sub>i</sub></code> and <code>intervals</code> still does not have any overlapping intervals (merge overlapping intervals if necessary).</p>
 
 <p>Return <code>intervals</code><em> after the insertion</em>.</p>
+
+<p><strong>Note</strong> that you don&#39;t need to modify <code>intervals</code> in-place. You can make a new array and return it.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

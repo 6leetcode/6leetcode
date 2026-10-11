@@ -1,4 +1,4 @@
-### [字符串的好分割数目](https://leetcode-cn.com/problems/number-of-good-ways-to-split-a-string)
+### [字符串的好分割数目](https://leetcode.cn/problems/number-of-good-ways-to-split-a-string)
 
 <p>给你一个字符串&nbsp;<code>s</code>&nbsp;，一个分割被称为 「好分割」&nbsp;当它满足：将&nbsp;<code>s</code>&nbsp;分割成 2 个字符串&nbsp;<code>p</code> 和&nbsp;<code>q</code>&nbsp;，它们连接起来等于&nbsp;<code>s</code>&nbsp;且 <code>p</code>&nbsp;和 <code>q</code>&nbsp;中不同字符的数目相同。</p>
 

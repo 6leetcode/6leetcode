@@ -1,4 +1,4 @@
-### [射箭比赛中的最大得分](https://leetcode-cn.com/problems/maximum-points-in-an-archery-competition)
+### [射箭比赛中的最大得分](https://leetcode.cn/problems/maximum-points-in-an-archery-competition)
 
 <p>Alice 和 Bob 是一场射箭比赛中的对手。比赛规则如下：</p>
 
@@ -29,7 +29,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1647744752-kQKrXw-image.png" style="width: 600px; height: 120px;" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1647744752-kQKrXw-image.png" style="width: 600px; height: 120px;" /></p>
 
 <pre>
 <strong>输入：</strong>numArrows = 9, aliceArrows = [1,1,0,1,0,0,2,1,0,1,2,0]
@@ -41,7 +41,7 @@ Bob 获得总分 4 + 5 + 8 + 9 + 10 + 11 = 47 。
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://pic.leetcode-cn.com/1647744785-cMHzaC-image.png" style="width: 600px; height: 117px;" /></p>
+<p><img alt="" src="https://pic.leetcode.cn/1647744785-cMHzaC-image.png" style="width: 600px; height: 117px;" /></p>
 
 <pre>
 <strong>输入：</strong>numArrows = 3, aliceArrows = [0,0,1,0,0,0,0,0,0,0,0,2]

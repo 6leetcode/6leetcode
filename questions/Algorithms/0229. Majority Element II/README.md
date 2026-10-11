@@ -1,6 +1,6 @@
 ### [Majority Element II](https://leetcode.com/problems/majority-element-ii)
 
-<p>Given an integer array of size <code>n</code>, find all elements that appear more than <code>&lfloor; n/3 &rfloor;</code> times.</p>
+<p>Given an integer array of size <code>n</code>, find all elements that appear more than <code>&lfloor;n / 3&rfloor;</code> times.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>

@@ -1,4 +1,4 @@
-### [使数组互补的最少操作次数](https://leetcode-cn.com/problems/minimum-moves-to-make-array-complementary)
+### [使数组互补的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-make-array-complementary)
 
 <p>给你一个长度为<strong> 偶数</strong> <code>n</code> 的整数数组 <code>nums</code> 和一个整数 <code>limit</code> 。每一次操作，你可以将 <code>nums</code> 中的任何整数替换为 <code>1</code> 到 <code>limit</code> 之间的另一个整数。</p>
 

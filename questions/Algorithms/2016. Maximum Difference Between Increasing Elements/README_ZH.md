@@ -1,4 +1,4 @@
-### [增量元素之间的最大差值](https://leetcode-cn.com/problems/maximum-difference-between-increasing-elements)
+### [增量元素之间的最大差值](https://leetcode.cn/problems/maximum-difference-between-increasing-elements)
 
 <p>给你一个下标从 <strong>0</strong> 开始的整数数组 <code>nums</code> ，该数组的大小为 <code>n</code> ，请你计算 <code>nums[j] - nums[i]</code> 能求得的 <strong>最大差值 </strong>，其中 <code>0 &lt;= i &lt; j &lt; n</code> 且 <code>nums[i] &lt; nums[j]</code> 。</p>
 

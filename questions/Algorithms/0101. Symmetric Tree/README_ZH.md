@@ -1,18 +1,18 @@
-### [对称二叉树](https://leetcode-cn.com/problems/symmetric-tree)
+### [对称二叉树](https://leetcode.cn/problems/symmetric-tree)
 
 <p>给你一个二叉树的根节点 <code>root</code> ， 检查它是否轴对称。</p>
 
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg" style="width: 354px; height: 291px;" />
+<img alt="" src="https://pic.leetcode.cn/1698026966-JDYPDU-image.png" style="width: 354px; height: 291px;" />
 <pre>
 <strong>输入：</strong>root = [1,2,2,3,4,4,3]
 <strong>输出：</strong>true
 </pre>
 
 <p><strong>示例 2：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg" style="width: 308px; height: 258px;" />
+<img alt="" src="https://pic.leetcode.cn/1698027008-nPFLbM-image.png" style="width: 308px; height: 258px;" />
 <pre>
 <strong>输入：</strong>root = [1,2,2,null,3,null,3]
 <strong>输出：</strong>false

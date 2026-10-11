@@ -1,24 +1,27 @@
-### [计算器](https://leetcode-cn.com/problems/calculator-lcci)
+### [计算器](https://leetcode.cn/problems/calculator-lcci)
 
 <p>给定一个包含正整数、加(+)、减(-)、乘(*)、除(/)的算数表达式(括号除外)，计算其结果。</p>
 
 <p>表达式仅包含非负整数，<code>+</code>， <code>-</code> ，<code>*</code>，<code>/</code> 四种运算符和空格&nbsp;<code>&nbsp;</code>。 整数除法仅保留整数部分。</p>
 
-<p><strong>示例&nbsp;1:</strong></p>
+<p><strong>示例 1：</strong></p>
 
-<pre><strong>输入: </strong>&quot;3+2*2&quot;
-<strong>输出:</strong> 7
+<pre>
+<strong>输入：</strong>"3+2*2"
+<strong>输出：</strong>7
 </pre>
 
-<p><strong>示例 2:</strong></p>
+<p><strong>示例 2：</strong></p>
 
-<pre><strong>输入:</strong> &quot; 3/2 &quot;
-<strong>输出:</strong> 1</pre>
+<pre>
+<strong>输入：</strong>" 3/2 "
+<strong>输出：</strong>1</pre>
 
-<p><strong>示例 3:</strong></p>
+<p><strong>示例 3：</strong></p>
 
-<pre><strong>输入:</strong> &quot; 3+5 / 2 &quot;
-<strong>输出:</strong> 5
+<pre>
+<strong>输入：</strong>" 3+5 / 2 "
+<strong>输出：</strong>5
 </pre>
 
 <p><strong>说明：</strong></p>

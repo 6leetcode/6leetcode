@@ -1,4 +1,4 @@
-### [移除无效的括号](https://leetcode-cn.com/problems/minimum-remove-to-make-valid-parentheses)
+### [移除无效的括号](https://leetcode.cn/problems/minimum-remove-to-make-valid-parentheses)
 
 <p>给你一个由 <code>'('</code>、<code>')'</code> 和小写字母组成的字符串 <code>s</code>。</p>
 

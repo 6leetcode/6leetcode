@@ -1,4 +1,4 @@
-### [删除链表的中间节点](https://leetcode-cn.com/problems/delete-the-middle-node-of-a-linked-list)
+### [删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list)
 
 <p>给你一个链表的头节点 <code>head</code> 。<strong>删除</strong> 链表的 <strong>中间节点</strong> ，并返回修改后的链表的头节点 <code>head</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [转置矩阵](https://leetcode-cn.com/problems/transpose-matrix)
+### [转置矩阵](https://leetcode.cn/problems/transpose-matrix)
 
 <p>给你一个二维整数数组 <code>matrix</code>， 返回 <code>matrix</code> 的 <strong>转置矩阵</strong> 。</p>
 

@@ -1,4 +1,4 @@
-### [出租车的最大盈利](https://leetcode-cn.com/problems/maximum-earnings-from-taxi)
+### [出租车的最大盈利](https://leetcode.cn/problems/maximum-earnings-from-taxi)
 
 <p>你驾驶出租车行驶在一条有 <code>n</code>&nbsp;个地点的路上。这 <code>n</code>&nbsp;个地点从近到远编号为&nbsp;<code>1</code>&nbsp;到&nbsp;<code>n</code>&nbsp;，你想要从 <code>1</code>&nbsp;开到 <code>n</code>&nbsp;，通过接乘客订单盈利。你只能沿着编号递增的方向前进，不能改变方向。</p>
 

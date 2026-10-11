@@ -1,4 +1,4 @@
-### [顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof)
+### [顺时针打印矩阵](https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof)
 
 <p>输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。</p>
 
@@ -25,4 +25,4 @@
 	<li><code>0 &lt;= matrix[i].length&nbsp;&lt;= 100</code></li>
 </ul>
 
-<p>注意：本题与主站 54 题相同：<a href="https://leetcode-cn.com/problems/spiral-matrix/">https://leetcode-cn.com/problems/spiral-matrix/</a></p>
+<p>注意：本题与主站 54 题相同：<a href="https://leetcode.cn/problems/spiral-matrix/">https://leetcode.cn/problems/spiral-matrix/</a></p>

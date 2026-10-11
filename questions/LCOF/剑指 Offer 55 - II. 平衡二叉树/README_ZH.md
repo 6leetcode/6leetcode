@@ -1,4 +1,4 @@
-### [平衡二叉树](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof)
+### [平衡二叉树](https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof)
 
 <p>输入一棵二叉树的根节点，判断该树是不是平衡二叉树。如果某二叉树中任意节点的左右子树的深度相差不超过1，那么它就是一棵平衡二叉树。</p>
 
@@ -41,6 +41,6 @@
 	<li><code>0 <= 树的结点个数 <= 10000</code></li>
 </ul>
 
-<p>注意：本题与主站 110 题相同：<a href="https://leetcode-cn.com/problems/balanced-binary-tree/">https://leetcode-cn.com/problems/balanced-binary-tree/</a></p>
+<p>注意：本题与主站 110 题相同：<a href="https://leetcode.cn/problems/balanced-binary-tree/">https://leetcode.cn/problems/balanced-binary-tree/</a></p>
 
 <p> </p>

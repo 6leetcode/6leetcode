@@ -1,4 +1,4 @@
-### [统计出现过一次的公共字符串](https://leetcode-cn.com/problems/count-common-words-with-one-occurrence)
+### [统计出现过一次的公共字符串](https://leetcode.cn/problems/count-common-words-with-one-occurrence)
 
 <p>给你两个字符串数组&nbsp;<code>words1</code>&nbsp;和&nbsp;<code>words2</code>&nbsp;，请你返回在两个字符串数组中 <strong>都恰好出现一次</strong>&nbsp;的字符串的数目。</p>
 

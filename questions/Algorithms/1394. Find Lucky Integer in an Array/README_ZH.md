@@ -1,4 +1,4 @@
-### [找出数组中的幸运数](https://leetcode-cn.com/problems/find-lucky-integer-in-an-array)
+### [找出数组中的幸运数](https://leetcode.cn/problems/find-lucky-integer-in-an-array)
 
 <p>在整数数组中，如果一个整数的出现频次和它的数值大小相等，我们就称这个整数为「幸运数」。</p>
 

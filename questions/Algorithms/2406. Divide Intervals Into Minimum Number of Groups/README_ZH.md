@@ -1,4 +1,4 @@
-### [将区间分为最少组数](https://leetcode-cn.com/problems/divide-intervals-into-minimum-number-of-groups)
+### [将区间分为最少组数](https://leetcode.cn/problems/divide-intervals-into-minimum-number-of-groups)
 
 <p>给你一个二维整数数组&nbsp;<code>intervals</code>&nbsp;，其中&nbsp;<code>intervals[i] = [left<sub>i</sub>, right<sub>i</sub>]</code>&nbsp;表示 <strong>闭</strong>&nbsp;区间&nbsp;<code>[left<sub>i</sub>, right<sub>i</sub>]</code>&nbsp;。</p>
 

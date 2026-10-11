@@ -1,4 +1,4 @@
-### [水位上升的泳池中游泳](https://leetcode-cn.com/problems/swim-in-rising-water)
+### [水位上升的泳池中游泳](https://leetcode.cn/problems/swim-in-rising-water)
 
 <p>在一个 <code>n x n</code>&nbsp;的整数矩阵&nbsp;<code>grid</code> 中，每一个方格的值 <code>grid[i][j]</code> 表示位置 <code>(i, j)</code> 的平台高度。</p>
 

@@ -1,2 +1,2 @@
-### [多线程网页爬虫](https://leetcode-cn.com/problems/web-crawler-multithreaded)
+### [多线程网络爬虫](https://leetcode.cn/problems/web-crawler-multithreaded)
 

@@ -1,4 +1,4 @@
-### [二叉搜索树中的中序后继](https://leetcode-cn.com/problems/P5rCT8)
+### [二叉搜索树中的中序后继](https://leetcode.cn/problems/P5rCT8)
 
 <p>给定一棵二叉搜索树和其中的一个节点 <code>p</code> ，找到该节点在树中的中序后继。如果节点没有中序后继，请返回 <code>null</code> 。</p>
 
@@ -38,4 +38,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 285&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/inorder-successor-in-bst/">https://leetcode-cn.com/problems/inorder-successor-in-bst/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 285&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/inorder-successor-in-bst/">https://leetcode.cn/problems/inorder-successor-in-bst/</a></p>

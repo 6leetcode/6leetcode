@@ -1,4 +1,4 @@
-### [最长优雅子数组](https://leetcode-cn.com/problems/longest-nice-subarray)
+### [最长优雅子数组](https://leetcode.cn/problems/longest-nice-subarray)
 
 <p>给你一个由 <strong>正</strong> 整数组成的数组 <code>nums</code> 。</p>
 

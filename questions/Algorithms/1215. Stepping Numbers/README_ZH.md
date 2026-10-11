@@ -1,2 +1,2 @@
-### [步进数](https://leetcode-cn.com/problems/stepping-numbers)
+### [步进数](https://leetcode.cn/problems/stepping-numbers)
 

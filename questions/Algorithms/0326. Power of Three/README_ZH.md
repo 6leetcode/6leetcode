@@ -1,4 +1,4 @@
-### [3 的幂](https://leetcode-cn.com/problems/power-of-three)
+### [3 的幂](https://leetcode.cn/problems/power-of-three)
 
 <p>给定一个整数，写一个函数来判断它是否是 3&nbsp;的幂次方。如果是，返回 <code>true</code> ；否则，返回 <code>false</code> 。</p>
 

@@ -1,4 +1,4 @@
-### [判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci)
+### [判定是否互为字符重排](https://leetcode.cn/problems/check-permutation-lcci)
 
 <p>给定两个由小写字母组成的字符串 <code>s1</code> 和 <code>s2</code>，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。</p>
 

@@ -1,4 +1,4 @@
-### [复数乘法](https://leetcode-cn.com/problems/complex-number-multiplication)
+### [复数乘法](https://leetcode.cn/problems/complex-number-multiplication)
 
 <p><a href="https://baike.baidu.com/item/%E5%A4%8D%E6%95%B0/254365?fr=aladdin" target="_blank">复数</a> 可以用字符串表示，遵循 <code>"<strong>实部</strong>+<strong>虚部</strong>i"</code> 的形式，并满足下述条件：</p>
 

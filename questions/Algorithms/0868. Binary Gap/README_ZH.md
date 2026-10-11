@@ -1,4 +1,4 @@
-### [二进制间距](https://leetcode-cn.com/problems/binary-gap)
+### [二进制间距](https://leetcode.cn/problems/binary-gap)
 
 <p>给定一个正整数 <code>n</code>，找到并返回 <code>n</code> 的二进制表示中两个 <strong>相邻</strong> 1 之间的<strong> 最长距离 </strong>。如果不存在两个相邻的 1，返回 <code>0</code> 。</p>
 

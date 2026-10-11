@@ -1,4 +1,4 @@
-### [顶端迭代器](https://leetcode-cn.com/problems/peeking-iterator)
+### [窥视迭代器](https://leetcode.cn/problems/peeking-iterator)
 
 <p>请你在设计一个迭代器，在集成现有迭代器拥有的&nbsp;<code>hasNext</code> 和 <code>next</code> 操作的基础上，还额外支持 <code>peek</code> 操作。</p>
 

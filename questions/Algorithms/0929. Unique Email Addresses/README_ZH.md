@@ -1,4 +1,4 @@
-### [独特的电子邮件地址](https://leetcode-cn.com/problems/unique-email-addresses)
+### [独特的电子邮件地址](https://leetcode.cn/problems/unique-email-addresses)
 
 <p>每个 <strong>有效电子邮件地址</strong> 都由一个 <strong>本地名</strong> 和一个 <strong>域名</strong> 组成，以 <code>'@'</code> 符号分隔。除小写字母之外，电子邮件地址还可以含有一个或多个&nbsp;<code>'.'</code> 或 <code>'+'</code> 。</p>
 
@@ -49,4 +49,6 @@
 	<li>每个 <code>emails[i]</code> 都包含有且仅有一个 <code>'@'</code> 字符</li>
 	<li>所有本地名和域名都不为空</li>
 	<li>本地名不会以 <code>'+'</code> 字符作为开头</li>
+	<li>域名以&nbsp;<code>".com"</code> 后缀结尾。</li>
+	<li>域名在&nbsp;<code>".com"</code> 后缀前至少包含一个字符</li>
 </ul>

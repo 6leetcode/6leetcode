@@ -1,4 +1,4 @@
-### [字符串交织](https://leetcode-cn.com/problems/IY6buf)
+### [字符串交织](https://leetcode.cn/problems/IY6buf)
 
 <p>给定三个字符串&nbsp;<code>s1</code>、<code>s2</code>、<code>s3</code>，请判断&nbsp;<code>s3</code>&nbsp;能不能由&nbsp;<code>s1</code>&nbsp;和&nbsp;<code>s2</code><em>&nbsp;</em><strong>交织（交错）</strong>&nbsp;组成。</p>
 
@@ -50,4 +50,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 97&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/interleaving-string/">https://leetcode-cn.com/problems/interleaving-string/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 97&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/interleaving-string/">https://leetcode.cn/problems/interleaving-string/</a></p>

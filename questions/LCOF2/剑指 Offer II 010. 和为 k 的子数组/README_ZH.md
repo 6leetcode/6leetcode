@@ -1,4 +1,4 @@
-### [和为 k 的子数组](https://leetcode-cn.com/problems/QTMn0o)
+### [和为 k 的子数组](https://leetcode.cn/problems/QTMn0o)
 
 <p>给定一个整数数组和一个整数&nbsp;<code>k</code><strong> ，</strong>请找到该数组中和为&nbsp;<code>k</code><strong>&nbsp;</strong>的连续子数组的个数。</p>
 
@@ -33,4 +33,4 @@
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 560&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/subarray-sum-equals-k/">https://leetcode-cn.com/problems/subarray-sum-equals-k/</a></p>
+<p>注意：本题与主站 560&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/subarray-sum-equals-k/">https://leetcode.cn/problems/subarray-sum-equals-k/</a></p>

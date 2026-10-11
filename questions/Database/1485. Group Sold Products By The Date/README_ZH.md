@@ -1,4 +1,4 @@
-### [按日期分组销售产品](https://leetcode-cn.com/problems/group-sold-products-by-the-date)
+### [按日期分组销售产品](https://leetcode.cn/problems/group-sold-products-by-the-date)
 
 <p>表&nbsp;<code>Activities</code>：</p>
 

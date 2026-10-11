@@ -1,2 +1,2 @@
-### [活跃用户](https://leetcode-cn.com/problems/active-users)
+### [活跃用户](https://leetcode.cn/problems/active-users)
 

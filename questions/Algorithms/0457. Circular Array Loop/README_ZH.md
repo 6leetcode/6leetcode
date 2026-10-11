@@ -1,10 +1,10 @@
-### [环形数组是否存在循环](https://leetcode-cn.com/problems/circular-array-loop)
+### [环形数组是否存在循环](https://leetcode.cn/problems/circular-array-loop)
 
 <p>存在一个不含 <code>0</code> 的<strong> 环形 </strong>数组&nbsp;<code>nums</code> ，每个 <code>nums[i]</code> 都表示位于下标 <code>i</code> 的角色应该向前或向后移动的下标个数：</p>
 
 <ul>
-	<li>如果 <code>nums[i]</code> 是正数，<strong>向前</strong>（下标递增方向）移动 <code>|nums[i]|</code> 步</li>
-	<li>如果&nbsp;<code>nums[i]</code> 是负数，<strong>向后</strong>（下标递减方向）移动 <code>|nums[i]|</code> 步</li>
+	<li>如果 <code>nums[i]</code> 是正数，<strong>向前</strong>（下标递增方向）移动 <code>nums[i]</code>&nbsp;步</li>
+	<li>如果&nbsp;<code>nums[i]</code> 是负数，<strong>向后</strong>（下标递减方向）移动 <code>abs(nums[i])</code>&nbsp;步</li>
 </ul>
 
 <p>因为数组是 <strong>环形</strong> 的，所以可以假设从最后一个元素向前移动一步会到达第一个元素，而第一个元素向后移动一步会到达最后一个元素。</p>
@@ -21,29 +21,33 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
-
+<p><strong class="example">示例 1：</strong></p>
+<img alt="" src="https://pic.leetcode.cn/1723688159-qYjpWT-image.png" style="width: 402px; height: 289px;" />
 <pre>
 <strong>输入：</strong>nums = [2,-1,1,2,2]
 <strong>输出：</strong>true
-<strong>解释：</strong>存在循环，按下标 0 -&gt; 2 -&gt; 3 -&gt; 0 。循环长度为 3 。
+<strong>解释：</strong>图片展示了节点间如何连接。白色节点向前跳跃，而红色节点向后跳跃。
+我们可以看到存在循环，按下标 0 -&gt; 2 -&gt; 3 -&gt; 0 --&gt; ...，并且其中的所有节点都是白色（以相同方向跳跃）。
 </pre>
 
-<p><strong>示例 2：</strong></p>
-
+<p><strong class="example">示例 2：</strong></p>
+<img alt="" src="https://pic.leetcode.cn/1723688183-lRSkjp-image.png" style="width: 402px; height: 390px;" />
 <pre>
-<strong>输入：</strong>nums = [-1,2]
+<strong>输入：</strong>nums = [-1,-2,-3,-4,-5,6]
 <strong>输出：</strong>false
-<strong>解释：</strong>按下标 1 -&gt; 1 -&gt; 1 ... 的运动无法构成循环，因为循环的长度为 1 。根据定义，循环的长度必须大于 1 。
+<strong>解释：</strong>图片展示了节点间如何连接。白色节点向前跳跃，而红色节点向后跳跃。
+唯一的循环长度为 1，所以返回 false。
 </pre>
 
-<p><strong>示例 3:</strong></p>
-
+<p><strong class="example">示例 3：</strong></p>
+<img alt="" src="https://pic.leetcode.cn/1723688199-nhaMuF-image.png" style="width: 497px; height: 242px;" />
 <pre>
-<strong>输入：</strong>nums = [-2,1,-1,-2,-2]
-<strong>输出：</strong>false
-<strong>解释：</strong>按下标 1 -&gt; 2 -&gt; 1 -&gt; ... 的运动无法构成循环，因为 nums[1] 是正数，而 nums[2] 是负数。
-所有 nums[seq[j]] 应当不是全正就是全负。</pre>
+<strong>输入：</strong>nums = [1,-1,5,1,4]
+<strong>输出：</strong>true
+<strong>解释：</strong>图片展示了节点间如何连接。白色节点向前跳跃，而红色节点向后跳跃。
+我们可以看到存在循环，按下标 0 --&gt; 1 --&gt; 0 --&gt; ...，当它的大小大于 1 时，它有一个向前跳的节点和一个向后跳的节点，所以 <strong>它不是一个循环</strong>。
+我们可以看到存在循环，按下标 3 --&gt; 4 --&gt; 3 --&gt; ...，并且其中的所有节点都是白色（以相同方向跳跃）。
+</pre>
 
 <p>&nbsp;</p>
 

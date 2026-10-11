@@ -1,4 +1,4 @@
-### [查询差绝对值的最小值](https://leetcode-cn.com/problems/minimum-absolute-difference-queries)
+### [查询差绝对值的最小值](https://leetcode.cn/problems/minimum-absolute-difference-queries)
 
 <p>一个数组 <code>a</code> 的 <strong>差绝对值的最小值</strong> 定义为：<code>0 <= i < j < a.length</code> 且 <code>a[i] != a[j]</code> 的<strong> </strong><code><span style="">|a[i] - a[j]|</span></code> 的 <strong>最小值</strong>。如果 <code>a</code> 中所有元素都 <strong>相同</strong> ，那么差绝对值的最小值为 <code>-1</code> 。</p>
 

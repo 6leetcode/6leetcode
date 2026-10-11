@@ -1,4 +1,4 @@
-### [按位与为零的三元组](https://leetcode-cn.com/problems/triples-with-bitwise-and-equal-to-zero)
+### [按位与为零的三元组](https://leetcode.cn/problems/triples-with-bitwise-and-equal-to-zero)
 
 <p>给你一个整数数组 <code>nums</code> ，返回其中 <strong>按位与三元组</strong> 的数目。</p>
 

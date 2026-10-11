@@ -1,4 +1,4 @@
-### [最接近原点的 K 个点](https://leetcode-cn.com/problems/k-closest-points-to-origin)
+### [最接近原点的 K 个点](https://leetcode.cn/problems/k-closest-points-to-origin)
 
 <p>给定一个数组 <code>points</code>&nbsp;，其中&nbsp;<code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code>&nbsp;表示 <strong>X-Y</strong> 平面上的一个点，并且是一个整数 <code>k</code> ，返回离原点 <code>(0,0)</code> 最近的 <code>k</code> 个点。</p>
 
@@ -8,7 +8,7 @@
 
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <p><img src="https://assets.leetcode.com/uploads/2021/03/03/closestplane1.jpg" style="height: 400px; width: 400px;" /></p>
 
@@ -22,7 +22,7 @@
 我们只需要距离原点最近的 K = 1 个点，所以答案就是 [[-2,2]]。
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>points = [[3,3],[5,-1],[-2,4]], k = 2

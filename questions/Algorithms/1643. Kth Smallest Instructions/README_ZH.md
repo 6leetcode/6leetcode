@@ -1,4 +1,4 @@
-### [第 K 条最小指令](https://leetcode-cn.com/problems/kth-smallest-instructions)
+### [第 K 条最小指令](https://leetcode.cn/problems/kth-smallest-instructions)
 
 <p>Bob 站在单元格 <code>(0, 0)</code> ，想要前往目的地 <code>destination</code> ：<code>(row, column)</code> 。他只能向 <strong>右</strong> 或向 <strong>下</strong> 走。你可以为 Bob 提供导航 <strong>指令</strong> 来帮助他到达目的地 <code>destination</code> 。</p>
 
@@ -22,7 +22,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/11/01/ex1.png" style="width: 300px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/11/01/ex1.png" style="width: 300px;" /></p>
 
 <pre>
 <strong>输入：</strong>destination = [2,3], k = 1
@@ -33,7 +33,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/11/01/ex2.png" style="width: 300px; height: 229px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/11/01/ex2.png" style="width: 300px; height: 229px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>destination = [2,3], k = 2
@@ -42,7 +42,7 @@
 
 <p><strong>示例 3：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/11/01/ex3.png" style="width: 300px; height: 229px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/11/01/ex3.png" style="width: 300px; height: 229px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>destination = [2,3], k = 3

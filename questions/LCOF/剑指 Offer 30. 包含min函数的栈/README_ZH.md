@@ -1,4 +1,4 @@
-### [包含min函数的栈](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof)
+### [包含min函数的栈](https://leetcode.cn/problems/bao-han-minhan-shu-de-zhan-lcof)
 
 <p>定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。</p>
 
@@ -26,4 +26,4 @@ minStack.min();   --&gt; 返回 -2.
 
 <p>&nbsp;</p>
 
-<p>注意：本题与主站 155 题相同：<a href="https://leetcode-cn.com/problems/min-stack/">https://leetcode-cn.com/problems/min-stack/</a></p>
+<p>注意：本题与主站 155 题相同：<a href="https://leetcode.cn/problems/min-stack/">https://leetcode.cn/problems/min-stack/</a></p>

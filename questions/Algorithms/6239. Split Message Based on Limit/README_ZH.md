@@ -1,4 +1,4 @@
-### [根据限制分割消息](https://leetcode-cn.com/problems/split-message-based-on-limit)
+### [根据限制分割消息](https://leetcode.cn/problems/split-message-based-on-limit)
 
 <p>给你一个字符串&nbsp;<code>message</code>&nbsp;和一个正整数&nbsp;<code>limit</code>&nbsp;。</p>
 

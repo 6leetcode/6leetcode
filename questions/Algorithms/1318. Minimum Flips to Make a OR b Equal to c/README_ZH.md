@@ -1,4 +1,4 @@
-### [或运算的最小翻转次数](https://leetcode-cn.com/problems/minimum-flips-to-make-a-or-b-equal-to-c)
+### [或运算的最小翻转次数](https://leetcode.cn/problems/minimum-flips-to-make-a-or-b-equal-to-c)
 
 <p>给你三个正整数&nbsp;<code>a</code>、<code>b</code> 和 <code>c</code>。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/01/11/sample_3_1676.png" style="height: 87px; width: 260px;"></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/01/11/sample_3_1676.png" style="height: 87px; width: 260px;"></p>
 
 <pre><strong>输入：</strong>a = 2, b = 6, c = 5
 <strong>输出：</strong>3

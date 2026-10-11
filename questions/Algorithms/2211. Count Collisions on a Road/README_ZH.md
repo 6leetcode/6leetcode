@@ -1,4 +1,4 @@
-### [统计道路上的碰撞次数](https://leetcode-cn.com/problems/count-collisions-on-a-road)
+### [统计道路上的碰撞次数](https://leetcode.cn/problems/count-collisions-on-a-road)
 
 <p>在一条无限长的公路上有 <code>n</code> 辆汽车正在行驶。汽车按从左到右的顺序按从 <code>0</code> 到 <code>n - 1</code> 编号，每辆车都在一个 <strong>独特的</strong> 位置。</p>
 

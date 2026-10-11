@@ -1,4 +1,4 @@
-### [摧毁一系列目标](https://leetcode-cn.com/problems/destroy-sequential-targets)
+### [摧毁一系列目标](https://leetcode.cn/problems/destroy-sequential-targets)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始的数组&nbsp;<code>nums</code>&nbsp;，它包含若干正整数，表示数轴上你需要摧毁的目标所在的位置。同时给你一个整数&nbsp;<code>space</code>&nbsp;。</p>
 

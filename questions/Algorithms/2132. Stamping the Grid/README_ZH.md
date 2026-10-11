@@ -1,4 +1,4 @@
-### [用邮票贴满网格图](https://leetcode-cn.com/problems/stamping-the-grid)
+### [用邮票贴满网格图](https://leetcode.cn/problems/stamping-the-grid)
 
 <p>给你一个&nbsp;<code>m x n</code>&nbsp;的二进制矩阵&nbsp;<code>grid</code>&nbsp;，每个格子要么为&nbsp;<code>0</code>&nbsp;（空）要么为&nbsp;<code>1</code>&nbsp;（被占据）。</p>
 

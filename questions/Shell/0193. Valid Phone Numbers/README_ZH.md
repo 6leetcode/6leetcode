@@ -1,4 +1,4 @@
-### [有效电话号码](https://leetcode-cn.com/problems/valid-phone-numbers)
+### [有效电话号码](https://leetcode.cn/problems/valid-phone-numbers)
 
 <p>给定一个包含电话号码列表（一行一个电话号码）的文本文件 <code>file.txt</code>，写一个单行 bash 脚本输出所有有效的电话号码。</p>
 

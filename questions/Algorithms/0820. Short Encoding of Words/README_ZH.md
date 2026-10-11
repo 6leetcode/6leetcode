@@ -1,4 +1,4 @@
-### [单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words)
+### [单词的压缩编码](https://leetcode.cn/problems/short-encoding-of-words)
 
 <p>单词数组 <code>words</code> 的 <strong>有效编码</strong> 由任意助记字符串 <code>s</code> 和下标数组 <code>indices</code> 组成，且满足：</p>
 

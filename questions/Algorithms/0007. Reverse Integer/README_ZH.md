@@ -1,4 +1,4 @@
-### [整数反转](https://leetcode-cn.com/problems/reverse-integer)
+### [整数反转](https://leetcode.cn/problems/reverse-integer)
 
 <p>给你一个 32 位的有符号整数 <code>x</code> ，返回将 <code>x</code> 中的数字部分反转后的结果。</p>
 

@@ -1,2 +1,2 @@
-### [平面上的最近距离](https://leetcode-cn.com/problems/shortest-distance-in-a-plane)
+### [平面上的最近距离](https://leetcode.cn/problems/shortest-distance-in-a-plane)
 

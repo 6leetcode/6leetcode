@@ -1,4 +1,4 @@
-### [有序数组中差绝对值之和](https://leetcode-cn.com/problems/sum-of-absolute-differences-in-a-sorted-array)
+### [有序数组中差绝对值之和](https://leetcode.cn/problems/sum-of-absolute-differences-in-a-sorted-array)
 
 <p>给你一个 <strong>非递减 </strong>有序整数数组 <code>nums</code> 。</p>
 

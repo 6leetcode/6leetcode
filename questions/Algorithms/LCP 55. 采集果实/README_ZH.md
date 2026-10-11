@@ -1,4 +1,4 @@
-### [采集果实](https://leetcode-cn.com/problems/PTXy4P)
+### [采集果实](https://leetcode.cn/problems/PTXy4P)
 
 欢迎各位勇者来到力扣新手村，本次训练内容为「采集果实」。
 

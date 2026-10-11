@@ -1,4 +1,4 @@
-### [优美的排列](https://leetcode-cn.com/problems/beautiful-arrangement)
+### [优美的排列](https://leetcode.cn/problems/beautiful-arrangement)
 
 <p>假设有从 1 到 n 的 n 个整数。用这些整数构造一个数组 <code>perm</code>（<strong>下标从 1 开始</strong>），只要满足下述条件 <strong>之一</strong> ，该数组就是一个 <strong>优美的排列</strong> ：</p>
 

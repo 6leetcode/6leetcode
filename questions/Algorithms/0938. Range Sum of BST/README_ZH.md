@@ -1,4 +1,4 @@
-### [二叉搜索树的范围和](https://leetcode-cn.com/problems/range-sum-of-bst)
+### [二叉搜索树的范围和](https://leetcode.cn/problems/range-sum-of-bst)
 
 <p>给定二叉搜索树的根结点 <code>root</code>，返回值位于范围 <em><code>[low, high]</code></em> 之间的所有结点的值的和。</p>
 

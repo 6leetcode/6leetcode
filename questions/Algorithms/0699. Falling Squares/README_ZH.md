@@ -1,4 +1,4 @@
-### [掉落的方块](https://leetcode-cn.com/problems/falling-squares)
+### [掉落的方块](https://leetcode.cn/problems/falling-squares)
 
 <p>在二维平面上的 x 轴上，放置着一些方块。</p>
 

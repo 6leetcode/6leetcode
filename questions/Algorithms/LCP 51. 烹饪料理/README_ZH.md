@@ -1,4 +1,4 @@
-### [烹饪料理](https://leetcode-cn.com/problems/UEcfPD)
+### [烹饪料理](https://leetcode.cn/problems/UEcfPD)
 
 欢迎各位勇者来到力扣城，城内设有烹饪锅供勇者制作料理，为自己恢复状态。
 

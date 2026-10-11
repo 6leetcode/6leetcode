@@ -1,4 +1,4 @@
-### [最小平均差](https://leetcode-cn.com/problems/minimum-average-difference)
+### [最小平均差](https://leetcode.cn/problems/minimum-average-difference)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始长度为 <code>n</code>&nbsp;的整数数组&nbsp;<code>nums</code>&nbsp;。</p>
 

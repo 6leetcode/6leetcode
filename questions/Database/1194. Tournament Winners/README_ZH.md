@@ -1,2 +1,2 @@
-### [锦标赛优胜者](https://leetcode-cn.com/problems/tournament-winners)
+### [锦标赛优胜者](https://leetcode.cn/problems/tournament-winners)
 

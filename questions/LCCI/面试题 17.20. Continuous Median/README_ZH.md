@@ -1,4 +1,4 @@
-### [连续中值](https://leetcode-cn.com/problems/continuous-median-lcci)
+### [连续中值](https://leetcode.cn/problems/continuous-median-lcci)
 
 <p>随机产生数字并传递给一个方法。你能否完成这个方法，在每次产生新值时，寻找当前所有值的中间值（中位数）并保存。</p>
 

@@ -1,4 +1,4 @@
-### [带因子的二叉树](https://leetcode-cn.com/problems/binary-trees-with-factors)
+### [带因子的二叉树](https://leetcode.cn/problems/binary-trees-with-factors)
 
 <p>给出一个含有不重复整数元素的数组 <code>arr</code> ，每个整数 <code>arr[i]</code> 均大于 1。</p>
 

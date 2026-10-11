@@ -1,4 +1,4 @@
-### [最接近目标值的子序列和](https://leetcode-cn.com/problems/closest-subsequence-sum)
+### [最接近目标值的子序列和](https://leetcode.cn/problems/closest-subsequence-sum)
 
 <p>给你一个整数数组 <code>nums</code> 和一个目标值 <code>goal</code> 。</p>
 

@@ -1,2 +1,2 @@
-### [力扣排行榜](https://leetcode-cn.com/problems/design-a-leaderboard)
+### [力扣排行榜](https://leetcode.cn/problems/design-a-leaderboard)
 

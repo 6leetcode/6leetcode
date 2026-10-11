@@ -1,4 +1,4 @@
-### [所有子集](https://leetcode-cn.com/problems/TVdhkn)
+### [所有子集](https://leetcode.cn/problems/TVdhkn)
 
 <p>给定一个整数数组&nbsp;<code>nums</code> ，数组中的元素 <strong>互不相同</strong> 。返回该数组所有可能的子集（幂集）。</p>
 
@@ -32,4 +32,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 78&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/subsets/">https://leetcode-cn.com/problems/subsets/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 78&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/subsets/">https://leetcode.cn/problems/subsets/</a></p>

@@ -1,4 +1,4 @@
-### [判断能否形成等差数列](https://leetcode-cn.com/problems/can-make-arithmetic-progression-from-sequence)
+### [判断能否形成等差数列](https://leetcode.cn/problems/can-make-arithmetic-progression-from-sequence)
 
 <p>给你一个数字数组 <code>arr</code> 。</p>
 

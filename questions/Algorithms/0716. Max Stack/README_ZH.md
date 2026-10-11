@@ -1,2 +1,2 @@
-### [最大栈](https://leetcode-cn.com/problems/max-stack)
+### [最大栈](https://leetcode.cn/problems/max-stack)
 

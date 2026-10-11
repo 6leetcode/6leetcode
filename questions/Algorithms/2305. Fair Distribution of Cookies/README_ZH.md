@@ -1,4 +1,4 @@
-### [公平分发饼干](https://leetcode-cn.com/problems/fair-distribution-of-cookies)
+### [公平分发饼干](https://leetcode.cn/problems/fair-distribution-of-cookies)
 
 <p>给你一个整数数组 <code>cookies</code> ，其中 <code>cookies[i]</code> 表示在第 <code>i</code> 个零食包中的饼干数量。另给你一个整数 <code>k</code> 表示等待分发零食包的孩子数量，<strong>所有</strong> 零食包都需要分发。在同一个零食包中的所有饼干都必须分发给同一个孩子，不能分开。</p>
 

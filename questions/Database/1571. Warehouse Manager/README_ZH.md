@@ -1,2 +1,2 @@
-### [仓库经理](https://leetcode-cn.com/problems/warehouse-manager)
+### [仓库经理](https://leetcode.cn/problems/warehouse-manager)
 

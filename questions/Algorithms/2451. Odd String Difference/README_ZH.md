@@ -1,4 +1,4 @@
-### [差值数组不同的字符串](https://leetcode-cn.com/problems/odd-string-difference)
+### [差值数组不同的字符串](https://leetcode.cn/problems/odd-string-difference)
 
 <p>给你一个字符串数组 <code>words</code>&nbsp;，每一个字符串长度都相同，令所有字符串的长度都为 <code>n</code>&nbsp;。</p>
 

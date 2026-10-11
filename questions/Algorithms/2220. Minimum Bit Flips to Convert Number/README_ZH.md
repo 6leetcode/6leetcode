@@ -1,4 +1,4 @@
-### [转换数字的最少位翻转次数](https://leetcode-cn.com/problems/minimum-bit-flips-to-convert-number)
+### [转换数字的最少位翻转次数](https://leetcode.cn/problems/minimum-bit-flips-to-convert-number)
 
 <p>一次 <strong>位翻转</strong>&nbsp;定义为将数字&nbsp;<code>x</code>&nbsp;二进制中的一个位进行 <strong>翻转</strong>&nbsp;操作，即将&nbsp;<code>0</code>&nbsp;变成&nbsp;<code>1</code>&nbsp;，或者将&nbsp;<code>1</code>&nbsp;变成&nbsp;<code>0</code>&nbsp;。</p>
 
@@ -40,3 +40,7 @@
 <ul>
 	<li><code>0 &lt;= start, goal &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+<p>&nbsp;</p>
+
+<p><strong>注意：</strong>本题与&nbsp;<a href="https://leetcode.cn/problems/hamming-distance/">461. 汉明距离</a>&nbsp;相同。</p>

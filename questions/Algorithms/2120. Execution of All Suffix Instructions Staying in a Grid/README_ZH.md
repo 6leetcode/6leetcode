@@ -1,4 +1,4 @@
-### [执行所有后缀指令](https://leetcode-cn.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid)
+### [执行所有后缀指令](https://leetcode.cn/problems/execution-of-all-suffix-instructions-staying-in-a-grid)
 
 <p>现有一个 <code>n x n</code> 大小的网格，左上角单元格坐标 <code>(0, 0)</code> ，右下角单元格坐标 <code>(n - 1, n - 1)</code> 。给你整数 <code>n</code> 和一个整数数组 <code>startPos</code> ，其中 <code>startPos = [start<sub>row</sub>, start<sub>col</sub>]</code> 表示机器人最开始在坐标为 <code>(start<sub>row</sub>, start<sub>col</sub>)</code> 的单元格上。</p>
 

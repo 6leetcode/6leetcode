@@ -1,0 +1,68 @@
+### [最大化网格图中正方形空洞的面积](https://leetcode.cn/problems/maximize-area-of-square-hole-in-grid)
+
+<p>给你两个整数 <code>n</code> 和 <code>m</code>，以及两个整数数组 <code>hBars</code> 和 <code>vBars</code>。网格由 <code>n + 2</code> 条水平线和 <code>m + 2</code> 条竖直线组成，形成 1x1 的单元格。网格中的线条从 <code>1</code> 开始编号。</p>
+
+<p>你可以从 <code>hBars</code> 中&nbsp;<strong>删除</strong> 一些水平线条，并从 <code>vBars</code> 中删除一些竖直线条。注意，其他线条是固定的，无法删除。</p>
+
+<p>返回一个整数表示移除一些线条（可以不移除任何线条）后，网格中<strong>&nbsp;正方形空洞的最大面积&nbsp;</strong>。</p>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<p><img alt="" src="https://assets.leetcode.com/uploads/2023/11/05/screenshot-from-2023-11-05-22-40-25.png" style="width: 411px; height: 220px;" /></p>
+
+<div class="example-block">
+<p><strong>输入: </strong><span class="example-io">n = 2, m = 1, hBars = [2,3], vBars = [2]</span></p>
+
+<p><strong>输出: </strong><span class="example-io">4</span></p>
+
+<p><strong>解释:</strong></p>
+
+<p>左侧图片展示了网格的初始状态。水平线是 <code>[1,2,3,4]</code>，竖直线是 <code>[1,2,3]</code>。</p>
+
+<p>构造最大正方形空洞的一种方法是移除水平线 2 和竖直线 2。</p>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<p><img alt="" src="https://assets.leetcode.com/uploads/2023/11/04/screenshot-from-2023-11-04-17-01-02.png" style="width: 368px; height: 145px;" /></p>
+
+<div class="example-block">
+<p><strong>输入: </strong><span class="example-io">n = 1, m = 1, hBars = [2], vBars = [2]</span></p>
+
+<p><strong>输出: </strong><span class="example-io">4</span></p>
+
+<p><strong>解释:</strong></p>
+
+<p>移除水平线 2 和竖直线 2，可以得到最大正方形空洞。</p>
+</div>
+
+<p><strong class="example">示例 3：</strong></p>
+
+<p><img alt="" src="https://assets.leetcode.com/uploads/2024/03/12/unsaved-image-2.png" style="width: 648px; height: 218px;" /></p>
+
+<div class="example-block">
+<p><strong>输入: </strong><span class="example-io">n = 2, m = 3, hBars = [2,3], vBars = [2,4]</span></p>
+
+<p><strong>输出: </strong><span class="example-io">4</span></p>
+
+<p><strong>解释:</strong></p>
+
+<p>构造最大正方形空洞的一种方法是移除水平线 3 和竖直线 4。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 &lt;= n &lt;= 10<sup>9</sup></code></li>
+	<li><code>1 &lt;= m &lt;= 10<sup>9</sup></code></li>
+	<li><code>1 &lt;= hBars.length &lt;= 100</code></li>
+	<li><code>2 &lt;= hBars[i] &lt;= n + 1</code></li>
+	<li><code>1 &lt;= vBars.length &lt;= 100</code></li>
+	<li><code>2 &lt;= vBars[i] &lt;= m + 1</code></li>
+	<li><code>hBars</code> 中所有值互不相同。</li>
+	<li><code>vBars</code> 中所有值互不相同。</li>
+</ul>

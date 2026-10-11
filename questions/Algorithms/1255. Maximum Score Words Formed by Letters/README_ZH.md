@@ -1,4 +1,4 @@
-### [得分最高的单词集合](https://leetcode-cn.com/problems/maximum-score-words-formed-by-letters)
+### [得分最高的单词集合](https://leetcode.cn/problems/maximum-score-words-formed-by-letters)
 
 <p>你将会得到一份单词表&nbsp;<code>words</code>，一个字母表&nbsp;<code>letters</code>&nbsp;（可能会有重复字母），以及每个字母对应的得分情况表&nbsp;<code>score</code>。</p>
 

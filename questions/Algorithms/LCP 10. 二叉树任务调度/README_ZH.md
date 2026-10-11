@@ -1,4 +1,4 @@
-### [二叉树任务调度](https://leetcode-cn.com/problems/er-cha-shu-ren-wu-diao-du)
+### [二叉树任务调度](https://leetcode.cn/problems/er-cha-shu-ren-wu-diao-du)
 
 <p>任务调度优化是计算机性能优化的关键任务之一。在任务众多时，不同的调度策略可能会得到不同的总体执行时间，因此寻求一个最优的调度方案是非常有必要的。</p>
 
@@ -11,7 +11,7 @@
 <p><strong>示例 1：</strong></p>
 
 <blockquote>
-<p><img alt="image.png" src="https://pic.leetcode-cn.com/3522fbf8ce4ebb20b79019124eb9870109fdfe97fe9da99f6c20c07ceb1c60b3-image.png" /></p>
+<p><img alt="image.png" src="https://pic.leetcode.cn/3522fbf8ce4ebb20b79019124eb9870109fdfe97fe9da99f6c20c07ceb1c60b3-image.png" /></p>
 
 <p>输入：root = [47, 74, 31]</p>
 
@@ -23,7 +23,7 @@
 <p><strong>示例 2：</strong></p>
 
 <blockquote>
-<p><img alt="image.png" src="https://pic.leetcode-cn.com/13accf172ee4a660d241e25901595d55b759380b090890a17e6e7bd51a143e3f-image.png" /></p>
+<p><img alt="image.png" src="https://pic.leetcode.cn/13accf172ee4a660d241e25901595d55b759380b090890a17e6e7bd51a143e3f-image.png" /></p>
 
 <p>输入：root = [15, 21, null, 24, null, 27, 26]</p>
 
@@ -33,7 +33,7 @@
 <p><strong>示例 3：</strong></p>
 
 <blockquote>
-<p><img alt="image.png" src="https://pic.leetcode-cn.com/bef743a12591aafb9047dd95d335b8083dfa66e8fdedc63f50fd406b4a9d163a-image.png" /></p>
+<p><img alt="image.png" src="https://pic.leetcode.cn/bef743a12591aafb9047dd95d335b8083dfa66e8fdedc63f50fd406b4a9d163a-image.png" /></p>
 
 <p>输入：root = [1,3,2,null,null,4,4]</p>
 

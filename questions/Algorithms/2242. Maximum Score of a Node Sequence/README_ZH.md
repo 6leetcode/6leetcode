@@ -1,4 +1,4 @@
-### [节点序列的最大得分](https://leetcode-cn.com/problems/maximum-score-of-a-node-sequence)
+### [节点序列的最大得分](https://leetcode.cn/problems/maximum-score-of-a-node-sequence)
 
 <p>给你一个&nbsp;<code>n</code>&nbsp;个节点的&nbsp;<strong>无向图</strong>&nbsp;，节点编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;。</p>
 

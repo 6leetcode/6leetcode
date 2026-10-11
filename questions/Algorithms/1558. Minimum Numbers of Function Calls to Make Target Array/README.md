@@ -2,7 +2,7 @@
 
 <p>You are given an integer array <code>nums</code>. You have an integer array <code>arr</code> of the same length with all values set to <code>0</code> initially. You also have the following <code>modify</code> function:</p>
 <img alt="" src="https://assets.leetcode.com/uploads/2020/07/10/sample_2_1887.png" style="width: 573px; height: 294px;" />
-<p>You want to use the modify function to covert <code>arr</code> to <code>nums</code> using the minimum number of calls.</p>
+<p>You want to use the modify function to convert <code>arr</code> to <code>nums</code> using the minimum number of calls.</p>
 
 <p>Return <em>the minimum number of function calls to make </em><code>nums</code><em> from </em><code>arr</code>.</p>
 

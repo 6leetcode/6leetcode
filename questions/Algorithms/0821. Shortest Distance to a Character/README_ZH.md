@@ -1,4 +1,4 @@
-### [字符的最短距离](https://leetcode-cn.com/problems/shortest-distance-to-a-character)
+### [字符的最短距离](https://leetcode.cn/problems/shortest-distance-to-a-character)
 
 <p>给你一个字符串 <code>s</code> 和一个字符 <code>c</code> ，且 <code>c</code> 是 <code>s</code> 中出现过的字符。</p>
 

@@ -1,4 +1,4 @@
-### [数组中的 k-diff 数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array)
+### [数组中的 k-diff 数对](https://leetcode.cn/problems/k-diff-pairs-in-an-array)
 
 <p>给你一个整数数组&nbsp;<code>nums</code> 和一个整数&nbsp;<code>k</code>，请你在数组中找出<strong> 不同的&nbsp;</strong>k-diff 数对，并返回不同的 <strong>k-diff 数对</strong> 的数目。</p>
 
@@ -7,7 +7,7 @@
 <ul>
 	<li><code>0 &lt;= i, j &lt; nums.length</code></li>
 	<li><code>i != j</code></li>
-	<li><code>nums[i] - nums[j] == k</code></li>
+	<li><code>|nums[i] - nums[j]| == k</code></li>
 </ul>
 
 <p><strong>注意</strong>，<code>|val|</code> 表示 <code>val</code> 的绝对值。</p>

@@ -1,4 +1,4 @@
-### [判断一个数的数字计数是否等于数位的值](https://leetcode-cn.com/problems/check-if-number-has-equal-digit-count-and-digit-value)
+### [判断一个数的数字计数是否等于数位的值](https://leetcode.cn/problems/check-if-number-has-equal-digit-count-and-digit-value)
 
 <p>给你一个下标从 <strong>0</strong>&nbsp;开始长度为 <code>n</code>&nbsp;的字符串&nbsp;<code>num</code>&nbsp;，它只包含数字。</p>
 
@@ -8,7 +8,8 @@
 
 <p><strong>示例 1：</strong></p>
 
-<pre><b>输入：</b>num = "1210"
+<pre>
+<b>输入：</b>num = "1210"
 <b>输出：</b>true
 <strong>解释：</strong>
 num[0] = '1' 。数字 0 在 num 中出现了一次。
@@ -20,10 +21,11 @@ num[3] = '0' 。数字 3 在 num 中出现了零次。
 
 <p><strong>示例 2：</strong></p>
 
-<pre><b>输入：</b>num = "030"
+<pre>
+<b>输入：</b>num = "030"
 <b>输出：</b>false
 <strong>解释：</strong>
-num[0] = '0' 。数字 0 应该出现 0 次，但是在 num 中出现了一次。
+num[0] = '0' 。数字 0 应该出现 0 次，但是在 num 中出现了两次。
 num[1] = '3' 。数字 1 应该出现 3 次，但是在 num 中出现了零次。
 num[2] = '0' 。数字 2 在 num 中出现了 0 次。
 下标 0 和 1 都违反了题目要求，所以返回 false 。

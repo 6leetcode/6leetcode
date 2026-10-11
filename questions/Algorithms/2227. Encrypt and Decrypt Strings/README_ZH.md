@@ -1,4 +1,4 @@
-### [加密解密字符串](https://leetcode-cn.com/problems/encrypt-and-decrypt-strings)
+### [加密解密字符串](https://leetcode.cn/problems/encrypt-and-decrypt-strings)
 
 <p>给你一个字符数组 <code>keys</code> ，由若干 <strong>互不相同</strong> 的字符组成。还有一个字符串数组 <code>values</code> ，内含若干长度为 2 的字符串。另给你一个字符串数组 <code>dictionary</code> ，包含解密后所有允许的原字符串。请你设计并实现一个支持加密及解密下标从 <strong>0</strong> 开始字符串的数据结构。</p>
 
@@ -8,6 +8,8 @@
 	<li>对字符串中的每个字符 <code>c</code> ，先从 <code>keys</code> 中找出满足 <code>keys[i] == c</code> 的下标 <code>i</code> 。</li>
 	<li>在字符串中，用&nbsp;<code>values[i]</code> 替换字符 <code>c</code> 。</li>
 </ol>
+
+<p>请注意，如果&nbsp;<code>keys</code> 中不存在字符串中的字符，则无法执行加密过程，返回空字符串 <code>""</code>。</p>
 
 <p>字符串 <strong>解密</strong> 按下述步骤进行：</p>
 

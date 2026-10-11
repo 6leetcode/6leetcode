@@ -1,2 +1,2 @@
-### [找到遗失的ID](https://leetcode-cn.com/problems/find-the-missing-ids)
+### [找到遗失的ID](https://leetcode.cn/problems/find-the-missing-ids)
 

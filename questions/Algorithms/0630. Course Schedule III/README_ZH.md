@@ -1,4 +1,4 @@
-### [课程表 III](https://leetcode-cn.com/problems/course-schedule-iii)
+### [课程表 III](https://leetcode.cn/problems/course-schedule-iii)
 
 <p>这里有 <code>n</code> 门不同的在线课程，按从 <code>1</code> 到 <code>n</code>&nbsp;编号。给你一个数组 <code>courses</code> ，其中 <code>courses[i] = [duration<sub>i</sub>, lastDay<sub>i</sub>]</code> 表示第 <code>i</code> 门课将会 <strong>持续</strong> 上 <code>duration<sub>i</sub></code> 天课，并且必须在不晚于 <code>lastDay<sub>i</sub></code> 的时候完成。</p>
 

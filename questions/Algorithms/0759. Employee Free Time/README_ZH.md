@@ -1,2 +1,2 @@
-### [员工空闲时间](https://leetcode-cn.com/problems/employee-free-time)
+### [员工空闲时间](https://leetcode.cn/problems/employee-free-time)
 

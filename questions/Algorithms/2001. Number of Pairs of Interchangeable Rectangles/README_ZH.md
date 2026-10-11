@@ -1,4 +1,4 @@
-### [可互换矩形的组数](https://leetcode-cn.com/problems/number-of-pairs-of-interchangeable-rectangles)
+### [可互换矩形的组数](https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles)
 
 <p>用一个下标从 <strong>0</strong> 开始的二维整数数组&nbsp;<code>rectangles</code> 来表示 <code>n</code> 个矩形，其中 <code>rectangles[i] = [width<sub>i</sub>, height<sub>i</sub>]</code> 表示第 <code>i</code> 个矩形的宽度和高度。</p>
 

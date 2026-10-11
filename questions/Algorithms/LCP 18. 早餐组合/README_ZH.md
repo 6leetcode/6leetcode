@@ -1,4 +1,4 @@
-### [早餐组合](https://leetcode-cn.com/problems/2vYnGI)
+### [早餐组合](https://leetcode.cn/problems/2vYnGI)
 
 小扣在秋日市集选择了一家早餐摊位，一维整型数组 `staple` 中记录了每种主食的价格，一维整型数组 `drinks` 中记录了每种饮料的价格。小扣的计划选择一份主食和一款饮料，且花费不超过 `x` 元。请返回小扣共有多少种购买方案。
 

@@ -1,4 +1,4 @@
-### [组合](https://leetcode-cn.com/problems/combinations)
+### [组合](https://leetcode.cn/problems/combinations)
 
 <p>给定两个整数 <code>n</code> 和 <code>k</code>，返回范围 <code>[1, n]</code> 中所有可能的 <code>k</code> 个数的组合。</p>
 

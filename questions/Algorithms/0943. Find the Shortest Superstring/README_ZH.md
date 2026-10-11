@@ -1,4 +1,4 @@
-### [最短超级串](https://leetcode-cn.com/problems/find-the-shortest-superstring)
+### [最短超级串](https://leetcode.cn/problems/find-the-shortest-superstring)
 
 <p>给定一个字符串数组 <code>words</code>，找到以 <code>words</code> 中每个字符串作为子字符串的最短字符串。如果有多个有效最短字符串满足题目条件，返回其中 <strong>任意一个</strong> 即可。</p>
 

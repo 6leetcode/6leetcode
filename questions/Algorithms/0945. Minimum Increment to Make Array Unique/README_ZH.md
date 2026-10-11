@@ -1,14 +1,16 @@
-### [使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique)
+### [使数组唯一的最小增量](https://leetcode.cn/problems/minimum-increment-to-make-array-unique)
 
 <p>给你一个整数数组 <code>nums</code> 。每次 move 操作将会选择任意一个满足 <code>0 &lt;= i &lt; nums.length</code> 的下标 <code>i</code>，并将&nbsp;<code>nums[i]</code> 递增&nbsp;<code>1</code>。</p>
 
 <p>返回使 <code>nums</code> 中的每个值都变成唯一的所需要的最少操作次数。</p>
 
+<p>生成的测试用例保证答案在 32 位整数范围内。</p>
+
 <div class="original__bRMd">
 <div>
 <p>&nbsp;</p>
 
-<p><strong>示例 1：</strong></p>
+<p><strong class="example">示例 1：</strong></p>
 
 <pre>
 <strong>输入：</strong>nums = [1,2,2]
@@ -16,7 +18,7 @@
 <strong>解释：</strong>经过一次 <em>move</em> 操作，数组将变为 [1, 2, 3]。
 </pre>
 
-<p><strong>示例 2：</strong></p>
+<p><strong class="example">示例 2：</strong></p>
 
 <pre>
 <strong>输入：</strong>nums = [3,2,1,2,1,7]

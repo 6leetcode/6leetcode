@@ -1,2 +1,2 @@
-### [不同国家的天气类型](https://leetcode-cn.com/problems/weather-type-in-each-country)
+### [不同国家的天气类型](https://leetcode.cn/problems/weather-type-in-each-country)
 

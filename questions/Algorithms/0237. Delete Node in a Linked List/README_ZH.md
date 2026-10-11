@@ -1,4 +1,4 @@
-### [删除链表中的节点](https://leetcode-cn.com/problems/delete-node-in-a-linked-list)
+### [删除链表中的节点](https://leetcode.cn/problems/delete-node-in-a-linked-list)
 
 <p>有一个单链表的&nbsp;<code>head</code>，我们想删除它其中的一个节点&nbsp;<code>node</code>。</p>
 

@@ -1,4 +1,4 @@
-### [子串的最大出现次数](https://leetcode-cn.com/problems/maximum-number-of-occurrences-of-a-substring)
+### [子串的最大出现次数](https://leetcode.cn/problems/maximum-number-of-occurrences-of-a-substring)
 
 <p>给你一个字符串&nbsp;<code>s</code> ，请你返回满足以下条件且出现次数最大的&nbsp;<strong>任意</strong>&nbsp;子串的出现次数：</p>
 

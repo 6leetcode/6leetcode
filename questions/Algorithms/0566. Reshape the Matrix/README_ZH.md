@@ -1,4 +1,4 @@
-### [重塑矩阵](https://leetcode-cn.com/problems/reshape-the-matrix)
+### [重塑矩阵](https://leetcode.cn/problems/reshape-the-matrix)
 
 <p>在 MATLAB 中，有一个非常有用的函数 <code>reshape</code> ，它可以将一个&nbsp;<code>m x n</code> 矩阵重塑为另一个大小不同（<code>r x c</code>）的新矩阵，但保留其原始数据。</p>
 

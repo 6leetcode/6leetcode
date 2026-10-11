@@ -1,2 +1,2 @@
-### [账户余额](https://leetcode-cn.com/problems/account-balance)
+### [账户余额](https://leetcode.cn/problems/account-balance)
 

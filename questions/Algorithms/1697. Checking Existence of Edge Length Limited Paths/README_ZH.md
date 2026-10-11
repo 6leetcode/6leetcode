@@ -1,4 +1,4 @@
-### [检查边长度限制的路径是否存在](https://leetcode-cn.com/problems/checking-existence-of-edge-length-limited-paths)
+### [检查边长度限制的路径是否存在](https://leetcode.cn/problems/checking-existence-of-edge-length-limited-paths)
 
 <p>给你一个 <code>n</code> 个点组成的无向图边集 <code>edgeList</code> ，其中 <code>edgeList[i] = [u<sub>i</sub>, v<sub>i</sub>, dis<sub>i</sub>]</code> 表示点 <code>u<sub>i</sub></code> 和点 <code>v<sub>i</sub></code> 之间有一条长度为 <code>dis<sub>i</sub></code> 的边。请注意，两个点之间可能有 <strong>超过一条边 </strong>。</p>
 
@@ -9,7 +9,7 @@
 <p> </p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/12/19/h.png" style="width: 267px; height: 262px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/12/19/h.png" style="width: 267px; height: 262px;" />
 <pre>
 <b>输入：</b>n = 3, edgeList = [[0,1,2],[1,2,4],[2,0,8],[1,0,16]], queries = [[0,1,2],[0,2,5]]
 <b>输出：</b>[false,true]
@@ -19,7 +19,7 @@
 </pre>
 
 <p><strong>示例 2：</strong></p>
-<img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/12/19/q.png" style="width: 390px; height: 358px;" />
+<img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/12/19/q.png" style="width: 390px; height: 358px;" />
 <pre>
 <b>输入：</b>n = 5, edgeList = [[0,1,10],[1,2,5],[2,3,9],[3,4,13]], queries = [[0,4,14],[1,4,13]]
 <b>输出：</b>[true,false]

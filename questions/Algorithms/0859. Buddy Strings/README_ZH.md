@@ -1,4 +1,4 @@
-### [亲密字符串](https://leetcode-cn.com/problems/buddy-strings)
+### [亲密字符串](https://leetcode.cn/problems/buddy-strings)
 
 <p>给你两个字符串 <code>s</code> 和 <code>goal</code> ，只要我们可以通过交换 <code>s</code> 中的两个字母得到与 <code>goal</code> 相等的结果，就返回&nbsp;<code>true</code>&nbsp;；否则返回 <code>false</code> 。</p>
 

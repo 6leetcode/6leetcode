@@ -1,4 +1,4 @@
-### [二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list)
+### [二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list)
 
 <p>给你二叉树的根结点 <code>root</code> ，请你将它展开为一个单链表：</p>
 

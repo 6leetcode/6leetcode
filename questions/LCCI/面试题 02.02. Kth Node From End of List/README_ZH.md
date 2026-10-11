@@ -1,4 +1,4 @@
-### [返回倒数第 k 个节点](https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci)
+### [返回倒数第 k 个节点](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci)
 
 <p>实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。</p>
 

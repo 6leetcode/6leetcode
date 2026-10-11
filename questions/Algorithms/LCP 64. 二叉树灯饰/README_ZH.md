@@ -1,4 +1,4 @@
-### [二叉树灯饰](https://leetcode-cn.com/problems/U7WvvU)
+### [二叉树灯饰](https://leetcode.cn/problems/U7WvvU)
 
 「力扣嘉年华」的中心广场放置了一个巨型的二叉树形状的装饰树。每个节点上均有一盏灯和三个开关。节点值为 `0` 表示灯处于「关闭」状态，节点值为 `1` 表示灯处于「开启」状态。每个节点上的三个开关各自功能如下：
 - 开关 `1`：切换当前节点的灯的状态；
@@ -13,7 +13,7 @@
 >输出：`2`
 >
 >解释：以下是最佳的方案之一，如图所示
-![b71b95bf405e3b223e00b2820a062ba4.gif](https://pic.leetcode-cn.com/1629357030-GSbzpY-b71b95bf405e3b223e00b2820a062ba4.gif){:width="300px"}
+![b71b95bf405e3b223e00b2820a062ba4.gif](https://pic.leetcode.cn/1629357030-GSbzpY-b71b95bf405e3b223e00b2820a062ba4.gif){:width="300px"}
 
 **示例 2：**
 >输入：`root = [1,1,1,1,null,null,1]`
@@ -21,7 +21,7 @@
 >输出：`1`
 >
 >解释：以下是最佳的方案，如图所示
-![a4091b6448a0089b4d9e8f0390ff9ac6.gif](https://pic.leetcode-cn.com/1629356950-HZsKZC-a4091b6448a0089b4d9e8f0390ff9ac6.gif){:width="300px"}
+![a4091b6448a0089b4d9e8f0390ff9ac6.gif](https://pic.leetcode.cn/1629356950-HZsKZC-a4091b6448a0089b4d9e8f0390ff9ac6.gif){:width="300px"}
 
 **示例 3：**
 >输入：`root = [0,null,0]`

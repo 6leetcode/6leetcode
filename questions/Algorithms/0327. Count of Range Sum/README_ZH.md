@@ -1,4 +1,4 @@
-### [区间和的个数](https://leetcode-cn.com/problems/count-of-range-sum)
+### [区间和的个数](https://leetcode.cn/problems/count-of-range-sum)
 
 <p>给你一个整数数组 <code>nums</code> 以及两个整数 <code>lower</code> 和 <code>upper</code> 。求数组中，值位于范围 <code>[lower, upper]</code> （包含 <code>lower</code> 和 <code>upper</code>）之内的 <strong>区间和的个数</strong> 。</p>
 

@@ -1,4 +1,4 @@
-### [找出 3 位偶数](https://leetcode-cn.com/problems/finding-3-digit-even-numbers)
+### [找出 3 位偶数](https://leetcode.cn/problems/finding-3-digit-even-numbers)
 
 <p>给你一个整数数组 <code>digits</code> ，其中每个元素是一个数字（<code>0 - 9</code>）。数组中可能存在重复元素。</p>
 

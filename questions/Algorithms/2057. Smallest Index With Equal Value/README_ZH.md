@@ -1,4 +1,4 @@
-### [值相等的最小索引](https://leetcode-cn.com/problems/smallest-index-with-equal-value)
+### [值相等的最小索引](https://leetcode.cn/problems/smallest-index-with-equal-value)
 
 <p>给你一个下标从 0 开始的整数数组 <code>nums</code> ，返回 <code>nums</code> 中满足<em> </em><code>i mod 10 == nums[i]</code><em> </em>的最小下标 <code>i</code> ；如果不存在这样的下标，返回<em> </em><code>-1</code><em> </em>。</p>
 

@@ -1,2 +1,2 @@
-### [杀掉进程](https://leetcode-cn.com/problems/kill-process)
+### [杀掉进程](https://leetcode.cn/problems/kill-process)
 

@@ -1,4 +1,4 @@
-### [最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree)
+### [最大二叉树](https://leetcode.cn/problems/maximum-binary-tree)
 
 <p>给定一个不重复的整数数组&nbsp;<code>nums</code> 。&nbsp;<strong>最大二叉树</strong>&nbsp;可以用下面的算法从&nbsp;<code>nums</code> 递归地构建:</p>
 

@@ -1,4 +1,4 @@
-### [滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)
+### [滑动窗口的最大值](https://leetcode.cn/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)
 
 <p>给定一个数组 <code>nums</code> 和滑动窗口的大小 <code>k</code>，请找出所有滑动窗口里的最大值。</p>
 
@@ -24,4 +24,4 @@
 
 <p>你可以假设 <em>k </em>总是有效的，在输入数组&nbsp;<strong>不为空&nbsp;</strong>的情况下，<code>1 ≤ k ≤&nbsp;nums.length</code>。</p>
 
-<p>注意：本题与主站 239 题相同：<a href="https://leetcode-cn.com/problems/sliding-window-maximum/">https://leetcode-cn.com/problems/sliding-window-maximum/</a></p>
+<p>注意：本题与主站 239 题相同：<a href="https://leetcode.cn/problems/sliding-window-maximum/">https://leetcode.cn/problems/sliding-window-maximum/</a></p>

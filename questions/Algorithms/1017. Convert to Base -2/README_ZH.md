@@ -1,4 +1,4 @@
-### [负二进制转换](https://leetcode-cn.com/problems/convert-to-base-2)
+### [负二进制转换](https://leetcode.cn/problems/convert-to-base-2)
 
 <p>给你一个整数 <code>n</code> ，以二进制字符串的形式返回该整数的 <strong>负二进制（<code>base -2</code>）</strong>表示。</p>
 

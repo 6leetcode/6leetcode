@@ -1,4 +1,4 @@
-### [美丽整数的最小增量](https://leetcode-cn.com/problems/minimum-addition-to-make-integer-beautiful)
+### [美丽整数的最小增量](https://leetcode.cn/problems/minimum-addition-to-make-integer-beautiful)
 
 <p>给你两个正整数 <code>n</code> 和 <code>target</code> 。</p>
 

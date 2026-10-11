@@ -1,4 +1,4 @@
-### [主要元素](https://leetcode-cn.com/problems/find-majority-element-lcci)
+### [主要元素](https://leetcode.cn/problems/find-majority-element-lcci)
 
 <p>数组中占比超过一半的元素称之为主要元素。给你一个<strong> 整数 </strong>数组，找出其中的主要元素。若没有，返回 <code>-1</code> 。请设计时间复杂度为 <code>O(N)</code> 、空间复杂度为 <code>O(1)</code> 的解决方案。</p>
 

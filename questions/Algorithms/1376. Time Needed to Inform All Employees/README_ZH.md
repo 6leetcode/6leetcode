@@ -1,4 +1,4 @@
-### [通知所有员工所需的时间](https://leetcode-cn.com/problems/time-needed-to-inform-all-employees)
+### [通知所有员工所需的时间](https://leetcode.cn/problems/time-needed-to-inform-all-employees)
 
 <p>公司里有 <code>n</code> 名员工，每个员工的 ID 都是独一无二的，编号从 <code>0</code> 到 <code>n - 1</code>。公司的总负责人通过 <code>headID</code> 进行标识。</p>
 
@@ -22,7 +22,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2020/03/08/graph.png" style="height: 174px; width: 404px;" /></p>
+<p><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/03/08/graph.png" style="height: 174px; width: 404px;" /></p>
 
 <pre>
 <strong>输入：</strong>n = 6, headID = 2, manager = [2,2,-1,2,2,2], informTime = [0,0,1,0,0,0]

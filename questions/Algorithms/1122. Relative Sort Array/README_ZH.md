@@ -1,4 +1,4 @@
-### [数组的相对排序](https://leetcode-cn.com/problems/relative-sort-array)
+### [数组的相对排序](https://leetcode.cn/problems/relative-sort-array)
 
 <p>给你两个数组，<code>arr1</code> 和&nbsp;<code>arr2</code>，<code>arr2</code>&nbsp;中的元素各不相同，<code>arr2</code> 中的每个元素都出现在&nbsp;<code>arr1</code>&nbsp;中。</p>
 

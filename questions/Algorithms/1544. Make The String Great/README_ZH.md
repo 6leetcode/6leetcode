@@ -1,4 +1,4 @@
-### [整理字符串](https://leetcode-cn.com/problems/make-the-string-great)
+### [整理字符串](https://leetcode.cn/problems/make-the-string-great)
 
 <p>给你一个由大小写英文字母组成的字符串 <code>s</code> 。</p>
 

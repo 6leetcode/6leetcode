@@ -1,4 +1,4 @@
-### [查询无效交易](https://leetcode-cn.com/problems/invalid-transactions)
+### [查询无效交易](https://leetcode.cn/problems/invalid-transactions)
 
 <p>如果出现下述两种情况，交易 <strong>可能无效</strong>：</p>
 

@@ -1,4 +1,4 @@
-### [回文链表](https://leetcode-cn.com/problems/aMhZSa)
+### [回文链表](https://leetcode.cn/problems/aMhZSa)
 
 <p>给定一个链表的 <strong>头节点&nbsp;</strong><code>head</code><strong>&nbsp;，</strong>请判断其是否为回文链表。</p>
 
@@ -38,4 +38,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 234&nbsp;题相同：<a href="https://leetcode-cn.com/problems/palindrome-linked-list/">https://leetcode-cn.com/problems/palindrome-linked-list/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 234&nbsp;题相同：<a href="https://leetcode.cn/problems/palindrome-linked-list/">https://leetcode.cn/problems/palindrome-linked-list/</a></p>

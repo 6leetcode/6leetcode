@@ -1,4 +1,4 @@
-### [计算字符串的数字和](https://leetcode-cn.com/problems/calculate-digit-sum-of-a-string)
+### [计算字符串的数字和](https://leetcode.cn/problems/calculate-digit-sum-of-a-string)
 
 <p>给你一个由若干数字（<code>0</code> - <code>9</code>）组成的字符串 <code>s</code> ，和一个整数。</p>
 

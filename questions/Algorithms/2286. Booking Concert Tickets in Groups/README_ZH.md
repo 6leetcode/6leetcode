@@ -1,4 +1,4 @@
-### [以组为单位订音乐会的门票](https://leetcode-cn.com/problems/booking-concert-tickets-in-groups)
+### [以组为单位订音乐会的门票](https://leetcode.cn/problems/booking-concert-tickets-in-groups)
 
 <p>一个音乐会总共有&nbsp;<code>n</code>&nbsp;排座位，编号从&nbsp;<code>0</code>&nbsp;到&nbsp;<code>n - 1</code>&nbsp;，每一排有&nbsp;<code>m</code>&nbsp;个座椅，编号为&nbsp;<code>0</code>&nbsp;到&nbsp;<code>m - 1</code>&nbsp;。你需要设计一个买票系统，针对以下情况进行座位安排：</p>
 
@@ -43,7 +43,7 @@ bms.gather(2, 0); // 返回 []
 bms.scatter(5, 1); // 返回 True
                    // 这一组安排第 0 排第 4 个座位和第 1 排 [0, 3] 的座位。
 bms.scatter(5, 1); // 返回 False
-                   // 总共只剩下 2 个座位。
+                   // 总共只剩下 1 个座位。
 </pre>
 
 <p>&nbsp;</p>

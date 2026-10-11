@@ -1,4 +1,4 @@
-### [将数组划分成相等数对](https://leetcode-cn.com/problems/divide-array-into-equal-pairs)
+### [将数组划分成相等数对](https://leetcode.cn/problems/divide-array-into-equal-pairs)
 
 <p>给你一个整数数组&nbsp;<code>nums</code>&nbsp;，它包含&nbsp;<code>2 * n</code>&nbsp;个整数。</p>
 

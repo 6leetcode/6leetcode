@@ -1,4 +1,4 @@
-### [自由之路](https://leetcode-cn.com/problems/freedom-trail)
+### [自由之路](https://leetcode.cn/problems/freedom-trail)
 
 <p>电子游戏“辐射4”中，任务 <strong>“通向自由”</strong> 要求玩家到达名为 “<strong>Freedom Trail Ring”</strong> 的金属表盘，并使用表盘拼写特定关键词才能开门。</p>
 

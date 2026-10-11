@@ -1,2 +1,2 @@
-### [最大唯一数](https://leetcode-cn.com/problems/largest-unique-number)
+### [最大唯一数](https://leetcode.cn/problems/largest-unique-number)
 

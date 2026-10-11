@@ -1,4 +1,4 @@
-### [移除指定数字得到的最大结果](https://leetcode-cn.com/problems/remove-digit-from-number-to-maximize-result)
+### [移除指定数字得到的最大结果](https://leetcode.cn/problems/remove-digit-from-number-to-maximize-result)
 
 <p>给你一个表示某个正整数的字符串 <code>number</code> 和一个字符 <code>digit</code> 。</p>
 
@@ -9,7 +9,7 @@
 <p><strong>示例 1：</strong></p>
 
 <pre>
-<strong>输入：</strong>number = "123", digit = "3"
+<strong>输入：</strong>number = "123", digit = '3'
 <strong>输出：</strong>"12"
 <strong>解释：</strong>"123" 中只有一个 '3' ，在移除 '3' 之后，结果为 "12" 。
 </pre>
@@ -17,7 +17,7 @@
 <p><strong>示例 2：</strong></p>
 
 <pre>
-<strong>输入：</strong>number = "1231", digit = "1"
+<strong>输入：</strong>number = "1231", digit = '1'
 <strong>输出：</strong>"231"
 <strong>解释：</strong>可以移除第一个 '1' 得到 "231" 或者移除第二个 '1' 得到 "123" 。
 由于 231 &gt; 123 ，返回 "231" 。
@@ -26,7 +26,7 @@
 <p><strong>示例 3：</strong></p>
 
 <pre>
-<strong>输入：</strong>number = "551", digit = "5"
+<strong>输入：</strong>number = "551", digit = '5'
 <strong>输出：</strong>"51"
 <strong>解释：</strong>可以从 "551" 中移除第一个或者第二个 '5' 。
 两种方案的结果都是 "51" 。

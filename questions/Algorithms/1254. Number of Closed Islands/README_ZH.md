@@ -1,4 +1,4 @@
-### [统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands)
+### [统计封闭岛屿的数目](https://leetcode.cn/problems/number-of-closed-islands)
 
 <p>二维矩阵 <code>grid</code>&nbsp;由 <code>0</code>&nbsp;（土地）和 <code>1</code>&nbsp;（水）组成。岛是由最大的4个方向连通的 <code>0</code>&nbsp;组成的群，封闭岛是一个&nbsp;<code>完全</code> 由1包围（左、上、右、下）的岛。</p>
 
@@ -18,7 +18,7 @@
 
 <p><strong>示例 2：</strong></p>
 
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/07/sample_4_1610.png" style="height: 98px; width: 160px;" /></p>
+<p><img src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/11/07/sample_4_1610.png" style="height: 98px; width: 160px;" /></p>
 
 <pre>
 <strong>输入：</strong>grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]

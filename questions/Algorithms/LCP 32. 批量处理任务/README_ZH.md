@@ -1,4 +1,4 @@
-### [批量处理任务](https://leetcode-cn.com/problems/t3fKg1)
+### [批量处理任务](https://leetcode.cn/problems/t3fKg1)
 
 某实验室计算机待处理任务以 `[start,end,period]` 格式记于二维数组 `tasks`，表示完成该任务的时间范围为起始时间 `start` 至结束时间 `end` 之间，需要计算机投入 `period` 的时长，注意：
 1. `period` 可为不连续时间

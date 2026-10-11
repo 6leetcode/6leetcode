@@ -1,4 +1,4 @@
-### [寻找数组的中心下标](https://leetcode-cn.com/problems/find-pivot-index)
+### [寻找数组的中心下标](https://leetcode.cn/problems/find-pivot-index)
 
 <p>给你一个整数数组&nbsp;<code>nums</code> ，请计算数组的 <strong>中心下标 </strong>。</p>
 
@@ -50,4 +50,4 @@
 
 <p>&nbsp;</p>
 
-<p><strong>注意：</strong>本题与主站 1991 题相同：<a href="https://leetcode-cn.com/problems/find-the-middle-index-in-array/" target="_blank">https://leetcode-cn.com/problems/find-the-middle-index-in-array/</a></p>
+<p><strong>注意：</strong>本题与主站 1991 题相同：<a href="https://leetcode.cn/problems/find-the-middle-index-in-array/" target="_blank">https://leetcode.cn/problems/find-the-middle-index-in-array/</a></p>

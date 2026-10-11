@@ -1,2 +1,2 @@
-### [有效单词缩写](https://leetcode-cn.com/problems/valid-word-abbreviation)
+### [有效单词缩写](https://leetcode.cn/problems/valid-word-abbreviation)
 

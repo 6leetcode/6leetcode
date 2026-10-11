@@ -1,4 +1,4 @@
-### [删点成林](https://leetcode-cn.com/problems/delete-nodes-and-return-forest)
+### [删点成林](https://leetcode.cn/problems/delete-nodes-and-return-forest)
 
 <p>给出二叉树的根节点&nbsp;<code>root</code>，树上每个节点都有一个不同的值。</p>
 
@@ -10,7 +10,7 @@
 
 <p><strong>示例 1：</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/07/05/screen-shot-2019-07-01-at-53836-pm.png" style="height: 150px; width: 237px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.cn/aliyun-lc-upload/uploads/2019/07/05/screen-shot-2019-07-01-at-53836-pm.png" style="height: 150px; width: 237px;" /></strong></p>
 
 <pre>
 <strong>输入：</strong>root = [1,2,3,4,5,6,7], to_delete = [3,5]

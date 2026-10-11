@@ -1,4 +1,4 @@
-### [检查字符串是否为数组前缀](https://leetcode-cn.com/problems/check-if-string-is-a-prefix-of-array)
+### [检查字符串是否为数组前缀](https://leetcode.cn/problems/check-if-string-is-a-prefix-of-array)
 
 <p>给你一个字符串 <code>s</code> 和一个字符串数组 <code>words</code> ，请你判断 <code>s</code> 是否为 <code>words</code> 的 <strong>前缀字符串</strong> 。</p>
 

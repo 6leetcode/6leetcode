@@ -1,4 +1,4 @@
-### [元素值大于变化阈值的子数组](https://leetcode-cn.com/problems/subarray-with-elements-greater-than-varying-threshold)
+### [元素值大于变化阈值的子数组](https://leetcode.cn/problems/subarray-with-elements-greater-than-varying-threshold)
 
 <p>给你一个整数数组&nbsp;<code>nums</code>&nbsp;和一个整数&nbsp;<code>threshold</code>&nbsp;。</p>
 

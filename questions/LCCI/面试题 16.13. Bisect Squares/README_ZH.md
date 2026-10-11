@@ -1,4 +1,4 @@
-### [平分正方形](https://leetcode-cn.com/problems/bisect-squares-lcci)
+### [平分正方形](https://leetcode.cn/problems/bisect-squares-lcci)
 
 <p>给定两个正方形及一个二维平面。请找出将这两个正方形分割成两半的一条直线。假设正方形顶边和底边与 x 轴平行。</p>
 

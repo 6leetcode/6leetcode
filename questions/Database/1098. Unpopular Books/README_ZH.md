@@ -1,2 +1,2 @@
-### [小众书籍](https://leetcode-cn.com/problems/unpopular-books)
+### [小众书籍](https://leetcode.cn/problems/unpopular-books)
 

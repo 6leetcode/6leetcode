@@ -1,4 +1,4 @@
-### [可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5)
+### [可被 5 整除的二进制前缀](https://leetcode.cn/problems/binary-prefix-divisible-by-5)
 
 <p>给定一个二进制数组 <code>nums</code> (&nbsp;<strong>索引从0开始&nbsp;</strong>)。</p>
 

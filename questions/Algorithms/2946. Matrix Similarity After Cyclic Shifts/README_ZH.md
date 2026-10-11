@@ -1,0 +1,70 @@
+### [循环移位后的矩阵相似检查](https://leetcode.cn/problems/matrix-similarity-after-cyclic-shifts)
+
+<p>给你一个<strong>下标从 0 开始</strong>且大小为 <code>m x n</code> 的整数矩阵 <code>mat</code> 和一个整数 <code>k</code> 。矩阵行的下标是从 0 开始的。</p>
+
+<p>进行下面操作&nbsp;<code>k</code> 次：</p>
+
+<ul>
+	<li><strong>偶数行</strong>（0, 2, 4, ...）循环向左移动。</li>
+</ul>
+
+<p><img src="https://assets.leetcode.com/uploads/2024/05/19/lshift.jpg" style="width: 283px; height: 90px;" /></p>
+
+<ul>
+	<li><strong>奇数行</strong>（1, 3, 5, ...）循环向右移动。</li>
+</ul>
+
+<p><img src="https://assets.leetcode.com/uploads/2024/05/19/rshift-stlone.jpg" style="width: 283px; height: 90px;" /></p>
+
+<p>如果经过 <code>k</code> 步后的最终修改矩阵与原始矩阵相同，则返回 <code>true</code>，否则返回 <code>false</code>。</p>
+
+<p>&nbsp;</p>
+
+<p><strong class="example">示例 1：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>mat = [[1,2,3],[4,5,6],[7,8,9]], k = 4</span></p>
+
+<p><span class="example-io"><b>输出：</b>false</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>在每一步中，行 0 和行 2（偶数下标）进行左移，行 1（奇数下标）进行右移。</p>
+
+<p><img src="https://assets.leetcode.com/uploads/2024/05/19/t1-2.jpg" style="width: 857px; height: 150px;" /></p>
+</div>
+
+<p><strong class="example">示例 2：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>mat = [[1,2,1,2],[5,5,5,5],[6,3,6,3]], k = 2</span></p>
+
+<p><span class="example-io"><b>输出：</b>true</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p><img src="https://assets.leetcode.com/uploads/2024/05/19/t1-3.jpg" style="width: 632px; height: 150px;" /></p>
+</div>
+
+<p><strong class="example">示例 3：</strong></p>
+
+<div class="example-block">
+<p><span class="example-io"><b>输入：</b>mat = [[2,2],[2,2]], k = 3</span></p>
+
+<p><span class="example-io"><b>输出：</b>true</span></p>
+
+<p><strong>解释：</strong></p>
+
+<p>矩阵中的所有值都相等，即使进行循环移位，矩阵也会保持不变。</p>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>提示：</strong></p>
+
+<ul>
+	<li><code>1 &lt;= mat.length &lt;= 25</code></li>
+	<li><code>1 &lt;= mat[i].length &lt;= 25</code></li>
+	<li><code>1 &lt;= mat[i][j] &lt;= 25</code></li>
+	<li><code>1 &lt;= k &lt;= 50</code></li>
+</ul>

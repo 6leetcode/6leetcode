@@ -1,4 +1,4 @@
-### [合并排序链表](https://leetcode-cn.com/problems/vvXgSW)
+### [合并排序链表](https://leetcode.cn/problems/vvXgSW)
 
 <p>给定一个链表数组，每个链表都已经按升序排列。</p>
 
@@ -50,4 +50,4 @@
 
 <p>&nbsp;</p>
 
-<p><meta charset="UTF-8" />注意：本题与主站 23&nbsp;题相同：&nbsp;<a href="https://leetcode-cn.com/problems/merge-k-sorted-lists/">https://leetcode-cn.com/problems/merge-k-sorted-lists/</a></p>
+<p><meta charset="UTF-8" />注意：本题与主站 23&nbsp;题相同：&nbsp;<a href="https://leetcode.cn/problems/merge-k-sorted-lists/">https://leetcode.cn/problems/merge-k-sorted-lists/</a></p>

@@ -1,4 +1,4 @@
-### [设计停车系统](https://leetcode-cn.com/problems/design-parking-system)
+### [设计停车系统](https://leetcode.cn/problems/design-parking-system)
 
 <p>请你给一个停车场设计一个停车系统。停车场总共有三种不同大小的车位：大，中和小，每种尺寸分别有固定数目的车位。</p>
 

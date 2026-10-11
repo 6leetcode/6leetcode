@@ -1,4 +1,4 @@
-### [平均等待时间](https://leetcode-cn.com/problems/average-waiting-time)
+### [平均等待时间](https://leetcode.cn/problems/average-waiting-time)
 
 <p>有一个餐厅，只有一位厨师。你有一个顾客数组 <code>customers</code> ，其中 <code>customers[i] = [arrival<sub>i</sub>, time<sub>i</sub>]</code> ：</p>
 

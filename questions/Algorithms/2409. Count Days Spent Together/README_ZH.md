@@ -1,4 +1,4 @@
-### [统计共同度过的日子数](https://leetcode-cn.com/problems/count-days-spent-together)
+### [统计共同度过的日子数](https://leetcode.cn/problems/count-days-spent-together)
 
 <p>Alice 和 Bob 计划分别去罗马开会。</p>
 
