@@ -32,7 +32,7 @@ export function loadConfig(configPath: string): Config {
   return {
     debug: Boolean(raw.Debug ?? false),
     questionDir: process.env.QuestionDir ?? raw.QuestionDir ?? "questions",
-    publicDir: process.env.Public ?? raw.Public ?? "apps/web/public/db",
+    publicDir: process.env.Public ?? raw.Public ?? "apps/web/db",
     databaseFile: process.env.DatabaseFile ?? raw.DatabaseFile ?? raw.Database ?? "6leetcode.db",
   };
 }

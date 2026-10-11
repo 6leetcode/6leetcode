@@ -41,35 +41,3 @@ jobs:
           cd apps/cli
           bun install --frozen-lockfile
           bun run build
-
-  build-web:
-    name: build-web
-    runs-on: ubuntu-24.04
-    strategy:
-      matrix:
-        bun: ["latest"]
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-          lfs: true
-      - name: Setup bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: ${{ matrix.bun }}
-      - name: Cache bun
-        uses: actions/cache@v6
-        with:
-          path: |
-            ~/.bun/install/cache
-            apps/web/node_modules
-          key: ${{ runner.os }}-bun-${{ matrix.bun }}-${{ hashFiles('apps/web/bun.lock', 'apps/web/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-bun-${{ matrix.bun }}-
-            ${{ runner.os }}-bun-
-      - name: Build web
-        run: |
-          cd apps/web
-          bun install --frozen-lockfile
-          bun run build

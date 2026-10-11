@@ -25,5 +25,4 @@ changelog:
 deploy:
 	@$(RM) -r docs
 	leet gen
-	cd apps/web && npm run build
-	mv apps/web/build docs
+	cp -R apps/web docs

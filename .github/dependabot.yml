@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: npm
-    directory: "/apps/web"
+    directory: "/apps/cli"
     schedule:
       interval: monthly
       time: "00:00"
