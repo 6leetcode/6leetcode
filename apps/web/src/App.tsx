@@ -1,7 +1,7 @@
 import { Layout } from 'antd';
 import { Routes, Route, HashRouter } from 'react-router-dom';
 
-import './App.scss';
+import './App.css';
 
 import Header from "./Header";
 import Solutions from "./Solutions";

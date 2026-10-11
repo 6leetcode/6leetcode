@@ -5,7 +5,7 @@ import { CopyOutlined, CheckOutlined } from '@ant-design/icons';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-import './index.scss';
+import './index.css';
 
 export default function CodeBox({ solution }: any) {
   let [copied, setCopied] = useState(false);
