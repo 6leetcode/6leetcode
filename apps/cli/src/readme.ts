@@ -10,7 +10,7 @@ const suffixes = [".c", ".cc", ".go", ".java", ".ts", ".py", ".rs"];
 const makefiles: Record<string, string> = {
   ".c": "c.makefile",
   ".cc": "cc.makefile",
-  ".go": "go.makefile",
+  ".go": "golang.makefile",
   ".java": "java.makefile",
   ".ts": "typescript.makefile",
   ".py": "python.makefile",
@@ -19,7 +19,7 @@ const makefiles: Record<string, string> = {
 const targets: Record<string, string> = {
   ".c": "c",
   ".cc": "cc",
-  ".go": "go",
+  ".go": "golang",
   ".java": "java",
   ".ts": "typescript",
   ".py": "python",
