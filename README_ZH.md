@@ -4055,11 +4055,11 @@ LeetCode 题解
 |[面试题 02.06](https://leetcode.cn/problems/palindrome-linked-list-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 02.07](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 02.08](https://leetcode.cn/problems/linked-list-cycle-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 03.02](https://leetcode.cn/problems/min-stack-lcci)|Easy||||||||
-|[面试题 03.04](https://leetcode.cn/problems/implement-queue-using-stacks-lcci)|Easy||||||||
+|[面试题 03.02](https://leetcode.cn/problems/min-stack-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 03.04](https://leetcode.cn/problems/implement-queue-using-stacks-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 04.01](https://leetcode.cn/problems/route-between-nodes-lcci)|Medium||||||||
-|[面试题 03.01](https://leetcode.cn/problems/three-in-one-lcci)|Easy||||||||
-|[面试题 03.05](https://leetcode.cn/problems/sort-of-stacks-lcci)|Medium||||||||
+|[面试题 03.01](https://leetcode.cn/problems/three-in-one-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 03.05](https://leetcode.cn/problems/sort-of-stacks-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 04.02](https://leetcode.cn/problems/minimum-height-tree-lcci)|Easy||||||||
 |[面试题 04.03](https://leetcode.cn/problems/list-of-depth-lcci)|Medium||||||||
 |[面试题 04.04](https://leetcode.cn/problems/check-balance-lcci)|Easy||||||||
@@ -4075,7 +4075,7 @@ LeetCode 题解
 |[面试题 01.08](https://leetcode.cn/problems/zero-matrix-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 02.03](https://leetcode.cn/problems/delete-middle-node-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 02.05](https://leetcode.cn/problems/sum-lists-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 03.03](https://leetcode.cn/problems/stack-of-plates-lcci)|Medium||||||||
+|[面试题 03.03](https://leetcode.cn/problems/stack-of-plates-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 05.08](https://leetcode.cn/problems/draw-line-lcci)|Medium||||||||
 |[面试题 08.01](https://leetcode.cn/problems/three-steps-problem-lcci)|Easy||||||||
 |[面试题 08.04](https://leetcode.cn/problems/power-set-lcci)|Medium||||||||
@@ -4084,7 +4084,7 @@ LeetCode 题解
 |[面试题 08.10](https://leetcode.cn/problems/color-fill-lcci)|Easy||||||||
 |[面试题 08.13](https://leetcode.cn/problems/pile-box-lcci)|Hard||||||||
 |[面试题 05.02](https://leetcode.cn/problems/binary-number-to-string-lcci)|Medium||||||||
-|[面试题 03.06](https://leetcode.cn/problems/animal-shelter-lcci)|Easy||||||||
+|[面试题 03.06](https://leetcode.cn/problems/animal-shelter-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 04.10](https://leetcode.cn/problems/check-subtree-lcci)|Medium||||||||
 |[面试题 05.03](https://leetcode.cn/problems/reverse-bits-lcci)|Easy||||||||
 |[面试题 08.11](https://leetcode.cn/problems/coin-lcci)|Medium||||||||
