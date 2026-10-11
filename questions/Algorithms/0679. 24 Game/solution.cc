@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   bool judgePoint24(vector<int> &nums) {
@@ -27,6 +28,7 @@ public:
     return true;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {3, 3, 8, 8};

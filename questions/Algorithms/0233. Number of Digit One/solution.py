@@ -1,3 +1,4 @@
+# ------------------------------- solution begin -------------------------------
 class Solution:
   def countDigitOne(self, n: int) -> int:
     r = 0
@@ -10,6 +11,7 @@ class Solution:
           r += (b+1)
       i *= 10
     return r
+# ------------------------------- solution end ---------------------------------
 
 if __name__ == "__main__":
   solution = Solution()

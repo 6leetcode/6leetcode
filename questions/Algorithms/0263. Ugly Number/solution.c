@@ -1,6 +1,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+// ------------------------------- solution begin -------------------------------
 bool isUgly(int num) {
   if (num < 1) {
     return false;
@@ -17,6 +18,7 @@ bool isUgly(int num) {
     return false;
   }
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 14;

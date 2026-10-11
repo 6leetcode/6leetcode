@@ -305,7 +305,7 @@ LeetCode 题解
 |[0297](https://leetcode.cn/problems/serialize-and-deserialize-binary-tree)|Hard||||||||
 |[0298](https://leetcode.cn/problems/binary-tree-longest-consecutive-sequence)|Medium||||||||
 |[0299](https://leetcode.cn/problems/bulls-and-cows)|Medium||||||||
-|[0300](https://leetcode.cn/problems/longest-increasing-subsequence)|Medium|:white_check_mark:|||||||
+|[0300](https://leetcode.cn/problems/longest-increasing-subsequence)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0301](https://leetcode.cn/problems/remove-invalid-parentheses)|Hard||||||||
 |[0302](https://leetcode.cn/problems/smallest-rectangle-enclosing-black-pixels)|Hard||||||||
 |[0303](https://leetcode.cn/problems/range-sum-query-immutable)|Easy||||||||

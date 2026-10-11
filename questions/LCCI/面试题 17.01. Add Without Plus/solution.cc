@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int add(int a, int b) {
@@ -21,6 +22,7 @@ public:
     return a;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input1 = -1;

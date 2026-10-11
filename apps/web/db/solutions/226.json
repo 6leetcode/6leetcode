@@ -1,1 +1,1 @@
-[]
+[{"questionId":226,"language":"C","filename":"solution.c","data":"struct TreeNode *invertTree(struct TreeNode *root) {\n  if (root != NULL) {\n    struct TreeNode *node = root->left;\n\n    root->left  = root->right;\n    root->right = node;\n\n    invertTree(root->left);\n    invertTree(root->right);\n  }\n  return root;\n}"}]

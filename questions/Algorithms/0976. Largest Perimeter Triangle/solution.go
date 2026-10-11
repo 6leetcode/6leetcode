@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// ------------------------------- solution begin -------------------------------
 func largestPerimeter(a []int) int {
 	sort.Ints(a)
 	for i := len(a) - 1; i >= 2; i-- {
@@ -15,6 +16,7 @@ func largestPerimeter(a []int) int {
 	return 0
 }
 
+// ------------------------------- solution end ---------------------------------
 func main() {
 	var input = []int{3, 6, 2, 3}
 	fmt.Printf("Input:  %v\n", input)

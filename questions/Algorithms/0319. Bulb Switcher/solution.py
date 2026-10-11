@@ -1,9 +1,11 @@
 import math
 
 
+# ------------------------------- solution begin -------------------------------
 class Solution:
     def bulbSwitch(self, n: int) -> int:
         return int(math.sqrt(n))
+# ------------------------------- solution end ---------------------------------
 
 
 if __name__ == "__main__":

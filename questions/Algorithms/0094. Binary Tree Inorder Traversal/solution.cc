@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   void inorder(TreeNode *root, vector<int> &res) {
@@ -22,6 +23,7 @@ public:
     return res;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> array = {1, 2, 3};

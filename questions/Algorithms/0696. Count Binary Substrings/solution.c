@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// ------------------------------- solution begin -------------------------------
 int countBinarySubstrings(char *s) {
   int n = 0, pre = 0, curr = 1, len = strlen(s) - 1;
   for (int i = 0; i < len; ++i) {
@@ -15,6 +16,7 @@ int countBinarySubstrings(char *s) {
   }
   return n;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   char input[] = "00110011";

@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int singleNumber(vector<int> &nums) {
@@ -18,6 +19,7 @@ public:
     return result;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {4, 1, 2, 1, 2};

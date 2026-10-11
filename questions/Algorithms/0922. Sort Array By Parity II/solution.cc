@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   vector<int> sortArrayByParityII(vector<int> &A) {
@@ -28,6 +29,7 @@ public:
     return ans;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {4, 2, 5, 7};

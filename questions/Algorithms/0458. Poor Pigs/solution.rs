@@ -2,6 +2,7 @@ use std::f32;
 
 struct Solution {}
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
     pub fn poor_pigs(buckets: i32, minutes_to_die: i32, minutes_to_test: i32) -> i32 {
         let base = (minutes_to_test / minutes_to_die + 1) as f32;
@@ -9,6 +10,7 @@ impl Solution {
         return (buckets_f.log10() / base.log10()).ceil() as i32;
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 fn main() {
     let buckets: i32 = 1000;

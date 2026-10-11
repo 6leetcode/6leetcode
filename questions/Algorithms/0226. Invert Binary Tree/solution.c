@@ -7,6 +7,7 @@ struct TreeNode {
   struct TreeNode *right;
 };
 
+// ------------------------------- solution begin -------------------------------
 struct TreeNode *invertTree(struct TreeNode *root) {
   if (root != NULL) {
     struct TreeNode *node = root->left;
@@ -19,6 +20,7 @@ struct TreeNode *invertTree(struct TreeNode *root) {
   }
   return root;
 }
+// ------------------------------- solution end ---------------------------------
 
 struct LinkList {
   struct TreeNode *node;

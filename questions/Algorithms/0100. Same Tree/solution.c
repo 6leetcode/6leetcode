@@ -8,6 +8,7 @@ struct TreeNode {
   struct TreeNode *right;
 };
 
+// ------------------------------- solution begin -------------------------------
 bool isSameTree(struct TreeNode *p, struct TreeNode *q) {
   if (p == NULL && q == NULL) {
     return true;
@@ -23,6 +24,7 @@ bool isSameTree(struct TreeNode *p, struct TreeNode *q) {
 
   return false;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   struct TreeNode node1, node2, node3;

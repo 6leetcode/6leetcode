@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int largestPerimeter(vector<int> &A) {
@@ -17,6 +18,7 @@ public:
     return 0;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {3, 6, 2, 3};

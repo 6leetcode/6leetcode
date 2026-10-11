@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   ListNode *dummyNode = new ListNode(0);
@@ -27,6 +28,7 @@ public:
     return dummyNode->next;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   struct ListNode *input1 = ListNode_init(vector<int>{1, 2, 3, 4, 5});

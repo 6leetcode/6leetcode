@@ -1,1 +1,1 @@
-[]
+[{"questionId":233,"language":"Python","filename":"solution.py","data":"class Solution:\n  def countDigitOne(self, n: int) -> int:\n    r = 0\n    i = 1\n    while i < n+1:\n      a = int(n/i)\n      b = n % i\n      r += int((a+8)/10)*i\n      if a % 10 == 1:\n          r += (b+1)\n      i *= 10\n    return r"}]

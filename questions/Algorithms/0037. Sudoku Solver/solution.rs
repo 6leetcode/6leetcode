@@ -6,9 +6,11 @@ const M: u8 = N * N;
 //   bool rule_col[N][N] = {false};
 //   bool rule_box[N][N] = {false};
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
     pub fn solve_sudoku(_board: &mut Vec<Vec<char>>) {}
 }
+// ------------------------------- solution end ---------------------------------
 // let mut rule_row = [[0u8; N], N];
 
 fn main() {

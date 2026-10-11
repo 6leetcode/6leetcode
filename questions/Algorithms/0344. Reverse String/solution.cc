@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   void reverseString(vector<char> &s) {
@@ -13,6 +14,7 @@ public:
     }
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<char> input = {'h', 'e', 'l', 'l', 'o'};

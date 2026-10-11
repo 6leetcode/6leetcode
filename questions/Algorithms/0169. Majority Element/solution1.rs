@@ -11,7 +11,7 @@ impl Solution {
 // ------------------------------- solution end ---------------------------------
 
 fn main() {
-    let input = vec![1i32, 5, 10, 2, 15];
+    let input = vec![-1i32, -1, 2147483647];
     println!("Input:  {:?}", input);
     println!("Output: {}", Solution::majority_element(input));
 }

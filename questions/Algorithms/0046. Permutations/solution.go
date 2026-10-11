@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// ------------------------------- solution begin -------------------------------
 func backtrack(ans *[][]int, output *[]int, begin, length int) {
 	if begin == length {
 		var temp = make([]int, len(*output))
@@ -26,6 +27,7 @@ func permute(nums []int) [][]int {
 	return ans
 }
 
+// ------------------------------- solution end ---------------------------------
 func main() {
 	var input = []int{1, 2, 3}
 	fmt.Printf("Input:  %v\n", input)

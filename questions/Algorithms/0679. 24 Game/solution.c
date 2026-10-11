@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int cmpfunc(const void *a, const void *b) {
   return (*(signed int *)b < *(signed int *)a) ? 1 : 0;
 }
@@ -26,6 +27,7 @@ bool judgePoint24(int *nums, int numsSize) {
 
   return true;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input[] = {3, 3, 8, 8};

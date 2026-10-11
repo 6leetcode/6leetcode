@@ -1,5 +1,6 @@
 struct Solution {}
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
     pub fn reverse_string(s: &mut Vec<char>) {
         let mut i = 0;
@@ -13,6 +14,7 @@ impl Solution {
         }
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 fn main() {
     let mut input = vec!['h', 'e', 'l', 'l', 'o'];

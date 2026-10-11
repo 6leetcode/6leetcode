@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
   int times = minutesToTest / minutesToDie;
   int base  = times + 1;
@@ -11,6 +12,7 @@ int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
   int ans     = (int)ceil(temp);
   return ans;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int buckets       = 1000;

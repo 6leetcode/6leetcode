@@ -3,6 +3,7 @@
 
 #include <array.h>
 
+// ------------------------------- solution begin -------------------------------
 int cmp(const void *_a, const void *_b) {
   int a = *(int *)_a, b = *(int *)_b;
   return a - b;
@@ -17,6 +18,7 @@ int largestPerimeter(int *A, int ASize) {
   }
   return 0;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input[] = {3, 6, 2, 3};

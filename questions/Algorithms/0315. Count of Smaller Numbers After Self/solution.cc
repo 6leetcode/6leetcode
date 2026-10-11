@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 private:
   vector<int> c;
@@ -66,6 +67,7 @@ public:
     return resultList;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<int> input = {5, 2, 6, 1};

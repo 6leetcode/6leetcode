@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   bool isUgly(int num) {
@@ -21,6 +22,7 @@ public:
     }
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 14;

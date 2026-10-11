@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
   void backtrack(vector<string> &ans, string &cur, int open, int close, int n) {
     if (cur.size() == n * 2) {
@@ -31,6 +32,7 @@ public:
     return result;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 3;

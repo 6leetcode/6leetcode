@@ -1,5 +1,6 @@
 struct Solution {}
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
     pub fn pow(num: &mut i32, p: usize) {
         for _i in 0..p {
@@ -111,6 +112,7 @@ impl Solution {
         return !array.contains(&input);
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 fn main() {
     let input = vec![8, 8, 3, 3];

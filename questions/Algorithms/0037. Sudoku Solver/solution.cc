@@ -6,6 +6,7 @@ using namespace std;
 #define M 3
 #define N (M * M)
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 private:
   bool rule_row[N][N] = {false};
@@ -145,6 +146,7 @@ public:
     return found_solution;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   vector<vector<char>> board = {

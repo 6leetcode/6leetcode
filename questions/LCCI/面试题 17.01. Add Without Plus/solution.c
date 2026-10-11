@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// ------------------------------- solution begin -------------------------------
 int add(int a, int b) {
   if (a == 0) {
     return b;
@@ -17,6 +18,7 @@ int add(int a, int b) {
   }
   return a;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input1 = -1;

@@ -1,5 +1,6 @@
 struct Solution {}
 
+// ------------------------------- solution begin -------------------------------
 impl Solution {
     pub fn count_binary_substrings(s: String) -> i32 {
         let mut n = 0;
@@ -21,6 +22,7 @@ impl Solution {
         return n;
     }
 }
+// ------------------------------- solution end ---------------------------------
 
 fn main() {
     let input = String::from("00110011");

@@ -9,6 +9,7 @@ struct TreeNode {
   struct TreeNode *right;
 };
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   bool isSameTree(TreeNode *p, TreeNode *q) {
@@ -27,6 +28,7 @@ public:
     return false;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   struct TreeNode node1, node2, node3;

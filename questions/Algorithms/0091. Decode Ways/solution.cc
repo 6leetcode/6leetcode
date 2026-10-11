@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int numDecodings(string s) {
@@ -21,6 +22,7 @@ public:
     return curr;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   string input = "226";

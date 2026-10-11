@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// ------------------------------- solution begin -------------------------------
 char *multiply(char *num1, char *num2) {
   int m = strlen(num1), n = strlen(num2);
   char *ans = malloc(sizeof(char) * (m + n + 3));
@@ -33,6 +34,7 @@ char *multiply(char *num1, char *num2) {
   free(ansArr);
   return ans;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   char input1[] = "2333";

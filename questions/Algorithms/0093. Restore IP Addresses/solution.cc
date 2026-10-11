@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 private:
   static constexpr int SEG_COUNT = 4;
@@ -60,6 +61,7 @@ public:
     return ans;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   string input = "25525511135";

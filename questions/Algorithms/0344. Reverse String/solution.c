@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// ------------------------------- solution begin -------------------------------
 void reverseString(char *s, int sSize) {
   for (int i = 0, j = sSize - 1; i < j; i++, j--) {
     char temp = s[i];
@@ -9,6 +10,7 @@ void reverseString(char *s, int sSize) {
     s[j]      = temp;
   }
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   char input[] = "hello";

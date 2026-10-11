@@ -3,6 +3,7 @@
 
 #include <array.h>
 
+// ------------------------------- solution begin -------------------------------
 int *sortArrayByParityII(int *A, int ASize, int *returnSize) {
   for (int even = 0, odd = 1; even < ASize; even += 2) {
     if (A[even] & 1) {
@@ -18,6 +19,7 @@ int *sortArrayByParityII(int *A, int ASize, int *returnSize) {
   *returnSize = ASize;
   return A;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input1[] = {4, 2, 5, 7};

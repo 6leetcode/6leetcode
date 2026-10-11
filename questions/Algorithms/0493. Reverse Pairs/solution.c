@@ -3,6 +3,7 @@
 
 #include <array.h>
 
+// ------------------------------- solution begin -------------------------------
 int reversePairsRecursive(int *nums, int left, int right) {
   if (left == right) {
     return 0;
@@ -49,6 +50,7 @@ int reversePairs(int *nums, int numsSize) {
   }
   return reversePairsRecursive(nums, 0, numsSize - 1);
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input[] = {1, 3, 2, 3, 1};

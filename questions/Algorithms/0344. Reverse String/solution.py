@@ -1,6 +1,7 @@
 from typing import List
 
 
+# ------------------------------- solution begin -------------------------------
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         i = 0
@@ -11,6 +12,7 @@ class Solution:
             s[j] = temp
             i = i + 1
             j = j - 1
+# ------------------------------- solution end ---------------------------------
 
 
 if __name__ == "__main__":

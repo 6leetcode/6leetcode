@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int poorPigs(int buckets, int minutesToDie, int minutesToTest) {
@@ -16,6 +17,7 @@ public:
     return ans;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int buckets       = 1000;

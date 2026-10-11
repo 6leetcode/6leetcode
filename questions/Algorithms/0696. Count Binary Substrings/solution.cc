@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int countBinarySubstrings(string s) {
@@ -18,6 +19,7 @@ public:
     return n;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   string input = "00110011";

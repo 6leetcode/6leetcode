@@ -4,6 +4,7 @@
 
 #define N 9
 
+// ------------------------------- solution begin -------------------------------
 bool isValidSudoku(char **board, int boardSize, int *boardColSize) {
   for (int i = 0; i < boardSize; i++) {
     bool t[N] = {false};
@@ -48,6 +49,7 @@ bool isValidSudoku(char **board, int boardSize, int *boardColSize) {
   }
   return true;
 }
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   char board[N][N] = {
