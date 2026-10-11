@@ -19,7 +19,7 @@ install:
 
 .PHONY: changelog
 changelog:
-	@git-chglog -o CHANGELOG.md
+	@git-cliff -o CHANGELOG.md
 
 .PHONY: deploy
 deploy:

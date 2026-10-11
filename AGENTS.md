@@ -88,9 +88,11 @@ yarn build           # -> apps/web/build
 
 ### Commits
 
-Gitmoji-style: `:<emoji>: <Subject>` (see `.chglog/config.yml`). Examples:
-`:sparkles: Add ...`, `:bug: Fix ...`, `:arrow_up: Upgrade deps`,
-`:robot: Generate questions`, `:truck: Rename ...`, `:fire: Remove ...`.
+Conventional Commits: `<type>(<scope>): <description>` (see `cliff.toml`, parsed by
+`git-cliff`). Types: `feat`, `fix`, `perf`, `refactor`, `docs`, `build`, `ci`,
+`test`, `chore`, `style`, `revert`. Examples: `feat(cli): ...`,
+`fix(web): ...`, `refactor(cli): ...`, `chore(questions): ...`. Keep messages in
+English.
 
 ### Adding / editing a solution
 
