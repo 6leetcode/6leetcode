@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 private:
   int roman_to_integer(char c) {
@@ -43,6 +44,7 @@ public:
     return result;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   string input = "MCMXCIV";

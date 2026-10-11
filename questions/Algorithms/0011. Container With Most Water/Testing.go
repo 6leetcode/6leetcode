@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// ------------------------------- solution begin -------------------------------
 //双指针法
 func maxArea(height []int) int {
 	j := len(height) - 1 // right 指针
@@ -26,6 +27,8 @@ func maxArea(height []int) int {
 	}
 	return max
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var input = []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
