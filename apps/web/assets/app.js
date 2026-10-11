@@ -127,7 +127,7 @@
     catBtn: $('catBtn'), catName: $('catName'), catCount: $('catCount'), catMenu: $('catMenu'),
     search: $('searchInput'), searchClear: $('searchClear'),
     timeline: $('timeline'), sentinel: $('sentinel'), listHint: $('listHint'), listEmpty: $('listEmpty'),
-    reader: $('reader'), readerTitle: $('readerTitle'), barMeta: $('barMeta'),
+    reader: $('reader'), barMeta: $('barMeta'),
   };
 
   /* ── 路由：URL hash 定位（便于分享）────────────────────────────────── */
@@ -301,7 +301,6 @@
   /* ── 题解阅读 ───────────────────────────────────────────────────────── */
   function renderEmpty(title, msg) {
     els.reader.innerHTML = `<div class="empty"><b>${esc(title)}</b><span>${esc(msg)}</span></div>`;
-    els.readerTitle.textContent = '';
   }
 
   // 题面只展示中文（translated_content），不再回退英文。
@@ -350,7 +349,6 @@
   function paintReader() {
     const q = state.question;
     if (!q) return;
-    els.readerTitle.innerHTML = `<b>${esc(q.question_frontend_id)}.</b> ${esc(q.translated_title || q.title)}`;
     els.reader.innerHTML = renderHead(q) + renderSolutions();
     const desc = $('desc');
     if (desc) desc.innerHTML = descHtml(q);
