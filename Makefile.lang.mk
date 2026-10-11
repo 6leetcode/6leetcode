@@ -88,6 +88,6 @@ $(JavaFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
 	@javac $@
-	@java `echo $@ | cut -d . -f1`
+	@java Main
 	@$(RM) -rf *.class
 	@echo

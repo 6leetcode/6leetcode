@@ -1,1 +1,1 @@
-[{"questionId":258,"language":"TypeScript","filename":"typescript.ts","data":"function addDigits(num: number): number {\n  return (num - 1) % 9 + 1;\n};"}]
+[{"questionId":258,"language":"TypeScript","filename":"solution.ts","data":"function addDigits(num: number): number {\n  return (num - 1) % 9 + 1;\n};"}]

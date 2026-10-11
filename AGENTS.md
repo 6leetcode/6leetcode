@@ -14,7 +14,7 @@ Guidance for AI coding agents working in the **6leetcode** repository.
    Left column = category dropdown + searchable question list (infinite scroll),
    right column = Chinese statement + solution.
 3. **`questions/`** — the solution corpus. One directory per problem with runnable
-   test programs (`Testing.<ext>`) for each language plus generated docs.
+   test programs (`solution.<ext>`) for each language plus generated docs.
    Supported languages: C, C++, Go, Java, TypeScript, Python, Rust.
 
 ## Repository layout
@@ -110,8 +110,10 @@ English.
 
 ### Adding / editing a solution
 
-- Primary file is `Testing.<ext>`; additional solutions use `language<N>.<ext>`
-  (e.g. `c1.c`, `c2.c`, `python1.py`) where a smaller N is more optimized.
+- Each language has a single solution file named `solution.<ext>`
+  (`solution.c`, `solution.cc`, `solution.go`, `solution.java`, `solution.py`,
+  `solution.rs`, `solution.ts`).
+- For Java the entry point lives in a `class Main` (the Makefile runs `java Main`).
 - Each solution file must be runnable standalone (`main`/entry point with test cases).
 - Wrap the solution body in the begin/end markers so the crawler can extract it:
   `// ------------------------------- solution begin -------------------------------`
