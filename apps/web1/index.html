@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>6leetcode · LeetCode 题解</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body class="index">
+
+  <header class="app-bar">
+    <button class="menu-btn" id="menuBtn" aria-label="打开题目目录" aria-expanded="false">目录</button>
+    <div class="brand">6leetcode <small>LeetCode 题解</small></div>
+    <div class="bar-meta" id="barMeta"></div>
+  </header>
+
+  <main class="app-main">
+    <aside class="list-col" id="listCol">
+      <div class="drawer-head"><span>题目目录</span><button id="drawerClose" aria-label="关闭目录">×</button></div>
+
+      <nav class="cat-bar" id="catBar" aria-label="题目分类"></nav>
+
+      <div class="list-head">
+        <span>题目 / PROBLEM</span>
+        <span id="listHint"></span>
+      </div>
+
+      <div class="timeline" id="timeline">
+        <div class="list-empty" id="listEmpty">正在读取题库…</div>
+      </div>
+      <div class="sentinel" id="sentinel" aria-hidden="true"></div>
+    </aside>
+
+    <section class="reader">
+      <div class="reader-bar">
+        <span id="readerTitle">正在读取…</span>
+        <div class="reader-tools">
+          <span class="sorts" id="descToggle"></span>
+        </div>
+      </div>
+      <div class="reader-scroll" id="reader">
+        <div class="empty">
+          <b>6leetcode</b>
+          <span>从左侧选择一道题目，这里会显示题面与题解。</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="backdrop" id="backdrop"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
