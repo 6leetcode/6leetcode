@@ -4051,10 +4051,10 @@ LeetCode Solutions.
 |[面试题 01.03](https://leetcode.cn/problems/string-to-url-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 01.06](https://leetcode.cn/problems/compress-string-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 01.09](https://leetcode.cn/problems/string-rotation-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 02.01](https://leetcode.cn/problems/remove-duplicate-node-lcci)|Easy||||||||
-|[面试题 02.06](https://leetcode.cn/problems/palindrome-linked-list-lcci)|Easy||||||||
-|[面试题 02.07](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci)|Easy||||||||
-|[面试题 02.08](https://leetcode.cn/problems/linked-list-cycle-lcci)|Medium||||||||
+|[面试题 02.01](https://leetcode.cn/problems/remove-duplicate-node-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 02.06](https://leetcode.cn/problems/palindrome-linked-list-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 02.07](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 02.08](https://leetcode.cn/problems/linked-list-cycle-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 03.02](https://leetcode.cn/problems/min-stack-lcci)|Easy||||||||
 |[面试题 03.04](https://leetcode.cn/problems/implement-queue-using-stacks-lcci)|Easy||||||||
 |[面试题 04.01](https://leetcode.cn/problems/route-between-nodes-lcci)|Medium||||||||
@@ -4073,8 +4073,8 @@ LeetCode Solutions.
 |[面试题 01.04](https://leetcode.cn/problems/palindrome-permutation-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 01.07](https://leetcode.cn/problems/rotate-matrix-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 01.08](https://leetcode.cn/problems/zero-matrix-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 02.03](https://leetcode.cn/problems/delete-middle-node-lcci)|Easy||||||||
-|[面试题 02.05](https://leetcode.cn/problems/sum-lists-lcci)|Medium||||||||
+|[面试题 02.03](https://leetcode.cn/problems/delete-middle-node-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 02.05](https://leetcode.cn/problems/sum-lists-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 03.03](https://leetcode.cn/problems/stack-of-plates-lcci)|Medium||||||||
 |[面试题 05.08](https://leetcode.cn/problems/draw-line-lcci)|Medium||||||||
 |[面试题 08.01](https://leetcode.cn/problems/three-steps-problem-lcci)|Easy||||||||
@@ -4111,8 +4111,8 @@ LeetCode Solutions.
 |[面试题 16.18](https://leetcode.cn/problems/pattern-matching-lcci)|Medium||||||||
 |[面试题 16.19](https://leetcode.cn/problems/pond-sizes-lcci)|Medium||||||||
 |[面试题 01.05](https://leetcode.cn/problems/one-away-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 02.02](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci)|Easy||||||||
-|[面试题 02.04](https://leetcode.cn/problems/partition-list-lcci)|Medium||||||||
+|[面试题 02.02](https://leetcode.cn/problems/kth-node-from-end-of-list-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 02.04](https://leetcode.cn/problems/partition-list-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 04.12](https://leetcode.cn/problems/paths-with-sum-lcci)|Medium||||||||
 |[面试题 04.09](https://leetcode.cn/problems/bst-sequences-lcci)|Hard||||||||
 |[面试题 08.02](https://leetcode.cn/problems/robot-in-a-grid-lcci)|Medium||||||||
