@@ -1,5 +1,5 @@
 import { existsSync, mkdirSync, readdirSync, writeFileSync } from "node:fs";
-import { dirname, extname, join } from "node:path";
+import { basename, dirname, extname, join } from "node:path";
 import type { Config } from "./config";
 import type { DB, QuestionRow } from "./db";
 import { allQuestionsOrdered, categoriesInOrder } from "./db";
@@ -66,8 +66,36 @@ const ZHReadme =
   "- `Container` 的环境可能是 `Debian` 或者 `Alpine`。\n\n" +
   "## Solutions' list\n";
 
+const dirCaseCache = new Map<string, string>();
+
+/**
+ * Reuse the casing of an existing directory when it differs only by case.
+ * Problem titles change casing over time (e.g. "ZigZag" -> "Zigzag"); on a
+ * case-sensitive filesystem (CI/Linux) writing the new casing would create a
+ * duplicate directory next to the tracked one.
+ */
+function resolveExistingCase(dir: string): string {
+  const parent = dirname(dir);
+  const base = basename(dir);
+  const key = `${parent}\u0000${base.toLowerCase()}`;
+  const cached = dirCaseCache.get(key);
+  if (cached !== undefined) return cached;
+
+  let resolved = dir;
+  try {
+    const match = readdirSync(parent).find((name) => name.toLowerCase() === base.toLowerCase());
+    if (match) resolved = join(parent, match);
+  } catch {
+    // parent does not exist yet
+  }
+  dirCaseCache.set(key, resolved);
+  return resolved;
+}
+
 export function questionDir(config: Config, q: Pick<QuestionRow, "category_title" | "question_frontend_id" | "title">): string {
-  return `${config.questionDir}/${q.category_title}/${questionId(q.question_frontend_id)}. ${q.title}`;
+  return resolveExistingCase(
+    `${config.questionDir}/${q.category_title}/${questionId(q.question_frontend_id)}. ${q.title}`,
+  );
 }
 
 function walkFiles(dir: string, cb: (full: string, name: string) => void): void {
