@@ -8,21 +8,22 @@ struct TreeNode {
 };
 
 // ------------------------------- solution begin -------------------------------
-static void weave(int *l, int ln, int *r, int rn, int *prefix, int pn, int **res, int *size, int **cols) {
-  if (ln == 0 && rn == 0) {
-    res[*size] = (int *)malloc(sizeof(int) * pn);
-    for (int i = 0; i < pn; i++) res[*size][i] = prefix[i];
-    (*cols)[*size] = pn;
-    (*size)++;
+static void weave(int *left, int leftLen, int *right, int rightLen, int *sequence, int sequenceLen,
+                  int **results, int *resultCount, int **resultColSizes) {
+  if (leftLen == 0 && rightLen == 0) {
+    results[*resultCount] = (int *)malloc(sizeof(int) * sequenceLen);
+    for (int i = 0; i < sequenceLen; i++) results[*resultCount][i] = sequence[i];
+    (*resultColSizes)[*resultCount] = sequenceLen;
+    (*resultCount)++;
     return;
   }
-  if (ln > 0) {
-    prefix[pn] = l[0];
-    weave(l + 1, ln - 1, r, rn, prefix, pn + 1, res, size, cols);
+  if (leftLen > 0) {
+    sequence[sequenceLen] = left[0];
+    weave(left + 1, leftLen - 1, right, rightLen, sequence, sequenceLen + 1, results, resultCount, resultColSizes);
   }
-  if (rn > 0) {
-    prefix[pn] = r[0];
-    weave(l, ln, r + 1, rn - 1, prefix, pn + 1, res, size, cols);
+  if (rightLen > 0) {
+    sequence[sequenceLen] = right[0];
+    weave(left, leftLen, right + 1, rightLen - 1, sequence, sequenceLen + 1, results, resultCount, resultColSizes);
   }
 }
 
