@@ -175,7 +175,6 @@ body.index { padding: 0; height: 100vh; overflow: hidden; display: flex; flex-di
 .reader-bar #readerTitle { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .reader-bar #readerTitle b { color: var(--ink); font-weight: 700; }
 .reader-bar #readerTitle .sp { color: var(--accent); padding: 0 7px; }
-.reader-tools { flex: none; display: flex; align-items: center; gap: 8px; }
 .reader-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 22px 24px 60px; scrollbar-gutter: stable; }
 
 .empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; height: 60%; text-align: center; color: var(--ink-light); }

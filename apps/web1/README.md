@@ -4,7 +4,7 @@
 采用「报纸版式」设计（参考 `testtrending/ai-newspaper` 与 `trending`）。
 
 - **左栏**：**分类下拉** + **搜索框**（题号 / 标题 / slug），下方题目列表（**滚动加载**，每页 50 题）。
-- **右栏**：题面（中/英切换）+ 题解（语言切换、复制代码、极简语法高亮）。
+- **右栏**：题面（**仅中文**）+ 题解（语言切换、复制代码、极简语法高亮）。
 
 英文正文使用 [Fontsource 的 Nunito](https://fontsource.org/fonts/nunito/use?tab=web)（CDN），
 中文与代码回落到等宽字体栈（`ui-monospace, …, monospace`）。

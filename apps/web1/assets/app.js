@@ -120,14 +120,13 @@
     question: null,
     solutions: [],
     lang: localStorage.getItem('leet_lang') || '',
-    descLang: localStorage.getItem('leet_desc') || 'zh',
   };
 
   const els = {
     catBtn: $('catBtn'), catName: $('catName'), catCount: $('catCount'), catMenu: $('catMenu'),
     search: $('searchInput'), searchClear: $('searchClear'),
     timeline: $('timeline'), sentinel: $('sentinel'), listHint: $('listHint'), listEmpty: $('listEmpty'),
-    reader: $('reader'), readerTitle: $('readerTitle'), descToggle: $('descToggle'), barMeta: $('barMeta'),
+    reader: $('reader'), readerTitle: $('readerTitle'), barMeta: $('barMeta'),
   };
 
   /* ── 分类下拉 ───────────────────────────────────────────────────────── */
@@ -287,13 +286,11 @@
   function renderEmpty(title, msg) {
     els.reader.innerHTML = `<div class="empty"><b>${esc(title)}</b><span>${esc(msg)}</span></div>`;
     els.readerTitle.textContent = '';
-    els.descToggle.innerHTML = '';
   }
 
+  // 题面只展示中文（translated_content），不再回退英文。
   function descHtml(q) {
-    const zh = b64utf8(q.translated_content);
-    const en = b64utf8(q.content);
-    return state.descLang === 'en' ? (en || zh) : (zh || en);
+    return b64utf8(q.translated_content);
   }
 
   function renderHead(q) {
@@ -339,11 +336,6 @@
     const q = state.question;
     if (!q) return;
     els.readerTitle.innerHTML = `<b>${esc(q.question_frontend_id)}.</b> ${esc(q.translated_title || q.title)}`;
-    els.descToggle.innerHTML = b64utf8(q.content)
-      ? `<span class="sorts"><span class="lbl">题面</span>
-          <button data-desc="zh" aria-pressed="${state.descLang === 'zh'}">中文</button>
-          <button data-desc="en" aria-pressed="${state.descLang === 'en'}">EN</button></span>`
-      : '';
     els.reader.innerHTML = renderHead(q) + renderSolutions();
     const desc = $('desc');
     if (desc) desc.innerHTML = descHtml(q);
@@ -426,12 +418,6 @@
         copy.classList.add('done');
         setTimeout(() => { copy.textContent = '复制'; copy.classList.remove('done'); }, 1400);
       });
-    }
-    const d = e.target.closest('button[data-desc]');
-    if (d) {
-      state.descLang = d.dataset.desc;
-      localStorage.setItem('leet_desc', state.descLang);
-      paintReader();
     }
   });
 
