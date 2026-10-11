@@ -68,5 +68,14 @@ int main(int argc, char const *argv[]) {
     cout << "]";
   }
   cout << "]" << endl;
+
+  for (size_t i = 0; i < res.size(); i++) {
+    ListNode *p = res[i];
+    while (p) {
+      ListNode *next = p->next;
+      delete p;
+      p = next;
+    }
+  }
   return EXIT_SUCCESS;
 }
