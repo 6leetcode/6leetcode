@@ -1,4 +1,4 @@
-FROM gcc:14
+FROM gcc:14-trixie
 
 WORKDIR /app
 
