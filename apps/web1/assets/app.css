@@ -162,9 +162,6 @@ body.index { padding: 0; height: 100vh; overflow: hidden; display: flex; flex-di
 .q-row .qdiff.easy { color: var(--diff-easy); }
 .q-row .qdiff.medium { color: var(--diff-medium); }
 .q-row .qdiff.hard { color: var(--diff-hard); }
-.q-row .ql { flex: none; display: flex; gap: 3px; align-items: center; }
-.q-row .ql .dot { width: 7px; height: 7px; border-radius: 50%; box-shadow: 0 0 0 1px rgba(22,19,15,.18) inset; }
-.q-row .ql .none { font-family: var(--sans); font-size: 9px; color: var(--ink-faint); }
 .list-empty { padding: 30px 14px; text-align: center; color: var(--ink-light); font-size: 12.5px; }
 
 /* ── 右栏 ─────────────────────────────────────────────────────────────── */

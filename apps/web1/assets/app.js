@@ -15,8 +15,6 @@
     Python:     { label: 'Python',     hl: 'python',     color: 'var(--lang-py)' },
     Rust:       { label: 'Rust',       hl: 'rust',       color: 'var(--lang-rs)' },
   };
-  const LANG_ORDER = ['C', 'CPP', 'Go', 'Java', 'TypeScript', 'Python', 'Rust'];
-
   /* ── 工具 ───────────────────────────────────────────────────────────── */
   const $ = (id) => document.getElementById(id);
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -155,17 +153,12 @@
 
   /* ── 题目列表 ───────────────────────────────────────────────────────── */
   function rowHtml(q) {
-    const langs = LANG_ORDER.filter((k) => q.solutions && q.solutions[k]);
-    const dots = langs.length
-      ? `<span class="ql">${langs.map((k) => `<i class="dot" title="${esc(LANGS[k].label)}" style="background:${LANGS[k].color}"></i>`).join('')}</span>`
-      : `<span class="ql"><span class="none">—</span></span>`;
     const zh = q.translated_title && q.translated_title !== q.title;
     return `
       <button class="q-row" data-id="${q.question_id}" aria-current="${q.question_id === state.selected}">
         <span class="qk">${esc(q.question_frontend_id)}</span>
         <span class="qt">${esc(zh ? q.translated_title : q.title)}${zh ? ` <span class="en">${esc(q.title)}</span>` : ''}</span>
         <span class="qdiff ${diffClass(q.difficulty)}">${esc((q.difficulty || '').slice(0, 1))}</span>
-        ${dots}
       </button>`;
   }
 
