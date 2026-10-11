@@ -115,6 +115,7 @@
     done: false,
     cats: [],
     byId: new Map(),
+    bySlug: new Map(),
     query: '',
     selected: null,
     question: null,
@@ -128,6 +129,26 @@
     timeline: $('timeline'), sentinel: $('sentinel'), listHint: $('listHint'), listEmpty: $('listEmpty'),
     reader: $('reader'), readerTitle: $('readerTitle'), barMeta: $('barMeta'),
   };
+
+  /* ── 路由：URL slash 定位（便于分享）────────────────────────────────── */
+  // 以脚本自身地址推断站点根目录，兼容部署在子路径的情况。
+  const SCRIPT_SRC = document.currentScript && document.currentScript.src;
+  const BASE = SCRIPT_SRC ? new URL('../', SCRIPT_SRC).pathname : '/';
+
+  function routeFromLocation() {
+    if (!location.pathname.startsWith(BASE)) return '';
+    let r = location.pathname.slice(BASE.length).replace(/^\/+|\/+$/g, '');
+    if (r === 'index.html') r = '';
+    try { return decodeURIComponent(r); } catch { return r; }
+  }
+  const INITIAL_ROUTE = routeFromLocation();
+
+  function setRoute(slug, mode) {
+    if (mode === 'none') return;
+    const url = BASE + (slug ? encodeURIComponent(slug) : '') + location.search;
+    if (location.pathname + location.search === url) return;
+    history[mode === 'replace' ? 'replaceState' : 'pushState'](null, '', url);
+  }
 
   /* ── 分类下拉 ───────────────────────────────────────────────────────── */
   const catTotal = (key) => (key === 'All' ? state.allTotal : (state.cats.find((c) => c.key === key) || {}).count || 0);
@@ -214,7 +235,7 @@
       if (!Array.isArray(list) || list.length === 0) { state.done = true; return; }
       state.page = next;
       state.loaded += list.length;
-      list.forEach((q) => state.byId.set(q.question_id, q));
+      list.forEach((q) => { state.byId.set(q.question_id, q); state.bySlug.set(q.title_slug, q); });
       appendRows(list);
       if (list.length < 50) state.done = true;
     } catch {
@@ -230,6 +251,7 @@
     state.done = false;
     state.loading = false;
     state.byId.clear();
+    state.bySlug.clear();
     els.timeline.innerHTML = '';
     els.timeline.appendChild(els.sentinel);
     els.listHint.textContent = '';
@@ -353,9 +375,22 @@
     els.reader.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.lang === state.lang)));
   }
 
-  async function selectQuestion(q) {
+  async function findQuestion(slug) {
+    if (!slug) return null;
+    if (state.bySlug.has(slug)) return state.bySlug.get(slug);
+    while (!state.done) {
+      const before = state.loaded;
+      await loadMore();
+      if (state.bySlug.has(slug)) return state.bySlug.get(slug);
+      if (state.loaded === before) break;
+    }
+    return null;
+  }
+
+  async function selectQuestion(q, mode = 'push') {
     state.selected = q.question_id;
     state.question = q;
+    setRoute(q.title_slug, mode);
     localStorage.setItem('leet_last', String(q.question_id));
     els.timeline.querySelectorAll('.q-row').forEach((el) => el.setAttribute('aria-current', String(el.dataset.id === String(q.question_id))));
     paintReader();
@@ -429,6 +464,11 @@
   $('drawerClose').addEventListener('click', () => document.body.classList.remove('drawer'));
   $('backdrop').addEventListener('click', () => document.body.classList.remove('drawer'));
 
+  window.addEventListener('popstate', async () => {
+    const q = await findQuestion(routeFromLocation());
+    if (q) selectQuestion(q, 'none');
+  });
+
   /* ── 启动 ───────────────────────────────────────────────────────────── */
   (async function boot() {
     let index;
@@ -447,5 +487,8 @@
     els.timeline.appendChild(els.sentinel);
     els.listEmpty.remove();
     await loadMore();
+    // 无选中时默认展示第一题（两数之和）；带 slash 的分享链接则定位到对应题目。
+    const target = (INITIAL_ROUTE && (await findQuestion(INITIAL_ROUTE))) || state.byId.values().next().value;
+    if (target) selectQuestion(target, 'none');
   })();
 })();
