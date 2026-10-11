@@ -34,7 +34,7 @@ fn build(vals: &[i32], pos: i32) -> (Vec<Box<ListNode>>, *mut ListNode) {
       })
     })
     .collect();
-  let ptrs: Vec<*mut ListNode> = nodes.iter_mut().map(|b| &mut **b as *mut ListNode).collect();
+  let mut ptrs: Vec<*mut ListNode> = nodes.iter_mut().map(|b| &mut **b as *mut ListNode).collect();
   let n = ptrs.len();
   for i in 0..n.saturating_sub(1) {
     unsafe {

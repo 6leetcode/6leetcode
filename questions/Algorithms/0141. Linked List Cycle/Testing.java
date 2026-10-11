@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // -------------------------------solution begin-------------------------------
 class ListNode {
   int val;
@@ -33,7 +35,7 @@ class Testing {
   }
 
   static void run(int[] nums, int pos) {
-    System.out.printf("Input:  head = %s, pos = %d\n", listToInts(intsToList(nums, pos)), pos);
+    System.out.printf("Input:  head = %s, pos = %d\n", Arrays.toString(nums), pos);
     Solution solution = new Solution();
     System.out.printf("Output: %b\n", solution.hasCycle(intsToList(nums, pos)));
   }
@@ -51,16 +53,5 @@ class Testing {
       cur.next = nodes[pos];
     }
     return dummy.next;
-  }
-
-  static String listToInts(ListNode head) {
-    StringBuilder sb = new StringBuilder("[");
-    boolean first = true;
-    for (int i = 0; head != null && i < 20; i++) {
-      sb.append(first ? "" : ", ").append(head.val);
-      first = false;
-      head = head.next;
-    }
-    return sb.append("]").toString();
   }
 }
