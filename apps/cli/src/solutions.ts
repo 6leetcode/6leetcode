@@ -9,11 +9,8 @@ const tokens: { language: string; suffix: string }[] = [
   { language: "Go", suffix: ".go" },
   { language: "Java", suffix: ".java" },
   { language: "TypeScript", suffix: ".ts" },
-  { language: "PHP", suffix: ".php" },
   { language: "Python", suffix: ".py" },
   { language: "Rust", suffix: ".rs" },
-  { language: "SQL", suffix: ".sql" },
-  { language: "Bash", suffix: ".sh" },
 ];
 
 /** Extract the text between the "solution begin" / "solution end" markers. */

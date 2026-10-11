@@ -16,13 +16,11 @@ jobs:
     strategy:
       matrix:
         solution:
-          - "bash"
           - "c"
           - "cc"
           - "golang"
           - "java"
           - "typescript"
-          - "php"
           - "python"
           - "rust"
     steps:

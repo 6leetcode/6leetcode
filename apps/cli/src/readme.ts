@@ -6,37 +6,31 @@ import { allQuestionsOrdered, categoriesInOrder } from "./db";
 import { questionId } from "./ids";
 import { HostLeetcode } from "./leetcode";
 
-const suffixes = [".c", ".cc", ".go", ".java", ".ts", ".php", ".py", ".rs", ".sql", ".sh"];
+const suffixes = [".c", ".cc", ".go", ".java", ".ts", ".py", ".rs"];
 const makefiles: Record<string, string> = {
-  ".sh": "bash.makefile",
   ".c": "c.makefile",
   ".cc": "cc.makefile",
   ".go": "go.makefile",
   ".java": "java.makefile",
   ".ts": "typescript.makefile",
-  ".php": "php.makefile",
   ".py": "python.makefile",
   ".rs": "rust.makefile",
-  ".sql": "",
 };
 const targets: Record<string, string> = {
-  ".sh": "bash",
   ".c": "c",
   ".cc": "cc",
   ".go": "go",
   ".java": "java",
   ".ts": "typescript",
-  ".php": "php",
   ".py": "python",
   ".rs": "rust",
-  ".sql": "",
 };
 
 const makefileDir = "testing";
 
 const tableTitle =
-  "|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|\n" +
-  "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n";
+  "|Index|Difficulty|C|C++|Go|Java|TypeScript|Python|Rust|\n" +
+  "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n";
 
 const EngReadme =
   "# LeetCode\n\n" +

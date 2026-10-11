@@ -3,15 +3,13 @@ CCFiles         := $(wildcard *.cc)
 RustFiles       := $(wildcard *.rs)
 GolangFiles     := $(wildcard *.go)
 PythonFiles     := $(wildcard *.py)
-PHPFiles        := $(wildcard *.php)
 TypescriptFiles := $(wildcard *.ts)
 JavaFiles       := $(wildcard *.java)
-BashFiles       := $(wildcard *.sh)
 
 # export MAKEFLAGS="--no-print-directory"
 
 .PHONY: all
-all: c cc rust go python php typescript java bash
+all: c cc rust go python typescript java
 
 .PHONY: c
 c: $(CFiles)
@@ -92,24 +90,4 @@ $(JavaFiles):
 	@javac $@
 	@java `echo $@ | cut -d . -f1`
 	@$(RM) -rf *.class
-	@echo
-
-.PHONY: php
-php: $(PHPFiles)
-
-.PHONY: $(PHPFiles)
-$(PHPFiles):
-	@echo Running `echo $@ | cut -d. -f1`:
-	@echo
-	@php $@
-	@echo
-
-.PHONY: bash
-bash: $(BashFiles)
-
-.PHONY: $(BashFiles)
-$(BashFiles):
-	@echo Running `echo $@ | cut -d. -f1`:
-	@echo
-	@./`echo $@ | cut -d. -f1`.sh
 	@echo

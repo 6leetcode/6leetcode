@@ -65,14 +65,14 @@ env overrides `QuestionDir`, `Public`, `DatabaseFile`.
 Run every solution for one language (requires Docker):
 
 ```bash
-make c|cc|golang|java|typescript|php|python|rust|bash
+make c|cc|golang|java|typescript|python|rust
 ```
 
 Run one problem directly (uses the included `Makefile.lang.mk`):
 
 ```bash
 cd "questions/Algorithms/0001. Two Sum"
-make golang          # or c, cc, java, python, rust, typescript, php, bash
+make golang          # or c, cc, java, python, rust, typescript
 ```
 
 ### Frontend (`apps/web`)
