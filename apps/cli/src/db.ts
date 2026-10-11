@@ -201,7 +201,7 @@ export function insertSolution(db: DB, questionId: number, language: string, fil
 }
 
 /** Categories that are intentionally not crawled or published. */
-export const EXCLUDED_CATEGORIES = ["Concurrency", "Shell", "pandas"];
+export const EXCLUDED_CATEGORIES = ["Concurrency", "Shell", "pandas", "Database"];
 
 /** Remove questions (and their solutions) that belong to excluded categories. */
 export function pruneExcludedCategories(db: DB): number {

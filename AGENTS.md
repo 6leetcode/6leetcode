@@ -37,7 +37,7 @@ apps/web/                     frontend: plain HTML/CSS/JS, no deps
   db/                         generated JSON (index.json, questions/, solutions/)
   serve.command               serve this directory and open the page
 questions/                    problem corpus (generated + hand-written solutions)
-  Algorithms/, Database/, JavaScript/, LCCI/    (Concurrency, Shell, pandas excluded see db.ts)
+  Algorithms/, JavaScript/, LCCI/    (Database, Concurrency, Shell, pandas excluded see db.ts)
   library/                    shared helpers (c/, cc/, go/, java/, rust/, ...
   go.mod, Cargo.toml, package.json, tsconfig.json   (per-language tooling roots)
 testing/*.makefile            generated per-language test targets (used by docker/)
