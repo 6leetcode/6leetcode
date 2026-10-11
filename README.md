@@ -6,7 +6,7 @@ LeetCode Solutions.
 
 - Each problem is organized according to the title number.
 - Each problem folder has a description file which one named `readme.md`.
-- There can be multiple solutions for the same language in each folder, ranked according to the degree of algorithm optimization, and the file name prefix is the language name. For example: the performance of `c1.c` is better than the performance of `c2.c`.
+- The primary solution for each language lives in `Testing.<ext>`. Additional solutions for the same language use the language name plus an index, ranked by algorithm optimization: a smaller index is more optimized. For example, `c1.c` performs better than `c2.c`.
 - Each problem solution must contain a `main` function that contains all the test cases that can be thought of, making it easy to run offline. The solution function is written separately as a separate function.
 
 ## How to test problem's solution offline
@@ -73,55 +73,55 @@ LeetCode Solutions.
 |[0048](https://leetcode.cn/problems/rotate-image)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0049](https://leetcode.cn/problems/group-anagrams)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0050](https://leetcode.cn/problems/powx-n)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0051](https://leetcode.cn/problems/n-queens)|Hard||||||||
-|[0052](https://leetcode.cn/problems/n-queens-ii)|Hard||||||||
+|[0051](https://leetcode.cn/problems/n-queens)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0052](https://leetcode.cn/problems/n-queens-ii)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0053](https://leetcode.cn/problems/maximum-subarray)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0054](https://leetcode.cn/problems/spiral-matrix)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0055](https://leetcode.cn/problems/jump-game)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0056](https://leetcode.cn/problems/merge-intervals)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0057](https://leetcode.cn/problems/insert-interval)|Medium||||||||
+|[0057](https://leetcode.cn/problems/insert-interval)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0058](https://leetcode.cn/problems/length-of-last-word)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0059](https://leetcode.cn/problems/spiral-matrix-ii)|Medium||||||||
-|[0060](https://leetcode.cn/problems/permutation-sequence)|Hard||||||||
-|[0061](https://leetcode.cn/problems/rotate-list)|Medium|:white_check_mark:|||||||
-|[0062](https://leetcode.cn/problems/unique-paths)|Medium||||||||
-|[0063](https://leetcode.cn/problems/unique-paths-ii)|Medium||||||||
-|[0064](https://leetcode.cn/problems/minimum-path-sum)|Medium||||||||
-|[0065](https://leetcode.cn/problems/valid-number)|Hard||||||||
+|[0059](https://leetcode.cn/problems/spiral-matrix-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0060](https://leetcode.cn/problems/permutation-sequence)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0061](https://leetcode.cn/problems/rotate-list)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0062](https://leetcode.cn/problems/unique-paths)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0063](https://leetcode.cn/problems/unique-paths-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0064](https://leetcode.cn/problems/minimum-path-sum)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0065](https://leetcode.cn/problems/valid-number)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0066](https://leetcode.cn/problems/plus-one)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0067](https://leetcode.cn/problems/add-binary)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0068](https://leetcode.cn/problems/text-justification)|Hard||||||||
+|[0068](https://leetcode.cn/problems/text-justification)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0069](https://leetcode.cn/problems/sqrtx)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0070](https://leetcode.cn/problems/climbing-stairs)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0071](https://leetcode.cn/problems/simplify-path)|Medium||||||||
-|[0072](https://leetcode.cn/problems/edit-distance)|Medium||||||||
-|[0073](https://leetcode.cn/problems/set-matrix-zeroes)|Medium||||||||
+|[0071](https://leetcode.cn/problems/simplify-path)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0072](https://leetcode.cn/problems/edit-distance)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0073](https://leetcode.cn/problems/set-matrix-zeroes)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0074](https://leetcode.cn/problems/search-a-2d-matrix)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0075](https://leetcode.cn/problems/sort-colors)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0076](https://leetcode.cn/problems/minimum-window-substring)|Hard||||||||
-|[0077](https://leetcode.cn/problems/combinations)|Medium||||||||
-|[0078](https://leetcode.cn/problems/subsets)|Medium||||||||
-|[0079](https://leetcode.cn/problems/word-search)|Medium||||||||
-|[0080](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii)|Medium||||||||
-|[0081](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii)|Medium||||||||
-|[0082](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii)|Medium||||||||
-|[0083](https://leetcode.cn/problems/remove-duplicates-from-sorted-list)|Easy||||||||
-|[0084](https://leetcode.cn/problems/largest-rectangle-in-histogram)|Hard||||||||
-|[0085](https://leetcode.cn/problems/maximal-rectangle)|Hard||||||||
-|[0086](https://leetcode.cn/problems/partition-list)|Medium||||||||
-|[0087](https://leetcode.cn/problems/scramble-string)|Hard||||||||
-|[0088](https://leetcode.cn/problems/merge-sorted-array)|Easy||||||||
+|[0076](https://leetcode.cn/problems/minimum-window-substring)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0077](https://leetcode.cn/problems/combinations)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0078](https://leetcode.cn/problems/subsets)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0079](https://leetcode.cn/problems/word-search)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0080](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0081](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0082](https://leetcode.cn/problems/remove-duplicates-from-sorted-list-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0083](https://leetcode.cn/problems/remove-duplicates-from-sorted-list)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0084](https://leetcode.cn/problems/largest-rectangle-in-histogram)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0085](https://leetcode.cn/problems/maximal-rectangle)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0086](https://leetcode.cn/problems/partition-list)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0087](https://leetcode.cn/problems/scramble-string)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0088](https://leetcode.cn/problems/merge-sorted-array)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0089](https://leetcode.cn/problems/gray-code)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0090](https://leetcode.cn/problems/subsets-ii)|Medium||||||||
+|[0090](https://leetcode.cn/problems/subsets-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0091](https://leetcode.cn/problems/decode-ways)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0092](https://leetcode.cn/problems/reverse-linked-list-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0093](https://leetcode.cn/problems/restore-ip-addresses)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0094](https://leetcode.cn/problems/binary-tree-inorder-traversal)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0095](https://leetcode.cn/problems/unique-binary-search-trees-ii)|Medium||||||||
-|[0096](https://leetcode.cn/problems/unique-binary-search-trees)|Medium||||||||
+|[0095](https://leetcode.cn/problems/unique-binary-search-trees-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0096](https://leetcode.cn/problems/unique-binary-search-trees)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0097](https://leetcode.cn/problems/interleaving-string)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0098](https://leetcode.cn/problems/validate-binary-search-tree)|Medium||||||||
-|[0099](https://leetcode.cn/problems/recover-binary-search-tree)|Medium||||||||
+|[0098](https://leetcode.cn/problems/validate-binary-search-tree)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0099](https://leetcode.cn/problems/recover-binary-search-tree)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0100](https://leetcode.cn/problems/same-tree)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0101](https://leetcode.cn/problems/symmetric-tree)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0102](https://leetcode.cn/problems/binary-tree-level-order-traversal)|Medium||||||||
