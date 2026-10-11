@@ -144,7 +144,7 @@ LeetCode Solutions.
 |[0119](https://leetcode.cn/problems/pascals-triangle-ii)|Easy||||||||
 |[0120](https://leetcode.cn/problems/triangle)|Medium||||||||
 |[0121](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[0122](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii)|Medium||||||||
+|[0122](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0123](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii)|Hard||||||||
 |[0124](https://leetcode.cn/problems/binary-tree-maximum-path-sum)|Hard||||||||
 |[0125](https://leetcode.cn/problems/valid-palindrome)|Easy||||||||
@@ -4135,14 +4135,14 @@ LeetCode Solutions.
 |[面试题 17.21](https://leetcode.cn/problems/volume-of-histogram-lcci)|Hard||||||||
 |[面试题 17.22](https://leetcode.cn/problems/word-transformer-lcci)|Medium||||||||
 |[面试题 08.14](https://leetcode.cn/problems/boolean-evaluation-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
-|[面试题 17.04](https://leetcode.cn/problems/missing-number-lcci)|Easy||||||||
-|[面试题 17.05](https://leetcode.cn/problems/find-longest-subarray-lcci)|Medium||||||||
-|[面试题 17.06](https://leetcode.cn/problems/number-of-2s-in-range-lcci)|Hard||||||||
+|[面试题 17.04](https://leetcode.cn/problems/missing-number-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 17.05](https://leetcode.cn/problems/find-longest-subarray-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 17.06](https://leetcode.cn/problems/number-of-2s-in-range-lcci)|Hard|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 17.07](https://leetcode.cn/problems/baby-names-lcci)|Medium||||||||
-|[面试题 17.08](https://leetcode.cn/problems/circus-tower-lcci)|Medium||||||||
-|[面试题 17.09](https://leetcode.cn/problems/get-kth-magic-number-lcci)|Medium||||||||
-|[面试题 17.10](https://leetcode.cn/problems/find-majority-element-lcci)|Easy||||||||
-|[面试题 17.11](https://leetcode.cn/problems/find-closest-lcci)|Medium||||||||
+|[面试题 17.08](https://leetcode.cn/problems/circus-tower-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 17.09](https://leetcode.cn/problems/get-kth-magic-number-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 17.10](https://leetcode.cn/problems/find-majority-element-lcci)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[面试题 17.11](https://leetcode.cn/problems/find-closest-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 10.02](https://leetcode.cn/problems/group-anagrams-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 10.10](https://leetcode.cn/problems/rank-from-stream-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[面试题 16.24](https://leetcode.cn/problems/pairs-with-sum-lcci)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
