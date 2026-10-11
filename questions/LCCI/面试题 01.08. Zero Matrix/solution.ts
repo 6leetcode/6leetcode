@@ -1,4 +1,4 @@
-import matrix from '../../../library/typescript/matrix';
+import matrix from '../../library/typescript/matrix';
 
 // ------------------------------- solution begin -------------------------------
 const setZeroes = (matrix: number[][]): void => {

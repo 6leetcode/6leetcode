@@ -10,7 +10,7 @@ const rotate = (matrix: number[][]): void => {
 };
 // ------------------------------- solution end ---------------------------------
 
-import matrix from '../../../library/typescript/matrix';
+import matrix from '../../library/typescript/matrix';
 
 const input = [
   [1, 2, 3],

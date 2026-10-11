@@ -1,4 +1,4 @@
-import array from '../../../library/typescript/array';
+import array from '../../library/typescript/array';
 
 // ------------------------------- solution begin -------------------------------
 const missingNumber = (nums: number[]): number => {

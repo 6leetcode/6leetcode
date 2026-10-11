@@ -47,6 +47,8 @@ static void collect(struct TreeNode *root, int **seqs, int *lens, int *count) {
       weave(leftSeqs[i], leftLens[i], rightSeqs[j], rightLens[j], prefix, 1, seqs, count, &lens);
     }
   }
+  for (int i = 0; i < leftCount; i++) free(leftSeqs[i]);
+  for (int j = 0; j < rightCount; j++) free(rightSeqs[j]);
   free(leftSeqs);
   free(leftLens);
   free(rightSeqs);
