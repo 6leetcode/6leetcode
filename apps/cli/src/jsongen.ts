@@ -12,28 +12,14 @@ import {
 
 const paging = 50;
 
-/** Go's encoding/json HTML-escapes these by default; JSON.stringify does not. */
-function marshal(value: unknown): string {
-  return JSON.stringify(value).replace(/[<>&\u2028\u2029]/g, (c) => {
-    switch (c) {
-      case "<":
-        return "\\u003c";
-      case ">":
-        return "\\u003e";
-      case "&":
-        return "\\u0026";
-      case "\u2028":
-        return "\\u2028";
-      default:
-        return "\\u2029";
-    }
-  });
-}
-
-/** []byte fields are base64-encoded in the JSON, matching Go's json.Marshal. */
-function b64(value: string | Uint8Array | null): string | null {
+/**
+ * Body/code columns come back as Uint8Array (BLOB) or string. Emit them as plain
+ * UTF-8 text — no base64 — which keeps the JSON much smaller once gzipped and
+ * lets the frontend use the value directly.
+ */
+function toText(value: string | Uint8Array | null): string | null {
   if (value === null || value === undefined) return null;
-  return Buffer.from(value as any).toString("base64");
+  return typeof value === "string" ? value : Buffer.from(value).toString("utf8");
 }
 
 function questionJson(q: QuestionRow, solutions: Record<string, number>): Record<string, unknown> {
@@ -54,13 +40,13 @@ function questionJson(q: QuestionRow, solutions: Record<string, number>): Record
     totalAcceptedRaw: q.total_accepted_raw,
     totalSubmissionRaw: q.total_submission_raw,
     acRate: q.ac_rate,
-    code_snippets: b64(q.code_snippets),
-    content: b64(q.content),
-    translated_content: b64(q.translated_content),
-    lang_to_valid_playground: b64(q.lang_to_valid_playground),
-    similar_questions: b64(q.similar_questions),
-    stats: b64(q.stats),
-    topic_tags: b64(q.topic_tags),
+    code_snippets: toText(q.code_snippets),
+    content: toText(q.content),
+    translated_content: toText(q.translated_content),
+    lang_to_valid_playground: toText(q.lang_to_valid_playground),
+    similar_questions: toText(q.similar_questions),
+    stats: toText(q.stats),
+    topic_tags: toText(q.topic_tags),
     solutions: sortedSolutions,
   };
 }
@@ -70,7 +56,7 @@ function solutionJson(s: SolutionRow): Record<string, unknown> {
     questionId: s.question_id,
     language: s.language,
     filename: s.filename,
-    data: b64(s.data),
+    data: toText(s.data),
   };
 }
 
@@ -90,22 +76,22 @@ export function generateJson(db: DB, config: Config): void {
       const q = questions[index];
       got.push(questionJson(q, solutionCounts(db, q.question_id)));
       if (index !== 0 && (index + 1) % paging === 0) {
-        writeFileSync(`${dir}/${(index + 1) / paging}.json`, marshal(got));
+        writeFileSync(`${dir}/${(index + 1) / paging}.json`, JSON.stringify(got));
         got = [];
       }
     }
     if (got.length !== 0) {
-      writeFileSync(`${dir}/${Math.floor(questions.length / paging) + 1}.json`, marshal(got));
+      writeFileSync(`${dir}/${Math.floor(questions.length / paging) + 1}.json`, JSON.stringify(got));
     }
   }
 
   mkdirSync(config.publicDir, { recursive: true });
-  writeFileSync(`${config.publicDir}/index.json`, marshal(categoryCounts(db)));
+  writeFileSync(`${config.publicDir}/index.json`, JSON.stringify(categoryCounts(db)));
 
   const solutionsDir = `${config.publicDir}/solutions`;
   mkdirSync(solutionsDir, { recursive: true });
   for (const q of allQuestionsOrdered(db)) {
     const solutions = solutionsFor(db, q.question_id).map(solutionJson);
-    writeFileSync(`${solutionsDir}/${q.question_id}.json`, marshal(solutions));
+    writeFileSync(`${solutionsDir}/${q.question_id}.json`, JSON.stringify(solutions));
   }
 }

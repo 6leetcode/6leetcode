@@ -21,14 +21,8 @@
   const esc = (s) => String(s == null ? '' : s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-  function b64utf8(b64) {
-    if (!b64) return '';
-    try {
-      const bin = atob(b64);
-      const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
-      return new TextDecoder('utf-8').decode(bytes);
-    } catch { return ''; }
-  }
+  /* body/code fields are plain UTF-8 text now (no base64) */
+  const toText = (v) => (typeof v === 'string' ? v : '');
   const diffClass = (d) => String(d || '').toLowerCase();
 
   /* ── 代码高亮（极简 tokenizer）───────────────────────────────────────── */
@@ -305,7 +299,7 @@
 
   // 题面只展示中文（translated_content），不再回退英文。
   function descHtml(q) {
-    return b64utf8(q.translated_content);
+    return toText(q.translated_content);
   }
 
   function renderHead(q) {
@@ -342,7 +336,7 @@
       <div class="tabs" role="tablist">${tabs}</div>
       <div class="code-wrap">
         <div class="code-head"><span class="fn">${esc(cur.filename)}</span><button class="copy" id="copyBtn">复制</button></div>
-        <pre class="code"><code>${hl(b64utf8(cur.data), meta.hl)}</code></pre>
+        <pre class="code"><code>${hl(toText(cur.data), meta.hl)}</code></pre>
       </div>`;
   }
 
@@ -362,7 +356,7 @@
     if (!cur) return;
     const meta = LANGS[cur.language] || { hl: '' };
     wrap.querySelector('.fn').textContent = cur.filename;
-    wrap.querySelector('pre.code code').innerHTML = hl(b64utf8(cur.data), meta.hl);
+    wrap.querySelector('pre.code code').innerHTML = hl(toText(cur.data), meta.hl);
     els.reader.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', String(t.dataset.lang === state.lang)));
   }
 
@@ -439,7 +433,7 @@
     if (copy) {
       const cur = state.solutions.find((s) => s.language === state.lang) || state.solutions[0];
       if (!cur) return;
-      navigator.clipboard.writeText(b64utf8(cur.data)).then(() => {
+      navigator.clipboard.writeText(toText(cur.data)).then(() => {
         copy.textContent = '已复制';
         copy.classList.add('done');
         setTimeout(() => { copy.textContent = '复制'; copy.classList.remove('done'); }, 1400);
