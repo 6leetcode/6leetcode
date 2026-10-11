@@ -19,7 +19,9 @@ public:
       fast = fast->next;
       slow = slow->next;
     }
-    slow->next = slow->next->next;
+    ListNode *removed = slow->next;
+    slow->next = removed->next;
+    delete removed;
     return dummy.next;
   }
 };
@@ -31,6 +33,8 @@ int main(int argc, char const *argv[]) {
   ListNode *head = ListNode_init(input1);
   cout << "Input:  " << ListNode_show(head) << " " << input2 << endl;
   Solution solution;
-  cout << "Output: " << ListNode_show(solution.removeNthFromEnd(head, input2)) << endl;
+  ListNode *result = solution.removeNthFromEnd(head, input2);
+  cout << "Output: " << ListNode_show(result) << endl;
+  ListNode_destory(result);
   return EXIT_SUCCESS;
 }
