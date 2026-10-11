@@ -79,7 +79,7 @@ typescript: $(TypescriptFiles)
 $(TypescriptFiles):
 	@echo Running `echo $@ | cut -d. -f1`:
 	@echo
-	@ts-node $@
+	@tsx $@
 	@echo
 
 .PHONY: java
