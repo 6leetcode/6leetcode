@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
 name: Server Build CI
 
 on:
@@ -9,43 +10,66 @@ on:
       - main
 
 jobs:
-  leetcode-server:
-    name: leetcode-server
-    runs-on: ubuntu-latest
+  build-cli:
+    name: build-cli
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        bun: ["latest"]
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           lfs: true
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
-      - name: Build server
+          bun-version: ${{ matrix.bun }}
+      - name: Cache bun
+        uses: actions/cache@v6
+        with:
+          path: |
+            ~/.bun/install/cache
+            apps/cli/node_modules
+          key: ${{ runner.os }}-bun-${{ matrix.bun }}-${{ hashFiles('apps/cli/bun.lock', 'apps/cli/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-${{ matrix.bun }}-
+            ${{ runner.os }}-bun-
+      - name: Build cli
         run: |
           cd apps/cli
-          make build
-  leetcode-fe:
-    name: leetcode-fe
-    runs-on: ubuntu-20.04
+          bun install --frozen-lockfile
+          bun run build
+
+  build-web:
+    name: build-web
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
-        node: ["18"]
+        bun: ["latest"]
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           lfs: true
-      - name: Setup node
-        uses: actions/setup-node@v3
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: ${{ matrix.node }}
-          cache: "yarn"
-          cache-dependency-path: "apps/web/yarn.lock"
-      - name: Build frontend
+          bun-version: ${{ matrix.bun }}
+      - name: Cache bun
+        uses: actions/cache@v6
+        with:
+          path: |
+            ~/.bun/install/cache
+            apps/web/node_modules
+          key: ${{ runner.os }}-bun-${{ matrix.bun }}-${{ hashFiles('apps/web/bun.lock', 'apps/web/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-${{ matrix.bun }}-
+            ${{ runner.os }}-bun-
+      - name: Build web
         run: |
           cd apps/web
-          yarn install --frozen-lockfile
-          yarn run build
+          bun install --frozen-lockfile
+          bun run build

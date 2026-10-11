@@ -1,29 +1,44 @@
+# yaml-language-server: $schema=https://www.schemastore.org/github-workflow.json
+name: Create Release
+
 on:
   push:
     tags:
       - "v*"
 
-name: Create Release
-
 jobs:
   build:
     name: Create Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
+    strategy:
+      matrix:
+        bun: ["latest"]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           lfs: true
       - name: Setup bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: ${{ matrix.bun }}
+      - name: Cache bun
+        uses: actions/cache@v6
+        with:
+          path: |
+            ~/.bun/install/cache
+            apps/cli/node_modules
+          key: ${{ runner.os }}-bun-${{ matrix.bun }}-${{ hashFiles('apps/cli/bun.lock', 'apps/cli/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-${{ matrix.bun }}-
+            ${{ runner.os }}-bun-
       - name: Build binaries
         run: |
           cd apps/cli
+          bun install --frozen-lockfile
           mkdir -p dist
           for target in bun-linux-x64 bun-linux-arm64 bun-darwin-x64 bun-darwin-arm64 bun-windows-x64; do
             ext=""
