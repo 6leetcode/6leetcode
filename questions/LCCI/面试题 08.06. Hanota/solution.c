@@ -10,7 +10,7 @@ static void hanoi(int *src, int *srcSize, int *aux, int *auxSize, int *dst, int 
 }
 
 void hanota(int *A, int ASize, int *B, int BSize, int *C, int *CSize) {
-  hanoi(A, &ASize, B, &BSize, C, &CSize, ASize);
+  hanoi(A, &ASize, B, &BSize, C, CSize, ASize);
 }
 // ------------------------------- solution end ---------------------------------
 
