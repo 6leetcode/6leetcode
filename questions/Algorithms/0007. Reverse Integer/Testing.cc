@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// ------------------------------- solution begin -------------------------------
 class Solution {
 public:
   int reverse(int x) {
@@ -19,6 +20,7 @@ public:
     return y;
   }
 };
+// ------------------------------- solution end ---------------------------------
 
 int main(int argc, char const *argv[]) {
   int input = 12345;

@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// ------------------------------- solution begin -------------------------------
 func reverse(x int) int {
 	rev := 0
 	for x != 0 {
@@ -17,6 +18,8 @@ func reverse(x int) int {
 	}
 	return rev
 }
+
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var input = 12345

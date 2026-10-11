@@ -1,5 +1,6 @@
 import array from '../../library/typescript/array';
 
+// ------------------------------- solution begin -------------------------------
 const twoSum = (nums: number[], target: number): number[] => {
   const map = new Map()
 
@@ -15,6 +16,7 @@ const twoSum = (nums: number[], target: number): number[] => {
 
   return []
 }
+// ------------------------------- solution end ---------------------------------
 
 let input1 = [1, 2, 3];
 let input2 = 3;

@@ -2,6 +2,9 @@
 # -*- coding: UTF-8 -*-
 
 
+# ------------------------------- solution begin -------------------------------
+
+
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
         nums1.extend(nums2)
@@ -14,6 +17,8 @@ class Solution(object):
         else:
             result = nums1[int(length / 2)]
         return result
+
+# ------------------------------- solution end ---------------------------------
 
 
 if __name__ == "__main__":

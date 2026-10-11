@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// ------------------------------- solution begin -------------------------------
 func convert(s string, numRows int) (ret string) {
 	if numRows == 1 {
 		return s
@@ -20,6 +21,7 @@ func convert(s string, numRows int) (ret string) {
 	}
 	return ret
 }
+// ------------------------------- solution end ---------------------------------
 
 func main() {
 	var input = "LEETCODEISHIRING"
