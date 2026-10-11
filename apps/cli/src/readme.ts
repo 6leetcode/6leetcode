@@ -1,0 +1,186 @@
+import { existsSync, mkdirSync, readdirSync, writeFileSync } from "node:fs";
+import { dirname, extname, join } from "node:path";
+import type { Config } from "./config";
+import type { DB, QuestionRow } from "./db";
+import { allQuestionsOrdered, categoriesInOrder } from "./db";
+import { questionId } from "./ids";
+import { HostLeetcode } from "./leetcode";
+
+const suffixes = [".c", ".cc", ".go", ".java", ".ts", ".php", ".py", ".rs", ".sql", ".sh"];
+const makefiles: Record<string, string> = {
+  ".sh": "bash.makefile",
+  ".c": "c.makefile",
+  ".cc": "cc.makefile",
+  ".go": "go.makefile",
+  ".java": "java.makefile",
+  ".ts": "typescript.makefile",
+  ".php": "php.makefile",
+  ".py": "python.makefile",
+  ".rs": "rust.makefile",
+  ".sql": "",
+};
+const targets: Record<string, string> = {
+  ".sh": "bash",
+  ".c": "c",
+  ".cc": "cc",
+  ".go": "go",
+  ".java": "java",
+  ".ts": "typescript",
+  ".php": "php",
+  ".py": "python",
+  ".rs": "rust",
+  ".sql": "",
+};
+
+const makefileDir = "testing";
+
+const tableTitle =
+  "|Index|Difficulty|C|C++|Go|Java|TypeScript|PHP|Python|Rust|SQL|Bash|\n" +
+  "|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|\n";
+
+const EngReadme =
+  "# LeetCode\n\n" +
+  "LeetCode Solutions.\n\n" +
+  "## Solutions file rules\n\n" +
+  "- Each problem is organized according to the title number.\n" +
+  "- Each problem folder has a description file which one named `readme.md`.\n" +
+  "- There can be multiple solutions for the same language in each folder, ranked according to the degree of algorithm optimization, and the file name prefix is the language name. For example: the performance of `c1.c` is better than the performance of `c2.c`.\n" +
+  "- Each problem solution must contain a `main` function that contains all the test cases that can be thought of, making it easy to run offline. The solution function is written separately as a separate function.\n\n" +
+  "## How to test problem's solution offline\n\n" +
+  "- Entering a language environment requires only `make $language`. For example, the environment that enters Python is `make python`. It may take some time to enter a certain environment for the first time. The `Docker` image will be compiled first.\n" +
+  "- All files in this directory will be mapped to the `/app` directory of `Container`.\n" +
+  "- The environment of `Container` may be `Debian` or `Alpine`.\n\n" +
+  "## Solutions' list\n";
+
+const ZHReadme =
+  "# LeetCode\n\n" +
+  "LeetCode 题解\n\n" +
+  "## 文件规则\n\n" +
+  "- 每个题目按照题目序号编排。\n" +
+  "- 每个题目文件夹下有相关的题目说明，文件名为 `readme.md`。\n" +
+  "- 每个文件夹中同一种语言可以有多重解决方案，按照算法优化程度排名，文件名前缀为语言名字。例如：`c1.c` 的性能是比 `c2.c` 的性能更优的。\n" +
+  "- 每个题目里边都要含有 `main` 函数，含有可以想到的所有测试案例，方便线下运行。题解函数，单独写成一个独立的函数。\n\n" +
+  "## 本地测试\n\n" +
+  "- 进入某种语言的环境仅需要 `make $language`，例如进入 python 的环境就是 `make python`，第一次进入某一种环境可能会需要一些时间，首先会编译这个 `Docker` 镜像。\n" +
+  "- 本目录的所有文件将会映射到 `Container` 的 `/app` 目录下。\n" +
+  "- `Container` 的环境可能是 `Debian` 或者 `Alpine`。\n\n" +
+  "## Solutions' list\n";
+
+export function questionDir(config: Config, q: Pick<QuestionRow, "category_title" | "question_frontend_id" | "title">): string {
+  return `${config.questionDir}/${q.category_title}/${questionId(q.question_frontend_id)}. ${q.title}`;
+}
+
+function walkFiles(dir: string, cb: (full: string, name: string) => void): void {
+  const entries = readdirSync(dir, { withFileTypes: true }).sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
+  for (const entry of entries) {
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) walkFiles(full, cb);
+    else cb(full, entry.name);
+  }
+}
+
+function entry(
+  questions: QuestionRow[],
+  categoryTitle: string,
+  makefileMap: Map<string, string[]>,
+  config: Config,
+): string {
+  let str = `\n<details>\n\n  <summary>${categoryTitle}</summary>\n\n`;
+  str += tableTitle;
+
+  for (const question of questions) {
+    if (question.category_title !== categoryTitle) continue;
+
+    const dir = questionDir(config, question);
+    if (!existsSync(dir)) continue;
+
+    const languageMap = new Map<string, string[]>();
+    str += `|[${questionId(question.question_frontend_id)}](${HostLeetcode}/problems/${question.title_slug})|${question.difficulty}|`;
+
+    walkFiles(dir, (full, name) => {
+      if (name === "README.md" || name === "README_ZH.md" || name === "Makefile") return;
+      const ext = extname(full);
+      if (!suffixes.includes(ext)) return;
+      const parent = dirname(full);
+      const list = makefileMap.get(ext) ?? [];
+      if (!list.includes(parent)) list.push(parent);
+      makefileMap.set(ext, list);
+      const langs = languageMap.get(ext) ?? [];
+      langs.push(name);
+      languageMap.set(ext, langs);
+    });
+
+    for (const suffix of suffixes) {
+      if ((languageMap.get(suffix) ?? []).length !== 0) str += ":white_check_mark:";
+      str += "|";
+    }
+    str += "\n";
+  }
+
+  str += "\n</details>\n";
+  return str;
+}
+
+function writeMakefiles(makefileMap: Map<string, string[]>): void {
+  if (!existsSync(makefileDir)) mkdirSync(makefileDir, { recursive: true });
+  for (const suffix of suffixes) {
+    const filename = makefiles[suffix];
+    if (!filename) continue;
+    const dirs = makefileMap.get(suffix) ?? [];
+    let str = "DIRS = ";
+    dirs.forEach((val, index) => {
+      const quoted = `"${val}"`.replaceAll(" ", "\\ ");
+      str += index === 0 ? quoted : " " + quoted;
+    });
+    str += `\nrun: \${DIRS}\n\${DIRS}:\n\tmake -C $@ ${targets[suffix]}\n`;
+    writeFileSync(`${makefileDir}/${filename}`, str);
+  }
+}
+
+function generate(questions: QuestionRow[], filename: string, prefix: string, config: Config): void {
+  const makefileMap = new Map<string, string[]>();
+  let out = prefix;
+  for (const category of categoriesInOrder2(questions)) {
+    out += entry(questions, category, makefileMap, config);
+  }
+  writeFileSync(filename, out);
+
+  if (filename === "README.md") writeMakefiles(makefileMap);
+}
+
+function categoriesInOrder2(questions: QuestionRow[]): string[] {
+  const res: string[] = [];
+  for (const q of questions) {
+    if (!res.includes(q.category_title)) res.push(q.category_title);
+  }
+  return res;
+}
+
+export function generateReadme(db: DB, config: Config): void {
+  const questions = allQuestionsOrdered(db);
+  generate(questions, "README.md", EngReadme, config);
+  generate(questions, "README_ZH.md", ZHReadme, config);
+}
+
+/** bun:sqlite returns BLOB columns (GORM wrote []byte as blobs) as Uint8Array. */
+function toText(value: string | Uint8Array | null | undefined): string {
+  if (value === null || value === undefined) return "";
+  return typeof value === "string" ? value : Buffer.from(value).toString("utf8");
+}
+
+/** Write a single question's README.md / README_ZH.md / Makefile. */
+export function writeQuestionFiles(config: Config, q: QuestionRow): void {
+  const dir = questionDir(config, q);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(
+    `${dir}/README.md`,
+    `### [${q.title}](https://leetcode.com/problems/${q.title_slug})\n\n${toText(q.content)}`,
+  );
+  writeFileSync(
+    `${dir}/README_ZH.md`,
+    `### [${q.translated_title}](https://leetcode.cn/problems/${q.title_slug})\n\n${toText(q.translated_content)}`,
+  );
+  writeFileSync(`${dir}/Makefile`, "include ../../../Makefile.lang.mk\n");
+}
+
+export { categoriesInOrder };

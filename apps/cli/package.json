@@ -1,0 +1,13 @@
+{
+  "name": "leet",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "leet": "./src/index.ts"
+  },
+  "scripts": {
+    "leet": "bun run src/index.ts",
+    "build": "bun build --compile --minify --outfile bin/leet src/index.ts"
+  }
+}

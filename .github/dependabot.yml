@@ -6,9 +6,3 @@ updates:
       interval: monthly
       time: "00:00"
     open-pull-requests-limit: 10
-  - package-ecosystem: gomod
-    directory: "/apps/cli"
-    schedule:
-      interval: monthly
-      time: "00:00"
-    open-pull-requests-limit: 10
