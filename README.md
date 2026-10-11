@@ -75,12 +75,12 @@ LeetCode Solutions.
 |[0050](https://leetcode.cn/problems/powx-n)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0051](https://leetcode.cn/problems/n-queens)|Hard||||||||
 |[0052](https://leetcode.cn/problems/n-queens-ii)|Hard||||||||
-|[0053](https://leetcode.cn/problems/maximum-subarray)|Medium|:white_check_mark:|:white_check_mark:||||||
-|[0054](https://leetcode.cn/problems/spiral-matrix)|Medium||:white_check_mark:||||||
-|[0055](https://leetcode.cn/problems/jump-game)|Medium||:white_check_mark:||||||
-|[0056](https://leetcode.cn/problems/merge-intervals)|Medium||:white_check_mark:||||||
+|[0053](https://leetcode.cn/problems/maximum-subarray)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0054](https://leetcode.cn/problems/spiral-matrix)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0055](https://leetcode.cn/problems/jump-game)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
+|[0056](https://leetcode.cn/problems/merge-intervals)|Medium|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0057](https://leetcode.cn/problems/insert-interval)|Medium||||||||
-|[0058](https://leetcode.cn/problems/length-of-last-word)|Easy||:white_check_mark:||||||
+|[0058](https://leetcode.cn/problems/length-of-last-word)|Easy|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |[0059](https://leetcode.cn/problems/spiral-matrix-ii)|Medium||||||||
 |[0060](https://leetcode.cn/problems/permutation-sequence)|Hard||||||||
 |[0061](https://leetcode.cn/problems/rotate-list)|Medium|:white_check_mark:|||||||
