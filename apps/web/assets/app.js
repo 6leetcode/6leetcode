@@ -323,7 +323,7 @@
   function renderSolutions() {
     const sols = state.solutions;
     if (!sols.length) {
-      return `<div class="sol-head"><h2>题解</h2><span class="cnt">无</span></div>
+      return `<div class="sol-head"><h2>题解</h2></div>
         <div class="list-empty" style="padding:26px 0">这道题暂未收录可运行题解。</div>`;
     }
     const tabs = sols.map((s) => {
@@ -334,7 +334,7 @@
     const cur = sols.find((s) => s.language === state.lang) || sols[0];
     const meta = LANGS[cur.language] || { hl: '' };
     return `
-      <div class="sol-head"><h2>题解</h2><span class="cnt">${sols.length} 种语言</span></div>
+      <div class="sol-head"><h2>题解</h2></div>
       <div class="tabs" role="tablist">${tabs}</div>
       <div class="code-wrap">
         <div class="code-head"><span class="fn">${esc(cur.filename)}</span><button class="copy" id="copyBtn">复制</button></div>
