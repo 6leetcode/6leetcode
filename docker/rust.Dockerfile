@@ -1,4 +1,4 @@
-FROM rust:buster
+FROM rust:bookworm
 
 WORKDIR /app
 
